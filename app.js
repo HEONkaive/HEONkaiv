@@ -252,10 +252,17 @@
   }
   function render() {
     if(!catalog)return;
+    // When a user changes a selection, keep the reading position in long questions.
+    // Going to another question deliberately starts at that new question's top.
+    const previousPanel=root.querySelector('.exam-panel');
+    const previousId=previousPanel?.dataset.questionId;
+    const keepPanelScroll=!!previousId && view==='quiz' && previousId===currentQuestion()?.id;
+    const questionScroll=keepPanelScroll?previousPanel.scrollTop:0;
+    const evidenceScroll=keepPanelScroll?root.querySelector('.evidence-panel')?.scrollTop||0:0;
     theme();
     const meta=currentProfessor?profMeta(currentProfessor.professor.id):null;
     const currSubject=subjectById(selectedSubject);
-    root.innerHTML=`<div class="site">
+    root.innerHTML=`<div class="site ${view==='quiz'?'quiz-mode':''}">
       <aside class="side ${mobileMenuOpen?'open':''}" id="sidebar">
         <div class="brand" data-action="home" role="button" tabindex="0"><div class="logo-mark">H<span>.</span></div><div><div class="brand-name">HEON ARCHIVE</div><div class="brand-sub">MEDICAL LEARNING</div></div></div>
         <nav aria-label="과목 및 교수님 메뉴"><div class="side-kicker">YOUR LIBRARY</div>${catalog.subjects.map((s,i)=>{
@@ -279,9 +286,15 @@
             <div class="header-actions"><span class="autosave-indicator" title="기록은 브라우저에 자동 저장됩니다"><span class="autosave-dot"></span><span class="desktop-label">자동 저장</span></span><button class="icon-btn theme-btn" data-action="theme" title="라이트 / 다크모드 변경" aria-label="테마 전환">${state.prefs.theme==='dark'?'☀':'☾'}</button></div>
           </div>
         </header>
-        <div class="content">${view==='home'?renderHome():view==='review'?renderReview():renderQuiz()}</div>
+        <div class="content ${view==='quiz'?'quiz-content':''}">${view==='home'?renderHome():view==='review'?renderReview():renderQuiz()}</div>
       </main>
     </div>`;
+    if(keepPanelScroll) {
+      const nextPanel=root.querySelector('.exam-panel');
+      const nextEvidence=root.querySelector('.evidence-panel');
+      if(nextPanel)nextPanel.scrollTop=questionScroll;
+      if(nextEvidence)nextEvidence.scrollTop=evidenceScroll;
+    }
   }
   function renderHome() {
     const subs=catalog.subjects;
@@ -322,8 +335,21 @@
     if(!currentProfessor)return `<div class="empty">교수님을 선택해주세요.</div>`;
     const l=questions();const qs=scopedQuestions();const q=currentQuestion();const s=stats(l);
     return `${renderCourseHeader()}${renderCompactStats(s)}${renderFilterbar()}
-    ${q?`<div class="exam-layout ${infoExpanded?'':'collapsed'}">${renderQuestionPanel(q,qs)}<div class="divider-grip" id="resizer" title="드래그하여 해설 너비 조절" aria-hidden="true"></div>${infoExpanded?renderEvidencePanel(q):renderEvidenceClosed()}</div>`:`<div class="empty"><p>조건에 맞는 문제가 없습니다.</p><button class="button secondary small" data-action="clear-filter">전체 문제로 돌아가기</button></div>`}
+    ${q?`<div class="exam-layout ${infoExpanded?'':'collapsed'}">${renderQuestionPanel(q,qs)}<div class="divider-grip" id="resizer" title="드래그하여 해설 너비 조절" aria-hidden="true"></div>${infoExpanded?renderEvidencePanel(q):renderEvidenceClosed()}</div>${renderQuizDock(q,qs)}`:`<div class="empty"><p>조건에 맞는 문제가 없습니다.</p><button class="button secondary small" data-action="clear-filter">전체 문제로 돌아가기</button></div>`}
     <p class="help-text">정답 검토 필요 문항은 사용자가 정답을 지정하기 전까지 정오답 통계에 포함되지 않습니다. 학습 기록과 북마크는 이 브라우저에만 저장됩니다.</p>`;
+  }
+  // Separate desktop action dock: navigation and submit stay on screen for long questions.
+  // Mobile retains the original in-card actions and page scrolling.
+  function renderQuizDock(q,scope) {
+    const index=scope.findIndex(x=>x.id===q.id);
+    const r=record(q);
+    const ready=q.type==='short'?!!String(r.selected||'').trim():!!(Array.isArray(r.selected)?r.selected.length:r.selected);
+    return `<div class="quiz-dock" role="group" aria-label="문제 이동 및 답안 제출">
+      <div class="dock-position"><span class="dock-heading">NOW STUDYING</span><strong>${esc(q.label)}</strong><span>${index+1} / ${scope.length}</span></div>
+      <div class="dock-controls"><button class="button secondary small dock-nav" data-action="step" data-direction="-1" ${index===0?'disabled':''}>← 이전 문제</button><button class="button secondary small dock-nav" data-action="step" data-direction="1" ${index===scope.length-1?'disabled':''}>다음 문제 →</button>
+      ${restoringReview?'<button class="button ghost small" data-action="back-review">← Review</button>':''}
+      <button class="button dock-submit ${r.submitted?'secondary':''}" data-action="submit" ${ready?'':'disabled'}>${r.submitted?'다시 제출':'답안 제출'} ✓</button></div>
+    </div>`;
   }
   function renderEvidenceClosed() {
     return `<aside class="evidence-placeholder" aria-label="해설창 닫힘">
@@ -339,7 +365,7 @@
     const checked=Array.isArray(r.selected)?r.selected:r.selected?[r.selected]:[];
     const answer=effectiveAnswer(q);const answers=answer==null?[]:Array.isArray(answer)?answer:[answer];
     const maxSelection=Number(q.maxSelections)||1;
-    return `<section class="exam-panel"><div class="question-header"><div><div class="question-id">QUESTION / ${esc(q.label)}</div><h2 class="question-num">${esc(q.label)} <span class="question-index">${curr+1} / ${scope.length}</span></h2><div class="question-meta"><span class="pill ${q.validation.stage==='accepted'?'ok':q.validation.stage==='user_confirmed'?'blue':'warn'}">${q.validation.stage==='accepted'?'✓ 강의안 이중 검증':q.validation.stage==='user_confirmed'?'● 사용자 확정 정답':'! 정답 검토 필요'}</span><span class="pill">${q.year}학번</span>${submission(q)?`<span class="pill blue">제출 완료</span>`:''}</div></div>
+    return `<section class="exam-panel" data-question-id="${esc(q.id)}"><div class="question-header"><div><div class="question-id">QUESTION / ${esc(q.label)}</div><h2 class="question-num">${esc(q.label)} <span class="question-index">${curr+1} / ${scope.length}</span></h2><div class="question-meta"><span class="pill ${q.validation.stage==='accepted'?'ok':q.validation.stage==='user_confirmed'?'blue':'warn'}">${q.validation.stage==='accepted'?'✓ 강의안 이중 검증':q.validation.stage==='user_confirmed'?'● 사용자 확정 정답':'! 정답 검토 필요'}</span><span class="pill">${q.year}학번</span>${submission(q)?`<span class="pill blue">제출 완료</span>`:''}</div></div>
       <div class="row"><button class="bookmark ${isBookmark(q)?'saved':''}" data-action="bookmark" data-id="${esc(q.id)}" title="북마크" aria-pressed="${isBookmark(q)}">${isBookmark(q)?'★':'☆'}</button><button class="icon-btn" data-action="toggle-evidence">${infoExpanded?'해설 접기':'해설 열기'}</button></div></div>
       <div class="prompt">${esc(q.prompt||'원본 이미지에서 문제 본문을 확인하세요.')}</div>
       ${q.type==='short'?`<label class="muted" for="short-answer">주관식 답안</label><textarea class="short-input" id="short-answer" data-question="${esc(q.id)}" placeholder="답안을 입력하세요. 입력하는 즉시 저장됩니다.">${esc(typeof r.selected==='string'?r.selected:'')}</textarea>`:
@@ -496,7 +522,7 @@
       const r={...record(q),selected:el.value,submitted:false,updatedAt:new Date().toISOString()};
       state.records[q.id]=r;saveState();
       if(infoExpanded){infoExpanded=false;render();return;}
-      const submitBtn=root.querySelector('[data-action=submit]');if(submitBtn)submitBtn.disabled=!el.value.trim();
+      root.querySelectorAll('[data-action=submit]').forEach(btn=>btn.disabled=!el.value.trim());
     }
   });
   root.addEventListener('focusin',e=>{
