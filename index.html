@@ -2,77 +2,50 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>문제풀이 웹사이트</title>
+    <title>의과대학 문제풀이 플랫폼</title>
     <style>
-        body { font-family: 'Malgun Gothic', sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; background: #f9f9f9; }
-        .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .question { font-size: 1.2em; font-weight: bold; margin-bottom: 20px; }
-        .options button { display: block; width: 100%; padding: 12px; margin: 10px 0; font-size: 1em; cursor: pointer; border: 1px solid #ddd; border-radius: 5px; background: #fff; text-align: left; }
-        .options button:hover { background: #f0f0f0; }
-        #result { margin-top: 20px; font-weight: bold; font-size: 1.1em; }
-    </style>
-</head>
-<body>
-
-<div class="card">
-    <div id="quiz-container">
-        <div id="question-text" class="question">문로딩 중...</div>
-        <div id="options-container" class="options"></div>
-    </div>
-    <div id="result"></div>
-</div>
-
-<script>
-    // PDF 내용을 바탕으로 구성한 문제 데이터 예시
-    const quizData = [
-        {
-            question: "1. 다음 중 웹 프론트엔드 언어가 아닌 것은?",
-            options: ["HTML", "CSS", "Python", "JavaScript"],
-            answer: 2 // 0부터 시작하므로 Python(3번째)은 2
-        },
-        {
-            question: "2. 웹페이지의 뼈대를 담당하는 언어는?",
-            options: ["HTML", "CSS", "SQL", "Java"],
-            answer: 0
-        }
-    ];
-
-    let currentQuestion = 0;
-    let score = 0;
-
-    function loadQuiz() {
-        const q = quizData[currentQuestion];
-        document.getElementById("question-text").innerText = q.question;
-        const optionsContainer = document.getElementById("options-container");
-        optionsContainer.innerHTML = "";
-
-        q.options.forEach((opt, index) => {
-            const btn = document.createElement("button");
-            btn.innerText = opt;
-            btn.onclick = () => selectAnswer(index);
-            optionsContainer.appendChild(btn);
-        });
-    }
-
-    function selectAnswer(selected) {
-        const q = quizData[currentQuestion];
-        if (selected === q.answer) {
-            score++;
-            alert("정답입니다!");
-        } else {
-            alert("오답입니다!");
+        :root {
+            --bg-color: #f4f6f9;
+            --sidebar-bg: #2c3e50;
+            --sidebar-text: #ecf0f1;
+            --sidebar-hover: #34495e;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-color: #e0e0e0;
+            --btn-bg: #ffffff;
+            --btn-hover: #f0f0f0;
+            --primary-color: #3498db;
+            --right-bg: #f8f9fa;
         }
 
-        currentQuestion++;
-        if (currentQuestion < quizData.length) {
-            loadQuiz();
-        } else {
-            document.getElementById("quiz-container").innerHTML = `<h2>퀴즈 완료!</h2><p>총 ${quizData.length}문제 중 ${score}문제를 맞추셨습니다.</p>`;
+        [data-theme="dark"] {
+            --bg-color: #121212;
+            --sidebar-bg: #1e1e1e;
+            --sidebar-text: #e0e0e0;
+            --sidebar-hover: #2d2d2d;
+            --card-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --border-color: #333333;
+            --btn-bg: #2d2d2d;
+            --btn-hover: #3d3d3d;
+            --primary-color: #2980b9;
+            --right-bg: #181818;
         }
-    }
 
-    loadQuiz();
-</script>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Malgun Gothic', sans-serif; transition: background 0.3s, color 0.3s; }
+        body { display: flex; height: 100vh; background-color: var(--bg-color); color: var(--text-color); overflow: hidden; }
 
-</body>
-</html>
+        /* 사이드바 스타일 */
+        sidebar { width: 280px; background-color: var(--sidebar-bg); color: var(--sidebar-text); display: flex; flex-direction: column; border-right: 1px solid var(--border-color); }
+        .sidebar-header { padding: 20px; font-size: 1.2em; font-weight: bold; border-bottom: 1px solid var(--sidebar-hover); display: flex; justify-content: space-between; align-items: center; }
+        .menu-list { flex: 1; overflow-y: auto; padding: 15px; }
+        .subject-item { margin-bottom: 10px; }
+        .subject-btn { width: 100%; padding: 12px 15px; text-align: left; background: none; border: none; color: var(--sidebar-text); font-size: 1em; cursor: pointer; border-radius: 6px; font-weight: bold; display: flex; justify-content: space-between; align-items: center; }
+        .subject-btn:hover { background-color: var(--sidebar-hover); }
+        .professor-list { padding-left: 15px; margin-top: 5px; display: none; }
+        .professor-list.active { display: block; }
+        .prof-btn { width: 100%; padding: 8px 12px; text-align: left; background: none; border: none; color: var(--sidebar-text); opacity: 0.8; font-size: 0.95em; cursor: pointer; border-radius: 4px; margin: 3px 0; }
+        .prof-btn:hover { opacity: 1; background-color: var(--sidebar-hover); }
+
+        /* 테마 토글 버튼 */
+        .theme-toggle
