@@ -57,6 +57,8 @@
     document.body.append(el);clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.remove(),3000);
   }
   function questions(prof = currentProfessor) { return prof ? (prof.questions||[]) : []; }
+  const yearSortValue = y => (y == null || y === 'unknown' || y === '연도미상') ? Number.MAX_SAFE_INTEGER : (Number.isFinite(Number(y)) ? Number(y) : Number.MAX_SAFE_INTEGER);
+  const yearName = y => yearSortValue(y) === Number.MAX_SAFE_INTEGER ? '연도미상' : `${y}학번`;
   function record(q) {
     return state.records[q.id] || {selected:[],submitted:false};
   }
@@ -93,6 +95,16 @@
     return s.completed===s.total?'complete':'partial';
   }
   function statusDot(s) { return `<span class="status-dot ${s==='complete'?'complete':s==='partial'?'partial':''}">${s==='complete'?'✓':''}</span>`; }
+  function professorCourseStats(meta,loaded) {
+    if (loaded) { const a=stats(loaded.questions||[]); return {...a, unresolved:(loaded.questions||[]).filter(q=>effectiveAnswer(q)==null).length}; }
+    const total=Number(meta.questionCount)||0;
+    const completed=Object.entries(state.records).filter(([id,r])=>id.startsWith(meta.id+':') && r?.submitted).length;
+    return {total,completed,unresolved:Number(meta.pendingCount)||0};
+  }
+  function professorCourseStage(meta,loaded) {
+    const s=professorCourseStats(meta,loaded);
+    return !s.total||!s.completed?'empty':(s.completed>=s.total?'complete':'partial');
+  }
   function subjectById(id) { return catalog.subjects.find(s=>s.id===id); }
   function profMeta(id) {
     for (const sub of catalog.subjects) for(const p of sub.professors)if(p.id===id)return {...p,subjectId:sub.id,subjectName:sub.name};
@@ -129,7 +141,7 @@
     if(!Array.isArray(data.questions))throw Error('교수님 JSON에 questions 배열이 없습니다.');
     const ids=new Set();
     for(const q of data.questions){if(ids.has(q.id))throw Error(`중복 문제 ID: ${q.id}`);ids.add(q.id);}
-    data.questions.sort((a,b)=>(a.year-b.year)||(a.number-b.number)||a.id.localeCompare(b.id));
+    data.questions.sort((a,b)=>(yearSortValue(a.year)-yearSortValue(b.year))||(a.number-b.number)||a.id.localeCompare(b.id));
     professorCache.set(id,data);return data;
   }
   async function selectProfessor(id, keepYear=false) {
@@ -190,7 +202,7 @@
         found.push({q,meta,score});
       }
     }
-    return found.sort((a,b)=>b.score-a.score||(a.q.year-b.q.year)||(a.q.number-b.q.number)).slice(0,30);
+    return found.sort((a,b)=>b.score-a.score||(yearSortValue(a.q.year)-yearSortValue(b.q.year))||(a.q.number-b.q.number)).slice(0,30);
   }
   function searchSuggestionsHTML(){
     if(!searchText.trim()) return '<div class="search-message"><strong>문항 빠른 검색</strong><p>문제 번호(예: 17-8), 지문 키워드 또는 선택지·약물명을 입력하세요. 등록된 모든 교수님에서 찾습니다.</p></div>';
@@ -199,7 +211,7 @@
     const header=`<div class="search-results-head">검색 결과 ${hits.length>=30?'30개 이상':hits.length+'개'}${pending}</div>`;
     const rows=hits.slice(0,12).map(({q,meta})=>{
       const preview=String(q.prompt||q.choices?.map(c=>c.text).join(' / ')||'원본 이미지 참고').replace(/\s+/g,' ').slice(0,92);
-      return `<button class="search-result" type="button" role="option" data-action="search-result" data-professor="${esc(meta.id)}" data-id="${esc(q.id)}"><span class="search-result-top"><strong>${esc(q.label)}</strong><span>${esc(meta.name)} 교수님 · ${esc(q.year)}학번</span></span><span class="search-result-text">${esc(preview)}</span></button>`;
+      return `<button class="search-result" type="button" role="option" data-action="search-result" data-professor="${esc(meta.id)}" data-id="${esc(q.id)}"><span class="search-result-top"><strong>${esc(q.label)}</strong><span>${esc(meta.name)} 교수님 · ${esc(yearName(q.year))}</span></span><span class="search-result-text">${esc(preview)}</span></button>`;
     }).join('');
     if(!hits.length) return header+`<div class="search-message"><strong>${searchLoading?'검색 범위를 확장하고 있습니다':'일치하는 문제가 없습니다'}</strong><p>${searchLoading?'등록 교수님 데이터를 불러오는 중입니다.':'번호나 다른 키워드로 다시 검색해 보세요.'}${searchLoadErrors?' 일부 교수님 파일을 읽지 못했습니다.':''}</p></div>`;
     return header+rows+(hits.length>12?`<div class="search-foot">상위 12개 결과를 표시 중입니다. 검색어를 더 구체적으로 입력하세요.</div>`:'');
@@ -268,7 +280,7 @@
         <nav aria-label="과목 및 교수님 메뉴"><div class="side-kicker">YOUR LIBRARY</div>${catalog.subjects.map((s,i)=>{
           const sel=selectedSubject===s.id;return `<div class="subject-wrap">
             <button type="button" class="subject-btn ${sel?'active':''}" data-action="subject" data-id="${esc(s.id)}" aria-expanded="${sel}"><span class="subject-ico">${String(i+1).padStart(2,'0')}</span><span class="subject-name">${esc(s.name)}</span><span class="chev">${sel?'▾':'▸'}</span></button>
-            ${sel?`<div class="prof-list">${s.professors.length?s.professors.map(p=>{const loaded=professorCache.get(p.id);return `<button type="button" class="prof-btn ${currentProfessor&&currentProfessor.professor.id===p.id&&view!=='home'?'active':''}" data-action="professor" data-id="${esc(p.id)}"><span class="prof-avatar">${esc(p.name.slice(0,1))}</span><span class="prof-label">${esc(p.name)} 교수님</span>${statusDot(stage(loaded?.questions||[]))}</button>`}).join(''):`<p class="fine">등록 예정</p>`}</div>`:''}
+            ${sel?`<div class="prof-list">${s.professors.length?s.professors.map(p=>{const loaded=professorCache.get(p.id);return `<button type="button" class="prof-btn ${currentProfessor&&currentProfessor.professor.id===p.id&&view!=='home'?'active':''}" data-action="professor" data-id="${esc(p.id)}"><span class="prof-avatar">${esc(p.name.slice(0,1))}</span><span class="prof-label">${esc(p.name)} 교수님</span>${statusDot(professorCourseStage(p,loaded))}</button>`}).join(''):`<p class="fine">등록 예정</p>`}</div>`:''}
           </div>`}).join('')}</nav>
         <div class="side-bottom"><strong>STUDY, REMEMBER, REPEAT.</strong><p>답안을 선택하는 즉시 이 브라우저에 저장됩니다. 별도 계정이나 서버는 필요하지 않습니다.</p></div>
       </aside>
@@ -306,8 +318,10 @@
         ${selected?.professors.length?`<div class="course-list">${selected.professors.map(p=>courseCard(p)).join('')}</div>`:`<div class="empty">이 과목에 등록된 교수님이 없습니다. 새로운 교수님 데이터 파일을 추가하면 이곳에 표시됩니다.</div>`}</section>`;
   }
   function courseCard(p) {
-    const data=professorCache.get(p.id);const list=data?.questions||[];const s=stats(list);
-    return `<button class="course-card" data-action="professor" data-id="${esc(p.id)}"><div class="course-big-icon">${esc(p.name.slice(0,1))}</div><div class="course-main"><h3>${esc(p.name)} 교수님 ${statusDot(stage(list))}</h3><p>${list.length}문제 · ${list.filter(q=>q.answer===null).length}문항 정답 검토 필요</p><div class="progress-track"><div class="progress-fill ${s.total&&s.completed===s.total?'done':''}" style="width:${s.total?s.completed/s.total*100:0}%"></div></div></div><div class="course-right"><strong>${s.total?Math.round(s.completed/s.total*100):0}%</strong>${s.completed} / ${s.total} 완료</div></button>`;
+    const data=professorCache.get(p.id);
+    const s=professorCourseStats(p,data);
+    const pct=s.total?Math.round(s.completed/s.total*100):0;
+    return `<button class="course-card" data-action="professor" data-id="${esc(p.id)}"><div class="course-big-icon">${esc(p.name.slice(0,1))}</div><div class="course-main"><h3>${esc(p.name)} 교수님 ${statusDot(professorCourseStage(p,data))}</h3><p>${s.total}문제 · ${s.unresolved}문항 정답 검토 필요</p><div class="progress-track"><div class="progress-fill ${s.total&&s.completed>=s.total?'done':''}" style="width:${pct}%"></div></div></div><div class="course-right"><strong>${pct}%</strong>${s.completed} / ${s.total} 완료</div></button>`;
   }
   function renderCompactStats(s){
     const items=[['전체 문제',s.total,'▤'],['풀이 완료',s.completed,'◉'],['정답',s.correct,'✓'],['오답',s.wrong,'✕'],['채점 보류',s.pending,'◷']];
@@ -325,10 +339,10 @@
     return `<div class="course-header compact-course-header"><div class="course-identity"><div class="eyebrow">${esc(({ 'hematology-1':'HEMATOLOGY I', 'hematology-2':'HEMATOLOGY II', 'maternal-newborn':'MATERNAL · NEWBORN', 'growth-aging':'GROWTH · AGING' })[currentProfessor.professor.subjectId]||'MEDICAL')} · EXAM LIBRARY</div><div class="course-title-line"><h1>${esc(currentProfessor.professor.name)} 교수님</h1><p>${esc(currentProfessor.professor.description||'교수님별 기출 문제')} &nbsp; / &nbsp; 연도별 또는 전체 문항 풀이</p></div></div>
       <div class="header-pills"><span class="pill blue">${s.total}문제</span><span class="pill ok">근거 검증 ${verified}건</span>${manual?`<span class="pill blue">사용자 확정 ${manual}건</span>`:''}<span class="pill warn">미확정 ${pending}건</span><button class="button secondary small" data-action="open-review">Review ↗</button></div></div>`;
   }
-  function years() {return [...new Set(questions().map(q=>q.year))].sort((a,b)=>a-b);}
+  function years() {return [...new Set(questions().map(q=>q.year))].sort((a,b)=>yearSortValue(a)-yearSortValue(b));}
   function renderFilterbar() {
     const q=scopedQuestions();
-    return `<div class="filterbar"><div class="year-chips"><button class="chip ${currentYear==='all'?'active':''}" data-action="year" data-year="all">전체 <span class="count">${questions().length}</span>${stage(questions())==='complete'?'<span class="check">✓</span>':''}</button>${years().map(y=>{const yy=questions().filter(q=>q.year===y);return `<button class="chip ${currentYear===String(y)?'active':''}" data-action="year" data-year="${y}">${y}학번 <span class="count">${yy.length}</span>${stage(yy)==='complete'?'<span class="check">✓</span>':''}</button>`}).join('')}</div>
+    return `<div class="filterbar"><div class="year-chips"><button class="chip ${currentYear==='all'?'active':''}" data-action="year" data-year="all">전체 <span class="count">${questions().length}</span>${stage(questions())==='complete'?'<span class="check">✓</span>':''}</button>${years().map(y=>{const yy=questions().filter(q=>q.year===y);return `<button class="chip ${currentYear===String(y)?'active':''}" data-action="year" data-year="${y}">${esc(yearName(y))} <span class="count">${yy.length}</span>${stage(yy)==='complete'?'<span class="check">✓</span>':''}</button>`}).join('')}</div>
       <div class="filter-actions"><button class="chip ${filter==='bookmarked'?'active':''}" data-action="filter" data-filter="bookmarked">☆ 북마크</button><button class="chip ${filter==='wrong'?'active':''}" data-action="filter" data-filter="wrong">↺ 오답만</button><select class="select" data-action="number-select" aria-label="문제 번호 선택">${q.length?q.map(item=>`<option value="${esc(item.id)}" ${currentQuestion()?.id===item.id?'selected':''}>${esc(item.label)} · ${submission(item)?'풀이완료':'미완료'}</option>`).join(''):'<option>해당 문항 없음</option>'}</select></div></div>`;
   }
   function renderQuiz() {
@@ -365,7 +379,7 @@
     const checked=Array.isArray(r.selected)?r.selected:r.selected?[r.selected]:[];
     const answer=effectiveAnswer(q);const answers=answer==null?[]:Array.isArray(answer)?answer:[answer];
     const maxSelection=Number(q.maxSelections)||1;
-    return `<section class="exam-panel" data-question-id="${esc(q.id)}"><div class="question-header"><div><div class="question-id">QUESTION / ${esc(q.label)}</div><h2 class="question-num">${esc(q.label)} <span class="question-index">${curr+1} / ${scope.length}</span></h2><div class="question-meta"><span class="pill ${q.validation.stage==='accepted'?'ok':q.validation.stage==='user_confirmed'?'blue':'warn'}">${q.validation.stage==='accepted'?'✓ 강의안 이중 검증':q.validation.stage==='user_confirmed'?'● 사용자 확정 정답':'! 정답 검토 필요'}</span><span class="pill">${q.year}학번</span>${submission(q)?`<span class="pill blue">제출 완료</span>`:''}</div></div>
+    return `<section class="exam-panel" data-question-id="${esc(q.id)}"><div class="question-header"><div><div class="question-id">QUESTION / ${esc(q.label)}</div><h2 class="question-num">${esc(q.label)} <span class="question-index">${curr+1} / ${scope.length}</span></h2><div class="question-meta"><span class="pill ${q.validation.stage==='accepted'?'ok':q.validation.stage==='user_confirmed'?'blue':'warn'}">${q.validation.stage==='accepted'?'✓ 강의안 이중 검증':q.validation.stage==='user_confirmed'?'● 사용자 확정 정답':'! 정답 검토 필요'}</span><span class="pill">${esc(yearName(q.year))}</span>${submission(q)?`<span class="pill blue">제출 완료</span>`:''}</div></div>
       <div class="row"><button class="bookmark ${isBookmark(q)?'saved':''}" data-action="bookmark" data-id="${esc(q.id)}" title="북마크" aria-pressed="${isBookmark(q)}">${isBookmark(q)?'★':'☆'}</button><button class="icon-btn" data-action="toggle-evidence">${infoExpanded?'해설 접기':'해설 열기'}</button></div></div>
       <div class="prompt">${esc(q.prompt||'원본 이미지에서 문제 본문을 확인하세요.')}</div>
       ${q.type==='short'?`<label class="muted" for="short-answer">주관식 답안</label><textarea class="short-input" id="short-answer" data-question="${esc(q.id)}" placeholder="답안을 입력하세요. 입력하는 즉시 저장됩니다.">${esc(typeof r.selected==='string'?r.selected:'')}</textarea>`:
@@ -592,7 +606,7 @@
         catch(err){console.warn(err);view='home';}
       }else{
         const first=catalog.subjects.find(s=>s.professors.length)?.professors[0];
-        if(first)await loadProfessor(first.id); // load first professor to show accurate dashboard progress
+        if(first)await Promise.allSettled(catalog.subjects.find(s=>s.id===selectedSubject).professors.map(p=>loadProfessor(p.id))); // dashboard counts, records isolated
       }
       render();
     }catch(err){

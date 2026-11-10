@@ -8,7 +8,16 @@
         {
           "id": "park-murim",
           "name": "박무림",
-          "data": "data/professors/park-murim.json"
+          "data": "data/professors/park-murim.json",
+          "questionCount": 73,
+          "pendingCount": 16
+        },
+        {
+          "id": "lee-seoul",
+          "name": "이서울",
+          "data": "data/professors/lee-seoul.json",
+          "questionCount": 33,
+          "pendingCount": 12
         }
       ]
     },
