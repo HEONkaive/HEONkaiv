@@ -1,16 +1,147 @@
-## Hi there 👋
+# HEON ARCHIVE
 
-<!--
-**HEONkaive/HEONkaive** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**교수님별 기출문제 + 강의안 원본 근거 + 브라우저 자동 저장**으로 구성된 정적 의학 학습 웹사이트입니다.
 
-Here are some ideas to get you started:
+- GitHub Pages에서 작동하며, ZIP 압축 해제 후 `index.html`을 직접 더블클릭해도 문제 데이터가 열리도록 별도 JS 데이터 파일을 포함했습니다. API 키나 로그인은 필요 없습니다.
+- 네이비 다크모드/라이트모드, PC/모바일 반응형 UI를 제공합니다.
+- 과목은 `혈액과 종양 1차 / 혈액과 종양 2차 / 모성과 신생아 / 성장과 노화` 네 가지입니다.
+- 현재 `혈액과 종양 1차 > 박무림` 데이터만 활성화했습니다.
+- 박무림 데이터 73문항을 포함합니다(20~17학번 52개, 21학번 21개). 강의안 근거 채택 56개, 검토 필요 17개입니다. 이 수치는 검증을 엄격히 제한한 **현재 데이터 상태**이지 검토 필요 문항의 정답을 맞혔다는 뜻이 아닙니다.
+- 원본 문제 캡처를 각 문항에 제공하며, 채택된 강의안 PDF 페이지의 실제 캡처 이미지를 해설에 제공합니다.
+- 정답을 검증할 수 없는 문제는 **정답 검토 필요**로 남기고, 관련 원문만 **미채택 검토용 강의안**으로 표시합니다. 사용자가 정답을 직접 지정하면 즉시 저장하고 채점 결과를 업데이트합니다.
+- 문제 선택은 즉시 저장되며, **완료 수에는 '답안 제출'을 누른 문제만** 포함됩니다.
+- 기록 내보내기/불러오기 버튼은 의도적으로 없습니다.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## GitHub Pages 배포
+
+1. GitHub에서 새 저장소를 만듭니다. 예: `heon-archive`.
+2. 이 ZIP 파일을 풀고 **안쪽 `heon-archive` 폴더의 내용물**(`index.html`, `app.js`, `styles.css`, `data/`, `assets/`)을 저장소 **루트**에 올립니다.
+3. GitHub 저장소의 **Settings → Pages → Build and deployment → Source**를 `Deploy from a branch`로 지정합니다.
+4. Branch를 `main`, Folder를 `/(root)`로 설정하고 저장합니다.
+5. GitHub Pages가 게시한 `https://<계정>.github.io/<저장소>/` 주소에서 접속합니다.
+
+`data`와 `assets` 경로는 모두 상대경로이므로 저장소 이름이 달라도 작동합니다. 배포 시 `data/catalog.js`, `data/professors/*.js` 및 이미지 폴더까지 모두 업로드해야 합니다.
+
+> **공개 범위 주의:** GitHub Pages에 게시한 PDF 캡처 이미지는 외부에서 접근할 수 있습니다. 강의안 및 기출문제에 제3자 저작권이나 재배포 제한이 있다면 공개 게시 전에 권리를 확인하세요.
+
+## PC에서 바로 실행하기 (서버 설치 불필요)
+
+1. `HEON_ARCHIVE_ParkMurim_FIXED.zip`을 다운로드합니다.
+2. ZIP 파일을 **우클릭 → 모두 압축 풀기**로 해제합니다. ZIP 미리보기 안에서 HTML을 실행하지 마세요.
+3. 압축 해제된 `heon-archive` 폴더 안의 **`index.html`을 더블클릭**합니다.
+4. 웹사이트에서 **혈액과 종양 1차 → 박무림 교수님**을 선택하거나 **이어서 학습하기**를 누르면 73문항이 표시됩니다.
+5. 문제를 선택하면 즉시 브라우저에 저장되고, **답안 제출** 후 풀이 완료 수가 증가합니다.
+
+강의안 및 기출 이미지의 상대경로를 유지하려면 `index.html` 파일 **하나만 따로 옮기지 말고** 전체 폴더를 유지해야 합니다.
+
+이전 버전은 `fetch()`로 JSON 파일을 읽어 `file://`에서 브라우저가 차단할 수 있었습니다. 이 수정 버전은 `data/catalog.js`와 각 교수님별 `.js` 데이터 미러를 로드하여 이 제약을 피했습니다. 웹에서 사용할 때도 작동합니다. 로컬 파일에서의 학습 기록 보존은 브라우저별 정책에 따라 차이가 있으므로, 장기적으로는 GitHub Pages 배포 주소에서 같은 브라우저로 공부하는 것을 권장합니다.
+
+문제가 나타나지 않으면 ZIP을 다시 완전히 압축 해제하고, `data/catalog.js`와 `data/professors/park-murim.js`가 남아 있는지 확인하세요. 파일이 사라졌거나 브라우저 보안 정책이 스크립트 실행 자체를 제한하는 환경이라면, GitHub Pages 배포 주소를 사용하거나 로컬 서버에서 실행할 수 있습니다.
+
+선택 사항: 로컬 서버로 실행하려면 프로젝트 폴더에서 `python -m http.server 8000` 후 `http://localhost:8000`에 접속하세요.
+
+## 폴더 구조
+
+```text
+heon-archive/
+├── index.html                       # 앱 시작
+├── styles.css                       # 네이비/라이트 UI
+├── app.js                           # 문제풀이, 진행률, 기록, Review, 강의안 확대
+├── data/
+│   ├── catalog.json                 # 과목 및 교수님 매핑의 원본
+│   ├── catalog.js                   # 더블클릭 로컬 실행용 자동 생성 데이터
+│   └── professors/
+│       ├── park-murim.json          # 박무림 교수님 문제 73개 + 검증/검토 기록
+│       └── park-murim.js            # 로컬 실행용 자동 생성 미러
+├── assets/
+│   ├── questions/
+│   │   └── park-murim/              # PDF 기출 원본 문제별 WebP 캡처
+│   └── evidence/
+│       └── park-murim/              # 실제 강의안 페이지 WebP 캡처
+├── tools/
+│   ├── sync_offline_data.py         # 교수님 추가 후 JS 미러 자동 생성
+│   └── smoke_test.py                # 테스트 환경용 기본 동작 검사
+├── AUDIT.md                         # 데이터 판독·근거 채택 및 미확정 현황
+└── README.md
+```
+
+## 다른 교수님 추가 방법
+
+기존 HTML/JS를 수정할 필요가 없습니다.
+
+1. `data/professors/새교수님-id.json`을 만듭니다. 현재 `park-murim.json`을 예시로 사용할 수 있습니다.
+2. 해당 교수님의 문제/근거 캡처를 `assets/questions/새교수님-id/` 및 `assets/evidence/새교수님-id/`에 추가합니다.
+3. `data/catalog.json`에서 해당 **과목**의 `professors` 배열에 새 항목을 등록합니다.
+4. **`python tools/sync_offline_data.py`**를 한 번 실행해 로컬 실행용 `data/catalog.js`와 `data/professors/새교수님-id.js`를 생성합니다. 두 `.js` 파일도 GitHub에 업로드합니다. **HTML·app.js 수정은 필요 없습니다.**
+
+예시:
+
+```json
+{
+  "id": "new-professor-id",
+  "name": "예시이름",
+  "data": "data/professors/new-professor-id.json"
+}
+```
+
+교수님 데이터 파일의 필수 구조:
+
+```json
+{
+  "schemaVersion": 1,
+  "professor": {"id":"new-professor-id", "name":"예시이름", "subjectId":"hematology-1", "description":"분야"},
+  "questions": [
+    {
+      "id":"new-professor-id:22-1",
+      "label":"22-1", "year":22, "number":1,
+      "professor":"new-professor-id", "subject":"hematology-1",
+      "prompt":"출제된 문제 원문 그대로",
+      "choices":[
+        {"number":1,"text":"1번 실제 선지"},
+        {"number":2,"text":"2번 실제 선지"}
+      ],
+      "answer":null, "explanation":"",
+      "validation":{"stage":"review_required","check1":"not_evaluated","check2":"not_evaluated"},
+      "evidence":[], "candidateEvidence":[],
+      "source":{"name":"원본.pdf","page":1,"image":"assets/questions/new-professor-id/22-1.webp"}
+    }
+  ]
+}
+```
+
+검증 근거가 확인된 문항은 `answer`를 번호 또는 (복수 정답) 번호 배열로 지정하고, `validation.stage`를 `accepted`로 설정합니다. 각 `evidence` 항목에는 `file`(실제 강의안 파일명), `page`(실제 PDF 페이지 번호, **1부터 시작**), `image`(해당 원본 캡처 상대경로), `quote`(확인한 단서)를 기록합니다. 실제 검증하지 않고 `accepted`로 표시하지 마세요.
+
+주관식 문항에는 `type:"short"`, `choices:[]`, `answer:"정답 문장"`을 사용합니다.
+
+### 문제 ID를 절대 변경/재사용하지 마세요
+
+권장 형식: `교수님-id:학번-원문문제번호`.
+
+- `park-murim:17-1`과 `new-professor-id:17-1`은 **서로 다른 문제**입니다.
+- **교수님 ID와 문제 고유 ID를 고정**하면 새 문제와 다른 교수님을 추가해도 기존 기록이 보존됩니다.
+- 기존 문제를 삭제해도 기록은 브라우저에 남고, 사이트에서는 표시되지 않습니다. 나중에 같은 ID를 완전히 다른 문제에 재사용하면 안 됩니다.
+- 정답/해설 데이터 추가 또는 검증 상태 갱신은 과거 사용자가 제출한 선택 답안과 북마크를 지우지 않습니다. 채점은 최신 확정 정답을 기준으로 다시 계산합니다.
+
+## 로컬 학습 기록 정책
+
+`localStorage`의 한 키 `heon.archive.learning.v1`에 문제 ID별 상태를 저장합니다.
+
+- 선택한 선택지, 주관식 답안, 제출 여부, 제출 시각
+- 북마크, 마지막으로 방문한 문제, 마지막 교수님
+- 사용자 지정 정답, 사용자 선택 복수정답 설정
+- 테마와 해설 패널 너비
+
+선택지 클릭/답안 입력/북마크/정답 직접 지정 시 즉시 브라우저에 기록합니다. **선택만 하고 제출하지 않은 문제는 완료로 계산하지 않습니다.** 사용자의 직접 지정 정답은 해당 브라우저에서 공식 정답보다 우선하지만, 다른 기기나 브라우저로 자동 동기화되지 않습니다. 사생활 보호 모드, 사이트 데이터 삭제 또는 브라우저 정책에 따라 기록이 사라질 수 있습니다. 초기화 버튼은 확인창을 거칩니다.
+
+## 근거 검증과 제한
+
+`AUDIT.md`에 근거 채택 56문항과 검토 필요 17문항의 범위를 기록했습니다.
+
+- **1차:** 실제 강의안 PDF 페이지의 검색된 원문 표현과 캡처를 대조합니다.
+- **2차:** 문제의 모든 선지를 강의안에서 설명 가능한지 판단하여 단일정답 여부를 재검토합니다.
+- 서로 다른 시대의 치료 기준, 강의안에 없는 특정 표적 도메인 정보, 복수의 오답 가능성이 있으면 검증을 **기각**하고 `answer:null`로 둡니다.
+- 2025년 강의안으로 과거 기출을 설명하는 부분은 최신 임상지침 전체를 대변하지 않으며, 해당 학번 시험 출제 시기의 의도와 다를 수 있습니다.
+- PDF 일부 문항에는 두 단 편집·한 페이지에 여러 연도 변형이 있고 필기 및 OCR 오류가 있습니다. 원본 이미지를 반드시 함께 확인하세요.
+- 최초 전사한 텍스트의 모든 글자가 별도 인적 교정을 거쳤다고 주장하지 않습니다. 자동 추출 문항은 `transcriptionStatus`에 이를 표시했습니다. 분리된 21학번 스캔 문항도 최종 전사 검토 표식을 남겼습니다.
+
+이 프로젝트는 시험 복습 도구이며 임상적 의사결정 도구로 사용하지 마세요.
