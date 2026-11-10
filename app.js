@@ -23,6 +23,13 @@
   let mobileMenuOpen = false;
   let restoringReview = false;
   let toastTimer = null;
+  // Search is a UI preference only: it never alters or overwrites saved answers.
+  let searchText = '';
+  let searchOpen = false;
+  let searchLoading = false;
+  let searchIndexLoaded = false;
+  let searchIndexPromise = null;
+  let searchLoadErrors = 0;
 
   function readState() {
     try {
@@ -157,6 +164,92 @@
     saveState();render();window.scrollTo({top:0,behavior:'instant'});
   }
   function selectYear(y) {infoExpanded=false;currentYear=y;filter='all';currentId=scopedQuestions()[0]?.id||null;view='quiz';render();}
+  function searchEntries() {
+    const query=searchText.trim();
+    if(!query || !catalog)return [];
+    const terms=query.toLocaleLowerCase().split(/\s+/).filter(Boolean);
+    const compressed=normalizeText(query);
+    const found=[];
+    for(const sub of catalog.subjects)for(const meta of sub.professors){
+      const data=professorCache.get(meta.id);
+      if(!data)continue;
+      for(const q of data.questions){
+        const choices=(q.choices||[]).map(c=>c.text).join(' ');
+        const label=String(q.label||'').toLocaleLowerCase();
+        const prompt=String(q.prompt||'');
+        const material=[label,meta.name,sub.name,prompt,choices].join(' ').toLocaleLowerCase();
+        const simple=normalizeText(material);
+        const fullMatch=terms.every(term=>material.includes(term)||simple.includes(normalizeText(term)));
+        if(!fullMatch && !(compressed && simple.includes(compressed)))continue;
+        const numberExact=label===query.toLocaleLowerCase();
+        const numberStart=label.startsWith(query.toLocaleLowerCase());
+        const promptMatch=normalizeText(prompt).includes(compressed);
+        const choiceMatch=normalizeText(choices).includes(compressed);
+        const score=(numberExact?1200:0)+(numberStart?600:0)+(promptMatch?120:0)+(choiceMatch?80:0)+
+          (meta.id===currentProfessor?.professor.id?25:0);
+        found.push({q,meta,score});
+      }
+    }
+    return found.sort((a,b)=>b.score-a.score||(a.q.year-b.q.year)||(a.q.number-b.q.number)).slice(0,30);
+  }
+  function searchSuggestionsHTML(){
+    if(!searchText.trim()) return '<div class="search-message"><strong>문항 빠른 검색</strong><p>문제 번호(예: 17-8), 지문 키워드 또는 선택지·약물명을 입력하세요. 등록된 모든 교수님에서 찾습니다.</p></div>';
+    const hits=searchEntries();
+    const pending=searchLoading?'<span class="fine"> · 다른 교수님 자료 검색 중…</span>':'';
+    const header=`<div class="search-results-head">검색 결과 ${hits.length>=30?'30개 이상':hits.length+'개'}${pending}</div>`;
+    const rows=hits.slice(0,12).map(({q,meta})=>{
+      const preview=String(q.prompt||q.choices?.map(c=>c.text).join(' / ')||'원본 이미지 참고').replace(/\s+/g,' ').slice(0,92);
+      return `<button class="search-result" type="button" role="option" data-action="search-result" data-professor="${esc(meta.id)}" data-id="${esc(q.id)}"><span class="search-result-top"><strong>${esc(q.label)}</strong><span>${esc(meta.name)} 교수님 · ${esc(q.year)}학번</span></span><span class="search-result-text">${esc(preview)}</span></button>`;
+    }).join('');
+    if(!hits.length) return header+`<div class="search-message"><strong>${searchLoading?'검색 범위를 확장하고 있습니다':'일치하는 문제가 없습니다'}</strong><p>${searchLoading?'등록 교수님 데이터를 불러오는 중입니다.':'번호나 다른 키워드로 다시 검색해 보세요.'}${searchLoadErrors?' 일부 교수님 파일을 읽지 못했습니다.':''}</p></div>`;
+    return header+rows+(hits.length>12?`<div class="search-foot">상위 12개 결과를 표시 중입니다. 검색어를 더 구체적으로 입력하세요.</div>`:'');
+  }
+  function updateSearchSuggestions(){
+    const panel=root.querySelector('#search-suggestions');
+    const field=root.querySelector('#global-search-input');
+    if(!panel)return;
+    panel.hidden=!searchOpen;
+    panel.innerHTML=searchOpen?searchSuggestionsHTML():'';
+    field?.setAttribute('aria-expanded',String(searchOpen));
+  }
+  function loadSearchIndex(){
+    if(searchIndexPromise || !catalog)return searchIndexPromise;
+    searchLoading=true;
+    updateSearchSuggestions();
+    const ids=catalog.subjects.flatMap(s=>s.professors.map(p=>p.id));
+    searchIndexPromise=Promise.allSettled(ids.map(id=>loadProfessor(id))).then(results=>{
+      searchLoadErrors=results.filter(r=>r.status==='rejected').length;
+      searchIndexLoaded=true;
+    }).finally(()=>{searchLoading=false;updateSearchSuggestions();});
+    return searchIndexPromise;
+  }
+  async function openSearchQuestion(profId,qId){
+    try{
+      const prof=await loadProfessor(profId);
+      if(!prof.questions.some(q=>q.id===qId)) throw Error('검색 결과의 문항이 없습니다.');
+      currentProfessor=prof;
+      selectedSubject=profMeta(profId).subjectId;
+      currentYear='all';filter='all';view='quiz';infoExpanded=false;restoringReview=false;
+      currentId=qId;state.lastProfessor=profId;state.lastVisited[profId]=qId;
+      searchText='';searchOpen=false;mobileMenuOpen=false;
+      saveState();render();window.scrollTo({top:0,behavior:'instant'});
+    }catch(err){toast('검색한 문제를 열지 못했습니다: '+err.message);}
+  }
+  function resetProfessorProgress(){
+    if(!currentProfessor)return;
+    const name=currentProfessor.professor.name;
+    const profId=currentProfessor.professor.id;
+    if(!confirm(`${name} 교수님의 학습 기록만 초기화할까요?\n\n제출 답안, 풀이 진행률, 북마크, 직접 지정한 정답, 마지막 문제 위치가 초기화됩니다.\n다른 교수님의 기록은 그대로 유지됩니다.\n(문제 데이터 자체의 사용자 확정 정답은 변경되지 않습니다.)`))return;
+    const ids=new Set(questions().map(q=>q.id));
+    for(const group of [state.records,state.bookmarks,state.customAnswers,state.customMulti]){
+      for(const id of ids)delete group[id];
+    }
+    delete state.lastVisited[profId];
+    currentYear='all';filter='all';reviewFilter='all';view='quiz';
+    currentId=questions()[0]?.id||null;infoExpanded=false;restoringReview=false;
+    saveState();render();window.scrollTo({top:0,behavior:'instant'});
+    toast(`${name} 교수님의 학습 기록만 초기화했습니다.`);
+  }
   function render() {
     if(!catalog)return;
     theme();
@@ -173,8 +266,18 @@
         <div class="side-bottom"><strong>STUDY, REMEMBER, REPEAT.</strong><p>답안을 선택하는 즉시 이 브라우저에 저장됩니다. 별도 계정이나 서버는 필요하지 않습니다.</p></div>
       </aside>
       <main class="workspace">
-        <header class="topbar"><div class="breadcrumbs"><button class="icon-btn mobile-menu" data-action="mobile-menu" aria-label="메뉴 열기">☰</button><button data-action="home">ARCHIVE</button><span>/</span><strong>${view==='home'?'Dashboard':esc(currSubject?.name||'')}${currentProfessor&&view!=='home'?` · ${esc(currentProfessor.professor.name)}`:''}</strong>${view==='review'?'<span>/ Review</span>':''}</div>
-          <div class="header-actions"><span class="pill ok" title="기록은 현재 브라우저에 자동 저장됩니다">● <span class="desktop-label">자동 저장</span></span><button class="icon-btn" data-action="theme" title="라이트 / 다크모드 변경">${state.prefs.theme==='dark'?'☀':'☾'} <span class="desktop-label">테마</span></button><button class="icon-btn danger" data-action="reset" title="학습 기록 초기화">↺ <span class="desktop-label">기록 초기화</span></button></div>
+        <header class="topbar">
+          <div class="topbar-navigation"><button class="icon-btn mobile-menu" data-action="mobile-menu" aria-label="과목 메뉴 열기">☰</button>
+            <nav class="quick-nav" aria-label="빠른 메뉴">
+              <button data-action="nav-quiz" class="nav-tab ${view==='quiz'?'active':''}">문제 풀이</button>
+              <button data-action="home" class="nav-tab ${view==='home'?'active':''}">문제집</button>
+              <button data-action="nav-wrong" class="nav-tab ${view==='review'&&reviewFilter==='wrong'?'active':''}">오답 노트</button>
+              <button data-action="nav-stats" class="nav-tab ${view==='review'&&reviewFilter!=='wrong'?'active':''}">학습 통계</button>
+            </nav>
+          </div>
+          <div class="topbar-tools"><div class="global-search" role="search"><label class="search-shell" for="global-search-input"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="global-search-input" autocomplete="off" spellcheck="false" value="${esc(searchText)}" placeholder="문제 번호, 키워드, 약물명 검색..." aria-label="모든 교수님 문제 검색" aria-controls="search-suggestions" aria-expanded="${searchOpen}"/><span class="search-shortcut" aria-hidden="true">/</span></label><div id="search-suggestions" class="search-suggestions" role="listbox" ${searchOpen?'':'hidden'}>${searchOpen?searchSuggestionsHTML():''}</div></div>
+            <div class="header-actions"><span class="autosave-indicator" title="기록은 브라우저에 자동 저장됩니다"><span class="autosave-dot"></span><span class="desktop-label">자동 저장</span></span><button class="icon-btn theme-btn" data-action="theme" title="라이트 / 다크모드 변경" aria-label="테마 전환">${state.prefs.theme==='dark'?'☀':'☾'}</button></div>
+          </div>
         </header>
         <div class="content">${view==='home'?renderHome():view==='review'?renderReview():renderQuiz()}</div>
       </main>
@@ -193,16 +296,21 @@
     const data=professorCache.get(p.id);const list=data?.questions||[];const s=stats(list);
     return `<button class="course-card" data-action="professor" data-id="${esc(p.id)}"><div class="course-big-icon">${esc(p.name.slice(0,1))}</div><div class="course-main"><h3>${esc(p.name)} 교수님 ${statusDot(stage(list))}</h3><p>${list.length}문제 · ${list.filter(q=>q.answer===null).length}문항 정답 검토 필요</p><div class="progress-track"><div class="progress-fill ${s.total&&s.completed===s.total?'done':''}" style="width:${s.total?s.completed/s.total*100:0}%"></div></div></div><div class="course-right"><strong>${s.total?Math.round(s.completed/s.total*100):0}%</strong>${s.completed} / ${s.total} 완료</div></button>`;
   }
-  function renderStats(s) {
-    const items=[['전체 문제',s.total],['풀이 완료',s.completed],['정답',s.correct],['오답',s.wrong],['채점 보류',s.pending]];
-    return `<div class="stat-grid">${items.map(([label,num])=>`<div class="stat"><div class="stat-label">${label}</div><div class="stat-number">${num}</div></div>`).join('')}</div>`;
+  function renderCompactStats(s){
+    const items=[['전체 문제',s.total,'▤'],['풀이 완료',s.completed,'◉'],['정답',s.correct,'✓'],['오답',s.wrong,'✕'],['채점 보류',s.pending,'◷']];
+    const percentage=s.total?Math.round(s.completed/s.total*100):0;
+    return `<div class="overview-strip">
+      <div class="mini-stat-group">${items.map(([label,num,icon],i)=>`<div class="mini-stat mini-stat-${i}"><span class="mini-icon" aria-hidden="true">${icon}</span><span class="mini-label">${label}</span><strong>${num}</strong></div>`).join('')}</div>
+      <div class="mini-progress" aria-label="전체 진행률 ${percentage}%"><span>전체 진행률</span><div class="progress-track"><div class="progress-fill ${s.total&&s.completed===s.total?'done':''}" style="width:${percentage}%"></div></div><b>${percentage}%</b></div>
+      <button class="prof-reset" data-action="reset-professor" title="${esc(currentProfessor.professor.name)} 교수님의 학습 기록만 초기화합니다"><span aria-hidden="true">↺</span><span>${esc(currentProfessor.professor.name)} 교수님 기록 초기화<small>다른 교수님 기록은 유지</small></span></button>
+    </div>`;
   }
   function renderCourseHeader() {
     const l=questions();const s=stats(l);const pending=l.filter(q=>effectiveAnswer(q)==null).length;
     const verified=l.filter(q=>q.validation?.stage==='accepted').length;
     const manual=l.filter(q=>q.validation?.stage==='user_confirmed').length;
-    return `<div class="course-header"><div><div class="eyebrow">HEMATOLOGY · EXAM LIBRARY</div><h1>${esc(currentProfessor.professor.name)} 교수님</h1><p>${esc(currentProfessor.professor.description||'교수님별 기출 문제')} &nbsp; / &nbsp; 연도별로 풀거나 전체 문항을 순서대로 풀 수 있습니다.</p></div>
-      <div class="header-pills"><span class="pill blue">${s.total}문제</span><span class="pill ok">근거 검증 ${verified}건</span>${manual?`<span class="pill blue">사용자 확정 ${manual}건</span>`:''}<span class="pill warn">미확정 ${pending}건</span><button class="button secondary small" data-action="open-review">Review ${s.completed===s.total&&s.total?'✓':'↗'}</button></div></div>`;
+    return `<div class="course-header compact-course-header"><div class="course-identity"><div class="eyebrow">${esc(({ 'hematology-1':'HEMATOLOGY I', 'hematology-2':'HEMATOLOGY II', 'maternal-newborn':'MATERNAL · NEWBORN', 'growth-aging':'GROWTH · AGING' })[currentProfessor.professor.subjectId]||'MEDICAL')} · EXAM LIBRARY</div><div class="course-title-line"><h1>${esc(currentProfessor.professor.name)} 교수님</h1><p>${esc(currentProfessor.professor.description||'교수님별 기출 문제')} &nbsp; / &nbsp; 연도별 또는 전체 문항 풀이</p></div></div>
+      <div class="header-pills"><span class="pill blue">${s.total}문제</span><span class="pill ok">근거 검증 ${verified}건</span>${manual?`<span class="pill blue">사용자 확정 ${manual}건</span>`:''}<span class="pill warn">미확정 ${pending}건</span><button class="button secondary small" data-action="open-review">Review ↗</button></div></div>`;
   }
   function years() {return [...new Set(questions().map(q=>q.year))].sort((a,b)=>a-b);}
   function renderFilterbar() {
@@ -213,16 +321,16 @@
   function renderQuiz() {
     if(!currentProfessor)return `<div class="empty">교수님을 선택해주세요.</div>`;
     const l=questions();const qs=scopedQuestions();const q=currentQuestion();const s=stats(l);
-    return `${renderCourseHeader()}${renderStats(s)}<div class="global-progress"><span>전체 진행률</span><div class="progress-track"><div class="progress-fill ${s.total&&s.completed===s.total?'done':''}" style="width:${s.total?s.completed/s.total*100:0}%"></div></div><b>${s.total?Math.round(s.completed/s.total*100):0}%</b></div>${renderFilterbar()}
+    return `${renderCourseHeader()}${renderCompactStats(s)}${renderFilterbar()}
     ${q?`<div class="exam-layout ${infoExpanded?'':'collapsed'}">${renderQuestionPanel(q,qs)}<div class="divider-grip" id="resizer" title="드래그하여 해설 너비 조절" aria-hidden="true"></div>${infoExpanded?renderEvidencePanel(q):renderEvidenceClosed()}</div>`:`<div class="empty"><p>조건에 맞는 문제가 없습니다.</p><button class="button secondary small" data-action="clear-filter">전체 문제로 돌아가기</button></div>`}
     <p class="help-text">정답 검토 필요 문항은 사용자가 정답을 지정하기 전까지 정오답 통계에 포함되지 않습니다. 학습 기록과 북마크는 이 브라우저에만 저장됩니다.</p>`;
   }
   function renderEvidenceClosed() {
     return `<aside class="evidence-placeholder" aria-label="해설창 닫힘">
-      <div class="closed-evidence-icon" aria-hidden="true">⌁</div>
+      <div class="closed-evidence-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="5.5" y="10" width="13" height="10.5" rx="2"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10"/></svg></div>
       <div class="evidence-kicker">EXPLANATION LOCKED</div>
-      <h3>먼저 문제를 풀어보세요.</h3>
-      <p>답안을 제출하면 정답, 해설, 검증된 강의안 원본이 여기에 자동으로 열립니다.</p>
+      <h3>아직 문제를 풀지 않았습니다.</h3>
+      <p>답안을 제출하면 정답과 해설, 검증된 강의안 원본을 이곳에서 확인할 수 있습니다.</p>
       <button class="button ghost small" data-action="toggle-evidence">해설 직접 열기 ↗</button>
     </aside>`;
   }
@@ -238,7 +346,7 @@
       q.choices?.length?`<div class="options">${q.choices.map(ch=>{const selected=checked.includes(ch.number);const correct=submission(q)&&answer!=null&&answers.includes(ch.number);const wrong=submission(q)&&selected&&!answers.includes(ch.number)&&answer!=null;return `<button class="option ${selected?'selected':''} ${correct?'correct-choice':''} ${wrong?'wrong-choice':''}" data-action="choose" data-number="${ch.number}" aria-pressed="${selected}"><span class="option-letter">${circles[ch.number-1]||ch.number}</span><span class="option-text">${esc(ch.text)}</span>${correct?'<span class="option-flag">정답</span>':wrong?'<span class="option-flag">선택 오답</span>':''}</button>`}).join('')}</div>${maxSelection>1?`<p class="help-text">이 문항은 정답 ${maxSelection}개를 선택합니다.</p>`:''}`:
       `<p class="review-note">텍스트 선택지의 판독이 불완전합니다. 아래 원본에서 선택지 번호와 문장을 확인한 후 답 번호를 선택하세요.</p><div class="options">${circles.map((v,i)=>`<button class="option ${checked.includes(i+1)?'selected':''} ${submission(q)&&answer!=null&&answers.includes(i+1)?'correct-choice':''}" data-action="choose" data-number="${i+1}"><span class="option-letter">${v}</span><span class="option-text">${i+1}번 선택지 — 원본 캡처 확인</span></button>`).join('')}</div>`}
       ${renderResult(q,grading)}
-      <details class="source-card" ${q.showOriginalByDefault?'open':''}><summary>기출 원본 이미지 보기 · ${esc(q.source.name)} · PDF ${q.source.page}페이지</summary><img class="source-image" src="${esc(q.source.image)}" alt="${esc(q.label)} 기출 원본 캡처" loading="lazy" data-action="zoom" data-caption="${esc(q.source.name)} · PDF ${q.source.page}페이지"><p class="source-warning">기출 원본에는 기존 필기와 정답 표기가 포함되어 있을 수 있습니다. 최종 채점 기준은 강의안 검증 정답 또는 명시적으로 사용자 확정된 정답입니다.</p>${q.transcriptionWarning?`<p class="source-warning">${esc(q.transcriptionWarning)}</p>`:''}</details>
+      <details class="source-card"><summary>기출 원본 이미지 보기 · ${esc(q.source.name)} · PDF ${q.source.page}페이지</summary><img class="source-image" src="${esc(q.source.image)}" alt="${esc(q.label)} 기출 원본 캡처" loading="lazy" data-action="zoom" data-caption="${esc(q.source.name)} · PDF ${q.source.page}페이지"><p class="source-warning">기출 원본에는 기존 필기와 정답 표기가 포함되어 있을 수 있습니다. 최종 채점 기준은 강의안 검증 정답 또는 명시적으로 사용자 확정된 정답입니다.</p>${q.transcriptionWarning?`<p class="source-warning">${esc(q.transcriptionWarning)}</p>`:''}</details>
       <div class="question-footer"><div class="quiz-actions"><div class="row"><button class="button secondary small" data-action="step" data-direction="-1" ${curr<=0?'disabled':''}>← 이전</button><button class="button secondary small" data-action="step" data-direction="1" ${curr===scope.length-1?'disabled':''}>다음 →</button></div><div class="row">${restoringReview?'<button class="button ghost small" data-action="back-review">← Review</button>':''}<button class="button ${r.submitted?'secondary':''}" data-action="submit" ${q.type==='short'?(!String(r.selected||'').trim()?'disabled':''):(!checked.length?'disabled':'')}>${r.submitted?'다시 제출':'답안 제출'} &nbsp; ✓</button></div></div>${saysAllCompleted()?`<div class="result-box correct"><b>전체 문항 풀이가 완료되었습니다.</b><p>정답 검토 필요 문항을 제외한 결과는 Review에서 확인할 수 있습니다.</p><button class="button small review-button" data-action="open-review" style="margin-top:11px">최종 Review 열기 →</button></div>`:''}</div>
     </section>`;
   }
@@ -297,10 +405,21 @@
       case 'subject-home':selectedSubject=btn.dataset.id;currentProfessor=null;view='home';render();window.scrollTo(0,0);break;
       case 'professor':await selectProfessor(btn.dataset.id);break;
       case 'theme':state.prefs.theme=state.prefs.theme==='dark'?'light':'dark';saveState();render();break;
-      case 'reset':{
-        const sure=confirm('모든 교수님의 답안, 채점 결과, 북마크, 사용자 지정 정답, 진행 상황을 이 브라우저에서 초기화합니다. 계속할까요?');
-        if(sure){state.records={};state.bookmarks={};state.customAnswers={};state.customMulti={};state.lastVisited={};saveState();currentId=scopedQuestions()[0]?.id||null;render();toast('현재 브라우저의 학습 기록을 초기화했습니다.');}
-      }break;
+      case 'reset-professor':resetProfessorProgress();break;
+      case 'nav-quiz':{
+        if(!currentProfessor){const first=catalog.subjects.find(s=>s.professors.length)?.professors[0];if(first)await selectProfessor(first.id);}
+        else{view='quiz';reviewFilter='all';restoringReview=false;infoExpanded=false;render();window.scrollTo(0,0);}
+        break;
+      }
+      case 'nav-wrong':{
+        if(!currentProfessor){toast('오답을 보려면 먼저 교수님을 선택해주세요.');break;}
+        reviewFilter='wrong';view='review';restoringReview=false;render();window.scrollTo(0,0);break;
+      }
+      case 'nav-stats':{
+        if(!currentProfessor){toast('학습 통계를 보려면 먼저 교수님을 선택해주세요.');break;}
+        reviewFilter='all';view='review';restoringReview=false;render();window.scrollTo(0,0);break;
+      }
+      case 'search-result':await openSearchQuestion(btn.dataset.professor,btn.dataset.id);break;
       case 'year':selectYear(btn.dataset.year);break;
       case 'filter':infoExpanded=false;filter=filter===btn.dataset.filter?'all':btn.dataset.filter;currentId=scopedQuestions()[0]?.id||null;render();break;
       case 'clear-filter':infoExpanded=false;filter='all';currentYear='all';currentId=scopedQuestions()[0]?.id||null;render();break;
@@ -336,7 +455,7 @@
       case 'zoom':openModal(btn.getAttribute('src'),btn.dataset.caption||btn.alt);break;
       case 'open-review':reviewFilter='all';view='review';restoringReview=false;render();window.scrollTo(0,0);break;
       case 'review-filter':reviewFilter=btn.dataset.filter;render();break;
-      case 'review-question':restoringReview=true;goQuestion(btn.dataset.id);restoringReview=true;render();break;
+      case 'review-question':goQuestion(btn.dataset.id);restoringReview=true;infoExpanded=true;render();break;
       case 'back-review':view='review';restoringReview=false;render();break;
       case 'back-quiz':view='quiz';restoringReview=false;render();break;
       case 'custom-answer':{
@@ -369,12 +488,42 @@
   });
   root.addEventListener('input', e=>{
     const el=e.target;
+    if(el.id==='global-search-input'){
+      searchText=el.value;searchOpen=true;updateSearchSuggestions();loadSearchIndex();return;
+    }
     if(el.id==='short-answer'){
       const q=currentQuestion();if(!q)return;
       const r={...record(q),selected:el.value,submitted:false,updatedAt:new Date().toISOString()};
       state.records[q.id]=r;saveState();
       if(infoExpanded){infoExpanded=false;render();return;}
       const submitBtn=root.querySelector('[data-action=submit]');if(submitBtn)submitBtn.disabled=!el.value.trim();
+    }
+  });
+  root.addEventListener('focusin',e=>{
+    if(e.target?.id==='global-search-input'){
+      searchOpen=true;updateSearchSuggestions();loadSearchIndex();
+    }
+  });
+  root.addEventListener('keydown',e=>{
+    if(e.target?.id==='global-search-input'){
+      if(e.key==='Escape'){e.preventDefault();searchOpen=false;updateSearchSuggestions();e.target.blur();}
+      if(e.key==='ArrowDown'){
+        const first=root.querySelector('.search-result');if(first){e.preventDefault();first.focus();}
+      }
+      if(e.key==='Enter'){
+        const first=searchEntries()[0];if(first){e.preventDefault();openSearchQuestion(first.meta.id,first.q.id);}
+      }
+    }
+    if(e.target?.matches('.search-result')&&e.key==='Escape'){
+      e.preventDefault();searchOpen=false;updateSearchSuggestions();root.querySelector('#global-search-input')?.focus();
+    }
+  });
+  document.addEventListener('pointerdown',e=>{
+    if(searchOpen&&!e.target.closest('.global-search')){searchOpen=false;updateSearchSuggestions();}
+  });
+  document.addEventListener('keydown',e=>{
+    if(e.key==='/'&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&!['INPUT','TEXTAREA'].includes(e.target?.tagName)&&!e.target?.isContentEditable){
+      const input=root.querySelector('#global-search-input');if(input){e.preventDefault();input.focus();}
     }
   });
   // Pointer-based resizable evidence panel. Persists its width in the same local record.
