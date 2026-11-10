@@ -1,0 +1,31 @@
+{
+  "siteName": "HEON ARCHIVE",
+  "subjects": [
+    {
+      "id": "hematology-1",
+      "name": "혈액과 종양 1차",
+      "professors": [
+        {
+          "id": "park-murim",
+          "name": "박무림",
+          "data": "data/professors/park-murim.json"
+        }
+      ]
+    },
+    {
+      "id": "hematology-2",
+      "name": "혈액과 종양 2차",
+      "professors": []
+    },
+    {
+      "id": "maternal-newborn",
+      "name": "모성과 신생아",
+      "professors": []
+    },
+    {
+      "id": "growth-aging",
+      "name": "성장과 노화",
+      "professors": []
+    }
+  ]
+}
