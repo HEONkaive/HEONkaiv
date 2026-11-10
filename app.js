@@ -40,6 +40,15 @@
           bookmarks:raw.bookmarks || {},customAnswers:raw.customAnswers || {},
           customMulti:raw.customMulti || {},lastVisited:raw.lastVisited || {},
           prefs:{...emptyState().prefs,...(raw.prefs||{})}};
+        // v6 answer correction takes precedence over old browser-local guesses once.
+        // Preserve all submitted choices/bookmarks; later user edits remain possible.
+        if (!state.prefs.v6_park_18_39_confirmed) {
+          delete state.customAnswers['park-murim:18-39'];
+          delete state.customMulti['park-murim:18-39'];
+          state.prefs.v6_park_18_39_confirmed = true;
+          try { localStorage.setItem(KEY, JSON.stringify(state)); }
+          catch (err) { console.warn('18-39 정답 기준 마이그레이션을 저장하지 못했습니다.',err); }
+        }
       }
     } catch (err) { console.warn('기록을 읽지 못했습니다.',err); }
   }
@@ -274,19 +283,10 @@
     theme();
     const meta=currentProfessor?profMeta(currentProfessor.professor.id):null;
     const currSubject=subjectById(selectedSubject);
-    root.innerHTML=`<div class="site ${view==='quiz'?'quiz-mode':''}">
-      <aside class="side ${mobileMenuOpen?'open':''}" id="sidebar">
-        <div class="brand" data-action="home" role="button" tabindex="0"><div class="logo-mark">H<span>.</span></div><div><div class="brand-name">HEON ARCHIVE</div><div class="brand-sub">MEDICAL LEARNING</div></div></div>
-        <nav aria-label="과목 및 교수님 메뉴"><div class="side-kicker">YOUR LIBRARY</div>${catalog.subjects.map((s,i)=>{
-          const sel=selectedSubject===s.id;return `<div class="subject-wrap">
-            <button type="button" class="subject-btn ${sel?'active':''}" data-action="subject" data-id="${esc(s.id)}" aria-expanded="${sel}"><span class="subject-ico">${String(i+1).padStart(2,'0')}</span><span class="subject-name">${esc(s.name)}</span><span class="chev">${sel?'▾':'▸'}</span></button>
-            ${sel?`<div class="prof-list">${s.professors.length?s.professors.map(p=>{const loaded=professorCache.get(p.id);return `<button type="button" class="prof-btn ${currentProfessor&&currentProfessor.professor.id===p.id&&view!=='home'?'active':''}" data-action="professor" data-id="${esc(p.id)}"><span class="prof-avatar">${esc(p.name.slice(0,1))}</span><span class="prof-label">${esc(p.name)} 교수님</span>${statusDot(professorCourseStage(p,loaded))}</button>`}).join(''):`<p class="fine">등록 예정</p>`}</div>`:''}
-          </div>`}).join('')}</nav>
-        <div class="side-bottom"><strong>STUDY, REMEMBER, REPEAT.</strong><p>답안을 선택하는 즉시 이 브라우저에 저장됩니다. 별도 계정이나 서버는 필요하지 않습니다.</p></div>
-      </aside>
+    root.innerHTML=`<div class="site ${view==='quiz'?'quiz-mode':view==='home'?'home-mode':'review-mode'}">
       <main class="workspace">
         <header class="topbar">
-          <div class="topbar-navigation"><button class="icon-btn mobile-menu" data-action="mobile-menu" aria-label="과목 메뉴 열기">☰</button>
+          <div class="topbar-navigation"><button class="topbar-brand" data-action="home" aria-label="HEON ARCHIVE 처음 화면"><span class="topbar-mark">H</span><span>HEON <b>ARCHIVE</b></span></button>
             <nav class="quick-nav" aria-label="빠른 메뉴">
               <button data-action="nav-quiz" class="nav-tab ${view==='quiz'?'active':''}">문제 풀이</button>
               <button data-action="home" class="nav-tab ${view==='home'?'active':''}">문제집</button>
@@ -295,7 +295,7 @@
             </nav>
           </div>
           <div class="topbar-tools"><div class="global-search" role="search"><label class="search-shell" for="global-search-input"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="global-search-input" autocomplete="off" spellcheck="false" value="${esc(searchText)}" placeholder="문제 번호, 키워드, 약물명 검색..." aria-label="모든 교수님 문제 검색" aria-controls="search-suggestions" aria-expanded="${searchOpen}"/><span class="search-shortcut" aria-hidden="true">/</span></label><div id="search-suggestions" class="search-suggestions" role="listbox" ${searchOpen?'':'hidden'}>${searchOpen?searchSuggestionsHTML():''}</div></div>
-            <div class="header-actions"><span class="autosave-indicator" title="기록은 브라우저에 자동 저장됩니다"><span class="autosave-dot"></span><span class="desktop-label">자동 저장</span></span><button class="icon-btn theme-btn" data-action="theme" title="라이트 / 다크모드 변경" aria-label="테마 전환">${state.prefs.theme==='dark'?'☀':'☾'}</button></div>
+            <div class="header-actions">${view!=='home'?'<button class="button secondary small return-home" data-action="home" title="과목·교수님 선택 화면으로 돌아가기">← 교수님 선택</button>':''}<span class="autosave-indicator" title="기록은 브라우저에 자동 저장됩니다"><span class="autosave-dot"></span><span class="desktop-label">자동 저장</span></span><button class="icon-btn theme-btn" data-action="theme" title="라이트 / 다크모드 변경" aria-label="테마 전환">${state.prefs.theme==='dark'?'☀':'☾'}</button></div>
           </div>
         </header>
         <div class="content ${view==='quiz'?'quiz-content':''}">${view==='home'?renderHome():view==='review'?renderReview():renderQuiz()}</div>
@@ -311,10 +311,10 @@
   function renderHome() {
     const subs=catalog.subjects;
     const selected=subjectById(selectedSubject);
-    return `<section class="hero"><div class="eyebrow">YOUR PERSONAL STUDY SPACE</div><h1 class="headline">Knowledge, <em>archived.</em><br>Progress, remembered.</h1><p class="subtitle">교수님별 기출문제, 검증된 강의안 근거, 나만의 학습 기록을 한곳에서. 무엇을 공부했는지 기억하는 의학 아카이브.</p>${selected?.professors?.length?`<button class="button hero-btn" data-action="professor" data-id="${esc(selected.professors[0].id)}">이어서 학습하기 &nbsp; →</button>`:''}</section>
+    return `<section class="hero"><div class="eyebrow">YOUR PERSONAL STUDY SPACE</div><h1 class="headline">Knowledge, <em>archived.</em><br>Progress, remembered.</h1><p class="subtitle">교수님별 기출문제, 검증된 강의안 근거, 나만의 학습 기록을 한곳에서. 무엇을 공부했는지 기억하는 의학 아카이브.</p>${selected?.professors?.length?`<button class="button hero-btn" data-action="scroll-courses">교수님 선택하기 &nbsp; ↓</button>`:''}</section>
       <div class="section-head"><h2 class="section-title">Explore subjects</h2><span class="fine">총 ${subs.length}개 과목</span></div>
       <div class="subject-grid">${subs.map((s,i)=>`<button class="subject-card" data-action="subject-home" data-id="${esc(s.id)}"><span class="index">0${i+1} / SUBJECT</span><h3>${esc(s.name)}</h3><p>${s.professors.length?`${s.professors.length}명의 교수님 등록`:'교수님 등록 예정'}</p><span class="arr">↗</span></button>`).join('')}</div>
-      <section style="margin-top:29px"><div class="section-head"><h2 class="section-title">${esc(selected?.name||'')} · 교수님</h2><span class="fine">${selected?.professors.length||0}명</span></div>
+      <section id="professor-picker" style="margin-top:29px"><div class="section-head"><h2 class="section-title">${esc(selected?.name||'')} · 교수님</h2><span class="fine">${selected?.professors.length||0}명</span></div>
         ${selected?.professors.length?`<div class="course-list">${selected.professors.map(p=>courseCard(p)).join('')}</div>`:`<div class="empty">이 과목에 등록된 교수님이 없습니다. 새로운 교수님 데이터 파일을 추가하면 이곳에 표시됩니다.</div>`}</section>`;
   }
   function courseCard(p) {
@@ -349,7 +349,7 @@
     if(!currentProfessor)return `<div class="empty">교수님을 선택해주세요.</div>`;
     const l=questions();const qs=scopedQuestions();const q=currentQuestion();const s=stats(l);
     return `${renderCourseHeader()}${renderCompactStats(s)}${renderFilterbar()}
-    ${q?`<div class="exam-layout ${infoExpanded?'':'collapsed'}">${renderQuestionPanel(q,qs)}<div class="divider-grip" id="resizer" title="드래그하여 해설 너비 조절" aria-hidden="true"></div>${infoExpanded?renderEvidencePanel(q):renderEvidenceClosed()}</div>${renderQuizDock(q,qs)}`:`<div class="empty"><p>조건에 맞는 문제가 없습니다.</p><button class="button secondary small" data-action="clear-filter">전체 문제로 돌아가기</button></div>`}
+    ${q?`<div class="exam-layout">${renderQuestionPanel(q,qs)}<div class="divider-grip fixed-divider" aria-hidden="true"></div>${infoExpanded?renderEvidencePanel(q):renderEvidenceClosed()}</div>${renderQuizDock(q,qs)}`:`<div class="empty"><p>조건에 맞는 문제가 없습니다.</p><button class="button secondary small" data-action="clear-filter">전체 문제로 돌아가기</button></div>`}
     <p class="help-text">정답 검토 필요 문항은 사용자가 정답을 지정하기 전까지 정오답 통계에 포함되지 않습니다. 학습 기록과 북마크는 이 브라우저에만 저장됩니다.</p>`;
   }
   // Separate desktop action dock: navigation and submit stay on screen for long questions.
@@ -441,13 +441,14 @@
     switch(action) {
       case 'mobile-menu':mobileMenuOpen=!mobileMenuOpen;render();break;
       case 'home':view='home';mobileMenuOpen=false;render();window.scrollTo(0,0);break;
+      case 'scroll-courses':root.querySelector('#professor-picker')?.scrollIntoView({behavior:'smooth',block:'start'});break;
       case 'subject':selectedSubject=btn.dataset.id;currentProfessor=null;view='home';mobileMenuOpen=false;render();break;
       case 'subject-home':selectedSubject=btn.dataset.id;currentProfessor=null;view='home';render();window.scrollTo(0,0);break;
       case 'professor':await selectProfessor(btn.dataset.id);break;
       case 'theme':state.prefs.theme=state.prefs.theme==='dark'?'light':'dark';saveState();render();break;
       case 'reset-professor':resetProfessorProgress();break;
       case 'nav-quiz':{
-        if(!currentProfessor){const first=catalog.subjects.find(s=>s.professors.length)?.professors[0];if(first)await selectProfessor(first.id);}
+        if(!currentProfessor){view='home';render();toast('첫 화면에서 과목과 교수님을 선택해주세요.');}
         else{view='quiz';reviewFilter='all';restoringReview=false;infoExpanded=false;render();window.scrollTo(0,0);}
         break;
       }
@@ -599,14 +600,13 @@
     try {
       catalog=window.HEON_ARCHIVE_DATA?.catalog;
       if(!catalog?.subjects?.length)throw Error('data/catalog.js를 불러올 수 없습니다. 압축 해제된 폴더 안의 파일을 모두 보존해주세요.');
-      const id=state.lastProfessor;
-      if(id&&profMeta(id)){
-        try { currentProfessor=await loadProfessor(id);selectedSubject=profMeta(id).subjectId;
-          currentId=questions().find(q=>q.id===state.lastVisited[id])?.id||questions()[0]?.id||null;view='quiz';infoExpanded=false; }
-        catch(err){console.warn(err);view='home';}
-      }else{
-        const first=catalog.subjects.find(s=>s.professors.length)?.professors[0];
-        if(first)await Promise.allSettled(catalog.subjects.find(s=>s.id===selectedSubject).professors.map(p=>loadProfessor(p.id))); // dashboard counts, records isolated
+      // Always start with the course/professor selector. Never discard existing records.
+      // Previously visited question stays in lastVisited and resumes on professor click.
+      view='home'; currentProfessor=null; infoExpanded=false;
+      const chosen=subjectById(selectedSubject) || catalog.subjects.find(s=>s.professors.length);
+      if(chosen) {
+        selectedSubject=chosen.id;
+        await Promise.allSettled(chosen.professors.map(p=>loadProfessor(p.id)));
       }
       render();
     }catch(err){

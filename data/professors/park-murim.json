@@ -1362,7 +1362,7 @@
         },
         {
           "number": 2,
-          "text": "지역간, 기간별 암 발생률을 비교하기 위해서는 연령표준화 발\n강의안에는 없지만\n맞는말인듯하다\n생률을 구해야 한다."
+          "text": "지역간, 기간별 암 발생률을 비교하기 위해서는 연령표준화 발생률을 구해야 한다."
         },
         {
           "number": 3,
@@ -1384,15 +1384,15 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "automatic_unverified",
-      "answer": null,
+      "answer": 5,
       "explanation": "",
       "evidence": [],
       "validation": {
-        "stage": "review_required",
-        "check1": "not_sufficient_or_conflicting",
-        "check2": "rejected"
+        "stage": "user_confirmed",
+        "check1": "source_not_sufficient",
+        "check2": "not_adopted_user_decision"
       },
-      "notes": "2017년 암등록 통계의 추세 판단에 필요한 동일 연도 자료가 2025년 강의안만으로 충분히 확인되지 않았습니다.",
+      "notes": "⑤번은 사용자 요청으로 확정하였습니다. 2017년 통계의 동일 연도 강의안 검증 근거는 충분하지 않으므로 강의안 이중검증 정답으로 표시하지 않습니다.",
       "type": "choice",
       "showOriginalByDefault": false,
       "candidateEvidence": [
@@ -1404,8 +1404,8 @@
           "status": "not_adopted"
         }
       ],
-      "answerSource": "pending_user_decision",
-      "transcriptionWarning": "선지 전사는 원본과 최종 대조가 필요합니다. 아래 원본 이미지에서 문자·숫자를 확인할 수 있습니다."
+      "answerSource": "user_requested_2026-11-11",
+      "transcriptionWarning": "선지 ②에 섞여 있던 선배 필기 문구를 제거하였습니다. 원본 자료는 별도 이미지에 보존되어 있습니다."
     },
     {
       "id": "park-murim:18-41",
