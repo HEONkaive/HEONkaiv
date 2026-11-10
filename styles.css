@@ -303,3 +303,35 @@ html[data-theme=light]{--bg:#f3f6fb;--panel:#fff;--panel2:#f6f9fd;--panel3:#edf3
   .search-suggestions{right:-35px;}
   .home-mode .hero{padding:25px 22px;}
 }
+
+
+/* ============================================================
+   v6.1 FIX · Evidence panel is an independently scrollable column
+   ============================================================
+   Prior v6 used a flex-column for evidence-panel. Its direct children
+   could shrink within the fixed viewport height; evidence-item has
+   overflow:hidden for rounded corners, so slides were visibly clipped
+   and the outer panel did not acquire scroll overflow. A normal block
+   formatting context keeps every slide's natural height and puts the
+   overflow on the explanation panel itself.
+*/
+@media (min-width:1021px) {
+  .quiz-mode .evidence-panel {
+    display: block;
+    min-height: 0;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior-y: contain;
+    scrollbar-width: auto;
+    scrollbar-color: var(--soft) var(--panel2);
+    scrollbar-gutter: stable;
+  }
+  .quiz-mode .evidence-panel::-webkit-scrollbar { width: 11px; }
+  .quiz-mode .evidence-panel::-webkit-scrollbar-track { background: var(--panel2); border-radius: 8px; }
+  .quiz-mode .evidence-panel::-webkit-scrollbar-thumb { background: var(--soft); border: 2px solid var(--panel2); border-radius: 8px; }
+  .quiz-mode .evidence-panel::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+  .quiz-mode .evidence-panel .evidence-item { height: auto; }
+  .quiz-mode .evidence-panel .evidence-item img { height: auto; }
+}
