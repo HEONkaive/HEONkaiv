@@ -2,9 +2,25 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>HEON archive</title>
+    <title>HEON archive - 의대생 아카이브</title>
     <style>
         :root {
+            --bg-color: #0d1117;
+            --sidebar-bg: #161b22;
+            --sidebar-text: #c9d1d9;
+            --sidebar-hover: #21262d;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --border-color: #30363d;
+            --btn-bg: #21262d;
+            --btn-hover: #30363d;
+            --primary-color: #58a6ff;
+            --right-bg: #0d1117;
+            --accent-orange: #f0883e;
+            --badge-green: #238636;
+        }
+
+        [data-theme="light"] {
             --bg-color: #f4f6f9;
             --sidebar-bg: #2c3e50;
             --sidebar-text: #ecf0f1;
@@ -18,148 +34,208 @@
             --right-bg: #f8f9fa;
         }
 
-        [data-theme="dark"] {
-            --bg-color: #121212;
-            --sidebar-bg: #1e1e1e;
-            --sidebar-text: #e0e0e0;
-            --sidebar-hover: #2d2d2d;
-            --card-bg: #1e1e1e;
-            --text-color: #e0e0e0;
-            --border-color: #333333;
-            --btn-bg: #2d2d2d;
-            --btn-hover: #3d3d3d;
-            --primary-color: #2980b9;
-            --right-bg: #181818;
-        }
-
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Malgun Gothic', sans-serif; transition: background 0.3s, color 0.3s; }
         body { display: flex; height: 100vh; background-color: var(--bg-color); color: var(--text-color); overflow: hidden; }
 
-        /* 사이드바 스타일 */
+        /* 사이드바 스타일 (도토리묵 스타일) */
         sidebar { width: 280px; background-color: var(--sidebar-bg); color: var(--sidebar-text); display: flex; flex-direction: column; border-right: 1px solid var(--border-color); }
-        .sidebar-header { padding: 20px; font-size: 1.2em; font-weight: bold; border-bottom: 1px solid var(--sidebar-hover); display: flex; justify-content: space-between; align-items: center; }
+        .sidebar-header { padding: 25px 20px; font-size: 1.2em; font-weight: bold; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; }
         .menu-list { flex: 1; overflow-y: auto; padding: 15px; }
-        .subject-item { margin-bottom: 10px; }
-        .subject-btn { width: 100%; padding: 12px 15px; text-align: left; background: none; border: none; color: var(--sidebar-text); font-size: 1em; cursor: pointer; border-radius: 6px; font-weight: bold; display: flex; justify-content: space-between; align-items: center; }
-        .subject-btn:hover { background-color: var(--sidebar-hover); }
-        .professor-list { padding-left: 15px; margin-top: 5px; display: none; }
-        .professor-list.active { display: block; }
-        .prof-btn { width: 100%; padding: 8px 12px; text-align: left; background: none; border: none; color: var(--sidebar-text); opacity: 0.8; font-size: 0.95em; cursor: pointer; border-radius: 4px; margin: 3px 0; }
-        .prof-btn:hover { opacity: 1; background-color: var(--sidebar-hover); }
+        .subject-item { margin-bottom: 8px; }
+        .subject-btn { width: 100%; padding: 14px 15px; text-align: left; background: none; border: none; color: var(--sidebar-text); font-size: 1em; cursor: pointer; border-radius: 8px; font-weight: bold; display: flex; justify-content: space-between; align-items: center; }
+        .subject-btn:hover { background-color: var(--sidebar-hover); color: var(--primary-color); }
+        .subject-btn.active { background-color: var(--sidebar-hover); border-left: 4px solid var(--primary-color); color: var(--primary-color); }
 
-        /* 테마 토글 버튼 */
-        .theme-toggle { padding: 15px; border-top: 1px solid var(--sidebar-hover); text-align: center; }
-        .theme-toggle button { width: 100%; padding: 10px; background: var(--sidebar-hover); border: none; color: var(--sidebar-text); cursor: pointer; border-radius: 5px; font-weight: bold; }
+        /* 상단 탑바 (다크모드 토글 및 공지) */
+        .main-wrapper { flex: 1; display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+        .topbar { padding: 15px 30px; background-color: var(--card-bg); border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; }
+        .topbar-title { font-size: 1.3em; font-weight: bold; display: flex; align-items: center; gap: 10px; }
+        .topbar-controls { display: flex; gap: 15px; align-items: center; }
+        .control-btn { padding: 8px 16px; background: var(--btn-bg); border: 1px solid var(--border-color); color: var(--text-color); border-radius: 6px; cursor: pointer; font-weight: bold; }
+        .control-btn:hover { background: var(--btn-hover); }
+        .control-btn.danger { background-color: #da3633; color: white; border: none; }
 
-        /* 메인 컨텐츠 영역 (화면 반으로 분할) */
-        .main-container { flex: 1; display: flex; height: 100vh; overflow: hidden; }
-        .pane { flex: 1; height: 100%; overflow-y: auto; padding: 40px; }
-        .left-pane { border-right: 1px solid var(--border-color); background-color: var(--bg-color); }
-        .right-pane { background-color: var(--right-bg); }
-
-        .card { background: var(--card-bg); padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid var(--border-color); }
-        .question-title { font-size: 1.1em; font-weight: bold; margin-bottom: 20px; line-height: 1.5; }
-        .question-title img { max-width: 100%; border-radius: 8px; margin-top: 15px; display: block; border: 1px solid var(--border-color); }
-        .options button { display: block; width: 100%; padding: 14px; margin: 10px 0; font-size: 1em; cursor: pointer; border: 1px solid var(--border-color); border-radius: 8px; background: var(--btn-bg); color: var(--text-color); text-align: left; transition: 0.2s; }
-        .options button:hover { background: var(--btn-hover); border-color: var(--primary-color); }
-        .options button.correct { background-color: #27ae60 !important; color: white !important; border-color: #27ae60; }
-        .options button.wrong { background-color: #c0392b !important; color: white !important; border-color: #c0392b; }
-
-        .explanation-box { display: none; }
-        .explanation-box.show { display: block; }
-        .explanation-box h3 { margin-bottom: 15px; color: var(--primary-color); border-bottom: 2px solid var(--primary-color); padding-bottom: 8px; }
-        .explanation-content { font-size: 0.95em; line-height: 1.6; }
-        .explanation-content img { max-width: 100%; border-radius: 6px; margin: 10px 0; border: 1px solid var(--border-color); }
+        /* 콘텐츠 뷰 영역 */
+        .content-area { flex: 1; overflow-y: auto; padding: 30px; display: flex; flex-direction: column; gap: 25px; }
         
-        .welcome-msg { text-align: center; margin-top: 100px; color: #888; }
+        /* 공지 배너 */
+        .notice-banner { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+        .badge-update { background-color: var(--badge-green); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.85em; font-weight: bold; width: fit-content; }
+
+        /* 대시보드 카드 (교수님 파트별) */
+        .dashboard-section { display: flex; flex-direction: column; gap: 20px; }
+        .section-title { font-size: 1.4em; font-weight: bold; color: var(--primary-color); border-left: 4px solid var(--primary-color); padding-left: 10px; }
+        
+        .feature-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+        .feature-card { background: var(--card-bg); border: 1px solid var(--border-color); padding: 15px; border-radius: 8px; text-align: center; cursor: pointer; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .feature-card:hover { border-color: var(--primary-color); background: var(--btn-hover); }
+
+        .prof-dashboard-card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 10px; padding: 25px; display: flex; flex-direction: column; gap: 20px; }
+        .prof-name { font-size: 1.2em; font-weight: bold; display: flex; justify-content: space-between; align-items: center; }
+        
+        .exam-buttons-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+        .exam-btn { padding: 10px 18px; background-color: var(--badge-green); color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 0.95em; }
+        .exam-btn:hover { opacity: 0.9; }
+
+        /* 문제 풀이 뷰 (2분할 레이아웃) */
+        .quiz-container { display: flex; flex: 1; height: calc(100vh - 75px); overflow: hidden; }
+        .quiz-left { flex: 1; border-right: 1px solid var(--border-color); overflow-y: auto; padding: 30px; background: var(--card-bg); display: flex; flex-direction: column; gap: 20px; }
+        .quiz-right { flex: 1; overflow-y: auto; padding: 30px; background: var(--right-bg); display: flex; flex-direction: column; gap: 20px; }
+
+        /* 툴바 (문제번호 선택 및 필기 도구) */
+        .quiz-toolbar { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 15px; }
+        .q-select { padding: 6px 12px; background: var(--btn-bg); border: 1px solid var(--border-color); color: var(--text-color); border-radius: 4px; font-weight: bold; }
+        .tools { display: flex; gap: 5px; }
+        .tool-btn { padding: 6px 10px; background: var(--btn-bg); border: 1px solid var(--border-color); color: var(--text-color); border-radius: 4px; cursor: pointer; }
+        .tool-btn:hover { background: var(--btn-hover); }
+
+        .question-box { font-size: 1.15em; font-weight: bold; line-height: 1.6; }
+        .options-list { display: flex; flex-direction: column; gap: 10px; }
+        .option-btn { width: 100%; padding: 14px 18px; text-align: left; background: var(--btn-bg); border: 1px solid var(--border-color); color: var(--text-color); border-radius: 8px; cursor: pointer; font-size: 1em; }
+        .option-btn:hover { background: var(--btn-hover); border-color: var(--primary-color); }
+        .option-btn.correct { background-color: #238636 !important; color: white !important; border-color: #238636; }
+        .option-btn.wrong { background-color: #da3633 !important; color: white !important; border-color: #da3633; }
+
+        /* 해설 박스 및 강의안 자료 */
+        .explanation-card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 10px; padding: 25px; display: none; flex-direction: column; gap: 15px; }
+        .explanation-card.show { display: flex; }
+        .explanation-header { font-size: 1.1em; font-weight: bold; color: var(--badge-green); border-bottom: 2px solid var(--badge-green); padding-bottom: 8px; }
+        .lecture-slide-img { max-width: 100%; border-radius: 6px; border: 1px solid var(--border-color); margin-top: 10px; }
+
+        .welcome-view { text-align: center; margin-top: 150px; color: #888; }
     </style>
 </head>
-<body data-theme="light">
+<body data-theme="dark">
 
 <sidebar>
     <div class="sidebar-header">
-        <span>의대 문제풀이</span>
+        <span>🌰 HEON archive</span>
     </div>
     <div class="menu-list">
-        <!-- 혈액과 종양 1차 -->
-        <div class="subject-item">
-            <button class="subject-btn" onclick="toggleProf('blood1')">혈액과 종양 1차 <span>▼</span></button>
-            <div id="blood1" class="professor-list">
-                <button class="prof-btn" onclick="loadQuizData('park_murim')">박무림 교수님</button>
-            </div>
-        </div>
-        <!-- 혈액과 종양 2차 -->
-        <div class="subject-item">
-            <button class="subject-btn" onclick="toggleProf('blood2')">혈액과 종양 2차 <span>▼</span></button>
-            <div id="blood2" class="professor-list">
-                <button class="prof-btn" onclick="alert('준비 중입니다.')">교수님 목록 준비중</button>
-            </div>
-        </div>
-        <!-- 성장과 노화 -->
-        <div class="subject-item">
-            <button class="subject-btn" onclick="toggleProf('growth')">성장과 노화 <span>▼</span></button>
-            <div id="growth" class="professor-list">
-                <button class="prof-btn" onclick="alert('준비 중입니다.')">교수님 목록 준비중</button>
-            </div>
-        </div>
-        <!-- 모성과 신생아 -->
-        <div class="subject-item">
-            <button class="subject-btn" onclick="toggleProf('maternity')">모성과 신생아 <span>▼</span></button>
-            <div id="maternity" class="professor-list">
-                <button class="prof-btn" onclick="alert('준비 중입니다.')">교수님 목록 준비중</button>
-            </div>
-        </div>
-    </div>
-    <div class="theme-toggle">
-        <button onclick="toggleTheme()">다크/라이트 모드 전환</button>
+        <div class="subject-item"><button class="subject-btn" onclick="selectSubject('PDS2')">PDS2</button></div>
+        <div class="subject-item"><button class="subject-btn" onclick="selectSubject('약물치료원리')">약물치료원리</button></div>
+        <div class="subject-item"><button class="subject-btn" onclick="selectSubject('소화기')">소화기</button></div>
+        <div class="subject-item"><button class="subject-btn" onclick="selectSubject('혈액과 종양')" id="default-sub">혈액과 종양</button></div>
+        <div class="subject-item"><button class="subject-btn" onclick="selectSubject('모성과 신생아')">모성과 신생아</button></div>
+        <div class="subject-item"><button class="subject-btn" onclick="selectSubject('PBL')">PBL</button></div>
+        <div class="subject-item"><button class="subject-btn" onclick="selectSubject('성장과 노화')">성장과 노화</button></div>
     </div>
 </sidebar>
 
-<div class="main-container">
-    <!-- 왼쪽 화면: 문제 풀이 영역 -->
-    <div class="pane left-pane">
-        <div id="quiz-area" class="card">
-            <div class="welcome-msg">
-                <h2>과목을 선택해주세요</h2>
-                <p style="margin-top: 10px;">좌측 사이드바에서 <strong>혈액과 종양 1차 > 박무림 교수님</strong>을 클릭하세요.</p>
-            </div>
+<div class="main-wrapper">
+    <div class="topbar">
+        <div class="topbar-title" id="topbar-title">혈액과 종양 기출 퀴즈</div>
+        <div class="topbar-controls">
+            <button class="control-btn danger" id="reset-btn" style="display:none;" onclick="confirmReset()">기록 초기화</button>
+            <button class="control-btn" id="back-btn" style="display:none;" onclick="goHome()">돌아가기</button>
+            <button class="control-btn" onclick="toggleTheme()" id="theme-text">☀️ 라이트모드</button>
         </div>
     </div>
-    <!-- 오른쪽 화면: 해설 영역 -->
-    <div class="pane right-pane">
-        <div id="explanation-area" class="card">
-            <div class="welcome-msg">
-                <h2>실시간 해설 창</h2>
-                <p style="margin-top: 10px;">문제를 선택하면 PDF 근거 기반의 상세한 해설과 캡처 자료가 여기에 표시됩니다.</p>
+
+    <div class="content-area" id="content-area">
+        <!-- 메인 대시보드 화면 -->
+        <div class="notice-banner">
+            <span class="badge-update">최신 업데이트</span>
+            <p>-코멘트- 친구 사이트 양식을 완벽 이식했습니다! 교수님별 파트별로 기출문제를 풀고 실시간 해설과 강의안을 확인해보세요.</p>
+        </div>
+
+        <div class="dashboard-section">
+            <div class="section-title">교수님별 파트 목록</div>
+            
+            <div class="prof-dashboard-card">
+                <div class="prof-name">
+                    <span>박무림 교수님 파트</span>
+                    <span style="font-size: 0.85em; color: #888;">총 5문제 수록</span>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card" onclick="alert('전체 키워드 검색 기능입니다.')">🔍 전체 키워드 검색</div>
+                    <div class="feature-card" onclick="alert('오답 노트 모아보기 기능입니다.')">📋 오답 노트 모아보기</div>
+                    <div class="feature-card" onclick="alert('북마크 기능입니다.')">📌 북마크 모아보기</div>
+                    <div class="feature-card" onclick="alert('랜덤 모의고사 기능입니다.')">🎲 랜덤 모의고사</div>
+                </div>
+                <hr style="border: 0; border-top: 1px solid var(--border-color);">
+                <div style="font-size: 0.95em; font-weight: bold; margin-bottom: -10px;">기출 시험 선택</div>
+                <div class="exam-buttons-grid">
+                    <button class="exam-btn" onclick="startQuiz('park_murim', '17(기말)')">✓ 17(기말)</button>
+                    <button class="exam-btn" onclick="startQuiz('park_murim', '18(기말)')">✓ 18(기말)</button>
+                    <button class="exam-btn" onclick="startQuiz('park_murim', '19(중간)')">✓ 19(중간)</button>
+                    <button class="exam-btn" onclick="startQuiz('park_murim', '20(기말)')">✓ 20(기말)</button>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <script>
-    // 다크모드 토글 함수
+    // 테마 전환
     function toggleTheme() {
         const body = document.body;
-        if (body.getAttribute("data-theme") === "light") {
-            body.setAttribute("data-theme", "dark");
-        } else {
+        const btn = document.getElementById('theme-text');
+        if (body.getAttribute("data-theme") === "dark") {
             body.setAttribute("data-theme", "light");
+            btn.innerText = "🌙 야탑런 모드";
+        } else {
+            body.setAttribute("data-theme", "dark");
+            btn.innerText = "☀️ 라이트모드";
         }
     }
 
-    // 사이드바 아코디언 메뉴
-    function toggleProf(id) {
-        const el = document.getElementById(id);
-        el.classList.toggle('active');
+    function selectSubject(name) {
+        document.getElementById('topbar-title').innerText = name + " 기출 퀴즈";
+        goHome();
     }
 
-    // 박무림 교수님 혈액과 종양 1차 야마 문제 데이터
+    function goHome() {
+        document.getElementById('reset-btn').style.display = 'none';
+        document.getElementById('back-btn').style.display = 'none';
+        document.getElementById('topbar-title').innerText = "혈액과 종양 기출 퀴즈";
+        
+        document.getElementById('content-area').innerHTML = `
+            <div class="notice-banner">
+                <span class="badge-update">최신 업데이트</span>
+                <p>-코멘트- 친구 사이트 양식을 완벽 이식했습니다! 교수님별 파트별로 기출문제를 풀고 실시간 해설과 강의안을 확인해보세요.</p>
+            </div>
+            <div class="dashboard-section">
+                <div class="section-title">교수님별 파트 목록</div>
+                <div class="prof-dashboard-card">
+                    <div class="prof-name">
+                        <span>박무림 교수님 파트</span>
+                        <span style="font-size: 0.85em; color: #888;">총 5문제 수록</span>
+                    </div>
+                    <div class="feature-grid">
+                        <div class="feature-card" onclick="alert('전체 키워드 검색 기능입니다.')">🔍 전체 키워드 검색</div>
+                        <div class="feature-card" onclick="alert('오답 노트 모아보기 기능입니다.')">📋 오답 노트 모아보기</div>
+                        <div class="feature-card" onclick="alert('북마크 기능입니다.')">📌 북마크 모아보기</div>
+                        <div class="feature-card" onclick="alert('랜덤 모의고사 기능입니다.')">🎲 랜덤 모의고사</div>
+                    </div>
+                    <hr style="border: 0; border-top: 1px solid var(--border-color);">
+                    <div style="font-size: 0.95em; font-weight: bold; margin-bottom: -10px;">기출 시험 선택</div>
+                    <div class="exam-buttons-grid">
+                        <button class="exam-btn" onclick="startQuiz('park_murim', '17(기말)')">✓ 17(기말)</button>
+                        <button class="exam-btn" onclick="startQuiz('park_murim', '18(기말)')">✓ 18(기말)</button>
+                        <button class="exam-btn" onclick="startQuiz('park_murim', '19(중간)')">✓ 19(중간)</button>
+                        <button class="exam-btn" onclick="startQuiz('park_murim', '20(기말)')">✓ 20(기말)</button>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    function confirmReset() {
+        if(confirm("현재까지 진행한 풀이 및 필기 기록을 지우고 처음부터 다시 푸시겠습니까?\n(북마크와 스티커 메모는 지워지지 않고 유지됩니다.)")) {
+            alert("기록이 초기화되었습니다.");
+            startQuiz('park_murim', currentExamTitle);
+        }
+    }
+
+    let currentExamTitle = "";
+
+    // 퀴즈 문제 데이터 (박무림 교수님 파트)
     const quizData = [
         {
-            question: "17-1. 대장암 다발성 간, 폐, 복강 림프절전이 환자의 항암치료 전후 변화이다. RECIST criteria에 의한 반응평가로 옳은 것은?<br><br>" +
+            question: "Q1. 대장암 다발성 간, 폐, 복강 림프절전이 환자의 항암치료 전후 변화이다. RECIST criteria에 의한 반응평가로 옳은 것은?<br><br>" +
                       "치료 전: 간병변 장경 3cm, 3cm, 2cm / 우측 폐병변 장경 2cm / 좌측 폐병변 장경 2cm / 복부 림프절 길이X폭 2X2 cm<br>" +
-                      "치료 후: 간병변 장경 2cm, 2cm, 0cm / 우측 폐병변 장경 1cm / 좌측 폐병변 소실 / 복부 림프절 길이x폭 1.5X1cm<br>" +
-                      '<img src="https://github.com/HEONkaive/HEONkaive/blob/main/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202026-11-10%20192032.png?raw=true" alt="설명 이미지">',
+                      "치료 후: 간병변 장경 2cm, 2cm, 0cm / 우측 폐병변 장경 1cm / 좌측 폐병변 소실 / 복부 림프절 길이x폭 1.5X1cm",
             options: [
                 "① 완전 관해 (Complete Response)",
                 "② 부분 관해 (Partial Response)",
@@ -167,22 +243,21 @@
                 "④ 진행 (Progressive Disease)",
                 "⑤ 무반응"
             ],
-            answer: 1, 
+            answer: 1,
             explanation: `
                 <h3>정답: ② 부분 관해 (Partial Response)</h3>
-                <div class="explanation-content">
-                    <p><strong>[근거 및 해설]</strong></p>
-                    <ul>
-                        <li><strong>RECIST criteria 기준:</strong> 림프절을 제외한 다른 장기는 가장 장경이 긴 것을 2개까지 선택하여 총 5개까지의 합을 비교합니다 (일반장기 측정 기준 10mm 이상, 림프절은 단축 기준 15mm 이상).</li>
-                        <li><strong>치료 전 합계:</strong> 간병변(3+3) + 우측 폐(2) + 좌측 폐(2) = 12cm</li>
-                        <li><strong>치료 후 합계:</strong> 간병변(2+2) + 우측 폐(1) = 5cm</li>
-                        <li>12cm에서 5cm로 <strong>50% 이상 감소</strong>하였으므로, 직경의 합이 <strong>30% 이상 감소</strong>해야 하는 <strong>부분 관해(PR)</strong>에 해당합니다[cite: 1].</li>
-                    </ul>
-                </div>
+                <p><strong>[근거 및 해설]</strong></p>
+                <ul>
+                    <li><strong>RECIST criteria 기준:</strong> 림프절을 제외한 다른 장기는 가장 장경이 긴 것을 2개까지 선택하여 총 5개까지의 합을 비교합니다.</li>
+                    <li><strong>치료 전 합계:</strong> 간병변(3+3) + 우측 폐(2) + 좌측 폐(2) = 12cm</li>
+                    <li><strong>치료 후 합계:</strong> 간병변(2+2) + 우측 폐(1) = 5cm (50% 이상 감소)</li>
+                    <li>직경의 합이 30% 이상 감소하였으므로 <strong>부분 관해(PR)</strong>에 해당합니다.</li>
+                </ul>
+                <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600" class="lecture-slide-img" alt="강의안 캡처">
             `
         },
         {
-            question: "17-2. BRCA 돌연변이가 있는 암 세포에서 synthetic lethality 개념에 의해 암세포만을 선택적으로 죽일 수 있는 표적은?",
+            question: "Q2. BRCA 돌연변이가 있는 암 세포에서 synthetic lethality 개념에 의해 암세포만을 선택적으로 죽일 수 있는 표적은?",
             options: [
                 "① APC",
                 "② MSH2",
@@ -190,131 +265,91 @@
                 "④ B-RAF",
                 "⑤ PARP"
             ],
-            answer: 4, 
-            explanation: `
-                <h3>정답: ⑤ PARP</h3>
-                <div class="explanation-content">
-                    <p><strong>[근거 및 해설]</strong></p>
-                    <p>Synthetic lethality(합성 치사) 개념은 두 가지 유전자 중 어느 하나에 이상이 생기면 생존이 가능하지만, 두 가지 모두에 이상이 생기면 세포가 죽는다는 원리입니다[cite: 1].</p>
-                    <p>BRCA mutation이 있는 tumor cell에 대하여 <strong>PARP inhibitor</strong>를 사용할 경우, 단일 가닥 손상(Single strand break)을 복구하는 PARP와 이중 가닥 손상(Double strand break)을 복구하는 BRCA가 모두 기능을 상실하게 되어 암세포가 사멸하게 됩니다[cite: 1, 86].</p>
-                    <hr>
-                    <p><strong>[강의록 발췌 자료]</strong></p>
-                    <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600" alt="Synthetic Lethality Mechanism">
-                </div>
-            `
-        },
-        {
-            question: "18-6. 38세 여자 환자가 유방암으로 진단되었다. 조직검사 및 유전자검사 소견: Invasive ductal carcinoma, ER(-), PR(-), HER2(-), BRCA1 생식선변이(+), BRCA2 생식선변이(-). 가장 효과를 기대할 수 있는 약제 및 기전은?",
-            options: [
-                "① Olaparib - synthetic lethality",
-                "② Trastuzumab - anti HER2 monoclonal antibody",
-                "③ Pertuzumab - anti HER2 monoclonal antibody",
-                "④ Lapatinib - receptor tyrosine kinase inhibitor",
-                "⑤ Everolimus - mTOR inhibitor"
-            ],
-            answer: 0,
-            explanation: `
-                <h3>정답: ① Olaparib - synthetic lethality</h3>
-                <div class="explanation-content">
-                    <p><strong>[근거 및 해설]</strong></p>
-                    <p>환자는 삼중음성(Triple negative)이면서 <strong>BRCA1 양성</strong> 유방암 환자입니다[cite: 1]. 이 경우 PARP 억제제인 <strong>Olaparib</strong>을 사용하여 synthetic lethality 기전으로 dsDNA breakage를 해결할 수 없는 BRCA mutation 암을 효과적으로 치료할 수 있습니다[cite: 1].</p>
-                </div>
-            `
-        },
-        {
-            question: "18-1. 다음 항암제의 특이 부작용으로 옳은 것은?",
-            options: [
-                "① Doxorubicin, Trastuzumab - 신부전, 심부전",
-                "② Pembrolizumab, Nivolumab - immune-mediated toxicity",
-                "③ Taxane, Vinca alkaloid - QTc 연장 및 신경독성",
-                "④ Trastuzumab - 장천공, 출혈, 혈전증, 고혈압",
-                "⑤ Cisplatin - 출혈성 방광염"
-            ],
-            answer: 1,
-            explanation: `
-                <h3>정답: ② Pembrolizumab, Nivolumab - immune-mediated toxicity</h3>
-                <div class="explanation-content">
-                    <p><strong>[근거 및 해설]</strong></p>
-                    <ul>
-                        <li><strong>Pembrolizumab, Nivolumab</strong> 등 면역관문억제제(IO)는 면역 매개성 장기 독성(Immune-mediated adverse events, irAE)을 유발합니다[cite: 5].</li>
-                        <li>① Doxorubicin, Trastuzumab의 대표적 특이 부작용은 <strong>심부전(Cardiotoxicity, CHF)</strong>입니다[cite: 5].</li>
-                        <li>③ Taxane의 부작용은 신경독성(Neurotoxicity)이며, Vinca alkaloid는 <strong>피부괴사(Vesicant)</strong>를 일으킵니다[cite: 5].</li>
-                        <li>④ 장천공, 출혈, 혈전증, 고혈압은 Bevacizumab(VEGF 억제제)의 부작용입니다[cite: 5].</li>
-                        <li>⑤ 출혈성 방광염은 Cyclophosphamide 및 Ifosfamide의 부작용입니다[cite: 5].</li>
-                    </ul>
-                </div>
-            `
-        },
-        {
-            question: "18-50. 8세 남자 환자가 의식이 명료하지 않고 기운이 없으며 소변을 거의 보지 못해 내원했다. 교정 칼슘(Corrected Ca)이 14.3 mg/dL로 측정되었을 때, 수액 공급 이외에 가장 중요한 응급 처치는?",
-            options: [
-                "① 혈액투석",
-                "② 스테로이드",
-                "③ calcitonin 주사",
-                "④ 항암치료",
-                "⑤ Zoledronic acid 주사"
-            ],
             answer: 4,
             explanation: `
-                <h3>정답: ⑤ Zoledronic acid 주사</h3>
-                <div class="explanation-content">
-                    <p><strong>[근거 및 해설]</strong></p>
-                    <p>교정 칼슘 농도가 13.5 mg/dL를 초과하는 <strong>Severe hypercalcemia(중증 고칼슘혈증)</strong> 응급 상황입니다[cite: 10].</p>
-                    <p>가장 먼저 <strong>massive saline hydration(대량 생리식염수 수액 공급)</strong>과 forced diuresis(이뇨제)를 시행하며, 가장 효과적인 약물 치료로 비스포스포네이트 계열인 <strong>Zoledronate(또는 Pamidronate)</strong> 주사를 투여합니다[cite: 10].</p>
-                </div>
+                <h3>정답: ⑤ PARP</h3>
+                <p><strong>[근거 및 해설]</strong></p>
+                <p>Synthetic lethality 개념은 두 가지 유전자 중 어느 하나에 이상이 생기면 생존이 가능하지만, 두 가지 모두에 이상이 생기면 세포가 죽는다는 원리입니다.</p>
+                <p>BRCA mutation이 있는 tumor cell에 대하여 <strong>PARP inhibitor</strong>를 사용할 경우 DNA 복구가 차단되어 암세포를 선택적으로 사멸시킬 수 있습니다.</p>
+                <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600" class="lecture-slide-img" alt="Synthetic Lethality">
             `
         }
     ];
 
-    // 문제 로드 함수
-    function loadQuizData(profKey) {
-        const quizArea = document.getElementById("quiz-area");
-        const expArea = document.getElementById("explanation-area");
+    let currentQ = 0;
 
-        if (profKey !== 'park_murim') {
-            quizArea.innerHTML = "<p>해당 교수님의 데이터가 아직 없습니다.</p>";
-            return;
-        }
+    function startQuiz(prof, examName) {
+        currentExamTitle = examName;
+        document.getElementById('reset-btn').style.display = 'block';
+        document.getElementById('back-btn').style.display = 'block';
+        document.getElementById('topbar-title').innerText = `혈액과 종양 - (${examName}) 기출 풀이`;
 
-        let html = "<h2>혈액과 종양 1차 - 박무림 교수님 야마 문제</h2><br>";
-        quizData.forEach((q, qIndex) => {
-            html += `
-                <div class="card" style="margin-bottom: 25px; box-shadow:none; border:1px solid var(--border-color);">
-                    <div class="question-title">${q.question}</div>
-                    <div class="options" id="q-${qIndex}">
-            `;
-            q.options.forEach((opt, oIndex) => {
-                html += `<button onclick="checkAnswer(${qIndex}, ${oIndex})">${opt}</button>`;
-            });
-            html += `</div></div>`;
+        renderQuizScreen();
+    }
+
+    function renderQuizScreen() {
+        const q = quizData[currentQ];
+        let optionsHtml = '';
+        q.options.forEach((opt, idx) => {
+            optionsHtml += `<button class="option-btn" onclick="checkAnswer(${idx})">${opt}</button>`;
         });
 
-        quizArea.innerHTML = html;
-        expArea.innerHTML = `
-            <h2>📖 실시간 해설 창</h2>
-            <p style="margin-top: 15px; color: var(--text-color);">왼쪽에서 문제를 풀거나 선택하시면, PDF 강의록 근거 기반의 상세한 해설과 캡처 자료가 오른쪽에 출력됩니다.</p>
+        document.getElementById('content-area').innerHTML = `
+            <div class="quiz-container">
+                <div class="quiz-left">
+                    <div class="quiz-toolbar">
+                        <div>
+                            <label>문제 기출 </label>
+                            <select class="q-select" onchange="changeQuestion(this.value)">
+                                <option value="0">Q1</option>
+                                <option value="1">Q2</option>
+                            </select>
+                        </div>
+                        <div class="tools">
+                            <button class="tool-btn" title="펜">✏️</button>
+                            <button class="tool-btn" title="형광펜">🖌️</button>
+                            <button class="tool-btn" title="메모">📝</button>
+                            <button class="tool-btn" title="지우개">🧹</button>
+                            <button class="tool-btn" title="북마크">📌</button>
+                        </div>
+                    </div>
+                    <div class="question-box">${q.question}</div>
+                    <div class="options-list" id="options-box">
+                        ${optionsHtml}
+                    </div>
+                </div>
+                <div class="quiz-right">
+                    <div id="explanation-container" class="explanation-card">
+                        <div class="explanation-header" id="exp-title">정답 및 해설</div>
+                        <div id="exp-body">${q.explanation}</div>
+                    </div>
+                </div>
+            </div>
         `;
     }
 
-    // 정답 체크
-    function checkAnswer(qIdx, selectedOpt) {
-        const q = quizData[qIdx];
-        const optionsContainer = document.getElementById(`q-${qIdx}`);
-        const buttons = optionsContainer.getElementsByTagName("button");
+    function changeQuestion(val) {
+        currentQ = parseInt(val);
+        renderQuizScreen();
+    }
 
-        for (let i = 0; i < buttons.length; i++) {
+    function checkAnswer(selectedIdx) {
+        const q = quizData[currentQ];
+        const buttons = document.getElementById('options-box').getElementsByTagName('button');
+
+        for(let i=0; i<buttons.length; i++) {
             buttons[i].classList.remove('correct', 'wrong');
         }
 
-        if (selectedOpt === q.answer) {
-            buttons[selectedOpt].classList.add('correct');
+        if(selectedIdx === q.answer) {
+            buttons[selectedIdx].classList.add('correct');
         } else {
-            buttons[selectedOpt].classList.add('wrong');
+            buttons[selectedIdx].classList.add('wrong');
             buttons[q.answer].classList.add('correct');
         }
 
-        const expArea = document.getElementById("explanation-area");
-        expArea.innerHTML = `<div class="explanation-box show">${q.explanation}</div>`;
+        // 우측 해설 창 열기
+        document.getElementById('explanation-container').classList.add('show');
     }
 </script>
 
