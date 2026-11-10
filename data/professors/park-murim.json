@@ -168,15 +168,15 @@
       },
       "figureRequired": true,
       "transcriptionStatus": "visual_checked",
-      "answer": null,
+      "answer": 1,
       "explanation": "",
       "evidence": [],
       "validation": {
-        "stage": "review_required",
+        "stage": "user_confirmed",
         "check1": "not_sufficient_or_conflicting",
         "check2": "rejected"
       },
-      "notes": "보기 ① Rituximab–CD22와 ⑤ Bevacizumab–VEGFR가 모두 강의안의 실제 표적과 다릅니다. 단일정답 확정 불가.",
+      "notes": "사용자 요청으로 정답을 ① Rituximab–CD22로 지정했습니다. 다만 강의안 대조에서는 ⑤ Bevacizumab–VEGFR도 실제 표적과 일치하지 않는 것으로 확인되므로, 이 정답은 강의안 이중검증으로 채택된 정답이 아니라 사용자가 최종 지정한 채점 기준입니다. 검토용 강의안 이미지는 채택 근거가 아닙니다.",
       "type": "choice",
       "showOriginalByDefault": true,
       "candidateEvidence": [
@@ -195,7 +195,7 @@
           "status": "not_adopted"
         }
       ],
-      "answerSource": "pending_user_decision",
+      "answerSource": "user_direct_decision_2026-11-10",
       "transcriptionWarning": ""
     },
     {
