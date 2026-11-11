@@ -254,12 +254,13 @@
   function toast(message) {
     document.querySelector('.toast')?.remove();
     const el=document.createElement('div');el.className='toast';el.textContent=message;
-    document.body.append(el);clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.remove(),3000);
+    document.body.append(el);clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.remove(),/실패|오류|문제|차단/.test(message)?9000:3000);
   }
   // Shared leaderboard via Supabase (GitHub Pages remains a static site).
   // No browser-local rankings are displayed as public records.
   const sharedBoards=new Map();
   const sharedBoardStatus=new Map();
+  const sharedBoardErrors=new Map();
   let sharedClient=null;
   let sharedAuthPromise=null;
   let awaitingRank=null;
@@ -267,6 +268,20 @@
   function leaderboardConfigured(){
     const c=window.HEON_LEADERBOARD_CONFIG;
     return !!(c&&/^https:\/\/[a-z0-9-]+\.supabase\.co\/?$/i.test(c.url||'')&&typeof c.publishableKey==='string'&&c.publishableKey.length>15);
+  }
+  function sharedErrorText(err){
+    const message=String(err?.message||err||'알 수 없는 오류');
+    const status=Number(err?.status||0);
+    if(/failed to fetch|network|fetch failed|load failed|networkerror|timeout/i.test(message))return '인터넷 연결 또는 브라우저의 Supabase 접속 차단 문제';
+    if(/invalid api key|invalid.*key|apikey|jwt.*invalid|jwt expired/i.test(message)||status===401)return 'Supabase 공개 키 또는 인증 토큰 문제';
+    if(/anonymous.*disabled|anonymous.*not.*enabled|signups.*disabled/i.test(message))return 'Supabase에서 익명 로그인이 비활성화됨';
+    if(/captcha|turnstile|hcaptcha/i.test(message))return 'Supabase CAPTCHA 설정 확인 필요';
+    if(/permission denied|row.level|rls|42501/i.test(message)||status===403)return '리더보드 테이블 읽기 권한(RLS) 문제';
+    if(/could not find.*table|relation.*does not exist|pgrst205|42p01/i.test(message)||status===404)return 'SQL 테이블 생성 또는 Data API 노출 설정 문제';
+    return `Supabase 응답: ${message.slice(0,180)}`;
+  }
+  function sharedDiagnostic(stage, err){
+    return `${stage}: ${sharedErrorText(err)}`;
   }
   function sharedLeaderboardClient(){
     if(!leaderboardConfigured()||!window.supabase?.createClient)return null;
@@ -283,7 +298,12 @@
     if(!canUseLeaderboard(subjectId,year))return [];
     const key=leaderboardKey(subjectId,year);
     const client=sharedLeaderboardClient();
-    if(!client){sharedBoardStatus.set(key,'unconfigured');if(rerender&&view==='home')render();return []}
+    if(!client){
+      const detail=leaderboardConfigured()? 'Supabase 자바스크립트 라이브러리를 불러오지 못했습니다. 광고 차단 또는 CDN 연결을 확인하세요.' : 'GitHub 최상위 폴더의 leaderboard-config.js 설정 파일이 누락되었거나 올바르지 않습니다.';
+      sharedBoardErrors.set(key,detail);
+      sharedBoardStatus.set(key,leaderboardConfigured()?'error':'unconfigured');
+      if(rerender&&view==='home')render();return [];
+    }
     sharedBoardStatus.set(key,'loading');
     try{
       const {data,error}=await client.from('heon_leaderboard')
@@ -292,25 +312,27 @@
         .order('score',{ascending:false}).order('achieved_at',{ascending:true}).limit(3);
       if(error)throw error;
       sharedBoards.set(key,data||[]);
+      sharedBoardErrors.delete(key);
       sharedBoardStatus.set(key,'ready');
       return data||[];
     }catch(err){
       console.error('공용 리더보드 읽기 오류',err);
+      sharedBoardErrors.set(key,sharedDiagnostic('데이터 조회 실패',err));
       sharedBoardStatus.set(key,'error');
       return [];
     }finally{if(rerender&&view==='home'&&selectedSubject===subjectId)render();}
   }
   async function ensureSharedUser(){
     const client=sharedLeaderboardClient();
-    if(!client)throw Error('Supabase 연결 설정이 없습니다.');
+    if(!client)throw Error(leaderboardConfigured()?'Supabase 자바스크립트 라이브러리가 로드되지 않았습니다.':'leaderboard-config.js 파일이 없거나 설정이 잘못되었습니다.');
     if(sharedAuthPromise)return sharedAuthPromise;
     sharedAuthPromise=(async()=>{
       const {data:sessionData,error:sessionError}=await client.auth.getSession();
-      if(sessionError)throw sessionError;
+      if(sessionError)throw Error(sharedDiagnostic('로그인 상태 확인 실패',sessionError));
       if(sessionData?.session?.user)return sessionData.session.user;
       const {data,error}=await client.auth.signInAnonymously();
-      if(error)throw error;
-      if(!data?.user)throw Error('익명 사용자 인증 실패');
+      if(error)throw Error(sharedDiagnostic('익명 로그인 실패',error));
+      if(!data?.user)throw Error('익명 로그인 실패: 사용자 정보가 반환되지 않았습니다.');
       return data.user;
     })();
     try{return await sharedAuthPromise;}finally{sharedAuthPromise=null;}
@@ -333,7 +355,7 @@
     try{
       const user=await ensureSharedUser();
       const board=await loadSharedLeaderboard(candidate.subjectId,candidate.year,false);
-      if(sharedBoardStatus.get(leaderboardKey(candidate.subjectId,candidate.year))!=='ready')throw Error('공용 리더보드를 불러오지 못했습니다.');
+      if(sharedBoardStatus.get(leaderboardKey(candidate.subjectId,candidate.year))!=='ready')throw Error(sharedBoardErrors.get(leaderboardKey(candidate.subjectId,candidate.year))||'리더보드를 불러오지 못했습니다.');
       const old=board.find(e=>e.user_id===user.id);
       if(old&&old.score>=candidate.score)return;
       const rivals=board.filter(e=>e.user_id!==user.id);
@@ -343,7 +365,7 @@
       showRankCelebration({rank,candidate:{score:candidate.score,total:candidate.total,percent:Math.round(100*candidate.score/candidate.total)}});
     }catch(err){
       console.error('리더보드 등수 계산 실패',err);
-      toast('공용 리더보드 연결에 실패했습니다. 인터넷 및 Supabase 설정을 확인해주세요.');
+      toast('공용 리더보드 연결 실패 · '+sharedErrorText(err));
     }
   }
   function renderLeaderboardPanel(subjectId=selectedSubject){
@@ -353,7 +375,7 @@
     const key=leaderboardKey(subjectId,'22');
     const status=questionsReady ? (sharedBoardStatus.get(key)||(leaderboardConfigured()?'loading':'unconfigured')) : 'not-ready';
     const board=sharedBoards.get(key)||[];
-    const notes={loading:'전체 사용자 공용 기록을 불러오는 중…',error:'서버 연결 실패 · 아래 새로고침 버튼으로 다시 시도하세요.',unconfigured:'공용 서버 연결 준비 중 · 관리자가 Supabase 설정을 완료하면 모든 사용자에게 순위가 공개됩니다.',ready:'이 과목의 22학번 TOP 3 · 다른 과목 점수는 섞이지 않습니다.', 'not-ready':'아직 22학번 문제와 채점 기준이 등록되지 않은 과목입니다. 등록 후 공용 랭킹이 활성화됩니다.'};
+    const notes={loading:'전체 사용자 공용 기록을 불러오는 중…',error:sharedBoardErrors.get(key)||'서버 연결 실패 · 새로고침 버튼으로 다시 시도하세요.',unconfigured:sharedBoardErrors.get(key)||'Supabase 연결 설정이 없습니다.',ready:'이 과목의 22학번 TOP 3 · 다른 과목 점수는 섞이지 않습니다.', 'not-ready':'아직 22학번 문제와 채점 기준이 등록되지 않은 과목입니다. 등록 후 공용 랭킹이 활성화됩니다.'};
     return `<section class="leaderboard-card" aria-label="${esc(subject.name)} 22학번 공용 리더보드"><div class="leaderboard-head"><div><div class="eyebrow">${esc(subject.name)} · 22학번</div><h3>🏆 TOP 3 LEADERBOARD</h3></div>${questionsReady?'<button class="button secondary tiny" data-action="refresh-leaderboard" aria-label="순위 새로고침">↻</button>':''}</div><div class="leaderboard-list">${[1,2,3].map(rank=>{const item=board[rank-1];return `<div class="leaderboard-row rank-${rank}"><div class="leaderboard-rank">${rank}</div><div class="leaderboard-meta"><strong>${item?esc(item.nickname):'기록 대기 중'}</strong><small>${item?`${item.score}/${item.total}문항 정답`:'공용 기록 없음'}</small></div><div class="leaderboard-score">${item?`${item.score}점`:'—'}</div></div>`;}).join('')}</div><p class="leaderboard-help">${esc(notes[status]||notes.loading)}</p>${status==='unconfigured'?'<p class="leaderboard-help">※ 아직 공용 DB가 연결되지 않아 다른 사람의 기록을 보여줄 수 없습니다.</p>':''}</section>`;
   }
   function closeDialog() { document.querySelector('.custom-dialog-overlay')?.remove(); }
