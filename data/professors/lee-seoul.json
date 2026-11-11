@@ -154,7 +154,7 @@
       "number": 67,
       "subject": "hematology-1",
       "professor": "lee-seoul",
-      "prompt": "항암생물학 요법에 약물에 대한 표적 설명으로 틀린 것은? (17학번 선지)",
+      "prompt": "항암생물학 요법에 약물에 대한 표적 설명으로 틀린 것은?",
       "choices": [
         {
           "number": 1,
@@ -184,7 +184,7 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": null,
+      "answer": 5,
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -204,17 +204,16 @@
         }
       ],
       "validation": {
-        "stage": "pending",
-        "check1": "candidate_pages_reviewed",
-        "check2": "could_not_resolve_options",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "",
-        "decisionReason": "강의안 92·112쪽과 대조하면 ①~⑤ 모두 알려진 표적 관계를 서술하고 있습니다. 뚜렷한 오답을 특정할 수 없어 미확정으로 남깁니다."
+        "stage": "user_confirmed",
+        "check1": "user_override_explicit",
+        "check2": "NOT_a_new_double_lecture_verification",
+        "verifiedAgainst": "user_decision",
+        "decisionReason": "사용자 요청에 따라 5번 지정. 강의안 검증 채택과 구분."
       },
-      "notes": "강의안 92·112쪽과 대조하면 ①~⑤ 모두 알려진 표적 관계를 서술하고 있습니다. 뚜렷한 오답을 특정할 수 없어 미확정으로 남깁니다.",
+      "notes": "사용자가 직접 지정한 정답입니다. 과거 강의안과 충돌하거나 미확정이었던 경우에도 강의안 근거 채택으로 표시하지 않습니다.",
       "type": "choice",
       "showOriginalByDefault": false,
-      "answerSource": "pending",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다."
     },
     {
@@ -254,7 +253,7 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": null,
+      "answer": 2,
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -274,17 +273,16 @@
         }
       ],
       "validation": {
-        "stage": "pending",
-        "check1": "candidate_pages_reviewed",
-        "check2": "could_not_resolve_options",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "",
-        "decisionReason": "강의안 80쪽에는 MDR-1 배출, 대사 변화, DNA 복구 등이 정리되어 있지만, 특정 약물과 내성 기전의 1:1 연결(특히 ② cyclophosphamide)이 확정되지 않습니다. 야마의 ② 표시만으로 채택하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "user_override_explicit",
+        "check2": "NOT_a_new_double_lecture_verification",
+        "verifiedAgainst": "user_decision",
+        "decisionReason": "사용자 요청에 따라 2번 지정. 강의안 검증 채택과 구분."
       },
-      "notes": "강의안 80쪽에는 MDR-1 배출, 대사 변화, DNA 복구 등이 정리되어 있지만, 특정 약물과 내성 기전의 1:1 연결(특히 ② cyclophosphamide)이 확정되지 않습니다. 야마의 ② 표시만으로 채택하지 않았습니다.",
+      "notes": "사용자가 직접 지정한 정답입니다. 과거 강의안과 충돌하거나 미확정이었던 경우에도 강의안 근거 채택으로 표시하지 않습니다.",
       "type": "choice",
       "showOriginalByDefault": false,
-      "answerSource": "pending",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다."
     },
     {
@@ -326,7 +324,8 @@
       "transcriptionStatus": "visually_checked_against_source",
       "answer": 4,
       "explanation": "Hydroxyurea는 ribonucleotide reductase를 억제하여 ribonucleotide가 deoxyribonucleotide로 전환되는 과정을 차단합니다.",
-      "evidence": [
+      "evidence": [],
+      "candidateEvidence": [
         {
           "lectureId": "lecture1",
           "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
@@ -335,19 +334,17 @@
           "quote": "Hydroxyurea inhibits the enzyme ribonucleotide reductase"
         }
       ],
-      "candidateEvidence": [],
       "validation": {
-        "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "Hydroxyurea inhibits the enzyme ribonucleotide reductase",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "stage": "user_confirmed",
+        "check1": "user_override_explicit",
+        "check2": "NOT_a_new_double_lecture_verification",
+        "verifiedAgainst": "user_decision",
+        "decisionReason": "사용자 요청에 따라 4번 지정. 강의안 검증 채택과 구분."
       },
-      "notes": "",
+      "notes": "사용자가 직접 지정한 정답입니다. 과거 강의안과 충돌하거나 미확정이었던 경우에도 강의안 근거 채택으로 표시하지 않습니다.",
       "type": "choice",
       "showOriginalByDefault": false,
-      "answerSource": "lecture_double_checked",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다."
     },
     {
@@ -520,7 +517,7 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": null,
+      "answer": 3,
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -540,17 +537,16 @@
         }
       ],
       "validation": {
-        "stage": "pending",
-        "check1": "candidate_pages_reviewed",
-        "check2": "could_not_resolve_options",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "",
-        "decisionReason": "강의안 45쪽에서 doxorubicin의 심독성과 bleomycin의 폐섬유화는 직접 확인되지만, cisplatin의 부작용을 심부정맥이 아닌 것으로 배제할 만큼 강의안에서 모든 선택지를 확인하지 못했습니다."
+        "stage": "user_confirmed",
+        "check1": "user_override_explicit",
+        "check2": "NOT_a_new_double_lecture_verification",
+        "verifiedAgainst": "user_decision",
+        "decisionReason": "사용자 요청에 따라 3번 지정. 강의안 검증 채택과 구분."
       },
-      "notes": "강의안 45쪽에서 doxorubicin의 심독성과 bleomycin의 폐섬유화는 직접 확인되지만, cisplatin의 부작용을 심부정맥이 아닌 것으로 배제할 만큼 강의안에서 모든 선택지를 확인하지 못했습니다.",
+      "notes": "사용자가 직접 지정한 정답입니다. 과거 강의안과 충돌하거나 미확정이었던 경우에도 강의안 근거 채택으로 표시하지 않습니다.",
       "type": "choice",
       "showOriginalByDefault": false,
-      "answerSource": "pending",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다."
     },
     {
@@ -926,7 +922,7 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": null,
+      "answer": 4,
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -946,17 +942,16 @@
         }
       ],
       "validation": {
-        "stage": "pending",
-        "check1": "candidate_pages_reviewed",
-        "check2": "could_not_resolve_options",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "",
-        "decisionReason": "강의안 72쪽은 methotrexate의 DHFR 억제와 polyglutamate 전환을 보여주지만, ④의 glutamylation이 억제활성을 증가시킨다는 직접 문구가 강의안에서 확인되지 않아 보류합니다."
+        "stage": "user_confirmed",
+        "check1": "user_override_explicit",
+        "check2": "NOT_a_new_double_lecture_verification",
+        "verifiedAgainst": "user_decision",
+        "decisionReason": "사용자 요청에 따라 4번 지정. 강의안 검증 채택과 구분."
       },
-      "notes": "강의안 72쪽은 methotrexate의 DHFR 억제와 polyglutamate 전환을 보여주지만, ④의 glutamylation이 억제활성을 증가시킨다는 직접 문구가 강의안에서 확인되지 않아 보류합니다.",
+      "notes": "사용자가 직접 지정한 정답입니다. 과거 강의안과 충돌하거나 미확정이었던 경우에도 강의안 근거 채택으로 표시하지 않습니다.",
       "type": "choice",
       "showOriginalByDefault": false,
-      "answerSource": "pending",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다."
     },
     {
@@ -996,7 +991,7 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": null,
+      "answer": 1,
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -1009,17 +1004,16 @@
         }
       ],
       "validation": {
-        "stage": "pending",
-        "check1": "candidate_pages_reviewed",
-        "check2": "could_not_resolve_options",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "",
-        "decisionReason": "강의안 75쪽은 doxorubicin의 topoisomerase II 작용과 DNA/RNA 합성 억제는 지지하지만, ①에 함께 기술된 DNA intercalation 과정은 해당 페이지에 명시되어 있지 않습니다. 선지 전체가 맞는지 직접 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "user_override_explicit",
+        "check2": "NOT_a_new_double_lecture_verification",
+        "verifiedAgainst": "user_decision",
+        "decisionReason": "사용자 요청에 따라 1번 지정. 강의안 검증 채택과 구분."
       },
-      "notes": "강의안 75쪽은 doxorubicin의 topoisomerase II 작용과 DNA/RNA 합성 억제는 지지하지만, ①에 함께 기술된 DNA intercalation 과정은 해당 페이지에 명시되어 있지 않습니다. 선지 전체가 맞는지 직접 확정하지 않았습니다.",
+      "notes": "사용자가 직접 지정한 정답입니다. 과거 강의안과 충돌하거나 미확정이었던 경우에도 강의안 근거 채택으로 표시하지 않습니다.",
       "type": "choice",
       "showOriginalByDefault": false,
-      "answerSource": "pending",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다."
     },
     {
@@ -1122,7 +1116,7 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": null,
+      "answer": 4,
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -1135,17 +1129,16 @@
         }
       ],
       "validation": {
-        "stage": "pending",
-        "check1": "candidate_pages_reviewed",
-        "check2": "could_not_resolve_options",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "",
-        "decisionReason": "야마는 ④ Aromatase inhibitor를 표시했지만, 강의안 105쪽은 SERD를 fulvestrant로, aromatase inhibitors를 별도 계열로 구분합니다. 주어진 5개 선지에 SERD가 없습니다."
+        "stage": "user_confirmed",
+        "check1": "user_override_explicit",
+        "check2": "NOT_a_new_double_lecture_verification",
+        "verifiedAgainst": "user_decision",
+        "decisionReason": "사용자 요청에 따라 4번 지정. 강의안 검증 채택과 구분."
       },
-      "notes": "야마는 ④ Aromatase inhibitor를 표시했지만, 강의안 105쪽은 SERD를 fulvestrant로, aromatase inhibitors를 별도 계열로 구분합니다. 주어진 5개 선지에 SERD가 없습니다.",
+      "notes": "사용자가 직접 지정한 정답입니다. 과거 강의안과 충돌하거나 미확정이었던 경우에도 강의안 근거 채택으로 표시하지 않습니다.",
       "type": "choice",
       "showOriginalByDefault": false,
-      "answerSource": "pending",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다."
     },
     {
@@ -1318,7 +1311,7 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": null,
+      "answer": 4,
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -1338,17 +1331,16 @@
         }
       ],
       "validation": {
-        "stage": "pending",
-        "check1": "candidate_pages_reviewed",
-        "check2": "could_not_resolve_options",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "",
-        "decisionReason": "강의안 72쪽은 methotrexate의 DHFR 억제와 polyglutamate 전환을 보여주지만, ④의 glutamylation이 억제활성을 증가시킨다는 직접 문구가 강의안에서 확인되지 않아 보류합니다."
+        "stage": "user_confirmed",
+        "check1": "user_override_explicit",
+        "check2": "NOT_a_new_double_lecture_verification",
+        "verifiedAgainst": "user_decision",
+        "decisionReason": "사용자 요청에 따라 4번 지정. 강의안 검증 채택과 구분."
       },
-      "notes": "강의안 72쪽은 methotrexate의 DHFR 억제와 polyglutamate 전환을 보여주지만, ④의 glutamylation이 억제활성을 증가시킨다는 직접 문구가 강의안에서 확인되지 않아 보류합니다.",
+      "notes": "사용자가 직접 지정한 정답입니다. 과거 강의안과 충돌하거나 미확정이었던 경우에도 강의안 근거 채택으로 표시하지 않습니다.",
       "type": "choice",
       "showOriginalByDefault": false,
-      "answerSource": "pending",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다."
     },
     {
@@ -1388,7 +1380,7 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": null,
+      "answer": 1,
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -1401,17 +1393,16 @@
         }
       ],
       "validation": {
-        "stage": "pending",
-        "check1": "candidate_pages_reviewed",
-        "check2": "could_not_resolve_options",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "",
-        "decisionReason": "강의안 75쪽은 doxorubicin의 topoisomerase II 작용과 DNA/RNA 합성 억제는 지지하지만, ①에 함께 기술된 DNA intercalation 과정은 해당 페이지에 명시되어 있지 않습니다. 선지 전체가 맞는지 직접 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "user_override_explicit",
+        "check2": "NOT_a_new_double_lecture_verification",
+        "verifiedAgainst": "user_decision",
+        "decisionReason": "사용자 요청에 따라 1번 지정. 강의안 검증 채택과 구분."
       },
-      "notes": "강의안 75쪽은 doxorubicin의 topoisomerase II 작용과 DNA/RNA 합성 억제는 지지하지만, ①에 함께 기술된 DNA intercalation 과정은 해당 페이지에 명시되어 있지 않습니다. 선지 전체가 맞는지 직접 확정하지 않았습니다.",
+      "notes": "사용자가 직접 지정한 정답입니다. 과거 강의안과 충돌하거나 미확정이었던 경우에도 강의안 근거 채택으로 표시하지 않습니다.",
       "type": "choice",
       "showOriginalByDefault": false,
-      "answerSource": "pending",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다."
     },
     {
@@ -1514,7 +1505,7 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": null,
+      "answer": 4,
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -1527,17 +1518,16 @@
         }
       ],
       "validation": {
-        "stage": "pending",
-        "check1": "candidate_pages_reviewed",
-        "check2": "could_not_resolve_options",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "",
-        "decisionReason": "야마는 ④ Aromatase inhibitor를 표시했지만, 강의안 105쪽은 SERD를 fulvestrant로, aromatase inhibitors를 별도 계열로 구분합니다. 주어진 5개 선지에 SERD가 없습니다."
+        "stage": "user_confirmed",
+        "check1": "user_override_explicit",
+        "check2": "NOT_a_new_double_lecture_verification",
+        "verifiedAgainst": "user_decision",
+        "decisionReason": "사용자 요청에 따라 4번 지정. 강의안 검증 채택과 구분."
       },
-      "notes": "야마는 ④ Aromatase inhibitor를 표시했지만, 강의안 105쪽은 SERD를 fulvestrant로, aromatase inhibitors를 별도 계열로 구분합니다. 주어진 5개 선지에 SERD가 없습니다.",
+      "notes": "사용자가 직접 지정한 정답입니다. 과거 강의안과 충돌하거나 미확정이었던 경우에도 강의안 근거 채택으로 표시하지 않습니다.",
       "type": "choice",
       "showOriginalByDefault": false,
-      "answerSource": "pending",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다."
     },
     {
@@ -1850,7 +1840,7 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": null,
+      "answer": 2,
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -1870,17 +1860,16 @@
         }
       ],
       "validation": {
-        "stage": "pending",
-        "check1": "candidate_pages_reviewed",
-        "check2": "could_not_resolve_options",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "",
-        "decisionReason": "② Bleomycin은 폐섬유화 부작용이 맞지만, 강의안 54·73쪽에서 Bleomycin은 anthracycline에 포함되지 않습니다. Anthracycline 조건과 부작용 조건을 동시에 만족하는 선택지가 없어 출제문 검토가 필요합니다."
+        "stage": "user_confirmed",
+        "check1": "user_override_explicit",
+        "check2": "NOT_a_new_double_lecture_verification",
+        "verifiedAgainst": "user_decision",
+        "decisionReason": "사용자 요청에 따라 2번 지정. 강의안 검증 채택과 구분."
       },
-      "notes": "② Bleomycin은 폐섬유화 부작용이 맞지만, 강의안 54·73쪽에서 Bleomycin은 anthracycline에 포함되지 않습니다. Anthracycline 조건과 부작용 조건을 동시에 만족하는 선택지가 없어 출제문 검토가 필요합니다.",
+      "notes": "사용자가 직접 지정한 정답입니다. 과거 강의안과 충돌하거나 미확정이었던 경우에도 강의안 근거 채택으로 표시하지 않습니다.",
       "type": "choice",
       "showOriginalByDefault": false,
-      "answerSource": "pending",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다."
     },
     {
@@ -2116,7 +2105,7 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": null,
+      "answer": 2,
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -2136,17 +2125,16 @@
         }
       ],
       "validation": {
-        "stage": "pending",
-        "check1": "candidate_pages_reviewed",
-        "check2": "could_not_resolve_options",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "",
-        "decisionReason": "원본은 ②에 표시가 있지만, 강의안의 trastuzumab-HER2 연결(112쪽)과 TBL 사례만으로 ①~⑤의 정확한 작용기전 진위를 모두 판정하기 어렵습니다. 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "user_override_explicit",
+        "check2": "NOT_a_new_double_lecture_verification",
+        "verifiedAgainst": "user_decision",
+        "decisionReason": "사용자 요청에 따라 2번 지정. 강의안 검증 채택과 구분."
       },
-      "notes": "원본은 ②에 표시가 있지만, 강의안의 trastuzumab-HER2 연결(112쪽)과 TBL 사례만으로 ①~⑤의 정확한 작용기전 진위를 모두 판정하기 어렵습니다. 정답을 확정하지 않았습니다.",
+      "notes": "사용자가 직접 지정한 정답입니다. 과거 강의안과 충돌하거나 미확정이었던 경우에도 강의안 근거 채택으로 표시하지 않습니다.",
       "type": "choice",
       "showOriginalByDefault": false,
-      "answerSource": "pending",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다."
     },
     {
@@ -2186,7 +2174,7 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": null,
+      "answer": 5,
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -2199,17 +2187,16 @@
         }
       ],
       "validation": {
-        "stage": "pending",
-        "check1": "candidate_pages_reviewed",
-        "check2": "could_not_resolve_options",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "",
-        "decisionReason": "강의안 80쪽은 유입 감소, 유출 증가, 대체 대사경로, DNA 복구의 관여를 보여줍니다. 다만 ⑤가 다른 기전과 비교해 확실히 관련이 적다는 직접적 근거는 강의안에서 검증되지 않아 채택하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "user_override_explicit",
+        "check2": "NOT_a_new_double_lecture_verification",
+        "verifiedAgainst": "user_decision",
+        "decisionReason": "사용자 요청에 따라 5번 지정. 강의안 검증 채택과 구분."
       },
-      "notes": "강의안 80쪽은 유입 감소, 유출 증가, 대체 대사경로, DNA 복구의 관여를 보여줍니다. 다만 ⑤가 다른 기전과 비교해 확실히 관련이 적다는 직접적 근거는 강의안에서 검증되지 않아 채택하지 않았습니다.",
+      "notes": "사용자가 직접 지정한 정답입니다. 과거 강의안과 충돌하거나 미확정이었던 경우에도 강의안 근거 채택으로 표시하지 않습니다.",
       "type": "choice",
       "showOriginalByDefault": false,
-      "answerSource": "pending",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다."
     }
   ]
