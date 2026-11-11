@@ -659,3 +659,7 @@ html[data-theme=light]{--bg:#f3f6fb;--panel:#fff;--panel2:#f6f9fd;--panel3:#edf3
 .notice-card h3{margin:0 0 10px;font-size:15px;line-height:1.45}.notice-card ul{margin:0;padding-left:18px;color:var(--muted);font-size:12px;line-height:1.7}
 @media(max-width:1180px){.notice-banner{flex-direction:column;align-items:stretch}.notice-current{min-width:0}.notice-cards{grid-template-columns:1fr}}
 @media(max-width:760px){.notice-panel.notice-panel-wide{padding:16px}.notice-head h2{font-size:28px}.notice-current{flex-direction:column;align-items:flex-start;gap:6px}.notice-version{font-size:22px}}
+
+/* v1.0.5: notice removed; study selection begins directly below navigation. */
+.home-mode .content{padding-top:18px;}
+@media(max-width:760px){.home-mode .content{padding-top:12px;}}

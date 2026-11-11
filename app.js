@@ -9,9 +9,8 @@
   const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
   const circles = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
   const TALLY_FORM_ID = '6DjZg5';
-  const PUBLIC_VERSION = '1.0.4';
+  const PUBLIC_VERSION = '1.0.5';
   const PUBLIC_RELEASE_DATE = '2026-11-11';
-  const RELEASE_NOTICES = [{version:'1.0.4',date:'2026-11-11',title:'오류 제보 팝업 위치 개선',changes:['Tally 오류 제보창을 화면 오른쪽 아래에 표시','팝업 너비 375px 및 제목 숨김','가로형 공지사항과 기존 기능 유지']},{version:'1.0.3',date:'2026-11-11',title:'공지사항 영역 가로형 레이아웃 개편',changes:['메인 상단 공지사항을 좌우로 넓게 확장','세로 길이를 줄이고 버전 카드 3개를 가로 배치','기존 학습 소개 문구 영역 제거로 상단 공간 최적화']},{version:'1.0.2',date:'2026-11-11',title:'과목별 공용 리더보드 분리',changes:['네 과목의 22학번 TOP 3 순위를 완전히 분리','미등록 과목은 준비 중으로 표시','기존 PDF 저장과 Tally 팝업 유지']},{version:'1.0.1',date:'2026-11-11',title:'공용 리더보드 및 PDF 저장 개선',changes:['22학번 통합 기출 점수 전체 사용자 공유','Supabase 서버 정답 검증 및 닉네임 등록','아이패드 파일 앱 PDF 저장 지원','기존 오류 제보 Tally 팝업 유지']}];
   const LEADERBOARD_IMAGE_BY_RANK = {1:'assets/ui/rank-first.png',2:'assets/ui/rank-second.png',3:'assets/ui/rank-third.png'};
   // Keep the underlying provenance, but omit internal answer-approval workflow from study copy.
   function studyCopy(v) {
@@ -356,10 +355,6 @@
     const board=sharedBoards.get(key)||[];
     const notes={loading:'전체 사용자 공용 기록을 불러오는 중…',error:'서버 연결 실패 · 아래 새로고침 버튼으로 다시 시도하세요.',unconfigured:'공용 서버 연결 준비 중 · 관리자가 Supabase 설정을 완료하면 모든 사용자에게 순위가 공개됩니다.',ready:'이 과목의 22학번 TOP 3 · 다른 과목 점수는 섞이지 않습니다.', 'not-ready':'아직 22학번 문제와 채점 기준이 등록되지 않은 과목입니다. 등록 후 공용 랭킹이 활성화됩니다.'};
     return `<section class="leaderboard-card" aria-label="${esc(subject.name)} 22학번 공용 리더보드"><div class="leaderboard-head"><div><div class="eyebrow">${esc(subject.name)} · 22학번</div><h3>🏆 TOP 3 LEADERBOARD</h3></div>${questionsReady?'<button class="button secondary tiny" data-action="refresh-leaderboard" aria-label="순위 새로고침">↻</button>':''}</div><div class="leaderboard-list">${[1,2,3].map(rank=>{const item=board[rank-1];return `<div class="leaderboard-row rank-${rank}"><div class="leaderboard-rank">${rank}</div><div class="leaderboard-meta"><strong>${item?esc(item.nickname):'기록 대기 중'}</strong><small>${item?`${item.score}/${item.total}문항 정답`:'공용 기록 없음'}</small></div><div class="leaderboard-score">${item?`${item.score}점`:'—'}</div></div>`;}).join('')}</div><p class="leaderboard-help">${esc(notes[status]||notes.loading)}</p>${status==='unconfigured'?'<p class="leaderboard-help">※ 아직 공용 DB가 연결되지 않아 다른 사람의 기록을 보여줄 수 없습니다.</p>':''}</section>`;
-  }
-  function renderNoticePanel(){
-    const items=RELEASE_NOTICES.map((note,index)=>`<article class="notice-card ${index===0?'is-current':''}"><div class="notice-card-top"><span class="notice-version">v${esc(note.version)}</span><span class="notice-date">${esc(note.date)}</span></div><h3>${esc(note.title)}</h3><ul>${(note.changes||[]).map(change=>`<li>${esc(change)}</li>`).join('')}</ul></article>`).join('');
-    return `<aside class="notice-panel notice-panel-wide"><div class="notice-banner"><div class="notice-head"><div class="eyebrow">NOTICE</div><h2>공지사항</h2><p>현재 버전과 변경사항을 빠르게 확인할 수 있습니다.</p></div><div class="notice-current"><strong>현재 버전 v${esc(PUBLIC_VERSION)}</strong><span>${esc(PUBLIC_RELEASE_DATE)}</span></div></div><div class="notice-cards">${items}</div></aside>`;
   }
   function closeDialog() { document.querySelector('.custom-dialog-overlay')?.remove(); }
   function openDialog(contentHTML, options={}) {
@@ -765,8 +760,7 @@
     const selected=subjectById(selectedSubject);
     const profs=selected?.professors||[];
     const yrs=[...new Set(profs.flatMap(p=>(professorCache.get(p.id)?.questions||[]).filter(q=>!q.isPrediction && Number.isFinite(Number(q.year))).map(q=>Number(q.year))))].sort((a,b)=>a-b);
-    return `<section class="home-heading home-heading-simple">${renderNoticePanel()}</section>
-      <div class="home-selector-layout"><aside class="home-subjects"><div class="eyebrow">SUBJECTS · ${subs.length}</div>
+    return `<div class="home-selector-layout"><aside class="home-subjects"><div class="eyebrow">SUBJECTS · ${subs.length}</div>
       ${subs.map((s,i)=>`<button class="home-subject ${s.id===selectedSubject?'selected':''}" data-action="subject-home" data-id="${esc(s.id)}"><span class="home-subject-index">0${i+1}</span><span class="home-subject-label"><strong>${esc(s.name)}</strong><small>${s.professors.length?`${s.professors.length}명의 교수님`:'등록 예정'}</small></span><span class="home-subject-arrow">${s.id===selectedSubject?'●':'›'}</span></button>`).join('')}${renderLeaderboardPanel(selectedSubject)}</aside>
       <section class="home-pick-panel"><div class="home-pick-heading"><div><div class="eyebrow">${esc(selected?.name||'')} · SELECT STUDY MODE</div><h2>어떻게 공부할까요?</h2></div><span class="pill blue">${profs.length}명 등록</span></div>
       <div class="study-mode-tabs" role="tablist" aria-label="문제풀이 방식"><button role="tab" aria-selected="${homeStudyType==='professor'}" class="mode-tab ${homeStudyType==='professor'?'active':''}" data-action="home-mode" data-mode="professor">교수님별로 풀기</button><button role="tab" aria-selected="${homeStudyType==='unit'}" class="mode-tab ${homeStudyType==='unit'?'active':''}" data-action="home-mode" data-mode="unit">단원별로 풀기</button><button role="tab" aria-selected="${homeStudyType==='year'}" class="mode-tab ${homeStudyType==='year'?'active':''}" data-action="home-mode" data-mode="year">학번별로 풀기</button></div>
