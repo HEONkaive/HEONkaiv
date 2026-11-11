@@ -9,9 +9,9 @@
   const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
   const circles = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
   const TALLY_FORM_ID = '6DjZg5';
-  const PUBLIC_VERSION = '1.0.3';
+  const PUBLIC_VERSION = '1.0.4';
   const PUBLIC_RELEASE_DATE = '2026-11-11';
-  const RELEASE_NOTICES = [{version:'1.0.3',date:'2026-11-11',title:'공지사항 영역 가로형 레이아웃 개편',changes:['메인 상단 공지사항을 좌우로 넓게 확장','세로 길이를 줄이고 버전 카드 3개를 가로 배치','기존 학습 소개 문구 영역 제거로 상단 공간 최적화']},{version:'1.0.2',date:'2026-11-11',title:'과목별 공용 리더보드 분리',changes:['네 과목의 22학번 TOP 3 순위를 완전히 분리','미등록 과목은 준비 중으로 표시','기존 PDF 저장과 Tally 팝업 유지']},{version:'1.0.1',date:'2026-11-11',title:'공용 리더보드 및 PDF 저장 개선',changes:['22학번 통합 기출 점수 전체 사용자 공유','Supabase 서버 정답 검증 및 닉네임 등록','아이패드 파일 앱 PDF 저장 지원','기존 오류 제보 Tally 팝업 유지']}];
+  const RELEASE_NOTICES = [{version:'1.0.4',date:'2026-11-11',title:'오류 제보 팝업 위치 개선',changes:['Tally 오류 제보창을 화면 오른쪽 아래에 표시','팝업 너비 375px 및 제목 숨김','가로형 공지사항과 기존 기능 유지']},{version:'1.0.3',date:'2026-11-11',title:'공지사항 영역 가로형 레이아웃 개편',changes:['메인 상단 공지사항을 좌우로 넓게 확장','세로 길이를 줄이고 버전 카드 3개를 가로 배치','기존 학습 소개 문구 영역 제거로 상단 공간 최적화']},{version:'1.0.2',date:'2026-11-11',title:'과목별 공용 리더보드 분리',changes:['네 과목의 22학번 TOP 3 순위를 완전히 분리','미등록 과목은 준비 중으로 표시','기존 PDF 저장과 Tally 팝업 유지']},{version:'1.0.1',date:'2026-11-11',title:'공용 리더보드 및 PDF 저장 개선',changes:['22학번 통합 기출 점수 전체 사용자 공유','Supabase 서버 정답 검증 및 닉네임 등록','아이패드 파일 앱 PDF 저장 지원','기존 오류 제보 Tally 팝업 유지']}];
   const LEADERBOARD_IMAGE_BY_RANK = {1:'assets/ui/rank-first.png',2:'assets/ui/rank-second.png',3:'assets/ui/rank-third.png'};
   // Keep the underlying provenance, but omit internal answer-approval workflow from study copy.
   function studyCopy(v) {
@@ -408,7 +408,7 @@
     const fallback=`https://tally.so/r/${TALLY_FORM_ID}`;
     try {
       if(window.Tally && typeof window.Tally.openPopup==='function') {
-        window.Tally.openPopup(TALLY_FORM_ID, {layout:'modal', width:700, overlay:true, autoClose:0, hiddenFields:{}});
+        window.Tally.openPopup(TALLY_FORM_ID, {layout:'default', width:375, hideTitle:true, overlay:false, autoClose:0, hiddenFields:{}});
       } else {
         window.open(fallback,'_blank','noopener');
       }
