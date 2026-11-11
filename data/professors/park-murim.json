@@ -887,8 +887,8 @@
       "figureRequired": true,
       "transcriptionStatus": "visually_checked_against_source_page",
       "type": "choice",
-      "answer": null,
-      "answerSource": "pending_user_decision",
+      "answer": 3,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -902,13 +902,13 @@
         }
       ],
       "validation": {
-        "stage": "review_required",
-        "check1": "relevant_original_page_verified_not_direct_proof",
-        "check2": "unique_answer_not_confirmed",
-        "verifiedAgainst": "not_adopted",
-        "decisionReason": "원본 그래프에 A와 B의 위치 표기가 확인되지 않습니다. 강의안 3쪽의 암 발생 추이는 참고가 되지만 A/B 대응을 직접 증명하지 못하므로 정답을 보류했습니다."
+        "stage": "user_confirmed",
+        "check1": "user_explicitly_selected_answer",
+        "check2": "not_claimed_as_lecture_verified",
+        "verifiedAgainst": "user_instruction_not_lecture",
+        "decisionReason": "2026-11-11 사용자 지정 정답; 강의안 이중검정 채택과 구분함"
       },
-      "notes": "원본 그래프에 A와 B의 위치 표기가 확인되지 않습니다. 강의안 3쪽의 암 발생 추이는 참고가 되지만 A/B 대응을 직접 증명하지 못하므로 정답을 보류했습니다.",
+      "notes": "요청에 따라 사용자 확정 정답으로 설정한 문항입니다. 강의안 직접 검증 정답과 구분합니다.",
       "showOriginalByDefault": false,
       "transcriptionWarning": "원본 그래프에 A와 B의 위치 표기가 확인되지 않습니다. 강의안 3쪽의 암 발생 추이는 참고가 되지만 A/B 대응을 직접 증명하지 못하므로 정답을 보류했습니다.",
       "figureImages": [
@@ -1150,8 +1150,8 @@
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source_page",
       "type": "choice",
-      "answer": null,
-      "answerSource": "pending_user_decision",
+      "answer": 1,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -1165,13 +1165,13 @@
         }
       ],
       "validation": {
-        "stage": "review_required",
-        "check1": "relevant_original_page_verified_not_direct_proof",
-        "check2": "unique_answer_not_confirmed",
-        "verifiedAgainst": "not_adopted",
-        "decisionReason": "강의안은 ①의 특이도 정의를 직접 뒷받침하지만, ③의 “가장 우선하여”라는 비교 표현까지 명확하게 배제하지는 않습니다. 원문과 선택지의 유일정답성 검토를 위해 미확정으로 남겼습니다."
+        "stage": "user_confirmed",
+        "check1": "user_explicitly_selected_answer",
+        "check2": "not_claimed_as_lecture_verified",
+        "verifiedAgainst": "user_instruction_not_lecture",
+        "decisionReason": "2026-11-11 사용자 지정 정답; 강의안 이중검정 채택과 구분함"
       },
-      "notes": "강의안은 ①의 특이도 정의를 직접 뒷받침하지만, ③의 “가장 우선하여”라는 비교 표현까지 명확하게 배제하지는 않습니다. 원문과 선택지의 유일정답성 검토를 위해 미확정으로 남겼습니다.",
+      "notes": "요청에 따라 사용자 확정 정답으로 설정한 문항입니다. 강의안 직접 검증 정답과 구분합니다.",
       "showOriginalByDefault": false,
       "transcriptionWarning": "강의안은 ①의 특이도 정의를 직접 뒷받침하지만, ③의 “가장 우선하여”라는 비교 표현까지 명확하게 배제하지는 않습니다. 원문과 선택지의 유일정답성 검토를 위해 미확정으로 남겼습니다."
     },
@@ -1213,8 +1213,8 @@
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source_page",
       "type": "choice",
-      "answer": null,
-      "answerSource": "pending_user_decision",
+      "answer": 4,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -1236,13 +1236,13 @@
         }
       ],
       "validation": {
-        "stage": "review_required",
-        "check1": "relevant_original_page_verified_not_direct_proof",
-        "check2": "unique_answer_not_confirmed",
-        "verifiedAgainst": "not_adopted",
-        "decisionReason": "④ 림프절이 기출 해설의 의도된 오답이지만, 업로드 강의안에서 림프절을 원발병소로 배제하는 직접 근거는 부족합니다. 관련 강의안은 검토 자료로만 표시합니다."
+        "stage": "user_confirmed",
+        "check1": "user_explicitly_selected_answer",
+        "check2": "not_claimed_as_lecture_verified",
+        "verifiedAgainst": "user_instruction_not_lecture",
+        "decisionReason": "2026-11-11 사용자 지정 정답; 강의안 이중검정 채택과 구분함"
       },
-      "notes": "④ 림프절이 기출 해설의 의도된 오답이지만, 업로드 강의안에서 림프절을 원발병소로 배제하는 직접 근거는 부족합니다. 관련 강의안은 검토 자료로만 표시합니다.",
+      "notes": "요청에 따라 사용자 확정 정답으로 설정한 문항입니다. 강의안 직접 검증 정답과 구분합니다.",
       "showOriginalByDefault": false,
       "transcriptionWarning": "④ 림프절이 기출 해설의 의도된 오답이지만, 업로드 강의안에서 림프절을 원발병소로 배제하는 직접 근거는 부족합니다. 관련 강의안은 검토 자료로만 표시합니다."
     },
@@ -1439,7 +1439,7 @@
       "number": 56,
       "subject": "hematology-1",
       "professor": "park-murim",
-      "prompt": "다음 항암제의 특이 부작용으로 잘못된 것은?\n17-12\n17-56 (서남)\n(서남)",
+      "prompt": "다음 항암제의 특이 부작용으로 잘못된 것은?",
       "choices": [
         {
           "number": 1,
@@ -1469,15 +1469,17 @@
       },
       "figureRequired": true,
       "transcriptionStatus": "visual_checked",
-      "answer": null,
+      "answer": 2,
       "explanation": "",
       "evidence": [],
       "validation": {
-        "stage": "review_required",
-        "check1": "not_sufficient_or_conflicting",
-        "check2": "rejected"
+        "stage": "user_confirmed",
+        "check1": "user_explicitly_selected_answer",
+        "check2": "not_claimed_as_lecture_verified",
+        "verifiedAgainst": "user_instruction_not_lecture",
+        "decisionReason": "2026-11-11 사용자 지정 정답; 강의안 이중검정 채택과 구분함"
       },
-      "notes": "강의안에 제시된 약물 부작용과 다섯 보기 모두 대체로 일치해, 잘못된 보기 하나를 확정할 수 없습니다.",
+      "notes": "요청에 따라 사용자 확정 정답으로 설정한 문항입니다. 강의안 직접 검증 정답과 구분합니다.",
       "type": "choice",
       "showOriginalByDefault": true,
       "candidateEvidence": [
@@ -1496,7 +1498,7 @@
           "status": "not_adopted"
         }
       ],
-      "answerSource": "pending_user_decision",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": ""
     },
     {
@@ -3295,15 +3297,17 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "automatic_unverified",
-      "answer": null,
+      "answer": 5,
       "explanation": "",
       "evidence": [],
       "validation": {
-        "stage": "review_required",
-        "check1": "not_sufficient_or_conflicting",
-        "check2": "rejected"
+        "stage": "user_confirmed",
+        "check1": "user_explicitly_selected_answer",
+        "check2": "not_claimed_as_lecture_verified",
+        "verifiedAgainst": "user_instruction_not_lecture",
+        "decisionReason": "2026-11-11 사용자 지정 정답; 강의안 이중검정 채택과 구분함"
       },
-      "notes": "2025년 강의안에는 HER2 관련 새로운 표적치료 내용이 포함되어 과거 기출의 의도와 달라졌을 수 있습니다.",
+      "notes": "요청에 따라 사용자 확정 정답으로 설정한 문항입니다. 강의안 직접 검증 정답과 구분합니다.",
       "type": "choice",
       "showOriginalByDefault": false,
       "candidateEvidence": [
@@ -3315,7 +3319,7 @@
           "status": "not_adopted"
         }
       ],
-      "answerSource": "pending_user_decision",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "선지 전사는 원본과 최종 대조가 필요합니다. 아래 원본 이미지에서 문자·숫자를 확인할 수 있습니다."
     },
     {
@@ -3355,15 +3359,17 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "automatic_unverified",
-      "answer": null,
+      "answer": 2,
       "explanation": "",
       "evidence": [],
       "validation": {
-        "stage": "review_required",
-        "check1": "not_sufficient_or_conflicting",
-        "check2": "rejected"
+        "stage": "user_confirmed",
+        "check1": "user_explicitly_selected_answer",
+        "check2": "not_claimed_as_lecture_verified",
+        "verifiedAgainst": "user_instruction_not_lecture",
+        "decisionReason": "2026-11-11 사용자 지정 정답; 강의안 이중검정 채택과 구분함"
       },
-      "notes": "강의안 목록에 표적이 미등재되었다는 이유만으로 임상효과가 없음을 증명할 수 없어 정답을 유보합니다.",
+      "notes": "요청에 따라 사용자 확정 정답으로 설정한 문항입니다. 강의안 직접 검증 정답과 구분합니다.",
       "type": "choice",
       "showOriginalByDefault": false,
       "candidateEvidence": [
@@ -3375,7 +3381,7 @@
           "status": "not_adopted"
         }
       ],
-      "answerSource": "pending_user_decision",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "선지 전사는 원본과 최종 대조가 필요합니다. 아래 원본 이미지에서 문자·숫자를 확인할 수 있습니다."
     },
     {
@@ -3539,15 +3545,17 @@
       },
       "figureRequired": true,
       "transcriptionStatus": "visual_checked",
-      "answer": null,
+      "answer": 2,
       "explanation": "",
       "evidence": [],
       "validation": {
-        "stage": "review_required",
-        "check1": "not_sufficient_or_conflicting",
-        "check2": "rejected"
+        "stage": "user_confirmed",
+        "check1": "user_explicitly_selected_answer",
+        "check2": "not_claimed_as_lecture_verified",
+        "verifiedAgainst": "user_instruction_not_lecture",
+        "decisionReason": "2026-11-11 사용자 지정 정답; 강의안 이중검정 채택과 구분함"
       },
-      "notes": "RECIST는 직경 합을 평가하지만 선지 ②~④가 모두 암 volume이라고 표현해 해석에 따라 복수의 오답이 가능합니다.",
+      "notes": "요청에 따라 사용자 확정 정답으로 설정한 문항입니다. 강의안 직접 검증 정답과 구분합니다.",
       "type": "choice",
       "showOriginalByDefault": true,
       "candidateEvidence": [
@@ -3559,7 +3567,7 @@
           "status": "not_adopted"
         }
       ],
-      "answerSource": "pending_user_decision",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": ""
     },
     {
@@ -3785,15 +3793,17 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "automatic_unverified",
-      "answer": null,
+      "answer": 4,
       "explanation": "",
       "evidence": [],
       "validation": {
-        "stage": "review_required",
-        "check1": "not_sufficient_or_conflicting",
-        "check2": "rejected"
+        "stage": "user_confirmed",
+        "check1": "user_explicitly_selected_answer",
+        "check2": "not_claimed_as_lecture_verified",
+        "verifiedAgainst": "user_instruction_not_lecture",
+        "decisionReason": "2026-11-11 사용자 지정 정답; 강의안 이중검정 채택과 구분함"
       },
-      "notes": "Trastuzumab의 HER2 표적은 강의안에 있으나 HER2 결합 domain 번호 4를 명시한 강의안 근거를 확인하지 못했습니다.",
+      "notes": "요청에 따라 사용자 확정 정답으로 설정한 문항입니다. 강의안 직접 검증 정답과 구분합니다.",
       "type": "choice",
       "showOriginalByDefault": false,
       "candidateEvidence": [
@@ -3805,7 +3815,7 @@
           "status": "not_adopted"
         }
       ],
-      "answerSource": "pending_user_decision",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "선지 전사는 원본과 최종 대조가 필요합니다. 아래 원본 이미지에서 문자·숫자를 확인할 수 있습니다."
     },
     {
@@ -3887,8 +3897,8 @@
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source_page",
       "type": "choice",
-      "answer": null,
-      "answerSource": "pending_user_decision",
+      "answer": 5,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -3910,13 +3920,13 @@
         }
       ],
       "validation": {
-        "stage": "review_required",
-        "check1": "relevant_original_page_verified_not_direct_proof",
-        "check2": "unique_answer_not_confirmed",
-        "verifiedAgainst": "not_adopted",
-        "decisionReason": "기출 해설에서는 ⑤ 신경수초를 의도했으나, 업로드 강의안에 해당 보기의 배제를 직접적으로 입증하는 구절이 없어 정답 검토 필요로 남겼습니다."
+        "stage": "user_confirmed",
+        "check1": "user_explicitly_selected_answer",
+        "check2": "not_claimed_as_lecture_verified",
+        "verifiedAgainst": "user_instruction_not_lecture",
+        "decisionReason": "2026-11-11 사용자 지정 정답; 강의안 이중검정 채택과 구분함"
       },
-      "notes": "기출 해설에서는 ⑤ 신경수초를 의도했으나, 업로드 강의안에 해당 보기의 배제를 직접적으로 입증하는 구절이 없어 정답 검토 필요로 남겼습니다.",
+      "notes": "요청에 따라 사용자 확정 정답으로 설정한 문항입니다. 강의안 직접 검증 정답과 구분합니다.",
       "showOriginalByDefault": false,
       "transcriptionWarning": "기출 해설에서는 ⑤ 신경수초를 의도했으나, 업로드 강의안에 해당 보기의 배제를 직접적으로 입증하는 구절이 없어 정답 검토 필요로 남겼습니다."
     },
@@ -4597,15 +4607,17 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_transcribed_needs_final_review",
-      "answer": null,
+      "answer": 4,
       "explanation": "",
       "evidence": [],
       "validation": {
-        "stage": "review_required",
-        "check1": "not_sufficient_or_conflicting",
-        "check2": "rejected"
+        "stage": "user_confirmed",
+        "check1": "user_explicitly_selected_answer",
+        "check2": "not_claimed_as_lecture_verified",
+        "verifiedAgainst": "user_instruction_not_lecture",
+        "decisionReason": "2026-11-11 사용자 지정 정답; 강의안 이중검정 채택과 구분함"
       },
-      "notes": "주요 암 발생률의 연도별 증가·감소 추세를 제공 강의안의 동일 시점 자료로 직접 대조하지 못했습니다.",
+      "notes": "요청에 따라 사용자 확정 정답으로 설정한 문항입니다. 강의안 직접 검증 정답과 구분합니다.",
       "type": "choice",
       "showOriginalByDefault": false,
       "candidateEvidence": [
@@ -4617,7 +4629,7 @@
           "status": "not_adopted"
         }
       ],
-      "answerSource": "pending_user_decision",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "선지 전사는 원본과 최종 대조가 필요합니다. 아래 원본 이미지에서 문자·숫자를 확인할 수 있습니다."
     },
     {
