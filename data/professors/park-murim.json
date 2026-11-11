@@ -6584,7 +6584,7 @@
       "unitId": "37dd67082d52",
       "aiExplanation": "",
       "choiceExplanations": {
-        "1": "Lazertinib은 EGFR 변이 NSCLC의 치료에 실제 사용되는 EGFR TKI입니다. ①도 조건에 따라 옳으므로 단일 정답 문항 자체를 검토해야 합니다.",
+        "1": "Lazertinib은 resistant EGFR mutation을 표적으로 합니다.",
         "2": "Crizotinib의 주요 표적은 ALK·ROS1·MET이며 CDK 억제제는 아닙니다.",
         "3": "Imatinib은 c-KIT을 억제하며 GIST 등에서 사용됩니다.",
         "4": "Ibrutinib은 BTK 억제제이며 NTRK 융합 표적치료제가 아닙니다.",

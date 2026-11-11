@@ -261,6 +261,12 @@
           await this.paragraph(`${reason.symbol}  ${reason.text}`,{size:18,lineHeight:28,after:12});
         }
       }
+      if (Array.isArray(item.explanationImages) && item.explanationImages.length) {
+        await this.heading('추가 해설 참고 이미지');
+        for (const figure of item.explanationImages) {
+          await this.image(figure.src, figure.label||'사용자 제공 참고 이미지', 470);
+        }
+      }
       if (item.evidence) {
         await this.heading('강의안 근거');
         await this.paragraph(item.evidence.label||'',{size:16,color:COLORS.muted,lineHeight:24,after:5});

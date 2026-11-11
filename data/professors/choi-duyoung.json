@@ -698,7 +698,14 @@
         "3": "LCH는 CD1a 및 langerin(CD207) 양성·Birbeck granule 등이 진단에 도움 되며 CD10a라는 표기는 맞지 않습니다.",
         "4": "피부·림프절 등에 국한된 단일기관 LCH는 위험 장기 침범형보다 예후가 좋고 일부는 자연 관해할 수 있습니다.",
         "5": "다장기 LCH의 치료에 vinblastine과 steroid 등은 사용되지만 vincristine·cisplatin 병용을 표준으로 제시하지는 않습니다."
-      }
+      },
+      "explanationImages": [
+        {
+          "src": "assets/evidence/user-corrections/17-46-lch-treatment-prognosis-20261111.webp",
+          "alt": "17-46 · Langerhans cell histiocytosis 치료 및 예후 강의자료",
+          "caption": "LCH Treatment and Prognosis · 사용자 제공 참고 이미지 (원본 PDF 파일·페이지 미확인)"
+        }
+      ]
     },
     {
       "id": "choi-duyoung:17-47",
@@ -3815,9 +3822,9 @@
       "figureRequired": true,
       "figureImages": [
         {
-          "src": "assets/figures/class22/22-54-figure.webp",
-          "alt": "22학번 54번 기출에 실제 포함된 검사·영상·그림",
-          "caption": "22학번 54번 필수 그림 · 시험지 원본에서 그림 부분만 분리"
+          "src": "assets/figures/class22/22-54-figure-corrected-20261111.webp",
+          "alt": "22학번 54번 검사 수치 및 복부 CT (사용자 제보 교체 이미지)",
+          "caption": "22-54 · 혈액 및 소변검사 수치와 복부 CT · 2026-11-11 제보 반영"
         }
       ],
       "showOriginalByDefault": false,
@@ -3899,9 +3906,9 @@
       "figureRequired": true,
       "figureImages": [
         {
-          "src": "assets/figures/class22/22-55-figure.webp",
-          "alt": "22학번 55번 기출에 실제 포함된 검사·영상·그림",
-          "caption": "22학번 55번 필수 그림 · 시험지 원본에서 그림 부분만 분리"
+          "src": "assets/figures/class22/22-55-figure-corrected-20261111.webp",
+          "alt": "22학번 55번 검사 수치 및 피부 발진·대퇴골 X-ray (사용자 제보 교체 이미지)",
+          "caption": "22-55 · 혈액검사와 피부·대퇴골 영상 · 2026-11-11 제보 반영"
         }
       ],
       "showOriginalByDefault": false,
