@@ -31,7 +31,7 @@
           "name": "최두영",
           "data": "data/professors/choi-duyoung.json",
           "questionCount": 44,
-          "pendingCount": 28
+          "pendingCount": 0
         },
         {
           "id": "lee-seungshin",
@@ -39,6 +39,20 @@
           "data": "data/professors/lee-seungshin.json",
           "questionCount": 36,
           "pendingCount": 15
+        },
+        {
+          "id": "lee-kanggyu",
+          "name": "이강규",
+          "data": "data/professors/lee-kanggyu.json",
+          "questionCount": 21,
+          "pendingCount": 9
+        },
+        {
+          "id": "jung-yuri",
+          "name": "정유리",
+          "data": "data/professors/jung-yuri.json",
+          "questionCount": 21,
+          "pendingCount": 17
         }
       ]
     },

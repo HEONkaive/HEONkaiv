@@ -2131,8 +2131,8 @@
         }
       ],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 2,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -2150,15 +2150,15 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
+        "stage": "user_confirmed",
         "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
+        "check2": "user_confirmed_answer",
         "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "decisionReason": "2026-11-11 사용자 지정 정답 ② (강의안 이중검정과 구분)"
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "문항은 PDF 10~11페이지에 걸쳐 있습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자 확정 정답 ②. 기존 강의안 검토 자료는 검토용으로 유지합니다."
     },
     {
       "id": "choi-duyoung:20-15",

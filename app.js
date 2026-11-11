@@ -8,7 +8,7 @@
   const $ = (s, ctx = document) => ctx.querySelector(s);
   const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
   const circles = ['①','②','③','④','⑤'];
-  const emptyState = () => ({version:1,records:{},bookmarks:{},customAnswers:{},customMulti:{},lastVisited:{},lastProfessor:null,prefs:{theme:'dark',explanationWidth:450}});
+  const emptyState = () => ({version:1,records:{},yearExamRecords:{},predictionRecords:{},bookmarks:{},yearExamBookmarks:{},predictionBookmarks:{},customAnswers:{},customMulti:{},lastVisited:{},lastProfessor:null,prefs:{theme:'dark',explanationWidth:450}});
   let state = emptyState();
   let catalog = null;
   const professorCache = new Map();
@@ -42,9 +42,19 @@
       if (raw && typeof raw === 'object') {
         state = {...emptyState(),...raw,
           records:raw.records && typeof raw.records==='object' ? raw.records : {},
+          yearExamRecords:raw.yearExamRecords || {},predictionRecords:raw.predictionRecords || {},
+          yearExamBookmarks:raw.yearExamBookmarks || {},predictionBookmarks:raw.predictionBookmarks || {},
           bookmarks:raw.bookmarks || {},customAnswers:raw.customAnswers || {},
           customMulti:raw.customMulti || {},lastVisited:raw.lastVisited || {},
           prefs:{...emptyState().prefs,...(raw.prefs||{})}};
+        // v10: Choi 20-14 is user-confirmed as option ②. Clear only an
+        // outdated browser-local answer override once, never student submissions.
+        if (!state.prefs.v10_choi_20_14_answer) {
+          delete state.customAnswers['choi-duyoung:20-14'];
+          delete state.customMulti['choi-duyoung:20-14'];
+          state.prefs.v10_choi_20_14_answer=true;
+          try {localStorage.setItem(KEY,JSON.stringify(state));}catch(e){console.warn(e);}
+        }
         // v9: respect the user's corrections for Kim Hyewon without deleting submitted records.
         if (!state.prefs.v9_kim_user_answers) {
           for (const label of ['20-6','21-2']) {
@@ -150,20 +160,22 @@
   }
   function questions(prof = currentProfessor) { return prof ? (prof.questions||[]) : []; }
   const yearSortValue = y => (y == null || y === 'unknown' || y === '연도미상') ? Number.MAX_SAFE_INTEGER : (Number.isFinite(Number(y)) ? Number(y) : Number.MAX_SAFE_INTEGER);
-  const yearName = y => yearSortValue(y) === Number.MAX_SAFE_INTEGER ? '연도미상' : `${y}학번`;
-  function record(q) {
-    return state.records[q.id] || {selected:[],submitted:false};
-  }
-  function isBookmark(q) { return !!state.bookmarks[q.id]; }
-  function submission(q) { return !!record(q).submitted; }
+  const yearName = y => String(y)==='predicted' ? 'AI 예상문제' : yearSortValue(y) === Number.MAX_SAFE_INTEGER ? '연도미상' : `${y}학번`;
+  // Professor, class-year exam and AI practice are separate learning sessions.
+  // Global answer-key corrections remain shared; student answers never leak across modes.
+  function recordBucket(mode=studyMode) { return mode==='year-exam' ? state.yearExamRecords : mode==='prediction' ? state.predictionRecords : state.records; }
+  function bookmarkBucket(mode=studyMode) { return mode==='year-exam' ? state.yearExamBookmarks : mode==='prediction' ? state.predictionBookmarks : state.bookmarks; }
+  function record(q,mode=studyMode) { return recordBucket(mode)[q.id] || {selected:[],submitted:false}; }
+  function isBookmark(q,mode=studyMode) { return !!bookmarkBucket(mode)[q.id]; }
+  function submission(q,mode=studyMode) { return !!record(q,mode).submitted; }
   function effectiveAnswer(q) { return Object.prototype.hasOwnProperty.call(state.customAnswers,q.id) ? state.customAnswers[q.id] : q.answer; }
   const normalizeText = s => String(s||'').toLowerCase().replace(/[\s.!?,'"’‘“”\-_:;]+/g,'');
   function arraysEqual(a,b) { const sa=[...(Array.isArray(a)?a:[a])].map(String).sort();const sb=[...(Array.isArray(b)?b:[b])].map(String).sort();return sa.length===sb.length && sa.every((x,i)=>x===sb[i]); }
-  function evaluation(q) {
-    if (!submission(q)) return 'not-started';
+  function evaluation(q,mode=studyMode) {
+    if (!submission(q,mode)) return 'not-started';
     const known = effectiveAnswer(q);
     if (known === null || known === undefined || (Array.isArray(known) && !known.length)) return 'pending';
-    const picked = record(q).selected;
+    const picked = record(q,mode).selected;
     if (q.type === 'short') {
       if (q.gradingMode==='manual') return 'pending'; // essay answers are not automatically marked wrong
       const typed=normalizeText(picked);
@@ -174,12 +186,12 @@
     if (picked==null || (Array.isArray(picked) && !picked.length)) return 'pending';
     return arraysEqual(picked,known) ? 'correct':'wrong';
   }
-  function stats(list) {
+  function stats(list,mode=studyMode) {
     const result={total:list.length,completed:0,correct:0,wrong:0,pending:0};
     for(const q of list) {
-      if(submission(q)) {
+      if(submission(q,mode)) {
         result.completed++;
-        const e=evaluation(q);
+        const e=evaluation(q,mode);
         if(e==='correct')result.correct++;
         else if(e==='wrong')result.wrong++;
         else result.pending++;
@@ -194,7 +206,7 @@
   }
   function statusDot(s) { return `<span class="status-dot ${s==='complete'?'complete':s==='partial'?'partial':''}">${s==='complete'?'✓':''}</span>`; }
   function professorCourseStats(meta,loaded) {
-    if (loaded) { const a=stats(loaded.questions||[]); return {...a, unresolved:(loaded.questions||[]).filter(q=>effectiveAnswer(q)==null).length}; }
+    if (loaded) { const qs=(loaded.questions||[]).filter(q=>!q.isPrediction); const a=stats(qs,'professor'); return {...a, unresolved:qs.filter(q=>effectiveAnswer(q)==null).length}; }
     const total=Number(meta.questionCount)||0;
     const completed=Object.entries(state.records).filter(([id,r])=>id.startsWith(meta.id+':') && r?.submitted).length;
     return {total,completed,unresolved:Number(meta.pendingCount)||0};
@@ -226,7 +238,7 @@
       // Mirrors of JSON files are generated by tools/sync_offline_data.py.
       // Script loading, unlike fetch(JSON), also works when index.html is double-clicked.
       const jsPath=meta.data.replace(/\.json(?=\?|$)/i,'.js');
-      await addDataScript(jsPath+(jsPath.includes('?')?'&':'?')+'v=9.0.0');
+      await addDataScript(jsPath+(jsPath.includes('?')?'&':'?')+'v=10.0.0');
     }
     const data=window.HEON_ARCHIVE_DATA?.professors?.[meta.id];
     if(!data)throw Error(`문제 데이터가 비어 있습니다: ${meta.id}`);
@@ -245,32 +257,29 @@
   async function selectProfessor(id, keepYear=false) {
     try {
       const prof=await loadProfessor(id);const meta=profMeta(id);
-      currentProfessor=prof;selectedSubject=meta.subjectId;state.lastProfessor=id;studyMode='professor';selectedExamYear=null;examDuplicateLabels=[];
+      currentProfessor={...prof,questions:prof.questions.filter(q=>!q.isPrediction)};selectedSubject=meta.subjectId;state.lastProfessor=id;studyMode='professor';selectedExamYear=null;examDuplicateLabels=[];
       if(!keepYear)currentYear='all';filter='all';view='quiz';infoExpanded=false;restoringReview=false;
       const candidate=state.lastVisited[id];
-      currentId=questions(prof).some(q=>q.id===candidate && (currentYear==='all'||String(q.year)===currentYear)) ? candidate : (questions(prof)[0]?.id||null);
+      currentId=questions(currentProfessor).some(q=>q.id===candidate && (currentYear==='all'||String(q.year)===currentYear)) ? candidate : (questions(currentProfessor)[0]?.id||null);
       saveState();mobileMenuOpen=false;render();window.scrollTo({top:0,behavior:'instant'});
     } catch(err){toast(`문제 데이터를 불러올 수 없습니다: ${err.message}`);console.error(err);}
   }
-  // Exam mode reuses the exact original question IDs, so professor records,
-  // bookmarks, custom answers, and year-exam reviews remain synchronized.
+  // Exam mode keeps stable question IDs but its submissions/bookmarks are isolated from professor records.
   function yearQuestionsForSubject(subjectId,year) {
     const subject=subjectById(subjectId);if(!subject)return {items:[],duplicates:[]};
-    const byLabel=new Map(), duplicates=[];
+    const collected=[], duplicate=[];
     for(const meta of subject.professors){
       const prof=professorCache.get(meta.id);if(!prof)continue;
       for(const q of prof.questions||[]){
-        if(String(q.year)!==String(year))continue;
-        const prev=byLabel.get(q.label);
-        if(prev){
-          const rank=x=>x.validation?.stage==='user_confirmed'?4:x.validation?.stage==='accepted'?3:x.answer!=null?2:1;
-          duplicates.push({label:q.label,kept:prev.id,other:q.id});
-          if(rank(q)>rank(prev))byLabel.set(q.label,q);
-        }else byLabel.set(q.label,q);
+        if(q.isPrediction || String(q.year)!==String(year))continue;
+        const prev=collected.find(other=>other.label===q.label && normalizeText(other.prompt).slice(0,42)===normalizeText(q.prompt).slice(0,42));
+        if(prev) {duplicate.push({label:q.label,kept:prev.id,other:q.id});continue;}
+        // Different questions sharing a number remain separate. Never silently drop a professor's material.
+        collected.push(q);
       }
     }
-    const items=[...byLabel.values()].sort((a,b)=>(a.number-b.number)||a.label.localeCompare(b.label,'ko'));
-    return {items,duplicates};
+    const items=collected.sort((a,b)=>(a.number-b.number)||a.professor.localeCompare(b.professor));
+    return {items,duplicates:duplicate};
   }
   async function selectSubjectExam(year){
     try{
@@ -287,10 +296,22 @@
       state.lastProfessor=id;saveState();render();window.scrollTo(0,0);
     }catch(err){console.error(err);toast('학번별 문제를 불러오지 못했습니다: '+err.message);}
   }
+  async function startPredictions(){
+    try {
+      const prof=await loadProfessor('lee-kanggyu');
+      const items=prof.questions.filter(q=>q.isPrediction);
+      if(!items.length){toast('예상문제가 준비되지 않았습니다.');return;}
+      studyMode='prediction';selectedExamYear=null;
+      currentProfessor={professor:{...prof.professor,id:'practice-lee-kanggyu',name:'이강규 예상문제',description:'AI 제작 연습문제 · 실제 기출이나 교수님 출제예고가 아닙니다.'},questions:items};
+      selectedSubject='hematology-1';currentYear='all';filter='all';reviewFilter='all';view='quiz';restoringReview=false;
+      currentId=items.find(q=>!submission(q))?.id||items[0].id;
+      infoExpanded=submission(items.find(q=>q.id===currentId));render();window.scrollTo(0,0);
+    } catch(err){console.error(err);toast('예상문제를 불러오지 못했습니다: '+err.message);}
+  }
   function renderYearHeader(){
     const all=questions(), s=stats(all), pct=s.total?Math.round(100*s.completed/s.total):0;
     const teachers=new Set(all.map(q=>q.professor)).size;
-    return `<div class="course-header compact-course-header exam-mode-header"><div class="course-identity"><div class="eyebrow">YEAR EXAM · ${esc(selectedExamYear)} CLASS</div><div class="course-title-line"><h1>${esc(subjectById(selectedSubject)?.name||'')} · ${esc(yearName(selectedExamYear))} 모의고사</h1><p>여러 교수님 문항을 통합 · 문제번호 중복 제외 · ${teachers}명</p></div></div><div class="course-header-right"><div class="header-pills"><span class="pill blue">${all.length}문항</span><span class="pill ok">제출 ${s.completed}</span><span class="pill warn">채점 보류 ${s.pending}</span><button class="button secondary small" data-action="open-review">${s.completed===s.total?'최종 결과':'현재 결과'} ↗</button></div><div class="header-study-controls"><div class="study-progress"><span>시험 진행률</span><div class="progress-track"><div class="progress-fill ${s.completed===s.total?'done':''}" style="width:${pct}%"></div></div><strong>${pct}%</strong></div></div></div></div>`;
+    return `<div class="course-header compact-course-header exam-mode-header"><div class="course-identity"><div class="eyebrow">YEAR EXAM · ${esc(selectedExamYear)} CLASS</div><div class="course-title-line"><h1>${esc(subjectById(selectedSubject)?.name||'')} · ${esc(yearName(selectedExamYear))} 모의고사</h1><p>여러 교수님 문항을 통합 · 문제번호 중복 제외 · ${teachers}명</p></div></div><div class="course-header-right"><div class="header-pills"><span class="pill blue">${all.length}문항</span><span class="pill ok">제출 ${s.completed}</span><span class="pill warn">채점 보류 ${s.pending}</span><button class="button secondary small" data-action="open-review">${s.completed===s.total?'최종 결과':'현재 결과'} ↗</button></div><div class="header-study-controls"><button class="button secondary small" data-action="reset-year-exam">이 학번 시험 기록 초기화</button><div class="study-progress"><span>시험 진행률</span><div class="progress-track"><div class="progress-fill ${s.completed===s.total?'done':''}" style="width:${pct}%"></div></div><strong>${pct}%</strong></div></div></div></div>`;
   }
   function scopedQuestions() {
     let arr=questions().filter(q=>currentYear==='all'||String(q.year)===currentYear);
@@ -324,6 +345,7 @@
       const data=professorCache.get(meta.id);
       if(!data)continue;
       for(const q of data.questions){
+        if(q.isPrediction)continue;
         const choices=(q.choices||[]).map(c=>c.text).join(' ');
         const label=String(q.label||'').toLocaleLowerCase();
         const prompt=String(q.prompt||'');
@@ -376,8 +398,8 @@
   async function openSearchQuestion(profId,qId){
     try{
       const prof=await loadProfessor(profId);
-      if(!prof.questions.some(q=>q.id===qId)) throw Error('검색 결과의 문항이 없습니다.');
-      currentProfessor=prof;studyMode='professor';selectedExamYear=null;examDuplicateLabels=[];
+      if(!prof.questions.some(q=>q.id===qId&&!q.isPrediction)) throw Error('검색 결과의 문항이 없습니다.');
+      currentProfessor={...prof,questions:prof.questions.filter(q=>!q.isPrediction)};studyMode='professor';selectedExamYear=null;examDuplicateLabels=[];
       selectedSubject=profMeta(profId).subjectId;
       currentYear='all';filter='all';view='quiz';infoExpanded=false;restoringReview=false;
       currentId=qId;state.lastProfessor=profId;state.lastVisited[profId]=qId;
@@ -389,6 +411,11 @@
     if(!currentProfessor)return;
     const name=currentProfessor.professor.name;
     const profId=currentProfessor.professor.id;
+    if(studyMode==='prediction') {
+      if(!confirm('이강규 예상문제 풀이 기록만 초기화할까요?'))return;
+      for(const q of questions()){delete state.predictionRecords[q.id];delete state.predictionBookmarks[q.id];}
+      view='quiz';currentId=questions()[0]?.id;infoExpanded=false;saveState();render();return;
+    }
     if(!confirm(`${name} 교수님의 학습 기록만 초기화할까요?\n\n제출 답안, 풀이 진행률, 북마크, 직접 지정한 정답, 마지막 문제 위치가 초기화됩니다.\n다른 교수님의 기록은 그대로 유지됩니다.\n(문제 데이터 자체의 사용자 확정 정답은 변경되지 않습니다.)`))return;
     const ids=new Set(questions().map(q=>q.id));
     for(const group of [state.records,state.bookmarks,state.customAnswers,state.customMulti]){
@@ -454,9 +481,9 @@
       <section class="home-pick-panel"><div class="home-pick-heading"><div><div class="eyebrow">${esc(selected?.name||'')} · SELECT STUDY MODE</div><h2>어떻게 공부할까요?</h2></div><span class="pill blue">${profs.length}명 등록</span></div>
       <div class="study-mode-tabs" role="tablist" aria-label="문제풀이 방식"><button role="tab" aria-selected="${homeStudyType==='professor'}" class="mode-tab ${homeStudyType==='professor'?'active':''}" data-action="home-mode" data-mode="professor">교수님별로 풀기</button><button role="tab" aria-selected="${homeStudyType==='year'}" class="mode-tab ${homeStudyType==='year'?'active':''}" data-action="home-mode" data-mode="year">학번별로 풀기</button></div>
       ${!profs.length?`<div class="empty home-empty">아직 등록된 문제가 없는 과목입니다.</div>`:
-       homeStudyType==='professor'?`<p class="home-pick-hint">교수님을 선택하면 전체 또는 특정 학번 문제를 풀 수 있습니다.</p><div class="home-course-list">${profs.map(p=>courseCard(p)).join('')}</div>`:
-       `<p class="home-pick-hint">해당 학번의 모든 교수님 기출을 통합하여 풉니다. 완료하면 시험 결과를 확인할 수 있습니다.</p><div class="home-year-list">${yrs.map(year=>{const r=yearQuestionsForSubject(selectedSubject,year);const s=stats(r.items);const pct=s.total?Math.round(s.completed/s.total*100):0;return `<button class="home-year-card ${s.total&&s.completed===s.total?'complete':s.completed?'partial':''}" data-action="start-year-exam" data-year="${year}" ${s.total?'':'disabled'}><span class="home-year-label"><strong>${year}학번 통합 기출</strong><small>${s.total}문항 · ${s.completed}문항 풀이 완료</small></span><span class="home-year-right"><strong>${pct}%${s.total&&s.completed===s.total?' ✓':''}</strong><span>${s.total?'시험 시작 →':'문항 없음'}</span></span><span class="home-year-progress"><i style="width:${pct}%"></i></span></button>`}).join('')}</div>`}
-      <p class="home-disclaimer">학습 기록은 브라우저에 자동 저장됩니다. 학번별 모드에서도 기존 교수님별 문항 기록이 그대로 사용됩니다.</p></section></div>`;
+       homeStudyType==='professor'?`<p class="home-pick-hint">교수님을 선택하면 전체 또는 특정 학번 문제를 풀 수 있습니다.</p><div class="home-course-list">${profs.map(p=>courseCard(p)).join('')}${profs.some(p=>p.id==='lee-kanggyu')?'<button class="prediction-home-card" data-action="start-predictions"><span>✦ 이강규 교수님 · AI 예상문제 25개</span><small>실제 기출과 분리 · 학번별 시험에 포함되지 않음 →</small></button>':''}</div>`:
+       `<p class="home-pick-hint">해당 학번의 모든 교수님 기출을 통합하여 풉니다. 완료하면 시험 결과를 확인할 수 있습니다.</p><div class="home-year-list">${yrs.map(year=>{const r=yearQuestionsForSubject(selectedSubject,year);const s=stats(r.items,'year-exam');const pct=s.total?Math.round(s.completed/s.total*100):0;return `<button class="home-year-card ${s.total&&s.completed===s.total?'complete':s.completed?'partial':''}" data-action="start-year-exam" data-year="${year}" ${s.total?'':'disabled'}><span class="home-year-label"><strong>${year}학번 통합 기출</strong><small>${s.total}문항 · ${s.completed}문항 풀이 완료</small></span><span class="home-year-right"><strong>${pct}%${s.total&&s.completed===s.total?' ✓':''}</strong><span>${s.total?'시험 시작 →':'문항 없음'}</span></span><span class="home-year-progress"><i style="width:${pct}%"></i></span></button>`}).join('')}</div>`}
+      <p class="home-disclaimer">학습 기록은 브라우저에 자동 저장됩니다. 교수님별 풀이와 학번별 시험의 제출 답안·진행률은 서로 독립적으로 저장됩니다.</p></section></div>`;
   }
   function courseCard(p) {
     const data=professorCache.get(p.id);
@@ -471,7 +498,7 @@
     const manual=l.filter(q=>q.validation?.stage==='user_confirmed').length;
     const percentage=s.total ? Math.round(s.completed/s.total*100) : 0;
     const subjectTitle=({ 'hematology-1':'HEMATOLOGY I', 'hematology-2':'HEMATOLOGY II', 'maternal-newborn':'MATERNAL · NEWBORN', 'growth-aging':'GROWTH · AGING' })[currentProfessor.professor.subjectId]||'MEDICAL';
-    return `<div class="course-header compact-course-header"><div class="course-identity"><div class="eyebrow">${esc(subjectTitle)} · EXAM LIBRARY</div><div class="course-title-line"><h1>${esc(currentProfessor.professor.name)} 교수님</h1><p>${esc(currentProfessor.professor.description||'교수님별 기출 문제')} &nbsp; / &nbsp; 연도별 또는 전체 문항 풀이</p></div></div>
+    return `<div class="course-header compact-course-header"><div class="course-identity"><div class="eyebrow">${studyMode==='prediction'?'AI GENERATED PRACTICE · NOT PAST EXAMS':esc(subjectTitle)+' · EXAM LIBRARY'}</div><div class="course-title-line"><h1>${esc(currentProfessor.professor.name)}${studyMode==='prediction'?'':' 교수님'}</h1><p>${esc(currentProfessor.professor.description||'교수님별 기출 문제')} &nbsp; / &nbsp; 연도별 또는 전체 문항 풀이</p></div></div>
       <div class="course-header-right"><div class="header-pills"><span class="pill blue">${s.total}문제</span><span class="pill ok">근거 검증 ${verified}건</span>${manual?`<span class="pill blue">사용자 확정 ${manual}건</span>`:''}<span class="pill warn">미확정 ${pending}건</span><button class="button secondary small" data-action="open-review">Review ↗</button></div>
       <div class="header-study-controls"><div class="study-progress" aria-label="${esc(currentProfessor.professor.name)} 교수님 학습 진행률 ${percentage}%"><span>진행률</span><div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${percentage}" aria-label="교수님별 진행률"><div class="progress-fill ${s.total&&s.completed===s.total?'done':''}" style="width:${percentage}%"></div></div><strong>${percentage}%</strong></div>
         <button class="study-reset" data-action="reset-professor" title="${esc(currentProfessor.professor.name)} 교수님 기록만 초기화 · 다른 교수님 기록 유지" aria-label="${esc(currentProfessor.professor.name)} 교수님 학습 기록 초기화">↺ <span>기록 초기화</span></button></div></div>
@@ -487,7 +514,7 @@
   function renderQuiz() {
     if(!currentProfessor)return `<div class="empty">교수님을 선택해주세요.</div>`;
     const l=questions();const qs=scopedQuestions();const q=currentQuestion();const s=stats(l);
-    return `${renderCourseHeader()}${renderFilterbar()}
+    return `${renderCourseHeader()}${studyMode==='prediction'?'<div class="prediction-notice">✦ AI가 강의안을 바탕으로 작성한 연습문제입니다. <b>실제 기출·교수님 출제 예고가 아니며 학번별 시험에는 포함되지 않습니다.</b></div>':''}${renderFilterbar()}
     ${q?`<div class="exam-layout">${renderQuestionPanel(q,qs)}<div class="divider-grip fixed-divider" aria-hidden="true"></div>${infoExpanded?renderEvidencePanel(q):renderEvidenceClosed()}</div>${renderQuizDock(q,qs)}`:`<div class="empty"><p>조건에 맞는 문제가 없습니다.</p><button class="button secondary small" data-action="clear-filter">전체 문제로 돌아가기</button></div>`}
     <p class="help-text">정답 검토 필요 문항은 사용자가 정답을 지정하기 전까지 정오답 통계에 포함되지 않습니다. 학습 기록과 북마크는 이 브라우저에만 저장됩니다.</p>`;
   }
@@ -533,7 +560,7 @@
     const checked=Array.isArray(r.selected)?r.selected:r.selected?[r.selected]:[];
     const answer=effectiveAnswer(q);const answers=answer==null?[]:Array.isArray(answer)?answer:[answer];
     const maxSelection=Number(q.maxSelections)||1;
-    return `<section class="exam-panel" data-question-id="${esc(q.id)}"><div class="question-header"><div><div class="question-id">${studyMode==='year-exam'?esc(profMeta(q.professor)?.name||'')+' 교수님 · ':''}QUESTION / ${esc(q.label)}</div><h2 class="question-num">${esc(q.label)} <span class="question-index">${curr+1} / ${scope.length}</span></h2><div class="question-meta"><span class="pill ${q.validation.stage==='accepted'?'ok':q.validation.stage==='user_confirmed'?'blue':'warn'}">${q.validation.stage==='accepted'?'✓ 강의안 이중 검증':q.validation.stage==='user_confirmed'?'● 사용자 확정 정답':'! 정답 검토 필요'}</span><span class="pill">${esc(yearName(q.year))}</span>${submission(q)?`<span class="pill blue">제출 완료</span>`:''}</div></div>
+    return `<section class="exam-panel" data-question-id="${esc(q.id)}"><div class="question-header"><div><div class="question-id">${studyMode==='year-exam'?esc(profMeta(q.professor)?.name||'')+' 교수님 · ':''}QUESTION / ${esc(q.label)}</div><h2 class="question-num">${esc(q.label)} <span class="question-index">${curr+1} / ${scope.length}</span></h2><div class="question-meta"><span class="pill ${q.isPrediction?'blue':q.validation.stage==='accepted'?'ok':q.validation.stage==='user_confirmed'?'blue':'warn'}">${q.isPrediction?'✦ AI 예상문제 · 강의안 기반':q.validation.stage==='accepted'?'✓ 강의안 이중 검증':q.validation.stage==='user_confirmed'?'● 사용자 확정 정답':'! 정답 검토 필요'}</span><span class="pill">${esc(yearName(q.year))}</span>${submission(q)?`<span class="pill blue">제출 완료</span>`:''}</div></div>
       <div class="row"><button class="bookmark ${isBookmark(q)?'saved':''}" data-action="bookmark" data-id="${esc(q.id)}" title="북마크" aria-pressed="${isBookmark(q)}">${isBookmark(q)?'★':'☆'}</button><button class="icon-btn" data-action="toggle-evidence">${infoExpanded?'해설 접기':'해설 열기'}</button></div></div>
       <div class="prompt">${esc(q.prompt||'원본 이미지에서 문제 본문을 확인하세요.')}</div>
       ${renderInlineQuestionFigures(q)}
@@ -568,7 +595,7 @@
       <div class="section-head"><h4 class="section-title" style="font-size:14px">${confirmed?'채택된 강의안 원본':'검토용 강의안 원본'}</h4><span class="fine">${refs.length}페이지</span></div>
       ${refs.length?refs.map(e=>`<article class="evidence-item"><div class="evidence-meta"><span class="file-page">PDF ${e.page}페이지 ${confirmed?'· 채택 근거':'· 검토 자료 (미채택)'}</span><p class="file-name">${esc(e.file)}</p>${confirmed&&e.quote?`<div class="quote">원문 확인 기준: ${esc(e.quote)}</div>`:''}</div><img class="evidence-image" src="${esc(e.image)}" alt="${esc(e.file)} ${e.page}페이지 ${confirmed?'검증 근거':'검토용 자료'}" loading="lazy" data-action="zoom" data-caption="${esc(e.file)} · PDF ${e.page}페이지"><div class="zoom-label">이미지를 누르면 확대됩니다 ⤢</div></article>`).join(''):'<div class="empty" style="padding:21px">일치하는 강의안 페이지를 확보하지 못했습니다. 관련 없는 이미지로 근거를 대체하지 않았습니다.</div>'}
       ${!confirmed?`<section class="user-answer"><h4>직접 정답 지정</h4><p>강의안을 확인한 후 정답을 직접 지정할 수 있습니다. 선택 즉시 자동 저장되며 제출한 답안의 채점 상태가 변경됩니다.</p>${q.type==='short'?`<input class="search" id="custom-short" type="text" placeholder="정답 문장을 입력하세요" value="${esc(usedCustom?String(ans):'')}" style="width:100%;margin-bottom:8px"><button class="button small secondary" data-action="save-custom-short">정답 저장</button>`:
-      `<div class="custom-answers">${Array.from({length:5},(_,i)=>{const a=i+1;const sel=ans!=null&&(Array.isArray(ans)?ans.includes(a):ans===a);return `<button class="number-pill ${sel?'active':''}" data-action="custom-answer" data-number="${a}" aria-pressed="${sel}">${circles[i]}</button>`}).join('')}</div><div class="row" style="margin-top:12px"><label class="fine"><input type="checkbox" data-action="custom-multi" ${state.customMulti[q.id]?'checked':''}> 복수 정답 지정</label></div>`}
+      `<div class="custom-answers">${Array.from({length:Math.max(5,q.choices?.length||5)},(_,i)=>{const a=i+1;const sel=ans!=null&&(Array.isArray(ans)?ans.includes(a):ans===a);return `<button class="number-pill ${sel?'active':''}" data-action="custom-answer" data-number="${a}" aria-pressed="${sel}">${circles[i]||i+1}</button>`}).join('')}</div><div class="row" style="margin-top:12px"><label class="fine"><input type="checkbox" data-action="custom-multi" ${state.customMulti[q.id]?'checked':''}> 복수 정답 지정</label></div>`}
       ${usedCustom?`<button class="button ghost tiny" data-action="remove-custom" style="margin-top:11px">내 지정 정답 해제</button>`:''}</section>`:''}
       <div class="help-text">강의안 파일명과 페이지 번호는 PDF 파일의 실제 1부터 시작하는 페이지를 기준으로 기록했습니다. 원본 확인에 사용된 이미지 자체가 그대로 포함되어 있습니다.</div>
     </aside>`;
@@ -601,9 +628,17 @@
       case 'subject-home':selectedSubject=btn.dataset.id;currentProfessor=null;view='home';render();window.scrollTo(0,0);break;
       case 'home-mode':homeStudyType=btn.dataset.mode==='year'?'year':'professor';render();break;
       case 'start-year-exam':await selectSubjectExam(btn.dataset.year);break;
+      case 'start-predictions':await startPredictions();break;
       case 'professor':await selectProfessor(btn.dataset.id);break;
       case 'theme':state.prefs.theme=state.prefs.theme==='dark'?'light':'dark';saveState();render();break;
       case 'reset-professor':resetProfessorProgress();break;
+      case 'reset-year-exam':{
+        if(studyMode!=='year-exam')break;
+        if(!confirm(selectedExamYear+'학번 시험의 답안·북마크만 초기화할까요? 교수님별 기록은 보존됩니다.'))break;
+        for(const q of questions()){delete state.yearExamRecords[q.id];delete state.yearExamBookmarks[q.id];}
+        delete state.lastVisited[currentProfessor.professor.id];
+        currentId=questions()[0]?.id;view='quiz';infoExpanded=false;saveState();render();break;
+      }
       case 'nav-quiz':{
         if(!currentProfessor){view='home';render();toast('첫 화면에서 과목과 교수님을 선택해주세요.');}
         else{view='quiz';reviewFilter='all';restoringReview=false;infoExpanded=false;render();window.scrollTo(0,0);}
@@ -623,7 +658,7 @@
       case 'clear-filter':infoExpanded=false;filter='all';currentYear='all';currentId=scopedQuestions()[0]?.id||null;render();break;
       case 'bookmark':{
         const q=questions().find(x=>x.id===btn.dataset.id);if(!q)break;
-        if(isBookmark(q))delete state.bookmarks[q.id];else state.bookmarks[q.id]=true;
+        if(isBookmark(q))delete bookmarkBucket()[q.id];else bookmarkBucket()[q.id]=true;
         saveState();render();break;
       }
       case 'choose':{
@@ -634,13 +669,13 @@
           else if(selected.length<(q.maxSelections||1))selected.push(n);
           else {selected.shift();selected.push(n);}
         } else selected=selected.length===1&&selected[0]===n?[]:[n];
-        r.selected=selected;r.submitted=false;infoExpanded=false;r.updatedAt=new Date().toISOString();state.records[q.id]=r;saveState();render();break;
+        r.selected=selected;r.submitted=false;infoExpanded=false;r.updatedAt=new Date().toISOString();recordBucket()[q.id]=r;saveState();render();break;
       }
       case 'submit':{
         const q=currentQuestion();if(!q)break;const r={...record(q)};
         if(q.type==='short'&&!String(r.selected||'').trim())break;
         if(q.type!=='short'&&!r.selected?.length)break;
-        r.submitted=true;r.submittedAt=new Date().toISOString();state.records[q.id]=r;infoExpanded=true;saveState();
+        r.submitted=true;r.submittedAt=new Date().toISOString();recordBucket()[q.id]=r;infoExpanded=true;saveState();
         if(studyMode==='year-exam'&&scopedQuestions().at(-1)?.id===q.id&&scopedQuestions().every(submission)) {view='review';reviewFilter='all';restoringReview=false;}
         render();
         // On mobile, the right-side explanation becomes a card below the question.
@@ -694,7 +729,7 @@
     if(el.id==='short-answer'){
       const q=currentQuestion();if(!q)return;
       const r={...record(q),selected:el.value,submitted:false,updatedAt:new Date().toISOString()};
-      state.records[q.id]=r;saveState();
+      recordBucket()[q.id]=r;saveState();
       if(infoExpanded){infoExpanded=false;render();return;}
       root.querySelectorAll('[data-action=submit]').forEach(btn=>btn.disabled=!el.value.trim());
     }
