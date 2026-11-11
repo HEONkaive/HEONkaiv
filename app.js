@@ -8,6 +8,11 @@
   const $ = (s, ctx = document) => ctx.querySelector(s);
   const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
   const circles = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
+  const TALLY_FORM_ID = '6DjZg5';
+  const PUBLIC_VERSION = '1.0.2';
+  const PUBLIC_RELEASE_DATE = '2026-11-11';
+  const RELEASE_NOTICES = [{version:'1.0.2',date:'2026-11-11',title:'과목별 공용 리더보드 분리',changes:['네 과목의 22학번 TOP 3 순위를 완전히 분리','미등록 과목은 준비 중으로 표시','기존 PDF 저장과 Tally 팝업 유지']},{version:'1.0.1',date:'2026-11-11',title:'공용 리더보드 및 PDF 저장 개선',changes:['22학번 통합 기출 점수 전체 사용자 공유','Supabase 서버 정답 검증 및 닉네임 등록','아이패드 파일 앱 PDF 저장 지원','기존 오류 제보 Tally 팝업 유지']},{version:'1.0.0',date:'2026-11-11',title:'HEON ARCHIVE 첫 공개',changes:['혈액과 종양 1차 문제집 정식 오픈','Tally 팝업형 오류 제보 기능 적용','오답 PDF 저장 / 북마크 PDF 저장 기능 추가','22학번 연도별 풀이용 TOP 3 리더보드 추가','메인 공지사항 패널 및 버전 히스토리 추가']}];
+  const LEADERBOARD_IMAGE_BY_RANK = {1:'assets/ui/rank-first.png',2:'assets/ui/rank-second.png',3:'assets/ui/rank-third.png'};
   // Keep the underlying provenance, but omit internal answer-approval workflow from study copy.
   function studyCopy(v) {
     return String(v == null ? '' : v)
@@ -52,7 +57,7 @@
     }).join('')}</section>`;
   }
 
-  const emptyState = () => ({version:1,records:{},yearExamRecords:{},predictionRecords:{},unitRecords:{},bookmarks:{},yearExamBookmarks:{},predictionBookmarks:{},unitBookmarks:{},customAnswers:{},customMulti:{},lastVisited:{},lastProfessor:null,prefs:{theme:'dark',explanationWidth:450}});
+  const emptyState = () => ({version:1,records:{},yearExamRecords:{},predictionRecords:{},unitRecords:{},bookmarks:{},yearExamBookmarks:{},predictionBookmarks:{},unitBookmarks:{},customAnswers:{},customMulti:{},lastVisited:{},lastProfessor:null,prefs:{theme:'dark',explanationWidth:450,nickname:'',playerId:''}});
   let state = emptyState();
   let catalog = null;
   const professorCache = new Map();
@@ -94,6 +99,7 @@
           bookmarks:raw.bookmarks || {},customAnswers:raw.customAnswers || {},
           customMulti:raw.customMulti || {},lastVisited:raw.lastVisited || {},
           prefs:{...emptyState().prefs,...(raw.prefs||{})}};
+
         // v10.1: modern course ownership correction — non-emergency questions
         // previously listed under Lee Seungshin are now Park Murim questions.
         // Copy, never remove, historical submissions so users cannot lose work.
@@ -250,6 +256,166 @@
     document.querySelector('.toast')?.remove();
     const el=document.createElement('div');el.className='toast';el.textContent=message;
     document.body.append(el);clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.remove(),3000);
+  }
+  // Shared leaderboard via Supabase (GitHub Pages remains a static site).
+  // No browser-local rankings are displayed as public records.
+  const sharedBoards=new Map();
+  const sharedBoardStatus=new Map();
+  let sharedClient=null;
+  let sharedAuthPromise=null;
+  let awaitingRank=null;
+  function leaderboardKey(subjectId=selectedSubject,year='22'){return `${subjectId}:${year}`;}
+  function leaderboardConfigured(){
+    const c=window.HEON_LEADERBOARD_CONFIG;
+    return !!(c&&/^https:\/\/[a-z0-9-]+\.supabase\.co\/?$/i.test(c.url||'')&&typeof c.publishableKey==='string'&&c.publishableKey.length>15);
+  }
+  function sharedLeaderboardClient(){
+    if(!leaderboardConfigured()||!window.supabase?.createClient)return null;
+    if(!sharedClient){
+      const c=window.HEON_LEADERBOARD_CONFIG;
+      sharedClient=window.supabase.createClient(c.url,c.publishableKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:false}});
+    }
+    return sharedClient;
+  }
+  function canUseLeaderboard(subjectId=selectedSubject,year='22'){
+    return String(year)==='22' && yearQuestionsForSubject(subjectId,22).items.length>0;
+  }
+  async function loadSharedLeaderboard(subjectId=selectedSubject,year='22',rerender=true){
+    if(!canUseLeaderboard(subjectId,year))return [];
+    const key=leaderboardKey(subjectId,year);
+    const client=sharedLeaderboardClient();
+    if(!client){sharedBoardStatus.set(key,'unconfigured');if(rerender&&view==='home')render();return []}
+    sharedBoardStatus.set(key,'loading');
+    try{
+      const {data,error}=await client.from('heon_leaderboard')
+        .select('user_id,nickname,score,total,achieved_at')
+        .eq('subject_id',subjectId).eq('exam_year',String(year))
+        .order('score',{ascending:false}).order('achieved_at',{ascending:true}).limit(3);
+      if(error)throw error;
+      sharedBoards.set(key,data||[]);
+      sharedBoardStatus.set(key,'ready');
+      return data||[];
+    }catch(err){
+      console.error('공용 리더보드 읽기 오류',err);
+      sharedBoardStatus.set(key,'error');
+      return [];
+    }finally{if(rerender&&view==='home'&&selectedSubject===subjectId)render();}
+  }
+  async function ensureSharedUser(){
+    const client=sharedLeaderboardClient();
+    if(!client)throw Error('Supabase 연결 설정이 없습니다.');
+    if(sharedAuthPromise)return sharedAuthPromise;
+    sharedAuthPromise=(async()=>{
+      const {data:sessionData,error:sessionError}=await client.auth.getSession();
+      if(sessionError)throw sessionError;
+      if(sessionData?.session?.user)return sessionData.session.user;
+      const {data,error}=await client.auth.signInAnonymously();
+      if(error)throw error;
+      if(!data?.user)throw Error('익명 사용자 인증 실패');
+      return data.user;
+    })();
+    try{return await sharedAuthPromise;}finally{sharedAuthPromise=null;}
+  }
+  function buildPublicCandidate(){
+    if(studyMode!=='year-exam'||!canUseLeaderboard(selectedSubject,selectedExamYear))return null;
+    const all=questions();
+    if(!all.length||!all.every(q=>submission(q,'year-exam')))return null;
+    const s=stats(all,'year-exam');
+    const answers={};
+    for(const q of all){
+      const selected=record(q,'year-exam').selected;
+      answers[q.id]=q.type==='short'?String(selected??''):(Array.isArray(selected)?selected:[selected]).map(Number).sort((a,b)=>a-b);
+    }
+    return {subjectId:selectedSubject,year:String(selectedExamYear),score:s.correct,total:s.total,answers};
+  }
+  async function maybeOfferPublicRank(){
+    const candidate=buildPublicCandidate();
+    if(!candidate || !leaderboardConfigured())return;
+    try{
+      const user=await ensureSharedUser();
+      const board=await loadSharedLeaderboard(candidate.subjectId,candidate.year,false);
+      if(sharedBoardStatus.get(leaderboardKey(candidate.subjectId,candidate.year))!=='ready')throw Error('공용 리더보드를 불러오지 못했습니다.');
+      const old=board.find(e=>e.user_id===user.id);
+      if(old&&old.score>=candidate.score)return;
+      const rivals=board.filter(e=>e.user_id!==user.id);
+      const rank=1+rivals.filter(e=>e.score>=candidate.score).length;
+      if(rank>3)return;
+      awaitingRank={...candidate,rank,userId:user.id};
+      showRankCelebration({rank,candidate:{score:candidate.score,total:candidate.total,percent:Math.round(100*candidate.score/candidate.total)}});
+    }catch(err){
+      console.error('리더보드 등수 계산 실패',err);
+      toast('공용 리더보드 연결에 실패했습니다. 인터넷 및 Supabase 설정을 확인해주세요.');
+    }
+  }
+  function renderLeaderboardPanel(subjectId=selectedSubject){
+    const subject=subjectById(subjectId);
+    if(!subject)return '';
+    const questionsReady=canUseLeaderboard(subjectId,'22');
+    const key=leaderboardKey(subjectId,'22');
+    const status=questionsReady ? (sharedBoardStatus.get(key)||(leaderboardConfigured()?'loading':'unconfigured')) : 'not-ready';
+    const board=sharedBoards.get(key)||[];
+    const notes={loading:'전체 사용자 공용 기록을 불러오는 중…',error:'서버 연결 실패 · 아래 새로고침 버튼으로 다시 시도하세요.',unconfigured:'공용 서버 연결 준비 중 · 관리자가 Supabase 설정을 완료하면 모든 사용자에게 순위가 공개됩니다.',ready:'이 과목의 22학번 TOP 3 · 다른 과목 점수는 섞이지 않습니다.', 'not-ready':'아직 22학번 문제와 채점 기준이 등록되지 않은 과목입니다. 등록 후 공용 랭킹이 활성화됩니다.'};
+    return `<section class="leaderboard-card" aria-label="${esc(subject.name)} 22학번 공용 리더보드"><div class="leaderboard-head"><div><div class="eyebrow">${esc(subject.name)} · 22학번</div><h3>🏆 TOP 3 LEADERBOARD</h3></div>${questionsReady?'<button class="button secondary tiny" data-action="refresh-leaderboard" aria-label="순위 새로고침">↻</button>':''}</div><div class="leaderboard-list">${[1,2,3].map(rank=>{const item=board[rank-1];return `<div class="leaderboard-row rank-${rank}"><div class="leaderboard-rank">${rank}</div><div class="leaderboard-meta"><strong>${item?esc(item.nickname):'기록 대기 중'}</strong><small>${item?`${item.score}/${item.total}문항 정답`:'공용 기록 없음'}</small></div><div class="leaderboard-score">${item?`${item.score}점`:'—'}</div></div>`;}).join('')}</div><p class="leaderboard-help">${esc(notes[status]||notes.loading)}</p>${status==='unconfigured'?'<p class="leaderboard-help">※ 아직 공용 DB가 연결되지 않아 다른 사람의 기록을 보여줄 수 없습니다.</p>':''}</section>`;
+  }
+  function renderNoticePanel(){
+    const items=RELEASE_NOTICES.map((note,index)=>`<details class="notice-item" ${index===0?'open':''}><summary><span><b>v${esc(note.version)}</b><small>${esc(note.date)}</small></span><i>변경사항 보기</i></summary><div class="notice-body"><h3>${esc(note.title)}</h3><ul>${(note.changes||[]).map(change=>`<li>${esc(change)}</li>`).join('')}</ul></div></details>`).join('');
+    return `<aside class="notice-panel"><div class="notice-head"><div class="eyebrow">NOTICE</div><h2>공지사항</h2><p>현재 버전과 변경사항을 한눈에 확인할 수 있습니다.</p></div><div class="notice-current"><strong>현재 버전 v${esc(PUBLIC_VERSION)}</strong><span>${esc(PUBLIC_RELEASE_DATE)}</span></div>${items}</aside>`;
+  }
+  function closeDialog() { document.querySelector('.custom-dialog-overlay')?.remove(); }
+  function openDialog(contentHTML, options={}) {
+    closeDialog();
+    const overlay=document.createElement('div');
+    overlay.className='custom-dialog-overlay';
+    overlay.innerHTML=`<div class="custom-dialog ${options.className||''}" role="dialog" aria-modal="true">${contentHTML}</div>`;
+    overlay.addEventListener('click',e=>{ if(e.target===overlay) closeDialog(); });
+    document.body.append(overlay);
+    return overlay;
+  }
+  async function submitPublicRank(btn){
+    const preview=awaitingRank;
+    const input=document.querySelector('#leaderboard-name');
+    if(!preview||!input)return;
+    const name=input.value.trim();
+    if(!name){toast('닉네임을 입력해주세요.');input.focus();return;}
+    btn.disabled=true;btn.textContent='등록 중…';
+    try{
+      const client=sharedLeaderboardClient();
+      await ensureSharedUser();
+      const {data,error}=await client.rpc('heon_submit_score',{
+        p_subject_id:preview.subjectId,p_exam_year:preview.year,
+        p_nickname:name,p_answers:preview.answers
+      });
+      if(error)throw error;
+      state.prefs.nickname=name;saveState();awaitingRank=null;closeDialog();
+      await loadSharedLeaderboard(preview.subjectId,preview.year,false);
+      const rank=Array.isArray(data)?data[0]?.rank:data?.rank;
+      toast(rank&&rank<=3?`${rank}등! 공용 리더보드에 등록됐습니다.`:'점수를 저장했습니다. 현재 상위 3위 밖입니다.');
+    }catch(err){
+      console.error('공용 점수 제출 실패',err);
+      toast('점수 저장 실패: '+(err.message||'네트워크 오류'));
+      btn.disabled=false;btn.textContent='다시 등록';
+    }
+  }
+  function showRankCelebration(preview) {
+    if(!preview) return;
+    const image=LEADERBOARD_IMAGE_BY_RANK[preview.rank] || LEADERBOARD_IMAGE_BY_RANK[3];
+    const titles={1:'1등 축하드려요!',2:'2등 축하드려요!',3:'3등 축하드려요!'};
+    const overlay=openDialog(`<button class="dialog-close" data-dialog-close>✕</button><div class="rank-dialog-media"><img src="${esc(image)}" alt="${esc(titles[preview.rank])}"></div><div class="rank-dialog-body"><div class="eyebrow">YEAR 22 LEADERBOARD</div><h2>${titles[preview.rank]}</h2><p class="rank-score-line">이번 점수는 <b>${esc(leaderboardSummaryText(preview.candidate))}</b> 입니다. (채점 보류 문항은 점수에서 제외)</p><p class="rank-help">리더보드에 표시할 이름(닉네임)을 입력해주세요.</p><label class="dialog-label" for="leaderboard-name">닉네임</label><input id="leaderboard-name" class="dialog-input" maxlength="24" placeholder="예: 열공왕" value="${esc(state.prefs.nickname||'')}" /><div class="dialog-actions"><button class="button secondary small" data-dialog-close>나중에</button><button class="button small" data-action="save-leaderboard-rank">리더보드에 저장</button></div></div>`,{className:'rank-dialog'});
+    overlay.querySelectorAll('[data-dialog-close]').forEach(el=>el.addEventListener('click',closeDialog));
+    overlay.querySelector('[data-action=save-leaderboard-rank]')?.addEventListener('click',e=>submitPublicRank(e.currentTarget));
+  }
+  function openReportPopup() {
+    const fallback=`https://tally.so/r/${TALLY_FORM_ID}`;
+    try {
+      if(window.Tally && typeof window.Tally.openPopup==='function') {
+        window.Tally.openPopup(TALLY_FORM_ID, {layout:'modal', width:700, overlay:true, autoClose:0, hiddenFields:{}});
+      } else {
+        window.open(fallback,'_blank','noopener');
+      }
+    } catch(err) {
+      console.warn(err);
+      window.open(fallback,'_blank','noopener');
+    }
   }
   function questions(prof = currentProfessor) { return prof ? (prof.questions||[]) : []; }
   const yearSortValue = y => (y == null || y === 'unknown' || y === '연도미상') ? Number.MAX_SAFE_INTEGER : (Number.isFinite(Number(y)) ? Number(y) : Number.MAX_SAFE_INTEGER);
@@ -576,7 +742,7 @@
             <nav class="quick-nav" aria-label="빠른 메뉴">
               <button data-action="nav-quiz" class="nav-tab ${view==='quiz'?'active':''}">문제 풀이</button>
               <button data-action="home" class="nav-tab ${view==='home'?'active':''}">문제집</button>
-              <button data-action="nav-wrong" class="nav-tab ${view==='review'&&reviewFilter==='wrong'?'active':''}">오답 노트</button><button data-action="print-collection" data-kind="wrong" class="nav-tab print-nav" title="틀린 문제를 모아 PDF로 저장">오답 PDF</button><button data-action="print-collection" data-kind="bookmarks" class="nav-tab print-nav" title="북마크를 모아 PDF로 저장">북마크 PDF</button><a class="nav-tab report-nav" href="https://tally.so/r/6DjZg5" target="_blank" rel="noopener noreferrer" data-action="report-issue" title="문항 번호와 설명, 10MB 이하 이미지 파일을 첨부해 오류를 제보할 수 있어요">✎ 오류 제보하기</a>
+              <button data-action="nav-wrong" class="nav-tab ${view==='review'&&reviewFilter==='wrong'?'active':''}">오답 노트</button><button data-action="save-collection-pdf" data-kind="wrong" class="nav-tab print-nav" title="틀린 문제를 PDF 파일로 저장">오답 PDF 저장</button><button data-action="save-collection-pdf" data-kind="bookmarks" class="nav-tab print-nav" title="북마크를 PDF 파일로 저장">북마크 PDF 저장</button><button class="nav-tab report-nav" data-action="report-popup" title="문항 번호와 설명, 10MB 이하 이미지 파일을 첨부해 오류를 제보할 수 있어요">✎ 오류 제보하기</button>
               <button data-action="nav-stats" class="nav-tab ${view==='review'&&reviewFilter!=='wrong'?'active':''}">학습 통계</button>
             </nav>
           </div>
@@ -599,14 +765,14 @@
     const selected=subjectById(selectedSubject);
     const profs=selected?.professors||[];
     const yrs=[...new Set(profs.flatMap(p=>(professorCache.get(p.id)?.questions||[]).filter(q=>!q.isPrediction && Number.isFinite(Number(q.year))).map(q=>Number(q.year))))].sort((a,b)=>a-b);
-    return `<section class="home-heading"><div class="eyebrow">YOUR PERSONAL STUDY SPACE</div><h1>Knowledge, <em>archived.</em> <span>Progress, remembered.</span></h1><p>왼쪽에서 과목을 선택한 다음, 오른쪽에서 <b>교수님별</b>·<b>단원별</b>·<b>학번별</b>로 학습하세요.</p></section>
+    return `<section class="home-heading home-heading-grid"><div class="home-heading-copy"><div class="eyebrow">YOUR PERSONAL STUDY SPACE</div><h1>Knowledge, <em>archived.</em> <span>Progress, remembered.</span></h1><p>왼쪽에서 과목을 선택한 다음, 오른쪽에서 <b>교수님별</b>·<b>단원별</b>·<b>학번별</b>로 학습하세요.</p></div>${renderNoticePanel()}</section>
       <div class="home-selector-layout"><aside class="home-subjects"><div class="eyebrow">SUBJECTS · ${subs.length}</div>
-      ${subs.map((s,i)=>`<button class="home-subject ${s.id===selectedSubject?'selected':''}" data-action="subject-home" data-id="${esc(s.id)}"><span class="home-subject-index">0${i+1}</span><span class="home-subject-label"><strong>${esc(s.name)}</strong><small>${s.professors.length?`${s.professors.length}명의 교수님`:'등록 예정'}</small></span><span class="home-subject-arrow">${s.id===selectedSubject?'●':'›'}</span></button>`).join('')}</aside>
+      ${subs.map((s,i)=>`<button class="home-subject ${s.id===selectedSubject?'selected':''}" data-action="subject-home" data-id="${esc(s.id)}"><span class="home-subject-index">0${i+1}</span><span class="home-subject-label"><strong>${esc(s.name)}</strong><small>${s.professors.length?`${s.professors.length}명의 교수님`:'등록 예정'}</small></span><span class="home-subject-arrow">${s.id===selectedSubject?'●':'›'}</span></button>`).join('')}${renderLeaderboardPanel(selectedSubject)}</aside>
       <section class="home-pick-panel"><div class="home-pick-heading"><div><div class="eyebrow">${esc(selected?.name||'')} · SELECT STUDY MODE</div><h2>어떻게 공부할까요?</h2></div><span class="pill blue">${profs.length}명 등록</span></div>
       <div class="study-mode-tabs" role="tablist" aria-label="문제풀이 방식"><button role="tab" aria-selected="${homeStudyType==='professor'}" class="mode-tab ${homeStudyType==='professor'?'active':''}" data-action="home-mode" data-mode="professor">교수님별로 풀기</button><button role="tab" aria-selected="${homeStudyType==='unit'}" class="mode-tab ${homeStudyType==='unit'?'active':''}" data-action="home-mode" data-mode="unit">단원별로 풀기</button><button role="tab" aria-selected="${homeStudyType==='year'}" class="mode-tab ${homeStudyType==='year'?'active':''}" data-action="home-mode" data-mode="year">학번별로 풀기</button></div>
       ${!profs.length?`<div class="empty home-empty">아직 등록된 문제가 없는 과목입니다.</div>`:
        homeStudyType==='professor'?`<p class="home-pick-hint">교수님을 선택하면 전체 또는 특정 학번 문제를 풀 수 있습니다.</p><div class="home-course-list">${profs.map(p=>courseCard(p)+(p.id==='lee-kanggyu'?predictionCard():'' )).join('')}</div>`:homeStudyType==='unit'?`<p class="home-pick-hint">교수님을 선택하면 하단에 해당 강의안 주제별 단원이 나타납니다. 단원별 기록은 독립적으로 저장됩니다.</p><div class="home-unit-prof-grid">${profs.map(p=>`<button class="home-unit-prof ${chosenUnitProfessor===p.id?'selected':''}" data-action="choose-unit-professor" data-id="${esc(p.id)}"><strong>${esc(p.name)} 교수님</strong><small>${unitGroups(p.id).length}개 단원</small></button>`).join('')}</div>${chosenUnitProfessor&&profs.some(p=>p.id===chosenUnitProfessor)?`<div class="unit-results-heading"><h3>${esc(profMeta(chosenUnitProfessor).name)} 교수님 단원 선택</h3><small>같은 교수님 전체 학습과는 별도 저장</small></div><div class="home-unit-grid">${unitGroups(chosenUnitProfessor).map(g=>{const a=stats(g.items,'unit');const pct=a.total?Math.round(100*a.completed/a.total):0;return `<button class="unit-card" data-action="start-unit" data-id="${esc(chosenUnitProfessor)}" data-unit="${esc(g.id)}"><strong>${esc(g.title)}</strong><small>${a.completed}/${a.total} 문제 · ${pct}% ${a.completed===a.total&&a.total?'✓':''}</small><span class="progress-track"><span class="progress-fill" style="width:${pct}%"></span></span></button>`}).join('')}</div>`:''}`:
-       `<p class="home-pick-hint">해당 학번의 모든 교수님 기출을 통합하여 풉니다. 완료하면 시험 결과를 확인할 수 있습니다.</p><div class="home-year-list">${yrs.map(year=>{const r=yearQuestionsForSubject(selectedSubject,year);const s=stats(r.items,'year-exam');const pct=s.total?Math.round(s.completed/s.total*100):0;return `<button class="home-year-card ${s.total&&s.completed===s.total?'complete':s.completed?'partial':''}" data-action="start-year-exam" data-year="${year}" ${s.total?'':'disabled'}><span class="home-year-label"><strong>${year}학번 통합 기출</strong><small>${s.total}문항 · ${s.completed}문항 풀이 완료</small></span><span class="home-year-right"><strong>${pct}%${s.total&&s.completed===s.total?' ✓':''}</strong><span>${s.total?'시험 시작 →':'문항 없음'}</span></span><span class="home-year-progress"><i style="width:${pct}%"></i></span></button>`}).join('')}</div>`}
+       `<p class="home-pick-hint">해당 학번의 모든 교수님 기출을 통합하여 풉니다. 완료하면 시험 결과를 확인할 수 있습니다.</p><div class="home-year-list">${yrs.map(year=>{const r=yearQuestionsForSubject(selectedSubject,year);const s=stats(r.items,'year-exam');const pct=s.total?Math.round(s.completed/s.total*100):0;const leaderboardBadge=String(year)==='22'?'<span class="year-special-badge">Leaderboard</span>':'';return `<button class="home-year-card ${s.total&&s.completed===s.total?'complete':s.completed?'partial':''}" data-action="start-year-exam" data-year="${year}" ${s.total?'':'disabled'}><span class="home-year-label"><strong>${year}학번 통합 기출 ${leaderboardBadge}</strong><small>${s.total}문항 · ${s.completed}문항 풀이 완료</small></span><span class="home-year-right"><strong>${pct}%${s.total&&s.completed===s.total?' ✓':''}</strong><span>${s.total?'시험 시작 →':'문항 없음'}</span></span><span class="home-year-progress"><i style="width:${pct}%"></i></span></button>`}).join('')}</div>`}
       <p class="home-disclaimer">학습 기록은 브라우저에 자동 저장됩니다. 교수님별·단원별·학번별·AI 예상문제의 제출 답안과 북마크는 모두 독립 저장됩니다.</p></section></div>`;
   }
   function courseCard(p) {
@@ -691,7 +857,7 @@
     const answer=effectiveAnswer(q);const answers=answer==null?[]:Array.isArray(answer)?answer:[answer];
     const maxSelection=Number(q.maxSelections)||1;
     return `<section class="exam-panel" data-question-id="${esc(q.id)}"><div class="question-header"><div><div class="question-id">${studyMode==='year-exam'?esc(yearExamTeacherLabel(q.professor))+' 교수님 · ':''}QUESTION / ${esc(q.label)}</div><h2 class="question-num">${esc(q.label)} <span class="question-index">${curr+1} / ${scope.length}</span></h2><div class="question-meta"><span class="pill ${q.isPrediction?'blue':q.validation.stage==='accepted'?'ok':['user_confirmed','highlight_reviewed','exam_answer_key'].includes(q.validation.stage)?'ok':'warn'}">${q.isPrediction?'✦ AI 예상문제 · 강의안 기반':q.validation.stage==='accepted'?'✓ 강의안 이중 검증':q.validation.stage==='exam_answer_key'?'● 22학번 공식 정답표 · 강의안 검증과 별개':q.validation.stage==='highlight_reviewed'?'✓ 정답 확인':q.validation.stage==='user_confirmed'?(q.validation?.supplemental2026?.status==='match'?'✓ 정답 확인 · 2026 강의안 비교':q.validation?.supplemental2026?.status==='conflict'?'✓ 정답 확인 · 강의안과 해설 비교 필요':'✓ 정답 확인'):'! 정답 검토 필요'}</span><span class="pill">${esc(yearName(q.year))}</span>${submission(q)?`<span class="pill blue">제출 완료</span>`:''}</div></div>
-      <div class="row"><button class="bookmark ${isBookmark(q)?'saved':''}" data-action="bookmark" data-id="${esc(q.id)}" title="북마크" aria-pressed="${isBookmark(q)}">${isBookmark(q)?'★':'☆'}</button><a class="icon-btn report-question-btn" href="https://tally.so/r/6DjZg5" target="_blank" rel="noopener noreferrer" data-action="report-issue" title="문항 번호·설명·이미지를 첨부해 오류 제보" aria-label="${esc(q.label)}번 문제 오류 제보하기">✎ 제보하기</a><button class="icon-btn" data-action="toggle-evidence">${infoExpanded?'해설 접기':'해설 열기'}</button></div></div>
+      <div class="row"><button class="bookmark ${isBookmark(q)?'saved':''}" data-action="bookmark" data-id="${esc(q.id)}" title="북마크" aria-pressed="${isBookmark(q)}">${isBookmark(q)?'★':'☆'}</button><button class="icon-btn report-question-btn" data-action="report-popup" title="문항 번호·설명·이미지를 첨부해 오류 제보" aria-label="${esc(q.label)}번 문제 오류 제보하기">✎ 제보하기</button><button class="icon-btn" data-action="toggle-evidence">${infoExpanded?'해설 접기':'해설 열기'}</button></div></div>
       <div class="prompt">${esc(q.prompt||'원본 이미지에서 문제 본문을 확인하세요.')}</div>
       ${renderInlineQuestionFigures(q)}
       ${q.type==='short'?`<label class="muted" for="short-answer">주관식 답안</label><textarea class="short-input" id="short-answer" data-question="${esc(q.id)}" placeholder="답안을 입력하세요. 입력하는 즉시 저장됩니다.">${esc(typeof r.selected==='string'?r.selected:'')}</textarea>`:
@@ -740,7 +906,7 @@
     const answerText=answerArr.length?answerArr.map(n=>q.type==='short'?String(n):(circles[n-1]||n)).join(' · '):'미확정';
     const imgs=(q.figureImages||[]).filter(x=>x.src||x.image);
     const refs=q.validation?.stage==='accepted'||(q.validation?.supplemental2026?.status==='match')?q.evidence||[]:q.candidateEvidence||[];
-    return `<article class="review-detail" aria-live="polite"><div class="review-detail-head"><div><small>${esc(yearExamTeacherLabel(q.professor))} 교수님 · ${esc(q.label)}</small><h2>${studyMode==='year-exam'?(q.type==='short'?esc('주'+q.label.split('주').pop()):esc(String(q.number))):esc(q.label)}번 문제 <span class="review-status-badge ${status}">${symbol}</span></h2></div><a class="button secondary small" href="https://tally.so/r/6DjZg5" target="_blank" rel="noopener noreferrer" data-action="report-issue" title="문항 번호·설명·이미지를 첨부할 수 있어요">✎ 오류 제보하기</a><button class="button secondary small" data-action="review-question" data-id="${esc(q.id)}">문제풀이로 ↗</button></div>
+    return `<article class="review-detail" aria-live="polite"><div class="review-detail-head"><div><small>${esc(yearExamTeacherLabel(q.professor))} 교수님 · ${esc(q.label)}</small><h2>${studyMode==='year-exam'?(q.type==='short'?esc('주'+q.label.split('주').pop()):esc(String(q.number))):esc(q.label)}번 문제 <span class="review-status-badge ${status}">${symbol}</span></h2></div><button class="button secondary small" data-action="report-popup" title="문항 번호·설명·이미지를 첨부할 수 있어요">✎ 오류 제보하기</button><button class="button secondary small" data-action="review-question" data-id="${esc(q.id)}">문제풀이로 ↗</button></div>
       <div class="review-detail-prompt">${esc(q.prompt)}</div>
       ${imgs.map(f=>`<img class="review-detail-figure" src="${esc(f.src||f.image)}" alt="${esc(f.alt||'문제 원본')}" loading="lazy" data-action="zoom" data-caption="${esc(f.caption||q.label+' 문제 원본')}"/>`).join('')}
       ${q.type==='short'?`<div class="review-readonly-choice"><b>내 답안</b> ${esc(chosen.join('')||'미제출')}</div>`:`<div class="review-readonly-choices">${(q.choices||[]).map(ch=>`<div class="review-readonly-choice ${answerArr.includes(ch.number)?'correct':chosen.includes(ch.number)?'wrong':''}"><span>${circles[ch.number-1]||ch.number}</span>${esc(ch.text)} ${answerArr.includes(ch.number)?' ✓ 정답':''}${chosen.includes(ch.number)?' · 내 선택':''}</div>`).join('')}</div>`}
@@ -755,106 +921,172 @@
     const list=all.filter(q=>reviewFilter==='wrong'?evaluation(q)==='wrong':reviewFilter==='pending'?evaluation(q)==='pending'||effectiveAnswer(q)==null:reviewFilter==='bookmarks'?isBookmark(q):true);
     if(!list.some(q=>q.id===selectedReviewId))selectedReviewId=list[0]?.id||null;
     const focus=list.find(q=>q.id===selectedReviewId);
-    return `${renderCourseHeader()}<div class="review-compact-title"><div><div class="eyebrow">${studyMode==='year-exam'?'YEAR EXAM RESULTS':'LEARNING REVIEW'}</div><h1>${studyMode==='year-exam'?esc(selectedExamYear)+'학번 시험 결과':'최종 Review'}</h1><p>문제 번호를 누르면 오른쪽에 지문·정답·내 선택·해설·강의안 근거가 표시됩니다.</p></div><div class="review-export-actions"><button class="button secondary small" data-action="print-collection" data-kind="wrong">오답 전체 PDF</button><button class="button secondary small" data-action="print-collection" data-kind="bookmarks">북마크 전체 PDF</button><button class="button secondary small" data-action="back-quiz">← 문제풀이로 돌아가기</button></div></div>
+    return `${renderCourseHeader()}<div class="review-compact-title"><div><div class="eyebrow">${studyMode==='year-exam'?'YEAR EXAM RESULTS':'LEARNING REVIEW'}</div><h1>${studyMode==='year-exam'?esc(selectedExamYear)+'학번 시험 결과':'최종 Review'}</h1><p>문제 번호를 누르면 오른쪽에 지문·정답·내 선택·해설·강의안 근거가 표시됩니다.</p></div><div class="review-export-actions">${studyMode==='year-exam'&&canUseLeaderboard(selectedSubject,selectedExamYear)&&stats(questions(),'year-exam').completed===questions().length?'<button class="button small" data-action="enter-leaderboard">🏆 리더보드 참가</button>':''}<button class="button secondary small" data-action="save-collection-pdf" data-kind="wrong">오답 PDF 저장</button><button class="button secondary small" data-action="save-collection-pdf" data-kind="bookmarks">북마크 PDF 저장</button><button class="button secondary small" data-action="back-quiz">← 문제풀이로 돌아가기</button></div></div>
       <div class="review-score-strip">${[['전체',s.total],['제출',s.completed],['정답',s.correct],['오답',s.wrong],['채점 보류',s.pending],['미제출',s.total-s.completed]].map(([name,n])=>`<span>${name} <b>${n}</b></span>`).join('')}</div>
       <div class="review-layout"><aside class="review-number-sidebar"><div class="review-side-heading"><b>문제 번호</b><small>${list.length}문항</small></div><div class="review-side-filters">${[['all','전체'],['wrong','오답'],['pending','보류'],['bookmarks','북마크']].map(([f,l])=>`<button class="chip ${reviewFilter===f?'active':''}" data-action="review-filter" data-filter="${f}">${l}</button>`).join('')}</div><div class="review-number-grid">${list.map(q=>{const status=evaluation(q);return `<button class="review-number-button ${status} ${q.id===selectedReviewId?'active':''}" data-action="review-select" data-id="${esc(q.id)}" title="${esc(yearExamTeacherLabel(q.professor))} · ${esc(q.label)} · ${status}" aria-pressed="${q.id===selectedReviewId}"><strong>${studyMode==='year-exam'?(q.type==='short'?esc('주'+q.label.split('주').pop()):esc(String(q.number))):esc(q.label)}</strong><span>${icons[status]}</span>${studyMode==='year-exam'?`<small>${esc(yearExamTeacherLabel(q.professor))}</small>`:''}</button>`}).join('')}</div></aside>
       <section class="review-detail-pane">${focus?renderReviewQuestion(focus):'<div class="empty">선택한 조건에 해당하는 문제가 없습니다.</div>'}</section></div>`;
   }
 
-  // v12.7: export ALL wrong or bookmarked questions to one print-to-PDF document.
-  // No upload, third-party JS PDF library, server, or login is needed.
+  // v12.8.2: produce an actual PDF Blob locally. Safari on iPad can hand the
+  // generated File directly to the system share sheet -> "파일에 저장".
+  // No printing, account, server, upload, or CDN dependency is required.
   function printRecordsMode() {
     return studyMode === 'year-exam' ? 'year-exam'
       : studyMode === 'unit' ? 'unit'
       : studyMode === 'prediction' ? 'prediction' : 'professor';
   }
+  let pdfExportBusy = false;
+  let pdfExportObjectUrl = null;
+  let pdfExportDialog = null;
+
+  function closePdfDialog() {
+    if (pdfExportBusy) return;
+    pdfExportDialog?.remove();
+    pdfExportDialog = null;
+    // Delay revocation so Safari's "Download" and "Open" handlers can finish.
+    if (pdfExportObjectUrl) {
+      const oldUrl=pdfExportObjectUrl;
+      pdfExportObjectUrl=null;
+      setTimeout(() => URL.revokeObjectURL(oldUrl), 120000);
+    }
+  }
+  function openPdfDialog(kind) {
+    if (pdfExportDialog) pdfExportDialog.remove();
+    const overlay=document.createElement('div');
+    overlay.className='pdf-export-backdrop';
+    overlay.innerHTML=`<section class="pdf-export-card" role="dialog" aria-modal="true" aria-label="PDF 파일 저장">
+      <div class="pdf-export-heading"><div><div class="eyebrow">HEON ARCHIVE</div><h2>${kind==='wrong'?'오답노트':'북마크'} PDF 저장</h2></div><button class="pdf-export-close" type="button" aria-label="닫기" disabled>×</button></div>
+      <p class="pdf-export-status" role="status" aria-live="polite">저장할 문제를 불러오는 중…</p>
+      <progress class="pdf-export-progress" max="100" value="0"></progress>
+      <div class="pdf-export-actions" hidden>
+        <button class="button primary pdf-export-share" type="button" hidden>↗ 아이패드 파일 앱에 저장</button>
+        <a class="button primary pdf-export-download" href="#" download>↓ PDF 다운로드</a>
+        <button class="button secondary pdf-export-preview" type="button">PDF 열기</button>
+      </div>
+      <p class="pdf-export-hint">아이패드: 파일 앱에 저장을 누르고 공유 메뉴에서 <b>파일에 저장</b>을 선택하세요. 공유 기능을 지원하지 않는 브라우저에서는 PDF 다운로드 또는 PDF 열기를 이용할 수 있습니다.</p>
+    </section>`;
+    document.body.appendChild(overlay);
+    pdfExportDialog=overlay;
+    overlay.querySelector('.pdf-export-close').addEventListener('click',closePdfDialog);
+    overlay.addEventListener('click', e=>{if(e.target===overlay)closePdfDialog();});
+    return overlay;
+  }
+  function pdfProgress(dialog,message,current=0,total=0) {
+    const status=dialog.querySelector('.pdf-export-status');
+    if(status)status.textContent=message;
+    const bar=dialog.querySelector('.pdf-export-progress');
+    if(bar){bar.max=Math.max(1,total);bar.value=current;}
+  }
   async function exportCollection(kind) {
-    // Open the window before awaiting file loads, so popup blockers preserve the click.
-    const popup=window.open('','_blank');
-    if(!popup){toast('브라우저 팝업 차단을 해제한 후 PDF 출력 버튼을 다시 눌러주세요.');return;}
-    popup.document.write('<p style="font:16px sans-serif;padding:30px">PDF 출력 문항을 준비하고 있습니다…</p>');
-    const mode = printRecordsMode();
-    const subj = subjectById(selectedSubject);
-    const metas = subj?.professors || [];
-    const docs = await Promise.all(metas.map(p=>loadProfessor(p.id).catch(()=>null)));
-    let all = docs.flatMap(x=>x?.questions||[]);
-    if(mode==='prediction') all=all.filter(q=>q.isPrediction);
-    else all=all.filter(q=>!q.isPrediction);
-    // A question is eligible only if its respective mode saved a matching record.
-    // Year/unit/professor bookmarks and answers NEVER bleed into another mode.
-    const bucket = mode==='year-exam'?state.yearExamRecords
-      :mode==='unit'?state.unitRecords
-      :mode==='prediction'?state.predictionRecords:state.records;
-    const bm = mode==='year-exam'?state.yearExamBookmarks
-      :mode==='unit'?state.unitBookmarks
-      :mode==='prediction'?state.predictionBookmarks:state.bookmarks;
-    const unique=new Map();
-    for(const q of all) unique.set(q.id,q);
-    const selected=[...unique.values()].filter(q=>{
-      if(kind==='bookmarks')return !!bm[q.id];
-      const record=bucket[q.id];
-      if(!record?.submitted) return false;
-      const ans=effectiveAnswer(q);
-      if(ans===null || ans===undefined || q.gradingMode==='manual')return false;
-      if(q.type==='short')return false; // not marked wrong by manual review
-      const want=Array.isArray(ans)?ans:[ans];
-      const chosen=Array.isArray(record.selected)?record.selected:[record.selected];
-      return !(want.length===chosen.length&&want.every(n=>chosen.includes(n)));
-    }).sort((a,b)=>Number(a.year)-Number(b.year)||Number(a.number)-Number(b.number)||a.professor.localeCompare(b.professor));
-    if(!selected.length){popup.close();toast(kind==='wrong'?'현재 학습 모드에 저장된 오답이 없습니다.':'현재 학습 모드에 저장된 북마크가 없습니다.');return;}
-    const teacherMap=new Map(metas.map(p=>[p.id,p.name]));
-    const title=(kind==='wrong'?'오답노트':'북마크')+' · '+(subj?.name||'혈액과 종양 1차');
-    const modeLabel={'professor':'교수님별 학습','year-exam':'학번별 시험','unit':'단원별 학습','prediction':'AI 예상문제'}[mode];
-    const display=(t,max)=>esc(studyCopy(String(t||'').replace(/\s+/g,' ').trim()).slice(0,max));
-    const answerLine=q=>{
-      const a=effectiveAnswer(q);if(a===null||a===undefined)return '정답 미확정';
-      return (Array.isArray(a)?a:[a]).map(n=>q.type==='short'?String(n):circles[n-1]||String(n)).join(' / ');
-    };
-    const image=(src,klass,alt)=>src?`<img src="${esc(src)}" alt="${esc(alt)}" class="${klass}">`:'';
-    const pages=selected.map((q,index)=>{
-      const picked=bucket[q.id]?.selected||[];
-      const pickedList=Array.isArray(picked)?picked:[picked];
-      const wanted=effectiveAnswer(q);
-      const correctList=wanted==null?[]:Array.isArray(wanted)?wanted:[wanted];
-      const grade=kind==='bookmarks'?'북마크': '오답';
-      const promptLength=(q.prompt||'').length+(q.choices||[]).reduce((v,c)=>v+c.text.length,0);
-      const compact=promptLength>1200?'very-compact':promptLength>700?'compact':'';
-      const lecture=(q.validation?.stage==='accepted'?q.evidence:q.candidateEvidence||q.evidence||[])||[];
-      const f=(q.figureImages||[]).filter(x=>x.src||x.image);
-      const explanation=studyAiExplanation(q)||studyCopy(q.explanation)||'관련 강의안과 원본 문제를 비교해 확인하세요.';
-      const reason=q.choiceExplanations||{};
-      const perChoice=(q.choices||[]).map(c=>reason[String(c.number)]?`<div class="reason"><b>${circles[c.number-1]||c.number}</b> ${display(reason[String(c.number)],270)}</div>`:'').filter(Boolean).join('');
-      const figure=f.length?`<section class="figures">${f.slice(0,2).map(x=>image(x.src||x.image,'question-fig',x.alt||'기출 그림')).join('')}</section>`:'';
-      const evidence=lecture[0]?.image && promptLength<1250?`<div class="lecture"><small>강의안 참고: ${display(lecture[0].file||'',110)} · PDF ${lecture[0].page||'?'}쪽</small>${image(lecture[0].image,'lecture-img','강의안 캡처')}</div>`:lecture[0]?`<small>강의안 참고: ${display(lecture[0].file||'',110)} · PDF ${lecture[0].page||'?'}쪽</small>`:'';
-      const options=q.type==='short'?`<div>주관식 답안: ${display(pickedList.join(''),200)}</div>`:(q.choices||[]).map(c=>`<div class="option ${correctList.includes(c.number)?'is-correct':''}"><strong>${circles[c.number-1]||c.number}</strong><span>${display(c.text,700)}</span>${correctList.includes(c.number)?'<b>✓</b>':''}</div>`).join('');
-      return `<section class="sheet ${compact}"><header><div><b>HEON ARCHIVE</b><span> ${display(title,75)} · ${display(modeLabel,30)}</span></div><div>${index+1} / ${selected.length}</div></header><div class="qid">${display(teacherMap.get(q.professor)||q.professor,50)} 교수님 · ${display(q.label,20)} <span>${grade}</span></div><h2>${display(q.prompt,3500)}</h2>${figure}<div class="options">${options}</div><div class="keyline"><b>정답 ${esc(answerLine(q))}</b><span>내 답안: ${display(pickedList.map(n=>typeof n==='number'?(circles[n-1]||n):n).join(', ')||'미제출',100)}</span></div><div class="explain"><h3>핵심 해설</h3><p>${display(explanation,promptLength>1000?480:700)}</p>${perChoice?`<div class="reasons">${perChoice}</div>`:''}</div>${evidence}<footer>HEON ARCHIVE · 브라우저 학습 기록 기준 · 문제별 1페이지</footer></section>`;
-    }).join('');
-    const html=`<!doctype html><html lang="ko"><head><meta charset="utf-8"><base href="${esc(document.baseURI)}"><title>${esc(title)} PDF</title><style>
-      @page{size:A4 portrait;margin:8mm}
-      *{box-sizing:border-box}body{font-family:Arial,'Malgun Gothic','Apple SD Gothic Neo',sans-serif;color:#12223b;background:#edf2f9;margin:0}
-      .controls{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:15px;padding:13px 18px;background:white;border-bottom:1px solid #cbd7e6;font-size:13px}
-      .controls button{background:#2563eb;color:white;border:0;border-radius:9px;padding:11px 17px;font-weight:800;cursor:pointer}
-      .sheet{position:relative;background:white;width:194mm;height:277mm;overflow:hidden;margin:15px auto;padding:8mm;box-shadow:0 4px 16px #cbd5e1;font-size:10.4px;line-height:1.37;break-after:page;page-break-after:always}
-      .sheet:last-child{break-after:auto;page-break-after:auto}
-      .sheet header{display:flex;justify-content:space-between;border-bottom:2px solid #2563eb;padding-bottom:8px;font-size:10px;color:#45627e}
-      .sheet header b{letter-spacing:1.5px;color:#1748af;margin-right:12px}
-      .qid{margin:10px 0 7px;color:#2563eb;font-weight:bold;font-size:12px}.qid span{color:#be123c;margin-left:10px}
-      .sheet h2{font-size:12px;line-height:1.55;white-space:normal;overflow-wrap:anywhere;margin:0 0 9px}
-      .options{display:grid;gap:4px;margin:8px 0}
-      .option{display:flex;gap:8px;padding:4px 7px;white-space:normal;border:1px solid #dce5ef;border-radius:6px;overflow-wrap:anywhere}
-      .option strong{color:#45627e;min-width:16px}.option b{margin-left:auto}.option.is-correct{border-color:#8bc8b2;background:#eaf8f1}
-      .figures{display:flex;gap:8px;margin:5px 0}.question-fig{object-fit:contain;max-width:45%;max-height:130px}
-      .keyline{display:flex;gap:20px;padding:8px;background:#eaf8f1;border:1px solid #8bc8b2;border-radius:7px;margin:8px 0;color:#0a7d50}
-      .explain{margin-top:7px}.explain h3{font-size:11px;margin:0 0 5px;color:#1748af}.explain p{margin:0 0 7px;white-space:normal}
-      .reasons{display:grid;grid-template-columns:1fr 1fr;gap:3px 8px}.reason{background:#f2f6fa;border-radius:4px;padding:3px 5px;font-size:9px}
-      .reason b{color:#2563eb;margin-right:3px}.lecture{display:flex;align-items:flex-start;gap:8px;margin-top:7px}.lecture small{width:40%;font-size:8px;color:#526683}.lecture-img{max-height:145px;max-width:58%;object-fit:contain}
-      footer{position:absolute;bottom:7mm;right:8mm;color:#8897ac;border-top:1px solid #e2e8f0;font-size:8px;padding-top:4px}
-      .sheet.compact{font-size:9.2px;padding:6mm}.sheet.compact h2{font-size:10px}.sheet.compact .option{padding:3px 5px}.sheet.compact .question-fig{max-height:90px}.sheet.compact .lecture-img{max-height:90px}.sheet.compact .reasons{font-size:8px}
-      .sheet.very-compact{font-size:8.3px;padding:5mm;line-height:1.3}.sheet.very-compact h2{font-size:9px}.sheet.very-compact .option{padding:2px 4px}.sheet.very-compact .question-fig{max-height:70px}.sheet.very-compact .lecture-img{max-height:65px}.sheet.very-compact .reasons{font-size:7.5px}
-      @media print{body{background:white}.controls{display:none}.sheet{margin:0;padding:6mm;width:194mm;height:277mm;box-shadow:none}.sheet header{margin-top:0}}
-    </style></head><body><div class="controls"><span><b>${esc(title)} · ${selected.length}문항</b> (${esc(modeLabel)} 기록)</span><button onclick="window.print()">PDF로 저장 / 인쇄</button></div>${pages}</body></html>`;
-    popup.document.open();popup.document.write(html);popup.document.close();
-    popup.focus();
+    if(pdfExportBusy){toast('다른 PDF 파일을 생성하고 있습니다.');return;}
+    if(!window.HeonPdfExport?.generate){toast('PDF 저장 모듈을 불러오지 못했습니다. 새로고침해 주세요.');return;}
+    pdfExportBusy=true;
+    const dialog=openPdfDialog(kind);
+    try {
+      const mode=printRecordsMode();
+      const subj=subjectById(selectedSubject);
+      const metas=subj?.professors||[];
+      const docs=await Promise.all(metas.map(p=>loadProfessor(p.id).catch(()=>null)));
+      let all=docs.flatMap(x=>x?.questions||[]);
+      if(mode==='prediction') all=all.filter(q=>q.isPrediction);
+      else all=all.filter(q=>!q.isPrediction);
+      // Never mix saved submissions, wrong-answer results, or bookmarks between modes.
+      const bucket=mode==='year-exam'?state.yearExamRecords
+        :mode==='unit'?state.unitRecords
+        :mode==='prediction'?state.predictionRecords:state.records;
+      const bm=mode==='year-exam'?state.yearExamBookmarks
+        :mode==='unit'?state.unitBookmarks
+        :mode==='prediction'?state.predictionBookmarks:state.bookmarks;
+      const unique=new Map();
+      for(const q of all) unique.set(q.id,q);
+      const selected=[...unique.values()].filter(q=>{
+        if(kind==='bookmarks') return !!bm[q.id];
+        const rec=bucket[q.id];
+        if(!rec?.submitted) return false;
+        const answer=effectiveAnswer(q);
+        if(answer===null||answer===undefined||q.gradingMode==='manual'||q.type==='short')return false;
+        const want=Array.isArray(answer)?answer:[answer];
+        const chosen=Array.isArray(rec.selected)?rec.selected:[rec.selected];
+        return !(want.length===chosen.length&&want.every(n=>chosen.includes(n)));
+      }).sort((a,b)=>Number(a.year)-Number(b.year)||Number(a.number)-Number(b.number)||a.professor.localeCompare(b.professor));
+      if(!selected.length) {
+        pdfProgress(dialog,kind==='wrong'?'현재 학습 모드에 저장된 오답이 없습니다.':'현재 학습 모드에 저장된 북마크가 없습니다.');
+        return;
+      }
+      const teacherMap=new Map(metas.map(p=>[p.id,p.name]));
+      const title=(kind==='wrong'?'오답노트':'북마크')+' · '+(subj?.name||'혈액과 종양 1차');
+      const modeLabel={'professor':'교수님별 학습','year-exam':'학번별 시험','unit':'단원별 학습','prediction':'AI 예상문제'}[mode];
+      const answerLine=q=>{
+        const a=effectiveAnswer(q);
+        if(a===null||a===undefined)return '정답 미확정';
+        return (Array.isArray(a)?a:[a]).map(n=>q.type==='short'?String(n):circles[n-1]||String(n)).join(' / ');
+      };
+      const items=selected.map(q=>{
+        const picked=bucket[q.id]?.selected||[];
+        const pickedList=Array.isArray(picked)?picked:[picked];
+        const wanted=effectiveAnswer(q);
+        const correctList=wanted==null?[]:Array.isArray(wanted)?wanted:[wanted];
+        const evidence=(q.validation?.stage==='accepted'?q.evidence:q.candidateEvidence||q.evidence||[])||[];
+        const lecture=evidence[0]||null;
+        return {
+          teacher:teacherMap.get(q.professor)||q.professor,
+          label:q.label,tag:kind==='wrong'?'오답':'북마크',prompt:q.prompt,
+          choices:q.type==='short'?[]:(q.choices||[]).map(c=>({
+            symbol:circles[c.number-1]||String(c.number),text:c.text,
+            correct:correctList.includes(c.number)
+          })),
+          figures:(q.figureImages||[]).filter(x=>x.src||x.image).slice(0,2).map(x=>({
+            src:x.src||x.image,label:x.alt||'문제 이미지'
+          })),
+          answer:answerLine(q),
+          picked:pickedList.length?pickedList.map(n=>typeof n==='number'?(circles[n-1]||n):n).join(', '):'미제출',
+          explanation:studyAiExplanation(q)||studyCopy(q.explanation)||'관련 강의안과 원본 문제를 비교해 확인하세요.',
+          reasons:(q.choices||[]).filter(c=>q.choiceExplanations?.[String(c.number)]).map(c=>({
+            symbol:circles[c.number-1]||String(c.number),
+            text:studyCopy(q.choiceExplanations[String(c.number)])
+          })),
+          evidence:lecture?{
+            label:`${lecture.file||'강의안'} · PDF ${lecture.page||'?'}쪽`,src:lecture.image||''
+          }:null
+        };
+      });
+      pdfProgress(dialog,`전체 ${selected.length}문항의 PDF를 생성하고 있습니다…`,0,selected.length);
+      const result=await window.HeonPdfExport.generate({
+        title,modeLabel,items,
+        onProgress:(current,total)=>pdfProgress(dialog,`${current}/${total}문항 생성 완료…`,current,total)
+      });
+      const date=new Date().toLocaleDateString('en-CA').replace(/\//g,'-');
+      const fileName=`HEON_ARCHIVE_${kind==='wrong'?'오답노트':'북마크'}_${(subj?.name||'학습').replace(/[\\/:*?"<>|\s]+/g,'_')}_${date}.pdf`;
+      if(pdfExportObjectUrl)URL.revokeObjectURL(pdfExportObjectUrl);
+      pdfExportObjectUrl=URL.createObjectURL(result.blob);
+      const download=dialog.querySelector('.pdf-export-download');
+      download.href=pdfExportObjectUrl;
+      download.download=fileName;
+      const preview=dialog.querySelector('.pdf-export-preview');
+      preview.addEventListener('click',()=>window.open(pdfExportObjectUrl,'_blank','noopener'));
+      const share=dialog.querySelector('.pdf-export-share');
+      if(typeof navigator.share==='function'&&typeof navigator.canShare==='function'&&typeof File!=='undefined'){
+        const file=new File([result.blob],fileName,{type:'application/pdf'});
+        if(navigator.canShare({files:[file]})){
+          share.hidden=false;
+          share.addEventListener('click',()=>{
+            // MUST be invoked on the tap itself (iPad Safari user activation).
+            navigator.share({files:[file],title}).catch(err=>{
+              if(err?.name!=='AbortError')toast('공유가 열리지 않았습니다. PDF 다운로드를 이용해 주세요.');
+            });
+          });
+        }
+      }
+      pdfProgress(dialog,`PDF 파일 준비 완료 · ${selected.length}문항, ${result.pages}페이지 (${(result.blob.size/1048576).toFixed(1)}MB)`,selected.length,selected.length);
+      dialog.querySelector('.pdf-export-actions').hidden=false;
+    } catch(err) {
+      console.error('PDF 저장 실패',err);
+      pdfProgress(dialog,'PDF 생성에 실패했습니다. 브라우저를 새로고침하고 다시 시도해 주세요.');
+      toast('PDF 파일을 생성할 수 없었습니다.');
+    } finally {
+      pdfExportBusy=false;
+      dialog.querySelector('.pdf-export-close').disabled=false;
+    }
   }
 
   // Event delegation: no inline JavaScript handlers inside content.
@@ -863,23 +1095,17 @@
     if(btn.matches('input[type=checkbox]'))return; // change listener handles checkbox
     const action=btn.dataset.action;
     switch(action) {
-      // The study and Review UIs are re-rendered dynamically. Delegate the
-      // click to Tally's JS API rather than relying on one-time button binding.
-      case 'report-issue': {
-        if (typeof window.Tally?.openPopup === 'function') {
-          e.preventDefault();
-          window.Tally.openPopup('6DjZg5', {autoClose:0});
-        }
-        // If Tally's external script is unavailable, the link opens the
-        // existing form in a new tab as an accessible fallback.
-        break;
-      }
       case 'print-collection':await exportCollection(btn.dataset.kind==='bookmarks'?'bookmarks':'wrong');break;
+      case 'save-collection-pdf':await exportCollection(btn.dataset.kind==='bookmarks'?'bookmarks':'wrong');break;
+      case 'report-popup':openReportPopup();break;
+      case 'refresh-leaderboard':await loadSharedLeaderboard(selectedSubject,'22');break;
+      case 'enter-leaderboard':await maybeOfferPublicRank();break;
+      case 'save-leaderboard-rank':await submitPublicRank(btn);break;
       case 'mobile-menu':mobileMenuOpen=!mobileMenuOpen;render();break;
-      case 'home':view='home';mobileMenuOpen=false;render();window.scrollTo(0,0);break;
+      case 'home':view='home';mobileMenuOpen=false;render();if(leaderboardConfigured())loadSharedLeaderboard(selectedSubject,'22');window.scrollTo(0,0);break;
       case 'scroll-courses':root.querySelector('#professor-picker')?.scrollIntoView({behavior:'smooth',block:'start'});break;
       case 'subject':selectedSubject=btn.dataset.id;currentProfessor=null;view='home';mobileMenuOpen=false;render();break;
-      case 'subject-home':selectedSubject=btn.dataset.id;currentProfessor=null;view='home';render();window.scrollTo(0,0);break;
+      case 'subject-home':selectedSubject=btn.dataset.id;currentProfessor=null;view='home';render();if(leaderboardConfigured())loadSharedLeaderboard(selectedSubject,'22');window.scrollTo(0,0);break;
       case 'home-mode':homeStudyType=['professor','unit','year'].includes(btn.dataset.mode)?btn.dataset.mode:'professor';render();break;
       case 'start-year-exam':await selectSubjectExam(btn.dataset.year);break;
       case 'choose-unit-professor':chosenUnitProfessor=btn.dataset.id;await loadProfessor(chosenUnitProfessor);render();break;
@@ -933,8 +1159,11 @@
         if(q.type==='short'&&!String(r.selected||'').trim())break;
         if(q.type!=='short'&&!r.selected?.length)break;
         r.submitted=true;r.submittedAt=new Date().toISOString();recordBucket()[q.id]=r;infoExpanded=true;saveState();
-        if(studyMode==='year-exam'&&scopedQuestions().at(-1)?.id===q.id&&scopedQuestions().every(submission)) {view='review';reviewFilter='all';restoringReview=false;}
+        const finishedYearExam=studyMode==='year-exam'&&questions().length>0&&questions().every(item=>submission(item,'year-exam'));
+        const shouldCheckRank=finishedYearExam && canUseLeaderboard(selectedSubject, selectedExamYear);
+        if(finishedYearExam) {view='review';reviewFilter='all';restoringReview=false;}
         render();
+        if(shouldCheckRank) await maybeOfferPublicRank();
         // On mobile, the right-side explanation becomes a card below the question.
         // Move it into view after the submitted result is displayed.
         if(matchMedia('(max-width:1020px)').matches){requestAnimationFrame(()=>root.querySelector('.evidence-panel')?.scrollIntoView({behavior:'smooth',block:'start'}));}
@@ -1043,7 +1272,7 @@
     modal.append(close,image,captionEl);modal.addEventListener('click',e=>{if(e.target===modal)modal.remove();});document.body.append(modal);close.focus();
   }
   document.addEventListener('keydown',e=>{
-    if(e.key==='Escape'){document.querySelector('.image-modal')?.remove();if(mobileMenuOpen){mobileMenuOpen=false;render();}}
+    if(e.key==='Escape'){document.querySelector('.image-modal')?.remove();closeDialog();if(mobileMenuOpen){mobileMenuOpen=false;render();}}
     if(e.key==='Enter'&&e.target.matches('.brand')){view='home';render();}
   });
   window.addEventListener('storage',e=>{if(e.key===KEY){readState();render();toast('다른 탭에서 변경된 학습 기록을 반영했습니다.');}});
@@ -1061,6 +1290,7 @@
         await Promise.allSettled(chosen.professors.map(p=>loadProfessor(p.id)));
       }
       render();
+      if(leaderboardConfigured())loadSharedLeaderboard(selectedSubject,'22');
     }catch(err){
       root.innerHTML=`<div style="max-width:680px;margin:9vh auto;padding:30px;border:1px solid #35465d;border-radius:18px;background:#101d30;color:#ecf2fb"><h2>HEON ARCHIVE 데이터를 불러오지 못했습니다</h2><p>${esc(err.message)}</p><p>ZIP 전체를 먼저 압축 해제한 후, <code>heon-archive/index.html</code>을 열어주세요. <code>data/catalog.js</code> 및 <code>data/professors/</code> 폴더가 같은 위치에 있어야 합니다.</p></div>`;
       console.error(err);
