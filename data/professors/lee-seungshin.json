@@ -118,17 +118,17 @@
       "figureRequired": true,
       "figureImages": [
         {
-          "src": "assets/figures/lee-seungshin/17-25-figure1.webp",
-          "alt": "이승신 교수님 17-25번 실제 기출 원본 검사·의료 영상",
-          "caption": "17-25번 기출 원본 검사·영상 · PDF 6쪽"
+          "src": "assets/figures/lee-seungshin/17-25-user-2026.webp",
+          "alt": "17-25 사용자 제공 의료영상/검사 원본",
+          "caption": "17-25 문제 필수 자료 · 사용자 제공 이미지 (기존 그림 교체)"
         }
       ],
       "showOriginalByDefault": false,
       "transcriptionStatus": "original_source_normalized_for_readability",
       "transcriptionWarning": "PDF의 필기·주석과 문제 본문을 구분하고 읽기 편하게 정리한 전사입니다. 원본 문구·수치·영상은 아래 기출 원본 캡처와 대조해 확인하세요.",
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": 2,
+      "answerSource": "user_confirmed_per_general_highlight_instruction_2026",
+      "explanation": "2026-11-11 사용자 요청 반영: 사용자 제공 새 흉부 X선: 심장 음영 평가에는 심장초음파 검사 ②; 영상 해석은 사용자 재확인 권장",
       "evidence": [],
       "candidateEvidence": [
         {
@@ -140,13 +140,14 @@
         }
       ],
       "validation": {
-        "stage": "pending",
-        "check1": "source_original_read",
-        "check2": "single_answer_not_double_verified",
-        "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
-        "decisionReason": "강의안 직접 근거 부족/선지 불확실: 검토 필요"
+        "stage": "user_confirmed",
+        "check1": "question_text_options_cross_checked",
+        "check2": "highlight_or_supplied_explanation_or_lecture_compared",
+        "verifiedAgainst": "사용자 제공 새 흉부 X선: 심장 음영 평가에는 심장초음파 검사 ②; 영상 해석은 사용자 재확인 권장",
+        "decisionReason": "사용자 요청으로 2번 잠정 고정. 사용자 제공 새 흉부 X선: 심장 음영 평가에는 심장초음파 검사 ②; 영상 해석은 사용자 재확인 권장",
+        "note": "이 상태는 교수님 강의안 이중검증 완료가 아니라 사용자 요청에 따른 기본 정답입니다."
       },
-      "notes": "원본 흉부 X-ray와 심낭삼출 소견을 확인해야 하며, 강의안은 진단법과 처치를 나누어 설명하므로 단일 정답을 미확정 처리.",
+      "notes": "사용자 요청 잠정 고정 2026-11-11. 사용자 제공 새 흉부 X선: 심장 음영 평가에는 심장초음파 검사 ②; 영상 해석은 사용자 재확인 권장 학습 중 사용자가 정답을 변경할 수 있습니다.",
       "unitTitle": "종양학적 응급질환",
       "unitId": "4806492b3ba4",
       "aiExplanation": "이 문항(17-25)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 8세 소세포 폐암으로 항암 치료 중인 환자가 악화되는 호흡곤란으로 내원하였다. 흉부 X-ray는 다음과 같다. 다음 처치는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
@@ -272,9 +273,9 @@
       "figureRequired": true,
       "figureImages": [
         {
-          "src": "assets/figures/lee-seungshin/17-주8-figure1.webp",
-          "alt": "이승신 교수님 17-주8번 실제 기출 원본 검사·의료 영상",
-          "caption": "17-주8번 기출 원본 검사·영상 · PDF 8쪽"
+          "src": "assets/figures/lee-seungshin/17-주8-user-2026.webp",
+          "alt": "17-주8 사용자 제공 의료영상/검사 원본",
+          "caption": "17-주8 문제 필수 자료 · 사용자 제공 이미지 (기존 그림 교체)"
         }
       ],
       "showOriginalByDefault": false,
@@ -305,7 +306,7 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "원문 내용과 각 보기를 대조해 채택"
       },
-      "notes": "",
+      "notes": "2026-11-11 사용자가 직접 제공한 그림으로 교체.",
       "unitTitle": "종양학적 응급질환",
       "unitId": "4806492b3ba4",
       "aiExplanation": "판단 포인트: 강의안 19쪽은 담도 폐쇄에 대한 내시경 및 경피적 담도 배액 방법(ERBD, PTBD)을 명시합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
@@ -415,9 +416,9 @@
       "figureRequired": true,
       "figureImages": [
         {
-          "src": "assets/figures/lee-seungshin/18-45-figure1.webp",
-          "alt": "이승신 교수님 18-45번 실제 기출 원본 검사·의료 영상",
-          "caption": "18-45번 기출 원본 검사·영상 · PDF 5쪽"
+          "src": "assets/figures/lee-seungshin/18-45-user-2026.webp",
+          "alt": "18-45 사용자 제공 의료영상/검사 원본",
+          "caption": "18-45 문제 필수 자료 · 사용자 제공 이미지 (기존 그림 교체)"
         }
       ],
       "showOriginalByDefault": false,
@@ -443,7 +444,7 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "원문 내용과 각 보기를 대조해 채택"
       },
-      "notes": "",
+      "notes": "2026-11-11 사용자가 직접 제공한 그림으로 교체.",
       "unitTitle": "종양학적 응급질환",
       "unitId": "4806492b3ba4",
       "aiExplanation": "판단 포인트: 상대정맥증후군을 보이지만 원인암이 확진되지 않은 경우 조직학적 진단 후 치료를 정합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
@@ -553,17 +554,17 @@
       "figureRequired": true,
       "figureImages": [
         {
-          "src": "assets/figures/lee-seungshin/19-52-figure1.webp",
-          "alt": "이승신 교수님 19-52번 실제 기출 원본 검사·의료 영상",
-          "caption": "19-52번 기출 원본 검사·영상 · PDF 6쪽"
+          "src": "assets/figures/lee-seungshin/19-52-user-2026.webp",
+          "alt": "19-52 사용자 제공 의료영상/검사 원본",
+          "caption": "19-52 문제 필수 자료 · 사용자 제공 이미지 (기존 그림 교체)"
         }
       ],
       "showOriginalByDefault": false,
       "transcriptionStatus": "original_source_normalized_for_readability",
       "transcriptionWarning": "PDF의 필기·주석과 문제 본문을 구분하고 읽기 편하게 정리한 전사입니다. 원본 문구·수치·영상은 아래 기출 원본 캡처와 대조해 확인하세요.",
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": 4,
+      "answerSource": "user_confirmed_per_general_highlight_instruction_2026",
+      "explanation": "2026-11-11 사용자 요청 반영: 19 종양 해설.pdf 24쪽 ④ vincristine; 본문 장폐색 소견과 보기 일치",
       "evidence": [],
       "candidateEvidence": [
         {
@@ -575,13 +576,14 @@
         }
       ],
       "validation": {
-        "stage": "pending",
-        "check1": "source_original_read",
-        "check2": "single_answer_not_double_verified",
-        "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
-        "decisionReason": "강의안 직접 근거 부족/선지 불확실: 검토 필요"
+        "stage": "user_confirmed",
+        "check1": "question_text_options_cross_checked",
+        "check2": "highlight_or_supplied_explanation_or_lecture_compared",
+        "verifiedAgainst": "19 종양 해설.pdf 24쪽 ④ vincristine; 본문 장폐색 소견과 보기 일치",
+        "decisionReason": "사용자 요청으로 4번 잠정 고정. 19 종양 해설.pdf 24쪽 ④ vincristine; 본문 장폐색 소견과 보기 일치",
+        "note": "이 상태는 교수님 강의안 이중검증 완료가 아니라 사용자 요청에 따른 기본 정답입니다."
       },
-      "notes": "강의안 22쪽에서 장폐색 영상은 확인되나 vincristine을 직접 원인으로 연결한 문장이 없으므로 보류.",
+      "notes": "사용자 요청 잠정 고정 2026-11-11. 19 종양 해설.pdf 24쪽 ④ vincristine; 본문 장폐색 소견과 보기 일치 학습 중 사용자가 정답을 변경할 수 있습니다.",
       "unitTitle": "종양학적 응급질환",
       "unitId": "4806492b3ba4",
       "aiExplanation": "이 문항(19-52)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 항암 치료 중인 62세 여자가 복통과 변비, 복부팽만과 장음 감소로 내원했다. 복부 X-ray는 다음과 같다. 원인 약제로 가장 가능한 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
@@ -627,9 +629,9 @@
       "showOriginalByDefault": false,
       "transcriptionStatus": "needs_source_recheck",
       "transcriptionWarning": "PDF의 필기·주석과 문제 본문을 구분하고 읽기 편하게 정리한 전사입니다. 원본 문구·수치·영상은 아래 기출 원본 캡처와 대조해 확인하세요.",
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": 2,
+      "answerSource": "user_confirmed_per_general_highlight_instruction_2026",
+      "explanation": "2026-11-11 사용자 요청 반영: 19 종양 해설.pdf 25쪽 ② 복부 CT; 원문 임상 증례와 보기 일치",
       "evidence": [],
       "candidateEvidence": [
         {
@@ -641,13 +643,14 @@
         }
       ],
       "validation": {
-        "stage": "pending",
-        "check1": "source_original_read",
-        "check2": "single_answer_not_double_verified",
-        "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
-        "decisionReason": "강의안 직접 근거 부족/선지 불확실: 검토 필요"
+        "stage": "user_confirmed",
+        "check1": "question_text_options_cross_checked",
+        "check2": "highlight_or_supplied_explanation_or_lecture_compared",
+        "verifiedAgainst": "19 종양 해설.pdf 25쪽 ② 복부 CT; 원문 임상 증례와 보기 일치",
+        "decisionReason": "사용자 요청으로 2번 잠정 고정. 19 종양 해설.pdf 25쪽 ② 복부 CT; 원문 임상 증례와 보기 일치",
+        "note": "이 상태는 교수님 강의안 이중검증 완료가 아니라 사용자 요청에 따른 기본 정답입니다."
       },
-      "notes": "강의안 PDF 44쪽은 neutropenic enterocolitis의 우하복부 소견을 설명하지만 CT를 최선이라고 명시하지 않아 미채택.",
+      "notes": "사용자 요청 잠정 고정 2026-11-11. 19 종양 해설.pdf 25쪽 ② 복부 CT; 원문 임상 증례와 보기 일치 학습 중 사용자가 정답을 변경할 수 있습니다.",
       "unitTitle": "종양학적 응급질환",
       "unitId": "4806492b3ba4",
       "aiExplanation": "이 문항(19-53)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: AML 관해유도 항암치료 중인 22세 여자가 발열(38.9℃), 복통·설사, 우하복부 압통 및 반발압통을 보였다. Hb 7 g/dL, WBC 100/μL, 중성구 1%, 혈소판 32,000/μL였다. 진단 및 감별을 위한 가장 적절한 검사는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
@@ -961,9 +964,9 @@
       "figureRequired": true,
       "figureImages": [
         {
-          "src": "assets/figures/lee-seungshin/21-9-figure1.webp",
-          "alt": "이승신 교수님 21-9번 실제 기출 원본 검사·의료 영상",
-          "caption": "21-9번 기출 원본 검사·영상 · PDF 9쪽"
+          "src": "assets/figures/lee-seungshin/21-9-user-2026.webp",
+          "alt": "21-9 사용자 제공 의료영상/검사 원본",
+          "caption": "21-9 문제 필수 자료 · 사용자 제공 이미지 (기존 그림 교체)"
         }
       ],
       "showOriginalByDefault": false,
@@ -989,7 +992,7 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "원문 내용과 각 보기를 대조해 채택"
       },
-      "notes": "",
+      "notes": "2026-11-11 사용자가 직접 제공한 그림으로 교체.",
       "unitTitle": "종양학적 응급질환",
       "unitId": "4806492b3ba4",
       "aiExplanation": "판단 포인트: 강의안 38쪽은 종양용해증후군 예방 수단으로 알로퓨리놀을 제시하므로 피한다는 ④가 틀립니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
@@ -1078,9 +1081,9 @@
       "figureRequired": true,
       "figureImages": [
         {
-          "src": "assets/figures/lee-seungshin/21-주2-figure1.webp",
-          "alt": "이승신 교수님 21-주2번 실제 기출 원본 검사·의료 영상",
-          "caption": "21-주2번 기출 원본 검사·영상 · PDF 10쪽"
+          "src": "assets/figures/lee-seungshin/21-주2-user-2026.webp",
+          "alt": "21-주2 사용자 제공 의료영상/검사 원본",
+          "caption": "21-주2 문제 필수 자료 · 사용자 제공 이미지 (기존 그림 교체)"
         }
       ],
       "showOriginalByDefault": false,
@@ -1106,7 +1109,7 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "원문 내용과 각 보기를 대조해 채택"
       },
-      "notes": "",
+      "notes": "2026-11-11 사용자가 직접 제공한 그림으로 교체.",
       "shortRequiredTerms": [
         "ERBD",
         "PTBD"
@@ -1123,27 +1126,27 @@
       "subject": "hematology-1",
       "professor": "lee-seungshin",
       "type": "choice",
-      "prompt": "22학번 40번 · 상대정맥증후군 응급처치\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "19세 남자 환자가 1달 전부터 발생한 간헐적 기침 및 최근 발생한 안면부종을 주소로 내원하였다. 내원하여 검사한 가슴 X-선 사진과 가슴 컴퓨터단층촬영 소견은 다음과 같았다. 가장 먼저 시행할 것은 다음 중 무엇인가?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "방사선치료"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "흉강경 조직검사"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "병변 절제"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "생리식염수 주사"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "항암 치료"
         }
       ],
       "source": {
@@ -1154,19 +1157,28 @@
       "figureRequired": true,
       "figureImages": [
         {
-          "src": "assets/questions/2025-class22/40.webp",
-          "alt": "22학번 40번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 40번 실제 문제·선택지 원본 · PDF 3페이지"
+          "src": "assets/figures/class22/22-40-figure.webp",
+          "alt": "22학번 40번 기출에 실제 포함된 검사·영상·그림",
+          "caption": "22학번 40번 필수 그림 · 시험지 원본에서 그림 부분만 분리"
         }
       ],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 2,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 2번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "oncologic-emergency",
+          "file": "25.11.11_혈액과종양_이승신 pf_종양학적응급질환-증례토의(2).pdf",
+          "page": 11,
+          "image": "assets/evidence/lee-seungshin/emergency-p011.webp",
+          "quote": "기존 cancer를 진단받지 않은 경우는 조직학적 진단을 정확히 내린 후 치료",
+          "lectureOwner": "이승신 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -1174,9 +1186,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-seungshin / 종양학적 응급질환",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "종양학적 응급질환",
       "unitId": "4806492b3ba4",
       "aiExplanation": "상대정맥 증후군은 종양에 의한 정맥 유출 장애가 원인이며, 호흡·신경학적 응급도와 조직진단 필요성을 함께 평가합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -1196,27 +1210,27 @@
       "subject": "hematology-1",
       "professor": "lee-seungshin",
       "type": "choice",
-      "prompt": "22학번 41번 · 진행성 소세포폐암의 응급증상\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "68세 소세포 폐암으로 항암 치료 중인 환자가 최근 악화되는 호흡곤란을 주소로 내원하였다. 응급실에서 체크한 흉부 X선 검사이다. 적절한 다음 처치는?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "방사선치료"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "심장초음파검사"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "흉관 삽입"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "생리식염수 주사"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "항암치료"
         }
       ],
       "source": {
@@ -1227,19 +1241,28 @@
       "figureRequired": true,
       "figureImages": [
         {
-          "src": "assets/questions/2025-class22/41.webp",
-          "alt": "22학번 41번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 41번 실제 문제·선택지 원본 · PDF 3페이지"
+          "src": "assets/figures/class22/22-41-figure.webp",
+          "alt": "22학번 41번 기출에 실제 포함된 검사·영상·그림",
+          "caption": "22학번 41번 필수 그림 · 시험지 원본에서 그림 부분만 분리"
         }
       ],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 2,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 2번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "22-class-topic-41",
+          "file": "25.11.11_혈액과종양_이승신 pf_종양학적응급질환-증례토의(2).pdf",
+          "page": 7,
+          "image": "assets/evidence/class22/lecture-41-p007.webp",
+          "quote": "흉부 합병증/흉수 관련 증례",
+          "lectureOwner": "이승신 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -1247,9 +1270,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-seungshin / 종양학적 응급질환",
-        "classificationConfidence": "review"
+        "classificationConfidence": "review",
+        "lectureLinkStatus": "lecture_topic_matched_visual_page_checked_not_accepted_as_proof",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "종양학적 응급질환",
       "unitId": "4806492b3ba4",
       "aiExplanation": "폐암 환자의 갑작스러운 호흡곤란에서는 대량 흉수, 종양에 의한 폐쇄, 감염, 심장 합병증을 영상과 함께 평가합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -1269,29 +1294,31 @@
       "subject": "hematology-1",
       "professor": "lee-seungshin",
       "type": "short",
-      "prompt": "22학번 주관식 3번 · 암환자 하지 근력 저하 응급증례\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "73세 여자 환자가 폐암으로 항암 치료 중에 허리가 아프고 다리 감각이 무뎌지고 힘이 없다고 응급실에 내원하였다. 신체 검사상 양 발등을 꼬집어도 통증을 느끼지 않았고 하지 근력이 Grade 2로 저하되어 있었다. 이 환자에서 시행할 1) 검사, 2) 응급 치료를 쓰세요.",
       "choices": [],
       "source": {
         "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 6,
         "image": "assets/questions/2025-class22/71.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/71.webp",
-          "alt": "22학번 71번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 71번 실제 문제·선택지 원본 · PDF 6페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "객관식 정답표에는 주관식 정답이 없으므로 자동 채점을 보류합니다.",
       "answer": null,
       "answerSource": "unconfirmed_subjective",
       "explanation": "주관식 문항의 공식 모범답안은 제공된 시험지 마지막 정답표에 없습니다. 강의안의 관련 개념을 바탕으로 학습하되 채점은 보류합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "oncologic-emergency",
+          "file": "25.11.11_혈액과종양_이승신 pf_종양학적응급질환-증례토의(2).pdf",
+          "page": 28,
+          "image": "assets/evidence/lee-seungshin/emergency-p028.webp",
+          "quote": "High-dose dexamethasone, MRI of spine"
+        }
+      ],
       "validation": {
         "stage": "pending",
         "check1": "subjective_question_original_pdf_verified",

@@ -113,9 +113,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "unconfirmed",
-      "explanation": "첨부 기출 원본에서는 ③이 표시되어 있습니다. 이강규 교수님 강의안 PDF 36쪽은 진행 정도에 따라 T1N0에서 방사선치료 단독, T2 이상 또는 N1 이상에서 동시 항암화학방사선치료를 제시합니다. 따라서 모든 비인강암을 무조건 동시 항암화학방사선치료로 치료한다는 문장은 범위가 넓어, 정답 ③을 강의안으로 단일 확정하지 않았습니다.",
+      "answer": 3,
+      "answerSource": "user_confirmed_per_general_highlight_instruction_2026",
+      "explanation": "첨부 기출 원본에서는 ③이 표시되어 있습니다. 이강규 교수님 강의안 PDF 36쪽은 진행 정도에 따라 T1N0에서 방사선치료 단독, T2 이상 또는 N1 이상에서 동시 항암화학방사선치료를 제시합니다. 따라서 모든 비인강암을 무조건 동시 항암화학방사선치료로 치료한다는 문장은 범위가 넓어, 정답 ③을 강의안으로 단일 확정하지 않았습니다.\n\n2026-11-11 사용자 요청 반영: 사용자 제공 원본 이미지에서 ③ 비인강암 동시항암화학방사선치료 표시를 확인; 병기에 따른 예외 고려",
       "candidateEvidence": [
         {
           "lectureId": "v124-lee-rad-2026",
@@ -127,16 +127,17 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_question_reexamined",
-        "check2": "independent_confirmation_pending",
-        "verifiedAgainst": "candidate_only",
+        "stage": "user_confirmed",
+        "check1": "question_text_options_cross_checked",
+        "check2": "highlight_or_supplied_explanation_or_lecture_compared",
+        "verifiedAgainst": "사용자 제공 원본 이미지에서 ③ 비인강암 동시항암화학방사선치료 표시를 확인; 병기에 따른 예외 고려",
         "anchor": "",
-        "decisionReason": "관련 정보만으로 단일 정답 미확정"
+        "decisionReason": "사용자 요청으로 3번 잠정 고정. 사용자 제공 원본 이미지에서 ③ 비인강암 동시항암화학방사선치료 표시를 확인; 병기에 따른 예외 고려",
+        "note": "이 상태는 교수님 강의안 이중검증 완료가 아니라 사용자 요청에 따른 기본 정답입니다."
       },
       "transcriptionStatus": "user_supplied_or_original_image_verified",
       "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
-      "notes": "기출 이미지 ③ 표시 있음. 강의안과 범위 조건 상충 가능성: 정답 검토 필요.",
+      "notes": "사용자 요청 잠정 고정 2026-11-11. 사용자 제공 원본 이미지에서 ③ 비인강암 동시항암화학방사선치료 표시를 확인; 병기에 따른 예외 고려 학습 중 사용자가 정답을 변경할 수 있습니다.",
       "unitTitle": "폐암·두경부·직장암 방사선치료",
       "unitId": "d2b73351cd1e",
       "aiExplanation": "판단 포인트: 첨부 기출 원본에서는 ③이 표시되어 있습니다. 이강규 교수님 강의안 PDF 36쪽은 진행 정도에 따라 T1N0에서 방사선치료 단독, T2 이상 또는 N1 이상에서 동시 항암화학방사선치료를 제시합니다. 따라서 모든 비인강암을 무조건 동시 항암화학방사선치료로 치료한다는 문장은 범위가 넓어, 정답 ③을 강의안으로 단일 확정하지 않았습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
@@ -303,27 +304,27 @@
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "수술 가능한 직장암의 치료에 관한 설명 중 가장 옳은 것은?",
+      "prompt": "다음은 수술이 가능한 직장암의 치료에 대한 설명이다. 가장 옳은 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "수술 후 항암화학방사선치료가 모든 환자의 최선이다."
+          "text": "수술이 가능한 직장암에서 가장 좋은 치료법은 수술 후 항암화학방사선치료를 시행하는 것이다."
         },
         {
           "number": 2,
-          "text": "수술 전 동시항암방사선치료 후 내시경적 완전소실이 확인되어도 수술적 절제를 시행한다."
+          "text": "Preoperative chemoradiation을 시행한 후 내시경상에서 병변이 완전 소실된 경우에도 꼭 수술을 시행하여 CR 여부를 확인하여야 한다."
         },
         {
           "number": 3,
-          "text": "중부 직장암에서는 항상 복회음절제술을 시행해야 한다."
+          "text": "수술을 upper 또는 mid rectum에 종양이 있을 경우에는 abdominoperineal resection (APR, Miles' operation)을 시행해야 한다."
         },
         {
           "number": 4,
-          "text": "하부 직장암은 수술이 불가능하므로 동시항암방사선치료만 시행한다."
+          "text": "Lower rectum에 발생한 직장암은 수술을 할 경우 anus를 제거해야 하기 때문에 수술을 시행하지 않고 concurrent chemoradiation을 시행하여야만 한다."
         },
         {
           "number": 5,
-          "text": "선행 항암방사선치료는 보조 항암방사선치료보다 생존율이 항상 높다."
+          "text": "Neoadjuvant chemoradiation은 adjuvant chemoradiation에 비하여 survival의 benefit이 있고, local recurrence도 매우 낮기 때문에 neoadjuvant chemoradiation을 더 선호한다."
         }
       ],
       "source": {
@@ -463,7 +464,7 @@
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "58세 여성, 5 cm 자궁경부 편평세포암, 우측 parametrium 침범, external iliac 및 para-aortic lymph node 전이. FIGO stage는?",
+      "prompt": "58세 여자환자는 3개월간 지속된 vaginal bleeding을 주소로 본원에 내원하였다. Pelvic examination에서 cervix에 mass가 촉지되었고, mass size는 5 cm이었으며 좌측 parametrium의 thickening을 보여 parametrium involvement 소견을 보였다. Punch biopsy에서 invasive squamous cell carcinoma로 진단되었으며, abdomino-pelvis MRI와 CT, PET/CT 상에서 Rt. Parametrium invasion 및 Rt. external iliac lymph nodes와 para-aortic lymph nodes에 metastasis 소견 보였다. 이 환자의 FIGO stage는?",
       "choices": [
         {
           "number": 1,
@@ -595,7 +596,7 @@
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "수술 후 방사선치료와 temozolomide 병용으로 생존율의 향상을 보인 예후 불량 뇌종양은?",
+      "prompt": "다음 뇌종양 중에서 예후가 불량하지만 수술 후 방사선치료와 항암제인 temozolomide를 병용하여 치료함으로써 생존율의 향상을 가져온 것은?",
       "choices": [
         {
           "number": 1,
@@ -821,7 +822,7 @@
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "FIGO stage IIB 자궁경부암 방사선치료 범위에 포함되지 않는 구조물은?",
+      "prompt": "다음 구조물 중 uterine cervix cancer FIGO stage IIb 환자에서 방사선치료를 시행할 때 방사선치료 범위에 포함되지 않는 것은?",
       "choices": [
         {
           "number": 1,
@@ -902,7 +903,7 @@
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "수술 후 방사선치료와 temozolomide 병용으로 생존율의 향상을 보인 예후 불량 뇌종양은?",
+      "prompt": "다음 뇌종양 중에서 예후가 불량하지만 수술 후 방사선치료와 항암제인 temozolomide를 병용하여 치료함으로써 생존율의 향상을 가져온 것은?",
       "choices": [
         {
           "number": 1,
@@ -1041,7 +1042,7 @@
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "58세 여성, 5 cm 자궁경부 편평세포암, 우측 parametrium 침범, external iliac 및 para-aortic lymph node 전이. FIGO stage는?",
+      "prompt": "58세 여자환자는 3개월간 지속된 vaginal bleeding을 주소로 본원에 내원하였다. Pelvic examination에서 cervix에 mass가 촉지되었고, mass size는 5 cm이었으며 좌측 parametrium의 thickening을 보여 parametrium involvement 소견을 보였다. Punch biopsy에서 invasive squamous cell carcinoma로 진단되었으며, abdomino-pelvis MRI와 CT, PET/CT 상에서 Rt. Parametrium invasion 및 Rt. external iliac lymph nodes와 para-aortic lymph nodes에 metastasis 소견 보였다. 이 환자의 FIGO stage는?",
       "choices": [
         {
           "number": 1,
@@ -1173,7 +1174,7 @@
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "수술 후 방사선치료와 temozolomide 병용으로 생존율의 향상을 보인 예후 불량 뇌종양은?",
+      "prompt": "다음 뇌종양 중에서 예후가 불량하지만 수술 후 방사선치료와 항암제인 temozolomide를 병용하여 치료함으로써 생존율의 향상을 가져온 것은?",
       "choices": [
         {
           "number": 1,
@@ -1333,7 +1334,7 @@
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "58세 여성, 5 cm 자궁경부 편평세포암, 우측 parametrium 침범, external iliac 및 para-aortic lymph node 전이. FIGO stage는?",
+      "prompt": "58세 여자환자는 3개월간 지속된 vaginal bleeding을 주소로 본원에 내원하였다. Pelvic examination에서 cervix에 mass가 촉지되었고, mass size는 5 cm이었으며 좌측 parametrium의 thickening을 보여 parametrium involvement 소견을 보였다. Punch biopsy에서 invasive squamous cell carcinoma로 진단되었으며, abdomino-pelvis MRI와 CT, PET/CT 상에서 Rt. Parametrium invasion 및 Rt. external iliac lymph nodes와 para-aortic lymph nodes에 metastasis 소견 보였다. 이 환자의 FIGO stage는?",
       "choices": [
         {
           "number": 1,
@@ -1477,7 +1478,7 @@
         },
         {
           "number": 3,
-          "text": "중추신경 – 탈모"
+          "text": "종격동 – 탈모"
         },
         {
           "number": 4,
@@ -1496,9 +1497,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": 3,
+      "answerSource": "user_confirmed_per_general_highlight_instruction_2026",
+      "explanation": "2026-11-11 사용자 요청 반영: 사용자 수정 ③ 종격동–탈모는 해부학적 조사 범위와 일치하지 않음. 이강규 강의안의 뇌 방사선 조사시 탈모와 대조",
       "candidateEvidence": [
         {
           "lectureId": "2026",
@@ -1527,15 +1528,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "stage": "user_confirmed",
+        "check1": "question_text_options_cross_checked",
+        "check2": "highlight_or_supplied_explanation_or_lecture_compared",
+        "verifiedAgainst": "사용자 수정 ③ 종격동–탈모는 해부학적 조사 범위와 일치하지 않음. 이강규 강의안의 뇌 방사선 조사시 탈모와 대조",
+        "decisionReason": "사용자 요청으로 3번 잠정 고정. 사용자 수정 ③ 종격동–탈모는 해부학적 조사 범위와 일치하지 않음. 이강규 강의안의 뇌 방사선 조사시 탈모와 대조",
+        "note": "이 상태는 교수님 강의안 이중검증 완료가 아니라 사용자 요청에 따른 기본 정답입니다."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "2023학년도 시험지 4번. 일반 방사선치료 부작용 주제이므로 이강규로 분류(주제 추정). 특히 ③ 중추신경–탈모는 실제 강의안과 불일치하지 않아 단일 정답을 확정하지 않았습니다. 21학번 표기는 추정입니다.",
-      "notes": "강의안 73쪽에는 뇌 부위 방사선 치료에 따른 탈모가 명시되어 있어 ③번을 단정적인 오답으로 확정할 수 없습니다. 검토 필요.",
+      "notes": "사용자 요청 잠정 고정 2026-11-11. 사용자 수정 ③ 종격동–탈모는 해부학적 조사 범위와 일치하지 않음. 이강규 강의안의 뇌 방사선 조사시 탈모와 대조 학습 중 사용자가 정답을 변경할 수 있습니다.",
       "unitTitle": "방사선종양학 총론",
       "unitId": "44a0ed233edc",
       "aiExplanation": "이 문항(21-4)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 방사선치료받은 부위로 인해 발생할 수 있는 급성 또는 만성 합병증의 연결이 옳지 않은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
@@ -1548,7 +1550,7 @@
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "62세 여성이 5 cm 자궁경부 편평세포암과 parametrium 침범, 우측 external iliac 림프절 전이를 보인다. Bladder 및 rectal invasion은 없다. FIGO 2018 병기는?",
+      "prompt": "62세 여자환자는 6개월간 지속된 vaginal bleeding을 주소로 본원에 내원하였다. Pelvic examination에서 cervix에 mass가 촉지되었고, mass size는 5 cm이었으며 좌측 parametrium의 thickening을 보여 parametrium involvement 소견을 보였다. Punch biopsy에서 invasive squamous cell carcinoma로 진단되었으며, abdomino-pelvis MRI와 CT, PET/CT 상에서 Lt. Parametrium invasion 및 Lt. external iliac lymph nodes의 metastasis 소견 보였으나, bladder와 rectal invasion 소견은 없었다. 이 환자의 FIGO stage (2018년도)는?",
       "choices": [
         {
           "number": 1,
@@ -1680,27 +1682,27 @@
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "22학번 37번 · 방사선치료 합병증\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "다음은 방사선치료를 받은 부위와 이로 인하여 발생할 수 있는 급성 또는 만성합병증에 대한 조합이다. 옳지 않은 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "두경부 - 구강건조증, 하악골괴사"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "폐 - 방사선 폐렴"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "종격동 - 탈모"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "상복부 - 오심, 구토"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "골반부 - 설사"
         }
       ],
       "source": {
@@ -1708,22 +1710,25 @@
         "page": 3,
         "image": "assets/questions/2025-class22/37.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/37.webp",
-          "alt": "22학번 37번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 37번 실제 문제·선택지 원본 · PDF 3페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 3,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 3번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 3입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-37",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 73,
+          "image": "assets/evidence/class22/2026-lecture-37-p073.webp",
+          "quote": "방사선치료 부위에 따른 부작용",
+          "lectureOwner": "이강규 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -1731,9 +1736,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-kanggyu / 방사선종양학 총론",
-        "classificationConfidence": "review"
+        "classificationConfidence": "review",
+        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. 방사선치료 부위에 따른 부작용"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "방사선종양학 총론",
       "unitId": "44a0ed233edc",
       "aiExplanation": "방사선치료의 급성·만성 부작용은 조사 장기와 치료 후 시점에 따라 다릅니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -1753,27 +1761,27 @@
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "22학번 38번 · 완화적 방사선치료 적응증\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "Palliative radiotherapy의 indication이 되지 않는 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "spinal cord compression"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "bone metastasis"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "brain metastasis"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "lung metastasis"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "airway obstruction"
         }
       ],
       "source": {
@@ -1781,22 +1789,25 @@
         "page": 3,
         "image": "assets/questions/2025-class22/38.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/38.webp",
-          "alt": "22학번 38번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 38번 실제 문제·선택지 원본 · PDF 3페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 4,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 4번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 4입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-38",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 11,
+          "image": "assets/evidence/class22/2026-lecture-38-p011.webp",
+          "quote": "고식적(Palliative) 방사선치료의 적응증",
+          "lectureOwner": "이강규 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -1804,9 +1815,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-kanggyu / 방사선종양학 총론",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. 고식적(Palliative) 방사선치료의 적응증"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "방사선종양학 총론",
       "unitId": "44a0ed233edc",
       "aiExplanation": "완화적 방사선치료는 통증성 골전이, 뇌전이, 척수압박, 기도압박 등 증상 조절 상황에서 자주 고려됩니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -1826,27 +1840,27 @@
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "22학번 39번 · 직장암 수술과 방사선치료 순서\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "다음은 국소진행된 직장암의 치료 방법을 연대순으로 나열한 그림이다. 각각의 빈 칸에 알맞은 치료법을 적절하게 나열한 조합은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Total neoadjuvant therapy - Watch & Wait - TME alone - Postoperative chemoradiotherapy"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "TME alone - Postoperative chemoradiotherapy - Watch & Wait - Total neoadjuvant therapy"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Watch & Wait - Postoperative chemoradiotherapy - TME alone - Total neoadjuvant therapy"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Watch & Wait - TME alone - Postoperative chemoradiotherapy - Total neoadjuvant therapy"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Total neoadjuvant therapy - TME alone - Postoperative chemoradiotherapy - Watch & Wait"
         }
       ],
       "source": {
@@ -1857,19 +1871,28 @@
       "figureRequired": true,
       "figureImages": [
         {
-          "src": "assets/questions/2025-class22/39.webp",
-          "alt": "22학번 39번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 39번 실제 문제·선택지 원본 · PDF 3페이지"
+          "src": "assets/figures/class22/22-39-figure.webp",
+          "alt": "22학번 39번 기출에 실제 포함된 검사·영상·그림",
+          "caption": "22학번 39번 필수 그림 · 시험지 원본에서 그림 부분만 분리"
         }
       ],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 2,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 2번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 63,
+          "image": "assets/evidence/lee-kanggyu/2026-p063.webp",
+          "quote": "preop. concurrent chemoradiation → surgical resection",
+          "lectureOwner": "이강규 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -1877,9 +1900,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-kanggyu / 폐암·두경부·직장암 방사선치료",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "폐암·두경부·직장암 방사선치료",
       "unitId": "d2b73351cd1e",
       "aiExplanation": "직장암 치료는 과거 수술 우선 전략에서 선행 항암·방사선치료 및 반응에 따른 Watch & Wait 등으로 다양화됐습니다. 단계별 순서를 구별해야 합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -1899,27 +1924,27 @@
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "22학번 42번 · 암종별 방사선치료 비율\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "방사선치료는 3대 암 치료 방법 중 하나로, 방사선치료를 받는 환자의 수는 지속적으로 증가하고 있다. 최근 발표된 2019년 우리나라 통계에서 방사선치료를 받는 환자의 수가 많은 암을 순서대로 나열한 답가지는?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "폐암, 유방암, 대장직장암, 간암, 자궁경부암, 전립선암"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "유방암, 폐암, 대장직장암, 간암, 전립선암, 자궁경부암"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "유방암, 전립선암, 폐암, 간암, 자궁경부암, 대장직장암"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "위암, 대장직장암, 폐암, 갑상선암, 유방암, 간암"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "유방암, 폐암, 전립선암, 대장직장암, 간암, 자궁경부암"
         }
       ],
       "source": {
@@ -1927,22 +1952,25 @@
         "page": 4,
         "image": "assets/questions/2025-class22/42.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/42.webp",
-          "alt": "22학번 42번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 42번 실제 문제·선택지 원본 · PDF 4페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 5,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 5번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 5입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-42",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 3,
+          "image": "assets/evidence/class22/2026-lecture-42-p003.webp",
+          "quote": "암종별 방사선치료 환자 수 통계",
+          "lectureOwner": "이강규 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -1950,9 +1978,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-kanggyu / 방사선종양학 총론",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. 암종별 방사선치료 환자 수 통계"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "방사선종양학 총론",
       "unitId": "44a0ed233edc",
       "aiExplanation": "방사선치료 이용률이 높은 암종의 정확한 순서는 역학표의 수치와 적용되는 분모에 따라 달라질 수 있으므로 해당 강의안 그래프를 확인하세요.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -1972,27 +2003,27 @@
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "22학번 44번 · 수술이 어려운 폐암의 치료\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "30갑년의 흡연력이 있는 70세 남자가 저선량 흉부 컴퓨터단층촬영을 통한 폐암검진을 받았다. 폐의 우하엽에 3.0 cm 크기의 종괴가 하나 있었고, 조직검사 결과 편평상피세포암으로 진단되었다. 종괴는 폐의 바깥쪽 1/3 구역에 위치하였고, 주기관지나 흉막의 침범 등은 없었으며, 종괴 주변에 무기폐나 폐렴도 없었다. 기관지내시경은 정상이었고, 흉부 컴퓨터단층촬영, 양전자방출단층촬영에서 림프절 전이나 원격전이가 의심되는 곳은 없었다. 고혈압, 당뇨, 만성폐쇄성폐질환의 과거력이 있고, 폐기능검사에서 FEV1이 40%로 수술이 불가능하다고 판단되었다. 이 환자에게 고려할 수 있는 가장 적절한 치료는?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "면역치료(immunotherapy)"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "동시항암화학방사선치료(concurrent chemoradiation)"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "통상분할방사선치료(conventionally fractionated radiation therapy)"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "항암화학요법(chemotherapy)"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "정위체부방사선치료(stereotactic body radiation therapy)"
         }
       ],
       "source": {
@@ -2000,22 +2031,25 @@
         "page": 4,
         "image": "assets/questions/2025-class22/44.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/44.webp",
-          "alt": "22학번 44번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 44번 실제 문제·선택지 원본 · PDF 4페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 5,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 5번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 5입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-44",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 7,
+          "image": "assets/evidence/class22/2026-lecture-44-p007.webp",
+          "quote": "비소세포폐암에서 방사선치료의 역할 (SBRT 세부사항은 미확인)",
+          "lectureOwner": "이강규 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -2023,9 +2057,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-kanggyu / 폐암·두경부·직장암 방사선치료",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "lecture_related_topic_only_not_direct_proof",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. 비소세포폐암에서 방사선치료의 역할 (SBRT 세부사항은 미확인)"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "폐암·두경부·직장암 방사선치료",
       "unitId": "d2b73351cd1e",
       "aiExplanation": "수술이 어려운 초기 비소세포폐암에서는 정위체부방사선치료(SBRT)가 근치적 국소 치료 대안이 될 수 있습니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -2045,27 +2082,27 @@
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "22학번 45번 · 고주파절제술과 정위방사선치료\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "방사선치료기술의 발전으로 간암에 대한 방사선치료의 효과가 향상되었고, 간암 환자에서 방사선치료를 시행하는 비율이 높아지고 있다. 3 cm 이하의 병변이 3개 이하인 조기(early stage) 간암에서는 수술 및 고주파절제술(radiofrequency ablation)이 표준 치료이지만, 수술이 불가능한 환자 중 고주파절제술을 시행하기 어려운 위치 또는 고주파절제술의 효과가 떨어질 것으로 예상되는 위치에 병변이 있는 경우에는 정위체부방사선치료(stereotactic body radiation therapy)를 시행하기도 한다. 다음 설명 중 가장 옳은 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "3 cm 보다 큰 간암에서는 고주파절제술의 국소제어율(local control rate)이 정위체부방사선치료의 국소제어율보다 우수하다."
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "십이지장과 가까이에 위치한 병변의 경우에는 고주파절제술보다 정위체부방사선치료가 더 안전하다."
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "간문맥과 붙어있는 병변의 경우에는 고주파절제술의 국소제어율이 정위체부방사선치료의 국소제어율보다 우수하다."
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "3 cm 이하의 간암에서 정위체부방사선치료의 국소제어율은 80~90% 이상으로 우수하다."
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "횡격막과 가까이에 위치한 병변의 경우에는 정위체부방사선치료보다 고주파절제술이 더 안전하다."
         }
       ],
       "source": {
@@ -2073,22 +2110,25 @@
         "page": 4,
         "image": "assets/questions/2025-class22/45.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/45.webp",
-          "alt": "22학번 45번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 45번 실제 문제·선택지 원본 · PDF 4페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 4,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 4번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 4입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-45",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 6,
+          "image": "assets/evidence/class22/2026-lecture-45-p006.webp",
+          "quote": "방사선치료 근치적/고식적 목적 일반론 (간암 SBRT 세부사항은 미확인)",
+          "lectureOwner": "이강규 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -2096,9 +2136,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-kanggyu / 폐암·두경부·직장암 방사선치료",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "lecture_related_topic_only_not_direct_proof",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. 방사선치료 근치적/고식적 목적 일반론 (간암 SBRT 세부사항은 미확인)"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "폐암·두경부·직장암 방사선치료",
       "unitId": "d2b73351cd1e",
       "aiExplanation": "고주파절제술과 SBRT는 병변 크기·중심부 위험장기·접근 가능 여부에 따라 안전성과 적응증이 달라집니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -3784,6 +3827,85 @@
       "unitTitle": "방사선종양학 총론",
       "unitId": "44a0ed233edc",
       "aiExplanation": "판단 포인트: 골반 조사 후 빈뇨·배뇨통 등 방광염 증상이 나타날 수 있습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+    },
+    {
+      "id": "won-taewan:22-36",
+      "label": "22-36",
+      "year": 22,
+      "number": 36,
+      "subject": "hematology-1",
+      "professor": "lee-kanggyu",
+      "type": "choice",
+      "prompt": "다음은 암종별 방사선치료 비율이 높은 암종에서부터 낮은 암종 순으로 나열하였다. 올바르게 나열한 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "유방암-폐암-대장직장암-간암-전립선암-자궁경부암"
+        },
+        {
+          "number": 2,
+          "text": "유방암-전립선암-폐암-간암-대장직장암-자궁경부암"
+        },
+        {
+          "number": 3,
+          "text": "유방암-자궁경부암-간암-폐암-전립선암-대장직장암"
+        },
+        {
+          "number": 4,
+          "text": "유방암-자궁경부암-폐암-전립선암-간암-대장직장암"
+        },
+        {
+          "number": 5,
+          "text": "유방암-폐암-전립선암-간암-대장직장암-자궁경부암"
+        }
+      ],
+      "source": {
+        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 3,
+        "image": "assets/questions/2025-class22/36.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
+      "answer": 4,
+      "answerSource": "official_last_page_key_only",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 4입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
+      "evidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-36",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 3,
+          "image": "assets/evidence/class22/2026-lecture-36-p003.webp",
+          "quote": "암종별 국내 방사선치료 환자 수 통계 그래프",
+          "lectureOwner": "이강규 교수님"
+        }
+      ],
+      "validation": {
+        "stage": "exam_answer_key",
+        "check1": "official_exam_answer_sheet_last_page_transcribed",
+        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
+        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
+        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
+        "classificationNote": "주제와 강의안 일치로 소속 변경: won-taewan → lee-kanggyu, 기존 문제 ID 보존",
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. 암종별 국내 방사선치료 환자 수 통계 그래프"
+      },
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
+      "unitTitle": "방사선종양학 총론",
+      "unitId": "5b1c8e7b955b",
+      "aiExplanation": "각 암종의 방사선치료 활용 비율은 해부학적 위치와 표준 치료 알고리즘에 따라 달라지므로 강의안의 실제 배열표로 검증해야 합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "answerKey": {
+        "image": "assets/evidence/class22/exam-answer-key-p07.webp",
+        "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 7,
+        "kind": "printed_exam_key",
+        "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      }
     }
   ]
 }

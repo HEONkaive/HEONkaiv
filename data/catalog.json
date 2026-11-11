@@ -9,8 +9,8 @@
           "id": "park-murim",
           "name": "박무림",
           "data": "data/professors/park-murim.json",
-          "questionCount": 148,
-          "pendingCount": 9
+          "questionCount": 149,
+          "pendingCount": 6
         },
         {
           "id": "lee-seoul",
@@ -31,42 +31,42 @@
           "name": "최두영",
           "data": "data/professors/choi-duyoung.json",
           "questionCount": 55,
-          "pendingCount": 1
+          "pendingCount": 0
         },
         {
           "id": "lee-seungshin",
           "name": "이승신",
           "data": "data/professors/lee-seungshin.json",
           "questionCount": 20,
-          "pendingCount": 5
+          "pendingCount": 2
         },
         {
           "id": "lee-kanggyu",
           "name": "이강규",
           "data": "data/professors/lee-kanggyu.json",
-          "questionCount": 29,
-          "pendingCount": 11
+          "questionCount": 30,
+          "pendingCount": 8
         },
         {
           "id": "jung-yuri",
           "name": "정유리",
           "data": "data/professors/jung-yuri.json",
           "questionCount": 21,
-          "pendingCount": 16
+          "pendingCount": 4
         },
         {
           "id": "won-taewan",
           "name": "원태완",
           "data": "data/professors/won-taewan.json",
-          "questionCount": 114,
-          "pendingCount": 43
+          "questionCount": 112,
+          "pendingCount": 3
         },
         {
           "id": "choi-geumha",
           "name": "최금하",
           "data": "data/professors/choi-geumha.json",
           "questionCount": 22,
-          "pendingCount": 7
+          "pendingCount": 1
         }
       ]
     },

@@ -6212,9 +6212,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "해설 PDF는 ⑤ MEK를 정답으로 제시합니다. 그러나 강의안에는 BRAF 변이 비소세포폐암에서 MEK 억제제 병용이 명시되어 있어, “검사 대상 유전자 이상”과 “치료 약물 표적”을 구별하지 않으면 해석이 달라집니다. 단일 정답 채택은 보류합니다.",
+      "answer": 5,
+      "answerSource": "user_confirmed_per_general_highlight_instruction_2026",
+      "explanation": "해설 PDF는 ⑤ MEK를 정답으로 제시합니다. 그러나 강의안에는 BRAF 변이 비소세포폐암에서 MEK 억제제 병용이 명시되어 있어, “검사 대상 유전자 이상”과 “치료 약물 표적”을 구별하지 않으면 해석이 달라집니다. 단일 정답 채택은 보류합니다.\n\n2026-11-11 사용자 요청 반영: 20 종양학 해설.pdf에 ⑤ MEK 표시. BRAF 변이에 대한 MEK 병용의 타당성을 두고 이견 있음.",
       "candidateEvidence": [
         {
           "lectureId": "pharm",
@@ -6227,15 +6227,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "uploaded_exam_pdf_page_directly_inspected",
-        "check2": "single_answer_not_supported",
-        "verifiedAgainst": "exam_solution_provisional_review",
-        "decisionReason": "20학번 해설 PDF 기재 답 5번. 해설 PDF는 ⑤ MEK를 정답으로 제시합니다. 그러나 강의안에는 BRAF 변이 비소세포폐암에서 MEK 억제제 병용이 명시되어 있어, “검사 대상 유전자 이상”과 “치료 약물 표적”을 구별하지 않으면 해석이 달라집니다. 단일 정답 채택은 보류합니다."
+        "stage": "user_confirmed",
+        "check1": "question_text_options_cross_checked",
+        "check2": "highlight_or_supplied_explanation_or_lecture_compared",
+        "verifiedAgainst": "20 종양학 해설.pdf에 ⑤ MEK 표시. BRAF 변이에 대한 MEK 병용의 타당성을 두고 이견 있음.",
+        "decisionReason": "사용자 요청으로 5번 잠정 고정. 20 종양학 해설.pdf에 ⑤ MEK 표시. BRAF 변이에 대한 MEK 병용의 타당성을 두고 이견 있음.",
+        "note": "이 상태는 교수님 강의안 이중검증 완료가 아니라 사용자 요청에 따른 기본 정답입니다."
       },
       "transcriptionStatus": "verified_against_2022_solution_pdf",
       "transcriptionWarning": "2022학년도 종양학 해설에는 5번을 정답으로 적었지만, 강의안과 보기를 대조한 결과 단일 정답 확정에 주의가 필요합니다.",
-      "notes": "20학번 해설 PDF 기재 답 5번. 해설 PDF는 ⑤ MEK를 정답으로 제시합니다. 그러나 강의안에는 BRAF 변이 비소세포폐암에서 MEK 억제제 병용이 명시되어 있어, “검사 대상 유전자 이상”과 “치료 약물 표적”을 구별하지 않으면 해석이 달라집니다. 단일 정답 채택은 보류합니다.",
+      "notes": "사용자 요청 잠정 고정 2026-11-11. 20 종양학 해설.pdf에 ⑤ MEK 표시. BRAF 변이에 대한 MEK 병용의 타당성을 두고 이견 있음. 학습 중 사용자가 정답을 변경할 수 있습니다.",
       "unitTitle": "암 유전학",
       "unitId": "37dd67082d52",
       "aiExplanation": "판단 포인트: 해설 PDF는 ⑤ MEK를 정답으로 제시합니다. 그러나 강의안에는 BRAF 변이 비소세포폐암에서 MEK 억제제 병용이 명시되어 있어, “검사 대상 유전자 이상”과 “치료 약물 표적”을 구별하지 않으면 해석이 달라집니다. 단일 정답 채택은 보류합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
@@ -6413,9 +6414,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "해설 PDF의 정답은 ③(c-KIT–Imatinib)입니다. 그러나 ①의 EGFR 변이–Lazertinib 관계도 조건에 따라 성립할 수 있어 유일 정답이라고 단정하기 어렵습니다. 사용자 검토가 필요합니다.",
+      "answer": 3,
+      "answerSource": "user_confirmed_per_general_highlight_instruction_2026",
+      "explanation": "해설 PDF의 정답은 ③(c-KIT–Imatinib)입니다. 그러나 ①의 EGFR 변이–Lazertinib 관계도 조건에 따라 성립할 수 있어 유일 정답이라고 단정하기 어렵습니다. 사용자 검토가 필요합니다.\n\n2026-11-11 사용자 요청 반영: 20 종양학 해설.pdf에 ③ c-KIT–Imatinib 표시. ① EGFR–Lazertinib 역시 성립 가능하여 복수정답 가능성 경고",
       "candidateEvidence": [
         {
           "lectureId": "pharm",
@@ -6436,15 +6437,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "uploaded_exam_pdf_page_directly_inspected",
-        "check2": "single_answer_not_supported",
-        "verifiedAgainst": "exam_solution_provisional_review",
-        "decisionReason": "20학번 해설 PDF 기재 답 3번. 해설 PDF의 정답은 ③(c-KIT–Imatinib)입니다. 그러나 ①의 EGFR 변이–Lazertinib 관계도 조건에 따라 성립할 수 있어 유일 정답이라고 단정하기 어렵습니다. 사용자 검토가 필요합니다."
+        "stage": "user_confirmed",
+        "check1": "question_text_options_cross_checked",
+        "check2": "highlight_or_supplied_explanation_or_lecture_compared",
+        "verifiedAgainst": "20 종양학 해설.pdf에 ③ c-KIT–Imatinib 표시. ① EGFR–Lazertinib 역시 성립 가능하여 복수정답 가능성 경고",
+        "decisionReason": "사용자 요청으로 3번 잠정 고정. 20 종양학 해설.pdf에 ③ c-KIT–Imatinib 표시. ① EGFR–Lazertinib 역시 성립 가능하여 복수정답 가능성 경고",
+        "note": "이 상태는 교수님 강의안 이중검증 완료가 아니라 사용자 요청에 따른 기본 정답입니다."
       },
       "transcriptionStatus": "verified_against_2022_solution_pdf",
       "transcriptionWarning": "2022학년도 종양학 해설에는 3번을 정답으로 적었지만, 강의안과 보기를 대조한 결과 단일 정답 확정에 주의가 필요합니다.",
-      "notes": "20학번 해설 PDF 기재 답 3번. 해설 PDF의 정답은 ③(c-KIT–Imatinib)입니다. 그러나 ①의 EGFR 변이–Lazertinib 관계도 조건에 따라 성립할 수 있어 유일 정답이라고 단정하기 어렵습니다. 사용자 검토가 필요합니다.",
+      "notes": "사용자 요청 잠정 고정 2026-11-11. 20 종양학 해설.pdf에 ③ c-KIT–Imatinib 표시. ① EGFR–Lazertinib 역시 성립 가능하여 복수정답 가능성 경고 학습 중 사용자가 정답을 변경할 수 있습니다.",
       "unitTitle": "암 유전학",
       "unitId": "37dd67082d52",
       "aiExplanation": "판단 포인트: 해설 PDF의 정답은 ③(c-KIT–Imatinib)입니다. 그러나 ①의 EGFR 변이–Lazertinib 관계도 조건에 따라 성립할 수 있어 유일 정답이라고 단정하기 어렵습니다. 사용자 검토가 필요합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
@@ -6488,9 +6490,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "해설 PDF는 ④를 제시하고 2025년 강의안도 meperidine/nalbuphine을 비권장합니다. 다만 ⑤도 일반적인 opioid 약리학에서 참으로 해석될 수 있어 단일 정답 검증은 보류합니다.",
+      "answer": 4,
+      "answerSource": "user_confirmed_per_general_highlight_instruction_2026",
+      "explanation": "해설 PDF는 ④를 제시하고 2025년 강의안도 meperidine/nalbuphine을 비권장합니다. 다만 ⑤도 일반적인 opioid 약리학에서 참으로 해석될 수 있어 단일 정답 검증은 보류합니다.\n\n2026-11-11 사용자 요청 반영: 20 종양학 해설.pdf에 ④ Meperidine/nalbuphine 부적절 표시. ⑤ 몰핀의 천장효과 문구도 주의 검토",
       "candidateEvidence": [
         {
           "lectureId": "palliative",
@@ -6503,15 +6505,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "uploaded_exam_pdf_page_directly_inspected",
-        "check2": "single_answer_not_supported",
-        "verifiedAgainst": "exam_solution_provisional_review",
-        "decisionReason": "20학번 해설 PDF 기재 답 4번. 해설 PDF는 ④를 제시하고 2025년 강의안도 meperidine/nalbuphine을 비권장합니다. 다만 ⑤도 일반적인 opioid 약리학에서 참으로 해석될 수 있어 단일 정답 검증은 보류합니다."
+        "stage": "user_confirmed",
+        "check1": "question_text_options_cross_checked",
+        "check2": "highlight_or_supplied_explanation_or_lecture_compared",
+        "verifiedAgainst": "20 종양학 해설.pdf에 ④ Meperidine/nalbuphine 부적절 표시. ⑤ 몰핀의 천장효과 문구도 주의 검토",
+        "decisionReason": "사용자 요청으로 4번 잠정 고정. 20 종양학 해설.pdf에 ④ Meperidine/nalbuphine 부적절 표시. ⑤ 몰핀의 천장효과 문구도 주의 검토",
+        "note": "이 상태는 교수님 강의안 이중검증 완료가 아니라 사용자 요청에 따른 기본 정답입니다."
       },
       "transcriptionStatus": "verified_against_2022_solution_pdf",
       "transcriptionWarning": "2022학년도 종양학 해설에는 4번을 정답으로 적었지만, 강의안과 보기를 대조한 결과 단일 정답 확정에 주의가 필요합니다.",
-      "notes": "20학번 해설 PDF 기재 답 4번. 해설 PDF는 ④를 제시하고 2025년 강의안도 meperidine/nalbuphine을 비권장합니다. 다만 ⑤도 일반적인 opioid 약리학에서 참으로 해석될 수 있어 단일 정답 검증은 보류합니다.",
+      "notes": "사용자 요청 잠정 고정 2026-11-11. 20 종양학 해설.pdf에 ④ Meperidine/nalbuphine 부적절 표시. ⑤ 몰핀의 천장효과 문구도 주의 검토 학습 중 사용자가 정답을 변경할 수 있습니다.",
       "unitTitle": "암환자 완화의료",
       "unitId": "ce5d78c85e8e",
       "aiExplanation": "판단 포인트: 해설 PDF는 ④를 제시하고 2025년 강의안도 meperidine/nalbuphine을 비권장합니다. 다만 ⑤도 일반적인 opioid 약리학에서 참으로 해석될 수 있어 단일 정답 검증은 보류합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
@@ -8350,27 +8353,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 3번 · 연령별 암 발생 추이\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "다음 중 우리나라 남녀 모두 80대까지 aging에 따라 발생률이 지속적으로 증가하고 있는 암은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "췌장암"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "대장암"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "폐암"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "간암"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "위암"
         }
       ],
       "source": {
@@ -8378,22 +8381,25 @@
         "page": 1,
         "image": "assets/questions/2025-class22/03.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/03.webp",
-          "alt": "22학번 3번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 3번 실제 문제·선택지 원본 · PDF 1페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 2,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 2번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "park-2026-epi",
+          "file": "박무림pf_261014_혈액과종양_암 역학 및 예방.pdf(1).pdf",
+          "page": 4,
+          "image": "assets/evidence/park-murim-2026/epi-p004.webp",
+          "quote": "2022년 연령군별 발생률: 여성 폐암 고령에서 상승",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -8401,9 +8407,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 암 역학 및 예방",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "암 역학 및 예방",
       "unitId": "b6827c7446dc",
       "aiExplanation": "연령별 암 발생률은 종별로 다르게 상승하므로 장기간의 연령군별 추이 그래프를 구분해서 읽어야 합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -8423,27 +8431,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 4번 · 화학적 암 예방\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "약물을 복용하여 암 발생을 억제하려는 chemoprevention에 관한 임상시험 중 효과가 입증된 경우는?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "두경부암 - isotretinoin"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "폐암 - beta 카로틴"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "유방암 - progesterone"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "전립선암 - selenium"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "대장암 (PIK3CA 변이 양성) - 아스피린"
         }
       ],
       "source": {
@@ -8451,22 +8459,25 @@
         "page": 1,
         "image": "assets/questions/2025-class22/04.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/04.webp",
-          "alt": "22학번 4번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 4번 실제 문제·선택지 원본 · PDF 1페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 5,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 5번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 5입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "epidemiology",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
+          "page": 21,
+          "image": "assets/evidence/park-murim/epidemiology-p021.webp",
+          "quote": "carotene",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -8474,9 +8485,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 암 역학 및 예방",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "암 역학 및 예방",
       "unitId": "b6827c7446dc",
       "aiExplanation": "화학적 암 예방은 특정 위험군과 특정 약제에서만 연구·입증되므로 약제와 암 종류의 연결을 개별 검토해야 합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -8496,27 +8509,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 5번 · 종양표지자와 암종\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "다음 혈액 종양표지자 검사 중 관련 암과의 연결이 옳은 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "CA15-3 - 폐암"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "beta-HCG - 간세포암"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "CEA - 두경부암"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "AFP - 생식세포암"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "CA125 - 자궁암"
         }
       ],
       "source": {
@@ -8524,22 +8537,25 @@
         "page": 1,
         "image": "assets/questions/2025-class22/05.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/05.webp",
-          "alt": "22학번 5번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 5번 실제 문제·선택지 원본 · PDF 1페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 4,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 4번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 4입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "epidemiology",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
+          "page": 32,
+          "image": "assets/evidence/park-murim/epidemiology-p032.webp",
+          "quote": "CA19-9 pancreatic (+biliary), colon, breast",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -8547,9 +8563,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 암 선별검사·종양표지자",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "암 선별검사·종양표지자",
       "unitId": "87d2984812b2",
       "aiExplanation": "AFP는 특정 생식세포종양에서, β-hCG는 일부 생식세포종양에서 활용됩니다. 종양표지자는 암종별 특이도가 다릅니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -8569,27 +8587,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 6번 · 암 선별검사 권고\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "암 사망률 감소가 입증된 무증상인을 대상으로 한 암 선별검사 권고안에 합당한 경우는 (미국 가이드라인 기준)?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "50세 이상 남성, 5년 간격 PSA 측정"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "50세 이상 여성, 3년 간격, 골반초음파 검사 + CA125 측정"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "45세 이상 여성, 1-2년 주기, 의사에 의한 유방 정밀 신체검사"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "50세 이상, 20갑년 이상 흡연자, 일반 흉부CT"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "45세 이상, 매년, 대변 잠혈반응 검사"
         }
       ],
       "source": {
@@ -8597,22 +8615,25 @@
         "page": 1,
         "image": "assets/questions/2025-class22/06.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/06.webp",
-          "alt": "22학번 6번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 6번 실제 문제·선택지 원본 · PDF 1페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 5,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 5번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 5입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "epidemiology",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
+          "page": 37,
+          "image": "assets/evidence/park-murim/epidemiology-p037.webp",
+          "quote": "30갑년이상의흡연력이",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -8620,9 +8641,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 암 선별검사·종양표지자",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "암 선별검사·종양표지자",
       "unitId": "87d2984812b2",
       "aiExplanation": "암 선별검사는 무증상 인구집단에서 사망률 감소가 검증된 검사법을 택해야 하며, 검사 간격과 대상 연령을 함께 평가해야 합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -8642,27 +8665,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 7번 · Cisplatin 항구토제\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "Cisplatin 항암치료 시 오심, 구토를 예방하기 위해 사용하는 전처치 약제에 해당하지 않는 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "olanzapine"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "metoclopramide"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "세로토닌 수용체 억제제"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "neurokinin 수용체 억제제"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "dexamethasone"
         }
       ],
       "source": {
@@ -8670,22 +8693,25 @@
         "page": 1,
         "image": "assets/questions/2025-class22/07.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/07.webp",
-          "alt": "22학번 7번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 7번 실제 문제·선택지 원본 · PDF 1페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 2,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 2번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-07",
+          "file": "박무림pf_261019_혈액과종양_항암치료 총론.pdf(1).pdf",
+          "page": 23,
+          "image": "assets/evidence/class22/2026-lecture-07-p023.webp",
+          "quote": "Cisplatin 고위험 구토 및 항구토제 전처치 구성",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -8693,9 +8719,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 항암치료 총론",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. Cisplatin 고위험 구토 및 항구토제 전처치 구성"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암치료 총론",
       "unitId": "d4907b7915a7",
       "aiExplanation": "Cisplatin은 구토 유발 위험이 높습니다. 항구토제 병용 처방은 서로 다른 수용체 경로를 억제하는 원리에 기반합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -8715,27 +8744,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 8번 · 항암제 부작용에 따른 재투여\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "전이성 폐암으로 Pemetrexed + Cisplatin + Pembrolizumab 항암치료 후 D15에 호중구 수(ANC)가 350/µL이었다. 이 환자에 대한 설명, 처치로 옳은 것은? (multiple choice)",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "발열 동반 유무를 확인한다."
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "G-CSF를 주사한다."
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Grade III 독성에 해당된다."
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "호중구 수가 1500/µL 이상으로 회복될 때까지 다음 주기 항암치료를 기다린다."
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "호중구 수가 회복되면 다음 주기 항암제는 동일 용량을 투여한다."
         }
       ],
       "source": {
@@ -8743,26 +8772,29 @@
         "page": 1,
         "image": "assets/questions/2025-class22/08.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/08.webp",
-          "alt": "22학번 8번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 8번 실제 문제·선택지 원본 · PDF 1페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": [
         1,
         2,
         4
       ],
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 1·2·4번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 [1, 2, 4]입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-08",
+          "file": "박무림pf_261019_혈액과종양_항암치료 총론.pdf(1).pdf",
+          "page": 24,
+          "image": "assets/evidence/class22/2026-lecture-08-p024.webp",
+          "quote": "ANC<500 호중구감소증, G-CSF, 항암제 골수억제",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -8770,9 +8802,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 항암치료 총론",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. ANC<500 호중구감소증, G-CSF, 항암제 골수억제"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암치료 총론",
       "unitId": "d4907b7915a7",
       "maxSelections": 3,
@@ -8793,23 +8828,23 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 9번 · RECIST 반응평가\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "항암치료 전 간에 각각 5 cm, 4 cm, 3 cm 종양 3개, 우측 폐에 2 cm, 좌측 폐에 3 cm, 좌측 쇄골 상부 림프절 1개 길이 3 cm, 두께 2 cm이었는데, 항암치료 후 간 병변 각각 4 cm, 3 cm, 1 cm으로, 폐는 좌측 2.5 cm, 좌측 2 cm, 림프절은 길이 2 cm, 두께 1 cm으로 감소했다. RECIST criteria에 의한 반응은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "stable disease"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "partial remission"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "complete remission"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "progressive disease"
         }
       ],
       "source": {
@@ -8817,22 +8852,25 @@
         "page": 1,
         "image": "assets/questions/2025-class22/09.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/09.webp",
-          "alt": "22학번 9번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 9번 실제 문제·선택지 원본 · PDF 1페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 1,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 1번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 1입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-09",
+          "file": "박무림pf_261019_혈액과종양_항암치료 총론.pdf(1).pdf",
+          "page": 17,
+          "image": "assets/evidence/class22/2026-lecture-09-p017.webp",
+          "quote": "RECIST 1.1: 표적 병변 수 및 치료반응 평가",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -8840,9 +8878,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 항암치료 총론",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. RECIST 1.1: 표적 병변 수 및 치료반응 평가"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암치료 총론",
       "unitId": "d4907b7915a7",
       "aiExplanation": "RECIST의 반응평가는 선정한 표적병변의 직경 합 변화와 새 병변 발생 여부를 봅니다. 부분관해는 기준합 대비 최소 30% 감소, 진행은 최소 20% 증가 등의 기준이 사용됩니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -8862,27 +8903,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 10번 · 종양수반증후군 초기 처치\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "다음 종양수반증후군의 처치에 대한 설명으로 옳은 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "고칼슘혈증의 응급 처치는 수액 공급과 비스포스포네이트 주사이다."
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "저나트륨혈증은 hypertonic saline 주사로 신속하게 교정한다."
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "d-dimer 검사는 고령의 심부정맥혈전증 진단에 유용하다."
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "폐색전증이 의심되는 경우 정맥혈관조영술이 진단에 유용하다."
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "신경세포 내부 항원에 대한 증상은 스테로이드 치료가 효과적이다."
         }
       ],
       "source": {
@@ -8890,22 +8931,25 @@
         "page": 1,
         "image": "assets/questions/2025-class22/10.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/10.webp",
-          "alt": "22학번 10번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 10번 실제 문제·선택지 원본 · PDF 1페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 1,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 1번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 1입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "park-2026-pns",
+          "file": "박무림pf_261022_혈액과종양_종양수반증후군.pdf.pdf",
+          "page": 5,
+          "image": "assets/evidence/park-murim-2026/pns-p005.webp",
+          "quote": "bisphosphonate (가장 효과적) - etidronate, pamidronate, zoledronate",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -8913,9 +8957,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 종양수반증후군",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "종양수반증후군",
       "unitId": "360fde4c07d1",
       "aiExplanation": "종양수반증후군의 교정은 원인과 중증도를 먼저 파악한 뒤 수액·전해질 교정을 포함한 응급 처치를 선택합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -8935,27 +8981,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 11번 · 신경학적 종양수반증후군\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "다음 신경계 종양수반증후군 중 암과의 관련성이 가장 높은 경우는?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Stiff-person syndrome"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Myasthenia gravis"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "pure autonomic neuropathy"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Opsoclonus-myoclonus"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "polymyositis"
         }
       ],
       "source": {
@@ -8963,22 +9009,25 @@
         "page": 1,
         "image": "assets/questions/2025-class22/11.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/11.webp",
-          "alt": "22학번 11번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 11번 실제 문제·선택지 원본 · PDF 1페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 4,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 4번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 4입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-11",
+          "file": "박무림pf_261022_혈액과종양_종양수반증후군.pdf.pdf",
+          "page": 13,
+          "image": "assets/evidence/class22/2026-lecture-11-p013.webp",
+          "quote": "종양관련 신경증후군과 종양·항체 연관성",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -8986,9 +9035,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 종양수반증후군",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "lecture_related_topic_only_not_direct_proof",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. 종양관련 신경증후군과 종양·항체 연관성"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "종양수반증후군",
       "unitId": "360fde4c07d1",
       "aiExplanation": "신경학적 종양수반증후군은 원발암과 무관한 원격 신경 증상으로 나타날 수 있습니다. 각 증후군과 원발암의 연결을 구분하세요.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -9008,27 +9060,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 12번 · 면역관문 억제제의 항암 작용\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "다음 암세포의 특성 중 면역관문억제제에 의한 항암 효과가 큰 것으로 예측되는 경우는?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Microsatellite stable (MSS)"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "mutation of TP53"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "deficient MMR"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "elongated telomere"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "CpG hypermethylation"
         }
       ],
       "source": {
@@ -9036,22 +9088,25 @@
         "page": 1,
         "image": "assets/questions/2025-class22/12.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/12.webp",
-          "alt": "22학번 12번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 12번 실제 문제·선택지 원본 · PDF 1페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 3,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 3번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 3입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "pharm",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
+          "page": 41,
+          "image": "assets/evidence/park-murim/v123-pharm-p041.webp",
+          "quote": "IHC for MMR proteins: Deficient (dMMR)",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -9059,9 +9114,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 암 생물학",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "암 생물학",
       "unitId": "a46d836ec390",
       "aiExplanation": "면역관문 억제제는 종양이 T세포 기능을 억제하는 신호를 차단하여 면역 반응을 회복시키는 접근입니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -9081,27 +9138,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 13번 · 암 유전자 불안정성\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "다음 암세포의 유전자 불안정성에 관여하는 인자 중 실제로는 암세포에서는 동반되지 않아 이 특성을 항암제 개발에 이용한 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "TP53 돌연변이"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "spindle checkpoint 이상"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Mismatch repair genes 이상"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "PARP 이상"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "BRCA 이상"
         }
       ],
       "source": {
@@ -9109,22 +9166,25 @@
         "page": 2,
         "image": "assets/questions/2025-class22/13.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/13.webp",
-          "alt": "22학번 13번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 13번 실제 문제·선택지 원본 · PDF 2페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 4,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 4번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 4입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "genetics",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
+          "page": 22,
+          "image": "assets/evidence/park-murim/genetics-p022.webp",
+          "quote": "PARP inhibitors Olaparib",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -9132,9 +9192,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 암 유전학",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "암 유전학",
       "unitId": "37dd67082d52",
       "aiExplanation": "암세포는 DNA 복구와 세포주기 조절의 이상을 이용합니다. 스핀들 체크포인트·MMR·TP53·BRCA가 관여하는 기전은 서로 다릅니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -9154,27 +9216,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 14번 · 종양 혈관의 특징\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "다음 중 암 신생 혈관의 특징에 해당하는 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "tight basement membrane"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "not permeable vessel"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "low interstitial pressure"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "increased pericyte"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "vascular wall lined with endothelial cell and tumor cell itself"
         }
       ],
       "source": {
@@ -9182,22 +9244,25 @@
         "page": 2,
         "image": "assets/questions/2025-class22/14.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/14.webp",
-          "alt": "22학번 14번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 14번 실제 문제·선택지 원본 · PDF 2페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 5,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 5번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 5입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "genetics",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
+          "page": 33,
+          "image": "assets/evidence/park-murim/genetics-p033.webp",
+          "quote": "기저막이 합성되지 않아서",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -9205,9 +9270,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 암 생물학",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "암 생물학",
       "unitId": "a46d836ec390",
       "aiExplanation": "종양 신생혈관은 구조가 불규칙하고 pericyte가 부족하며 혈관 투과성이 높아질 수 있습니다. 정상혈관과 비교하여 판단합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -9227,27 +9294,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 15번 · 종양세포 대사와 IDH\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "다음 중 암세포의 대사적 특징에 대한 설명으로 옳은 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "무산소 환경에서 포도당을 이용하여 젖산을 생산한다."
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "암세포 성장을 촉진하기 위해 일반세포보다 더 많은 ATP를 생산한다."
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "일부 암에서 IDH 효소의 돌연변이로 2-ketoglutarate가 증가한다."
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "metformin은 간에서 당신생 억제하고 암세포 단백질 합성, 세포 성장을 방해한다."
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "insulin은 암세포의 IGF 수용체를 억제한다."
         }
       ],
       "source": {
@@ -9255,22 +9322,25 @@
         "page": 2,
         "image": "assets/questions/2025-class22/15.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/15.webp",
-          "alt": "22학번 15번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 15번 실제 문제·선택지 원본 · PDF 2페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 4,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 4번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 4입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "genetics",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
+          "page": 35,
+          "image": "assets/evidence/park-murim/genetics-p035.webp",
+          "quote": "Warburg effect (Aerobic glycOlysis)",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -9278,9 +9348,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 암 생물학",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "암 생물학",
       "unitId": "a46d836ec390",
       "aiExplanation": "종양세포는 대사 재편성과 유전자 돌연변이를 보입니다. IDH 변이는 특정 대사물 축적과 후성유전 조절에 영향을 줄 수 있습니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -9300,27 +9372,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 16번 · T세포 활성화 억제 경로\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "다음 암세포의 면역 억제, 회피 기전 중 T 세포 활성화를 직접 억제하는 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "MHC 감소/소실"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "PD-L1의 발현"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "T regulatory cell 활성화"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "CTLA-4의 차단"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "TGF-beta, interleukin 유리"
         }
       ],
       "source": {
@@ -9328,22 +9400,25 @@
         "page": 2,
         "image": "assets/questions/2025-class22/16.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/16.webp",
-          "alt": "22학번 16번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 16번 실제 문제·선택지 원본 · PDF 2페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 2,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 2번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "genetics",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
+          "page": 39,
+          "image": "assets/evidence/park-murim/genetics-p039.webp",
+          "quote": "down regulate MHC",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -9351,9 +9426,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 암 유전학",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "암 유전학",
       "unitId": "37dd67082d52",
       "aiExplanation": "PD-1/PD-L1, CTLA-4 등의 신호는 T세포 활성에 작용합니다. 직접 억제와 조절 T세포의 역할을 구별하세요.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -9373,27 +9450,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 17번 · 표적항암제 작용기전\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "암세포의 유전적, 생물학적 특성을 이용한 항암제의 설명으로 옳은 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Bcl 2 억제 - Palbociclib"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "CDK 억제 - venetoclax"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Claudin 18.2 억제 - Zolbetuximab"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "HIF2-alpha 억제 - Bevacizumab"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Histone deacetylase 억제 - Azacytidine"
         }
       ],
       "source": {
@@ -9401,22 +9478,25 @@
         "page": 2,
         "image": "assets/questions/2025-class22/17.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/17.webp",
-          "alt": "22학번 17번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 17번 실제 문제·선택지 원본 · PDF 2페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 3,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 3번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 3입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "drugs",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
+          "page": 28,
+          "image": "assets/evidence/park-murim/drugs-p028.webp",
+          "quote": "Venetoclax",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -9424,9 +9504,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 최신 항암제의 임상적용 및 부작용",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "최신 항암제의 임상적용 및 부작용",
       "unitId": "4b6754310d28",
       "aiExplanation": "CDK4/6 억제제, BCL-2 억제제, 18.2 항체, HIF-2α 억제제, HDAC 억제제는 표적이 서로 다릅니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -9446,27 +9528,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 18번 · 유전자 이상과 표적약제\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "암 유전자 이상과 표적항암제의 연결이 잘못된 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "BRAF mutation - Dabrafenib, Encorafenib"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Proteasome - Lenalidomide, Pomalidomide"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "c-KIT - Imatinib, sunitinib, Regorafenib"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "NTRK fusion - Entrectinib, Larotrectinib"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Bruton’s tyrosine kinase - Ibrutinib, Zanubrutinib"
         }
       ],
       "source": {
@@ -9474,22 +9556,25 @@
         "page": 2,
         "image": "assets/questions/2025-class22/18.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/18.webp",
-          "alt": "22학번 18번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 18번 실제 문제·선택지 원본 · PDF 2페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 2,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 2번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "pharm",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
+          "page": 27,
+          "image": "assets/evidence/park-murim/v123-pharm-p027.webp",
+          "quote": "proteasome 활동 막으면 IkB가 분해 안되서 NFkB의 활동 억제",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -9497,9 +9582,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 암 유전학",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "암 유전학",
       "unitId": "37dd67082d52",
       "aiExplanation": "변이 유전자(BRAF, NTRK, c-KIT, BTK 등)와 해당 억제제의 실제 결합 표적을 구분하는 문제입니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -9519,27 +9606,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 19번 · 항체약물접합체(ADC)\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "최근 항체-약물 접합체(ADC)가 일부 고형암에서 치료 성적을 현저하게 향상시키고 있다. 이중 전이성 유방암에서 탁월한 효과를 보이는 ADC는?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "anti-Trop-2 Sacituzumab vedotin"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "anti-Her2 Trastuzumab emtansine"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "anti-Nectin 4 Enfortumab vedotin"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "anti-Her2 Trastuzumab deruxtecan"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "anti-Tissue factor Tisotumab vedotin"
         }
       ],
       "source": {
@@ -9547,22 +9634,25 @@
         "page": 2,
         "image": "assets/questions/2025-class22/19.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/19.webp",
-          "alt": "22학번 19번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 19번 실제 문제·선택지 원본 · PDF 2페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 4,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 4번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 4입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "drugs",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
+          "page": 14,
+          "image": "assets/evidence/park-murim/drugs-p014.webp",
+          "quote": "Trastuzumab",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -9570,9 +9660,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 최신 항암제의 임상적용 및 부작용",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "최신 항암제의 임상적용 및 부작용",
       "unitId": "4b6754310d28",
       "aiExplanation": "ADC는 특정 표면항원에 결합하는 항체, 링커, 세포독성 페이로드로 구성됩니다. 항원과 약제의 짝을 확인하세요.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -9592,27 +9684,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 20번 · 면역관문억제제 1차 치료\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "PD1, PDL1 차단제는 단독 또는 다른 항암제와 병합하여 여러 암종에서 1차 표준치료로 사용되고 있다. 아닌 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "악성 흑색종"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "비소세포폐암"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "전이성 위암"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "간세포암"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "삼중음성 유방암"
         }
       ],
       "source": {
@@ -9620,22 +9712,25 @@
         "page": 2,
         "image": "assets/questions/2025-class22/20.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/20.webp",
-          "alt": "22학번 20번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 20번 실제 문제·선택지 원본 · PDF 2페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 5,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 5번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 5입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-20",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
+          "page": 40,
+          "image": "assets/evidence/class22/2026-lecture-20-p040.webp",
+          "quote": "면역관문억제제 PD-1/CTLA-4 표적과 암종별 적용",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -9643,9 +9738,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 최신 항암제의 임상적용 및 부작용",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "lecture_related_topic_only_not_direct_proof",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. 면역관문억제제 PD-1/CTLA-4 표적과 암종별 적용"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "최신 항암제의 임상적용 및 부작용",
       "unitId": "4b6754310d28",
       "aiExplanation": "면역항암제를 단독 1차로 사용할 수 있는 상황은 암종과 PD-L1 등 환자 특성에 따라 다릅니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -9665,27 +9763,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 21번 · 폐암 표적항암제 유전자검사\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "전이성 비소세포폐암은 1차 요법으로 사용 가능한 표적항암제들이 여럿 있어 진단 시 NGS를 통해 유전자 이상 유무를 확인해야 한다. 다음 중 비소세포폐암 1차 요법과 관련 있는 돌연변이가 아닌 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "EGFR"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "ROS1"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "MEK"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "ALK"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "BRAF"
         }
       ],
       "source": {
@@ -9693,22 +9791,25 @@
         "page": 2,
         "image": "assets/questions/2025-class22/21.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/21.webp",
-          "alt": "22학번 21번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 21번 실제 문제·선택지 원본 · PDF 2페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 3,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 3번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 3입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "drugs",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
+          "page": 19,
+          "image": "assets/evidence/park-murim/drugs-p019.webp",
+          "quote": "Combined BRAF inhibitor + MEK inhibitor",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -9716,9 +9817,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 최신 항암제의 임상적용 및 부작용",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "최신 항암제의 임상적용 및 부작용",
       "unitId": "4b6754310d28",
       "aiExplanation": "전이성 비소세포폐암은 EGFR, ROS1, ALK, BRAF 등 분자변이에 따라 표적치료제가 달라집니다. 각 약제의 1차 적응증을 분리하세요.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -9738,27 +9841,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 22번 · 항암제 장기독성\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "다음 항암제의 장기 특이 부작용으로 옳은 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Cisplatin - pneumonitis"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Bleomycin - hemorrhagic cystitis"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Ifosfamide - hepatic failure"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Trastuzumab - heart failure"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Doxorubicin - Hand foot syndrome"
         }
       ],
       "source": {
@@ -9766,22 +9869,25 @@
         "page": 2,
         "image": "assets/questions/2025-class22/22.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/22.webp",
-          "alt": "22학번 22번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 22번 실제 문제·선택지 원본 · PDF 2페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 4,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 4번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 4입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "pharm",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
+          "page": 55,
+          "image": "assets/evidence/park-murim/v123-pharm-p055.webp",
+          "quote": "CHF: Anthracyclines (doxorubicin...)",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -9789,9 +9895,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 최신 항암제의 임상적용 및 부작용",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "최신 항암제의 임상적용 및 부작용",
       "unitId": "4b6754310d28",
       "aiExplanation": "항암제의 대표 독성은 약물마다 다릅니다. Bleomycin의 폐독성, cisplatin의 신독성, anthracycline의 심장독성 같은 대표 패턴을 먼저 확인하세요.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -9811,27 +9919,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 23번 · 면역항암제 내분비 부작용\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "PD1, PDL1 면역항암제에 의한 내분비적 부작용과 무관한 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "hypopituitarism"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "adrenal insufficiency"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "hyperparathyroidism"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "hypothyroidism"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "diabetes mellitus"
         }
       ],
       "source": {
@@ -9839,22 +9947,25 @@
         "page": 2,
         "image": "assets/questions/2025-class22/23.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/23.webp",
-          "alt": "22학번 23번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 23번 실제 문제·선택지 원본 · PDF 2페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 3,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 3번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 3입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-23",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
+          "page": 56,
+          "image": "assets/evidence/class22/2026-lecture-23-p056.webp",
+          "quote": "면역항암제 내분비 부작용, 뇌하수체염·갑상선기능저하",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -9862,9 +9973,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 최신 항암제의 임상적용 및 부작용",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. 면역항암제 내분비 부작용, 뇌하수체염·갑상선기능저하"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "최신 항암제의 임상적용 및 부작용",
       "unitId": "4b6754310d28",
       "aiExplanation": "면역관문억제제는 뇌하수체, 갑상선, 부신 등을 침범하는 면역관련 내분비 부작용을 일으킬 수 있습니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -9884,27 +9998,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 25번 · 면역조직화학염색과 원발병소\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "조직학적으로 원발 병소를 추정하기 위해 시행하는 면역화학염색에 대한 설명으로 잘못된 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "갑상선암 - TTF-1 (thyroid transcription factor-1)"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "위장관암 - CK (cytokeratin)"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "림프종 - LCA (leukocyte common antigen)"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "신경내분비 (Neuroendocrine) - chromogranin, synaptophysin"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "흑색종 - S100, vimentin"
         }
       ],
       "source": {
@@ -9912,22 +10026,25 @@
         "page": 2,
         "image": "assets/questions/2025-class22/25.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/25.webp",
-          "alt": "22학번 25번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 25번 실제 문제·선택지 원본 · PDF 2페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 1,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 1번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 1입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "cup",
+          "file": "25.11.06_혈액과종양_박무림pf_원발병소불명암(6).pdf",
+          "page": 4,
+          "image": "assets/evidence/park-murim/cup-p004.webp",
+          "quote": "Intestinal — CK7, CK20, CDX2, CEA",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -9935,9 +10052,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 원발병소 불명암",
-        "classificationConfidence": "review"
+        "classificationConfidence": "review",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "원발병소 불명암",
       "unitId": "0f80c20b43ef",
       "aiExplanation": "TTF-1, cytokeratin, LCA, chromogranin/synaptophysin, S100 등은 조직의 분화 방향을 추정하는 면역조직화학표지자입니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -9957,27 +10076,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 26번 · 암성통증 약물 선택\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "전신통을 호소하며 응급실에 내원한 신환의 CT 검사 결과 대장암 전신 뼈 전이로 확인되었다. 통증 점수가 6점인 경우 이 환자의 암성통증 조절을 위해 가장 적절한 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Tramadol + Codeine"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Ibuprofen + Oxycodone"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Acetaminophen + Fentanyl"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Steroid + Buprenorphine"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Pregabalin + Fentanyl"
         }
       ],
       "source": {
@@ -9985,22 +10104,25 @@
         "page": 2,
         "image": "assets/questions/2025-class22/26.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/26.webp",
-          "alt": "22학번 26번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 26번 실제 문제·선택지 원본 · PDF 2페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 2,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 2번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "palliative",
+          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(6).pdf",
+          "page": 12,
+          "image": "assets/evidence/park-murim/palliative-p012.webp",
+          "quote": "속효성 약물 사용한다",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -10008,9 +10130,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 암환자 완화의료",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "암환자 완화의료",
       "unitId": "ce5d78c85e8e",
       "aiExplanation": "증상이 심한 전신 암성통증에서 비마약성 진통제와 속효성 opioid의 역할을 구분하고, 증상 정도에 따라 조합을 정합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -10030,27 +10154,27 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "choice",
-      "prompt": "22학번 27번 · Opioid의 부작용\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "Opioid 진통제의 흔한 부작용으로 장기간 사용 시 가장 문제 되는 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "오심"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "호흡부전"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "의식 저하"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "섬망"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "변비"
         }
       ],
       "source": {
@@ -10058,22 +10182,25 @@
         "page": 2,
         "image": "assets/questions/2025-class22/27.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/27.webp",
-          "alt": "22학번 27번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 27번 실제 문제·선택지 원본 · PDF 2페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 5,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 5번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 5입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "palliative",
+          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(5).pdf",
+          "page": 17,
+          "image": "assets/evidence/park-murim/v123-palliative-p017.webp",
+          "quote": "Common Adverse events: Constipation",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -10081,9 +10208,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: park-murim / 암환자 완화의료",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "암환자 완화의료",
       "unitId": "ce5d78c85e8e",
       "aiExplanation": "장기 opioid 투여는 변비·진정·호흡억제 등 부작용을 동반할 수 있습니다. 특히 급성 위험을 만드는 부작용이 무엇인지 확인하세요.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -10103,29 +10232,31 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "short",
-      "prompt": "22학번 주관식 1번 · Loeb의 치료 원칙 4번\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "Loeb’s Rules 중 4번을 설명하시오 (영어 또는 한글로).",
       "choices": [],
       "source": {
         "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 6,
         "image": "assets/questions/2025-class22/69.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/69.webp",
-          "alt": "22학번 69번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 69번 실제 문제·선택지 원본 · PDF 6페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "객관식 정답표에는 주관식 정답이 없으므로 자동 채점을 보류합니다.",
       "answer": null,
       "answerSource": "unconfirmed_subjective",
       "explanation": "주관식 문항의 공식 모범답안은 제공된 시험지 마지막 정답표에 없습니다. 강의안의 관련 개념을 바탕으로 학습하되 채점은 보류합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "principles",
+          "file": "25.10.21_혈액과종양_박무림pf_항암치료총론(6).pdf",
+          "page": 29,
+          "image": "assets/evidence/park-murim/principles-p029.webp",
+          "quote": "(4) Never make the treatment worse than the disease."
+        }
+      ],
       "validation": {
         "stage": "pending",
         "check1": "subjective_question_original_pdf_verified",
@@ -10149,29 +10280,31 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "type": "short",
-      "prompt": "22학번 주관식 2번 · 종양융해증후군 원인과 검사\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "종양 용해 증후군이 1) 잘 발생하는 cancer 종류(2가지 이상), 2) 검사실 소견(laboratory findings)을 쓰세요.",
       "choices": [],
       "source": {
         "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 6,
         "image": "assets/questions/2025-class22/70.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/70.webp",
-          "alt": "22학번 70번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 70번 실제 문제·선택지 원본 · PDF 6페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "객관식 정답표에는 주관식 정답이 없으므로 자동 채점을 보류합니다.",
       "answer": null,
       "answerSource": "unconfirmed_subjective",
       "explanation": "주관식 문항의 공식 모범답안은 제공된 시험지 마지막 정답표에 없습니다. 강의안의 관련 개념을 바탕으로 학습하되 채점은 보류합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "oncologic-emergency",
+          "file": "25.11.11_혈액과종양_이승신 pf_종양학적응급질환-증례토의(2).pdf",
+          "page": 35,
+          "image": "assets/evidence/lee-seungshin/emergency-p035.webp",
+          "quote": "release of K, P, uric acid; 2ndary hypocalcemia"
+        }
+      ],
       "validation": {
         "stage": "pending",
         "check1": "subjective_question_original_pdf_verified",
@@ -10186,6 +10319,84 @@
       "unitId": "360fde4c07d1",
       "gradingMode": "manual",
       "aiExplanation": "종양융해증후군은 대량의 종양세포 용해로 핵산·전해질 성분이 혈중에 방출되어 나타납니다. 칼륨·인·요산·칼슘과 신기능을 추적합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다."
+    },
+    {
+      "id": "won-taewan:22-24",
+      "label": "22-24",
+      "year": 22,
+      "number": 24,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "type": "choice",
+      "prompt": "원발병소가 없이 다음 부위에 전이된 암에 대해 적극적인 수술이 필요한 경우는?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "복막, 복수 동반, 여성 - 선암"
+        },
+        {
+          "number": 2,
+          "text": "여성, 좌측 액와부 - 선암"
+        },
+        {
+          "number": 3,
+          "text": "복막, 복수 동반, 남성 - 선암"
+        },
+        {
+          "number": 4,
+          "text": "종격동, 남성 - 생식세포종"
+        },
+        {
+          "number": 5,
+          "text": "양쪽 서혜부, 여성 - 선암"
+        }
+      ],
+      "source": {
+        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 2,
+        "image": "assets/questions/2025-class22/24.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
+      "answer": 2,
+      "answerSource": "official_last_page_key_only",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
+      "evidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "cup",
+          "file": "25.11.06_혈액과종양_박무림pf_원발병소불명암(6).pdf",
+          "page": 3,
+          "image": "assets/evidence/park-murim/cup-p003.webp",
+          "quote": "midline tumor, Undifferentiated/Poorly differentiated → beta-HCG, AFP",
+          "lectureOwner": "박무림 교수님"
+        }
+      ],
+      "validation": {
+        "stage": "exam_answer_key",
+        "check1": "official_exam_answer_sheet_last_page_transcribed",
+        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
+        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
+        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
+        "classificationNote": "주제와 강의안 일치로 소속 변경: won-taewan → park-murim, 기존 문제 ID 보존",
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
+      },
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
+      "unitTitle": "원발병소 불명암",
+      "unitId": "5b1c8e7b955b",
+      "aiExplanation": "원발병소 불명암의 전이 양상에 따라 수술의 역할이 달라집니다. 고립성 전이·여성의 액와림프절 전이 등 좋은 예후군을 구별하세요.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "answerKey": {
+        "image": "assets/evidence/class22/exam-answer-key-p07.webp",
+        "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 7,
+        "kind": "printed_exam_key",
+        "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      }
     }
   ]
 }

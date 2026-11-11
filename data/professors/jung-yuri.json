@@ -260,9 +260,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": 4,
+      "answerSource": "user_confirmed_per_general_highlight_instruction_2026",
+      "explanation": "2026-11-11 사용자 요청 반영: 이강규/정유리 강의 범위의 SBRT 설명과 보기 ④를 대조. 기존 정유리 18-35 강의안 이중 검증 내용과 주제 일치",
       "candidateEvidence": [
         {
           "lectureId": "radiation2",
@@ -281,15 +281,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "stage": "user_confirmed",
+        "check1": "question_text_options_cross_checked",
+        "check2": "highlight_or_supplied_explanation_or_lecture_compared",
+        "verifiedAgainst": "이강규/정유리 강의 범위의 SBRT 설명과 보기 ④를 대조. 기존 정유리 18-35 강의안 이중 검증 내용과 주제 일치",
+        "decisionReason": "사용자 요청으로 4번 잠정 고정. 이강규/정유리 강의 범위의 SBRT 설명과 보기 ④를 대조. 기존 정유리 18-35 강의안 이중 검증 내용과 주제 일치",
+        "note": "이 상태는 교수님 강의안 이중검증 완료가 아니라 사용자 요청에 따른 기본 정답입니다."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "강의안 118쪽은 SBRT 대 RFA 성적 비교를 제시하지만 치료 선택은 위치와 위험도를 고려해야 하므로 단정적 선택지는 보류합니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": "",
+      "notes": "사용자 요청 잠정 고정 2026-11-11. 이강규/정유리 강의 범위의 SBRT 설명과 보기 ④를 대조. 기존 정유리 18-35 강의안 이중 검증 내용과 주제 일치 학습 중 사용자가 정답을 변경할 수 있습니다.",
       "unitTitle": "방사선치료 1",
       "unitId": "9fcda10f0a85",
       "aiExplanation": "이 문항(18-30)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 3 cm 이하의 간세포암에서 정위체부방사선치료(SBRT)와 고주파절제술(RFA)의 설명 중 가장 옳은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
@@ -406,9 +407,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": 3,
+      "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
+      "explanation": "2026년 사용자 요청에 따른 선지·원본 대조: 19 종양 해설.pdf 9쪽 19번의 정답③; 18-38의 선택지와 19-19 선택지가 완전히 일치",
       "candidateEvidence": [
         {
           "lectureId": "radiation2",
@@ -420,15 +421,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "stage": "user_confirmed",
+        "check1": "uploaded_explanation_or_original_question_compared",
+        "check2": "selection_text_and_number_checked",
+        "verifiedAgainst": "19 종양 해설.pdf 9쪽 19번의 정답③; 18-38의 선택지와 19-19 선택지가 완전히 일치",
+        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 19 종양 해설.pdf 9쪽 19번의 정답③; 18-38의 선택지와 19-19 선택지가 완전히 일치",
+        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "구년 통계라서 강의안 10쪽 2017~2019 그래프만으로 2016년 정확한 순위를 재확정하기 어렵습니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": "",
+      "notes": "잠정 사용자 지정 답안. 19 종양 해설.pdf 9쪽 19번의 정답③; 18-38의 선택지와 19-19 선택지가 완전히 일치 ",
       "unitTitle": "방사선치료 1",
       "unitId": "9fcda10f0a85",
       "aiExplanation": "이 문항(18-38)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 2016년 통계에서 국내 방사선치료를 받는 환자 수가 많은 암종을 순서대로 나열한 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
@@ -472,9 +474,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": 3,
+      "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
+      "explanation": "2026년 사용자 요청에 따른 선지·원본 대조: 기존 선택지 ③ 동시항암화학방사선치료; III기 원격전이 없는 폐암의 국소진행 병기와 방사선종양학 강의의 병합치료 원칙에 대조",
       "candidateEvidence": [
         {
           "lectureId": "radiation2",
@@ -493,15 +495,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "stage": "user_confirmed",
+        "check1": "uploaded_explanation_or_original_question_compared",
+        "check2": "selection_text_and_number_checked",
+        "verifiedAgainst": "기존 선택지 ③ 동시항암화학방사선치료; III기 원격전이 없는 폐암의 국소진행 병기와 방사선종양학 강의의 병합치료 원칙에 대조",
+        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 기존 선택지 ③ 동시항암화학방사선치료; III기 원격전이 없는 폐암의 국소진행 병기와 방사선종양학 강의의 병합치료 원칙에 대조",
+        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "원문 병기와 치료 전략을 직접 재확인해야 합니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": "",
+      "notes": "잠정 사용자 지정 답안. 기존 선택지 ③ 동시항암화학방사선치료; III기 원격전이 없는 폐암의 국소진행 병기와 방사선종양학 강의의 병합치료 원칙에 대조 ",
       "unitTitle": "방사선치료 1",
       "unitId": "9fcda10f0a85",
       "aiExplanation": "이 문항(18-60)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 60세 남성의 좌상엽 기관지 폐쇄를 동반한 폐선암. 종격동 및 쇄골상 림프절 전이가 있으나 원격전이는 없다. 가장 적절한 치료는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
@@ -545,9 +548,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": 2,
+      "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
+      "explanation": "2026년 사용자 요청에 따른 선지·원본 대조: Tis = ductal carcinoma in situ(상피내암); 유방보존술 후 방사선치료의 강의안 원칙과 ② 보기 대조",
       "candidateEvidence": [
         {
           "lectureId": "radiation2",
@@ -559,15 +562,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "stage": "user_confirmed",
+        "check1": "uploaded_explanation_or_original_question_compared",
+        "check2": "selection_text_and_number_checked",
+        "verifiedAgainst": "Tis = ductal carcinoma in situ(상피내암); 유방보존술 후 방사선치료의 강의안 원칙과 ② 보기 대조",
+        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. Tis = ductal carcinoma in situ(상피내암); 유방보존술 후 방사선치료의 강의안 원칙과 ② 보기 대조",
+        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "원본에는 종괴 크기 및 DCIS 소견이 있어 반드시 원문을 재확인하세요. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": "",
+      "notes": "잠정 사용자 지정 답안. Tis = ductal carcinoma in situ(상피내암); 유방보존술 후 방사선치료의 강의안 원칙과 ② 보기 대조 ",
       "unitTitle": "방사선치료 1",
       "unitId": "9fcda10f0a85",
       "aiExplanation": "이 문항(18-81)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 50세 여성이 유방보존술 후 유방 상피내암 병리 소견을 보였다. T category 및 적절한 조치는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
@@ -611,9 +615,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": 3,
+      "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
+      "explanation": "2026년 사용자 요청에 따른 선지·원본 대조: 19 종양 해설.pdf 9쪽 19번 정답③; 선택지 본문 대조",
       "candidateEvidence": [
         {
           "lectureId": "radiation2",
@@ -625,15 +629,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "stage": "user_confirmed",
+        "check1": "uploaded_explanation_or_original_question_compared",
+        "check2": "selection_text_and_number_checked",
+        "verifiedAgainst": "19 종양 해설.pdf 9쪽 19번 정답③; 선택지 본문 대조",
+        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 19 종양 해설.pdf 9쪽 19번 정답③; 선택지 본문 대조",
+        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "구년 통계라서 강의안 10쪽 2017~2019 그래프만으로 2016년 정확한 순위를 재확정하기 어렵습니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": "",
+      "notes": "잠정 사용자 지정 답안. 19 종양 해설.pdf 9쪽 19번 정답③; 선택지 본문 대조 ",
       "unitTitle": "방사선치료 1",
       "unitId": "9fcda10f0a85",
       "aiExplanation": "이 문항(19-19)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 2016년 통계에서 국내 방사선치료를 받는 환자 수가 많은 암종을 순서대로 나열한 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
@@ -647,7 +652,28 @@
       "professor": "jung-yuri",
       "type": "choice",
       "prompt": "55세 여성 유방보존술 후 침윤성 유방암 1.5 cm, 액와림프절 4개 전이, HR 음성, HER2 양성. 적절한 보조치료 조합은?",
-      "choices": [],
+      "choices": [
+        {
+          "number": 1,
+          "text": "방사선치료(왼쪽 유방+영역림프절), 내분비치료(호르몬치료), 표적치료(trastuzumab)"
+        },
+        {
+          "number": 2,
+          "text": "항암화학요법, 방사선치료(왼쪽 유방+영역림프절), 표적치료(trastuzumab)"
+        },
+        {
+          "number": 3,
+          "text": "항암화학요법, 방사선치료(왼쪽 유방), 내분비치료(호르몬치료), 표적치료(trastuzumab)"
+        },
+        {
+          "number": 4,
+          "text": "항암화학요법, 방사선치료(왼쪽 유방+영역림프절), 내분비치료(호르몬치료)"
+        },
+        {
+          "number": 5,
+          "text": "항암화학요법, 내분비치료(호르몬치료), 표적치료(trastuzumab)"
+        }
+      ],
       "source": {
         "name": "혈종 이강규 정유리 JOIN.pdf",
         "page": 3,
@@ -656,9 +682,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": 2,
+      "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
+      "explanation": "2026년 사용자 요청에 따른 선지·원본 대조: 19 종양 해설.pdf 9~10쪽 20번에서 ② 항암화학요법 + 유방·영역림프절 방사선치료 + trastuzumab 정답 표시, HR(-), HER2(+) 증례 HER2 양성, HR 음성의 경우 보조항암요법·방사선·HER2 표적치료를 조합하는 기출 맥락입니다.",
       "candidateEvidence": [
         {
           "lectureId": "radiation2",
@@ -677,15 +703,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "stage": "user_confirmed",
+        "check1": "uploaded_explanation_or_original_question_compared",
+        "check2": "selection_text_and_number_checked",
+        "verifiedAgainst": "19 종양 해설.pdf 9~10쪽 20번에서 ② 항암화학요법 + 유방·영역림프절 방사선치료 + trastuzumab 정답 표시, HR(-), HER2(+) 증례",
+        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 19 종양 해설.pdf 9~10쪽 20번에서 ② 항암화학요법 + 유방·영역림프절 방사선치료 + trastuzumab 정답 표시, HR(-), HER2(+) 증례",
+        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
       },
-      "transcriptionStatus": "review_required",
-      "transcriptionWarning": "원문 선지 일부가 다음 페이지로 이어져 있습니다. 임의의 선택지를 만들지 않고 원본 확인 대상으로 남깁니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": "",
+      "transcriptionStatus": "manually_checked_against_19_explanation_pdf_p9_2026",
+      "transcriptionWarning": "보기를 원본 해설 PDF 9쪽 스캔에서 직접 확인해 복구했습니다. 기출 원본과 비교할 수 있습니다.",
+      "notes": "잠정 사용자 지정 답안. 19 종양 해설.pdf 9~10쪽 20번에서 ② 항암화학요법 + 유방·영역림프절 방사선치료 + trastuzumab 정답 표시, HR(-), HER2(+) 증례 HER2 양성, HR 음성의 경우 보조항암요법·방사선·HER2 표적치료를 조합하는 기출 맥락입니다.",
       "unitTitle": "방사선치료 2",
       "unitId": "cd5ca72686ac",
       "aiExplanation": "이 문항(19-20)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 55세 여성 유방보존술 후 침윤성 유방암 1.5 cm, 액와림프절 4개 전이, HR 음성, HER2 양성. 적절한 보조치료 조합은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
@@ -802,9 +829,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": 4,
+      "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
+      "explanation": "2026년 사용자 요청에 따른 선지·원본 대조: 19 종양 해설.pdf 11쪽 22번에서 ④, SBRT 국소제어율 관련 보기와 문구 일치",
       "candidateEvidence": [
         {
           "lectureId": "radiation2",
@@ -823,15 +850,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "stage": "user_confirmed",
+        "check1": "uploaded_explanation_or_original_question_compared",
+        "check2": "selection_text_and_number_checked",
+        "verifiedAgainst": "19 종양 해설.pdf 11쪽 22번에서 ④, SBRT 국소제어율 관련 보기와 문구 일치",
+        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 19 종양 해설.pdf 11쪽 22번에서 ④, SBRT 국소제어율 관련 보기와 문구 일치",
+        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "강의안 118쪽은 SBRT 대 RFA 성적 비교를 제시하지만 치료 선택은 위치와 위험도를 고려해야 하므로 단정적 선택지는 보류합니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": "",
+      "notes": "잠정 사용자 지정 답안. 19 종양 해설.pdf 11쪽 22번에서 ④, SBRT 국소제어율 관련 보기와 문구 일치 ",
       "unitTitle": "방사선치료 1",
       "unitId": "9fcda10f0a85",
       "aiExplanation": "이 문항(19-22)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 3 cm 이하의 간세포암에서 정위체부방사선치료(SBRT)와 고주파절제술(RFA)의 설명 중 가장 옳은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
@@ -875,9 +903,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": 3,
+      "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
+      "explanation": "2026년 사용자 요청에 따른 선지·원본 대조: 19 종양 해설.pdf 9쪽 19번 정답③; 20-61 선택지와 19-19 선택지가 완전히 일치",
       "candidateEvidence": [
         {
           "lectureId": "radiation2",
@@ -889,15 +917,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "stage": "user_confirmed",
+        "check1": "uploaded_explanation_or_original_question_compared",
+        "check2": "selection_text_and_number_checked",
+        "verifiedAgainst": "19 종양 해설.pdf 9쪽 19번 정답③; 20-61 선택지와 19-19 선택지가 완전히 일치",
+        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 19 종양 해설.pdf 9쪽 19번 정답③; 20-61 선택지와 19-19 선택지가 완전히 일치",
+        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "구년 통계라서 강의안 10쪽 2017~2019 그래프만으로 2016년 정확한 순위를 재확정하기 어렵습니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": "",
+      "notes": "잠정 사용자 지정 답안. 19 종양 해설.pdf 9쪽 19번 정답③; 20-61 선택지와 19-19 선택지가 완전히 일치 ",
       "unitTitle": "방사선치료 1",
       "unitId": "9fcda10f0a85",
       "aiExplanation": "이 문항(20-61)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 2016년 통계에서 국내 방사선치료를 받는 환자 수가 많은 암종을 순서대로 나열한 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
@@ -941,9 +970,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": 4,
+      "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
+      "explanation": "2026년 사용자 요청에 따른 선지·원본 대조: 제시 지문의 HR(+),HER2(-) 및 림프절 전이: ④ 항암요법+유방·영역림프절 방사선+내분비치료 (Trastuzumab 불필요)",
       "candidateEvidence": [
         {
           "lectureId": "radiation2",
@@ -962,15 +991,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "stage": "user_confirmed",
+        "check1": "uploaded_explanation_or_original_question_compared",
+        "check2": "selection_text_and_number_checked",
+        "verifiedAgainst": "제시 지문의 HR(+),HER2(-) 및 림프절 전이: ④ 항암요법+유방·영역림프절 방사선+내분비치료 (Trastuzumab 불필요)",
+        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 제시 지문의 HR(+),HER2(-) 및 림프절 전이: ④ 항암요법+유방·영역림프절 방사선+내분비치료 (Trastuzumab 불필요)",
+        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "원문에는 상세한 수술·병리결과가 있습니다. 원본 이미지에서 문장과 선택지 확인 권장. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": "",
+      "notes": "잠정 사용자 지정 답안. 제시 지문의 HR(+),HER2(-) 및 림프절 전이: ④ 항암요법+유방·영역림프절 방사선+내분비치료 (Trastuzumab 불필요) ",
       "unitTitle": "방사선치료 2",
       "unitId": "cd5ca72686ac",
       "aiExplanation": "이 문항(20-62)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 55세 여성의 유방보존술 후 침윤성 유방암 1.5 cm, 액와림프절 4개 전이, HR 양성, HER2 음성. 적절한 보조치료 조합은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
@@ -1087,9 +1117,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": 4,
+      "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
+      "explanation": "2026년 사용자 요청에 따른 선지·원본 대조: 19 종양 해설.pdf 11쪽 22번 ④, 19-22와 선택지 본문 일치",
       "candidateEvidence": [
         {
           "lectureId": "radiation2",
@@ -1108,15 +1138,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "stage": "user_confirmed",
+        "check1": "uploaded_explanation_or_original_question_compared",
+        "check2": "selection_text_and_number_checked",
+        "verifiedAgainst": "19 종양 해설.pdf 11쪽 22번 ④, 19-22와 선택지 본문 일치",
+        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 19 종양 해설.pdf 11쪽 22번 ④, 19-22와 선택지 본문 일치",
+        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "강의안 118쪽은 SBRT 대 RFA 성적 비교를 제시하지만 치료 선택은 위치와 위험도를 고려해야 하므로 단정적 선택지는 보류합니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": "",
+      "notes": "잠정 사용자 지정 답안. 19 종양 해설.pdf 11쪽 22번 ④, 19-22와 선택지 본문 일치 ",
       "unitTitle": "방사선치료 1",
       "unitId": "9fcda10f0a85",
       "aiExplanation": "이 문항(20-64)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 3 cm 이하의 간세포암에서 정위체부방사선치료(SBRT)와 고주파절제술(RFA)의 설명 중 가장 옳은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
@@ -1226,9 +1257,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": 2,
+      "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
+      "explanation": "2026년 사용자 요청에 따른 선지·원본 대조: 19 종양 해설.pdf 9쪽 암종별 방사선치료 순위의 순서와 ② 보기 문장 일치",
       "candidateEvidence": [
         {
           "lectureId": "radiation2",
@@ -1240,15 +1271,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "stage": "user_confirmed",
+        "check1": "uploaded_explanation_or_original_question_compared",
+        "check2": "selection_text_and_number_checked",
+        "verifiedAgainst": "19 종양 해설.pdf 9쪽 암종별 방사선치료 순위의 순서와 ② 보기 문장 일치",
+        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 19 종양 해설.pdf 9쪽 암종별 방사선치료 순위의 순서와 ② 보기 문장 일치",
+        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "2023학년도 기출 59번. 원본 9쪽 오른쪽에 있으며, 21학번 분류는 추정입니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": "2023학년도 1차 평가 기출로, 21학번 해당 여부는 파일에서 직접 확인되지 않았습니다. 21학번 추정 분류이므로 재확인이 필요합니다.",
+      "notes": "잠정 사용자 지정 답안. 19 종양 해설.pdf 9쪽 암종별 방사선치료 순위의 순서와 ② 보기 문장 일치 ",
       "unitTitle": "방사선치료 1",
       "unitId": "9fcda10f0a85",
       "aiExplanation": "이 문항(21-59)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 2023학년도 시험: 2019년 이후 국내 방사선치료를 받는 암종별 환자 수 순서로 가장 적절한 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
@@ -1438,9 +1470,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": 4,
+      "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
+      "explanation": "2026년 사용자 요청에 따른 선지·원본 대조: 19 종양 해설.pdf 11쪽 22번 ④; 문제에 나타난 SBRT 국소제어율 내용과 일치",
       "candidateEvidence": [
         {
           "lectureId": "radiation2",
@@ -1459,15 +1491,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "stage": "user_confirmed",
+        "check1": "uploaded_explanation_or_original_question_compared",
+        "check2": "selection_text_and_number_checked",
+        "verifiedAgainst": "19 종양 해설.pdf 11쪽 22번 ④; 문제에 나타난 SBRT 국소제어율 내용과 일치",
+        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 19 종양 해설.pdf 11쪽 22번 ④; 문제에 나타난 SBRT 국소제어율 내용과 일치",
+        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "2023학년도 기출 62번. 원본에는 ④를 강조한 필기가 있으나 이를 독립 근거로 채택하지 않았습니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": "2023학년도 1차 평가 기출로, 21학번 해당 여부는 파일에서 직접 확인되지 않았습니다. 21학번 추정 분류이므로 재확인이 필요합니다.",
+      "notes": "잠정 사용자 지정 답안. 19 종양 해설.pdf 11쪽 22번 ④; 문제에 나타난 SBRT 국소제어율 내용과 일치 ",
       "unitTitle": "방사선치료 1",
       "unitId": "9fcda10f0a85",
       "aiExplanation": "이 문항(21-62)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 3 cm 이하 간암에서 정위체부방사선치료(SBRT)와 고주파절제술(RFA)의 설명 중 가장 옳은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."

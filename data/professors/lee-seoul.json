@@ -2553,27 +2553,27 @@
       "subject": "hematology-1",
       "professor": "lee-seoul",
       "type": "choice",
-      "prompt": "22학번 59번 · 항대사제의 작용\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "대사억제항암제(antimetabolites)는 실제 세포 내 대사과정에 필요한 엽산(folic acid), 염기(pyrimidines, purines)들과 비슷한 구조를 갖는다. 약물들은 대사 억제 또는 유전물질의 형성을 억제하는데 보기에 맞는 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Methotrexate"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Cisplatin"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Paclitaxel"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Doxorubicin"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Bortezomib"
         }
       ],
       "source": {
@@ -2581,22 +2581,25 @@
         "page": 6,
         "image": "assets/questions/2025-class22/59.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/59.webp",
-          "alt": "22학번 59번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 59번 실제 문제·선택지 원본 · PDF 6페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 1,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 1번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 1입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-59",
+          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "page": 72,
+          "image": "assets/evidence/class22/2026-lecture-59-p072.webp",
+          "quote": "Methotrexate 항대사제 및 엽산 대사",
+          "lectureOwner": "이서울 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -2604,9 +2607,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암제 1 · 작용기전",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. Methotrexate 항대사제 및 엽산 대사"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
       "aiExplanation": "항대사제는 핵산 합성 경로를 방해합니다. Methotrexate는 엽산 대사, 5-FU 등은 피리미딘 대사에 작용합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -2626,27 +2632,27 @@
       "subject": "hematology-1",
       "professor": "lee-seoul",
       "type": "choice",
-      "prompt": "22학번 60번 · 알킬화제의 작용\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "알킬화항암제(alkylating agents)는 DNA의 N7-guanine 위치에 alkylguanine cross-link 형성으로 궁극적으로 세포고사(apoptosis)를 유도하는데 보기에 맞는 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Methotrexate"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Cisplatin"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Paclitaxel"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Doxorubicin"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Bortezomib"
         }
       ],
       "source": {
@@ -2654,22 +2660,25 @@
         "page": 6,
         "image": "assets/questions/2025-class22/60.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/60.webp",
-          "alt": "22학번 60번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 60번 실제 문제·선택지 원본 · PDF 6페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 2,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 2번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-60",
+          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "page": 53,
+          "image": "assets/evidence/class22/2026-lecture-60-p053.webp",
+          "quote": "알킬화제 기전, 항대사제·천연물 항암제 분류",
+          "lectureOwner": "이서울 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -2677,9 +2686,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암제 1 · 작용기전",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. 알킬화제 기전, 항대사제·천연물 항암제 분류"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
       "aiExplanation": "알킬화제는 DNA의 공유결합성 손상과 가교형성을 유도하여 복제 및 세포분열을 방해합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -2699,27 +2711,27 @@
       "subject": "hematology-1",
       "professor": "lee-seoul",
       "type": "choice",
-      "prompt": "22학번 61번 · Anthracycline 계열 항암제\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "Anthracycline 구조를 갖는 항암화학요법 약물로 폐조직의 섬유화(pulmonary fibrosis)를 부작용으로 하는 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Doxorubicin"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Bleomycin"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Dactinomycin"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Mitomycin"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Irinotecan"
         }
       ],
       "source": {
@@ -2727,22 +2739,25 @@
         "page": 6,
         "image": "assets/questions/2025-class22/61.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/61.webp",
-          "alt": "22학번 61번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 61번 실제 문제·선택지 원본 · PDF 6페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 2,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 2번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-61",
+          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "page": 45,
+          "image": "assets/evidence/class22/2026-lecture-61-p045.webp",
+          "quote": "Doxorubicin 심장독성 vs bleomycin 폐섬유화",
+          "lectureOwner": "이서울 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -2750,9 +2765,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암제 1 · 작용기전",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. Doxorubicin 심장독성 vs bleomycin 폐섬유화"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
       "aiExplanation": "Anthracycline 계열에는 doxorubicin이 있고, bleomycin은 별도의 계열로 DNA 손상을 유발합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -2772,27 +2790,27 @@
       "subject": "hematology-1",
       "professor": "lee-seoul",
       "type": "choice",
-      "prompt": "22학번 62번 · 항호르몬제의 항종양 기전\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "호르몬(hormone) 의존성 종양성장을 억제하는 약물로 호르몬 길항제에 속하는 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "isophosphamide"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "mercaptopurine"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "vincristine"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "tamoxifen"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "sorafenib"
         }
       ],
       "source": {
@@ -2800,22 +2818,25 @@
         "page": 6,
         "image": "assets/questions/2025-class22/62.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/62.webp",
-          "alt": "22학번 62번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 62번 실제 문제·선택지 원본 · PDF 6페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 4,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 4번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 4입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "lecture1",
+          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "page": 105,
+          "image": "assets/evidence/lee-seoul/lecture1-p105.webp",
+          "quote": "Tamoxifen — selective estrogen receptor modulators; competitive inhibitor of estradiol bind to ER",
+          "lectureOwner": "이서울 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -2823,9 +2844,11 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암제 1 · 작용기전",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
       "aiExplanation": "호르몬의존성 암에서는 수용체 길항제, aromatase 억제제, GnRH 작용제 등으로 성장 신호를 차단합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -2845,27 +2868,27 @@
       "subject": "hematology-1",
       "professor": "lee-seoul",
       "type": "choice",
-      "prompt": "22학번 63번 · 항암제별 세포분열 단계\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "최근에는 항체를 이용한 항암제가 선택성의 증가로 각광받고 있는데, 특히 종양의 성장에 필요한 혈관형성을 억제하는 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "goserelin"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "paclitaxel"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "cytarabine"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "rituximab"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "bevacizumab"
         }
       ],
       "source": {
@@ -2873,22 +2896,25 @@
         "page": 6,
         "image": "assets/questions/2025-class22/63.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/63.webp",
-          "alt": "22학번 63번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 63번 실제 문제·선택지 원본 · PDF 6페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 5,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 5번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 5입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-63",
+          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "page": 112,
+          "image": "assets/evidence/class22/2026-lecture-63-p112.webp",
+          "quote": "VEGF 억제 항체 Bevacizumab (혈관 신생 억제)",
+          "lectureOwner": "이서울 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -2896,9 +2922,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암제 1 · 작용기전",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. VEGF 억제 항체 Bevacizumab (혈관 신생 억제)"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
       "aiExplanation": "미세소관 억제제, VEGF 억제제, CD20 항체 등의 표적은 서로 다르며 암세포 성장의 어느 단계를 막는지 확인해야 합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -2918,27 +2947,27 @@
       "subject": "hematology-1",
       "professor": "lee-seoul",
       "type": "choice",
-      "prompt": "22학번 64번 · 세포분열 억제제\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "종양의 성장에서 세포의 분열을 최종적으로 억제하는 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "goserelin"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "paclitaxel"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "cytarabine"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "rituximab"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "bevacizumab"
         }
       ],
       "source": {
@@ -2946,22 +2975,25 @@
         "page": 6,
         "image": "assets/questions/2025-class22/64.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/64.webp",
-          "alt": "22학번 64번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 64번 실제 문제·선택지 원본 · PDF 6페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 2,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 2번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-64",
+          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "page": 53,
+          "image": "assets/evidence/class22/2026-lecture-64-p053.webp",
+          "quote": "Paclitaxel 등 천연물 유래 세포분열 억제제",
+          "lectureOwner": "이서울 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -2969,9 +3001,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암제 1 · 작용기전",
-        "classificationConfidence": "topic_matched"
+        "classificationConfidence": "topic_matched",
+        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. Paclitaxel 등 천연물 유래 세포분열 억제제"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
       "aiExplanation": "Taxane 계열은 미세소관의 정상적인 동역학을 방해하여 세포분열을 억제합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -2991,27 +3026,27 @@
       "subject": "hematology-1",
       "professor": "lee-seoul",
       "type": "choice",
-      "prompt": "22학번 65번 · Trastuzumab의 작용\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "우리가 TBL에서 논의했던 유방암 환자에서 Trastuzumab이 효과적인 이유에 대해 틀린 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Prevent to HER-2 dimerization"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Inhibits mitosis"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Induce to HER-2 down regulation"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Activation to NK cell action"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Induce to ADCC"
         }
       ],
       "source": {
@@ -3019,22 +3054,25 @@
         "page": 6,
         "image": "assets/questions/2025-class22/65.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/65.webp",
-          "alt": "22학번 65번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 65번 실제 문제·선택지 원본 · PDF 6페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 2,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 2번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-65",
+          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "page": 112,
+          "image": "assets/evidence/class22/2026-lecture-65-p112.webp",
+          "quote": "HER2 수용체 표적 Trastuzumab (ADCC 직접 설명 여부는 별도)",
+          "lectureOwner": "이서울 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -3042,9 +3080,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암약물 TBL",
-        "classificationConfidence": "review"
+        "classificationConfidence": "review",
+        "lectureLinkStatus": "lecture_related_topic_only_not_direct_proof",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. HER2 수용체 표적 Trastuzumab (ADCC 직접 설명 여부는 별도)"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암약물 TBL",
       "unitId": "0a9ea0e8dc04",
       "aiExplanation": "Trastuzumab은 HER2를 표적하는 항체이며, 신호 차단 외에 항체의존성 세포독성(ADCC)과 관련됩니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -3064,27 +3105,27 @@
       "subject": "hematology-1",
       "professor": "lee-seoul",
       "type": "choice",
-      "prompt": "22학번 66번 · 항암화학요법 약물내성\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "항암화학요법 약물의 내성 형성과 관련이 적은 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Reduce to penetration for entry"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Produce to pumping out drug"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Prepare newer metabolic pathway"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Activation of repair mechanism"
         },
         {
           "number": 5,
-          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Occur to mutagenesis of membrane"
         }
       ],
       "source": {
@@ -3092,22 +3133,25 @@
         "page": 6,
         "image": "assets/questions/2025-class22/66.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/66.webp",
-          "alt": "22학번 66번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 66번 실제 문제·선택지 원본 · PDF 6페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 5,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 5번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 5입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-66",
+          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "page": 80,
+          "image": "assets/evidence/class22/2026-lecture-66-p080.webp",
+          "quote": "항암제 내성: efflux, 대사, DNA 복구, 유전자 발현",
+          "lectureOwner": "이서울 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -3115,9 +3159,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암약물 TBL",
-        "classificationConfidence": "review"
+        "classificationConfidence": "review",
+        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. 항암제 내성: efflux, 대사, DNA 복구, 유전자 발현"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암약물 TBL",
       "unitId": "0a9ea0e8dc04",
       "aiExplanation": "항암제 내성은 약물 세포내 유입 감소, 배출 증가, 표적 변화, DNA 복구 증가, 대체 대사경로 활성화 등으로 생깁니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -3137,23 +3184,23 @@
       "subject": "hematology-1",
       "professor": "lee-seoul",
       "type": "choice",
-      "prompt": "22학번 67번 · 내분비치료제의 효과\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "호르몬수용체 양성인 폐경 후 전이성 유방암 환자에게 타목시펜과 비교하여 더 나은 치료 효과를 보여 1차 표준 요법으로 사용되는 약물 계열은 무엇인가요?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Cytotoxic chemotherapy"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "PARP inhibitors"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "GnRH agonists"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Aromatase inhibitors"
         }
       ],
       "source": {
@@ -3161,22 +3208,25 @@
         "page": 6,
         "image": "assets/questions/2025-class22/67.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/67.webp",
-          "alt": "22학번 67번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 67번 실제 문제·선택지 원본 · PDF 6페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 4,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 4번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 4입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-67",
+          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "page": 105,
+          "image": "assets/evidence/class22/2026-lecture-67-p105.webp",
+          "quote": "Tamoxifen 및 aromatase inhibitors의 유방암 내분비치료",
+          "lectureOwner": "이서울 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -3184,9 +3234,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암약물 TBL",
-        "classificationConfidence": "review"
+        "classificationConfidence": "review",
+        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. Tamoxifen 및 aromatase inhibitors의 유방암 내분비치료"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암약물 TBL",
       "unitId": "0a9ea0e8dc04",
       "aiExplanation": "호르몬수용체 양성 폐경 후 유방암의 내분비치료에서는 aromatase 억제제와 tamoxifen의 약리적 차이를 평가합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
@@ -3206,23 +3259,23 @@
       "subject": "hematology-1",
       "professor": "lee-seoul",
       "type": "choice",
-      "prompt": "22학번 68번 · Trastuzumab deruxtecan 부작용\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "prompt": "이전에 여러 치료를 받은 HER2 양성 전이성 유방암 환자에게 사용되는 트라스투주맙 데룩스테칸(T-DXd) 투여 시, 생명에 위협이 될 수 있어 특히 주의 깊게 모니터링해야 하는 부작용은?",
       "choices": [
         {
           "number": 1,
-          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Endometrial cancer"
         },
         {
           "number": 2,
-          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Cardiotoxicity"
         },
         {
           "number": 3,
-          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Osteonecrosis of the jaw"
         },
         {
           "number": 4,
-          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+          "text": "Interstitial lung disease"
         }
       ],
       "source": {
@@ -3230,22 +3283,25 @@
         "page": 6,
         "image": "assets/questions/2025-class22/68.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/questions/2025-class22/68.webp",
-          "alt": "22학번 68번 기출 원본 지문, 보기 및 포함된 의료영상",
-          "caption": "22학번 68번 실제 문제·선택지 원본 · PDF 6페이지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "transcriptionStatus": "original_image_verified",
-      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 4,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 4번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 4입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
       "evidence": [],
-      "candidateEvidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "v126-lecture-68",
+          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "page": 112,
+          "image": "assets/evidence/class22/2026-lecture-68-p112.webp",
+          "quote": "HER2 항체 표적 약물 범주 (T-DXd 간질성 폐질환 직접 근거 없음)",
+          "lectureOwner": "이서울 교수님"
+        }
+      ],
       "validation": {
         "stage": "exam_answer_key",
         "check1": "official_exam_answer_sheet_last_page_transcribed",
@@ -3253,9 +3309,12 @@
         "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
         "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
         "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암약물 TBL",
-        "classificationConfidence": "review"
+        "classificationConfidence": "review",
+        "lectureLinkStatus": "lecture_related_topic_only_not_direct_proof",
+        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
+        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. HER2 항체 표적 약물 범주 (T-DXd 간질성 폐질환 직접 근거 없음)"
       },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암약물 TBL",
       "unitId": "0a9ea0e8dc04",
       "aiExplanation": "Trastuzumab deruxtecan(T-DXd)과 같은 항체약물접합체는 간질성 폐질환(ILD)/폐렴 가능성의 모니터링이 중요합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
