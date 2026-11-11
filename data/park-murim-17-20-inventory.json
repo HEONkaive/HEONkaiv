@@ -1,0 +1,970 @@
+{
+  "sourceFile": "무림고수 20-17 SJ(7).pdf",
+  "sourceSha256": "0fe115278d7bc4280fae03674832f3ed67cc2b9f2cb1d851df73974fe5516adc",
+  "sourcePageCount": 13,
+  "extractedUniqueQuestionCount": 73,
+  "registeredQuestionCount": 73,
+  "questions": [
+    {
+      "label": "17-1",
+      "originalPdfPages": [
+        1
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-1",
+      "sourceImage": "assets/questions/park-murim/17-1.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 2,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-2",
+      "originalPdfPages": [
+        1
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-2",
+      "sourceImage": "assets/questions/park-murim/17-2.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 5,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-3",
+      "originalPdfPages": [
+        2
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-3",
+      "sourceImage": "assets/questions/park-murim/17-3.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 4,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-4",
+      "originalPdfPages": [
+        12
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-4",
+      "sourceImage": "assets/questions/park-murim/17-4.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 4,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-5",
+      "originalPdfPages": [
+        12
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-5",
+      "sourceImage": "assets/questions/park-murim/17-5.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 3,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-6",
+      "originalPdfPages": [
+        12
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-6",
+      "sourceImage": "assets/questions/park-murim/17-6.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 2,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-7",
+      "originalPdfPages": [
+        2
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-7",
+      "sourceImage": "assets/questions/park-murim/17-7.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 5,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-8",
+      "originalPdfPages": [
+        2
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-8",
+      "sourceImage": "assets/questions/park-murim/17-8.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "user_confirmed",
+      "correctAnswer": null,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-9",
+      "originalPdfPages": [
+        3
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-9",
+      "sourceImage": "assets/questions/park-murim/17-9.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 1,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-10",
+      "originalPdfPages": [
+        4
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-10",
+      "sourceImage": "assets/questions/park-murim/17-10.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": [
+        2,
+        4
+      ],
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-11",
+      "originalPdfPages": [
+        3
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-11",
+      "sourceImage": "assets/questions/park-murim/17-11.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 1,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-12",
+      "originalPdfPages": [
+        4
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-12",
+      "sourceImage": "assets/questions/park-murim/17-12.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 1,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-13",
+      "originalPdfPages": [
+        10
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-13",
+      "sourceImage": "assets/questions/park-murim/17-13.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "user_confirmed",
+      "correctAnswer": null,
+      "userConfirmedAnswer": 1
+    },
+    {
+      "label": "17-15",
+      "originalPdfPages": [
+        12
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-15",
+      "sourceImage": "assets/questions/park-murim/17-15.webp",
+      "figureImagePaths": [
+        "assets/figures/park-murim/17-15-source-graph.webp"
+      ],
+      "verificationStatus": "review_required",
+      "correctAnswer": null,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-16",
+      "originalPdfPages": [
+        12
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-16",
+      "sourceImage": "assets/questions/park-murim/17-16.webp",
+      "figureImagePaths": [
+        "assets/figures/park-murim/17-16-source-graph.webp"
+      ],
+      "verificationStatus": "accepted",
+      "correctAnswer": 5,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-17",
+      "originalPdfPages": [
+        12
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-17",
+      "sourceImage": "assets/questions/park-murim/17-17.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 3,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-18",
+      "originalPdfPages": [
+        13
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-18",
+      "sourceImage": "assets/questions/park-murim/17-18.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 4,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-19",
+      "originalPdfPages": [
+        13
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-19",
+      "sourceImage": "assets/questions/park-murim/17-19.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "review_required",
+      "correctAnswer": null,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-21",
+      "originalPdfPages": [
+        13
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-21",
+      "sourceImage": "assets/questions/park-murim/17-21.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "review_required",
+      "correctAnswer": null,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-53",
+      "originalPdfPages": [
+        2
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-53",
+      "sourceImage": "assets/questions/park-murim/17-53.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 3,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-54",
+      "originalPdfPages": [
+        3
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-54",
+      "sourceImage": "assets/questions/park-murim/17-54.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 2,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-55",
+      "originalPdfPages": [
+        5
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-55",
+      "sourceImage": "assets/questions/park-murim/17-55.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 4,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "17-56",
+      "originalPdfPages": [
+        4
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:17-56",
+      "sourceImage": "assets/questions/park-murim/17-56.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "review_required",
+      "correctAnswer": null,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-1",
+      "originalPdfPages": [
+        5
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-1",
+      "sourceImage": "assets/questions/park-murim/18-1.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 2,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-4",
+      "originalPdfPages": [
+        11
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-4",
+      "sourceImage": "assets/questions/park-murim/18-4.webp",
+      "figureImagePaths": [
+        "assets/figures/park-murim/18-4-petct.webp"
+      ],
+      "verificationStatus": "accepted",
+      "correctAnswer": 1,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-6",
+      "originalPdfPages": [
+        1
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-6",
+      "sourceImage": "assets/questions/park-murim/18-6.webp",
+      "figureImagePaths": [
+        "assets/figures/park-murim/18-6-family-pedigree.webp"
+      ],
+      "verificationStatus": "accepted",
+      "correctAnswer": 1,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-9",
+      "originalPdfPages": [
+        8
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-9",
+      "sourceImage": "assets/questions/park-murim/18-9.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 1,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-10",
+      "originalPdfPages": [
+        3
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-10",
+      "sourceImage": "assets/questions/park-murim/18-10.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 1,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-12",
+      "originalPdfPages": [
+        11
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-12",
+      "sourceImage": "assets/questions/park-murim/18-12.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 3,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-15",
+      "originalPdfPages": [
+        5
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-15",
+      "sourceImage": "assets/questions/park-murim/18-15.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 3,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-21",
+      "originalPdfPages": [
+        6
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-21",
+      "sourceImage": "assets/questions/park-murim/18-21.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 5,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-23",
+      "originalPdfPages": [
+        7
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-23",
+      "sourceImage": "assets/questions/park-murim/18-23.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "user_confirmed",
+      "correctAnswer": null,
+      "userConfirmedAnswer": 2
+    },
+    {
+      "label": "18-25",
+      "originalPdfPages": [
+        8
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-25",
+      "sourceImage": "assets/questions/park-murim/18-25.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 5,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-27",
+      "originalPdfPages": [
+        4
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-27",
+      "sourceImage": "assets/questions/park-murim/18-27.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 3,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-28",
+      "originalPdfPages": [
+        6
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-28",
+      "sourceImage": "assets/questions/park-murim/18-28.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 4,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-39",
+      "originalPdfPages": [
+        7
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-39",
+      "sourceImage": "assets/questions/park-murim/18-39.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "user_confirmed",
+      "correctAnswer": null,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-41",
+      "originalPdfPages": [
+        4
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-41",
+      "sourceImage": "assets/questions/park-murim/18-41.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 3,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-43",
+      "originalPdfPages": [
+        8
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-43",
+      "sourceImage": "assets/questions/park-murim/18-43.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 2,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-44",
+      "originalPdfPages": [
+        10
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-44",
+      "sourceImage": "assets/questions/park-murim/18-44.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 4,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-46",
+      "originalPdfPages": [
+        3,
+        11
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-46",
+      "sourceImage": "assets/questions/park-murim/18-46.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 5,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-50",
+      "originalPdfPages": [
+        9
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-50",
+      "sourceImage": "assets/questions/park-murim/18-50.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "user_confirmed",
+      "correctAnswer": null,
+      "userConfirmedAnswer": 5
+    },
+    {
+      "label": "18-62",
+      "originalPdfPages": [
+        5
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-62",
+      "sourceImage": "assets/questions/park-murim/18-62.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 1,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-66",
+      "originalPdfPages": [
+        11
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-66",
+      "sourceImage": "assets/questions/park-murim/18-66.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 3,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-70",
+      "originalPdfPages": [
+        11
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-70",
+      "sourceImage": "assets/questions/park-murim/18-70.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 3,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-73",
+      "originalPdfPages": [
+        9
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-73",
+      "sourceImage": "assets/questions/park-murim/18-73.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": "Never make the treatment worse than the disease.",
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-74",
+      "originalPdfPages": [
+        6
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-74",
+      "sourceImage": "assets/questions/park-murim/18-74.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "user_confirmed",
+      "correctAnswer": null,
+      "userConfirmedAnswer": 2
+    },
+    {
+      "label": "18-79",
+      "originalPdfPages": [
+        10
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-79",
+      "sourceImage": "assets/questions/park-murim/18-79.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 1,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "18-80",
+      "originalPdfPages": [
+        2
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:18-80",
+      "sourceImage": "assets/questions/park-murim/18-80.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 4,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "19-6",
+      "originalPdfPages": [
+        9
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:19-6",
+      "sourceImage": "assets/questions/park-murim/19-6.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 4,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "19-7",
+      "originalPdfPages": [
+        10
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:19-7",
+      "sourceImage": "assets/questions/park-murim/19-7.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 3,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "19-8",
+      "originalPdfPages": [
+        7
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:19-8",
+      "sourceImage": "assets/questions/park-murim/19-8.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 5,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "19-10",
+      "originalPdfPages": [
+        6
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:19-10",
+      "sourceImage": "assets/questions/park-murim/19-10.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "review_required",
+      "correctAnswer": null,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "19-11",
+      "originalPdfPages": [
+        3
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:19-11",
+      "sourceImage": "assets/questions/park-murim/19-11.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "review_required",
+      "correctAnswer": null,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "19-12",
+      "originalPdfPages": [
+        5
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:19-12",
+      "sourceImage": "assets/questions/park-murim/19-12.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 5,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "19-13",
+      "originalPdfPages": [
+        6
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:19-13",
+      "sourceImage": "assets/questions/park-murim/19-13.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 2,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "19-14",
+      "originalPdfPages": [
+        8
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:19-14",
+      "sourceImage": "assets/questions/park-murim/19-14.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "review_required",
+      "correctAnswer": null,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "19-46",
+      "originalPdfPages": [
+        10
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:19-46",
+      "sourceImage": "assets/questions/park-murim/19-46.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 5,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "19-47",
+      "originalPdfPages": [
+        2
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:19-47",
+      "sourceImage": "assets/questions/park-murim/19-47.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 1,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "19-48",
+      "originalPdfPages": [
+        5
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:19-48",
+      "sourceImage": "assets/questions/park-murim/19-48.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 4,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "19-49",
+      "originalPdfPages": [
+        3
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:19-49",
+      "sourceImage": "assets/questions/park-murim/19-49.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "review_required",
+      "correctAnswer": null,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "19-주1",
+      "originalPdfPages": [
+        9
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:19-주1",
+      "sourceImage": "assets/questions/park-murim/19-주1.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": "Never make the treatment worse than the disease.",
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "20-3",
+      "originalPdfPages": [
+        13
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:20-3",
+      "sourceImage": "assets/questions/park-murim/20-3.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "review_required",
+      "correctAnswer": null,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "20-4",
+      "originalPdfPages": [
+        13
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:20-4",
+      "sourceImage": "assets/questions/park-murim/20-4.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 1,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "20-37",
+      "originalPdfPages": [
+        9
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:20-37",
+      "sourceImage": "assets/questions/park-murim/20-37.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "user_confirmed",
+      "correctAnswer": null,
+      "userConfirmedAnswer": 3
+    },
+    {
+      "label": "20-38",
+      "originalPdfPages": [
+        7
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:20-38",
+      "sourceImage": "assets/questions/park-murim/20-38.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 4,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "20-39",
+      "originalPdfPages": [
+        7
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:20-39",
+      "sourceImage": "assets/questions/park-murim/20-39.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 2,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "20-40",
+      "originalPdfPages": [
+        6
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:20-40",
+      "sourceImage": "assets/questions/park-murim/20-40.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 2,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "20-41",
+      "originalPdfPages": [
+        8
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:20-41",
+      "sourceImage": "assets/questions/park-murim/20-41.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 5,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "20-42",
+      "originalPdfPages": [
+        9
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:20-42",
+      "sourceImage": "assets/questions/park-murim/20-42.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 2,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "20-43",
+      "originalPdfPages": [
+        4
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:20-43",
+      "sourceImage": "assets/questions/park-murim/20-43.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 5,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "20-44",
+      "originalPdfPages": [
+        2
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:20-44",
+      "sourceImage": "assets/questions/park-murim/20-44.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": 4,
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "20-주1",
+      "originalPdfPages": [
+        8
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:20-주1",
+      "sourceImage": "assets/questions/park-murim/20-주1.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": "제한적으로 자가돌봄이 가능하며 깨어 있는 시간의 50% 이상을 침대나 의자에서 보내는 상태",
+      "userConfirmedAnswer": null
+    },
+    {
+      "label": "20-주2",
+      "originalPdfPages": [
+        9
+      ],
+      "registeredProfessor": "park-murim",
+      "questionId": "park-murim:20-주2",
+      "sourceImage": "assets/questions/park-murim/20-주2.webp",
+      "figureImagePaths": [],
+      "verificationStatus": "accepted",
+      "correctAnswer": "Never make the treatment worse than the disease.",
+      "userConfirmedAnswer": null
+    }
+  ]
+}

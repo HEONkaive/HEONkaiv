@@ -38,7 +38,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 1,
         "image": "assets/questions/park-murim/17-1.webp"
       },
@@ -49,7 +49,7 @@
       "evidence": [
         {
           "lectureId": "principles",
-          "file": "25.10.21_혈액과종양_박무림pf_항암치료총론(5).pdf",
+          "file": "25.10.21_혈액과종양_박무림pf_항암치료총론(6).pdf",
           "page": 18,
           "image": "assets/evidence/park-murim/principles-p018.webp",
           "quote": "≥ 30% 감소"
@@ -68,6 +68,330 @@
       "candidateEvidence": [],
       "answerSource": "lecture_double_checked",
       "transcriptionWarning": "선지 전사는 원본과 최종 대조가 필요합니다. 아래 원본 이미지에서 문자·숫자를 확인할 수 있습니다."
+    },
+    {
+      "id": "park-murim:17-2",
+      "label": "17-2",
+      "year": 17,
+      "number": 2,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "BRCA 돌연변이가 있는 암 세포에서 synthetic lethality 개념에 의해 암세포만을 선택적으로 죽일 수 있는 표적은 무엇인가?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "APC"
+        },
+        {
+          "number": 2,
+          "text": "MSH2"
+        },
+        {
+          "number": 3,
+          "text": "HER2"
+        },
+        {
+          "number": 4,
+          "text": "B-RAF"
+        },
+        {
+          "number": 5,
+          "text": "PARP"
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 1,
+        "image": "assets/questions/park-murim/17-2.webp"
+      },
+      "figureRequired": false,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "choice",
+      "answer": 5,
+      "answerSource": "lecture_double_checked",
+      "explanation": "BRCA 변이 암세포는 PARP까지 억제되면 DNA 손상 복구에 필요한 보상 경로가 함께 소실되어 synthetic lethality가 유도됩니다.",
+      "evidence": [
+        {
+          "lectureId": "genetics",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
+          "page": 22,
+          "image": "assets/evidence/park-murim/genetics-p022.webp",
+          "quote": "PARP inhibitors Olaparib"
+        }
+      ],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_lecture_original_page_content_verified",
+        "check2": "all_options_reconciled_with_original_source_and_lecture",
+        "verifiedAgainst": "uploaded_park_murim_2025_lectures",
+        "decisionReason": "원문 주제와 정답 선지를 독립 대조함"
+      },
+      "notes": "",
+      "showOriginalByDefault": false,
+      "transcriptionWarning": ""
+    },
+    {
+      "id": "park-murim:17-3",
+      "label": "17-3",
+      "year": 17,
+      "number": 3,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "다음 유전자가 돌연변이 등에 의해 기능을 하지 못할 경우 암세포의 유전자 불안정성(Genetic instability)을 초래하여 암이 발생할 수 있다. 관계없는 유전자는?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "MLH1"
+        },
+        {
+          "number": 2,
+          "text": "TP53"
+        },
+        {
+          "number": 3,
+          "text": "PMS2"
+        },
+        {
+          "number": 4,
+          "text": "RAF"
+        },
+        {
+          "number": 5,
+          "text": "BRCA"
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 2,
+        "image": "assets/questions/park-murim/17-3.webp"
+      },
+      "figureRequired": false,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "choice",
+      "answer": 4,
+      "answerSource": "lecture_double_checked",
+      "explanation": "MLH1·PMS2는 DNA mismatch repair, BRCA는 이중가닥 손상 복구, TP53은 세포주기·유전체 안정성과 관련됩니다. RAF는 종양억제유전자 기능 소실이 아닌 oncogene 활성화 계열입니다.",
+      "evidence": [
+        {
+          "lectureId": "genetics",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
+          "page": 19,
+          "image": "assets/evidence/park-murim/genetics-p019.webp",
+          "quote": "Mismatch repair genes"
+        },
+        {
+          "lectureId": "genetics",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
+          "page": 6,
+          "image": "assets/evidence/park-murim/genetics-p006.webp",
+          "quote": "BRAF"
+        }
+      ],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_lecture_original_page_content_verified",
+        "check2": "all_options_reconciled_with_original_source_and_lecture",
+        "verifiedAgainst": "uploaded_park_murim_2025_lectures",
+        "decisionReason": "원문 주제와 정답 선지를 독립 대조함"
+      },
+      "notes": "",
+      "showOriginalByDefault": false,
+      "transcriptionWarning": ""
+    },
+    {
+      "id": "park-murim:17-4",
+      "label": "17-4",
+      "year": 17,
+      "number": 4,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "암 세포의 생물학적 특성으로 옳은 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "telomere가 짧다."
+        },
+        {
+          "number": 2,
+          "text": "저산소증에 빠지면 VEGF 유리가 억제된다."
+        },
+        {
+          "number": 3,
+          "text": "히스톤 메틸화는 종양억제유전자를 발현시킨다."
+        },
+        {
+          "number": 4,
+          "text": "포도당은 유산소 환경에서 대부분 젖산으로 대사된다."
+        },
+        {
+          "number": 5,
+          "text": "중간엽 세포가 상피세포로 변화되어 조직침윤을 일으킨다."
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 12,
+        "image": "assets/questions/park-murim/17-4.webp"
+      },
+      "figureRequired": false,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "choice",
+      "answer": 4,
+      "answerSource": "lecture_double_checked",
+      "explanation": "Warburg effect는 산소가 있어도 암세포가 해당과정과 젖산 형성을 선호하는 대사 특성을 의미합니다.",
+      "evidence": [
+        {
+          "lectureId": "genetics",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
+          "page": 35,
+          "image": "assets/evidence/park-murim/genetics-p035.webp",
+          "quote": "Warburg effect (Aerobic glycOlysis)"
+        }
+      ],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_lecture_original_page_content_verified",
+        "check2": "all_options_reconciled_with_original_source_and_lecture",
+        "verifiedAgainst": "uploaded_park_murim_2025_lectures",
+        "decisionReason": "원문 주제와 정답 선지를 독립 대조함"
+      },
+      "notes": "",
+      "showOriginalByDefault": false,
+      "transcriptionWarning": ""
+    },
+    {
+      "id": "park-murim:17-5",
+      "label": "17-5",
+      "year": 17,
+      "number": 5,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "암세포의 면역체계 회피·억제에 관여하는 세포 또는 기작이다. 틀린 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "loss of MHC molecule"
+        },
+        {
+          "number": 2,
+          "text": "PD-L1 발현"
+        },
+        {
+          "number": 3,
+          "text": "T 세포 CTLA4 수용체 차단 발현"
+        },
+        {
+          "number": 4,
+          "text": "tumor associated macrophage 발현"
+        },
+        {
+          "number": 5,
+          "text": "TGF-beta, inhibitory interleukin 유리"
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 12,
+        "image": "assets/questions/park-murim/17-5.webp"
+      },
+      "figureRequired": false,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "choice",
+      "answer": 3,
+      "answerSource": "lecture_double_checked",
+      "explanation": "MHC 감소, 면역억제성 세포/사이토카인 및 T 세포 비활성화는 암 면역회피에 해당합니다. CTLA4 차단은 오히려 T 세포 억제를 해제하는 면역관문억제제의 작용입니다.",
+      "evidence": [
+        {
+          "lectureId": "genetics",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
+          "page": 39,
+          "image": "assets/evidence/park-murim/genetics-p039.webp",
+          "quote": "down regulate MHC"
+        },
+        {
+          "lectureId": "genetics",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
+          "page": 40,
+          "image": "assets/evidence/park-murim/genetics-p040.webp",
+          "quote": "CTLA4 Inhibitor"
+        }
+      ],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_lecture_original_page_content_verified",
+        "check2": "all_options_reconciled_with_original_source_and_lecture",
+        "verifiedAgainst": "uploaded_park_murim_2025_lectures",
+        "decisionReason": "원문 주제와 정답 선지를 독립 대조함"
+      },
+      "notes": "",
+      "showOriginalByDefault": false,
+      "transcriptionWarning": ""
+    },
+    {
+      "id": "park-murim:17-6",
+      "label": "17-6",
+      "year": 17,
+      "number": 6,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "암조직 혈관의 특징으로 잘못된 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "pericyte가 거의 없다."
+        },
+        {
+          "number": 2,
+          "text": "혈관 내피세포가 조밀하다."
+        },
+        {
+          "number": 3,
+          "text": "암 조직 내 압력이 높다."
+        },
+        {
+          "number": 4,
+          "text": "basement membrane이 헐겁다."
+        },
+        {
+          "number": 5,
+          "text": "암세포가 혈관내피세포 역할을 할 수 있다."
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 12,
+        "image": "assets/questions/park-murim/17-6.webp"
+      },
+      "figureRequired": false,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "choice",
+      "answer": 2,
+      "answerSource": "lecture_double_checked",
+      "explanation": "종양 혈관은 혈관벽과 기저막이 불완전하고 투과성이 높아 내피세포가 조밀하다는 진술은 틀립니다. 강의안은 종양 내 압력 증가도 기술합니다.",
+      "evidence": [
+        {
+          "lectureId": "genetics",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
+          "page": 33,
+          "image": "assets/evidence/park-murim/genetics-p033.webp",
+          "quote": "기저막이 합성되지 않아서"
+        }
+      ],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_lecture_original_page_content_verified",
+        "check2": "all_options_reconciled_with_original_source_and_lecture",
+        "verifiedAgainst": "uploaded_park_murim_2025_lectures",
+        "decisionReason": "원문 주제와 정답 선지를 독립 대조함"
+      },
+      "notes": "",
+      "showOriginalByDefault": false,
+      "transcriptionWarning": ""
     },
     {
       "id": "park-murim:17-7",
@@ -100,7 +424,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 2,
         "image": "assets/questions/park-murim/17-7.webp"
       },
@@ -111,7 +435,7 @@
       "evidence": [
         {
           "lectureId": "genetics",
-          "file": "25.10.31_혈액과종양_박무림pf_암유전학(5).pdf",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
           "page": 13,
           "image": "assets/evidence/park-murim/genetics-p013.webp",
           "quote": "family history suggestive germline mutation"
@@ -162,7 +486,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 2,
         "image": "assets/questions/park-murim/17-8.webp"
       },
@@ -182,14 +506,14 @@
       "candidateEvidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 16,
           "image": "assets/evidence/park-murim/drugs-p016.webp",
           "status": "not_adopted"
         },
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 34,
           "image": "assets/evidence/park-murim/drugs-p034.webp",
           "status": "not_adopted"
@@ -229,7 +553,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 3,
         "image": "assets/questions/park-murim/17-9.webp"
       },
@@ -240,7 +564,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 28,
           "image": "assets/evidence/park-murim/drugs-p028.webp",
           "quote": "Venetoclax"
@@ -291,7 +615,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 4,
         "image": "assets/questions/park-murim/17-10.webp"
       },
@@ -305,14 +629,14 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 14,
           "image": "assets/evidence/park-murim/drugs-p014.webp",
           "quote": "Trastuzumab"
         },
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 52,
           "image": "assets/evidence/park-murim/drugs-p052.webp",
           "quote": "유방암 + 위암 교차 확인"
@@ -364,7 +688,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 3,
         "image": "assets/questions/park-murim/17-11.webp"
       },
@@ -375,7 +699,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 40,
           "image": "assets/evidence/park-murim/drugs-p040.webp",
           "quote": "CTLA4"
@@ -426,7 +750,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 4,
         "image": "assets/questions/park-murim/17-12.webp"
       },
@@ -437,7 +761,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 55,
           "image": "assets/evidence/park-murim/drugs-p055.webp",
           "quote": "Trastuzumab"
@@ -488,7 +812,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 10,
         "image": "assets/questions/park-murim/17-13.webp"
       },
@@ -509,14 +833,14 @@
       "candidateEvidence": [
         {
           "lectureId": "palliative",
-          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(5).pdf",
+          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(6).pdf",
           "page": 10,
           "image": "assets/evidence/park-murim/palliative-p010.webp",
           "status": "not_adopted"
         },
         {
           "lectureId": "palliative",
-          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(5).pdf",
+          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(6).pdf",
           "page": 16,
           "image": "assets/evidence/park-murim/palliative-p016.webp",
           "status": "not_adopted"
@@ -524,6 +848,403 @@
       ],
       "answerSource": "user_confirmed",
       "transcriptionWarning": "선지 전사는 원본과 최종 대조가 필요합니다. 아래 원본 이미지에서 문자·숫자를 확인할 수 있습니다."
+    },
+    {
+      "id": "park-murim:17-15",
+      "label": "17-15",
+      "year": 17,
+      "number": 15,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "다음 그림은 2016년 여성의 주요 암종별 연령 표준화 발생률 추이 그래프이다. A, B에 해당하는 암종을 순서대로 올바르게 짝지은 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "위암 – 대장암"
+        },
+        {
+          "number": 2,
+          "text": "위암 – 간암"
+        },
+        {
+          "number": 3,
+          "text": "갑상선암 – 유방암"
+        },
+        {
+          "number": 4,
+          "text": "갑상선암 – 대장암"
+        },
+        {
+          "number": 5,
+          "text": "간암 – 폐암"
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 12,
+        "image": "assets/questions/park-murim/17-15.webp"
+      },
+      "figureRequired": true,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "choice",
+      "answer": null,
+      "answerSource": "pending_user_decision",
+      "explanation": "",
+      "evidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "epidemiology",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
+          "page": 3,
+          "image": "assets/evidence/park-murim/epidemiology-p003.webp",
+          "quote": "연령군별암발생률",
+          "status": "not_adopted"
+        }
+      ],
+      "validation": {
+        "stage": "review_required",
+        "check1": "relevant_original_page_verified_not_direct_proof",
+        "check2": "unique_answer_not_confirmed",
+        "verifiedAgainst": "not_adopted",
+        "decisionReason": "원본 그래프에 A와 B의 위치 표기가 확인되지 않습니다. 강의안 3쪽의 암 발생 추이는 참고가 되지만 A/B 대응을 직접 증명하지 못하므로 정답을 보류했습니다."
+      },
+      "notes": "원본 그래프에 A와 B의 위치 표기가 확인되지 않습니다. 강의안 3쪽의 암 발생 추이는 참고가 되지만 A/B 대응을 직접 증명하지 못하므로 정답을 보류했습니다.",
+      "showOriginalByDefault": false,
+      "transcriptionWarning": "원본 그래프에 A와 B의 위치 표기가 확인되지 않습니다. 강의안 3쪽의 암 발생 추이는 참고가 되지만 A/B 대응을 직접 증명하지 못하므로 정답을 보류했습니다.",
+      "figureImages": [
+        {
+          "src": "assets/figures/park-murim/17-15-source-graph.webp",
+          "alt": "2016년 여성 연령표준화 암 발생률 그래프 (원본에서 A·B 표기 불명확)",
+          "caption": "2016년 여성 연령표준화 암 발생률 그래프 (원본에서 A·B 표기 불명확) · 기출 PDF 12페이지"
+        }
+      ]
+    },
+    {
+      "id": "park-murim:17-16",
+      "label": "17-16",
+      "year": 17,
+      "number": 16,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "다음 암종 중 5년 생존율이 가장 낮은 암은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "위암"
+        },
+        {
+          "number": 2,
+          "text": "대장암"
+        },
+        {
+          "number": 3,
+          "text": "폐암"
+        },
+        {
+          "number": 4,
+          "text": "간암"
+        },
+        {
+          "number": 5,
+          "text": "췌장암"
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 12,
+        "image": "assets/questions/park-murim/17-16.webp"
+      },
+      "figureRequired": true,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "choice",
+      "answer": 5,
+      "answerSource": "lecture_double_checked",
+      "explanation": "강의안의 암종별 5년 상대생존율 그래프에서 비교 대상 중 췌장암의 생존율이 가장 낮습니다.",
+      "evidence": [
+        {
+          "lectureId": "epidemiology",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
+          "page": 6,
+          "image": "assets/evidence/park-murim/epidemiology-p006.webp",
+          "quote": "암종별5년상대생존율"
+        }
+      ],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_lecture_original_page_content_verified",
+        "check2": "all_options_reconciled_with_original_source_and_lecture",
+        "verifiedAgainst": "uploaded_park_murim_2025_lectures",
+        "decisionReason": "원문 주제와 정답 선지를 독립 대조함"
+      },
+      "notes": "",
+      "showOriginalByDefault": false,
+      "transcriptionWarning": "",
+      "figureImages": [
+        {
+          "src": "assets/figures/park-murim/17-16-source-graph.webp",
+          "alt": "기출 원본의 암종별 5년 생존율 자료",
+          "caption": "기출 원본의 암종별 5년 생존율 자료 · 기출 PDF 12페이지"
+        }
+      ]
+    },
+    {
+      "id": "park-murim:17-17",
+      "label": "17-17",
+      "year": 17,
+      "number": 17,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "만 70세 남자 환자가 건강 검진을 위해서 내원하였다. 흡연력은 없고 B형 간염 보균자라고 한다. 과거 건강 검진을 받아본 적이 없다고 할 때 이 환자에게 권유할 국가 암 조기 검진으로 적절하지 않은 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "위 내시경"
+        },
+        {
+          "number": 2,
+          "text": "간초음파"
+        },
+        {
+          "number": 3,
+          "text": "저선량 흉부 CT"
+        },
+        {
+          "number": 4,
+          "text": "AFP(alpha-fetoprotein)"
+        },
+        {
+          "number": 5,
+          "text": "대변잠혈검사"
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 12,
+        "image": "assets/questions/park-murim/17-17.webp"
+      },
+      "figureRequired": false,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "choice",
+      "answer": 3,
+      "answerSource": "lecture_double_checked",
+      "explanation": "강의안의 폐암 국가검진은 일정 연령·흡연력이 있는 고위험군에게 저선량 흉부 CT를 권고합니다. 환자는 비흡연자여서 해당 조건을 만족하지 않습니다.",
+      "evidence": [
+        {
+          "lectureId": "epidemiology",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
+          "page": 37,
+          "image": "assets/evidence/park-murim/epidemiology-p037.webp",
+          "quote": "30갑년이상의흡연력이"
+        }
+      ],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_lecture_original_page_content_verified",
+        "check2": "all_options_reconciled_with_original_source_and_lecture",
+        "verifiedAgainst": "uploaded_park_murim_2025_lectures",
+        "decisionReason": "원문 주제와 정답 선지를 독립 대조함"
+      },
+      "notes": "",
+      "showOriginalByDefault": false,
+      "transcriptionWarning": ""
+    },
+    {
+      "id": "park-murim:17-18",
+      "label": "17-18",
+      "year": 17,
+      "number": 18,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "암과 암 표지자를 짝지은 다음 보기 중 옳지 않은 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "human chorionic gonadotropin(hCG) – germ cell tumor"
+        },
+        {
+          "number": 2,
+          "text": "CEA – colon cancer"
+        },
+        {
+          "number": 3,
+          "text": "CA 15-3 – breast cancer"
+        },
+        {
+          "number": 4,
+          "text": "CA 19-9 – lymphoma"
+        },
+        {
+          "number": 5,
+          "text": "PSA – prostate cancer"
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 13,
+        "image": "assets/questions/park-murim/17-18.webp"
+      },
+      "figureRequired": false,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "choice",
+      "answer": 4,
+      "answerSource": "lecture_double_checked",
+      "explanation": "CA19-9는 주로 췌장·담도계 및 일부 소화기 암과 관련됩니다. 강의안의 림프종 관련 표지자는 LDH 등이며 CA19-9 – lymphoma 조합은 맞지 않습니다.",
+      "evidence": [
+        {
+          "lectureId": "epidemiology",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
+          "page": 32,
+          "image": "assets/evidence/park-murim/epidemiology-p032.webp",
+          "quote": "CA19-9 pancreatic (+biliary), colon, breast"
+        }
+      ],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_lecture_original_page_content_verified",
+        "check2": "all_options_reconciled_with_original_source_and_lecture",
+        "verifiedAgainst": "uploaded_park_murim_2025_lectures",
+        "decisionReason": "원문 주제와 정답 선지를 독립 대조함"
+      },
+      "notes": "",
+      "showOriginalByDefault": false,
+      "transcriptionWarning": ""
+    },
+    {
+      "id": "park-murim:17-19",
+      "label": "17-19",
+      "year": 17,
+      "number": 19,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "암 선별 검사에 관한 다음 설명 중 맞는 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "특이도(specificity)는 병이 없는 사람에서 선별 검사상 음성이 나올 확률을 말한다."
+        },
+        {
+          "number": 2,
+          "text": "암 선별 검사시 양성 예측도(PPV)에 가장 큰 영향을 주는 인자는 민감도이다."
+        },
+        {
+          "number": 3,
+          "text": "암 선별 검사 선택시 가장 우선하여 고려할 사항은 검사의 민감도이다."
+        },
+        {
+          "number": 4,
+          "text": "선별 검사의 민감도 결정에 가장 중요한 인자는 유병률이다."
+        },
+        {
+          "number": 5,
+          "text": "희귀암에 대해 좋은 선별검사를 적용하는 것은 비용-효율적이다."
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 13,
+        "image": "assets/questions/park-murim/17-19.webp"
+      },
+      "figureRequired": false,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "choice",
+      "answer": null,
+      "answerSource": "pending_user_decision",
+      "explanation": "",
+      "evidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "epidemiology",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
+          "page": 29,
+          "image": "assets/evidence/park-murim/epidemiology-p029.webp",
+          "quote": "특이도Specificity",
+          "status": "not_adopted"
+        }
+      ],
+      "validation": {
+        "stage": "review_required",
+        "check1": "relevant_original_page_verified_not_direct_proof",
+        "check2": "unique_answer_not_confirmed",
+        "verifiedAgainst": "not_adopted",
+        "decisionReason": "강의안은 ①의 특이도 정의를 직접 뒷받침하지만, ③의 “가장 우선하여”라는 비교 표현까지 명확하게 배제하지는 않습니다. 원문과 선택지의 유일정답성 검토를 위해 미확정으로 남겼습니다."
+      },
+      "notes": "강의안은 ①의 특이도 정의를 직접 뒷받침하지만, ③의 “가장 우선하여”라는 비교 표현까지 명확하게 배제하지는 않습니다. 원문과 선택지의 유일정답성 검토를 위해 미확정으로 남겼습니다.",
+      "showOriginalByDefault": false,
+      "transcriptionWarning": "강의안은 ①의 특이도 정의를 직접 뒷받침하지만, ③의 “가장 우선하여”라는 비교 표현까지 명확하게 배제하지는 않습니다. 원문과 선택지의 유일정답성 검토를 위해 미확정으로 남겼습니다."
+    },
+    {
+      "id": "park-murim:17-21",
+      "label": "17-21",
+      "year": 17,
+      "number": 21,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "우측 쇄골 상부에서 4cm 종괴가 관찰되어 조직검사 결과 metastatic squamous carcinoma가 나왔다. 원발암의 위치로 적당하지 않은 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "폐"
+        },
+        {
+          "number": 2,
+          "text": "식도"
+        },
+        {
+          "number": 3,
+          "text": "후두"
+        },
+        {
+          "number": 4,
+          "text": "림프절"
+        },
+        {
+          "number": 5,
+          "text": "편도"
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 13,
+        "image": "assets/questions/park-murim/17-21.webp"
+      },
+      "figureRequired": false,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "choice",
+      "answer": null,
+      "answerSource": "pending_user_decision",
+      "explanation": "",
+      "evidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "cup",
+          "file": "25.11.06_혈액과종양_박무림pf_원발병소불명암(6).pdf",
+          "page": 2,
+          "image": "assets/evidence/park-murim/cup-p002.webp",
+          "quote": "biopsy-proven (metastatic) malignancy",
+          "status": "not_adopted"
+        },
+        {
+          "lectureId": "cup",
+          "file": "25.11.06_혈액과종양_박무림pf_원발병소불명암(6).pdf",
+          "page": 7,
+          "image": "assets/evidence/park-murim/cup-p007.webp",
+          "quote": "Squamous cell ca w neck adenopathy",
+          "status": "not_adopted"
+        }
+      ],
+      "validation": {
+        "stage": "review_required",
+        "check1": "relevant_original_page_verified_not_direct_proof",
+        "check2": "unique_answer_not_confirmed",
+        "verifiedAgainst": "not_adopted",
+        "decisionReason": "④ 림프절이 기출 해설의 의도된 오답이지만, 업로드 강의안에서 림프절을 원발병소로 배제하는 직접 근거는 부족합니다. 관련 강의안은 검토 자료로만 표시합니다."
+      },
+      "notes": "④ 림프절이 기출 해설의 의도된 오답이지만, 업로드 강의안에서 림프절을 원발병소로 배제하는 직접 근거는 부족합니다. 관련 강의안은 검토 자료로만 표시합니다.",
+      "showOriginalByDefault": false,
+      "transcriptionWarning": "④ 림프절이 기출 해설의 의도된 오답이지만, 업로드 강의안에서 림프절을 원발병소로 배제하는 직접 근거는 부족합니다. 관련 강의안은 검토 자료로만 표시합니다."
     },
     {
       "id": "park-murim:17-53",
@@ -556,7 +1277,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 2,
         "image": "assets/questions/park-murim/17-53.webp"
       },
@@ -567,7 +1288,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 34,
           "image": "assets/evidence/park-murim/drugs-p034.webp",
           "quote": "SLAMF7"
@@ -618,7 +1339,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 3,
         "image": "assets/questions/park-murim/17-54.webp"
       },
@@ -629,7 +1350,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 27,
           "image": "assets/evidence/park-murim/drugs-p027.webp",
           "quote": "Bortezomib"
@@ -680,7 +1401,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 5,
         "image": "assets/questions/park-murim/17-55.webp"
       },
@@ -691,7 +1412,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 19,
           "image": "assets/evidence/park-murim/drugs-p019.webp",
           "quote": "Combined BRAF inhibitor + MEK inhibitor"
@@ -742,7 +1463,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 4,
         "image": "assets/questions/park-murim/17-56.webp"
       },
@@ -762,14 +1483,14 @@
       "candidateEvidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 54,
           "image": "assets/evidence/park-murim/drugs-p054.webp",
           "status": "not_adopted"
         },
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 55,
           "image": "assets/evidence/park-murim/drugs-p055.webp",
           "status": "not_adopted"
@@ -809,7 +1530,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 5,
         "image": "assets/questions/park-murim/18-1.webp"
       },
@@ -820,7 +1541,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 57,
           "image": "assets/evidence/park-murim/drugs-p057.webp",
           "quote": "immune"
@@ -839,6 +1560,158 @@
       "candidateEvidence": [],
       "answerSource": "lecture_double_checked",
       "transcriptionWarning": "선지 전사는 원본과 최종 대조가 필요합니다. 아래 원본 이미지에서 문자·숫자를 확인할 수 있습니다."
+    },
+    {
+      "id": "park-murim:18-4",
+      "label": "18-4",
+      "year": 18,
+      "number": 4,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "65세 여자 환자가 유방에 만져지는 종괴를 주소로 내원해 시행한 조직검사 결과 Invasive ductal carcinoma, ER/PR (+/+), HER2 (-), Ki-67 12%, E2 5 pg/ml, FSH 120 mIU/ml였다. 병기설정을 위해서 시행한 PET/CT 소견은 다음과 같았다. 환자의 치료를 위해 palbociclib을 사용하기로 했다. Palbociclib의 작용기전으로 옳은 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "CDK4/6 inhibitor"
+        },
+        {
+          "number": 2,
+          "text": "p53 inhibitor"
+        },
+        {
+          "number": 3,
+          "text": "Rb inhibitor"
+        },
+        {
+          "number": 4,
+          "text": "p16 inhibitor"
+        },
+        {
+          "number": 5,
+          "text": "E2F inhibitor"
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 11,
+        "image": "assets/questions/park-murim/18-4.webp"
+      },
+      "figureRequired": true,
+      "figureImages": [
+        {
+          "src": "assets/figures/park-murim/18-4-petct.webp",
+          "alt": "원본 기출문제에 포함된 PET/CT 영상 두 장",
+          "caption": "기출 원본 PET/CT 영상 · PDF 11페이지"
+        }
+      ],
+      "transcriptionStatus": "source_layout_visually_verified",
+      "type": "choice",
+      "answer": 1,
+      "answerSource": "lecture_double_checked",
+      "explanation": "Palbociclib은 세포주기 G1→S 전이를 조절하는 CDK4/6 억제제입니다.",
+      "evidence": [
+        {
+          "lectureId": "genetics",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
+          "page": 18,
+          "image": "assets/evidence/park-murim/genetics-p018.webp",
+          "quote": "CDK inhibitors Palboclclib"
+        },
+        {
+          "lectureId": "drugs",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
+          "page": 24,
+          "image": "assets/evidence/park-murim/drugs-p024.webp",
+          "quote": "Palbociclib (Ibrance)"
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_lecture_original_page_content_verified",
+        "check2": "original_source_figure_and_five_answers_reconciled_with_lecture",
+        "verifiedAgainst": "uploaded_park_murim_2025_lectures",
+        "decisionReason": "2025년 박무림 교수님 범위에 재분류하고 강의안 새로 대조"
+      },
+      "candidateEvidence": [],
+      "notes": "기출 PDF에 과거 담당 교수 표기가 있으나 현재 학습 범위 기준 박무림 교수님에 통합했습니다.",
+      "transcriptionWarning": "필수 그림은 문제 본문에 직접 표시합니다.",
+      "showOriginalByDefault": false
+    },
+    {
+      "id": "park-murim:18-6",
+      "label": "18-6",
+      "year": 18,
+      "number": 6,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "38세 여자 환자가 유방암으로 진단되었다. 환자의 가족력은 다음 그림과 같았다. 조직검사 및 유전자검사 소견은 다음과 같았다. Invasive ductal carcinoma, ER (-), PR (-), HER2 (-), BRCA1 생식선변이 (+), BRCA2 생식선변이 (-). 다음 중 이 환자에게 사용했을 때 가장 효과를 기대할 수 있는 약제 및 그 기전 중 올바른 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "Olaparib - synthetic lethality"
+        },
+        {
+          "number": 2,
+          "text": "Trastuzumab - anti HER2 monoclonal antibody"
+        },
+        {
+          "number": 3,
+          "text": "Pertuzumab - anti HER2 monoclonal antibody"
+        },
+        {
+          "number": 4,
+          "text": "Lapatinib - receptor tyrosine kinase inhibitor of EGFR1/2"
+        },
+        {
+          "number": 5,
+          "text": "Everolimus - mTOR inhibitor"
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 1,
+        "image": "assets/questions/park-murim/18-6.webp"
+      },
+      "figureRequired": true,
+      "figureImages": [
+        {
+          "src": "assets/figures/park-murim/18-6-family-pedigree.webp",
+          "alt": "원본 기출문제의 유전성 유방암 가족력 가계도",
+          "caption": "기출 원본 가족력 가계도 · PDF 1페이지"
+        }
+      ],
+      "transcriptionStatus": "source_layout_visually_verified",
+      "type": "choice",
+      "answer": 1,
+      "answerSource": "lecture_double_checked",
+      "explanation": "BRCA1 변이가 있는 유방암에서 PARP 억제제인 olaparib은 synthetic lethality 원리로 DNA 복구 취약성을 이용합니다.",
+      "evidence": [
+        {
+          "lectureId": "genetics",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
+          "page": 22,
+          "image": "assets/evidence/park-murim/genetics-p022.webp",
+          "quote": "Synthetic Lethality"
+        },
+        {
+          "lectureId": "drugs",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
+          "page": 25,
+          "image": "assets/evidence/park-murim/drugs-p025.webp",
+          "quote": "Olaparib (Lynparza)"
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_lecture_original_page_content_verified",
+        "check2": "original_source_figure_and_five_answers_reconciled_with_lecture",
+        "verifiedAgainst": "uploaded_park_murim_2025_lectures",
+        "decisionReason": "2025년 박무림 교수님 범위에 재분류하고 강의안 새로 대조"
+      },
+      "candidateEvidence": [],
+      "notes": "기출 PDF에 과거 담당 교수 표기가 있으나 현재 학습 범위 기준 박무림 교수님에 통합했습니다.",
+      "transcriptionWarning": "필수 그림은 문제 본문에 직접 표시합니다.",
+      "showOriginalByDefault": false
     },
     {
       "id": "park-murim:18-9",
@@ -871,7 +1744,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 8,
         "image": "assets/questions/park-murim/18-9.webp"
       },
@@ -882,14 +1755,14 @@
       "evidence": [
         {
           "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
           "page": 8,
           "image": "assets/evidence/park-murim/epidemiology-p008.webp",
           "quote": "폐암이 압도적 1순위"
         },
         {
           "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
           "page": 7,
           "image": "assets/evidence/park-murim/epidemiology-p007.webp",
           "quote": "췌장암 예후 비교"
@@ -940,7 +1813,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 3,
         "image": "assets/questions/park-murim/18-10.webp"
       },
@@ -951,7 +1824,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 40,
           "image": "assets/evidence/park-murim/drugs-p040.webp",
           "quote": "CTLA4"
@@ -969,6 +1842,68 @@
       "showOriginalByDefault": true,
       "candidateEvidence": [],
       "answerSource": "lecture_double_checked",
+      "transcriptionWarning": ""
+    },
+    {
+      "id": "park-murim:18-12",
+      "label": "18-12",
+      "year": 18,
+      "number": 12,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "Proto-oncogene의 activation mechanism 중 올바른 것을 고르시오.",
+      "choices": [
+        {
+          "number": 1,
+          "text": "Indel mutation"
+        },
+        {
+          "number": 2,
+          "text": "Epigenetic change"
+        },
+        {
+          "number": 3,
+          "text": "Gene (DNA) amplification"
+        },
+        {
+          "number": 4,
+          "text": "Nonsense mutation"
+        },
+        {
+          "number": 5,
+          "text": "Loss of heterozygocity"
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 11,
+        "image": "assets/questions/park-murim/18-12.webp"
+      },
+      "figureRequired": false,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "choice",
+      "answer": 3,
+      "answerSource": "lecture_double_checked",
+      "explanation": "강의안에서 proto-oncogene 활성화 기전으로 point mutation, DNA amplification, chromosome rearrangement를 명시하며, Indels와 LOH는 종양억제유전자 불활성화 경로로 분류합니다.",
+      "evidence": [
+        {
+          "lectureId": "genetics",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
+          "page": 5,
+          "image": "assets/evidence/park-murim/genetics-p005.webp",
+          "quote": "DNA amplification"
+        }
+      ],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_lecture_original_page_content_verified",
+        "check2": "all_options_reconciled_with_original_source_and_lecture",
+        "verifiedAgainst": "uploaded_park_murim_2025_lectures",
+        "decisionReason": "원문 주제와 정답 선지를 독립 대조함"
+      },
+      "notes": "",
+      "showOriginalByDefault": false,
       "transcriptionWarning": ""
     },
     {
@@ -1002,7 +1937,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 5,
         "image": "assets/questions/park-murim/18-15.webp"
       },
@@ -1013,7 +1948,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 48,
           "image": "assets/evidence/park-murim/drugs-p048.webp",
           "quote": "mNSCLC"
@@ -1064,7 +1999,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 6,
         "image": "assets/questions/park-murim/18-21.webp"
       },
@@ -1075,7 +2010,7 @@
       "evidence": [
         {
           "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
           "page": 21,
           "image": "assets/evidence/park-murim/epidemiology-p021.webp",
           "quote": "carotene"
@@ -1126,7 +2061,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 7,
         "image": "assets/questions/park-murim/18-23.webp"
       },
@@ -1147,14 +2082,14 @@
       "candidateEvidence": [
         {
           "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
           "page": 34,
           "image": "assets/evidence/park-murim/epidemiology-p034.webp",
           "status": "not_adopted"
         },
         {
           "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
           "page": 35,
           "image": "assets/evidence/park-murim/epidemiology-p035.webp",
           "status": "not_adopted"
@@ -1194,7 +2129,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 8,
         "image": "assets/questions/park-murim/18-25.webp"
       },
@@ -1205,7 +2140,7 @@
       "evidence": [
         {
           "lectureId": "principles",
-          "file": "25.10.21_혈액과종양_박무림pf_항암치료총론(5).pdf",
+          "file": "25.10.21_혈액과종양_박무림pf_항암치료총론(6).pdf",
           "page": 7,
           "image": "assets/evidence/park-murim/principles-p007.webp",
           "quote": "confined to bed or chair more than"
@@ -1256,7 +2191,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 4,
         "image": "assets/questions/park-murim/18-27.webp"
       },
@@ -1267,7 +2202,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 17,
           "image": "assets/evidence/park-murim/drugs-p017.webp",
           "quote": "FLT3 mt - ... - AML"
@@ -1318,7 +2253,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 6,
         "image": "assets/questions/park-murim/18-28.webp"
       },
@@ -1329,7 +2264,7 @@
       "evidence": [
         {
           "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
           "page": 29,
           "image": "assets/evidence/park-murim/epidemiology-p029.webp",
           "quote": "Specificity"
@@ -1380,7 +2315,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 7,
         "image": "assets/questions/park-murim/18-39.webp"
       },
@@ -1400,7 +2335,7 @@
       "candidateEvidence": [
         {
           "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
           "page": 2,
           "image": "assets/evidence/park-murim/epidemiology-p002.webp",
           "status": "not_adopted"
@@ -1440,7 +2375,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 4,
         "image": "assets/questions/park-murim/18-41.webp"
       },
@@ -1451,7 +2386,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 55,
           "image": "assets/evidence/park-murim/drugs-p055.webp",
           "quote": "Cisplatin"
@@ -1502,7 +2437,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 8,
         "image": "assets/questions/park-murim/18-43.webp"
       },
@@ -1513,7 +2448,7 @@
       "evidence": [
         {
           "lectureId": "principles",
-          "file": "25.10.21_혈액과종양_박무림pf_항암치료총론(5).pdf",
+          "file": "25.10.21_혈액과종양_박무림pf_항암치료총론(6).pdf",
           "page": 18,
           "image": "assets/evidence/park-murim/principles-p018.webp",
           "quote": "최대5"
@@ -1564,7 +2499,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 10,
         "image": "assets/questions/park-murim/18-44.webp"
       },
@@ -1575,7 +2510,7 @@
       "evidence": [
         {
           "lectureId": "palliative",
-          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(5).pdf",
+          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(6).pdf",
           "page": 16,
           "image": "assets/evidence/park-murim/palliative-p016.webp",
           "quote": "Neuropathic pain"
@@ -1626,7 +2561,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 3,
         "image": "assets/questions/park-murim/18-46.webp"
       },
@@ -1637,7 +2572,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 16,
           "image": "assets/evidence/park-murim/drugs-p016.webp",
           "quote": "Ramucirumab"
@@ -1688,7 +2623,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 9,
         "image": "assets/questions/park-murim/18-50.webp"
       },
@@ -1709,7 +2644,7 @@
       "candidateEvidence": [
         {
           "lectureId": "biology",
-          "file": "25.10.23_혈액과종양_박무림pf_암생물학+종양수반증후군(5).pdf",
+          "file": "25.10.23_혈액과종양_박무림pf_암생물학+종양수반증후군(6).pdf",
           "page": 9,
           "image": "assets/evidence/park-murim/biology-p009.webp",
           "status": "not_adopted"
@@ -1749,7 +2684,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 5,
         "image": "assets/questions/park-murim/18-62.webp"
       },
@@ -1760,7 +2695,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 39,
           "image": "assets/evidence/park-murim/drugs-p039.webp",
           "quote": "CD19+"
@@ -1781,6 +2716,137 @@
       "transcriptionWarning": "선지 전사는 원본과 최종 대조가 필요합니다. 아래 원본 이미지에서 문자·숫자를 확인할 수 있습니다."
     },
     {
+      "id": "park-murim:18-66",
+      "label": "18-66",
+      "year": 18,
+      "number": 66,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "다음 중 인간에게 암을 유발하는 원인 유전자와 암종의 조합이 올바른 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "HTLV-1 – Acute myeloid leukemia"
+        },
+        {
+          "number": 2,
+          "text": "HPV 16, 18 – Colorectal cancer"
+        },
+        {
+          "number": 3,
+          "text": "EBV – Nasopharyngeal cancer"
+        },
+        {
+          "number": 4,
+          "text": "Hepatitis A virus – Hepatocellular carcinoma"
+        },
+        {
+          "number": 5,
+          "text": "Adenovirus – cervical cancer"
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 11,
+        "image": "assets/questions/park-murim/18-66.webp"
+      },
+      "figureRequired": false,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "choice",
+      "answer": 3,
+      "answerSource": "lecture_double_checked",
+      "explanation": "강의안의 인체 발암 바이러스 표에 EBV와 nasopharyngeal carcinoma가 같은 범주로 명시됩니다. HTLV-1은 성인 T세포 백혈병/림프종, HBV/HCV는 간세포암과 연관됩니다.",
+      "evidence": [
+        {
+          "lectureId": "genetics",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
+          "page": 14,
+          "image": "assets/evidence/park-murim/genetics-p014.webp",
+          "quote": "EBV : Burkitt’s lymphoma"
+        }
+      ],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_lecture_original_page_content_verified",
+        "check2": "all_options_reconciled_with_original_source_and_lecture",
+        "verifiedAgainst": "uploaded_park_murim_2025_lectures",
+        "decisionReason": "원문 주제와 정답 선지를 독립 대조함"
+      },
+      "notes": "",
+      "showOriginalByDefault": false,
+      "transcriptionWarning": ""
+    },
+    {
+      "id": "park-murim:18-70",
+      "label": "18-70",
+      "year": 18,
+      "number": 70,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "다음 중 cancer immune escape mechanism의 작용 기전과 이를 억제하는 약제의 올바른 조합을 고르시오.",
+      "choices": [
+        {
+          "number": 1,
+          "text": "Immunosuppressive immune cells – HDAC inhibitor"
+        },
+        {
+          "number": 2,
+          "text": "Warburg effect – cancer metabolism modulator"
+        },
+        {
+          "number": 3,
+          "text": "T cell inactivation – Immune checkpoint inhibitor"
+        },
+        {
+          "number": 4,
+          "text": "Oncogene addiction – Receptor tyrosine kinase inhibitor"
+        },
+        {
+          "number": 5,
+          "text": "Elaboration of immunosuppressive cytokines – PARP inhibitor"
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 11,
+        "image": "assets/questions/park-murim/18-70.webp"
+      },
+      "figureRequired": false,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "choice",
+      "answer": 3,
+      "answerSource": "lecture_double_checked",
+      "explanation": "암의 면역회피에서 T 세포 비활성화가 일어나고, 면역관문억제제는 CTLA4·PD-1·PD-L1 경로를 차단해 T 세포 기능을 회복시킵니다.",
+      "evidence": [
+        {
+          "lectureId": "genetics",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
+          "page": 39,
+          "image": "assets/evidence/park-murim/genetics-p039.webp",
+          "quote": "inactivate T cell"
+        },
+        {
+          "lectureId": "genetics",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
+          "page": 40,
+          "image": "assets/evidence/park-murim/genetics-p040.webp",
+          "quote": "Immune checkpoint inhibitors"
+        }
+      ],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_lecture_original_page_content_verified",
+        "check2": "all_options_reconciled_with_original_source_and_lecture",
+        "verifiedAgainst": "uploaded_park_murim_2025_lectures",
+        "decisionReason": "원문 주제와 정답 선지를 독립 대조함"
+      },
+      "notes": "",
+      "showOriginalByDefault": false,
+      "transcriptionWarning": ""
+    },
+    {
       "id": "park-murim:18-73",
       "label": "18-73",
       "year": 18,
@@ -1790,7 +2856,7 @@
       "prompt": "Loeb’s Rules of Therapeutics의 제4원칙을 서술하시오.",
       "choices": [],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 9,
         "image": "assets/questions/park-murim/18-73.webp"
       },
@@ -1801,7 +2867,7 @@
       "evidence": [
         {
           "lectureId": "biology",
-          "file": "25.10.23_혈액과종양_박무림pf_암생물학+종양수반증후군(5).pdf",
+          "file": "25.10.23_혈액과종양_박무림pf_암생물학+종양수반증후군(6).pdf",
           "page": 4,
           "image": "assets/evidence/park-murim/biology-p004.webp",
           "quote": "Never make the treatment worse"
@@ -1852,7 +2918,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 6,
         "image": "assets/questions/park-murim/18-74.webp"
       },
@@ -1873,7 +2939,7 @@
       "candidateEvidence": [
         {
           "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
           "page": 33,
           "image": "assets/evidence/park-murim/epidemiology-p033.webp",
           "status": "not_adopted"
@@ -1913,7 +2979,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 10,
         "image": "assets/questions/park-murim/18-79.webp"
       },
@@ -1924,7 +2990,7 @@
       "evidence": [
         {
           "lectureId": "palliative",
-          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(5).pdf",
+          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(6).pdf",
           "page": 15,
           "image": "assets/evidence/park-murim/palliative-p015.webp",
           "quote": "Meperidine"
@@ -1975,7 +3041,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 2,
         "image": "assets/questions/park-murim/18-80.webp"
       },
@@ -1986,7 +3052,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 16,
           "image": "assets/evidence/park-murim/drugs-p016.webp",
           "quote": "VEGFR2"
@@ -2037,7 +3103,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 9,
         "image": "assets/questions/park-murim/19-6.webp"
       },
@@ -2048,7 +3114,7 @@
       "evidence": [
         {
           "lectureId": "biology",
-          "file": "25.10.23_혈액과종양_박무림pf_암생물학+종양수반증후군(5).pdf",
+          "file": "25.10.23_혈액과종양_박무림pf_암생물학+종양수반증후군(6).pdf",
           "page": 9,
           "image": "assets/evidence/park-murim/biology-p009.webp",
           "quote": "pamidronate"
@@ -2099,7 +3165,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 10,
         "image": "assets/questions/park-murim/19-7.webp"
       },
@@ -2110,7 +3176,7 @@
       "evidence": [
         {
           "lectureId": "palliative",
-          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(5).pdf",
+          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(6).pdf",
           "page": 12,
           "image": "assets/evidence/park-murim/palliative-p012.webp",
           "quote": "속효성 약물 사용한다"
@@ -2161,7 +3227,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 7,
         "image": "assets/questions/park-murim/19-8.webp"
       },
@@ -2172,7 +3238,7 @@
       "evidence": [
         {
           "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
           "page": 36,
           "image": "assets/evidence/park-murim/epidemiology-p036.webp",
           "quote": "no benefit"
@@ -2223,7 +3289,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 6,
         "image": "assets/questions/park-murim/19-10.webp"
       },
@@ -2243,7 +3309,7 @@
       "candidateEvidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 48,
           "image": "assets/evidence/park-murim/drugs-p048.webp",
           "status": "not_adopted"
@@ -2283,7 +3349,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 3,
         "image": "assets/questions/park-murim/19-11.webp"
       },
@@ -2303,7 +3369,7 @@
       "candidateEvidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 5,
           "image": "assets/evidence/park-murim/drugs-p005.webp",
           "status": "not_adopted"
@@ -2343,7 +3409,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 5,
         "image": "assets/questions/park-murim/19-12.webp"
       },
@@ -2354,7 +3420,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 54,
           "image": "assets/evidence/park-murim/drugs-p054.webp",
           "quote": "Vesicant"
@@ -2405,7 +3471,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 6,
         "image": "assets/questions/park-murim/19-13.webp"
       },
@@ -2416,7 +3482,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 19,
           "image": "assets/evidence/park-murim/drugs-p019.webp",
           "quote": "BRAF mt+"
@@ -2467,7 +3533,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 8,
         "image": "assets/questions/park-murim/19-14.webp"
       },
@@ -2487,7 +3553,7 @@
       "candidateEvidence": [
         {
           "lectureId": "principles",
-          "file": "25.10.21_혈액과종양_박무림pf_항암치료총론(5).pdf",
+          "file": "25.10.21_혈액과종양_박무림pf_항암치료총론(6).pdf",
           "page": 18,
           "image": "assets/evidence/park-murim/principles-p018.webp",
           "status": "not_adopted"
@@ -2527,7 +3593,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 10,
         "image": "assets/questions/park-murim/19-46.webp"
       },
@@ -2538,7 +3604,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 41,
           "image": "assets/evidence/park-murim/drugs-p041.webp",
           "quote": "MicroSatellite Instability"
@@ -2589,7 +3655,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 2,
         "image": "assets/questions/park-murim/19-47.webp"
       },
@@ -2600,7 +3666,7 @@
       "evidence": [
         {
           "lectureId": "genetics",
-          "file": "25.10.31_혈액과종양_박무림pf_암유전학(5).pdf",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
           "page": 25,
           "image": "assets/evidence/park-murim/genetics-p025.webp",
           "quote": "All-trans Retinoid Acid"
@@ -2651,7 +3717,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 5,
         "image": "assets/questions/park-murim/19-48.webp"
       },
@@ -2662,7 +3728,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 39,
           "image": "assets/evidence/park-murim/drugs-p039.webp",
           "quote": "Tisagenlecleucel"
@@ -2713,7 +3779,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 3,
         "image": "assets/questions/park-murim/19-49.webp"
       },
@@ -2733,7 +3799,7 @@
       "candidateEvidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 14,
           "image": "assets/evidence/park-murim/drugs-p014.webp",
           "status": "not_adopted"
@@ -2743,6 +3809,180 @@
       "transcriptionWarning": "선지 전사는 원본과 최종 대조가 필요합니다. 아래 원본 이미지에서 문자·숫자를 확인할 수 있습니다."
     },
     {
+      "id": "park-murim:19-주1",
+      "label": "19-주1",
+      "year": 19,
+      "number": 9001,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "Loeb’s Rules of Therapeutics 제4원칙을 서술하시오.",
+      "choices": [],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 9,
+        "image": "assets/questions/park-murim/19-주1.webp"
+      },
+      "figureRequired": false,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "short",
+      "answer": "Never make the treatment worse than the disease.",
+      "answerSource": "lecture_double_checked",
+      "explanation": "Loeb 제4원칙의 원문은 “Never make the treatment worse than the disease”입니다.",
+      "evidence": [
+        {
+          "lectureId": "biology",
+          "file": "25.10.23_혈액과종양_박무림pf_암생물학+종양수반증후군(6).pdf",
+          "page": 4,
+          "image": "assets/evidence/park-murim/biology-p004.webp",
+          "quote": "Never make the treatment worse"
+        }
+      ],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_lecture_original_page_content_verified",
+        "check2": "all_options_reconciled_with_original_source_and_lecture",
+        "verifiedAgainst": "uploaded_park_murim_2025_lectures",
+        "decisionReason": "원문 주제와 정답 선지를 독립 대조함"
+      },
+      "notes": "",
+      "showOriginalByDefault": false,
+      "transcriptionWarning": ""
+    },
+    {
+      "id": "park-murim:20-3",
+      "label": "20-3",
+      "year": 20,
+      "number": 3,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "좌측 쇄골 상부의 덩이가 발견되어 세침 검사 결과 metastatic carcinoma로 나왔다. 원발암의 위치로 적당하지 않은 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "위"
+        },
+        {
+          "number": 2,
+          "text": "폐"
+        },
+        {
+          "number": 3,
+          "text": "췌장"
+        },
+        {
+          "number": 4,
+          "text": "신장"
+        },
+        {
+          "number": 5,
+          "text": "신경수초"
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 13,
+        "image": "assets/questions/park-murim/20-3.webp"
+      },
+      "figureRequired": false,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "choice",
+      "answer": null,
+      "answerSource": "pending_user_decision",
+      "explanation": "",
+      "evidence": [],
+      "candidateEvidence": [
+        {
+          "lectureId": "cup",
+          "file": "25.11.06_혈액과종양_박무림pf_원발병소불명암(6).pdf",
+          "page": 2,
+          "image": "assets/evidence/park-murim/cup-p002.webp",
+          "quote": "metastatic",
+          "status": "not_adopted"
+        },
+        {
+          "lectureId": "principles",
+          "file": "25.10.21_혈액과종양_박무림pf_항암치료총론(6).pdf",
+          "page": 3,
+          "image": "assets/evidence/park-murim/principles-p003.webp",
+          "quote": "Carcinoma",
+          "status": "not_adopted"
+        }
+      ],
+      "validation": {
+        "stage": "review_required",
+        "check1": "relevant_original_page_verified_not_direct_proof",
+        "check2": "unique_answer_not_confirmed",
+        "verifiedAgainst": "not_adopted",
+        "decisionReason": "기출 해설에서는 ⑤ 신경수초를 의도했으나, 업로드 강의안에 해당 보기의 배제를 직접적으로 입증하는 구절이 없어 정답 검토 필요로 남겼습니다."
+      },
+      "notes": "기출 해설에서는 ⑤ 신경수초를 의도했으나, 업로드 강의안에 해당 보기의 배제를 직접적으로 입증하는 구절이 없어 정답 검토 필요로 남겼습니다.",
+      "showOriginalByDefault": false,
+      "transcriptionWarning": "기출 해설에서는 ⑤ 신경수초를 의도했으나, 업로드 강의안에 해당 보기의 배제를 직접적으로 입증하는 구절이 없어 정답 검토 필요로 남겼습니다."
+    },
+    {
+      "id": "park-murim:20-4",
+      "label": "20-4",
+      "year": 20,
+      "number": 4,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "원발 병소 불명암 중 좋은 예후를 보이는 경우에 해당하지 않는 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "Nonserous papillary adenocarcinoma with malignant ascites"
+        },
+        {
+          "number": 2,
+          "text": "Poorly differentiated carcinoma with midline adenopathy"
+        },
+        {
+          "number": 3,
+          "text": "Women with isolated axillary adenopathy"
+        },
+        {
+          "number": 4,
+          "text": "Solitary metastatic site"
+        },
+        {
+          "number": 5,
+          "text": "Men with blastic skeletal metastases and elevated PSA"
+        }
+      ],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 13,
+        "image": "assets/questions/park-murim/20-4.webp"
+      },
+      "figureRequired": false,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "choice",
+      "answer": 1,
+      "answerSource": "lecture_double_checked",
+      "explanation": "강의안의 favorable CUP subset은 여성의 복막암양 전이에서 papillary **serous** carcinoma를 제시합니다. ①의 nonserous는 이 범주와 일치하지 않습니다.",
+      "evidence": [
+        {
+          "lectureId": "cup",
+          "file": "25.11.06_혈액과종양_박무림pf_원발병소불명암(6).pdf",
+          "page": 7,
+          "image": "assets/evidence/park-murim/cup-p007.webp",
+          "quote": "Primary peritoneal papillary serous ca"
+        }
+      ],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_lecture_original_page_content_verified",
+        "check2": "all_options_reconciled_with_original_source_and_lecture",
+        "verifiedAgainst": "uploaded_park_murim_2025_lectures",
+        "decisionReason": "원문 주제와 정답 선지를 독립 대조함"
+      },
+      "notes": "",
+      "showOriginalByDefault": false,
+      "transcriptionWarning": ""
+    },
+    {
       "id": "park-murim:20-37",
       "label": "20-37",
       "year": 20,
@@ -2750,42 +3990,58 @@
       "subject": "hematology-1",
       "professor": "park-murim",
       "prompt": "다음 중 우리나라 폐경 이후 여성에서 aging에 따라 발생율이 지속\n적으로 증가하고 있는 암 중 사망률이 가장 높은 암은?",
-      "choices": [],
+      "choices": [
+        {
+          "number": 1,
+          "text": "유방암"
+        },
+        {
+          "number": 2,
+          "text": "대장암"
+        },
+        {
+          "number": 3,
+          "text": "폐암"
+        },
+        {
+          "number": 4,
+          "text": "간암"
+        },
+        {
+          "number": 5,
+          "text": "위암"
+        }
+      ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 9,
         "image": "assets/questions/park-murim/20-37.webp"
       },
       "figureRequired": true,
       "transcriptionStatus": "visual_checked",
-      "answer": null,
-      "explanation": "",
+      "answer": 3,
+      "explanation": "폐암은 해당 문항의 선택지 중 암 사망률이 가장 높은 암으로 설명됩니다. 이 정답 번호는 사용자 확정으로 표시합니다.",
       "evidence": [],
       "validation": {
-        "stage": "review_required",
-        "check1": "not_sufficient_or_conflicting",
-        "check2": "rejected"
+        "stage": "user_confirmed",
+        "check1": "user_specified_all_five_choices",
+        "check2": "not_presented_as_independently_double_verified",
+        "verifiedAgainst": "user_request_2026-11-11"
       },
-      "notes": "원본 문항의 선택지 판독이 완전하지 않아 임의의 정답을 지정하지 않았습니다.",
+      "notes": "사용자 지정 선택지 ① 유방암 ② 대장암 ③ 폐암 ④ 간암 ⑤ 위암 및 정답 ③. 강의안 근거의 채택 판정과 구분합니다.",
       "type": "choice",
-      "showOriginalByDefault": true,
+      "showOriginalByDefault": false,
       "candidateEvidence": [
         {
           "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
-          "page": 3,
-          "image": "assets/evidence/park-murim/epidemiology-p003.webp",
-          "status": "not_adopted"
-        },
-        {
-          "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
           "page": 8,
           "image": "assets/evidence/park-murim/epidemiology-p008.webp",
+          "quote": "폐암이 압도적 1순위",
           "status": "not_adopted"
         }
       ],
-      "answerSource": "pending_user_decision",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": ""
     },
     {
@@ -2819,7 +4075,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 7,
         "image": "assets/questions/park-murim/20-38.webp"
       },
@@ -2830,7 +4086,7 @@
       "evidence": [
         {
           "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
           "page": 35,
           "image": "assets/evidence/park-murim/epidemiology-p035.webp",
           "quote": "Low-dose CT"
@@ -2881,7 +4137,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 7,
         "image": "assets/questions/park-murim/20-39.webp"
       },
@@ -2892,7 +4148,7 @@
       "evidence": [
         {
           "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
           "page": 21,
           "image": "assets/evidence/park-murim/epidemiology-p021.webp",
           "quote": "carotene"
@@ -2943,7 +4199,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 6,
         "image": "assets/questions/park-murim/20-40.webp"
       },
@@ -2954,7 +4210,7 @@
       "evidence": [
         {
           "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
           "page": 33,
           "image": "assets/evidence/park-murim/epidemiology-p033.webp",
           "quote": "AFP"
@@ -3005,7 +4261,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 8,
         "image": "assets/questions/park-murim/20-41.webp"
       },
@@ -3016,7 +4272,7 @@
       "evidence": [
         {
           "lectureId": "principles",
-          "file": "25.10.21_혈액과종양_박무림pf_항암치료총론(5).pdf",
+          "file": "25.10.21_혈액과종양_박무림pf_항암치료총론(6).pdf",
           "page": 18,
           "image": "assets/evidence/park-murim/principles-p018.webp",
           "quote": "Target lesions"
@@ -3067,7 +4323,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 9,
         "image": "assets/questions/park-murim/20-42.webp"
       },
@@ -3078,7 +4334,7 @@
       "evidence": [
         {
           "lectureId": "biology",
-          "file": "25.10.23_혈액과종양_박무림pf_암생물학+종양수반증후군(5).pdf",
+          "file": "25.10.23_혈액과종양_박무림pf_암생물학+종양수반증후군(6).pdf",
           "page": 9,
           "image": "assets/evidence/park-murim/biology-p009.webp",
           "quote": "bisphosphonate"
@@ -3129,7 +4385,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 4,
         "image": "assets/questions/park-murim/20-43.webp"
       },
@@ -3140,7 +4396,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 40,
           "image": "assets/evidence/park-murim/drugs-p040.webp",
           "quote": "LAG3"
@@ -3191,7 +4447,7 @@
         }
       ],
       "source": {
-        "name": "무림고수 20-17 SJ(5).pdf",
+        "name": "무림고수 20-17 SJ(7).pdf",
         "page": 2,
         "image": "assets/questions/park-murim/20-44.webp"
       },
@@ -3202,7 +4458,7 @@
       "evidence": [
         {
           "lectureId": "genetics",
-          "file": "25.10.31_혈액과종양_박무림pf_암유전학(5).pdf",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
           "page": 10,
           "image": "assets/evidence/park-murim/genetics-p010.webp",
           "quote": "BRCA1/2"
@@ -3220,6 +4476,88 @@
       "showOriginalByDefault": true,
       "candidateEvidence": [],
       "answerSource": "lecture_double_checked",
+      "transcriptionWarning": ""
+    },
+    {
+      "id": "park-murim:20-주1",
+      "label": "20-주1",
+      "year": 20,
+      "number": 9001,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "ECOG performance score 3점을 설명하시오.",
+      "choices": [],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 8,
+        "image": "assets/questions/park-murim/20-주1.webp"
+      },
+      "figureRequired": false,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "short",
+      "answer": "제한적으로 자가돌봄이 가능하며 깨어 있는 시간의 50% 이상을 침대나 의자에서 보내는 상태",
+      "answerSource": "lecture_double_checked",
+      "explanation": "ECOG PS grade 3은 제한적 자기돌봄만 가능하고 깨어 있는 시간의 50% 이상을 침상이나 의자에서 보내는 상태입니다.",
+      "evidence": [
+        {
+          "lectureId": "principles",
+          "file": "25.10.21_혈액과종양_박무림pf_항암치료총론(6).pdf",
+          "page": 7,
+          "image": "assets/evidence/park-murim/principles-p007.webp",
+          "quote": "3: capable of only limited self-care"
+        }
+      ],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_lecture_original_page_content_verified",
+        "check2": "all_options_reconciled_with_original_source_and_lecture",
+        "verifiedAgainst": "uploaded_park_murim_2025_lectures",
+        "decisionReason": "원문 주제와 정답 선지를 독립 대조함"
+      },
+      "notes": "",
+      "showOriginalByDefault": false,
+      "transcriptionWarning": ""
+    },
+    {
+      "id": "park-murim:20-주2",
+      "label": "20-주2",
+      "year": 20,
+      "number": 9002,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "prompt": "Loeb’s Rules of Therapeutics 제4원칙을 서술하시오.",
+      "choices": [],
+      "source": {
+        "name": "무림고수 20-17 SJ(7).pdf",
+        "page": 9,
+        "image": "assets/questions/park-murim/20-주2.webp"
+      },
+      "figureRequired": false,
+      "transcriptionStatus": "visually_checked_against_source_page",
+      "type": "short",
+      "answer": "Never make the treatment worse than the disease.",
+      "answerSource": "lecture_double_checked",
+      "explanation": "Loeb 제4원칙의 원문은 “Never make the treatment worse than the disease”입니다.",
+      "evidence": [
+        {
+          "lectureId": "biology",
+          "file": "25.10.23_혈액과종양_박무림pf_암생물학+종양수반증후군(6).pdf",
+          "page": 4,
+          "image": "assets/evidence/park-murim/biology-p004.webp",
+          "quote": "Never make the treatment worse"
+        }
+      ],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_lecture_original_page_content_verified",
+        "check2": "all_options_reconciled_with_original_source_and_lecture",
+        "verifiedAgainst": "uploaded_park_murim_2025_lectures",
+        "decisionReason": "원문 주제와 정답 선지를 독립 대조함"
+      },
+      "notes": "",
+      "showOriginalByDefault": false,
       "transcriptionWarning": ""
     },
     {
@@ -3273,7 +4611,7 @@
       "candidateEvidence": [
         {
           "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
           "page": 2,
           "image": "assets/evidence/park-murim/epidemiology-p002.webp",
           "status": "not_adopted"
@@ -3324,7 +4662,7 @@
       "evidence": [
         {
           "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
           "page": 22,
           "image": "assets/evidence/park-murim/epidemiology-p022.webp",
           "quote": "PIK3CA"
@@ -3386,7 +4724,7 @@
       "evidence": [
         {
           "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
           "page": 35,
           "image": "assets/evidence/park-murim/epidemiology-p035.webp",
           "quote": "mammography"
@@ -3448,7 +4786,7 @@
       "evidence": [
         {
           "lectureId": "epidemiology",
-          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(6).pdf",
           "page": 33,
           "image": "assets/evidence/park-murim/epidemiology-p033.webp",
           "quote": "AFP"
@@ -3505,27 +4843,28 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_transcribed_needs_final_review",
-      "answer": null,
+      "answer": 2,
       "explanation": "",
       "evidence": [],
       "validation": {
-        "stage": "review_required",
-        "check1": "not_sufficient_or_conflicting",
-        "check2": "rejected"
+        "stage": "user_confirmed",
+        "check1": "user_designated_answer",
+        "check2": "lecture_double_verification_not_adopted",
+        "verifiedAgainst": "user_request_2026-11-11"
       },
-      "notes": "강의안은 직경 합을 기준으로 하나, 선지 ③·④는 volume으로 기술되어 있어 원문 그대로 평가하면 복수의 잘못된 설명이 됩니다.",
+      "notes": "사용자 지정 정답: 2번. 이전 강의안 대조 결과와 별개로 사용자 확정 기준으로 채점합니다. 강의안은 직경 합을 기준으로 하나, 선지 ③·④는 volume으로 기술되어 있어 원문 그대로 평가하면 복수의 잘못된 설명이 됩니다.",
       "type": "choice",
       "showOriginalByDefault": false,
       "candidateEvidence": [
         {
           "lectureId": "principles",
-          "file": "25.10.21_혈액과종양_박무림pf_항암치료총론(5).pdf",
+          "file": "25.10.21_혈액과종양_박무림pf_항암치료총론(6).pdf",
           "page": 18,
           "image": "assets/evidence/park-murim/principles-p018.webp",
           "status": "not_adopted"
         }
       ],
-      "answerSource": "pending_user_decision",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "선지 전사는 원본과 최종 대조가 필요합니다. 아래 원본 이미지에서 문자·숫자를 확인할 수 있습니다."
     },
     {
@@ -3570,7 +4909,7 @@
       "evidence": [
         {
           "lectureId": "biology",
-          "file": "25.10.23_혈액과종양_박무림pf_암생물학+종양수반증후군(5).pdf",
+          "file": "25.10.23_혈액과종양_박무림pf_암생물학+종양수반증후군(6).pdf",
           "page": 9,
           "image": "assets/evidence/park-murim/biology-p009.webp",
           "quote": "saline hydration"
@@ -3632,14 +4971,14 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 42,
           "image": "assets/evidence/park-murim/drugs-p042.webp",
           "quote": "PD-L1 expression"
         },
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 41,
           "image": "assets/evidence/park-murim/drugs-p041.webp",
           "quote": "MSI/dMMR 확인"
@@ -3701,7 +5040,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 40,
           "image": "assets/evidence/park-murim/drugs-p040.webp",
           "quote": "LAG3"
@@ -3763,7 +5102,7 @@
       "evidence": [
         {
           "lectureId": "genetics",
-          "file": "25.10.31_혈액과종양_박무림pf_암유전학(5).pdf",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
           "page": 19,
           "image": "assets/evidence/park-murim/genetics-p019.webp",
           "quote": "Mismatch repair genes"
@@ -3825,7 +5164,7 @@
       "evidence": [
         {
           "lectureId": "genetics",
-          "file": "25.10.31_혈액과종양_박무림pf_암유전학(5).pdf",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
           "page": 33,
           "image": "assets/evidence/park-murim/genetics-p033.webp",
           "quote": "pressure"
@@ -3882,27 +5221,28 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_transcribed_needs_final_review",
-      "answer": null,
+      "answer": 3,
       "explanation": "",
       "evidence": [],
       "validation": {
-        "stage": "review_required",
-        "check1": "not_sufficient_or_conflicting",
-        "check2": "rejected"
+        "stage": "user_confirmed",
+        "check1": "user_designated_answer",
+        "check2": "lecture_double_verification_not_adopted",
+        "verifiedAgainst": "user_request_2026-11-11"
       },
-      "notes": "강의안은 텔로미어 및 텔로머레이스를 기술하지만 임상 개발 실패 여부를 직접 입증하지 않아 보류합니다.",
+      "notes": "사용자 지정 정답: 3번. 이전 강의안 대조 결과와 별개로 사용자 확정 기준으로 채점합니다. 강의안은 텔로미어 및 텔로머레이스를 기술하지만 임상 개발 실패 여부를 직접 입증하지 않아 보류합니다.",
       "type": "choice",
       "showOriginalByDefault": false,
       "candidateEvidence": [
         {
           "lectureId": "genetics",
-          "file": "25.10.31_혈액과종양_박무림pf_암유전학(5).pdf",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
           "page": 27,
           "image": "assets/evidence/park-murim/genetics-p027.webp",
           "status": "not_adopted"
         }
       ],
-      "answerSource": "pending_user_decision",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "선지 전사는 원본과 최종 대조가 필요합니다. 아래 원본 이미지에서 문자·숫자를 확인할 수 있습니다."
     },
     {
@@ -3947,7 +5287,7 @@
       "evidence": [
         {
           "lectureId": "genetics",
-          "file": "25.10.31_혈액과종양_박무림pf_암유전학(5).pdf",
+          "file": "25.10.31_혈액과종양_박무림pf_암유전학(6).pdf",
           "page": 39,
           "image": "assets/evidence/park-murim/genetics-p039.webp",
           "quote": "down regulate MHC"
@@ -4009,7 +5349,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 55,
           "image": "assets/evidence/park-murim/drugs-p055.webp",
           "quote": "Trastuzumab"
@@ -4066,27 +5406,28 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_transcribed_needs_final_review",
-      "answer": null,
+      "answer": 2,
       "explanation": "",
       "evidence": [],
       "validation": {
-        "stage": "review_required",
-        "check1": "not_sufficient_or_conflicting",
-        "check2": "rejected"
+        "stage": "user_confirmed",
+        "check1": "user_designated_answer",
+        "check2": "lecture_double_verification_not_adopted",
+        "verifiedAgainst": "user_request_2026-11-11"
       },
-      "notes": "현재 제공된 2025년 강의안은 NTRK fusion도 유효한 암 표적으로 설명합니다. 예전 기출의 의도된 오답이 현재 강의안 근거와 충돌합니다.",
+      "notes": "사용자 지정 정답: 2번. 이전 강의안 대조 결과와 별개로 사용자 확정 기준으로 채점합니다. 현재 제공된 2025년 강의안은 NTRK fusion도 유효한 암 표적으로 설명합니다. 예전 기출의 의도된 오답이 현재 강의안 근거와 충돌합니다.",
       "type": "choice",
       "showOriginalByDefault": false,
       "candidateEvidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 18,
           "image": "assets/evidence/park-murim/drugs-p018.webp",
           "status": "not_adopted"
         }
       ],
-      "answerSource": "pending_user_decision",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "선지 전사는 원본과 최종 대조가 필요합니다. 아래 원본 이미지에서 문자·숫자를 확인할 수 있습니다."
     },
     {
@@ -4131,7 +5472,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 43,
           "image": "assets/evidence/park-murim/drugs-p043.webp",
           "quote": "HCC"
@@ -4193,14 +5534,14 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 37,
           "image": "assets/evidence/park-murim/drugs-p037.webp",
           "quote": "Trastuzumab deruxtecan"
         },
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 14,
           "image": "assets/evidence/park-murim/drugs-p014.webp",
           "quote": "8개 payload와 cleavable linker, bystander effect 확인"
@@ -4262,7 +5603,7 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 21,
           "image": "assets/evidence/park-murim/drugs-p021.webp",
           "quote": "Ibrutinib"
@@ -4324,21 +5665,21 @@
       "evidence": [
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 27,
           "image": "assets/evidence/park-murim/drugs-p027.webp",
           "quote": "NFkB"
         },
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 34,
           "image": "assets/evidence/park-murim/drugs-p034.webp",
           "quote": "직접 표적항체 목록 비교"
         },
         {
           "lectureId": "drugs",
-          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(5).pdf",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
           "page": 30,
           "image": "assets/evidence/park-murim/drugs-p030.webp",
           "quote": "nuclear export 억제제 목록 비교"
@@ -4400,7 +5741,7 @@
       "evidence": [
         {
           "lectureId": "palliative",
-          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(5).pdf",
+          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(6).pdf",
           "page": 16,
           "image": "assets/evidence/park-murim/palliative-p016.webp",
           "quote": "anticonvulsant"
@@ -4462,7 +5803,7 @@
       "evidence": [
         {
           "lectureId": "palliative",
-          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(5).pdf",
+          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(6).pdf",
           "page": 17,
           "image": "assets/evidence/park-murim/palliative-p017.webp",
           "quote": "Constipation"
@@ -4480,58 +5821,6 @@
       "showOriginalByDefault": false,
       "candidateEvidence": [],
       "answerSource": "lecture_double_checked",
-      "transcriptionWarning": "선지 전사는 원본과 최종 대조가 필요합니다. 아래 원본 이미지에서 문자·숫자를 확인할 수 있습니다."
-    },
-    {
-      "id": "park-murim:21-59",
-      "label": "21-59",
-      "year": 21,
-      "number": 59,
-      "subject": "hematology-1",
-      "professor": "park-murim",
-      "prompt": "방사선치료를 받는 환자의 수는 지속적으로 증가하고 있다. 최근 발표된 2019년 우리나라 통계에서 방사선치료를 받는 환자의 수가 많은 암을 순서대로 나열한 답가지는?",
-      "choices": [
-        {
-          "number": 1,
-          "text": "폐암, 유방암, 대장직장암, 간암, 자궁경부암, 전립선암"
-        },
-        {
-          "number": 2,
-          "text": "유방암, 폐암, 대장직장암, 간암, 전립선암, 자궁경부암"
-        },
-        {
-          "number": 3,
-          "text": "유방암, 전립선암, 폐암, 자궁경부암, 간암, 대장직장암"
-        },
-        {
-          "number": 4,
-          "text": "위암, 대장직장암, 폐암, 갑상선암, 유방암, 간암"
-        },
-        {
-          "number": 5,
-          "text": "유방암, 폐암, 전립선암, 대장직장암, 간암, 자궁경부암"
-        }
-      ],
-      "source": {
-        "name": "21 무림고수 SJ(5).pdf",
-        "page": 3,
-        "image": "assets/questions/park-murim/21-59.webp"
-      },
-      "figureRequired": false,
-      "transcriptionStatus": "visually_transcribed_needs_final_review",
-      "answer": null,
-      "explanation": "",
-      "evidence": [],
-      "validation": {
-        "stage": "review_required",
-        "check1": "not_sufficient_or_conflicting",
-        "check2": "rejected"
-      },
-      "notes": "제공 강의안에서 2019년 국내 방사선치료 암종별 환자 순위의 직접 통계를 확인하지 못했습니다.",
-      "type": "choice",
-      "showOriginalByDefault": false,
-      "candidateEvidence": [],
-      "answerSource": "pending_user_decision",
       "transcriptionWarning": "선지 전사는 원본과 최종 대조가 필요합니다. 아래 원본 이미지에서 문자·숫자를 확인할 수 있습니다."
     }
   ]
