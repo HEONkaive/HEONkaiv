@@ -576,7 +576,7 @@
             <nav class="quick-nav" aria-label="빠른 메뉴">
               <button data-action="nav-quiz" class="nav-tab ${view==='quiz'?'active':''}">문제 풀이</button>
               <button data-action="home" class="nav-tab ${view==='home'?'active':''}">문제집</button>
-              <button data-action="nav-wrong" class="nav-tab ${view==='review'&&reviewFilter==='wrong'?'active':''}">오답 노트</button><button data-action="print-collection" data-kind="wrong" class="nav-tab print-nav" title="틀린 문제를 모아 PDF로 저장">오답 PDF</button><button data-action="print-collection" data-kind="bookmarks" class="nav-tab print-nav" title="북마크를 모아 PDF로 저장">북마크 PDF</button><a class="nav-tab report-nav" href="https://tally.so/r/6DjZg5" target="_blank" rel="noopener noreferrer" title="문항 번호와 설명, 10MB 이하 이미지 파일을 첨부해 오류를 제보할 수 있어요">✎ 오류 제보하기</a>
+              <button data-action="nav-wrong" class="nav-tab ${view==='review'&&reviewFilter==='wrong'?'active':''}">오답 노트</button><button data-action="print-collection" data-kind="wrong" class="nav-tab print-nav" title="틀린 문제를 모아 PDF로 저장">오답 PDF</button><button data-action="print-collection" data-kind="bookmarks" class="nav-tab print-nav" title="북마크를 모아 PDF로 저장">북마크 PDF</button><a class="nav-tab report-nav" href="https://tally.so/r/6DjZg5" target="_blank" rel="noopener noreferrer" data-action="report-issue" title="문항 번호와 설명, 10MB 이하 이미지 파일을 첨부해 오류를 제보할 수 있어요">✎ 오류 제보하기</a>
               <button data-action="nav-stats" class="nav-tab ${view==='review'&&reviewFilter!=='wrong'?'active':''}">학습 통계</button>
             </nav>
           </div>
@@ -691,7 +691,7 @@
     const answer=effectiveAnswer(q);const answers=answer==null?[]:Array.isArray(answer)?answer:[answer];
     const maxSelection=Number(q.maxSelections)||1;
     return `<section class="exam-panel" data-question-id="${esc(q.id)}"><div class="question-header"><div><div class="question-id">${studyMode==='year-exam'?esc(yearExamTeacherLabel(q.professor))+' 교수님 · ':''}QUESTION / ${esc(q.label)}</div><h2 class="question-num">${esc(q.label)} <span class="question-index">${curr+1} / ${scope.length}</span></h2><div class="question-meta"><span class="pill ${q.isPrediction?'blue':q.validation.stage==='accepted'?'ok':['user_confirmed','highlight_reviewed','exam_answer_key'].includes(q.validation.stage)?'ok':'warn'}">${q.isPrediction?'✦ AI 예상문제 · 강의안 기반':q.validation.stage==='accepted'?'✓ 강의안 이중 검증':q.validation.stage==='exam_answer_key'?'● 22학번 공식 정답표 · 강의안 검증과 별개':q.validation.stage==='highlight_reviewed'?'✓ 정답 확인':q.validation.stage==='user_confirmed'?(q.validation?.supplemental2026?.status==='match'?'✓ 정답 확인 · 2026 강의안 비교':q.validation?.supplemental2026?.status==='conflict'?'✓ 정답 확인 · 강의안과 해설 비교 필요':'✓ 정답 확인'):'! 정답 검토 필요'}</span><span class="pill">${esc(yearName(q.year))}</span>${submission(q)?`<span class="pill blue">제출 완료</span>`:''}</div></div>
-      <div class="row"><button class="bookmark ${isBookmark(q)?'saved':''}" data-action="bookmark" data-id="${esc(q.id)}" title="북마크" aria-pressed="${isBookmark(q)}">${isBookmark(q)?'★':'☆'}</button><a class="icon-btn report-question-btn" href="https://tally.so/r/6DjZg5" target="_blank" rel="noopener noreferrer" title="문항 번호·설명·이미지를 첨부해 오류 제보" aria-label="${esc(q.label)}번 문제 오류 제보하기">✎ 제보하기</a><button class="icon-btn" data-action="toggle-evidence">${infoExpanded?'해설 접기':'해설 열기'}</button></div></div>
+      <div class="row"><button class="bookmark ${isBookmark(q)?'saved':''}" data-action="bookmark" data-id="${esc(q.id)}" title="북마크" aria-pressed="${isBookmark(q)}">${isBookmark(q)?'★':'☆'}</button><a class="icon-btn report-question-btn" href="https://tally.so/r/6DjZg5" target="_blank" rel="noopener noreferrer" data-action="report-issue" title="문항 번호·설명·이미지를 첨부해 오류 제보" aria-label="${esc(q.label)}번 문제 오류 제보하기">✎ 제보하기</a><button class="icon-btn" data-action="toggle-evidence">${infoExpanded?'해설 접기':'해설 열기'}</button></div></div>
       <div class="prompt">${esc(q.prompt||'원본 이미지에서 문제 본문을 확인하세요.')}</div>
       ${renderInlineQuestionFigures(q)}
       ${q.type==='short'?`<label class="muted" for="short-answer">주관식 답안</label><textarea class="short-input" id="short-answer" data-question="${esc(q.id)}" placeholder="답안을 입력하세요. 입력하는 즉시 저장됩니다.">${esc(typeof r.selected==='string'?r.selected:'')}</textarea>`:
@@ -740,7 +740,7 @@
     const answerText=answerArr.length?answerArr.map(n=>q.type==='short'?String(n):(circles[n-1]||n)).join(' · '):'미확정';
     const imgs=(q.figureImages||[]).filter(x=>x.src||x.image);
     const refs=q.validation?.stage==='accepted'||(q.validation?.supplemental2026?.status==='match')?q.evidence||[]:q.candidateEvidence||[];
-    return `<article class="review-detail" aria-live="polite"><div class="review-detail-head"><div><small>${esc(yearExamTeacherLabel(q.professor))} 교수님 · ${esc(q.label)}</small><h2>${studyMode==='year-exam'?(q.type==='short'?esc('주'+q.label.split('주').pop()):esc(String(q.number))):esc(q.label)}번 문제 <span class="review-status-badge ${status}">${symbol}</span></h2></div><a class="button secondary small" href="https://tally.so/r/6DjZg5" target="_blank" rel="noopener noreferrer" title="문항 번호·설명·이미지를 첨부할 수 있어요">✎ 오류 제보하기</a><button class="button secondary small" data-action="review-question" data-id="${esc(q.id)}">문제풀이로 ↗</button></div>
+    return `<article class="review-detail" aria-live="polite"><div class="review-detail-head"><div><small>${esc(yearExamTeacherLabel(q.professor))} 교수님 · ${esc(q.label)}</small><h2>${studyMode==='year-exam'?(q.type==='short'?esc('주'+q.label.split('주').pop()):esc(String(q.number))):esc(q.label)}번 문제 <span class="review-status-badge ${status}">${symbol}</span></h2></div><a class="button secondary small" href="https://tally.so/r/6DjZg5" target="_blank" rel="noopener noreferrer" data-action="report-issue" title="문항 번호·설명·이미지를 첨부할 수 있어요">✎ 오류 제보하기</a><button class="button secondary small" data-action="review-question" data-id="${esc(q.id)}">문제풀이로 ↗</button></div>
       <div class="review-detail-prompt">${esc(q.prompt)}</div>
       ${imgs.map(f=>`<img class="review-detail-figure" src="${esc(f.src||f.image)}" alt="${esc(f.alt||'문제 원본')}" loading="lazy" data-action="zoom" data-caption="${esc(f.caption||q.label+' 문제 원본')}"/>`).join('')}
       ${q.type==='short'?`<div class="review-readonly-choice"><b>내 답안</b> ${esc(chosen.join('')||'미제출')}</div>`:`<div class="review-readonly-choices">${(q.choices||[]).map(ch=>`<div class="review-readonly-choice ${answerArr.includes(ch.number)?'correct':chosen.includes(ch.number)?'wrong':''}"><span>${circles[ch.number-1]||ch.number}</span>${esc(ch.text)} ${answerArr.includes(ch.number)?' ✓ 정답':''}${chosen.includes(ch.number)?' · 내 선택':''}</div>`).join('')}</div>`}
@@ -863,6 +863,17 @@
     if(btn.matches('input[type=checkbox]'))return; // change listener handles checkbox
     const action=btn.dataset.action;
     switch(action) {
+      // The study and Review UIs are re-rendered dynamically. Delegate the
+      // click to Tally's JS API rather than relying on one-time button binding.
+      case 'report-issue': {
+        if (typeof window.Tally?.openPopup === 'function') {
+          e.preventDefault();
+          window.Tally.openPopup('6DjZg5', {autoClose:0});
+        }
+        // If Tally's external script is unavailable, the link opens the
+        // existing form in a new tab as an accessible fallback.
+        break;
+      }
       case 'print-collection':await exportCollection(btn.dataset.kind==='bookmarks'?'bookmarks':'wrong');break;
       case 'mobile-menu':mobileMenuOpen=!mobileMenuOpen;render();break;
       case 'home':view='home';mobileMenuOpen=false;render();window.scrollTo(0,0);break;
