@@ -335,3 +335,52 @@ html[data-theme=light]{--bg:#f3f6fb;--panel:#fff;--panel2:#f6f9fd;--panel3:#edf3
   .quiz-mode .evidence-panel .evidence-item { height: auto; }
   .quiz-mode .evidence-panel .evidence-item img { height: auto; }
 }
+
+/* ==============================================================
+   v6.2 · compact study header + natural line wrapping
+   - All source-PDF linebreaks display as soft spaces, not hard breaks.
+   - Real browser width determines where words wrap.
+   - Remove 5 large metric cards; preserve progress/reset in header.
+   =============================================================== */
+.quiz-mode .exam-panel .prompt,
+.quiz-mode .exam-panel .option .option-text {
+  white-space: normal !important;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+.quiz-mode .exam-panel .option {min-width:0;width:100%;}
+.quiz-mode .exam-panel .option .option-text {flex:1 1 auto;}
+.quiz-mode .compact-course-header {gap:6px 12px;margin-bottom:5px;}
+.quiz-mode .course-identity {flex:0 1 auto; min-width:160px;}
+.quiz-mode .course-header-right {display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:5px 10px;min-width:0;margin-left:auto;}
+.quiz-mode .header-study-controls {display:flex;align-items:center;gap:7px;white-space:nowrap;}
+.quiz-mode .study-progress {display:flex;align-items:center;gap:6px;font-size:10px;color:var(--muted);font-weight:750;white-space:nowrap;}
+.quiz-mode .study-progress .progress-track {width:clamp(56px,7vw,118px);height:6px;flex:0 0 auto;}
+.quiz-mode .study-progress strong{font-size:11px;color:var(--text);min-width:26px;text-align:right;font-variant-numeric:tabular-nums;}
+.quiz-mode .study-reset {border:1px solid var(--stroke2);border-radius:9px;background:var(--panel);color:var(--muted);font-size:10px;font-weight:800;min-height:30px;padding:4px 9px;white-space:nowrap;}
+.quiz-mode .study-reset:hover{border-color:var(--orange);color:var(--orange);}
+.quiz-mode .filterbar {margin-top:0;}
+@media (min-width:1021px){
+  .quiz-mode .compact-course-header{flex:0 0 auto;}
+  .quiz-mode .course-title-line p{display:none;}
+  .quiz-mode .course-header-right .header-pills{flex-wrap:nowrap;}
+  .quiz-mode .filterbar{margin-bottom:6px;}
+}
+@media (min-width:1021px) and (max-width:1420px){
+  .quiz-mode .compact-course-header .eyebrow{display:none;}
+  .quiz-mode .compact-course-header .header-pills .pill{font-size:9px;padding:3px 6px;}
+  .quiz-mode .study-progress>span{display:none;}
+  .quiz-mode .study-progress .progress-track{width:57px;}
+}
+@media (max-width:1020px){
+  .quiz-mode .course-header-right{justify-content:flex-start;margin-left:0;}
+  .quiz-mode .header-study-controls{gap:10px;}
+  .quiz-mode .compact-course-header{margin-bottom:7px;}
+}
+@media (max-width:760px){
+  .quiz-mode .course-header-right{display:flex;flex-direction:column;align-items:flex-start;gap:5px;}
+  .quiz-mode .header-study-controls{width:100%;justify-content:space-between;}
+  .quiz-mode .study-progress .progress-track{width:min(28vw,120px);}
+  .quiz-mode .study-reset{min-height:27px;font-size:10px;}
+}
