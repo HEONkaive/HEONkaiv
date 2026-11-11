@@ -457,7 +457,7 @@
       },
       "figureRequired": true,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": null,
+      "answer": 3,
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -477,17 +477,17 @@
         }
       ],
       "validation": {
-        "stage": "review_required",
+        "stage": "user_confirmed",
         "check1": "lecture_pdf_original_page_verified",
         "check2": "option_wording_exceeds_lecture_claim",
         "verifiedAgainst": "uploaded_kim_lecture_only",
-        "decisionReason": "강의안은 악성 의심이라고 기술하나 선지는 악성 확정을 함축하므로 채택 기각",
+        "decisionReason": "2026-11-11 사용자 지정: ③번으로 확정; 강의안 2차 검증 통과 답안과 구분",
         "anchor": ""
       },
-      "notes": "기출 정리본에 ③을 표시했으나, 강의안 43쪽은 석회의 모양과 분포에 따른 「악성 의심」과 조직검사의 필요성을 설명합니다. 원문의 ③ 「유방암을 나타낸다」가 확진으로 읽힐 수 있어 정답 검토 필요로 남깁니다.",
+      "notes": "사용자가 ③을 정답으로 확정했습니다. 강의안 이중검증을 통과한 답안이라고 표시하지 않습니다.",
       "type": "choice",
       "showOriginalByDefault": false,
-      "answerSource": "unresolved",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "기출 원본의 이미지·필기를 함께 확인하세요. 기존 형광펜 표시만으로 정답을 확정하지 않았습니다.",
       "figureImages": [
         {
@@ -597,7 +597,7 @@
       },
       "figureRequired": true,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": null,
+      "answer": 3,
       "explanation": "",
       "evidence": [],
       "candidateEvidence": [
@@ -617,17 +617,17 @@
         }
       ],
       "validation": {
-        "stage": "review_required",
+        "stage": "user_confirmed",
         "check1": "lecture_pdf_original_page_verified",
         "check2": "option_wording_exceeds_lecture_claim",
         "verifiedAgainst": "uploaded_kim_lecture_only",
-        "decisionReason": "강의안은 악성 의심이라고 기술하나 선지는 악성 확정을 함축하므로 채택 기각",
+        "decisionReason": "2026-11-11 사용자 지정: ③번으로 확정; 강의안 2차 검증 통과 답안과 구분",
         "anchor": ""
       },
-      "notes": "기출 정리본은 ③을 표시하지만 선지의 「유방암을 나타낸다」는 확정적 표현입니다. 강의안 PDF 43쪽은 석회가 양성일 수 있고 조직검사로 확진해야 한다고 설명하므로 강의안 이중검증으로는 정답 ③을 확정하지 않았습니다. 선택지 ①·②에는 영상 위치에 대한 손필기 교정도 있어 원본 확인이 필요합니다.",
+      "notes": "사용자가 ③을 정답으로 확정했습니다. 강의안 이중검증을 통과한 답안이라고 표시하지 않습니다.",
       "type": "choice",
       "showOriginalByDefault": false,
-      "answerSource": "unresolved",
+      "answerSource": "user_confirmed",
       "transcriptionWarning": "기출 원본의 이미지·필기를 함께 확인하세요. 기존 형광펜 표시만으로 정답을 확정하지 않았습니다.",
       "figureImages": [
         {

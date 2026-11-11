@@ -391,3 +391,89 @@ html[data-theme=light]{--bg:#f3f6fb;--panel:#fff;--panel2:#f6f9fd;--panel3:#edf3
 .question-figure-img {display:block;width:auto;max-width:100%;height:auto;max-height:clamp(175px,34dvh,385px);object-fit:contain;cursor:zoom-in;border-radius:7px;background:#fff;}
 .question-figure figcaption {padding-top:7px;color:var(--muted);font-size:11px;line-height:1.5;}
 @media(max-width:760px){.inline-question-figures{display:block}.question-figure{display:inline-block;width:100%}.question-figure-img{max-width:100%;max-height:300px;}}
+
+/* =======================================================================
+   HEON ARCHIVE v9 · Two-pane home selector + subject/year exam mode
+   ======================================================================= */
+.home-mode .content{max-width:1680px;padding-top:24px}
+.home-heading{padding:13px 3px 21px}
+.home-heading h1{margin:0;color:var(--text);font-size:clamp(24px,2.7vw,39px);letter-spacing:-1.25px;line-height:1.23;font-weight:920}
+.home-heading h1 em{font-style:normal;background:linear-gradient(105deg,var(--accent),var(--accent2));background-clip:text;-webkit-background-clip:text;color:transparent}
+.home-heading h1 span{font-size:.76em;color:var(--muted);font-weight:780}
+.home-heading p{margin:9px 0 0;color:var(--muted);font-size:13px}
+.home-selector-layout{display:grid;grid-template-columns:minmax(245px,320px) minmax(0,1fr);gap:17px;align-items:start}
+.home-subjects,.home-pick-panel{min-width:0;background:var(--panel);border:1px solid var(--stroke);border-radius:20px;padding:22px}
+.home-subjects{display:flex;flex-direction:column;gap:8px}
+.home-subjects>.eyebrow{margin:2px 5px 8px}
+.home-subject{display:flex;align-items:center;gap:13px;text-align:left;min-height:81px;width:100%;padding:12px;border-radius:14px;color:var(--text);border:1px solid var(--stroke);background:var(--panel2);transition:border-color .13s,background .13s}
+.home-subject:hover{border-color:var(--accent)}
+.home-subject.selected{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 11%,var(--panel))}
+.home-subject-index{display:grid;place-items:center;flex:0 0 35px;height:35px;background:var(--panel);color:var(--accent);font-weight:900;border-radius:11px;font-size:13px}
+.home-subject-label{flex:1;min-width:0}
+.home-subject-label strong{display:block;font-size:15px;line-height:1.4}
+.home-subject-label small{color:var(--muted);font-size:11px}
+.home-subject-arrow{color:var(--accent);font-size:17px}
+.home-pick-panel{padding:25px 27px 27px;min-height:400px}
+.home-pick-heading{display:flex;justify-content:space-between;gap:15px;align-items:center}
+.home-pick-heading .eyebrow{font-size:10px;margin-bottom:2px}
+.home-pick-heading h2{margin:0;font-size:24px;letter-spacing:-.7px}
+.study-mode-tabs{display:grid;grid-template-columns:1fr 1fr;gap:7px;background:var(--panel2);padding:5px;border:1px solid var(--stroke);border-radius:13px;margin:23px 0 13px}
+.mode-tab{padding:11px;border-radius:9px;background:transparent;border:0;color:var(--muted);font-weight:850}
+.mode-tab.active{background:var(--panel);color:var(--accent);box-shadow:0 2px 9px rgba(0,0,0,.09)}
+.home-pick-hint{color:var(--muted);font-size:12px;margin:8px 0 16px}
+.home-course-list,.home-year-list{display:grid;gap:10px}
+.home-course-list .course-card{padding:15px 17px;border-radius:14px;gap:14px}
+.home-course-list .course-big-icon{height:43px;width:43px;font-size:18px}
+.home-course-list .course-main h3{font-size:15px}
+.home-course-list .course-main p{font-size:11px;margin:3px 0 8px}
+.home-course-list .course-right{font-size:10px;min-width:65px}
+.home-course-list .course-right strong{font-size:17px}
+.home-year-card{position:relative;display:flex;align-items:center;justify-content:space-between;gap:15px;text-align:left;background:var(--panel2);border:1px solid var(--stroke);border-radius:14px;padding:18px 19px 22px;color:var(--text);width:100%;overflow:hidden}
+.home-year-card:hover{border-color:var(--accent)}
+.home-year-label{display:flex;flex-direction:column;gap:3px}
+.home-year-label strong{font-size:17px}
+.home-year-label small{font-size:12px;color:var(--muted)}
+.home-year-right{display:flex;flex-direction:column;align-items:flex-end;color:var(--accent);font-size:11px}
+.home-year-right strong{font-size:18px}
+.home-year-progress{position:absolute;left:19px;right:19px;bottom:10px;height:5px;background:var(--stroke);border-radius:4px;overflow:hidden}
+.home-year-progress i{display:block;background:var(--orange);height:100%;border-radius:4px}
+.home-disclaimer{font-size:11px;color:var(--soft);margin:18px 0 0;line-height:1.6}
+.exam-mode-header .course-identity{min-width:0}
+.year-exam-filterbar .fine{font-size:11px}
+.year-exam-filterbar .select{min-width:190px}
+.review-mode .review-q .fine{font-size:10px}
+@media(min-width:1220px){.home-pick-panel{padding-left:31px;padding-right:31px}}
+@media(max-width:760px){
+ .home-mode .content{padding:18px 13px 30px}
+ .home-heading{padding:6px 0 15px}
+ .home-heading h1{font-size:23px;letter-spacing:-.5px}
+ .home-heading h1 span{display:block;font-size:.74em;margin-top:1px}
+ .home-heading p{font-size:12px}
+ .home-selector-layout{grid-template-columns:minmax(0,1fr);gap:11px}
+ .home-subjects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;padding:11px;border-radius:14px}
+ .home-subjects>.eyebrow{grid-column:1/-1;margin:3px 4px}
+ .home-subject{gap:7px;min-height:61px;padding:8px 6px;border-radius:10px}
+ .home-subject-index{height:27px;flex-basis:27px;font-size:11px;border-radius:7px}
+ .home-subject-label strong{font-size:11px}
+ .home-subject-label small{font-size:9px}
+ .home-subject-arrow{font-size:11px}
+ .home-pick-panel{min-height:260px;padding:17px 12px 19px;border-radius:15px}
+ .home-pick-heading h2{font-size:19px}
+ .home-pick-hint{font-size:11px}
+ .study-mode-tabs{margin:13px 0}
+ .mode-tab{font-size:12px;padding:9px 5px}
+ .home-course-list .course-card{padding:11px 9px}
+ .home-course-list .course-big-icon{width:36px;height:36px;border-radius:9px}
+ .home-course-list .course-right{display:none}
+ .home-year-card{padding:13px 12px 20px}
+ .home-year-label strong{font-size:14px}
+ .home-year-label small{font-size:10px}
+ .year-exam-filterbar{flex-direction:column;align-items:stretch}
+ .year-exam-filterbar .filter-actions{min-width:0}
+ .year-exam-filterbar .select{min-width:0;width:100%}
+}
+
+/* v9: all year exams respect the same gray / orange / green completion states. */
+.home-year-card.complete .home-year-progress i{background:var(--green)}
+.home-year-card.complete .home-year-right{color:var(--green)}
+.home-year-card.partial .home-year-progress i{background:var(--orange)}

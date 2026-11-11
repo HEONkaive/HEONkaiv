@@ -24,7 +24,7 @@
           "name": "김혜원",
           "data": "data/professors/kim-hyewon.json",
           "questionCount": 9,
-          "pendingCount": 2
+          "pendingCount": 0
         },
         {
           "id": "choi-duyoung",
@@ -32,6 +32,13 @@
           "data": "data/professors/choi-duyoung.json",
           "questionCount": 44,
           "pendingCount": 28
+        },
+        {
+          "id": "lee-seungshin",
+          "name": "이승신",
+          "data": "data/professors/lee-seungshin.json",
+          "questionCount": 36,
+          "pendingCount": 15
         }
       ]
     },
