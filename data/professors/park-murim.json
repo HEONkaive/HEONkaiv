@@ -5388,6 +5388,782 @@
       "transcriptionWarning": ""
     },
     {
+      "id": "park-murim:20-45",
+      "label": "20-45",
+      "year": 20,
+      "number": 45,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "type": "choice",
+      "prompt": "암 세포의 유전자 불안정성에 대한 설명으로 옳은 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "TP53 이상 - aneuploidy 발생"
+        },
+        {
+          "number": 2,
+          "text": "spindle checkpoint 이상 - chromosomal instability"
+        },
+        {
+          "number": 3,
+          "text": "MLH1 이상 - DNA break 증가"
+        },
+        {
+          "number": 4,
+          "text": "PARP 이상 - RNA single strand break repair 장애"
+        },
+        {
+          "number": 5,
+          "text": "BRCA 이상 - DNA double strand break repair 장애"
+        }
+      ],
+      "source": {
+        "name": "20 종양학 해설.pdf",
+        "page": 9,
+        "image": "assets/questions/park-murim/20-missing-source-p009.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 5,
+      "answerSource": "lecture_double_checked",
+      "explanation": "BRCA1/2는 DNA 이중가닥 절단의 상동재조합 복구에 관여합니다. 강의안에는 spindle checkpoint 이상이 aneuploidy, TP53 이상이 chromosomal instability, MLH1 이상이 MSI와 연결되어 있습니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "gene",
+          "file": "박무림pf_261021_혈액과종양_암 유전학.pdf.pdf(1).pdf",
+          "page": 19,
+          "image": "assets/evidence/park-murim/v123-gene-p019.webp",
+          "quote": "BRCA 이상: DNA double strand break repair 장애",
+          "lectureOwner": "박무림 교수님 강의안"
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_exam_pdf_page_directly_inspected",
+        "check2": "actual_lecture_page_and_full_options_compared",
+        "verifiedAgainst": "uploaded_lecture_pdf_original",
+        "decisionReason": "20학번 해설 PDF 기재 답 5번. "
+      },
+      "transcriptionStatus": "verified_against_2022_solution_pdf",
+      "transcriptionWarning": "기출 원본 PDF에는 정답 표시가 함께 포함될 수 있습니다. 본문은 해당 원본 페이지를 확인해 전사했습니다.",
+      "notes": "20학번 해설 PDF 기재 답 5번. "
+    },
+    {
+      "id": "park-murim:20-46",
+      "label": "20-46",
+      "year": 20,
+      "number": 46,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "type": "choice",
+      "prompt": "암 신생 혈관의 특징이 아닌 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "no basement membrane"
+        },
+        {
+          "number": 2,
+          "text": "leaky tumor vessel"
+        },
+        {
+          "number": 3,
+          "text": "high intertumoral pressure"
+        },
+        {
+          "number": 4,
+          "text": "increased pericyte"
+        },
+        {
+          "number": 5,
+          "text": "vascular wall lined with endothelial cell and tumor cell itself"
+        }
+      ],
+      "source": {
+        "name": "20 종양학 해설.pdf",
+        "page": 10,
+        "image": "assets/questions/park-murim/20-missing-source-p010.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 4,
+      "answerSource": "lecture_double_checked",
+      "explanation": "종양 신생혈관은 주위세포(pericyte)가 적고 혈관이 누출되기 쉬워 조직 간질압이 높습니다. 따라서 increased pericyte는 특징이 아닙니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "bio",
+          "file": "박무림pf_261022_혈액과종양_암 생물학.pdf(1).pdf",
+          "page": 2,
+          "image": "assets/evidence/park-murim/v123-bio-p002.webp",
+          "quote": "pericytes 없이 급하게 만듦",
+          "lectureOwner": "박무림 교수님 강의안"
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_exam_pdf_page_directly_inspected",
+        "check2": "actual_lecture_page_and_full_options_compared",
+        "verifiedAgainst": "uploaded_lecture_pdf_original",
+        "decisionReason": "20학번 해설 PDF 기재 답 4번. "
+      },
+      "transcriptionStatus": "verified_against_2022_solution_pdf",
+      "transcriptionWarning": "기출 원본 PDF에는 정답 표시가 함께 포함될 수 있습니다. 본문은 해당 원본 페이지를 확인해 전사했습니다.",
+      "notes": "20학번 해설 PDF 기재 답 4번. "
+    },
+    {
+      "id": "park-murim:20-47",
+      "label": "20-47",
+      "year": 20,
+      "number": 47,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "type": "choice",
+      "prompt": "암세포의 대사적 특징에 관한 설명에 해당하지 않는 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "Glucose를 이용하여 주로 젖산을 생산한다."
+        },
+        {
+          "number": 2,
+          "text": "IDH 유전자 이상이 동반된 경우 glutamine으로 2-hydroxyglutarate를 생산한다."
+        },
+        {
+          "number": 3,
+          "text": "Metformin은 AMPK를 통해 당신생 억제와 mTOR 억제로 단백질 생성을 억제한다."
+        },
+        {
+          "number": 4,
+          "text": "Insulin은 암 성장을 억제한다."
+        },
+        {
+          "number": 5,
+          "text": "IDH 돌연변이는 급성골수성백혈병, 간내 담관암에서 관찰된다."
+        }
+      ],
+      "source": {
+        "name": "20 종양학 해설.pdf",
+        "page": 10,
+        "image": "assets/questions/park-murim/20-missing-source-p010.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 4,
+      "answerSource": "lecture_double_checked",
+      "explanation": "강의안은 인슐린 자극이 IGF1R 관련 경로를 통해 암세포 증식을 촉진한다고 명시합니다. 따라서 인슐린이 암 성장을 억제한다는 ④는 틀립니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "bio",
+          "file": "박무림pf_261022_혈액과종양_암 생물학.pdf(1).pdf",
+          "page": 6,
+          "image": "assets/evidence/park-murim/v123-bio-p006.webp",
+          "quote": "insulin 자극을 받으면 암세포가 커진다",
+          "lectureOwner": "박무림 교수님 강의안"
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_exam_pdf_page_directly_inspected",
+        "check2": "actual_lecture_page_and_full_options_compared",
+        "verifiedAgainst": "uploaded_lecture_pdf_original",
+        "decisionReason": "20학번 해설 PDF 기재 답 4번. "
+      },
+      "transcriptionStatus": "verified_against_2022_solution_pdf",
+      "transcriptionWarning": "기출 원본 PDF에는 정답 표시가 함께 포함될 수 있습니다. 본문은 해당 원본 페이지를 확인해 전사했습니다.",
+      "notes": "20학번 해설 PDF 기재 답 4번. "
+    },
+    {
+      "id": "park-murim:20-48",
+      "label": "20-48",
+      "year": 20,
+      "number": 48,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "type": "choice",
+      "prompt": "다음 중 암세포의 면역 회피 기전이 아닌 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "CTLA4 유리"
+        },
+        {
+          "number": 2,
+          "text": "T regulatory cell 활성화"
+        },
+        {
+          "number": 3,
+          "text": "MHC 활성화"
+        },
+        {
+          "number": 4,
+          "text": "CD11+ granulocyte 활성화"
+        },
+        {
+          "number": 5,
+          "text": "TGF-beta, interleukin 유리"
+        }
+      ],
+      "source": {
+        "name": "20 종양학 해설.pdf",
+        "page": 10,
+        "image": "assets/questions/park-murim/20-missing-source-p010.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 3,
+      "answerSource": "lecture_double_checked",
+      "explanation": "암세포는 MHC 발현을 감소시켜 항원 제시를 회피하므로 MHC 활성화는 면역 회피 기전에 해당하지 않습니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "bio",
+          "file": "박무림pf_261022_혈액과종양_암 생물학.pdf(1).pdf",
+          "page": 8,
+          "image": "assets/evidence/park-murim/v123-bio-p008.webp",
+          "quote": "down regulate MHC",
+          "lectureOwner": "박무림 교수님 강의안"
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_exam_pdf_page_directly_inspected",
+        "check2": "actual_lecture_page_and_full_options_compared",
+        "verifiedAgainst": "uploaded_lecture_pdf_original",
+        "decisionReason": "20학번 해설 PDF 기재 답 3번. "
+      },
+      "transcriptionStatus": "verified_against_2022_solution_pdf",
+      "transcriptionWarning": "기출 원본 PDF에는 정답 표시가 함께 포함될 수 있습니다. 본문은 해당 원본 페이지를 확인해 전사했습니다.",
+      "notes": "20학번 해설 PDF 기재 답 3번. "
+    },
+    {
+      "id": "park-murim:20-49",
+      "label": "20-49",
+      "year": 20,
+      "number": 49,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "type": "choice",
+      "prompt": "다음 항암제의 장기 특이 부작용으로 옳은 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "Cisplatin - pneumonitis"
+        },
+        {
+          "number": 2,
+          "text": "Bleomycin - hemorrhagic cystitis"
+        },
+        {
+          "number": 3,
+          "text": "Doxorubicin - heart failure"
+        },
+        {
+          "number": 4,
+          "text": "Trastuzumab - nephritis"
+        },
+        {
+          "number": 5,
+          "text": "Vincristine - hand-foot syndrome"
+        }
+      ],
+      "source": {
+        "name": "20 종양학 해설.pdf",
+        "page": 10,
+        "image": "assets/questions/park-murim/20-missing-source-p010.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 3,
+      "answerSource": "lecture_double_checked",
+      "explanation": "Doxorubicin 등 anthracycline 계열의 누적 용량 관련 심부전이 강의안에 명시되어 있습니다. Cisplatin은 신장·청각독성, Bleomycin은 폐독성, Vincristine은 신경병증과 관련됩니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "pharm",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
+          "page": 55,
+          "image": "assets/evidence/park-murim/v123-pharm-p055.webp",
+          "quote": "CHF: Anthracyclines (doxorubicin...)",
+          "lectureOwner": "박무림 교수님 강의안"
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_exam_pdf_page_directly_inspected",
+        "check2": "actual_lecture_page_and_full_options_compared",
+        "verifiedAgainst": "uploaded_lecture_pdf_original",
+        "decisionReason": "20학번 해설 PDF 기재 답 3번. "
+      },
+      "transcriptionStatus": "verified_against_2022_solution_pdf",
+      "transcriptionWarning": "기출 원본 PDF에는 정답 표시가 함께 포함될 수 있습니다. 본문은 해당 원본 페이지를 확인해 전사했습니다.",
+      "notes": "20학번 해설 PDF 기재 답 3번. "
+    },
+    {
+      "id": "park-murim:20-50",
+      "label": "20-50",
+      "year": 20,
+      "number": 50,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "type": "choice",
+      "prompt": "전이성 비소세포폐암은 효과적인 표적항암제가 여럿 개발되어 있어 진단 시 유전자 이상 유무를 확인해야 한다. 해당 사항이 없는 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "EGFR"
+        },
+        {
+          "number": 2,
+          "text": "ROS1"
+        },
+        {
+          "number": 3,
+          "text": "ALK"
+        },
+        {
+          "number": 4,
+          "text": "BRAF"
+        },
+        {
+          "number": 5,
+          "text": "MEK"
+        }
+      ],
+      "source": {
+        "name": "20 종양학 해설.pdf",
+        "page": 10,
+        "image": "assets/questions/park-murim/20-missing-source-p010.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": null,
+      "answerSource": "pending",
+      "explanation": "해설 PDF는 ⑤ MEK를 정답으로 제시합니다. 그러나 강의안에는 BRAF 변이 비소세포폐암에서 MEK 억제제 병용이 명시되어 있어, “검사 대상 유전자 이상”과 “치료 약물 표적”을 구별하지 않으면 해석이 달라집니다. 단일 정답 채택은 보류합니다.",
+      "candidateEvidence": [
+        {
+          "lectureId": "pharm",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
+          "page": 48,
+          "image": "assets/evidence/park-murim/v123-pharm-p048.webp",
+          "quote": "BRAFmt+MEK I",
+          "lectureOwner": "박무림 교수님 강의안"
+        }
+      ],
+      "evidence": [],
+      "validation": {
+        "stage": "pending",
+        "check1": "uploaded_exam_pdf_page_directly_inspected",
+        "check2": "single_answer_not_supported",
+        "verifiedAgainst": "exam_solution_provisional_review",
+        "decisionReason": "20학번 해설 PDF 기재 답 5번. 해설 PDF는 ⑤ MEK를 정답으로 제시합니다. 그러나 강의안에는 BRAF 변이 비소세포폐암에서 MEK 억제제 병용이 명시되어 있어, “검사 대상 유전자 이상”과 “치료 약물 표적”을 구별하지 않으면 해석이 달라집니다. 단일 정답 채택은 보류합니다."
+      },
+      "transcriptionStatus": "verified_against_2022_solution_pdf",
+      "transcriptionWarning": "2022학년도 종양학 해설에는 5번을 정답으로 적었지만, 강의안과 보기를 대조한 결과 단일 정답 확정에 주의가 필요합니다.",
+      "notes": "20학번 해설 PDF 기재 답 5번. 해설 PDF는 ⑤ MEK를 정답으로 제시합니다. 그러나 강의안에는 BRAF 변이 비소세포폐암에서 MEK 억제제 병용이 명시되어 있어, “검사 대상 유전자 이상”과 “치료 약물 표적”을 구별하지 않으면 해석이 달라집니다. 단일 정답 채택은 보류합니다."
+    },
+    {
+      "id": "park-murim:20-51",
+      "label": "20-51",
+      "year": 20,
+      "number": 51,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "type": "choice",
+      "prompt": "다음 중 면역항암제가 효과적일 것으로 예측되는 검사 및 그 소견은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "IHC - low PD-L1 expression"
+        },
+        {
+          "number": 2,
+          "text": "IHC - proficient MMR"
+        },
+        {
+          "number": 3,
+          "text": "IHC - deficient MMR"
+        },
+        {
+          "number": 4,
+          "text": "NGS - low tumor mutation burden"
+        },
+        {
+          "number": 5,
+          "text": "PCR - microsatellite stable (MSS)"
+        }
+      ],
+      "source": {
+        "name": "20 종양학 해설.pdf",
+        "page": 11,
+        "image": "assets/questions/park-murim/20-missing-source-p011.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 3,
+      "answerSource": "lecture_double_checked",
+      "explanation": "dMMR 또는 MSI-high 종양은 면역관문억제제 효과를 예측하는 바이오마커로 강의안에 설명되어 있습니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "pharm",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
+          "page": 41,
+          "image": "assets/evidence/park-murim/v123-pharm-p041.webp",
+          "quote": "IHC for MMR proteins: Deficient (dMMR)",
+          "lectureOwner": "박무림 교수님 강의안"
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_exam_pdf_page_directly_inspected",
+        "check2": "actual_lecture_page_and_full_options_compared",
+        "verifiedAgainst": "uploaded_lecture_pdf_original",
+        "decisionReason": "20학번 해설 PDF 기재 답 3번. "
+      },
+      "transcriptionStatus": "verified_against_2022_solution_pdf",
+      "transcriptionWarning": "기출 원본 PDF에는 정답 표시가 함께 포함될 수 있습니다. 본문은 해당 원본 페이지를 확인해 전사했습니다.",
+      "notes": "20학번 해설 PDF 기재 답 3번. "
+    },
+    {
+      "id": "park-murim:20-52",
+      "label": "20-52",
+      "year": 20,
+      "number": 52,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "type": "choice",
+      "prompt": "최초로 개발, 치료에 성공하였고 국내에서 재발한 소아 급성림프모구성백혈병과 성인 악성림프종 중 DLBCL형에 허가된 CAR-T 세포 치료제의 표적은 무엇인가?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "CD10"
+        },
+        {
+          "number": 2,
+          "text": "CD19"
+        },
+        {
+          "number": 3,
+          "text": "CD20"
+        },
+        {
+          "number": 4,
+          "text": "BCMA"
+        },
+        {
+          "number": 5,
+          "text": "CD22"
+        }
+      ],
+      "source": {
+        "name": "20 종양학 해설.pdf",
+        "page": 11,
+        "image": "assets/questions/park-murim/20-missing-source-p011.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 2,
+      "answerSource": "lecture_double_checked",
+      "explanation": "CAR-T 세포를 CD19 항원을 인식하도록 유전자 조작하여 B세포 기원 종양 치료에 활용하는 원리가 강의안에 제시되어 있습니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "pharm",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
+          "page": 38,
+          "image": "assets/evidence/park-murim/v123-pharm-p038.webp",
+          "quote": "CD19를 좀 더 특이적으로 targeting 가능한 T cell",
+          "lectureOwner": "박무림 교수님 강의안"
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_exam_pdf_page_directly_inspected",
+        "check2": "actual_lecture_page_and_full_options_compared",
+        "verifiedAgainst": "uploaded_lecture_pdf_original",
+        "decisionReason": "20학번 해설 PDF 기재 답 2번. "
+      },
+      "transcriptionStatus": "verified_against_2022_solution_pdf",
+      "transcriptionWarning": "기출 원본 PDF에는 정답 표시가 함께 포함될 수 있습니다. 본문은 해당 원본 페이지를 확인해 전사했습니다.",
+      "notes": "20학번 해설 PDF 기재 답 2번. "
+    },
+    {
+      "id": "park-murim:20-53",
+      "label": "20-53",
+      "year": 20,
+      "number": 53,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "type": "choice",
+      "prompt": "암 유전자 이상과 표적항암제의 연결이 옳은 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "Sensitive EGFR mutation - Lazertinib"
+        },
+        {
+          "number": 2,
+          "text": "CDK - Crizotinib"
+        },
+        {
+          "number": 3,
+          "text": "c-KIT - Imatinib"
+        },
+        {
+          "number": 4,
+          "text": "NTRK fusion - Ibrutinib"
+        },
+        {
+          "number": 5,
+          "text": "Bruton’s tyrosine kinase - Larotrectinib"
+        }
+      ],
+      "source": {
+        "name": "20 종양학 해설.pdf",
+        "page": 11,
+        "image": "assets/questions/park-murim/20-missing-source-p011.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": null,
+      "answerSource": "pending",
+      "explanation": "해설 PDF의 정답은 ③(c-KIT–Imatinib)입니다. 그러나 ①의 EGFR 변이–Lazertinib 관계도 조건에 따라 성립할 수 있어 유일 정답이라고 단정하기 어렵습니다. 사용자 검토가 필요합니다.",
+      "candidateEvidence": [
+        {
+          "lectureId": "pharm",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
+          "page": 8,
+          "image": "assets/evidence/park-murim/v123-pharm-p008.webp",
+          "quote": "Imatinib: c-kit",
+          "lectureOwner": "박무림 교수님 강의안"
+        },
+        {
+          "lectureId": "pharm",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
+          "page": 48,
+          "image": "assets/evidence/park-murim/v123-pharm-p048.webp",
+          "quote": "EGFR mt와 Lazertinib 사용 관련 내용",
+          "lectureOwner": "박무림 교수님 강의안"
+        }
+      ],
+      "evidence": [],
+      "validation": {
+        "stage": "pending",
+        "check1": "uploaded_exam_pdf_page_directly_inspected",
+        "check2": "single_answer_not_supported",
+        "verifiedAgainst": "exam_solution_provisional_review",
+        "decisionReason": "20학번 해설 PDF 기재 답 3번. 해설 PDF의 정답은 ③(c-KIT–Imatinib)입니다. 그러나 ①의 EGFR 변이–Lazertinib 관계도 조건에 따라 성립할 수 있어 유일 정답이라고 단정하기 어렵습니다. 사용자 검토가 필요합니다."
+      },
+      "transcriptionStatus": "verified_against_2022_solution_pdf",
+      "transcriptionWarning": "2022학년도 종양학 해설에는 3번을 정답으로 적었지만, 강의안과 보기를 대조한 결과 단일 정답 확정에 주의가 필요합니다.",
+      "notes": "20학번 해설 PDF 기재 답 3번. 해설 PDF의 정답은 ③(c-KIT–Imatinib)입니다. 그러나 ①의 EGFR 변이–Lazertinib 관계도 조건에 따라 성립할 수 있어 유일 정답이라고 단정하기 어렵습니다. 사용자 검토가 필요합니다."
+    },
+    {
+      "id": "park-murim:20-54",
+      "label": "20-54",
+      "year": 20,
+      "number": 54,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "type": "choice",
+      "prompt": "암성 통증 조절에 대한 설명으로 옳은 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "만성 통증이므로 아프다고 할 때만 속효성 진통제를 투여한다."
+        },
+        {
+          "number": 2,
+          "text": "뼈전이에는 항우울제가 효과적이다."
+        },
+        {
+          "number": 3,
+          "text": "신경병성 통증에는 NSAIDs가 효과적이다."
+        },
+        {
+          "number": 4,
+          "text": "Meperidine, nalbuphine은 부적절하다."
+        },
+        {
+          "number": 5,
+          "text": "몰핀은 천장효과가 없어 중증 통증 조절에 적절하다."
+        }
+      ],
+      "source": {
+        "name": "20 종양학 해설.pdf",
+        "page": 11,
+        "image": "assets/questions/park-murim/20-missing-source-p011.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": null,
+      "answerSource": "pending",
+      "explanation": "해설 PDF는 ④를 제시하고 2025년 강의안도 meperidine/nalbuphine을 비권장합니다. 다만 ⑤도 일반적인 opioid 약리학에서 참으로 해석될 수 있어 단일 정답 검증은 보류합니다.",
+      "candidateEvidence": [
+        {
+          "lectureId": "palliative",
+          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(5).pdf",
+          "page": 15,
+          "image": "assets/evidence/park-murim/v123-palliative-p015.webp",
+          "quote": "Not recommended: Meperidine, mixed agonist-antagonist nalbuphine",
+          "lectureOwner": "박무림 교수님 강의안"
+        }
+      ],
+      "evidence": [],
+      "validation": {
+        "stage": "pending",
+        "check1": "uploaded_exam_pdf_page_directly_inspected",
+        "check2": "single_answer_not_supported",
+        "verifiedAgainst": "exam_solution_provisional_review",
+        "decisionReason": "20학번 해설 PDF 기재 답 4번. 해설 PDF는 ④를 제시하고 2025년 강의안도 meperidine/nalbuphine을 비권장합니다. 다만 ⑤도 일반적인 opioid 약리학에서 참으로 해석될 수 있어 단일 정답 검증은 보류합니다."
+      },
+      "transcriptionStatus": "verified_against_2022_solution_pdf",
+      "transcriptionWarning": "2022학년도 종양학 해설에는 4번을 정답으로 적었지만, 강의안과 보기를 대조한 결과 단일 정답 확정에 주의가 필요합니다.",
+      "notes": "20학번 해설 PDF 기재 답 4번. 해설 PDF는 ④를 제시하고 2025년 강의안도 meperidine/nalbuphine을 비권장합니다. 다만 ⑤도 일반적인 opioid 약리학에서 참으로 해석될 수 있어 단일 정답 검증은 보류합니다."
+    },
+    {
+      "id": "park-murim:20-55",
+      "label": "20-55",
+      "year": 20,
+      "number": 55,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "type": "choice",
+      "prompt": "Opioid 진통제의 흔한 부작용으로 장기간 사용 시 가장 문제가 되는 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "오심"
+        },
+        {
+          "number": 2,
+          "text": "호흡부전"
+        },
+        {
+          "number": 3,
+          "text": "진정"
+        },
+        {
+          "number": 4,
+          "text": "섬망"
+        },
+        {
+          "number": 5,
+          "text": "변비"
+        }
+      ],
+      "source": {
+        "name": "20 종양학 해설.pdf",
+        "page": 11,
+        "image": "assets/questions/park-murim/20-missing-source-p011.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 5,
+      "answerSource": "lecture_double_checked",
+      "explanation": "장기간 사용에서 잘 지속되는 opioid 부작용인 변비와 예방적 완하제 사용이 강의안에 명시되어 있습니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "palliative",
+          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(5).pdf",
+          "page": 17,
+          "image": "assets/evidence/park-murim/v123-palliative-p017.webp",
+          "quote": "Common Adverse events: Constipation",
+          "lectureOwner": "박무림 교수님 강의안"
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_exam_pdf_page_directly_inspected",
+        "check2": "actual_lecture_page_and_full_options_compared",
+        "verifiedAgainst": "uploaded_lecture_pdf_original",
+        "decisionReason": "20학번 해설 PDF 기재 답 5번. "
+      },
+      "transcriptionStatus": "verified_against_2022_solution_pdf",
+      "transcriptionWarning": "기출 원본 PDF에는 정답 표시가 함께 포함될 수 있습니다. 본문은 해당 원본 페이지를 확인해 전사했습니다.",
+      "notes": "20학번 해설 PDF 기재 답 5번. "
+    },
+    {
+      "id": "park-murim:20-56",
+      "label": "20-56",
+      "year": 20,
+      "number": 56,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "type": "choice",
+      "prompt": "다발성골수종에 효과적인 항암제의 표적 중 NF-κB 활성화 억제와 관련이 있는 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "Proteasome"
+        },
+        {
+          "number": 2,
+          "text": "BCMA"
+        },
+        {
+          "number": 3,
+          "text": "CD38"
+        },
+        {
+          "number": 4,
+          "text": "Nuclear export"
+        },
+        {
+          "number": 5,
+          "text": "Angiogenesis"
+        }
+      ],
+      "source": {
+        "name": "20 종양학 해설.pdf",
+        "page": 11,
+        "image": "assets/questions/park-murim/20-missing-source-p011.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 1,
+      "answerSource": "lecture_double_checked",
+      "explanation": "Proteasome 억제제는 IκB 분해를 막아 NF-κB 활성화를 억제합니다. Bortezomib, carfilzomib, ixazomib이 강의안에 있습니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "pharm",
+          "file": "25.11.06_혈액과종양_박무림pf_최신항암제임상적용_항암제부작용(6).pdf",
+          "page": 27,
+          "image": "assets/evidence/park-murim/v123-pharm-p027.webp",
+          "quote": "proteasome 활동 막으면 IkB가 분해 안되서 NFkB의 활동 억제",
+          "lectureOwner": "박무림 교수님 강의안"
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "uploaded_exam_pdf_page_directly_inspected",
+        "check2": "actual_lecture_page_and_full_options_compared",
+        "verifiedAgainst": "uploaded_lecture_pdf_original",
+        "decisionReason": "20학번 해설 PDF 기재 답 1번. "
+      },
+      "transcriptionStatus": "verified_against_2022_solution_pdf",
+      "transcriptionWarning": "기출 원본 PDF에는 정답 표시가 함께 포함될 수 있습니다. 본문은 해당 원본 페이지를 확인해 전사했습니다.",
+      "notes": "20학번 해설 PDF 기재 답 1번. "
+    },
+    {
       "id": "park-murim:20-주1",
       "label": "20-주1",
       "year": 20,

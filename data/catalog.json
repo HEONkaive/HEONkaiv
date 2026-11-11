@@ -9,8 +9,8 @@
           "id": "park-murim",
           "name": "박무림",
           "data": "data/professors/park-murim.json",
-          "questionCount": 107,
-          "pendingCount": 4
+          "questionCount": 119,
+          "pendingCount": 7
         },
         {
           "id": "lee-seoul",
@@ -52,13 +52,13 @@
           "name": "정유리",
           "data": "data/professors/jung-yuri.json",
           "questionCount": 21,
-          "pendingCount": 17
+          "pendingCount": 16
         },
         {
           "id": "won-taewan",
           "name": "원태완",
           "data": "data/professors/won-taewan.json",
-          "questionCount": 103,
+          "questionCount": 106,
           "pendingCount": 45
         },
         {
