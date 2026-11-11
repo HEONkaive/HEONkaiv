@@ -79,7 +79,10 @@
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "PDF 9~10페이지에 이어지는 문제입니다. 원본 이미지의 문장과 함께 확인하세요.",
-      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(17-38)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 3세 남아가 배에서 덩이가 만져져서 병원에 왔다. 2주 동안 설사가 있었으며, 체온은 37.7 C였다. 왼쪽 배에서 덩이가 만져졌고, 간과 지라는 만져지지 않았다. 검사 결과와 복부 컴퓨터 단층촬영사진이 다음과 같았다. 올바른 설명은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:17-39",
@@ -148,7 +151,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 2번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 2번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "소아종양 역학·소아뇌종양",
+      "unitId": "f742840d26f4",
+      "aiExplanation": "이 문항(17-39)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음은 소아암 발생빈도 양상을 나타낸 그림이다. A는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:17-40",
@@ -212,7 +218,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": ""
+      "notes": "",
+      "unitTitle": "소아종양 역학·소아뇌종양",
+      "unitId": "f742840d26f4",
+      "aiExplanation": "판단 포인트: 강의안에서 진단 시 소아암의 전파(dissemination)가 흔하다고 명시하여 ④를 채택했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:17-41",
@@ -275,7 +284,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 2번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다. 해설 보충: 황색종은 콜레스테롤이나 지질이 피부나 힘줄에 침착되어 생기는 노란색 결절로 고지혈증 등과 관련된다. 급성 비림프구성 백혈병과 특이적으로 관련된 피부 소견은 녹색종(chloroma)이나 gingival hyperplasia이다."
+      "notes": "사용자가 2번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다. 해설 보충: 황색종은 콜레스테롤이나 지질이 피부나 힘줄에 침착되어 생기는 노란색 결절로 고지혈증 등과 관련된다. 급성 비림프구성 백혈병과 특이적으로 관련된 피부 소견은 녹색종(chloroma)이나 gingival hyperplasia이다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "판단 포인트: 황색종은 콜레스테롤이나 지질이 피부나 힘줄에 침착되어 생기는 노란색 결절로 고지혈증 등과 관련된다. 급성 비림프구성 백혈병과 특이적으로 관련된 피부 소견은 녹색종(chloroma)이나 gingival hyperplasia이다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:17-42",
@@ -344,7 +356,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 2번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 2번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(17-42)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 5세 소아가 두통, 의식변화, 운동실조를 보였다. Brain MRI는 다음과 같다. 예후 인자는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:17-43",
@@ -419,7 +434,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 2번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 2번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(17-43)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 11세 소아가 한 달 이상 두통과 구토, 보행장애, 시야 흐림을 호소하였다. Brain MRI 소견은 다음과 같다. 치료법은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:17-44",
@@ -488,7 +506,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(17-44)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 4세 남아가 복부 종괴와 혈뇨를 보였으며 CT 결과가 제시되었다. 치료는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:17-45",
@@ -552,7 +573,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "판단 포인트: 골육종은 sunburst 모양의 골막 반응이 특징적이고, Ewing 육종은 onion skinning이 특징입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:17-46",
@@ -615,7 +639,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 4번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 4번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(17-46)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: Langerhans cell histiocytosis(LCH)에 관한 설명으로 옳은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:17-47",
@@ -678,7 +705,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(17-47)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 혈구탐식증후군의 가장 중요한 예후인자는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:17-48",
@@ -747,7 +777,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 1번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 1번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "소아종양 역학·소아뇌종양",
+      "unitId": "f742840d26f4",
+      "aiExplanation": "이 문항(17-48)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 소아암 보존적 치료로 옳은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:17-49",
@@ -810,7 +843,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(17-49)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 횡문근육종 호발 부위 중 가장 예후가 불량한 부위는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:18-14",
@@ -879,7 +915,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(18-14)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 2세 영아가 복부 종괴와 고혈압, 혈뇨를 보였다. 안구 사진과 복부 CT가 제시되었다. 좋은 예후 인자는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:18-26",
@@ -942,7 +981,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 2번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 2번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(18-26)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: Class I histiocytosis syndrome에 관한 옳은 설명은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:18-29",
@@ -1006,7 +1048,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 4번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 4번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "판단 포인트: HLH 진단 기준의 soluble CD25(IL-2Rα) ≥2,400 U/mL를 확인했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:18-33",
@@ -1075,7 +1120,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(18-33)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: Rhabdomyosarcoma에 대한 설명 중 옳은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:18-47",
@@ -1149,7 +1197,10 @@
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "선택지는 PDF 9페이지 첫머리에 이어집니다.",
-      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(18-47)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 7개월 영아가 복부 종괴, 간종대, 피하 결절을 보였으나 골 동위원소검사에서 뼈 병변이 없다. 검사 사진은 다음과 같다. 치료는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:18-56",
@@ -1219,7 +1270,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": ""
+      "notes": "",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "판단 포인트: 강의안의 골육종 방사선 소견 sunburst와 제시 X-ray를 대조했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:18-63",
@@ -1288,7 +1342,10 @@
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "①번 선택지는 원본 사진의 해당 위치에서 직접 확인이 필요합니다. 임의로 채우지 않았습니다.",
-      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(18-63)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 3세 남아가 복부 종괴, 눈 주위 출혈반을 보였다. 복부 CT와 소변 VMA 증가 등 검사 후 진단된 종양의 치료제는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:18-77",
@@ -1351,7 +1408,10 @@
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "⑤번은 발생 조직과 발생 위치를 혼동할 수 있어 강의안과 양립 여부를 검토해야 합니다.",
-      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(18-77)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: Ewing sarcoma에 대한 설명 중 틀린 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:18-82",
@@ -1414,7 +1474,10 @@
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "⑤번 선택지는 PDF 7페이지 첫머리에 이어집니다.",
-      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "소아종양 역학·소아뇌종양",
+      "unitId": "f742840d26f4",
+      "aiExplanation": "이 문항(18-82)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 남아가 최근 들어 발생하는 의식변화, 두통으로 병원에 왔다. 운동실조와 좌우의 집게손가락을 맞닿게 하지 못하는 증상을 보였다. 혈압 은 160/120 mmHg이다. 뇌 MRI 사진은 다음과 같다. 나쁜 예후를 나타내는 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:19-23",
@@ -1478,7 +1541,10 @@
       },
       "transcriptionStatus": "user_supplied_or_original_image_verified",
       "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
-      "notes": "출처: 19 종양 해설.pdf PDF 11쪽, 정답 후보 ④. 교수님 소속은 사용자 지정 최두영, PDF 주석에는 혈액 범위로 표기. 강의안 직접 근거 확보 전까지 미확정."
+      "notes": "출처: 19 종양 해설.pdf PDF 11쪽, 정답 후보 ④. 교수님 소속은 사용자 지정 최두영, PDF 주석에는 혈액 범위로 표기. 강의안 직접 근거 확보 전까지 미확정.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "판단 포인트: 19학번 해설 PDF 11쪽에서는 ④ 림프모구림프종의 T-림프구 기원에 관한 설명을 정답으로 표시합니다. ①은 골수침범, ②는 저등급 유병, ③은 호지킨림프종의 조직형, ⑤는 국소치료의 범위와 관련되어 적절하지 않습니다. 다만 현재 업로드된 최두영 교수님 강의안에서 이 내용을 직접 뒷받침하는 원본 페이지를 확인하지 못해 PDF 표기 답을 검토 후보로만 남겼습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:19-24",
@@ -1552,7 +1618,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(19-24)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 12개월 영아가 복부 구진 및 자반성 발진, 간비장비대를 보였다. 혈액검사 및 두개골 방사선 사진이 제시되었다. 치료는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:19-25",
@@ -1623,7 +1692,10 @@
       },
       "transcriptionStatus": "user_supplied_or_original_image_verified",
       "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
-      "notes": ""
+      "notes": "",
+      "unitTitle": "신경모세포종·Wilms 종양",
+      "unitId": "b21e65d0b8f0",
+      "aiExplanation": "판단 포인트: 신경모세포종은 후방 종격동과 복부에 생길 수 있고 진단 시 전이가 흔합니다. 강의안에서는 MYCN 유전자 증폭이 고위험·불량예후와 관련되고, 고위험군 공고요법에는 all-trans가 아니라 13-cis-retinoic acid를 사용한다고 명시합니다. 따라서 ③을 선택합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:19-26",
@@ -1687,7 +1759,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": ""
+      "notes": "",
+      "unitTitle": "소아종양 역학·소아뇌종양",
+      "unitId": "f742840d26f4",
+      "aiExplanation": "판단 포인트: Medulloblastoma가 소뇌 벌레/후두개와에 호발하며 4뇌실 폐쇄와 운동실조를 유발할 수 있습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:19-27",
@@ -1756,7 +1831,10 @@
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "②·③번 원문은 손글씨와 겹쳐 정확한 판독이 필요합니다. 원본을 직접 확인하세요.",
-      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(19-27)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 횡문근육종에 대한 올바른 설명은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:19-28",
@@ -1819,7 +1897,10 @@
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "⑤번은 PDF 5페이지 첫머리에 이어집니다.",
-      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(19-28)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 혈구포식 림프조직구증의 진단 기준에 해당되지 않는 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:20-7",
@@ -1883,7 +1964,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": ""
+      "notes": "",
+      "unitTitle": "소아종양 역학·소아뇌종양",
+      "unitId": "f742840d26f4",
+      "aiExplanation": "판단 포인트: 소아암은 상피암보다 심부 장기 종양이 많고, 비특이적 증상으로 인해 진단 시 전이된 경우가 흔합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:20-8",
@@ -1952,7 +2036,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 4번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 4번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "소아종양 역학·소아뇌종양",
+      "unitId": "f742840d26f4",
+      "aiExplanation": "이 문항(20-8)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 2세 남아가 두통과 의식변화로 내원하였다. Brain MRI 및 정상 뇌척수검사 결과가 제시되었다. 수술 후 치료는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:20-9",
@@ -2022,7 +2109,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": ""
+      "notes": "",
+      "unitTitle": "신경모세포종·Wilms 종양",
+      "unitId": "b21e65d0b8f0",
+      "aiExplanation": "판단 포인트: VMA 증가는 신경모세포종의 진단 표지이지만, 종양 위험도에 따른 예후인자 그 자체는 아닙니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:20-10",
@@ -2086,7 +2176,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": ""
+      "notes": "",
+      "unitTitle": "소아종양 역학·소아뇌종양",
+      "unitId": "f742840d26f4",
+      "aiExplanation": "판단 포인트: RB1 유전자 이상은 retinoblastoma와 골육종 위험을 높이는 것으로 강의안에 명시되어 있습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:20-11",
@@ -2150,7 +2243,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": ""
+      "notes": "",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "판단 포인트: 강의안에서 횡문근육종은 desmin 양성 등을 통해 골격근 분화를 확인한다고 설명합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:20-13",
@@ -2219,7 +2315,10 @@
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "⑤번 선택지는 PDF 4페이지 맨 위에 이어집니다.",
-      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(20-13)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 3세 남아가 배에서 덩이가 만져져서 병원에 왔다. 배의 오른쪽에서 단단한 덩이가 만져졌으며, 지라는 만져지지 않았다. 혈액 검사 결과와 복부컴퓨터단층촬영 사진은 다음과 같았다. 치료는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:20-14",
@@ -2293,7 +2392,10 @@
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "문항은 PDF 10~11페이지에 걸쳐 있습니다.",
-      "notes": "사용자 확정 정답 ②. 기존 강의안 검토 자료는 검토용으로 유지합니다."
+      "notes": "사용자 확정 정답 ②. 기존 강의안 검토 자료는 검토용으로 유지합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(20-14)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 3세 남아가 복부 종괴와 혈뇨를 보였다. 복부 CT와 혈액·소변검사 결과가 제시되었다. 치료는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:20-15",
@@ -2357,7 +2459,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": ""
+      "notes": "",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "판단 포인트: HLH의 진단 기준 중 soluble CD25 상승이 포함됩니다. Ferritin과 triglyceride는 증가하고 NK 활성도는 감소합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:20-16",
@@ -2421,7 +2526,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": ""
+      "notes": "",
+      "unitTitle": "신경모세포종·Wilms 종양",
+      "unitId": "b21e65d0b8f0",
+      "aiExplanation": "판단 포인트: 신경모세포종의 INSS 4S 병기는 영아에서 피부·간·골수 제한 전이로 정의됩니다. MYCN 증폭은 불량 인자입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:21-11",
@@ -2485,7 +2593,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": ""
+      "notes": "",
+      "unitTitle": "소아종양 역학·소아뇌종양",
+      "unitId": "f742840d26f4",
+      "aiExplanation": "판단 포인트: 소아암은 심부 장기 기원과 비특이적 증상으로 진단 시 이미 전이된 경우가 흔하다는 강의안 설명이 ③을 뒷받침합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:21-12",
@@ -2549,7 +2660,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": ""
+      "notes": "",
+      "unitTitle": "소아종양 역학·소아뇌종양",
+      "unitId": "f742840d26f4",
+      "aiExplanation": "판단 포인트: 노출 후 VZIG 예방조치를 강의안에서 확인했습니다. 다른 선택지의 종양용해증후군·호중구감소증 관리도 서로 맞지 않습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:21-13",
@@ -2618,7 +2732,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "소아종양 역학·소아뇌종양",
+      "unitId": "f742840d26f4",
+      "aiExplanation": "이 문항(21-13)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 24개월 영아가 10일 동안의 보챔, 반복되는 구토로 병원에 왔다. 혈액검사와 MRI 결과는 다음과 같았다. 뇌척수액 검사는 정상이었다. 치료는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:21-14",
@@ -2682,7 +2799,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": ""
+      "notes": "",
+      "unitTitle": "소아종양 역학·소아뇌종양",
+      "unitId": "f742840d26f4",
+      "aiExplanation": "판단 포인트: 강의안의 cerebellar pilocytic astrocytoma 사례가 ② 연결과 일치합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:21-15",
@@ -2752,7 +2872,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": ""
+      "notes": "",
+      "unitTitle": "신경모세포종·Wilms 종양",
+      "unitId": "b21e65d0b8f0",
+      "aiExplanation": "판단 포인트: 소변 VMA/HVA는 신경모세포종의 진단 표지자입니다. 반면 MYCN·DNA ploidy 등은 예후 위험인자라 ④는 불량 예후인자가 아닙니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:21-16",
@@ -2821,7 +2944,10 @@
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "⑤번 문구와 일부 본문은 스캔 사진을 기준으로 확인하세요.",
-      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(21-16)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 2세 남아가 복부에 구진 및 자반성 발진, 간비장비대를 보여 내원했다. 혈액검사 및 두개골 방사선 사진은 다음과 같다. 틀린 설명은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:21-17",
@@ -2890,7 +3016,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "신경모세포종·Wilms 종양",
+      "unitId": "b21e65d0b8f0",
+      "aiExplanation": "이 문항(21-17)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: Wilms 종양에 대한 올바른 설명은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:21-18",
@@ -2960,7 +3089,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": ""
+      "notes": "",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "판단 포인트: Ewing sarcoma의 characteristic translocation t(11;22)를 강의안과 대조하여 ③으로 채택했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "choi-duyoung:21-19",
@@ -3023,7 +3155,10 @@
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "사용자가 1번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 1번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(21-19)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 횡문근육종에 대한 설명으로 올바른 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "choi-duyoung:21-20",
@@ -3092,7 +3227,667 @@
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "원본 이미지 보기에는 이어지는 문제 내용·선택지 캡처를 표시합니다. 문제 안에는 핵심 검사 그림만 표시합니다.",
-      "notes": "사용자가 4번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+      "notes": "사용자가 4번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "이 문항(21-20)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 9세 소아가 고열과 황달, 간비종대를 보여 내원하였다. 혈액검사와 골수검사 결과가 제시되었다. 올바른 검사 소견은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+    },
+    {
+      "id": "choi-duyoung:22-50",
+      "label": "22-50",
+      "year": 22,
+      "number": 50,
+      "subject": "hematology-1",
+      "professor": "choi-duyoung",
+      "type": "choice",
+      "prompt": "22학번 50번 · 소아암과 성인암 특징\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "choices": [
+        {
+          "number": 1,
+          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 2,
+          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 3,
+          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 4,
+          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 5,
+          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        }
+      ],
+      "source": {
+        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 5,
+        "image": "assets/questions/2025-class22/50.webp"
+      },
+      "figureRequired": true,
+      "figureImages": [
+        {
+          "src": "assets/questions/2025-class22/50.webp",
+          "alt": "22학번 50번 기출 원본 지문, 보기 및 포함된 의료영상",
+          "caption": "22학번 50번 실제 문제·선택지 원본 · PDF 5페이지"
+        }
+      ],
+      "showOriginalByDefault": false,
+      "transcriptionStatus": "original_image_verified",
+      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "answer": 5,
+      "answerSource": "official_last_page_key_only",
+      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 5번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "evidence": [],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "exam_answer_key",
+        "check1": "official_exam_answer_sheet_last_page_transcribed",
+        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
+        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
+        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
+        "classificationNote": "강의안 주제 기반 소속 추정: choi-duyoung / 소아종양 역학·소아뇌종양",
+        "classificationConfidence": "topic_matched"
+      },
+      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "unitTitle": "소아종양 역학·소아뇌종양",
+      "unitId": "f742840d26f4",
+      "aiExplanation": "소아암은 성인과 달리 상피암보다 배아성 종양·육종·혈액종양이 중요하며 종양별 항암 민감도에도 차이가 있습니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "answerKey": {
+        "image": "assets/evidence/class22/exam-answer-key-p07.webp",
+        "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 7,
+        "kind": "printed_exam_key",
+        "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      }
+    },
+    {
+      "id": "choi-duyoung:22-51",
+      "label": "22-51",
+      "year": 22,
+      "number": 51,
+      "subject": "hematology-1",
+      "professor": "choi-duyoung",
+      "type": "choice",
+      "prompt": "22학번 51번 · 소아 뇌종양 MRI\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "choices": [
+        {
+          "number": 1,
+          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 2,
+          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 3,
+          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 4,
+          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 5,
+          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        }
+      ],
+      "source": {
+        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 5,
+        "image": "assets/questions/2025-class22/51.webp"
+      },
+      "figureRequired": true,
+      "figureImages": [
+        {
+          "src": "assets/questions/2025-class22/51.webp",
+          "alt": "22학번 51번 기출 원본 지문, 보기 및 포함된 의료영상",
+          "caption": "22학번 51번 실제 문제·선택지 원본 · PDF 5페이지"
+        }
+      ],
+      "showOriginalByDefault": false,
+      "transcriptionStatus": "original_image_verified",
+      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "answer": 1,
+      "answerSource": "official_last_page_key_only",
+      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 1번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "evidence": [],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "exam_answer_key",
+        "check1": "official_exam_answer_sheet_last_page_transcribed",
+        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
+        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
+        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
+        "classificationNote": "강의안 주제 기반 소속 추정: choi-duyoung / 소아종양 역학·소아뇌종양",
+        "classificationConfidence": "topic_matched"
+      },
+      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "unitTitle": "소아종양 역학·소아뇌종양",
+      "unitId": "f742840d26f4",
+      "aiExplanation": "소아 뇌종양은 위치와 영상 특징, 연령, 척수액 전이 유무에 따라 수술 및 항암·방사선치료 전략이 달라집니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "answerKey": {
+        "image": "assets/evidence/class22/exam-answer-key-p07.webp",
+        "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 7,
+        "kind": "printed_exam_key",
+        "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      }
+    },
+    {
+      "id": "choi-duyoung:22-52",
+      "label": "22-52",
+      "year": 22,
+      "number": 52,
+      "subject": "hematology-1",
+      "professor": "choi-duyoung",
+      "type": "choice",
+      "prompt": "22학번 52번 · 종양융해증후군\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "choices": [
+        {
+          "number": 1,
+          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 2,
+          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 3,
+          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 4,
+          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 5,
+          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        }
+      ],
+      "source": {
+        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 5,
+        "image": "assets/questions/2025-class22/52.webp"
+      },
+      "figureRequired": true,
+      "figureImages": [
+        {
+          "src": "assets/questions/2025-class22/52.webp",
+          "alt": "22학번 52번 기출 원본 지문, 보기 및 포함된 의료영상",
+          "caption": "22학번 52번 실제 문제·선택지 원본 · PDF 5페이지"
+        }
+      ],
+      "showOriginalByDefault": false,
+      "transcriptionStatus": "original_image_verified",
+      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "answer": 4,
+      "answerSource": "official_last_page_key_only",
+      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 4번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "evidence": [],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "exam_answer_key",
+        "check1": "official_exam_answer_sheet_last_page_transcribed",
+        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
+        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
+        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
+        "classificationNote": "강의안 주제 기반 소속 추정: choi-duyoung / 조직구증·소아 고형종양",
+        "classificationConfidence": "topic_matched"
+      },
+      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "TLS는 고요산혈증·고인산혈증·고칼륨혈증·저칼슘혈증과 급성 신기능 악화를 동반할 수 있습니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "answerKey": {
+        "image": "assets/evidence/class22/exam-answer-key-p07.webp",
+        "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 7,
+        "kind": "printed_exam_key",
+        "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      }
+    },
+    {
+      "id": "choi-duyoung:22-53",
+      "label": "22-53",
+      "year": 22,
+      "number": 53,
+      "subject": "hematology-1",
+      "professor": "choi-duyoung",
+      "type": "choice",
+      "prompt": "22학번 53번 · 소아 중추신경계 종양 영상\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "choices": [
+        {
+          "number": 1,
+          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 2,
+          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 3,
+          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 4,
+          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 5,
+          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        }
+      ],
+      "source": {
+        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 5,
+        "image": "assets/questions/2025-class22/53.webp"
+      },
+      "figureRequired": true,
+      "figureImages": [
+        {
+          "src": "assets/questions/2025-class22/53.webp",
+          "alt": "22학번 53번 기출 원본 지문, 보기 및 포함된 의료영상",
+          "caption": "22학번 53번 실제 문제·선택지 원본 · PDF 5페이지"
+        }
+      ],
+      "showOriginalByDefault": false,
+      "transcriptionStatus": "original_image_verified",
+      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "answer": 1,
+      "answerSource": "official_last_page_key_only",
+      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 1번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "evidence": [],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "exam_answer_key",
+        "check1": "official_exam_answer_sheet_last_page_transcribed",
+        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
+        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
+        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
+        "classificationNote": "강의안 주제 기반 소속 추정: choi-duyoung / 소아종양 역학·소아뇌종양",
+        "classificationConfidence": "topic_matched"
+      },
+      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "unitTitle": "소아종양 역학·소아뇌종양",
+      "unitId": "f742840d26f4",
+      "aiExplanation": "소아 뇌종양의 영상 위치, AFP 및 β-hCG 등의 혈청종양표지자 이상은 생식세포종양의 감별에 도움을 줍니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "answerKey": {
+        "image": "assets/evidence/class22/exam-answer-key-p07.webp",
+        "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 7,
+        "kind": "printed_exam_key",
+        "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      }
+    },
+    {
+      "id": "choi-duyoung:22-54",
+      "label": "22-54",
+      "year": 22,
+      "number": 54,
+      "subject": "hematology-1",
+      "professor": "choi-duyoung",
+      "type": "choice",
+      "prompt": "22학번 54번 · 신경모세포종 소아 복부 종괴\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "choices": [
+        {
+          "number": 1,
+          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 2,
+          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 3,
+          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 4,
+          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 5,
+          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        }
+      ],
+      "source": {
+        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 5,
+        "image": "assets/questions/2025-class22/54.webp"
+      },
+      "figureRequired": true,
+      "figureImages": [
+        {
+          "src": "assets/questions/2025-class22/54.webp",
+          "alt": "22학번 54번 기출 원본 지문, 보기 및 포함된 의료영상",
+          "caption": "22학번 54번 실제 문제·선택지 원본 · PDF 5페이지"
+        }
+      ],
+      "showOriginalByDefault": false,
+      "transcriptionStatus": "original_image_verified",
+      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "answer": 3,
+      "answerSource": "official_last_page_key_only",
+      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 3번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "evidence": [],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "exam_answer_key",
+        "check1": "official_exam_answer_sheet_last_page_transcribed",
+        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
+        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
+        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
+        "classificationNote": "강의안 주제 기반 소속 추정: choi-duyoung / 신경모세포종·Wilms 종양",
+        "classificationConfidence": "topic_matched"
+      },
+      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "unitTitle": "신경모세포종·Wilms 종양",
+      "unitId": "b21e65d0b8f0",
+      "aiExplanation": "신경모세포종은 복부 종괴·안와주위 출혈 등으로 나타날 수 있습니다. MYCN 증폭은 중요한 불량 예후인자입니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "answerKey": {
+        "image": "assets/evidence/class22/exam-answer-key-p07.webp",
+        "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 7,
+        "kind": "printed_exam_key",
+        "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      }
+    },
+    {
+      "id": "choi-duyoung:22-55",
+      "label": "22-55",
+      "year": 22,
+      "number": 55,
+      "subject": "hematology-1",
+      "professor": "choi-duyoung",
+      "type": "choice",
+      "prompt": "22학번 55번 · 조직구증과 골 병변\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "choices": [
+        {
+          "number": 1,
+          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 2,
+          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 3,
+          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 4,
+          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 5,
+          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        }
+      ],
+      "source": {
+        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 5,
+        "image": "assets/questions/2025-class22/55.webp"
+      },
+      "figureRequired": true,
+      "figureImages": [
+        {
+          "src": "assets/questions/2025-class22/55.webp",
+          "alt": "22학번 55번 기출 원본 지문, 보기 및 포함된 의료영상",
+          "caption": "22학번 55번 실제 문제·선택지 원본 · PDF 5페이지"
+        }
+      ],
+      "showOriginalByDefault": false,
+      "transcriptionStatus": "original_image_verified",
+      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "answer": 3,
+      "answerSource": "official_last_page_key_only",
+      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 3번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "evidence": [],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "exam_answer_key",
+        "check1": "official_exam_answer_sheet_last_page_transcribed",
+        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
+        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
+        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
+        "classificationNote": "강의안 주제 기반 소속 추정: choi-duyoung / 조직구증·소아 고형종양",
+        "classificationConfidence": "topic_matched"
+      },
+      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "Langerhans 세포조직구증은 피부 병변, 골용해성 병변, 간비종대와 다기관 침범을 보일 수 있습니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "answerKey": {
+        "image": "assets/evidence/class22/exam-answer-key-p07.webp",
+        "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 7,
+        "kind": "printed_exam_key",
+        "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      }
+    },
+    {
+      "id": "choi-duyoung:22-56",
+      "label": "22-56",
+      "year": 22,
+      "number": 56,
+      "subject": "hematology-1",
+      "professor": "choi-duyoung",
+      "type": "choice",
+      "prompt": "22학번 56번 · 소아 횡문근육종 예후\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "choices": [
+        {
+          "number": 1,
+          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 2,
+          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 3,
+          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 4,
+          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 5,
+          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        }
+      ],
+      "source": {
+        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 5,
+        "image": "assets/questions/2025-class22/56.webp"
+      },
+      "figureRequired": true,
+      "figureImages": [
+        {
+          "src": "assets/questions/2025-class22/56.webp",
+          "alt": "22학번 56번 기출 원본 지문, 보기 및 포함된 의료영상",
+          "caption": "22학번 56번 실제 문제·선택지 원본 · PDF 5페이지"
+        }
+      ],
+      "showOriginalByDefault": false,
+      "transcriptionStatus": "original_image_verified",
+      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "answer": 5,
+      "answerSource": "official_last_page_key_only",
+      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 5번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "evidence": [],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "exam_answer_key",
+        "check1": "official_exam_answer_sheet_last_page_transcribed",
+        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
+        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
+        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
+        "classificationNote": "강의안 주제 기반 소속 추정: choi-duyoung / 조직구증·소아 고형종양",
+        "classificationConfidence": "topic_matched"
+      },
+      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "횡문근육종은 원발 위치, 조직형, 전이 및 치료 반응에 따라 예후가 달라집니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "answerKey": {
+        "image": "assets/evidence/class22/exam-answer-key-p07.webp",
+        "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 7,
+        "kind": "printed_exam_key",
+        "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      }
+    },
+    {
+      "id": "choi-duyoung:22-57",
+      "label": "22-57",
+      "year": 22,
+      "number": 57,
+      "subject": "hematology-1",
+      "professor": "choi-duyoung",
+      "type": "choice",
+      "prompt": "22학번 57번 · 소아 혈액종양 치료 약제\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "choices": [
+        {
+          "number": 1,
+          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 2,
+          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 3,
+          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 4,
+          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 5,
+          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        }
+      ],
+      "source": {
+        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 5,
+        "image": "assets/questions/2025-class22/57.webp"
+      },
+      "figureRequired": true,
+      "figureImages": [
+        {
+          "src": "assets/questions/2025-class22/57.webp",
+          "alt": "22학번 57번 기출 원본 지문, 보기 및 포함된 의료영상",
+          "caption": "22학번 57번 실제 문제·선택지 원본 · PDF 5페이지"
+        }
+      ],
+      "showOriginalByDefault": false,
+      "transcriptionStatus": "original_image_verified",
+      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "answer": 5,
+      "answerSource": "official_last_page_key_only",
+      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 5번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "evidence": [],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "exam_answer_key",
+        "check1": "official_exam_answer_sheet_last_page_transcribed",
+        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
+        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
+        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
+        "classificationNote": "강의안 주제 기반 소속 추정: choi-duyoung / 조직구증·소아 고형종양",
+        "classificationConfidence": "topic_matched"
+      },
+      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "unitTitle": "조직구증·소아 고형종양",
+      "unitId": "dcffa2e03cf7",
+      "aiExplanation": "혈구포식증후군(HLH)과 소아 혈액질환은 골수소견과 혈구감소증, ferritin, triglyceride 등 진단 기준을 종합합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "answerKey": {
+        "image": "assets/evidence/class22/exam-answer-key-p07.webp",
+        "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 7,
+        "kind": "printed_exam_key",
+        "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      }
+    },
+    {
+      "id": "choi-duyoung:22-58",
+      "label": "22-58",
+      "year": 22,
+      "number": 58,
+      "subject": "hematology-1",
+      "professor": "choi-duyoung",
+      "type": "choice",
+      "prompt": "22학번 58번 · 소아 복부 종괴 감별\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "choices": [
+        {
+          "number": 1,
+          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 2,
+          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 3,
+          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 4,
+          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 5,
+          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        }
+      ],
+      "source": {
+        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 6,
+        "image": "assets/questions/2025-class22/58.webp"
+      },
+      "figureRequired": true,
+      "figureImages": [
+        {
+          "src": "assets/questions/2025-class22/58.webp",
+          "alt": "22학번 58번 기출 원본 지문, 보기 및 포함된 의료영상",
+          "caption": "22학번 58번 실제 문제·선택지 원본 · PDF 6페이지"
+        }
+      ],
+      "showOriginalByDefault": false,
+      "transcriptionStatus": "original_image_verified",
+      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "answer": 4,
+      "answerSource": "official_last_page_key_only",
+      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 4번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "evidence": [],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "exam_answer_key",
+        "check1": "official_exam_answer_sheet_last_page_transcribed",
+        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
+        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
+        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
+        "classificationNote": "강의안 주제 기반 소속 추정: choi-duyoung / 신경모세포종·Wilms 종양",
+        "classificationConfidence": "topic_matched"
+      },
+      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "unitTitle": "신경모세포종·Wilms 종양",
+      "unitId": "b21e65d0b8f0",
+      "aiExplanation": "복부 종괴는 신경모세포종·Wilms 종양 등을 감별합니다. 영상의 발생 위치, 뇨중 VMA/HVA, 혈뇨 여부가 도움이 됩니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "answerKey": {
+        "image": "assets/evidence/class22/exam-answer-key-p07.webp",
+        "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 7,
+        "kind": "printed_exam_key",
+        "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      }
     }
   ]
 }

@@ -1,0 +1,315 @@
+{
+  "source": "22_혈액과종양1차_종양학_문제,정답.pdf",
+  "answer_source": "PDF 마지막 7페이지 정답표만",
+  "objectiveCount": 68,
+  "shortCount": 3,
+  "multiAnswer": {
+    "8": [
+      1,
+      2,
+      4
+    ]
+  },
+  "professorCounts": {
+    "kim-hyewon": 2,
+    "park-murim": 26,
+    "won-taewan": 9,
+    "choi-geumha": 6,
+    "lee-kanggyu": 6,
+    "lee-seungshin": 3,
+    "choi-duyoung": 9,
+    "lee-seoul": 10
+  },
+  "officialKey": [
+    {
+      "number": 1,
+      "answer": 4
+    },
+    {
+      "number": 2,
+      "answer": 5
+    },
+    {
+      "number": 3,
+      "answer": 2
+    },
+    {
+      "number": 4,
+      "answer": 5
+    },
+    {
+      "number": 5,
+      "answer": 4
+    },
+    {
+      "number": 6,
+      "answer": 5
+    },
+    {
+      "number": 7,
+      "answer": 2
+    },
+    {
+      "number": 8,
+      "answer": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "number": 9,
+      "answer": 1
+    },
+    {
+      "number": 10,
+      "answer": 1
+    },
+    {
+      "number": 11,
+      "answer": 4
+    },
+    {
+      "number": 12,
+      "answer": 3
+    },
+    {
+      "number": 13,
+      "answer": 4
+    },
+    {
+      "number": 14,
+      "answer": 5
+    },
+    {
+      "number": 15,
+      "answer": 4
+    },
+    {
+      "number": 16,
+      "answer": 2
+    },
+    {
+      "number": 17,
+      "answer": 3
+    },
+    {
+      "number": 18,
+      "answer": 2
+    },
+    {
+      "number": 19,
+      "answer": 4
+    },
+    {
+      "number": 20,
+      "answer": 5
+    },
+    {
+      "number": 21,
+      "answer": 3
+    },
+    {
+      "number": 22,
+      "answer": 4
+    },
+    {
+      "number": 23,
+      "answer": 3
+    },
+    {
+      "number": 24,
+      "answer": 2
+    },
+    {
+      "number": 25,
+      "answer": 1
+    },
+    {
+      "number": 26,
+      "answer": 2
+    },
+    {
+      "number": 27,
+      "answer": 5
+    },
+    {
+      "number": 28,
+      "answer": 4
+    },
+    {
+      "number": 29,
+      "answer": 2
+    },
+    {
+      "number": 30,
+      "answer": 2
+    },
+    {
+      "number": 31,
+      "answer": 4
+    },
+    {
+      "number": 32,
+      "answer": 3
+    },
+    {
+      "number": 33,
+      "answer": 1
+    },
+    {
+      "number": 34,
+      "answer": 4
+    },
+    {
+      "number": 35,
+      "answer": 4
+    },
+    {
+      "number": 36,
+      "answer": 4
+    },
+    {
+      "number": 37,
+      "answer": 3
+    },
+    {
+      "number": 38,
+      "answer": 4
+    },
+    {
+      "number": 39,
+      "answer": 2
+    },
+    {
+      "number": 40,
+      "answer": 2
+    },
+    {
+      "number": 41,
+      "answer": 2
+    },
+    {
+      "number": 42,
+      "answer": 5
+    },
+    {
+      "number": 43,
+      "answer": 4
+    },
+    {
+      "number": 44,
+      "answer": 5
+    },
+    {
+      "number": 45,
+      "answer": 4
+    },
+    {
+      "number": 46,
+      "answer": 3
+    },
+    {
+      "number": 47,
+      "answer": 4
+    },
+    {
+      "number": 48,
+      "answer": 5
+    },
+    {
+      "number": 49,
+      "answer": 2
+    },
+    {
+      "number": 50,
+      "answer": 5
+    },
+    {
+      "number": 51,
+      "answer": 1
+    },
+    {
+      "number": 52,
+      "answer": 4
+    },
+    {
+      "number": 53,
+      "answer": 1
+    },
+    {
+      "number": 54,
+      "answer": 3
+    },
+    {
+      "number": 55,
+      "answer": 3
+    },
+    {
+      "number": 56,
+      "answer": 5
+    },
+    {
+      "number": 57,
+      "answer": 5
+    },
+    {
+      "number": 58,
+      "answer": 4
+    },
+    {
+      "number": 59,
+      "answer": 1
+    },
+    {
+      "number": 60,
+      "answer": 2
+    },
+    {
+      "number": 61,
+      "answer": 2
+    },
+    {
+      "number": 62,
+      "answer": 4
+    },
+    {
+      "number": 63,
+      "answer": 5
+    },
+    {
+      "number": 64,
+      "answer": 2
+    },
+    {
+      "number": 65,
+      "answer": 2
+    },
+    {
+      "number": 66,
+      "answer": 5
+    },
+    {
+      "number": 67,
+      "answer": 4
+    },
+    {
+      "number": 68,
+      "answer": 4
+    }
+  ],
+  "classificationReview": [
+    24,
+    25,
+    28,
+    31,
+    32,
+    37,
+    41,
+    65,
+    66,
+    67,
+    68
+  ],
+  "answerLayout": "페이지 7의 왼쪽 5문항, 오른쪽 5문항을 같은 행에서 번갈아 읽음"
+}

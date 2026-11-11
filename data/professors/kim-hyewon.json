@@ -68,7 +68,10 @@
       "type": "choice",
       "showOriginalByDefault": false,
       "answerSource": "lecture_double_checked",
-      "transcriptionWarning": "기출 원본의 이미지·필기를 함께 확인하세요. 기존 형광펜 표시만으로 정답을 확정하지 않았습니다."
+      "transcriptionWarning": "기출 원본의 이미지·필기를 함께 확인하세요. 기존 형광펜 표시만으로 정답을 확정하지 않았습니다.",
+      "unitTitle": "유방영상",
+      "unitId": "2afa649dbfd6",
+      "aiExplanation": "판단 포인트: 유방 압박은 유방 고정·두께 감소·노출시간 감소·겹침 감소·해상도 향상에 도움이 됩니다. 강의안 17쪽에서 겹침은 증가가 아니라 감소하므로 ⑤가 정답입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "kim-hyewon:18-51",
@@ -138,7 +141,10 @@
       "type": "choice",
       "showOriginalByDefault": false,
       "answerSource": "lecture_double_checked",
-      "transcriptionWarning": "기출 원본의 이미지·필기를 함께 확인하세요. 기존 형광펜 표시만으로 정답을 확정하지 않았습니다."
+      "transcriptionWarning": "기출 원본의 이미지·필기를 함께 확인하세요. 기존 형광펜 표시만으로 정답을 확정하지 않았습니다.",
+      "unitTitle": "유방영상",
+      "unitId": "2afa649dbfd6",
+      "aiExplanation": "판단 포인트: 강의안 89쪽은 유방 영상검사의 역할에 수술 후 추적검사(Post-OP follow-up)를 명시합니다. 따라서 치료 후 영상검사가 필요하지 않다는 ④가 틀립니다. 11쪽은 표준 CC·MLO 촬영을 뒷받침합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "kim-hyewon:18-68",
@@ -215,7 +221,10 @@
           "alt": "55세 여성 유방촬영 원본 영상",
           "caption": "55세 여성 유방촬영 원본 영상 · 기출 원본"
         }
-      ]
+      ],
+      "unitTitle": "유방영상",
+      "unitId": "2afa649dbfd6",
+      "aiExplanation": "판단 포인트: 기출 원본 영상에는 불규칙한 종괴와 석회가 함께 보입니다. 강의안 40쪽은 종괴와 석회의 동반 소견이 악성 가능성을 높인다고 설명하고, 43쪽은 석회의 모양·분포로 의심한 뒤 조직검사로 확인하도록 안내합니다. ⑤는 「의심」이라는 표현으로 강의안과 일치합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "kim-hyewon:19-4",
@@ -278,7 +287,10 @@
       "type": "choice",
       "showOriginalByDefault": false,
       "answerSource": "lecture_double_checked",
-      "transcriptionWarning": "기출 원본의 이미지·필기를 함께 확인하세요. 기존 형광펜 표시만으로 정답을 확정하지 않았습니다."
+      "transcriptionWarning": "기출 원본의 이미지·필기를 함께 확인하세요. 기존 형광펜 표시만으로 정답을 확정하지 않았습니다.",
+      "unitTitle": "유방영상",
+      "unitId": "2afa649dbfd6",
+      "aiExplanation": "판단 포인트: 유방 압박은 유방 고정·두께 감소·노출시간 감소·겹침 감소·해상도 향상에 도움이 됩니다. 강의안 17쪽에서 겹침은 증가가 아니라 감소하므로 ⑤가 정답입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "kim-hyewon:19-5",
@@ -355,7 +367,10 @@
           "alt": "62세 여성 CC·MLO 유방촬영 영상",
           "caption": "62세 여성 CC·MLO 유방촬영 영상 · 기출 원본"
         }
-      ]
+      ],
+      "unitTitle": "유방영상",
+      "unitId": "2afa649dbfd6",
+      "aiExplanation": "판단 포인트: 원본 CC·MLO 영상은 유방실질이 비교적 적게 보여 치밀유방이라고 보기 어렵습니다. 강의안 36쪽의 지방형·치밀형 영상 예시와 15쪽의 CC/MLO 위치 판독을 비교해, 치밀유방에 해당한다는 ②가 옳지 않은 설명임을 확인했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "kim-hyewon:20-5",
@@ -418,7 +433,10 @@
       "type": "choice",
       "showOriginalByDefault": false,
       "answerSource": "lecture_double_checked",
-      "transcriptionWarning": "기출 원본의 이미지·필기를 함께 확인하세요. 기존 형광펜 표시만으로 정답을 확정하지 않았습니다."
+      "transcriptionWarning": "기출 원본의 이미지·필기를 함께 확인하세요. 기존 형광펜 표시만으로 정답을 확정하지 않았습니다.",
+      "unitTitle": "유방영상",
+      "unitId": "2afa649dbfd6",
+      "aiExplanation": "판단 포인트: 유방 압박은 유방 고정·두께 감소·노출시간 감소·겹침 감소·해상도 향상에 도움이 됩니다. 강의안 17쪽에서 겹침은 증가가 아니라 감소하므로 ⑤가 정답입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "kim-hyewon:20-6",
@@ -495,7 +513,10 @@
           "alt": "48세 여성 유방촬영 미세석회 영상",
           "caption": "48세 여성 유방촬영 미세석회 영상 · 기출 원본"
         }
-      ]
+      ],
+      "unitTitle": "유방영상",
+      "unitId": "2afa649dbfd6",
+      "aiExplanation": "이 문항(20-6)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음은 48세 여성의 유방촬영 사진이다. 맞는 설명은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "kim-hyewon:21-1",
@@ -558,7 +579,10 @@
       "type": "choice",
       "showOriginalByDefault": false,
       "answerSource": "lecture_double_checked",
-      "transcriptionWarning": "기출 원본의 이미지·필기를 함께 확인하세요. 기존 형광펜 표시만으로 정답을 확정하지 않았습니다."
+      "transcriptionWarning": "기출 원본의 이미지·필기를 함께 확인하세요. 기존 형광펜 표시만으로 정답을 확정하지 않았습니다.",
+      "unitTitle": "유방영상",
+      "unitId": "2afa649dbfd6",
+      "aiExplanation": "판단 포인트: 강의안 PDF 17쪽은 압박 촬영으로 겹침(superimposition)이 감소하고 해상도가 향상된다고 명시합니다. 따라서 겹침이 증가한다는 ⑤가 틀렸습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "kim-hyewon:21-2",
@@ -635,7 +659,156 @@
           "alt": "두 개의 원본 유방촬영 영상",
           "caption": "두 개의 원본 유방촬영 영상 · 기출 원본"
         }
-      ]
+      ],
+      "unitTitle": "유방영상",
+      "unitId": "2afa649dbfd6",
+      "aiExplanation": "이 문항(21-2)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음은 48세 여성의 유방촬영 사진이다. 맞는 설명은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+    },
+    {
+      "id": "kim-hyewon:22-1",
+      "label": "22-1",
+      "year": 22,
+      "number": 1,
+      "subject": "hematology-1",
+      "professor": "kim-hyewon",
+      "type": "choice",
+      "prompt": "22학번 1번 · 유방 확대촬영의 원리\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "choices": [
+        {
+          "number": 1,
+          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 2,
+          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 3,
+          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 4,
+          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 5,
+          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        }
+      ],
+      "source": {
+        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 1,
+        "image": "assets/questions/2025-class22/01.webp"
+      },
+      "figureRequired": true,
+      "figureImages": [
+        {
+          "src": "assets/questions/2025-class22/01.webp",
+          "alt": "22학번 1번 기출 원본 지문, 보기 및 포함된 의료영상",
+          "caption": "22학번 1번 실제 문제·선택지 원본 · PDF 1페이지"
+        }
+      ],
+      "showOriginalByDefault": false,
+      "transcriptionStatus": "original_image_verified",
+      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "answer": 4,
+      "answerSource": "official_last_page_key_only",
+      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 4번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "evidence": [],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "exam_answer_key",
+        "check1": "official_exam_answer_sheet_last_page_transcribed",
+        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
+        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
+        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
+        "classificationNote": "강의안 주제 기반 소속 추정: kim-hyewon / 유방영상",
+        "classificationConfidence": "topic_matched"
+      },
+      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "unitTitle": "유방영상",
+      "unitId": "2afa649dbfd6",
+      "aiExplanation": "확대촬영은 X선의 발산과 물체-검출기 거리 차이를 이용합니다. 유방 내 미세석회화나 작은 병변의 관찰이 목적이며 촬영 방향이 한 자세로만 제한되는지 확인하세요.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "answerKey": {
+        "image": "assets/evidence/class22/exam-answer-key-p07.webp",
+        "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 7,
+        "kind": "printed_exam_key",
+        "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      }
+    },
+    {
+      "id": "kim-hyewon:22-2",
+      "label": "22-2",
+      "year": 22,
+      "number": 2,
+      "subject": "hematology-1",
+      "professor": "kim-hyewon",
+      "type": "choice",
+      "prompt": "22학번 2번 · 유방촬영 영상 판독\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "choices": [
+        {
+          "number": 1,
+          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 2,
+          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 3,
+          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 4,
+          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 5,
+          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        }
+      ],
+      "source": {
+        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 1,
+        "image": "assets/questions/2025-class22/02.webp"
+      },
+      "figureRequired": true,
+      "figureImages": [
+        {
+          "src": "assets/questions/2025-class22/02.webp",
+          "alt": "22학번 2번 기출 원본 지문, 보기 및 포함된 의료영상",
+          "caption": "22학번 2번 실제 문제·선택지 원본 · PDF 1페이지"
+        }
+      ],
+      "showOriginalByDefault": false,
+      "transcriptionStatus": "original_image_verified",
+      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "answer": 5,
+      "answerSource": "official_last_page_key_only",
+      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 5번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "evidence": [],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "exam_answer_key",
+        "check1": "official_exam_answer_sheet_last_page_transcribed",
+        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
+        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
+        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
+        "classificationNote": "강의안 주제 기반 소속 추정: kim-hyewon / 유방영상",
+        "classificationConfidence": "topic_matched"
+      },
+      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "unitTitle": "유방영상",
+      "unitId": "2afa649dbfd6",
+      "aiExplanation": "유방촬영에서 종괴의 위치·형태·경계가 판단 요소입니다. 영상에서 악성 의심 소견이 있으면 조직학적 확진 필요성까지 함께 고려합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "answerKey": {
+        "image": "assets/evidence/class22/exam-answer-key-p07.webp",
+        "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 7,
+        "kind": "printed_exam_key",
+        "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      }
     }
   ]
 }

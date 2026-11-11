@@ -74,7 +74,10 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "강의안 직접 근거 부족/선지 불확실: 검토 필요"
       },
-      "notes": "상대정맥폐쇄 및 혈전 원인은 강의안 6쪽에 있으나 ④ 저분자량 헤파린을 우선한다고 직접 명시되지 않아 검토 필요."
+      "notes": "상대정맥폐쇄 및 혈전 원인은 강의안 6쪽에 있으나 ④ 저분자량 헤파린을 우선한다고 직접 명시되지 않아 검토 필요.",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "이 문항(17-24)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 81세 남자가 심한 호흡곤란으로 내원해 AML 진단을 받았다. 산소 투여에도 호전되지 않고 흉부 CT에서 상대정맥 부위 혈전이 의심되었다. 가장 먼저 시행할 응급치료는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "lee-seungshin:17-25",
@@ -143,7 +146,10 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "강의안 직접 근거 부족/선지 불확실: 검토 필요"
       },
-      "notes": "원본 흉부 X-ray와 심낭삼출 소견을 확인해야 하며, 강의안은 진단법과 처치를 나누어 설명하므로 단일 정답을 미확정 처리."
+      "notes": "원본 흉부 X-ray와 심낭삼출 소견을 확인해야 하며, 강의안은 진단법과 처치를 나누어 설명하므로 단일 정답을 미확정 처리.",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "이 문항(17-25)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 8세 소세포 폐암으로 항암 치료 중인 환자가 악화되는 호흡곤란으로 내원하였다. 흉부 X-ray는 다음과 같다. 다음 처치는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "lee-seungshin:17-주6",
@@ -195,7 +201,10 @@
         "decisionReason": "원문 내용과 각 보기를 대조해 채택"
       },
       "notes": "강의안 모범답안은 표시하되 서술형의 자동 문자열 일치 채점은 하지 않고 채점 보류로 처리합니다.",
-      "gradingMode": "manual"
+      "gradingMode": "manual",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "판단 포인트: 강의안 35쪽의 전해질 이상과 38쪽의 예방 원칙을 함께 확인해야 합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "lee-seungshin:17-주7",
@@ -240,7 +249,10 @@
         "decisionReason": "원문 내용과 각 보기를 대조해 채택"
       },
       "notes": "강의안 모범답안은 표시하되 서술형의 자동 문자열 일치 채점은 하지 않고 채점 보류로 처리합니다.",
-      "gradingMode": "manual"
+      "gradingMode": "manual",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "판단 포인트: 척수압박을 의심하여 덱사메타손을 먼저 투여한 뒤 MRI로 진단합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "lee-seungshin:17-주8",
@@ -293,7 +305,10 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "원문 내용과 각 보기를 대조해 채택"
       },
-      "notes": ""
+      "notes": "",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "판단 포인트: 강의안 19쪽은 담도 폐쇄에 대한 내시경 및 경피적 담도 배액 방법(ERBD, PTBD)을 명시합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "lee-seungshin:18-32",
@@ -356,7 +371,10 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "원문 내용과 각 보기를 대조해 채택"
       },
-      "notes": ""
+      "notes": "",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "판단 포인트: 신경학적 결손을 동반한 척수압박이 의심되어 우선 스테로이드를 투여합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "lee-seungshin:18-45",
@@ -425,7 +443,10 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "원문 내용과 각 보기를 대조해 채택"
       },
-      "notes": ""
+      "notes": "",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "판단 포인트: 상대정맥증후군을 보이지만 원인암이 확진되지 않은 경우 조직학적 진단 후 치료를 정합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "lee-seungshin:18-67",
@@ -488,7 +509,10 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "원문 내용과 각 보기를 대조해 채택"
       },
-      "notes": ""
+      "notes": "",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "판단 포인트: 종양용해증후군에서 고인산혈증과 칼슘인산염 침착에 의한 이차성 저칼슘혈증이 생깁니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "lee-seungshin:19-52",
@@ -557,7 +581,10 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "강의안 직접 근거 부족/선지 불확실: 검토 필요"
       },
-      "notes": "강의안 22쪽에서 장폐색 영상은 확인되나 vincristine을 직접 원인으로 연결한 문장이 없으므로 보류."
+      "notes": "강의안 22쪽에서 장폐색 영상은 확인되나 vincristine을 직접 원인으로 연결한 문장이 없으므로 보류.",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "이 문항(19-52)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 항암 치료 중인 62세 여자가 복통과 변비, 복부팽만과 장음 감소로 내원했다. 복부 X-ray는 다음과 같다. 원인 약제로 가장 가능한 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "lee-seungshin:19-53",
@@ -620,7 +647,10 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "강의안 직접 근거 부족/선지 불확실: 검토 필요"
       },
-      "notes": "강의안 PDF 44쪽은 neutropenic enterocolitis의 우하복부 소견을 설명하지만 CT를 최선이라고 명시하지 않아 미채택."
+      "notes": "강의안 PDF 44쪽은 neutropenic enterocolitis의 우하복부 소견을 설명하지만 CT를 최선이라고 명시하지 않아 미채택.",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "이 문항(19-53)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: AML 관해유도 항암치료 중인 22세 여자가 발열(38.9℃), 복통·설사, 우하복부 압통 및 반발압통을 보였다. Hb 7 g/dL, WBC 100/μL, 중성구 1%, 혈소판 32,000/μL였다. 진단 및 감별을 위한 가장 적절한 검사는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
     },
     {
       "id": "lee-seungshin:20-1",
@@ -683,7 +713,10 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "원문 내용과 각 보기를 대조해 채택"
       },
-      "notes": ""
+      "notes": "",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "판단 포인트: 종양용해증후군 예방에서 충분한 수액 공급이 핵심이므로 수액을 제한하라는 ②가 틀립니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "lee-seungshin:20-2",
@@ -746,7 +779,10 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "원문 내용과 각 보기를 대조해 채택"
       },
-      "notes": ""
+      "notes": "",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "판단 포인트: 척수압박이 의심되면 고용량 덱사메타손을 즉시 투여하고 척추 MRI로 확인합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "lee-seungshin:20-12",
@@ -809,7 +845,10 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "원문 내용과 각 보기를 대조해 채택"
       },
-      "notes": ""
+      "notes": "",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "판단 포인트: 종양세포 파괴로 세포 내 칼륨·인산·요산이 방출되고 고칼륨혈증이 나타납니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "lee-seungshin:21-8",
@@ -878,7 +917,10 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "원문 내용과 각 보기를 대조해 채택"
       },
-      "notes": ""
+      "notes": "",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "판단 포인트: 확진되지 않은 악성 종괴의 SVC 증후군은 조직학적 진단 뒤 원인에 따른 치료를 결정합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "lee-seungshin:21-9",
@@ -947,7 +989,10 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "원문 내용과 각 보기를 대조해 채택"
       },
-      "notes": ""
+      "notes": "",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "판단 포인트: 강의안 38쪽은 종양용해증후군 예방 수단으로 알로퓨리놀을 제시하므로 피한다는 ④가 틀립니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "lee-seungshin:21-10",
@@ -1010,7 +1055,10 @@
         "verifiedAgainst": "current_or_prior_user_uploaded_lecture_pdf",
         "decisionReason": "원문 내용과 각 보기를 대조해 채택"
       },
-      "notes": ""
+      "notes": "",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "판단 포인트: 척수압박 의심 시 고용량 덱사메타손을 조기에 투여합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
     },
     {
       "id": "lee-seungshin:21-주2",
@@ -1062,7 +1110,202 @@
       "shortRequiredTerms": [
         "ERBD",
         "PTBD"
-      ]
+      ],
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "판단 포인트: 담관 폐쇄에 대해 강의안 19쪽은 ERBD 및 PTBD를 배액 시술로 제시합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+    },
+    {
+      "id": "lee-seungshin:22-40",
+      "label": "22-40",
+      "year": 22,
+      "number": 40,
+      "subject": "hematology-1",
+      "professor": "lee-seungshin",
+      "type": "choice",
+      "prompt": "22학번 40번 · 상대정맥증후군 응급처치\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "choices": [
+        {
+          "number": 1,
+          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 2,
+          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 3,
+          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 4,
+          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 5,
+          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        }
+      ],
+      "source": {
+        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 3,
+        "image": "assets/questions/2025-class22/40.webp"
+      },
+      "figureRequired": true,
+      "figureImages": [
+        {
+          "src": "assets/questions/2025-class22/40.webp",
+          "alt": "22학번 40번 기출 원본 지문, 보기 및 포함된 의료영상",
+          "caption": "22학번 40번 실제 문제·선택지 원본 · PDF 3페이지"
+        }
+      ],
+      "showOriginalByDefault": false,
+      "transcriptionStatus": "original_image_verified",
+      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "answer": 2,
+      "answerSource": "official_last_page_key_only",
+      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 2번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "evidence": [],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "exam_answer_key",
+        "check1": "official_exam_answer_sheet_last_page_transcribed",
+        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
+        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
+        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
+        "classificationNote": "강의안 주제 기반 소속 추정: lee-seungshin / 종양학적 응급질환",
+        "classificationConfidence": "topic_matched"
+      },
+      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "상대정맥 증후군은 종양에 의한 정맥 유출 장애가 원인이며, 호흡·신경학적 응급도와 조직진단 필요성을 함께 평가합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "answerKey": {
+        "image": "assets/evidence/class22/exam-answer-key-p07.webp",
+        "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 7,
+        "kind": "printed_exam_key",
+        "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      }
+    },
+    {
+      "id": "lee-seungshin:22-41",
+      "label": "22-41",
+      "year": 22,
+      "number": 41,
+      "subject": "hematology-1",
+      "professor": "lee-seungshin",
+      "type": "choice",
+      "prompt": "22학번 41번 · 진행성 소세포폐암의 응급증상\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "choices": [
+        {
+          "number": 1,
+          "text": "1번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 2,
+          "text": "2번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 3,
+          "text": "3번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 4,
+          "text": "4번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        },
+        {
+          "number": 5,
+          "text": "5번 · 위 원본 이미지에서 실제 선지 내용 확인"
+        }
+      ],
+      "source": {
+        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 3,
+        "image": "assets/questions/2025-class22/41.webp"
+      },
+      "figureRequired": true,
+      "figureImages": [
+        {
+          "src": "assets/questions/2025-class22/41.webp",
+          "alt": "22학번 41번 기출 원본 지문, 보기 및 포함된 의료영상",
+          "caption": "22학번 41번 실제 문제·선택지 원본 · PDF 3페이지"
+        }
+      ],
+      "showOriginalByDefault": false,
+      "transcriptionStatus": "original_image_verified",
+      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "answer": 2,
+      "answerSource": "official_last_page_key_only",
+      "explanation": "22학번 기출 원본 PDF 마지막 7페이지 정답표에 2번으로 표시되어 있습니다. 객관식 정답 번호는 이 표만 따릅니다. 강의안의 직접 근거가 별도 확인되지 않은 부분은 검증 완료로 표시하지 않습니다.",
+      "evidence": [],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "exam_answer_key",
+        "check1": "official_exam_answer_sheet_last_page_transcribed",
+        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
+        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
+        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
+        "classificationNote": "강의안 주제 기반 소속 추정: lee-seungshin / 종양학적 응급질환",
+        "classificationConfidence": "review"
+      },
+      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "aiExplanation": "폐암 환자의 갑작스러운 호흡곤란에서는 대량 흉수, 종양에 의한 폐쇄, 감염, 심장 합병증을 영상과 함께 평가합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "answerKey": {
+        "image": "assets/evidence/class22/exam-answer-key-p07.webp",
+        "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 7,
+        "kind": "printed_exam_key",
+        "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      }
+    },
+    {
+      "id": "lee-seungshin:22-주3",
+      "label": "22-주3",
+      "year": 22,
+      "number": 1003,
+      "subject": "hematology-1",
+      "professor": "lee-seungshin",
+      "type": "short",
+      "prompt": "22학번 주관식 3번 · 암환자 하지 근력 저하 응급증례\n아래 기출 원본 이미지에서 지문과 선택지를 확인하세요. (원본 스캔 우선 제공)",
+      "choices": [],
+      "source": {
+        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 6,
+        "image": "assets/questions/2025-class22/71.webp"
+      },
+      "figureRequired": true,
+      "figureImages": [
+        {
+          "src": "assets/questions/2025-class22/71.webp",
+          "alt": "22학번 71번 기출 원본 지문, 보기 및 포함된 의료영상",
+          "caption": "22학번 71번 실제 문제·선택지 원본 · PDF 6페이지"
+        }
+      ],
+      "showOriginalByDefault": false,
+      "transcriptionStatus": "original_image_verified",
+      "transcriptionWarning": "이미지 기반 원본이므로 자동 텍스트 추출을 신뢰할 수 없습니다. 문항과 보기는 원본 이미지로 제공하며, 보기 버튼은 원본 선택지 번호에 대응합니다.",
+      "answer": null,
+      "answerSource": "unconfirmed_subjective",
+      "explanation": "주관식 문항의 공식 모범답안은 제공된 시험지 마지막 정답표에 없습니다. 강의안의 관련 개념을 바탕으로 학습하되 채점은 보류합니다.",
+      "evidence": [],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "pending",
+        "check1": "subjective_question_original_pdf_verified",
+        "check2": "no_subjective_answer_in_exam_last_page_key",
+        "verifiedAgainst": "PDF 마지막 7페이지에는 객관식 1~68의 정답만 있음",
+        "decisionReason": "주관식 3문항은 공식 정답표에 모범답안이 없어 자동 채점하지 않음",
+        "classificationNote": "강의안 주제 기반 소속 추정: lee-seungshin / 종양학적 응급질환",
+        "classificationConfidence": "topic_matched"
+      },
+      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "gradingMode": "manual",
+      "aiExplanation": "새롭게 발생한 하지 근력 저하·감각변화는 척수압박 같은 응급 상황을 우선 평가해야 하며 영상 검사와 신속한 치료가 중요합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다."
     }
   ]
 }
