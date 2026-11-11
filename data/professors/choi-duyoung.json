@@ -15,7 +15,7 @@
       "subject": "hematology-1",
       "professor": "choi-duyoung",
       "type": "choice",
-      "prompt": "3세 남아가 복부 종괴, 설사, 혈구 감소를 보였다. 복부 CT와 검사 결과는 다음과 같다. 올바른 설명은?",
+      "prompt": "3세 남아가 배에서 덩이가 만져져서 병원에 왔다. 2주 동안 설사가 있었으며, 체온은 37.7 C였다. 왼쪽 배에서 덩이가 만져졌고, 간과 지라는 만져지지 않았다. 검사 결과와 복부 컴퓨터 단층촬영사진이 다음과 같았다. 올바른 설명은?",
       "choices": [
         {
           "number": 1,
@@ -52,13 +52,13 @@
         },
         {
           "src": "assets/figures/choi-duyoung/17-38-continuation.webp",
-          "alt": "17-38 이어지는 기출 원본",
-          "caption": "기출 PDF 10페이지에 이어지는 문제 내용·선택지"
+          "alt": "17-38 이어지는 기출 원본 검사 결과",
+          "caption": "17-38 문제 추가 검사 결과 · 사용자 제공 수정 이미지"
         }
       ],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 3,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -70,15 +70,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 3번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "PDF 9~10페이지에 이어지는 문제입니다. 원본 이미지의 문장과 함께 확인하세요.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:17-39",
@@ -125,8 +126,8 @@
         }
       ],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 2,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -138,15 +139,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 2번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 2번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:17-40",
@@ -251,9 +253,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": 2,
+      "answerSource": "user_confirmed",
+      "explanation": "황색종은 콜레스테롤이나 지질이 피부나 힘줄에 침착되어 생기는 노란색 결절로 고지혈증 등과 관련된다. 급성 비림프구성 백혈병과 특이적으로 관련된 피부 소견은 녹색종(chloroma)이나 gingival hyperplasia이다.",
       "candidateEvidence": [
         {
           "lectureId": "lecture1",
@@ -264,15 +266,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 2번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 2번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다. 해설 보충: 황색종은 콜레스테롤이나 지질이 피부나 힘줄에 침착되어 생기는 노란색 결절로 고지혈증 등과 관련된다. 급성 비림프구성 백혈병과 특이적으로 관련된 피부 소견은 녹색종(chloroma)이나 gingival hyperplasia이다."
     },
     {
       "id": "choi-duyoung:17-42",
@@ -319,8 +322,8 @@
         }
       ],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 2,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -332,15 +335,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 2번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 2번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:17-43",
@@ -387,8 +391,8 @@
         }
       ],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 2,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -406,15 +410,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 2번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 2번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:17-44",
@@ -461,8 +466,8 @@
         }
       ],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 3,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -474,15 +479,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 3번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:17-45",
@@ -524,7 +530,7 @@
       "figureImages": [],
       "showOriginalByDefault": false,
       "answer": 3,
-      "answerSource": "lecture_double_checked",
+      "answerSource": "user_confirmed",
       "explanation": "골육종은 sunburst 모양의 골막 반응이 특징적이고, Ewing 육종은 onion skinning이 특징입니다.",
       "candidateEvidence": [],
       "evidence": [
@@ -537,16 +543,16 @@
         }
       ],
       "validation": {
-        "stage": "accepted",
-        "check1": "uploaded_lecture_original_page_verified",
-        "check2": "original_question_and_five_options_manually_reconciled",
-        "verifiedAgainst": "uploaded_lectures_only",
-        "anchor": "SUNBURST",
-        "decisionReason": "해당 강의안 원문과 문제·선지의 직접 대조를 통과하여 채택"
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "anchor": "",
+        "decisionReason": "2026-11-11 사용자 지정: 3번으로 확정"
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": ""
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:17-46",
@@ -587,8 +593,8 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 4,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -600,15 +606,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 4번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 4번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:17-47",
@@ -649,8 +656,8 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 3,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -662,15 +669,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 3번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:17-48",
@@ -711,8 +719,8 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 1,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -730,15 +738,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 1번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 1번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:17-49",
@@ -779,8 +788,8 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 5,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -792,15 +801,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 5번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:18-14",
@@ -847,8 +857,8 @@
         }
       ],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 3,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -860,15 +870,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 3번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:18-26",
@@ -909,8 +920,8 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 2,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -922,15 +933,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 2번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 2번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:18-29",
@@ -972,7 +984,7 @@
       "figureImages": [],
       "showOriginalByDefault": false,
       "answer": 4,
-      "answerSource": "lecture_double_checked",
+      "answerSource": "user_confirmed",
       "explanation": "HLH 진단 기준의 soluble CD25(IL-2Rα) ≥2,400 U/mL를 확인했습니다.",
       "candidateEvidence": [],
       "evidence": [
@@ -985,16 +997,16 @@
         }
       ],
       "validation": {
-        "stage": "accepted",
-        "check1": "uploaded_lecture_original_page_verified",
-        "check2": "original_question_and_five_options_manually_reconciled",
-        "verifiedAgainst": "uploaded_lectures_only",
-        "anchor": "soluble CD25",
-        "decisionReason": "해당 강의안 원문과 문제·선지의 직접 대조를 통과하여 채택"
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "anchor": "",
+        "decisionReason": "2026-11-11 사용자 지정: 4번으로 확정"
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": ""
+      "notes": "사용자가 4번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:18-33",
@@ -1035,8 +1047,8 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 5,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -1054,15 +1066,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 5번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:18-47",
@@ -1114,8 +1127,8 @@
         }
       ],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 5,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -1127,15 +1140,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 5번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "선택지는 PDF 9페이지 첫머리에 이어집니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:18-56",
@@ -1252,8 +1266,8 @@
         }
       ],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 3,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -1265,15 +1279,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 3번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "①번 선택지는 원본 사진의 해당 위치에서 직접 확인이 필요합니다. 임의로 채우지 않았습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:18-77",
@@ -1314,8 +1329,8 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 5,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -1327,15 +1342,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 5번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "⑤번은 발생 조직과 발생 위치를 혼동할 수 있어 강의안과 양립 여부를 검토해야 합니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:18-82",
@@ -1345,7 +1361,7 @@
       "subject": "hematology-1",
       "professor": "choi-duyoung",
       "type": "choice",
-      "prompt": "28개월 남아가 의식변화·두통·운동실조와 고혈압을 보였으며 뇌 MRI가 제시되었다. 나쁜 예후를 나타내는 것은?",
+      "prompt": "남아가 최근 들어 발생하는 의식변화, 두통으로 병원에 왔다. 운동실조와 좌우의 집게손가락을 맞닿게 하지 못하는 증상을 보였다. 혈압 은 160/120 mmHg이다. 뇌 MRI 사진은 다음과 같다. 나쁜 예후를 나타내는 것은?",
       "choices": [
         {
           "number": 1,
@@ -1373,22 +1389,11 @@
         "page": 6,
         "image": "assets/questions/choi-duyoung/18-82.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/figures/choi-duyoung/18-82-figure1.webp",
-          "alt": "최두영 교수님 18-82 기출 원본 검사·영상 그림 1",
-          "caption": "18-82 문제 필수 원본 그림 · 기출 PDF 6페이지"
-        },
-        {
-          "src": "assets/figures/choi-duyoung/18-82-continuation.webp",
-          "alt": "18-82 이어지는 기출 원본",
-          "caption": "기출 PDF 7페이지에 이어지는 문제 내용·선택지"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 5,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -1400,15 +1405,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 5번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "⑤번 선택지는 PDF 7페이지 첫머리에 이어집니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:19-24",
@@ -1452,11 +1458,16 @@
           "src": "assets/figures/choi-duyoung/19-24-figure1.webp",
           "alt": "최두영 교수님 19-24 기출 원본 검사·영상 그림 1",
           "caption": "19-24 문제 필수 원본 그림 · 기출 PDF 4페이지"
+        },
+        {
+          "src": "assets/figures/choi-duyoung/19-24-figure2.webp",
+          "alt": "19-24 추가 검사 결과",
+          "caption": "19-24 문제 추가 검사 결과 · 사용자 제공 수정 이미지"
         }
       ],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 3,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -1468,15 +1479,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 3번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:19-26",
@@ -1581,8 +1593,8 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 3,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -1600,15 +1612,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 3번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "②·③번 원문은 손글씨와 겹쳐 정확한 판독이 필요합니다. 원본을 직접 확인하세요.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:19-28",
@@ -1647,16 +1660,10 @@
         "image": "assets/questions/choi-duyoung/19-28.webp"
       },
       "figureRequired": false,
-      "figureImages": [
-        {
-          "src": "assets/figures/choi-duyoung/19-28-continuation.webp",
-          "alt": "19-28 이어지는 기출 원본",
-          "caption": "기출 PDF 5페이지에 이어지는 문제 내용·선택지"
-        }
-      ],
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 5,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -1668,15 +1675,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 5번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "⑤번은 PDF 5페이지 첫머리에 이어집니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:20-7",
@@ -1787,8 +1795,8 @@
         }
       ],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 4,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -1800,15 +1808,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 4번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 4번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:20-9",
@@ -2016,7 +2025,7 @@
       "subject": "hematology-1",
       "professor": "choi-duyoung",
       "type": "choice",
-      "prompt": "Langerhans cell histiocytosis에 대한 설명으로 옳은 것은?",
+      "prompt": "3세 남아가 배에서 덩이가 만져져서 병원에 왔다. 배의 오른쪽에서 단단한 덩이가 만져졌으며, 지라는 만져지지 않았다. 혈액 검사 결과와 복부컴퓨터단층촬영 사진은 다음과 같았다. 치료는?",
       "choices": [
         {
           "number": 1,
@@ -2044,17 +2053,17 @@
         "page": 3,
         "image": "assets/questions/choi-duyoung/20-13.webp"
       },
-      "figureRequired": false,
+      "figureRequired": true,
       "figureImages": [
         {
-          "src": "assets/figures/choi-duyoung/20-13-continuation.webp",
-          "alt": "20-13 이어지는 기출 원본",
-          "caption": "기출 PDF 4페이지에 이어지는 문제 내용·선택지"
+          "src": "assets/figures/choi-duyoung/20-13-figure1.webp",
+          "alt": "최두영 교수님 20-13 검사 결과 및 복부 CT",
+          "caption": "20-13 문제 필수 검사 결과·복부 CT · 사용자 제공 수정 이미지"
         }
       ],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 3,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -2066,15 +2075,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 3번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "⑤번 선택지는 PDF 4페이지 맨 위에 이어집니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:20-14",
@@ -2118,11 +2128,6 @@
           "src": "assets/figures/choi-duyoung/20-14-figure1.webp",
           "alt": "최두영 교수님 20-14 기출 원본 검사·영상 그림 1",
           "caption": "20-14 문제 필수 원본 그림 · 기출 PDF 11페이지"
-        },
-        {
-          "src": "assets/figures/choi-duyoung/20-14-continuation.webp",
-          "alt": "20-14 이어지는 기출 원본",
-          "caption": "기출 PDF 11페이지에 이어지는 문제 내용·선택지"
         }
       ],
       "showOriginalByDefault": false,
@@ -2451,13 +2456,13 @@
       "figureImages": [
         {
           "src": "assets/figures/choi-duyoung/21-13-figure1.webp",
-          "alt": "최두영 교수님 21-13 기출 원본 검사·영상 그림 1",
-          "caption": "21-13 문제 필수 원본 그림 · 기출 PDF 1페이지"
+          "alt": "21-13 문제 MRI 그림",
+          "caption": "21-13 문제 필수 MRI 그림 · 사용자 제공 수정 이미지"
         }
       ],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 5,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -2469,15 +2474,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 5번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:21-14",
@@ -2658,8 +2664,8 @@
         }
       ],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 5,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -2671,15 +2677,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 5번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "⑤번 문구와 일부 본문은 스캔 사진을 기준으로 확인하세요.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:21-17",
@@ -2720,8 +2727,8 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 3,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -2739,15 +2746,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 3번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:21-18",
@@ -2858,8 +2866,8 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 1,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -2871,15 +2879,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 1번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "notes": "사용자가 1번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
       "id": "choi-duyoung:21-20",
@@ -2914,8 +2923,8 @@
       ],
       "source": {
         "name": "21-17_종양_최두영pf_HY.pdf",
-        "page": 1,
-        "image": "assets/questions/choi-duyoung/21-20.webp"
+        "page": 2,
+        "image": "assets/figures/choi-duyoung/21-20-continuation.webp"
       },
       "figureRequired": true,
       "figureImages": [
@@ -2923,16 +2932,11 @@
           "src": "assets/figures/choi-duyoung/21-20-figure1.webp",
           "alt": "최두영 교수님 21-20 기출 원본 검사·영상 그림 1",
           "caption": "21-20 문제 필수 원본 그림 · 기출 PDF 2페이지"
-        },
-        {
-          "src": "assets/figures/choi-duyoung/21-20-continuation.webp",
-          "alt": "21-20 이어지는 기출 원본",
-          "caption": "기출 PDF 2페이지에 이어지는 문제 내용·선택지"
         }
       ],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
+      "answer": 4,
+      "answerSource": "user_confirmed",
       "explanation": "",
       "candidateEvidence": [
         {
@@ -2944,15 +2948,16 @@
       ],
       "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "원본 PDF 직접 확인",
-        "check2": "강의안과 모든 선지의 일치 여부 미통과",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "decisionReason": "강의안만으로 단일 정답을 확정하지 않았습니다."
+        "stage": "user_confirmed",
+        "check1": "original_pdf_manually_checked",
+        "check2": "user_confirmed_answer",
+        "verifiedAgainst": "user_instruction_and_uploaded_materials",
+        "decisionReason": "2026-11-11 사용자 지정: 4번으로 확정",
+        "anchor": ""
       },
       "transcriptionStatus": "review_required",
-      "transcriptionWarning": "이 문항의 골수검사 사진과 선택지는 원본 PDF 2페이지 왼쪽 상단에 이어집니다.",
-      "notes": "업로드한 두 강의안에서 정답을 단정할 수 없어 사용자 검토가 필요합니다."
+      "transcriptionWarning": "원본 이미지 보기에는 이어지는 문제 내용·선택지 캡처를 표시합니다. 문제 안에는 핵심 검사 그림만 표시합니다.",
+      "notes": "사용자가 4번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     }
   ]
 }
