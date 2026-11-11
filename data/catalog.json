@@ -60,6 +60,13 @@
           "data": "data/professors/won-taewan.json",
           "questionCount": 103,
           "pendingCount": 72
+        },
+        {
+          "id": "choi-geumha",
+          "name": "최금하",
+          "data": "data/professors/choi-geumha.json",
+          "questionCount": 16,
+          "pendingCount": 7
         }
       ]
     },
