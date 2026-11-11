@@ -877,6 +877,70 @@
       "transcriptionWarning": "선지 전사는 원본과 최종 대조가 필요합니다. 아래 원본 이미지에서 문자·숫자를 확인할 수 있습니다."
     },
     {
+      "id": "park-murim:17-14",
+      "label": "17-14",
+      "year": 17,
+      "number": 14,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "type": "choice",
+      "prompt": "다음 진통제 중 신경병성 암성통증에 우선 사용해야 할 약제는?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "Pentanyl"
+        },
+        {
+          "number": 2,
+          "text": "Ibuprofen"
+        },
+        {
+          "number": 3,
+          "text": "Pregabalin"
+        },
+        {
+          "number": 4,
+          "text": "Oxycodon"
+        },
+        {
+          "number": 5,
+          "text": "Meperidine"
+        }
+      ],
+      "source": {
+        "name": "사용자가 메시지에 제공한 기출문제 텍스트",
+        "page": null,
+        "image": ""
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 3,
+      "answerSource": "user_confirmed",
+      "explanation": "신경병성 암성통증에서는 항우울제·항경련제를 보조진통제로 사용하며 pregabalin 또는 gabapentin을 사용할 수 있습니다. 특히 pregabalin은 신기능 저하 환자에서 용량을 조절해야 합니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "v124-park-2026",
+          "file": "25.11.10_혈액과종양_박무림pf_암환자완화의료(5).pdf",
+          "page": 16,
+          "image": "assets/evidence/park-murim/v124-palliative-2025-p016.webp",
+          "quote": "Neuropathic pain – antidepressant, anticonvulsant; pregabaline"
+        }
+      ],
+      "validation": {
+        "stage": "user_confirmed",
+        "check1": "original_question_reexamined",
+        "check2": "user_assigned_answer",
+        "verifiedAgainst": "explicit_user_instruction",
+        "anchor": "Neuropathic pain – antidepressant, anticonvulsant; pregabaline",
+        "decisionReason": "사용자 지정 답안 유지; 강의안 확정과 별도"
+      },
+      "transcriptionStatus": "user_supplied_or_original_image_verified",
+      "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
+      "notes": "문제·정답 사용자 제공. 강의안 일치 내용은 증빙하되 정답 출처는 사용자 확정으로 유지."
+    },
+    {
       "id": "park-murim:17-15",
       "label": "17-15",
       "year": 17,
@@ -1452,6 +1516,70 @@
         "decisionReason": "원문 내용과 각 보기를 대조해 채택"
       },
       "notes": "현재 학습 범위는 박무림 교수님이며 과거 기출 PDF는 이승신 명의로 정리되어 있습니다."
+    },
+    {
+      "id": "park-murim:17-23",
+      "label": "17-23",
+      "year": 17,
+      "number": 23,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "type": "choice",
+      "prompt": "65세 여자가 1주일 전부터 기운이 없고 변비가 심하여 응급실에 내원하였다. 2년 전에 유방암의 다발성 전이로 치료 중이다. 혈액검사는 다음과 같았다. 가장 우선해야 할 치료는?\nBUN 26 mg/dL, Cr 1.6 mg/dL, Na/K/Cl 134/4.1/105 mEq/L\n총 칼슘 11.8 mg/dL (참고치 8.7~10.2), 무기인 3.5 mg/dL (참고치 2.5~4.5), 알부민 3.9 g/dL",
+      "choices": [
+        {
+          "number": 1,
+          "text": "칼시토닌"
+        },
+        {
+          "number": 2,
+          "text": "비스포스포네이트"
+        },
+        {
+          "number": 3,
+          "text": "고리 이뇨제"
+        },
+        {
+          "number": 4,
+          "text": "스테로이드"
+        },
+        {
+          "number": 5,
+          "text": "생리식염수 투여"
+        }
+      ],
+      "source": {
+        "name": "사용자가 메시지에 제공한 기출문제 텍스트",
+        "page": null,
+        "image": ""
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 5,
+      "answerSource": "user_confirmed",
+      "explanation": "교정 칼슘 = 11.8 + 0.8×(4−3.9) = 11.88 mg/dL입니다. 증상을 동반한 악성종양 관련 고칼슘혈증에서는 우선 수액으로 탈수를 교정합니다. 비스포스포네이트는 칼슘 조절에 효과적이지만, 이 문항은 최초 조치를 묻고 있어 생리식염수를 선택합니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "v124-park-2026",
+          "file": "박무림pf_261022_혈액과종양_종양수반증후군.pdf.pdf",
+          "page": 5,
+          "image": "assets/evidence/park-murim/v124-park-2026-p005.webp",
+          "quote": "Corrected Ca ... massive saline hydration"
+        }
+      ],
+      "validation": {
+        "stage": "user_confirmed",
+        "check1": "original_question_reexamined",
+        "check2": "user_assigned_answer",
+        "verifiedAgainst": "explicit_user_instruction",
+        "anchor": "Corrected Ca ... massive saline hydration",
+        "decisionReason": "사용자 지정 답안 유지; 강의안 확정과 별도"
+      },
+      "transcriptionStatus": "user_supplied_or_original_image_verified",
+      "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
+      "notes": "교정 칼슘은 산술계산에 따름. 수액치료와 비스포스포네이트의 투여 순서 구분."
     },
     {
       "id": "park-murim:17-53",
@@ -3898,6 +4026,77 @@
       "candidateEvidence": [],
       "answerSource": "lecture_double_checked",
       "transcriptionWarning": "선지 전사는 원본과 최종 대조가 필요합니다. 아래 원본 이미지에서 문자·숫자를 확인할 수 있습니다."
+    },
+    {
+      "id": "park-murim:19-9",
+      "label": "19-9",
+      "year": 19,
+      "number": 9,
+      "subject": "hematology-1",
+      "professor": "park-murim",
+      "type": "choice",
+      "prompt": "우리나라에서 매년 사망자가 가장 많은 암과 완치 가능성이 가장 낮은 암은 각각 무엇인가?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "폐암 – 췌장암"
+        },
+        {
+          "number": 2,
+          "text": "췌장암 – 췌장암"
+        },
+        {
+          "number": 3,
+          "text": "간암 – 췌장암"
+        },
+        {
+          "number": 4,
+          "text": "폐암 – 담낭암"
+        },
+        {
+          "number": 5,
+          "text": "췌장암 – 폐암"
+        }
+      ],
+      "source": {
+        "name": "19 종양 해설.pdf",
+        "page": 4,
+        "image": "assets/questions/park-murim/19-9-v124.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 1,
+      "answerSource": "lecture_double_checked",
+      "explanation": "해설 PDF는 폐암(사망자 최다)과 췌장암(가장 낮은 생존율)을 선택합니다. 암역학 강의안의 암종별 사망률·생존율 도표와 대조하되, 발표 연도 및 통계 기준에 따라 순위가 달라질 수 있습니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "v124-park-2026",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "page": 8,
+          "image": "assets/evidence/park-murim/v124-park-2025-p008.webp",
+          "quote": "10대 암 사망분율: 폐암이 가장 많음"
+        },
+        {
+          "lectureId": "v124-park-2026",
+          "file": "25.10.17_혈액과종양_박무림pf_암역학 및 예방+암선별검사, 종양표지자(5).pdf",
+          "page": 6,
+          "image": "assets/evidence/park-murim/v124-park-2025-p006.webp",
+          "quote": "암종별 5년 상대생존율: 췌장암"
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "original_question_reexamined",
+        "check2": "lecture_original_page_and_options_checked",
+        "verifiedAgainst": "uploaded_lecture",
+        "anchor": "10대 암 사망분율: 폐암이 가장 많음; 암종별 5년 상대생존율: 췌장암",
+        "decisionReason": "강의안 원문·선택지 이중 대조 채택"
+      },
+      "transcriptionStatus": "user_supplied_or_original_image_verified",
+      "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
+      "notes": "암 사망률 1위는 해설 PDF의 명시적 답. 2026 슬라이드의 최신 수치를 개별 재확인해야 하므로 PDF 답과 출처를 구분."
     },
     {
       "id": "park-murim:19-10",

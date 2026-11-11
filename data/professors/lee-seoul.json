@@ -148,6 +148,310 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다."
     },
     {
+      "id": "lee-seoul:17-62",
+      "label": "17-62",
+      "year": 17,
+      "number": 62,
+      "subject": "hematology-1",
+      "professor": "lee-seoul",
+      "type": "choice",
+      "prompt": "암 발생 추이를 볼 때 향후 남성의 경우 최다 암 환자 예측이 가능한 종류는?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "대장암"
+        },
+        {
+          "number": 2,
+          "text": "위암"
+        },
+        {
+          "number": 3,
+          "text": "폐암"
+        },
+        {
+          "number": 4,
+          "text": "간암"
+        },
+        {
+          "number": 5,
+          "text": "신장암"
+        }
+      ],
+      "source": {
+        "name": "사용자가 메시지에 제공한 기출문제 텍스트",
+        "page": null,
+        "image": ""
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 1,
+      "answerSource": "user_confirmed",
+      "explanation": "과거 수업 강의안의 신규 남성 암 환자 수 예측에서 대장암이 최다로 제시되었다는 사용자 제공 해설입니다. 이 통계는 발표 시점에 따라 달라지므로 2026년 최신 통계의 현재 순위와 혼동하지 않습니다.",
+      "candidateEvidence": [],
+      "evidence": [],
+      "validation": {
+        "stage": "user_confirmed",
+        "check1": "original_question_reexamined",
+        "check2": "user_assigned_answer",
+        "verifiedAgainst": "explicit_user_instruction",
+        "anchor": "",
+        "decisionReason": "사용자 지정 답안 유지; 강의안 확정과 별도"
+      },
+      "transcriptionStatus": "user_supplied_or_original_image_verified",
+      "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
+      "notes": "정답은 사용자가 직접 지정. 강의안에서 직접 확인되지 않은 세부 내용은 검증된 강의안 정답으로 표시하지 않음."
+    },
+    {
+      "id": "lee-seoul:17-63",
+      "label": "17-63",
+      "year": 17,
+      "number": 63,
+      "subject": "hematology-1",
+      "professor": "lee-seoul",
+      "type": "choice",
+      "prompt": "항암화학요법 약물에 대한 저항 생성 기전으로 맞는 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "MTX – lack of drug activation"
+        },
+        {
+          "number": 2,
+          "text": "Cyclophosphamide – enhanced metabolism"
+        },
+        {
+          "number": 3,
+          "text": "Vincristine – blocking P-glycoprotein pump"
+        },
+        {
+          "number": 4,
+          "text": "Bleomycin – increase endogenous scavenger"
+        },
+        {
+          "number": 5,
+          "text": "Teniposide – rapid repair mechanism"
+        }
+      ],
+      "source": {
+        "name": "사용자가 메시지에 제공한 기출문제 텍스트",
+        "page": null,
+        "image": ""
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 2,
+      "answerSource": "user_confirmed",
+      "explanation": "사용자 제공 기존 해설의 정답은 ②입니다. MTX는 세포 내 유입 감소, vincristine과 teniposide는 MDR1/P-glycoprotein 증가, bleomycin은 DNA 절단 복구능 증가 등이 약물 내성과 관련됩니다. Cyclophosphamide의 해독·대사 증강 가능성은 구체적 대사 경로를 강의안에서 추가 확인해야 합니다.",
+      "candidateEvidence": [],
+      "evidence": [],
+      "validation": {
+        "stage": "user_confirmed",
+        "check1": "original_question_reexamined",
+        "check2": "user_assigned_answer",
+        "verifiedAgainst": "explicit_user_instruction",
+        "anchor": "",
+        "decisionReason": "사용자 지정 답안 유지; 강의안 확정과 별도"
+      },
+      "transcriptionStatus": "user_supplied_or_original_image_verified",
+      "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
+      "notes": "정답은 사용자가 직접 지정. 강의안에서 직접 확인되지 않은 세부 내용은 검증된 강의안 정답으로 표시하지 않음."
+    },
+    {
+      "id": "lee-seoul:17-64",
+      "label": "17-64",
+      "year": 17,
+      "number": 64,
+      "subject": "hematology-1",
+      "professor": "lee-seoul",
+      "type": "choice",
+      "prompt": "항암화학요법 약물의 종류·그룹과 주요 작용기전으로 맞는 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "Alkylating – Nitrosourea – Block synthesis of DNA"
+        },
+        {
+          "number": 2,
+          "text": "Antimetabolites – Folate antagonist – Cross-link of DNA"
+        },
+        {
+          "number": 3,
+          "text": "Antibiotics – Anthracycline – Prevent angiogenesis"
+        },
+        {
+          "number": 4,
+          "text": "Plant alkaloid – Taxane – Interfere with microtubule"
+        },
+        {
+          "number": 5,
+          "text": "Hormone antagonist – Tamoxifen – Inhibits topoisomerase"
+        }
+      ],
+      "source": {
+        "name": "사용자가 메시지에 제공한 기출문제 텍스트",
+        "page": null,
+        "image": ""
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 4,
+      "answerSource": "user_confirmed",
+      "explanation": "Taxane은 미세소관의 동역학을 방해하여 세포분열을 억제합니다. Nitrosourea는 DNA alkylation/cross-link, 엽산 길항제는 핵산 합성 억제, anthracycline은 DNA/RNA 관련 작용, tamoxifen은 에스트로겐 수용체에 작용합니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "v124-lee-2026",
+          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "page": 53,
+          "image": "assets/evidence/lee-seoul/v124-lee-2026-p053.webp",
+          "quote": "Plant alkaloids and terpenoids; Taxanes"
+        }
+      ],
+      "validation": {
+        "stage": "user_confirmed",
+        "check1": "original_question_reexamined",
+        "check2": "user_assigned_answer",
+        "verifiedAgainst": "explicit_user_instruction",
+        "anchor": "Plant alkaloids and terpenoids; Taxanes",
+        "decisionReason": "사용자 지정 답안 유지; 강의안 확정과 별도"
+      },
+      "transcriptionStatus": "user_supplied_or_original_image_verified",
+      "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
+      "notes": "정답은 사용자가 직접 지정. 강의안에서 직접 확인되지 않은 세부 내용은 검증된 강의안 정답으로 표시하지 않음."
+    },
+    {
+      "id": "lee-seoul:17-65",
+      "label": "17-65",
+      "year": 17,
+      "number": 65,
+      "subject": "hematology-1",
+      "professor": "lee-seoul",
+      "type": "choice",
+      "prompt": "항암화학요법 약물의 임상적용에서 주의할 부작용으로 틀린 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "Bleomycin – Pulmonary fibrosis"
+        },
+        {
+          "number": 2,
+          "text": "Cisplatin – Cardiac arrhythmia"
+        },
+        {
+          "number": 3,
+          "text": "Cyclophosphamide – Hemorrhagic cystitis"
+        },
+        {
+          "number": 4,
+          "text": "Doxorubicin – Cardiotoxicity"
+        },
+        {
+          "number": 5,
+          "text": "Irinotecan – Myelosuppression"
+        }
+      ],
+      "source": {
+        "name": "사용자가 메시지에 제공한 기출문제 텍스트",
+        "page": null,
+        "image": ""
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 2,
+      "answerSource": "user_confirmed",
+      "explanation": "사용자 제공 정답은 ②입니다. Cisplatin의 대표적 용량 제한 독성은 신독성, 말초신경독성, 이독성 등이며, bleomycin의 폐섬유화, cyclophosphamide의 출혈성 방광염, doxorubicin의 심독성은 잘 알려진 부작용입니다. 다만 ⑤ irinotecan 부작용의 서술 범위까지 강의안에서 재검토할 필요가 있습니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "v124-lee-2026",
+          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "page": 45,
+          "image": "assets/evidence/lee-seoul/v124-lee-2026-p045.webp",
+          "quote": "Cardiotoxicity doxorubicin; pulmonary fibrosis bleomycin"
+        }
+      ],
+      "validation": {
+        "stage": "user_confirmed",
+        "check1": "original_question_reexamined",
+        "check2": "user_assigned_answer",
+        "verifiedAgainst": "explicit_user_instruction",
+        "anchor": "Cardiotoxicity doxorubicin; pulmonary fibrosis bleomycin",
+        "decisionReason": "사용자 지정 답안 유지; 강의안 확정과 별도"
+      },
+      "transcriptionStatus": "user_supplied_or_original_image_verified",
+      "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
+      "notes": "정답은 사용자가 직접 지정. 강의안에서 직접 확인되지 않은 세부 내용은 검증된 강의안 정답으로 표시하지 않음."
+    },
+    {
+      "id": "lee-seoul:17-66",
+      "label": "17-66",
+      "year": 17,
+      "number": 66,
+      "subject": "hematology-1",
+      "professor": "lee-seoul",
+      "type": "choice",
+      "prompt": "항암화학요법 약물 가운데 호르몬 제제의 작용 효과가 맞는 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "Tamoxifen – Estrogen receptor antagonist"
+        },
+        {
+          "number": 2,
+          "text": "Toremifene – Aromatase inhibitor"
+        },
+        {
+          "number": 3,
+          "text": "Leuprolide – Increase testosterone"
+        },
+        {
+          "number": 4,
+          "text": "Flutamide – Reduced testosterone"
+        },
+        {
+          "number": 5,
+          "text": "Fulvestrant – Antiandrogen action"
+        }
+      ],
+      "source": {
+        "name": "사용자가 메시지에 제공한 기출문제 텍스트",
+        "page": null,
+        "image": ""
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 1,
+      "answerSource": "user_confirmed",
+      "explanation": "Tamoxifen은 선택적 에스트로겐 수용체 조절제(SERM)로서 유방 조직에서 항에스트로겐 작용을 합니다. Toremifene도 SERM이고, leuprolide는 지속 투여 시 성선호르몬 억제, flutamide는 안드로겐 수용체 차단, fulvestrant는 선택적 ER 분해제(SERD)입니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "v124-lee-2026",
+          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "page": 105,
+          "image": "assets/evidence/lee-seoul/v124-lee-2026-p105.webp",
+          "quote": "Competitive inhibitor of estradiol bind to ER; SERMs tamoxifen"
+        }
+      ],
+      "validation": {
+        "stage": "user_confirmed",
+        "check1": "original_question_reexamined",
+        "check2": "user_assigned_answer",
+        "verifiedAgainst": "explicit_user_instruction",
+        "anchor": "Competitive inhibitor of estradiol bind to ER; SERMs tamoxifen",
+        "decisionReason": "사용자 지정 답안 유지; 강의안 확정과 별도"
+      },
+      "transcriptionStatus": "user_supplied_or_original_image_verified",
+      "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
+      "notes": "정답은 사용자가 직접 지정. 강의안에서 직접 확인되지 않은 세부 내용은 검증된 강의안 정답으로 표시하지 않음."
+    },
+    {
       "id": "lee-seoul:17-67",
       "label": "17-67",
       "year": 17,
@@ -478,75 +782,6 @@
       "type": "choice",
       "showOriginalByDefault": false,
       "answerSource": "lecture_double_checked",
-      "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다."
-    },
-    {
-      "id": "lee-seoul:18-41",
-      "label": "18-41",
-      "year": 18,
-      "number": 41,
-      "subject": "hematology-1",
-      "professor": "lee-seoul",
-      "prompt": "항암화학요법 약물의 임상적용에서 주의할 부작용으로 틀린 것은?",
-      "choices": [
-        {
-          "number": 1,
-          "text": "Doxorubicin – cardiotoxicity"
-        },
-        {
-          "number": 2,
-          "text": "Cyclophosphamide – hemorrhagic cystitis"
-        },
-        {
-          "number": 3,
-          "text": "Cisplatin – cardiac arrhythmia"
-        },
-        {
-          "number": 4,
-          "text": "Irinotecan – myelosuppression"
-        },
-        {
-          "number": 5,
-          "text": "Bleomycin – pulmonary fibrosis"
-        }
-      ],
-      "source": {
-        "name": "이서울 야마 JHR(1).pdf",
-        "page": 5,
-        "image": "assets/questions/lee-seoul/18-41.webp"
-      },
-      "figureRequired": false,
-      "transcriptionStatus": "visually_checked_against_source",
-      "answer": 3,
-      "explanation": "",
-      "evidence": [],
-      "candidateEvidence": [
-        {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 45,
-          "image": "assets/evidence/lee-seoul/lecture1-p045.webp",
-          "quote": "Cardiotoxicity; doxorubicin — Pulmonary fibrosis; bleomycin"
-        },
-        {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 54,
-          "image": "assets/evidence/lee-seoul/lecture1-p054.webp",
-          "quote": "Platinum compounds — Cisplatin"
-        }
-      ],
-      "validation": {
-        "stage": "user_confirmed",
-        "check1": "user_override_explicit",
-        "check2": "NOT_a_new_double_lecture_verification",
-        "verifiedAgainst": "user_decision",
-        "decisionReason": "사용자 요청에 따라 3번 지정. 강의안 검증 채택과 구분."
-      },
-      "notes": "사용자가 직접 지정한 정답입니다. 과거 강의안과 충돌하거나 미확정이었던 경우에도 강의안 근거 채택으로 표시하지 않습니다.",
-      "type": "choice",
-      "showOriginalByDefault": false,
-      "answerSource": "user_confirmed",
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다."
     },
     {

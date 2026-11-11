@@ -8,88 +8,138 @@
   },
   "questions": [
     {
-      "id": "lee-kanggyu:17-54",
-      "label": "17-54",
+      "id": "lee-kanggyu:17-50",
+      "label": "17-50",
       "year": 17,
-      "number": 54,
+      "number": 50,
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "FIGO stage IIB 자궁경부암 방사선치료 범위에 포함되지 않는 구조물은?",
+      "prompt": "다음 뇌종양 중에서 예후가 불량하지만 수술 후 방사선치료와 항암제 temozolomide를 병용하여 치료함으로써 생존율의 향상을 가져온 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "Uterus"
+          "text": "Craniopharyngioma"
         },
         {
           "number": 2,
-          "text": "Para-aortic lymph nodes"
+          "text": "Hemangioblastoma"
         },
         {
           "number": 3,
-          "text": "Internal iliac lymph nodes"
+          "text": "Pilocytic astrocytoma"
         },
         {
           "number": 4,
-          "text": "External iliac lymph nodes"
+          "text": "Glioblastoma multiforme"
         },
         {
           "number": 5,
-          "text": "Lower common iliac lymph nodes"
-        },
-        {
-          "number": 6,
-          "text": "Hypogastric lymph nodes"
-        },
-        {
-          "number": 7,
-          "text": "Inguinal lymph nodes"
+          "text": "Malignant meningioma"
         }
       ],
       "source": {
-        "name": "혈종 이강규 정유리 JOIN.pdf",
-        "page": 1,
-        "image": "assets/questions/lee-kanggyu/17-54.webp"
+        "name": "image(20261111-064555).png",
+        "page": null,
+        "image": "assets/questions/lee-kanggyu/17-50-v124.webp"
       },
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
       "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answerSource": "unconfirmed",
+      "explanation": "첨부 원본 이미지에서 ④ Glioblastoma multiforme에 표시가 있으며, 「19 종양 해설.pdf」 7쪽에서도 temozolomide 병용에 따른 생존율 향상을 설명합니다. 이강규 교수님 2026년 강의안 PDF 22쪽에는 GBM에서의 항암화학방사선치료가 있으나 temozolomide 약제명이 직접 표기돼 있지 않아, 강의안 이중검정 채택 정답으로 표시하지 않았습니다. 정답 후보: ④.",
       "candidateEvidence": [
         {
-          "lectureId": "2026",
+          "lectureId": "v124-lee-rad-2026",
           "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 43,
-          "image": "assets/evidence/lee-kanggyu/2026-p043.webp",
-          "quote": ""
+          "page": 22,
+          "image": "assets/evidence/lee-kanggyu/v124-lee-rad-2026-p022.webp",
+          "quote": "Chemoradiation in Glioblastoma Multiforme"
+        }
+      ],
+      "validation": {
+        "stage": "pending",
+        "check1": "original_question_reexamined",
+        "check2": "lecture_mentions_gbm_chemoradiation_but_not_tmz",
+        "verifiedAgainst": "candidate_from_user_image_and_explanation_pdf",
+        "anchor": "Chemoradiation in Glioblastoma Multiforme",
+        "decisionReason": "업로드한 이강규 강의안 22쪽은 교모세포종의 방사선+항암치료를 보여 주지만 temozolomide 약제명은 명시하지 않아 이중검정 채택 보류"
+      },
+      "transcriptionStatus": "user_supplied_or_original_image_verified",
+      "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
+      "notes": "기출 이미지 및 19학번 해설 PDF의 정답 후보 ④. 강의안에서 temozolomide를 직접 확인하기 전까지 검토 필요.",
+      "evidence": []
+    },
+    {
+      "id": "lee-kanggyu:17-51",
+      "label": "17-51",
+      "year": 17,
+      "number": 51,
+      "subject": "hematology-1",
+      "professor": "lee-kanggyu",
+      "type": "choice",
+      "prompt": "다음은 두경부 종양에 관한 설명이다. 다음 중 옳은 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "진행성 하인두암(hypopharyngeal cancer)은 상부 종격동(upper mediastinum)의 림프절 전이가 매우 흔하기 때문에 방사선치료 시 상부 종격동을 방사선치료 범위에 포함시켜야만 한다."
         },
         {
-          "lectureId": "2026",
+          "number": 2,
+          "text": "성대암(glottis cancer)은 성대 주변에 림프관이 적고 연골에 둘러싸여 있어 연골 파괴가 잘 일어나기 때문에 방사선치료 후 연골 파괴로 인한 연골 조직의 변형이 유발된다."
+        },
+        {
+          "number": 3,
+          "text": "비인강암(nasopharyngeal cancer)의 일차적인 치료는 동시 항암화학방사선치료요법(concurrent chemoradiotherapy)이다."
+        },
+        {
+          "number": 4,
+          "text": "Salivary gland tumor에서 high-grade tumor인 경우 완전절제가 되었다면 수술 후 방사선치료를 시행할 필요가 없다."
+        },
+        {
+          "number": 5,
+          "text": "일반적으로 두경부암은 원격전이(distant metastasis)를 가장 많이 한다."
+        }
+      ],
+      "source": {
+        "name": "image(20261111-064555).png",
+        "page": null,
+        "image": "assets/questions/lee-kanggyu/17-51-v124.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": null,
+      "answerSource": "unconfirmed",
+      "explanation": "첨부 기출 원본에서는 ③이 표시되어 있습니다. 이강규 교수님 강의안 PDF 36쪽은 진행 정도에 따라 T1N0에서 방사선치료 단독, T2 이상 또는 N1 이상에서 동시 항암화학방사선치료를 제시합니다. 따라서 모든 비인강암을 무조건 동시 항암화학방사선치료로 치료한다는 문장은 범위가 넓어, 정답 ③을 강의안으로 단일 확정하지 않았습니다.",
+      "candidateEvidence": [
+        {
+          "lectureId": "v124-lee-rad-2026",
           "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 47,
-          "image": "assets/evidence/lee-kanggyu/2026-p047.webp",
-          "quote": ""
+          "page": 36,
+          "image": "assets/evidence/lee-kanggyu/v124-lee-rad-2026-p036.webp",
+          "quote": "T1N0 versus ≥T2 or ≥N1 different therapy"
         }
       ],
       "evidence": [],
       "validation": {
         "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "check1": "original_question_reexamined",
+        "check2": "independent_confirmation_pending",
+        "verifiedAgainst": "candidate_only",
+        "anchor": "",
+        "decisionReason": "관련 정보만으로 단일 정답 미확정"
       },
-      "transcriptionStatus": "review_required",
-      "transcriptionWarning": "원본은 7지선다이며 선배 정리본에 ②·⑦을 함께 표시합니다. 단일 정답 검토 필요. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": ""
+      "transcriptionStatus": "user_supplied_or_original_image_verified",
+      "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
+      "notes": "기출 이미지 ③ 표시 있음. 강의안과 범위 조건 상충 가능성: 정답 검토 필요."
     },
     {
-      "id": "lee-kanggyu:18-75",
-      "label": "18-75",
-      "year": 18,
-      "number": 75,
+      "id": "lee-kanggyu:17-54",
+      "label": "17-54",
+      "year": 17,
+      "number": 54,
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
@@ -220,195 +270,6 @@
           "page": 50,
           "image": "assets/evidence/lee-kanggyu/2026-p050.webp",
           "quote": ""
-        }
-      ],
-      "validation": {
-        "stage": "accepted",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "lecture_quote_and_option_crosscheck",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "강의안 원문 근거와 지문·선지 비교 통과"
-      },
-      "transcriptionStatus": "review_required",
-      "transcriptionWarning": "표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": ""
-    },
-    {
-      "id": "lee-kanggyu:18-3",
-      "label": "18-3",
-      "year": 18,
-      "number": 3,
-      "subject": "hematology-1",
-      "professor": "lee-kanggyu",
-      "type": "choice",
-      "prompt": "58세 여성, 5 cm 자궁경부 편평세포암, 우측 parametrium 침범, external iliac 및 para-aortic lymph node 전이. FIGO stage는?",
-      "choices": [
-        {
-          "number": 1,
-          "text": "Stage IIIC2"
-        },
-        {
-          "number": 2,
-          "text": "Stage IIIC1"
-        },
-        {
-          "number": 3,
-          "text": "Stage IIA2"
-        },
-        {
-          "number": 4,
-          "text": "Stage IB3"
-        },
-        {
-          "number": 5,
-          "text": "Stage IIB"
-        }
-      ],
-      "source": {
-        "name": "혈종 이강규 정유리 JOIN.pdf",
-        "page": 1,
-        "image": "assets/questions/lee-kanggyu/18-3.webp"
-      },
-      "figureRequired": false,
-      "figureImages": [],
-      "showOriginalByDefault": false,
-      "answer": 1,
-      "answerSource": "lecture_double_checked",
-      "explanation": "대동맥주위 림프절 전이는 IIIC2입니다.",
-      "candidateEvidence": [],
-      "evidence": [
-        {
-          "lectureId": "2026",
-          "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 47,
-          "image": "assets/evidence/lee-kanggyu/2026-p047.webp",
-          "quote": "FIGO Staging"
-        }
-      ],
-      "validation": {
-        "stage": "accepted",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "lecture_quote_and_option_crosscheck",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "강의안 원문 근거와 지문·선지 비교 통과"
-      },
-      "transcriptionStatus": "review_required",
-      "transcriptionWarning": "표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": ""
-    },
-    {
-      "id": "lee-kanggyu:19-17",
-      "label": "19-17",
-      "year": 19,
-      "number": 17,
-      "subject": "hematology-1",
-      "professor": "lee-kanggyu",
-      "type": "choice",
-      "prompt": "58세 여성, 5 cm 자궁경부 편평세포암, 우측 parametrium 침범, external iliac 및 para-aortic lymph node 전이. FIGO stage는?",
-      "choices": [
-        {
-          "number": 1,
-          "text": "Stage IIIC2"
-        },
-        {
-          "number": 2,
-          "text": "Stage IIIC1"
-        },
-        {
-          "number": 3,
-          "text": "Stage IIA2"
-        },
-        {
-          "number": 4,
-          "text": "Stage IB3"
-        },
-        {
-          "number": 5,
-          "text": "Stage IIB"
-        }
-      ],
-      "source": {
-        "name": "혈종 이강규 정유리 JOIN.pdf",
-        "page": 1,
-        "image": "assets/questions/lee-kanggyu/18-3.webp"
-      },
-      "figureRequired": false,
-      "figureImages": [],
-      "showOriginalByDefault": false,
-      "answer": 1,
-      "answerSource": "lecture_double_checked",
-      "explanation": "대동맥주위 림프절 전이는 IIIC2입니다.",
-      "candidateEvidence": [],
-      "evidence": [
-        {
-          "lectureId": "2026",
-          "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 47,
-          "image": "assets/evidence/lee-kanggyu/2026-p047.webp",
-          "quote": "FIGO Staging"
-        }
-      ],
-      "validation": {
-        "stage": "accepted",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "lecture_quote_and_option_crosscheck",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "강의안 원문 근거와 지문·선지 비교 통과"
-      },
-      "transcriptionStatus": "review_required",
-      "transcriptionWarning": "표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": ""
-    },
-    {
-      "id": "lee-kanggyu:20-59",
-      "label": "20-59",
-      "year": 20,
-      "number": 59,
-      "subject": "hematology-1",
-      "professor": "lee-kanggyu",
-      "type": "choice",
-      "prompt": "58세 여성, 5 cm 자궁경부 편평세포암, 우측 parametrium 침범, external iliac 및 para-aortic lymph node 전이. FIGO stage는?",
-      "choices": [
-        {
-          "number": 1,
-          "text": "Stage IIIC2"
-        },
-        {
-          "number": 2,
-          "text": "Stage IIIC1"
-        },
-        {
-          "number": 3,
-          "text": "Stage IIA2"
-        },
-        {
-          "number": 4,
-          "text": "Stage IB3"
-        },
-        {
-          "number": 5,
-          "text": "Stage IIB"
-        }
-      ],
-      "source": {
-        "name": "혈종 이강규 정유리 JOIN.pdf",
-        "page": 1,
-        "image": "assets/questions/lee-kanggyu/18-3.webp"
-      },
-      "figureRequired": false,
-      "figureImages": [],
-      "showOriginalByDefault": false,
-      "answer": 1,
-      "answerSource": "lecture_double_checked",
-      "explanation": "대동맥주위 림프절 전이는 IIIC2입니다.",
-      "candidateEvidence": [],
-      "evidence": [
-        {
-          "lectureId": "2026",
-          "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 47,
-          "image": "assets/evidence/lee-kanggyu/2026-p047.webp",
-          "quote": "FIGO Staging"
         }
       ],
       "validation": {
@@ -577,160 +438,55 @@
       "notes": ""
     },
     {
-      "id": "lee-kanggyu:18-48",
-      "label": "18-48",
+      "id": "lee-kanggyu:18-3",
+      "label": "18-3",
       "year": 18,
-      "number": 48,
+      "number": 3,
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "방사선 조사 부위와 방사선 치료에 따른 급성 또는 만성 합병증의 연결 중 옳지 않은 것은?",
+      "prompt": "58세 여성, 5 cm 자궁경부 편평세포암, 우측 parametrium 침범, external iliac 및 para-aortic lymph node 전이. FIGO stage는?",
       "choices": [
         {
           "number": 1,
-          "text": "두경부 – 구강건조증, 하악골 괴사"
+          "text": "Stage IIIC2"
         },
         {
           "number": 2,
-          "text": "폐 – 방사선 폐렴"
+          "text": "Stage IIIC1"
         },
         {
           "number": 3,
-          "text": "종격동 – 탈모"
+          "text": "Stage IIA2"
         },
         {
           "number": 4,
-          "text": "상복부 – 오심, 구토"
+          "text": "Stage IB3"
         },
         {
           "number": 5,
-          "text": "골반부 – 설사"
+          "text": "Stage IIB"
         }
       ],
       "source": {
         "name": "혈종 이강규 정유리 JOIN.pdf",
-        "page": 2,
-        "image": "assets/questions/lee-kanggyu/17-57.webp"
+        "page": 1,
+        "image": "assets/questions/lee-kanggyu/18-3.webp"
       },
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": 3,
+      "answer": 1,
       "answerSource": "lecture_double_checked",
-      "explanation": "탈모는 머리 부위 방사선 조사 합병증으로 제시되며, 흉부/종격동은 식도염·방사선 폐렴 등입니다.",
+      "explanation": "대동맥주위 림프절 전이는 IIIC2입니다.",
       "candidateEvidence": [],
       "evidence": [
         {
           "lectureId": "2026",
           "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 73,
-          "image": "assets/evidence/lee-kanggyu/2026-p073.webp",
-          "quote": "뇌부위에 치료받는 환자 • 탈모; 흉부에 치료받는 환자 • 방사선 폐렴"
-        },
-        {
-          "lectureId": "2026",
-          "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 74,
-          "image": "assets/evidence/lee-kanggyu/2026-p074.webp",
-          "quote": ""
-        },
-        {
-          "lectureId": "2026",
-          "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 75,
-          "image": "assets/evidence/lee-kanggyu/2026-p075.webp",
-          "quote": ""
-        },
-        {
-          "lectureId": "2026",
-          "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 76,
-          "image": "assets/evidence/lee-kanggyu/2026-p076.webp",
-          "quote": ""
-        }
-      ],
-      "validation": {
-        "stage": "accepted",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "lecture_quote_and_option_crosscheck",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "강의안 원문 근거와 지문·선지 비교 통과"
-      },
-      "transcriptionStatus": "review_required",
-      "transcriptionWarning": "표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": ""
-    },
-    {
-      "id": "lee-kanggyu:20-58",
-      "label": "20-58",
-      "year": 20,
-      "number": 58,
-      "subject": "hematology-1",
-      "professor": "lee-kanggyu",
-      "type": "choice",
-      "prompt": "방사선 조사 부위와 방사선 치료에 따른 급성 또는 만성 합병증의 연결 중 옳지 않은 것은?",
-      "choices": [
-        {
-          "number": 1,
-          "text": "두경부 – 구강건조증, 하악골 괴사"
-        },
-        {
-          "number": 2,
-          "text": "폐 – 방사선 폐렴"
-        },
-        {
-          "number": 3,
-          "text": "종격동 – 탈모"
-        },
-        {
-          "number": 4,
-          "text": "상복부 – 오심, 구토"
-        },
-        {
-          "number": 5,
-          "text": "골반부 – 설사"
-        }
-      ],
-      "source": {
-        "name": "혈종 이강규 정유리 JOIN.pdf",
-        "page": 2,
-        "image": "assets/questions/lee-kanggyu/17-57.webp"
-      },
-      "figureRequired": false,
-      "figureImages": [],
-      "showOriginalByDefault": false,
-      "answer": 3,
-      "answerSource": "lecture_double_checked",
-      "explanation": "탈모는 머리 부위 방사선 조사 합병증으로 제시되며, 흉부/종격동은 식도염·방사선 폐렴 등입니다.",
-      "candidateEvidence": [],
-      "evidence": [
-        {
-          "lectureId": "2026",
-          "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 73,
-          "image": "assets/evidence/lee-kanggyu/2026-p073.webp",
-          "quote": "뇌부위에 치료받는 환자 • 탈모; 흉부에 치료받는 환자 • 방사선 폐렴"
-        },
-        {
-          "lectureId": "2026",
-          "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 74,
-          "image": "assets/evidence/lee-kanggyu/2026-p074.webp",
-          "quote": ""
-        },
-        {
-          "lectureId": "2026",
-          "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 75,
-          "image": "assets/evidence/lee-kanggyu/2026-p075.webp",
-          "quote": ""
-        },
-        {
-          "lectureId": "2026",
-          "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 76,
-          "image": "assets/evidence/lee-kanggyu/2026-p076.webp",
-          "quote": ""
+          "page": 47,
+          "image": "assets/evidence/lee-kanggyu/2026-p047.webp",
+          "quote": "FIGO Staging"
         }
       ],
       "validation": {
@@ -749,69 +505,6 @@
       "label": "18-7",
       "year": 18,
       "number": 7,
-      "subject": "hematology-1",
-      "professor": "lee-kanggyu",
-      "type": "choice",
-      "prompt": "비인강암(nasopharyngeal cancer)의 일차적인 치료는?",
-      "choices": [
-        {
-          "number": 1,
-          "text": "수술 + 수술 후 항암화학방사선치료"
-        },
-        {
-          "number": 2,
-          "text": "동시항암화학방사선치료"
-        },
-        {
-          "number": 3,
-          "text": "수술 전 항암요법 + 수술 + 수술 후 항암화학방사선치료"
-        },
-        {
-          "number": 4,
-          "text": "수술 + 수술 후 항암요법"
-        },
-        {
-          "number": 5,
-          "text": "수술 전 항암화학방사선치료 + 수술"
-        }
-      ],
-      "source": {
-        "name": "혈종 이강규 정유리 JOIN.pdf",
-        "page": 2,
-        "image": "assets/questions/lee-kanggyu/18-7.webp"
-      },
-      "figureRequired": false,
-      "figureImages": [],
-      "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
-      "candidateEvidence": [
-        {
-          "lectureId": "2026",
-          "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 36,
-          "image": "assets/evidence/lee-kanggyu/2026-p036.webp",
-          "quote": ""
-        }
-      ],
-      "evidence": [],
-      "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
-      },
-      "transcriptionStatus": "review_required",
-      "transcriptionWarning": "2026 강의안 36쪽은 치료 전략 그림이며 선지별 독립 판단이 더 필요합니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": ""
-    },
-    {
-      "id": "lee-kanggyu:19-16",
-      "label": "19-16",
-      "year": 19,
-      "number": 16,
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
@@ -941,131 +634,75 @@
       "notes": ""
     },
     {
-      "id": "lee-kanggyu:19-15",
-      "label": "19-15",
-      "year": 19,
-      "number": 15,
+      "id": "lee-kanggyu:18-48",
+      "label": "18-48",
+      "year": 18,
+      "number": 48,
       "subject": "hematology-1",
       "professor": "lee-kanggyu",
       "type": "choice",
-      "prompt": "수술 후 방사선치료와 temozolomide 병용으로 생존율의 향상을 보인 예후 불량 뇌종양은?",
+      "prompt": "방사선 조사 부위와 방사선 치료에 따른 급성 또는 만성 합병증의 연결 중 옳지 않은 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "Craniopharyngioma"
+          "text": "두경부 – 구강건조증, 하악골 괴사"
         },
         {
           "number": 2,
-          "text": "Glioblastoma multiforme"
+          "text": "폐 – 방사선 폐렴"
         },
         {
           "number": 3,
-          "text": "Hemangioblastoma"
+          "text": "종격동 – 탈모"
         },
         {
           "number": 4,
-          "text": "Low grade astrocytoma"
+          "text": "상복부 – 오심, 구토"
         },
         {
           "number": 5,
-          "text": "Pilocytic astrocytoma"
+          "text": "골반부 – 설사"
         }
       ],
       "source": {
         "name": "혈종 이강규 정유리 JOIN.pdf",
         "page": 2,
-        "image": "assets/questions/lee-kanggyu/18-31.webp"
+        "image": "assets/questions/lee-kanggyu/17-57.webp"
       },
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": 2,
+      "answer": 3,
       "answerSource": "lecture_double_checked",
-      "explanation": "Glioblastoma multiforme의 항암방사선 병용에 대한 강의안의 생존 이득을 근거로 ②를 채택했습니다.",
+      "explanation": "탈모는 머리 부위 방사선 조사 합병증으로 제시되며, 흉부/종격동은 식도염·방사선 폐렴 등입니다.",
       "candidateEvidence": [],
       "evidence": [
         {
           "lectureId": "2026",
           "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 20,
-          "image": "assets/evidence/lee-kanggyu/2026-p020.webp",
-          "quote": "Chemoradiation in Glioblastoma Multiforme"
+          "page": 73,
+          "image": "assets/evidence/lee-kanggyu/2026-p073.webp",
+          "quote": "뇌부위에 치료받는 환자 • 탈모; 흉부에 치료받는 환자 • 방사선 폐렴"
         },
         {
           "lectureId": "2026",
           "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 22,
-          "image": "assets/evidence/lee-kanggyu/2026-p022.webp",
+          "page": 74,
+          "image": "assets/evidence/lee-kanggyu/2026-p074.webp",
           "quote": ""
-        }
-      ],
-      "validation": {
-        "stage": "accepted",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "lecture_quote_and_option_crosscheck",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "강의안 원문 근거와 지문·선지 비교 통과"
-      },
-      "transcriptionStatus": "review_required",
-      "transcriptionWarning": "표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": ""
-    },
-    {
-      "id": "lee-kanggyu:20-57",
-      "label": "20-57",
-      "year": 20,
-      "number": 57,
-      "subject": "hematology-1",
-      "professor": "lee-kanggyu",
-      "type": "choice",
-      "prompt": "수술 후 방사선치료와 temozolomide 병용으로 생존율의 향상을 보인 예후 불량 뇌종양은?",
-      "choices": [
-        {
-          "number": 1,
-          "text": "Craniopharyngioma"
-        },
-        {
-          "number": 2,
-          "text": "Glioblastoma multiforme"
-        },
-        {
-          "number": 3,
-          "text": "Hemangioblastoma"
-        },
-        {
-          "number": 4,
-          "text": "Low grade astrocytoma"
-        },
-        {
-          "number": 5,
-          "text": "Pilocytic astrocytoma"
-        }
-      ],
-      "source": {
-        "name": "혈종 이강규 정유리 JOIN.pdf",
-        "page": 2,
-        "image": "assets/questions/lee-kanggyu/18-31.webp"
-      },
-      "figureRequired": false,
-      "figureImages": [],
-      "showOriginalByDefault": false,
-      "answer": 2,
-      "answerSource": "lecture_double_checked",
-      "explanation": "Glioblastoma multiforme의 항암방사선 병용에 대한 강의안의 생존 이득을 근거로 ②를 채택했습니다.",
-      "candidateEvidence": [],
-      "evidence": [
-        {
-          "lectureId": "2026",
-          "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 20,
-          "image": "assets/evidence/lee-kanggyu/2026-p020.webp",
-          "quote": "Chemoradiation in Glioblastoma Multiforme"
         },
         {
           "lectureId": "2026",
           "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 22,
-          "image": "assets/evidence/lee-kanggyu/2026-p022.webp",
+          "page": 75,
+          "image": "assets/evidence/lee-kanggyu/2026-p075.webp",
+          "quote": ""
+        },
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 76,
+          "image": "assets/evidence/lee-kanggyu/2026-p076.webp",
           "quote": ""
         }
       ],
@@ -1144,6 +781,280 @@
       "notes": ""
     },
     {
+      "id": "lee-kanggyu:18-75",
+      "label": "18-75",
+      "year": 18,
+      "number": 75,
+      "subject": "hematology-1",
+      "professor": "lee-kanggyu",
+      "type": "choice",
+      "prompt": "FIGO stage IIB 자궁경부암 방사선치료 범위에 포함되지 않는 구조물은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "Uterus"
+        },
+        {
+          "number": 2,
+          "text": "Para-aortic lymph nodes"
+        },
+        {
+          "number": 3,
+          "text": "Internal iliac lymph nodes"
+        },
+        {
+          "number": 4,
+          "text": "External iliac lymph nodes"
+        },
+        {
+          "number": 5,
+          "text": "Lower common iliac lymph nodes"
+        },
+        {
+          "number": 6,
+          "text": "Hypogastric lymph nodes"
+        },
+        {
+          "number": 7,
+          "text": "Inguinal lymph nodes"
+        }
+      ],
+      "source": {
+        "name": "혈종 이강규 정유리 JOIN.pdf",
+        "page": 1,
+        "image": "assets/questions/lee-kanggyu/17-54.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": null,
+      "answerSource": "pending",
+      "explanation": "",
+      "candidateEvidence": [
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 43,
+          "image": "assets/evidence/lee-kanggyu/2026-p043.webp",
+          "quote": ""
+        },
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 47,
+          "image": "assets/evidence/lee-kanggyu/2026-p047.webp",
+          "quote": ""
+        }
+      ],
+      "evidence": [],
+      "validation": {
+        "stage": "pending",
+        "check1": "original_joint_exam_pdf_source_page_reviewed",
+        "check2": "not_verified_to_single_answer",
+        "verifiedAgainst": "uploaded_lecture_original_pages",
+        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+      },
+      "transcriptionStatus": "review_required",
+      "transcriptionWarning": "원본은 7지선다이며 선배 정리본에 ②·⑦을 함께 표시합니다. 단일 정답 검토 필요. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
+      "notes": ""
+    },
+    {
+      "id": "lee-kanggyu:19-15",
+      "label": "19-15",
+      "year": 19,
+      "number": 15,
+      "subject": "hematology-1",
+      "professor": "lee-kanggyu",
+      "type": "choice",
+      "prompt": "수술 후 방사선치료와 temozolomide 병용으로 생존율의 향상을 보인 예후 불량 뇌종양은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "Craniopharyngioma"
+        },
+        {
+          "number": 2,
+          "text": "Glioblastoma multiforme"
+        },
+        {
+          "number": 3,
+          "text": "Hemangioblastoma"
+        },
+        {
+          "number": 4,
+          "text": "Low grade astrocytoma"
+        },
+        {
+          "number": 5,
+          "text": "Pilocytic astrocytoma"
+        }
+      ],
+      "source": {
+        "name": "혈종 이강규 정유리 JOIN.pdf",
+        "page": 2,
+        "image": "assets/questions/lee-kanggyu/18-31.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 2,
+      "answerSource": "lecture_double_checked",
+      "explanation": "Glioblastoma multiforme의 항암방사선 병용에 대한 강의안의 생존 이득을 근거로 ②를 채택했습니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 20,
+          "image": "assets/evidence/lee-kanggyu/2026-p020.webp",
+          "quote": "Chemoradiation in Glioblastoma Multiforme"
+        },
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 22,
+          "image": "assets/evidence/lee-kanggyu/2026-p022.webp",
+          "quote": ""
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "original_joint_exam_pdf_source_page_reviewed",
+        "check2": "lecture_quote_and_option_crosscheck",
+        "verifiedAgainst": "uploaded_lecture_original_pages",
+        "decisionReason": "강의안 원문 근거와 지문·선지 비교 통과"
+      },
+      "transcriptionStatus": "review_required",
+      "transcriptionWarning": "표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
+      "notes": ""
+    },
+    {
+      "id": "lee-kanggyu:19-16",
+      "label": "19-16",
+      "year": 19,
+      "number": 16,
+      "subject": "hematology-1",
+      "professor": "lee-kanggyu",
+      "type": "choice",
+      "prompt": "비인강암(nasopharyngeal cancer)의 일차적인 치료는?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "수술 + 수술 후 항암화학방사선치료"
+        },
+        {
+          "number": 2,
+          "text": "동시항암화학방사선치료"
+        },
+        {
+          "number": 3,
+          "text": "수술 전 항암요법 + 수술 + 수술 후 항암화학방사선치료"
+        },
+        {
+          "number": 4,
+          "text": "수술 + 수술 후 항암요법"
+        },
+        {
+          "number": 5,
+          "text": "수술 전 항암화학방사선치료 + 수술"
+        }
+      ],
+      "source": {
+        "name": "혈종 이강규 정유리 JOIN.pdf",
+        "page": 2,
+        "image": "assets/questions/lee-kanggyu/18-7.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": null,
+      "answerSource": "pending",
+      "explanation": "",
+      "candidateEvidence": [
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 36,
+          "image": "assets/evidence/lee-kanggyu/2026-p036.webp",
+          "quote": ""
+        }
+      ],
+      "evidence": [],
+      "validation": {
+        "stage": "pending",
+        "check1": "original_joint_exam_pdf_source_page_reviewed",
+        "check2": "not_verified_to_single_answer",
+        "verifiedAgainst": "uploaded_lecture_original_pages",
+        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+      },
+      "transcriptionStatus": "review_required",
+      "transcriptionWarning": "2026 강의안 36쪽은 치료 전략 그림이며 선지별 독립 판단이 더 필요합니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
+      "notes": ""
+    },
+    {
+      "id": "lee-kanggyu:19-17",
+      "label": "19-17",
+      "year": 19,
+      "number": 17,
+      "subject": "hematology-1",
+      "professor": "lee-kanggyu",
+      "type": "choice",
+      "prompt": "58세 여성, 5 cm 자궁경부 편평세포암, 우측 parametrium 침범, external iliac 및 para-aortic lymph node 전이. FIGO stage는?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "Stage IIIC2"
+        },
+        {
+          "number": 2,
+          "text": "Stage IIIC1"
+        },
+        {
+          "number": 3,
+          "text": "Stage IIA2"
+        },
+        {
+          "number": 4,
+          "text": "Stage IB3"
+        },
+        {
+          "number": 5,
+          "text": "Stage IIB"
+        }
+      ],
+      "source": {
+        "name": "혈종 이강규 정유리 JOIN.pdf",
+        "page": 1,
+        "image": "assets/questions/lee-kanggyu/18-3.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 1,
+      "answerSource": "lecture_double_checked",
+      "explanation": "대동맥주위 림프절 전이는 IIIC2입니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 47,
+          "image": "assets/evidence/lee-kanggyu/2026-p047.webp",
+          "quote": "FIGO Staging"
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "original_joint_exam_pdf_source_page_reviewed",
+        "check2": "lecture_quote_and_option_crosscheck",
+        "verifiedAgainst": "uploaded_lecture_original_pages",
+        "decisionReason": "강의안 원문 근거와 지문·선지 비교 통과"
+      },
+      "transcriptionStatus": "review_required",
+      "transcriptionWarning": "표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
+      "notes": ""
+    },
+    {
       "id": "lee-kanggyu:19-18",
       "label": "19-18",
       "year": 19,
@@ -1204,6 +1115,223 @@
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "강의안의 목록에 폐 전이가 없는 것은 맞으나, 이것만으로 폐 전이 환자에게 고식적 RT의 적응증이 절대 없다고 단정할 수 없어 보류합니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
+      "notes": ""
+    },
+    {
+      "id": "lee-kanggyu:20-57",
+      "label": "20-57",
+      "year": 20,
+      "number": 57,
+      "subject": "hematology-1",
+      "professor": "lee-kanggyu",
+      "type": "choice",
+      "prompt": "수술 후 방사선치료와 temozolomide 병용으로 생존율의 향상을 보인 예후 불량 뇌종양은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "Craniopharyngioma"
+        },
+        {
+          "number": 2,
+          "text": "Glioblastoma multiforme"
+        },
+        {
+          "number": 3,
+          "text": "Hemangioblastoma"
+        },
+        {
+          "number": 4,
+          "text": "Low grade astrocytoma"
+        },
+        {
+          "number": 5,
+          "text": "Pilocytic astrocytoma"
+        }
+      ],
+      "source": {
+        "name": "혈종 이강규 정유리 JOIN.pdf",
+        "page": 2,
+        "image": "assets/questions/lee-kanggyu/18-31.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 2,
+      "answerSource": "lecture_double_checked",
+      "explanation": "Glioblastoma multiforme의 항암방사선 병용에 대한 강의안의 생존 이득을 근거로 ②를 채택했습니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 20,
+          "image": "assets/evidence/lee-kanggyu/2026-p020.webp",
+          "quote": "Chemoradiation in Glioblastoma Multiforme"
+        },
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 22,
+          "image": "assets/evidence/lee-kanggyu/2026-p022.webp",
+          "quote": ""
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "original_joint_exam_pdf_source_page_reviewed",
+        "check2": "lecture_quote_and_option_crosscheck",
+        "verifiedAgainst": "uploaded_lecture_original_pages",
+        "decisionReason": "강의안 원문 근거와 지문·선지 비교 통과"
+      },
+      "transcriptionStatus": "review_required",
+      "transcriptionWarning": "표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
+      "notes": ""
+    },
+    {
+      "id": "lee-kanggyu:20-58",
+      "label": "20-58",
+      "year": 20,
+      "number": 58,
+      "subject": "hematology-1",
+      "professor": "lee-kanggyu",
+      "type": "choice",
+      "prompt": "방사선 조사 부위와 방사선 치료에 따른 급성 또는 만성 합병증의 연결 중 옳지 않은 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "두경부 – 구강건조증, 하악골 괴사"
+        },
+        {
+          "number": 2,
+          "text": "폐 – 방사선 폐렴"
+        },
+        {
+          "number": 3,
+          "text": "종격동 – 탈모"
+        },
+        {
+          "number": 4,
+          "text": "상복부 – 오심, 구토"
+        },
+        {
+          "number": 5,
+          "text": "골반부 – 설사"
+        }
+      ],
+      "source": {
+        "name": "혈종 이강규 정유리 JOIN.pdf",
+        "page": 2,
+        "image": "assets/questions/lee-kanggyu/17-57.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 3,
+      "answerSource": "lecture_double_checked",
+      "explanation": "탈모는 머리 부위 방사선 조사 합병증으로 제시되며, 흉부/종격동은 식도염·방사선 폐렴 등입니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 73,
+          "image": "assets/evidence/lee-kanggyu/2026-p073.webp",
+          "quote": "뇌부위에 치료받는 환자 • 탈모; 흉부에 치료받는 환자 • 방사선 폐렴"
+        },
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 74,
+          "image": "assets/evidence/lee-kanggyu/2026-p074.webp",
+          "quote": ""
+        },
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 75,
+          "image": "assets/evidence/lee-kanggyu/2026-p075.webp",
+          "quote": ""
+        },
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 76,
+          "image": "assets/evidence/lee-kanggyu/2026-p076.webp",
+          "quote": ""
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "original_joint_exam_pdf_source_page_reviewed",
+        "check2": "lecture_quote_and_option_crosscheck",
+        "verifiedAgainst": "uploaded_lecture_original_pages",
+        "decisionReason": "강의안 원문 근거와 지문·선지 비교 통과"
+      },
+      "transcriptionStatus": "review_required",
+      "transcriptionWarning": "표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
+      "notes": ""
+    },
+    {
+      "id": "lee-kanggyu:20-59",
+      "label": "20-59",
+      "year": 20,
+      "number": 59,
+      "subject": "hematology-1",
+      "professor": "lee-kanggyu",
+      "type": "choice",
+      "prompt": "58세 여성, 5 cm 자궁경부 편평세포암, 우측 parametrium 침범, external iliac 및 para-aortic lymph node 전이. FIGO stage는?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "Stage IIIC2"
+        },
+        {
+          "number": 2,
+          "text": "Stage IIIC1"
+        },
+        {
+          "number": 3,
+          "text": "Stage IIA2"
+        },
+        {
+          "number": 4,
+          "text": "Stage IB3"
+        },
+        {
+          "number": 5,
+          "text": "Stage IIB"
+        }
+      ],
+      "source": {
+        "name": "혈종 이강규 정유리 JOIN.pdf",
+        "page": 1,
+        "image": "assets/questions/lee-kanggyu/18-3.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 1,
+      "answerSource": "lecture_double_checked",
+      "explanation": "대동맥주위 림프절 전이는 IIIC2입니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 47,
+          "image": "assets/evidence/lee-kanggyu/2026-p047.webp",
+          "quote": "FIGO Staging"
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "original_joint_exam_pdf_source_page_reviewed",
+        "check2": "lecture_quote_and_option_crosscheck",
+        "verifiedAgainst": "uploaded_lecture_original_pages",
+        "decisionReason": "강의안 원문 근거와 지문·선지 비교 통과"
+      },
+      "transcriptionStatus": "review_required",
+      "transcriptionWarning": "표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
       "notes": ""
     },
     {
@@ -1268,6 +1396,86 @@
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "강의안의 목록에 폐 전이가 없는 것은 맞으나, 이것만으로 폐 전이 환자에게 고식적 RT의 적응증이 절대 없다고 단정할 수 없어 보류합니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
       "notes": ""
+    },
+    {
+      "id": "lee-kanggyu:21-4",
+      "label": "21-4",
+      "year": 21,
+      "number": 4,
+      "subject": "hematology-1",
+      "professor": "lee-kanggyu",
+      "type": "choice",
+      "prompt": "방사선치료받은 부위로 인해 발생할 수 있는 급성 또는 만성 합병증의 연결이 옳지 않은 것은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "두경부 – 구강건조증, 하악골괴사"
+        },
+        {
+          "number": 2,
+          "text": "폐 – 방사선 폐렴"
+        },
+        {
+          "number": 3,
+          "text": "중추신경 – 탈모"
+        },
+        {
+          "number": 4,
+          "text": "상복부 – 오심, 구토"
+        },
+        {
+          "number": 5,
+          "text": "골반부 – 설사"
+        }
+      ],
+      "source": {
+        "name": "혈종 이강규 정유리 JOIN.pdf",
+        "page": 8,
+        "image": "assets/questions/lee-kanggyu/21-4.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": null,
+      "answerSource": "pending",
+      "explanation": "",
+      "candidateEvidence": [
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 73,
+          "image": "assets/evidence/lee-kanggyu/2026-p073.webp"
+        },
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 74,
+          "image": "assets/evidence/lee-kanggyu/2026-p074.webp"
+        },
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 75,
+          "image": "assets/evidence/lee-kanggyu/2026-p075.webp"
+        },
+        {
+          "lectureId": "2026",
+          "file": "2026년 종양학 강의록(이강규).pdf",
+          "page": 76,
+          "image": "assets/evidence/lee-kanggyu/2026-p076.webp"
+        }
+      ],
+      "evidence": [],
+      "validation": {
+        "stage": "pending",
+        "check1": "original_joint_exam_pdf_source_page_reviewed",
+        "check2": "not_verified_to_single_answer",
+        "verifiedAgainst": "uploaded_lecture_original_pages",
+        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+      },
+      "transcriptionStatus": "review_required",
+      "transcriptionWarning": "2023학년도 시험지 4번. 일반 방사선치료 부작용 주제이므로 이강규로 분류(주제 추정). 특히 ③ 중추신경–탈모는 실제 강의안과 불일치하지 않아 단일 정답을 확정하지 않았습니다. 21학번 표기는 추정입니다.",
+      "notes": "강의안 73쪽에는 뇌 부위 방사선 치료에 따른 탈모가 명시되어 있어 ③번을 단정적인 오답으로 확정할 수 없습니다. 검토 필요."
     },
     {
       "id": "lee-kanggyu:21-5",
@@ -2994,86 +3202,6 @@
       "transcriptionStatus": "not_applicable_ai_generated",
       "transcriptionWarning": "AI 예상문제입니다. 실제 출제 또는 교수님 출제 예고를 의미하지 않습니다.",
       "notes": "실제 기출 및 학번별 시험에는 포함되지 않음"
-    },
-    {
-      "id": "lee-kanggyu:21-4",
-      "label": "21-4",
-      "year": 21,
-      "number": 4,
-      "subject": "hematology-1",
-      "professor": "lee-kanggyu",
-      "type": "choice",
-      "prompt": "방사선치료받은 부위로 인해 발생할 수 있는 급성 또는 만성 합병증의 연결이 옳지 않은 것은?",
-      "choices": [
-        {
-          "number": 1,
-          "text": "두경부 – 구강건조증, 하악골괴사"
-        },
-        {
-          "number": 2,
-          "text": "폐 – 방사선 폐렴"
-        },
-        {
-          "number": 3,
-          "text": "중추신경 – 탈모"
-        },
-        {
-          "number": 4,
-          "text": "상복부 – 오심, 구토"
-        },
-        {
-          "number": 5,
-          "text": "골반부 – 설사"
-        }
-      ],
-      "source": {
-        "name": "혈종 이강규 정유리 JOIN.pdf",
-        "page": 8,
-        "image": "assets/questions/lee-kanggyu/21-4.webp"
-      },
-      "figureRequired": false,
-      "figureImages": [],
-      "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
-      "candidateEvidence": [
-        {
-          "lectureId": "2026",
-          "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 73,
-          "image": "assets/evidence/lee-kanggyu/2026-p073.webp"
-        },
-        {
-          "lectureId": "2026",
-          "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 74,
-          "image": "assets/evidence/lee-kanggyu/2026-p074.webp"
-        },
-        {
-          "lectureId": "2026",
-          "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 75,
-          "image": "assets/evidence/lee-kanggyu/2026-p075.webp"
-        },
-        {
-          "lectureId": "2026",
-          "file": "2026년 종양학 강의록(이강규).pdf",
-          "page": 76,
-          "image": "assets/evidence/lee-kanggyu/2026-p076.webp"
-        }
-      ],
-      "evidence": [],
-      "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
-      },
-      "transcriptionStatus": "review_required",
-      "transcriptionWarning": "2023학년도 시험지 4번. 일반 방사선치료 부작용 주제이므로 이강규로 분류(주제 추정). 특히 ③ 중추신경–탈모는 실제 강의안과 불일치하지 않아 단일 정답을 확정하지 않았습니다. 21학번 표기는 추정입니다.",
-      "notes": "강의안 73쪽에는 뇌 부위 방사선 치료에 따른 탈모가 명시되어 있어 ③번을 단정적인 오답으로 확정할 수 없습니다. 검토 필요."
     }
   ]
 }

@@ -1417,6 +1417,70 @@
       "notes": "사용자가 5번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
     },
     {
+      "id": "choi-duyoung:19-23",
+      "label": "19-23",
+      "year": 19,
+      "number": 23,
+      "subject": "hematology-1",
+      "professor": "choi-duyoung",
+      "type": "choice",
+      "prompt": "소아 비호지킨림프종에 대한 올바른 설명은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "진단 시 골수 침범은 흔치 않다."
+        },
+        {
+          "number": 2,
+          "text": "저등급(low grade) 유형이 흔하다."
+        },
+        {
+          "number": 3,
+          "text": "Nodular sclerosis형이 가장 흔하다."
+        },
+        {
+          "number": 4,
+          "text": "림프모구(lymphoblastic) 림프종은 주로 T 림프구에서 발생한다."
+        },
+        {
+          "number": 5,
+          "text": "발생 부위의 국소적 치료로 완치된다."
+        }
+      ],
+      "source": {
+        "name": "19 종양 해설.pdf",
+        "page": 11,
+        "image": "assets/questions/choi-duyoung/19-23-v124.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": null,
+      "answerSource": "unconfirmed",
+      "explanation": "19학번 해설 PDF 11쪽에서는 ④ 림프모구림프종의 T-림프구 기원에 관한 설명을 정답으로 표시합니다. ①은 골수침범, ②는 저등급 유병, ③은 호지킨림프종의 조직형, ⑤는 국소치료의 범위와 관련되어 적절하지 않습니다. 다만 현재 업로드된 최두영 교수님 강의안에서 이 내용을 직접 뒷받침하는 원본 페이지를 확인하지 못해 PDF 표기 답을 검토 후보로만 남겼습니다.",
+      "candidateEvidence": [
+        {
+          "lectureId": "v124-19-explanation",
+          "file": "19 종양 해설.pdf",
+          "page": 11,
+          "image": "assets/questions/choi-duyoung/19-23-v124.webp",
+          "quote": "해설 PDF 제시 ④ — 다른 선택지와 설명의 논리 대조 필요"
+        }
+      ],
+      "evidence": [],
+      "validation": {
+        "stage": "pending",
+        "check1": "original_question_reexamined",
+        "check2": "independent_confirmation_pending",
+        "verifiedAgainst": "candidate_only",
+        "anchor": "",
+        "decisionReason": "관련 정보만으로 단일 정답 미확정"
+      },
+      "transcriptionStatus": "user_supplied_or_original_image_verified",
+      "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
+      "notes": "출처: 19 종양 해설.pdf PDF 11쪽, 정답 후보 ④. 교수님 소속은 사용자 지정 최두영, PDF 주석에는 혈액 범위로 표기. 강의안 직접 근거 확보 전까지 미확정."
+    },
+    {
       "id": "choi-duyoung:19-24",
       "label": "19-24",
       "year": 19,
@@ -1489,6 +1553,77 @@
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마 정리본의 손글씨와 형광펜은 정답 확정 근거로 사용하지 않습니다.",
       "notes": "사용자가 3번을 정답으로 확정했습니다. 강의안 이중검증 정답과는 별도로 사용자 확정 정답으로 표시합니다."
+    },
+    {
+      "id": "choi-duyoung:19-25",
+      "label": "19-25",
+      "year": 19,
+      "number": 25,
+      "subject": "hematology-1",
+      "professor": "choi-duyoung",
+      "type": "choice",
+      "prompt": "신경모세포종에 대한 올바른 설명은?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "흉곽 내에서는 전방 종격동에 발생한다."
+        },
+        {
+          "number": 2,
+          "text": "혈뇨가 흔하다."
+        },
+        {
+          "number": 3,
+          "text": "진단 시 골수 전이된 경우가 많다."
+        },
+        {
+          "number": 4,
+          "text": "고위험군일수록 N-MYC 유전자 증폭 수가 적다."
+        },
+        {
+          "number": 5,
+          "text": "고위험군에서는 조혈모세포이식 후 all-trans-retinoic acid를 투여한다."
+        }
+      ],
+      "source": {
+        "name": "19 종양 해설.pdf",
+        "page": 12,
+        "image": "assets/questions/choi-duyoung/19-25-v124.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 3,
+      "answerSource": "lecture_double_checked",
+      "explanation": "신경모세포종은 후방 종격동과 복부에 생길 수 있고 진단 시 전이가 흔합니다. 강의안에서는 MYCN 유전자 증폭이 고위험·불량예후와 관련되고, 고위험군 공고요법에는 all-trans가 아니라 13-cis-retinoic acid를 사용한다고 명시합니다. 따라서 ③을 선택합니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "v124-choi-2025",
+          "file": "25.11.13_혈액과종양_최두영pf_Neuroblastoma, Wilm’s Tumor, 기타 소아 고형종양.pdf",
+          "page": 7,
+          "image": "assets/evidence/choi-duyoung/v124-choi-2025-p007.webp",
+          "quote": "Metastatic spread; common sites bone marrow and posterior mediastinum"
+        },
+        {
+          "lectureId": "v124-choi-2025",
+          "file": "25.11.13_혈액과종양_최두영pf_Neuroblastoma, Wilm’s Tumor, 기타 소아 고형종양.pdf",
+          "page": 19,
+          "image": "assets/evidence/choi-duyoung/v124-choi-2025-p019.webp",
+          "quote": "High-risk neuroblastoma; 13-cis-retinoic acid"
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "original_question_reexamined",
+        "check2": "lecture_original_page_and_options_checked",
+        "verifiedAgainst": "uploaded_lecture",
+        "anchor": "Metastatic spread; common sites bone marrow and posterior mediastinum; High-risk neuroblastoma; 13-cis-retinoic acid",
+        "decisionReason": "강의안 원문·선택지 이중 대조 채택"
+      },
+      "transcriptionStatus": "user_supplied_or_original_image_verified",
+      "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
+      "notes": ""
     },
     {
       "id": "choi-duyoung:19-26",

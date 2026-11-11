@@ -4342,6 +4342,70 @@
       "notes": "최운정 교수님 강의안 추가 대조: 최운정 교수님 강의안 7개에서 질문·선지의 단일 정답을 직접 확정할 만한 근거를 확보하지 못해 미채택"
     },
     {
+      "id": "won-taewan:19-44",
+      "label": "19-44",
+      "year": 19,
+      "number": 44,
+      "subject": "hematology-1",
+      "professor": "won-taewan",
+      "type": "choice",
+      "prompt": "70대 여자가 경부 level 5의 단단한 림프절이 만져져서 세침흡인세포검사를 시행한 결과 전이성 편평상피세포암(metastatic squamous cell carcinoma)으로 나왔다. 원발병소를 찾을 때 필요한 검사는?",
+      "choices": [
+        {
+          "number": 1,
+          "text": "유전자형 검사"
+        },
+        {
+          "number": 2,
+          "text": "유방 X-선 촬영"
+        },
+        {
+          "number": 3,
+          "text": "인후두 내시경검사"
+        },
+        {
+          "number": 4,
+          "text": "뇌 컴퓨터단층촬영"
+        },
+        {
+          "number": 5,
+          "text": "복부 컴퓨터단층촬영"
+        }
+      ],
+      "source": {
+        "name": "19 종양 해설.pdf",
+        "page": 20,
+        "image": "assets/questions/won-taewan/19-44-v124.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "answer": 3,
+      "answerSource": "lecture_double_checked",
+      "explanation": "전이성 경부 림프절 편평상피세포암은 상기도·인두·후두 등 두경부 점막의 원발병소를 확인해야 합니다. 최운정 교수님 두경부암 강의안 PDF 2쪽에서 후두·하인두·비인강에 대한 간접후두경/유연 내시경 검사와 병소 탐색을 제시해 ③을 채택합니다.",
+      "candidateEvidence": [],
+      "evidence": [
+        {
+          "lectureId": "v124-choi-2021",
+          "file": "11.1_8교시_최운정(두경부암).pdf",
+          "page": 2,
+          "image": "assets/evidence/won-taewan/v124-choi-2021-p002.webp",
+          "quote": "indirect laryngoscopy, flexible fiberoscopy – larynx, hypopharynx, nasopharynx"
+        }
+      ],
+      "validation": {
+        "stage": "accepted",
+        "check1": "original_question_reexamined",
+        "check2": "lecture_original_page_and_options_checked",
+        "verifiedAgainst": "uploaded_lecture",
+        "anchor": "indirect laryngoscopy, flexible fiberoscopy – larynx, hypopharynx, nasopharynx",
+        "decisionReason": "강의안 원문·선택지 이중 대조 채택"
+      },
+      "transcriptionStatus": "user_supplied_or_original_image_verified",
+      "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
+      "notes": "연도별 출제 명칭은 원태완(최운정 기출) 유지. 근거 출처는 최운정 교수님 강의안으로 구분."
+    },
+    {
       "id": "won-taewan:19-45",
       "label": "19-45",
       "year": 19,
@@ -6514,116 +6578,6 @@
       "transcriptionStatus": "visually_checked_against_source",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다. 2023학년도 「21_혈액과종양_1차_종양학_해설.pdf」 PDF 10페이지에서는 4번을 정답 후보로 제시합니다. 다만 기존 강의안 이중검증을 통과하지 못했으므로 사이트 채점 기준은 여전히 정답 검토 필요입니다.",
       "notes": "21학번 유방외과 정리본에 수록된 문제이며 외과 범위인지 최종 확인 필요. 교수님 영역 확인 필요: 21학번 자료에서 다른 교수님 내용과 인접합니다.\n2023학년도 「21_혈액과종양_1차_종양학_해설.pdf」 PDF 10페이지에서는 4번을 정답 후보로 제시합니다. 다만 기존 강의안 이중검증을 통과하지 못했으므로 사이트 채점 기준은 여전히 정답 검토 필요입니다."
-    },
-    {
-      "id": "won-taewan:21-39",
-      "label": "21-39",
-      "year": 21,
-      "number": 39,
-      "subject": "hematology-1",
-      "professor": "won-taewan",
-      "type": "choice",
-      "prompt": "우리나라 주요암 발생률의 변화 중 점차 증가하는 암은?",
-      "choices": [
-        {
-          "number": 1,
-          "text": "위암"
-        },
-        {
-          "number": 2,
-          "text": "폐암"
-        },
-        {
-          "number": 3,
-          "text": "간암"
-        },
-        {
-          "number": 4,
-          "text": "췌장암"
-        },
-        {
-          "number": 5,
-          "text": "대장암"
-        }
-      ],
-      "source": {
-        "name": "최운정pf_21-16_종양외과_보팡.pdf",
-        "page": 2,
-        "image": "assets/questions/won-taewan/21-39.webp"
-      },
-      "figureRequired": false,
-      "figureImages": [],
-      "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
-      "candidateEvidence": [],
-      "evidence": [],
-      "validation": {
-        "stage": "pending",
-        "check1": "기출 원본 PDF 확인",
-        "check2": "해당 강의안과 정답·모든 선택지의 일치 여부 재확인 필요",
-        "verifiedAgainst": "원태완 교수님 업로드 강의안",
-        "decisionReason": "최운정 교수님 강의안 추가 대조 미채택: 발생률의 시기별 증가를 강의안의 고정 시점 통계만으로 입증할 수 없어 보류"
-      },
-      "transcriptionStatus": "visually_checked_against_source",
-      "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
-      "notes": "21학번 유방외과 정리본에 수록된 문제이며 외과 범위인지 최종 확인 필요. 교수님 영역 확인 필요: 21학번 자료에서 다른 교수님 내용과 인접합니다."
-    },
-    {
-      "id": "won-taewan:21-40",
-      "label": "21-40",
-      "year": 21,
-      "number": 40,
-      "subject": "hematology-1",
-      "professor": "won-taewan",
-      "type": "choice",
-      "prompt": "암 발생을 예방하기 위한 시도 중 어느 정도 긍정적인 결과가 보고된 것은?",
-      "choices": [
-        {
-          "number": 1,
-          "text": "두경부암–isotretinoin"
-        },
-        {
-          "number": 2,
-          "text": "폐암–beta carotene"
-        },
-        {
-          "number": 3,
-          "text": "대장암–aspirin"
-        },
-        {
-          "number": 4,
-          "text": "전립선암–tocopherol"
-        },
-        {
-          "number": 5,
-          "text": "유방암–저지방 음식"
-        }
-      ],
-      "source": {
-        "name": "최운정pf_21-16_종양외과_보팡.pdf",
-        "page": 2,
-        "image": "assets/questions/won-taewan/21-40.webp"
-      },
-      "figureRequired": false,
-      "figureImages": [],
-      "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
-      "candidateEvidence": [],
-      "evidence": [],
-      "validation": {
-        "stage": "pending",
-        "check1": "기출 원본 PDF 확인",
-        "check2": "해당 강의안과 정답·모든 선택지의 일치 여부 재확인 필요",
-        "verifiedAgainst": "원태완 교수님 업로드 강의안",
-        "decisionReason": "최운정 교수님 강의안 추가 대조 미채택: 대장암-아스피린 예방 근거가 업로드된 최운정 강의안에서 명시적으로 입증되지 않음"
-      },
-      "transcriptionStatus": "review_required",
-      "transcriptionWarning": "원본 PDF의 흐릿한 글씨/선지와 다시 대조해 주세요. 임의 완성하지 않았습니다.",
-      "notes": "21학번 유방외과 정리본에 수록된 문제이며 외과 범위인지 최종 확인 필요. 교수님 영역 확인 필요: 21학번 자료에서 다른 교수님 내용과 인접합니다."
     }
   ]
 }
