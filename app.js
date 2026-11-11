@@ -413,6 +413,13 @@
       btn.disabled=false;btn.textContent='다시 등록';
     }
   }
+  // Format the completed exam score for the rank celebration dialog.
+  function leaderboardSummaryText(entry) {
+    const score=Number(entry?.score)||0;
+    const total=Number(entry?.total)||0;
+    const percent=Number.isFinite(Number(entry?.percent)) ? Number(entry.percent) : (total ? Math.round(score / total * 100) : 0);
+    return `${score}점 / ${total}문항 · ${percent}%`;
+  }
   function showRankCelebration(preview) {
     if(!preview) return;
     const image=LEADERBOARD_IMAGE_BY_RANK[preview.rank] || LEADERBOARD_IMAGE_BY_RANK[3];
