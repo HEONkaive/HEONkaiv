@@ -1,0 +1,10 @@
+HEON ARCHIVE v1.0.2 — Supabase 연결 완료 설정파일
+
+1. GitHub에 v1.0.2 파일을 이미 올렸다면, leaderboard-config.js만 저장소의 최상위(= index.html 옆)에 올려서 같은 이름의 기존 파일을 교체하세요.
+2. GitHub Pages 배포가 반영되면 웹사이트를 강력 새로고침하세요.
+3. 과목 왼쪽 아래의 TOP 3가 공용 순위표입니다. '새로고침'으로 갱신하세요.
+4. 22학번 통합 문제 풀이를 전부 제출하면 TOP 3 진입 가능 시 닉네임 창이 나옵니다.
+5. 혈액과 종양 1차 외 나머지 과목은 정답 및 문제가 준비될 때까지 준비 중입니다.
+6. v1.0.2 파일을 GitHub에 아직 업로드하지 않았다면, 아래의 연결 완료 PATCH ZIP 전체를 업로드하세요.
+
+안전: 여기에 들어 있는 키는 공개용 Publishable Key입니다. Supabase secret, service_role, DB 암호는 GitHub에 넣지 마세요.
