@@ -1,3 +1,22 @@
+# HEON ARCHIVE v11 — 원태완(최운정 기출) 추가
+
+- `data/professors/won-taewan.json`: 직접 수정하는 정본 문제 데이터
+- `data/professors/won-taewan.js`: 오프라인 GitHub Pages 및 로컬 모드 데이터 사본(정본 수정 후 함께 갱신)
+- 원태완 교수님 문제 103개; 강의안 이중 대조 채택 31개, 정답 검토 필요 72개
+- 원본 영상 `assets/figures/won-taewan`, 실제 교수님 강의안 캡처 `assets/evidence/won-taewan`
+- 기존 `park-murim`부터 `jung-yuri`까지의 JSON 원본과 문제 ID 및 학습 기록 저장 키를 변경하지 않음
+- 학번별 시험에서는 `원태완(최운정 기출)`로 표시; 교수님별·학번별 학습 기록은 독립 유지
+- 자세한 검증 범위 및 미확정 사유는 `AUDIT_원태완_최운정기출_v11.md` 확인
+
+## GitHub Pages 업데이트
+
+1. 이 폴더의 **내부 파일·폴더 모두**를 GitHub 저장소 루트에 복사하여 덮어씁니다.
+2. 새로운 `data/professors/won-taewan.*`와 `assets/figures/won-taewan`, `assets/evidence/won-taewan`, `assets/questions/won-taewan` 폴더도 함께 업로드하세요.
+3. Commit → Push origin 후 `Ctrl+Shift+R`로 새로고침합니다.
+4. 이미지가 필요한 문제는 원본 그래픽을 직접 보여주며 기존 학습기록은 동일한 브라우저·사이트 주소에서 유지하도록 설계했습니다.
+
+---
+
 # HEON ARCHIVE v10.1 — 박무림·이승신 교수님 범위 재분류
 
 GitHub Pages에서 실행하는 정적 HTML/CSS/JavaScript 의학 기출문제 아카이브입니다. **v10 디자인과 모든 학습 기능은 유지**하고, 비응급 문항의 소속 및 근거 PPT(PDF 강의안 원본 캡처)를 박무림 교수님으로 이동했습니다.

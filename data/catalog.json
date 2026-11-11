@@ -53,6 +53,13 @@
           "data": "data/professors/jung-yuri.json",
           "questionCount": 21,
           "pendingCount": 17
+        },
+        {
+          "id": "won-taewan",
+          "name": "원태완",
+          "data": "data/professors/won-taewan.json",
+          "questionCount": 103,
+          "pendingCount": 72
         }
       ]
     },
