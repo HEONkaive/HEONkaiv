@@ -15,7 +15,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "종양 수술에서 감시림프절(sentinel lymph node)의 정의는?",
+      "prompt": "종양 수술에서 감시림프절 ( sentinel lymph node ) 의 정의는?",
       "choices": [
         {
           "number": 1,
@@ -67,12 +67,18 @@
         "anchor": "sentinel lymph node first draining",
         "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: 감시림프절은 유방에서 처음 배액되는 림프절로 표지 주입 후 먼저 확인되는 림프절입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 감시림프절은 유방에서 처음 배액되는 림프절로 표지 주입 후 먼저 확인되는 림프절입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 10,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-33",
@@ -86,7 +92,7 @@
       "choices": [
         {
           "number": 1,
-          "text": "수술 중 종양에 절개를 가하거나 암을 노출시켜서는 안 된다."
+          "text": "수술 중 종양에 절개를 가하거나 암을 노출시켜서는 안된다."
         },
         {
           "number": 2,
@@ -94,7 +100,7 @@
         },
         {
           "number": 3,
-          "text": "암을 수술할 때에는 주변 정상조직 일부를 포함하여 제거해야 한다."
+          "text": "암을 수술할 때에는 주변 정상조직 일부를 포함하여 제거해야 한 다."
         },
         {
           "number": 4,
@@ -126,12 +132,25 @@
         "decisionReason": "2026-11-11 사용자 요청: 원문에서 강조된 선지 2를 잠정 사용자 지정 정답으로 등록. ",
         "note": "기출 형광펜에 근거한 사용자 요청 기본 답으로 강의안 검증 정답과 구별."
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "이 문항(16-33)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 악성종양의 수술법에 대해서 옳지 않은 설명은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(16-33)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 악성종양의 수술법에 대해서 옳지 않은 설명은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 10,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "2": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2."
+      }
     },
     {
       "id": "won-taewan:16-34",
@@ -145,23 +164,23 @@
       "choices": [
         {
           "number": 1,
-          "text": "견갑골 림프절(scapular lymph node)"
+          "text": "견갑골 림프절 ( scapular lymph node )"
         },
         {
           "number": 2,
-          "text": "흉근사이 림프절(interpectoral lymph node)"
+          "text": "흉근사이 림프절 ( interpectoral lymph node )"
         },
         {
           "number": 3,
-          "text": "내유 림프절(internal mammary lymph node)"
+          "text": "내유 림프절 ( internal mammary lymph node )"
         },
         {
           "number": 4,
-          "text": "쇄골하 림프절(subclavicular lymph node)"
+          "text": "쇄골하 림프절 ( subclavicular lymph node )"
         },
         {
           "number": 5,
-          "text": "쇄골상 림프절(supraclavicular axillary lymph node)"
+          "text": "쇄골상 림프절 ( supraclavicular axillary lymph node )"
         }
       ],
       "source": {
@@ -194,12 +213,18 @@
         "anchor": "scapular group; level I / level II",
         "decisionReason": "원태완 교수님 기존 강의안에서 근거를 찾지 못한 문항을 최운정 교수님 강의안 11.1_5,6교시_최운정.pdf PDF 2쪽으로 이중 대조 후 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: 견갑골림프절(scapular/subscapular group)은 겨드랑이 림프절군이며 소흉근 바깥쪽의 level I에 해당한다. 흉근사이림프절은 level II, 쇄골하림프절은 level III, 내유·쇄골상 림프절은 해당 level I이 아니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 견갑골림프절(scapular/subscapular group)은 겨드랑이 림프절군이며 소흉근 바깥쪽의 level I에 해당한다. 흉근사이림프절은 level II, 쇄골하림프절은 level III, 내유·쇄골상 림프절은 해당 level I이 아니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 10,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-35",
@@ -213,23 +238,23 @@
       "choices": [
         {
           "number": 1,
-          "text": "지방괴사(fat necrosis)"
+          "text": "지방괴사 ( fat necrosis )"
         },
         {
           "number": 2,
-          "text": "경화성 선증(sclerosing adenosis)"
+          "text": "경화성 선종 ( sclerosing adenosis )"
         },
         {
           "number": 3,
-          "text": "유관내 유두종(intraductal papilloma)"
+          "text": "유관내 유두종 ( intraductal papilloma )"
         },
         {
           "number": 4,
-          "text": "거대 섬유선종(giant fibroadenoma)"
+          "text": "거대 섬유선종 ( giant fibroadenoma )"
         },
         {
           "number": 5,
-          "text": "비정형 유관증식증(atypical ductal hyperplasia)"
+          "text": "비정형 유관증식증 ( atypical ductal hyperplasia )"
         }
       ],
       "source": {
@@ -261,12 +286,18 @@
         "anchor": "atypical ductal hyperplasia risk",
         "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 비정형 유관증식증은 향후 유방암 발생 위험이 높은 병변입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 비정형 유관증식증은 향후 유방암 발생 위험이 높은 병변입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 10,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-36",
@@ -276,7 +307,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "40대 폐경전 여성이 직경 2.0cm 유방암으로 유방보존술 및 겨드랑이림프절절제술을 받았다. 림프절 1개에 전이가 있고 Luminal A형이었다. 치료계획으로 옳지 않은 것은?",
+      "prompt": "40대 폐경전 여성이 직경 2.0cm 유방암으로 유방보존술 및 겨드랑이림 프절절제술을 받았다. 병리검사결과 림프절 1개에 전이가 있었고 ‘내강 A’형이었다. 치료계획으로 옳지 않은 것은?",
       "choices": [
         {
           "number": 1,
@@ -328,12 +359,18 @@
         "anchor": "Luminal A HER2 negative",
         "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: Luminal A는 HER2 음성 아형이므로 HER2 표적치료인 trastuzumab은 보기에 적절하지 않습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: Luminal A는 HER2 음성 아형이므로 HER2 표적치료인 trastuzumab은 보기에 적절하지 않습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 10,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-37",
@@ -343,27 +380,27 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "20대 여성의 우측 유방에 경계가 명확하고 잘 움직이는 3cm 무통성 종괴가 만져졌다. 유방초음파 사진은 다음과 같다. 가장 가능성이 큰 진단은?",
+      "prompt": "20대 여성이 우측 유방종물로 내원하였다. 촉진상 직경 약 3cm의 경계 가 뚜렷하고 잘 움직이는 무통성 종물이 촉지되었고, 유방초음파검사 결 과는 아래와 같다. 가장 가능성이 큰 진단명은?",
       "choices": [
         {
           "number": 1,
-          "text": "섬유선종(fibroadenoma)"
+          "text": "섬유선종 ( fibroadenoma )"
         },
         {
           "number": 2,
-          "text": "파제트병(Paget’s disease)"
+          "text": "파제트병 ( padget’s disease )"
         },
         {
           "number": 3,
-          "text": "섬유낭병변(fibrocystic change)"
+          "text": "섬유낭병변 ( fibrocystic change )"
         },
         {
           "number": 4,
-          "text": "경화성선증(sclerosing adenosis)"
+          "text": "경화성선증 ( sclerosing adenosis )"
         },
         {
           "number": 5,
-          "text": "유관내 유두종(intraductal papilloma)"
+          "text": "유관내유두종 ( intraductal papilloma )"
         }
       ],
       "source": {
@@ -401,12 +438,18 @@
         "anchor": "fibroadenoma well-circumscribed",
         "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "",
       "unitTitle": "유방 양성질환",
       "unitId": "2d3643a85d17",
-      "aiExplanation": "판단 포인트: 무통성·경계 명확·가동성 종괴의 초음파 소견을 섬유선종 강의안과 대조했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 무통성·경계 명확·가동성 종괴의 초음파 소견을 섬유선종 강의안과 대조했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 10,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-38",
@@ -416,7 +459,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "유방암에서 유방보존술 가능 여부를 판단하기 위하여 알아야 할 사항과 무관한 것은?",
+      "prompt": "유방암에서 유방보존술 가능여부를 판단하기 위하여 알아야할 사항과 무 관한 것은?",
       "choices": [
         {
           "number": 1,
@@ -428,7 +471,7 @@
         },
         {
           "number": 3,
-          "text": "암 주변 악성석회화 동반 유무"
+          "text": "암주변 악성석회화 동반 유무"
         },
         {
           "number": 4,
@@ -436,7 +479,7 @@
         },
         {
           "number": 5,
-          "text": "수술 중 절제연 조직검사 결과 상피내암 유무"
+          "text": "수술중 절제연 조직검사결과 상피내암 유무"
         }
       ],
       "source": {
@@ -469,12 +512,18 @@
         "anchor": "유방보존술 금기; 다중심성암, 방사선치료 금기, 절제연",
         "decisionReason": "원태완 교수님 기존 강의안에서 근거를 찾지 못한 문항을 최운정 교수님 강의안 11.1_5,6교시_최운정.pdf PDF 29쪽으로 이중 대조 후 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: 유방보존술 가능 여부의 핵심 금기는 광범위 석회화, 다중심성 병변, 절제연 확보 불가, 방사선치료 불가 등이다. 겨드랑이 림프절 전이 여부 자체는 유방보존술의 절대적 금기가 아니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 유방보존술 가능 여부의 핵심 금기는 광범위 석회화, 다중심성 병변, 절제연 확보 불가, 방사선치료 불가 등이다. 겨드랑이 림프절 전이 여부 자체는 유방보존술의 절대적 금기가 아니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 10,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-39",
@@ -484,27 +533,27 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "좌측 유방암을 수술한 후 사진과 같은 견갑골 후유증이 발생하였다. 원인은?",
+      "prompt": "좌측 유방암을 수술한 후 아래와 같은 후유증이 발생하였다. 원인은?",
       "choices": [
         {
           "number": 1,
-          "text": "흉근신경(pectoral n.) 손상"
+          "text": "흉근신경 ( pectoral n. ) 손상"
         },
         {
           "number": 2,
-          "text": "흉배신경(thoracodorsal n.) 손상"
+          "text": "흉배신경 ( thoracodorsal n. ) 손상"
         },
         {
           "number": 3,
-          "text": "장흉신경(long thoracic n.) 손상"
+          "text": "장흉신경 ( long thoracic n. ) 손상"
         },
         {
           "number": 4,
-          "text": "늑간상완신경(intercosto-brachial n.) 손상"
+          "text": "늑간상완신경 ( intercosto-brachial n. ) 손상"
         },
         {
           "number": 5,
-          "text": "견갑골신경(scapular n.) 손상"
+          "text": "견갑골신경 ( scapular n. ) 손상"
         }
       ],
       "source": {
@@ -542,12 +591,18 @@
         "anchor": "long thoracic nerve scapula",
         "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: Long thoracic nerve 손상은 전거근 기능장애로 익상견갑을 유발할 수 있습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: Long thoracic nerve 손상은 전거근 기능장애로 익상견갑을 유발할 수 있습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 10,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-40",
@@ -557,7 +612,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "유방에 발생한 악성 엽상종양(malignant phyllodes tumor)의 적절한 수술방법은?",
+      "prompt": "유방에 발생한 악성엽상종양 ( malignant phylloides tumor ) 적절한 수술방법은?",
       "choices": [
         {
           "number": 1,
@@ -577,7 +632,7 @@
         },
         {
           "number": 5,
-          "text": "종양 주변의 유방조직을 포함한 광범위한 종양절제술"
+          "text": "종양주변의 유방조직을 포함한 광범위한 종양절제술"
         }
       ],
       "source": {
@@ -608,12 +663,18 @@
         "verifiedAgainst": "원태완 교수님 업로드 강의안",
         "decisionReason": "최운정 교수님 강의안 추가 대조 미채택: 2022 최운정 강의안 PDF 22쪽은 악성 엽상종양 치료를 유방절제술로 서술하며, 보기의 광범위 국소절제와 직접 일치하지 않아 기각"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "최운정 교수님 강의안 추가 대조: 2022 최운정 강의안 PDF 22쪽은 악성 엽상종양 치료를 유방절제술로 서술하며, 보기의 광범위 국소절제와 직접 일치하지 않아 기각",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "이 문항(16-40)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방에 발생한 악성 엽상종양(malignant phyllodes tumor)의 적절한 수술방법은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(16-40)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방에 발생한 악성 엽상종양(malignant phyllodes tumor)의 적절한 수술방법은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 13,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-41",
@@ -639,7 +700,7 @@
         },
         {
           "number": 4,
-          "text": "감시림프절에 전이가 있는 경우 수술 후 항암치료가 필요하다."
+          "text": "감시림프절에 전이가 있는 경우 수술후 항암치료가 필요하다."
         },
         {
           "number": 5,
@@ -666,12 +727,18 @@
         "verifiedAgainst": "원태완 교수님 업로드 강의안",
         "decisionReason": "최운정 교수님 강의안 추가 대조 미채택: 다수 선택지가 감시림프절 개념과 충돌하며 강의안만으로 단일 정답 확정 불가"
       },
-      "transcriptionStatus": "review_required",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "원본 PDF의 흐릿한 글씨/선지와 다시 대조해 주세요. 임의 완성하지 않았습니다.",
       "notes": "최운정 교수님 강의안 추가 대조: 다수 선택지가 감시림프절 개념과 충돌하며 강의안만으로 단일 정답 확정 불가",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "이 문항(16-41)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방암에서 감시림프절에 대한 설명 중 옳은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(16-41)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방암에서 감시림프절에 대한 설명 중 옳은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 13,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-42",
@@ -681,27 +748,27 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "30대 여성 우측 유방에 경계가 뚜렷한 종물이 만져져 유방촬영 및 유방초음파를 시행하였다. 가장 가능성 높은 진단은?",
+      "prompt": "30대 여성의 우측 유방에 경계가 뚜렷한 종물이 만져져서 촬영한 X선 유방촬영 및 유방초음파사진이다. 가장 가능성이 높은 진단명은?",
       "choices": [
         {
           "number": 1,
-          "text": "섬유선종(fibroadenoma)"
+          "text": "섬유선종 ( fibroadenoma )"
         },
         {
           "number": 2,
-          "text": "섬유낭성병변(fibrocystic change)"
+          "text": "섬유낭성병변 ( fibrocystic change )"
         },
         {
           "number": 3,
-          "text": "경화선 선증(sclerosing adenosis)"
+          "text": "경화선 선증 ( sclerosing adenosis )"
         },
         {
           "number": 4,
-          "text": "유관내 유두종(intraductal papilloma)"
+          "text": "유관내 유두종 ( intraductal papilloma )"
         },
         {
           "number": 5,
-          "text": "침윤성 유관암(invasive ductal carcinoma)"
+          "text": "침윤성 유관암 ( invasive ductal carcinoma )"
         }
       ],
       "source": {
@@ -731,12 +798,25 @@
         "decisionReason": "2026-11-11 사용자 요청: 원문에서 강조된 선지 1를 잠정 사용자 지정 정답으로 등록. ",
         "note": "기출 형광펜에 근거한 사용자 요청 기본 답으로 강의안 검증 정답과 구별."
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(16-42)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 30대 여성 우측 유방에 경계가 뚜렷한 종물이 만져져 유방촬영 및 유방초음파를 시행하였다. 가장 가능성 높은 진단은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(16-42)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 30대 여성 우측 유방에 경계가 뚜렷한 종물이 만져져 유방촬영 및 유방초음파를 시행하였다. 가장 가능성 높은 진단은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 13,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      },
+      "choiceExplanations": {
+        "1": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1."
+      }
     },
     {
       "id": "won-taewan:16-43",
@@ -746,27 +826,27 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "유방암 수술 후 환자가 수술한 쪽 팔 안쪽 피부에 감각장애를 호소하였다. 원인은?",
+      "prompt": "유방암 수술 후 환자가 수술한 쪽 팔 안쪽의 피부에 감각장애를 호소하 였다. 원인은?",
       "choices": [
         {
           "number": 1,
-          "text": "흉근신경(pectoral nerve) 손상"
+          "text": "흉근신경 ( pectoral nerve ) 의 손상"
         },
         {
           "number": 2,
-          "text": "견갑골신경(scapular nerve) 손상"
+          "text": "견갑골신경 ( scapular nerve ) 의 손상"
         },
         {
           "number": 3,
-          "text": "장흉신경(long thoracic nerve) 손상"
+          "text": "장흉신경 ( long thoracic nerve ) 의 손상"
         },
         {
           "number": 4,
-          "text": "흉배신경(thoracodorsal nerve) 손상"
+          "text": "흉배신경 ( thoracodorsal nerve ) 의 손상"
         },
         {
           "number": 5,
-          "text": "늑간상완신경(intercostobrachial nerve) 손상"
+          "text": "늑간상완신경 ( intercostal brachial nerve ) 의 손상"
         }
       ],
       "source": {
@@ -798,12 +878,18 @@
         "anchor": "intercostobrachial nerve sensory",
         "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: 늑간상완신경은 상완 안쪽 피부의 감각과 관련됩니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 늑간상완신경은 상완 안쪽 피부의 감각과 관련됩니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 13,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-44",
@@ -813,11 +899,11 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "종양의 원심성 확산 가설에 기초하여 19세기 말 유방암의 표준 근치적 유방절제술 술식을 확립한 외과의사는?",
+      "prompt": "종양의 원심성확산 가설에 기초하여 19세기 말에 유방암의 표준 근치적 유방절제술 술식을 확립한 외과의사는?",
       "choices": [
         {
           "number": 1,
-          "text": "Patey"
+          "text": "Patey DH"
         },
         {
           "number": 2,
@@ -825,7 +911,7 @@
         },
         {
           "number": 3,
-          "text": "William Halsted"
+          "text": "Wiliam Halsted"
         },
         {
           "number": 4,
@@ -865,12 +951,18 @@
         "anchor": "William Halsted radical mastectomy",
         "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: 표준 근치적 유방절제술의 역사적 정립자인 William Halsted를 강의안에서 확인했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 표준 근치적 유방절제술의 역사적 정립자인 William Halsted를 강의안에서 확인했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 13,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-45",
@@ -880,27 +972,27 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "유방암의 장기생존율에 나쁜 영향을 미치는 것은?",
+      "prompt": "유방의 림프절 중 겨드랑이 level II에 위치하는 림프절은 ?",
       "choices": [
         {
           "number": 1,
-          "text": "유방암의 가족력"
+          "text": "견갑 림프절 (scapular node)"
         },
         {
           "number": 2,
-          "text": "높은 Gail 위험도"
+          "text": "쇄골하 림프절 (subclavicular node)"
         },
         {
           "number": 3,
-          "text": "호르몬 수용체 양성"
+          "text": "액와정맥 림프절 (axillary vein node)"
         },
         {
           "number": 4,
-          "text": "유방 내측에 발생한 유방암"
+          "text": "중앙액와 림프절 (central axillary node)"
         },
         {
           "number": 5,
-          "text": "HER-2 유전자의 과발현"
+          "text": "내유방 림프절 (internal mammary node)"
         }
       ],
       "source": {
@@ -932,12 +1024,18 @@
         "anchor": "HER2 overexpression poor prognosis",
         "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: HER2 과발현은 장기예후 불량과 관련된 유방암 생물학적 인자입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: HER2 과발현은 장기예후 불량과 관련된 유방암 생물학적 인자입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 13,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-46",
@@ -947,27 +1045,27 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "5년 전에 유방암 수술을 받은 60세 여성이 다발성 요추 전이로 내원하였다. 폐경상태이며 수술 당시 HER2 양성 Luminal B형이었다. 치료방법으로 옳지 않은 것은?",
+      "prompt": "건강검진을 위한 X-선 유방촬영 결과 군집성 미세석회화 (BIRADS cate gory 4)가 관찰되었고 유방초음파 검사는 이상이 없었다. 가장 가능성이 높은 진단명은 ?",
       "choices": [
         {
           "number": 1,
-          "text": "Tamoxifen"
+          "text": "파제트병 (paget’s dz)"
         },
         {
           "number": 2,
-          "text": "Trastuzumab"
+          "text": "소엽 상피내암 (LCIS)"
         },
         {
           "number": 3,
-          "text": "아로마타제 억제제"
+          "text": "면포성 관상피내암 (comedo DCIS)"
         },
         {
           "number": 4,
-          "text": "황체호르몬 자극 호르몬"
+          "text": "악성 엽상종양 (malignant phylloides tumor)"
         },
         {
           "number": 5,
-          "text": "요추의 방사선치료"
+          "text": "비정형 유관증식증 (atypical ductal hyperplasia)"
         }
       ],
       "source": {
@@ -999,12 +1097,18 @@
         "anchor": "postmenopausal endocrine therapy",
         "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: 폐경 후 환자에서 LHRH 유사체를 이용한 난소기능억제는 일반적인 선택이 아닙니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 폐경 후 환자에서 LHRH 유사체를 이용한 난소기능억제는 일반적인 선택이 아닙니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 13,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-47",
@@ -1014,27 +1118,27 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "X선 유방촬영에서 BI-RADS 4의 다발성 석회화가 보이나 유방초음파에서 특이소견이 없었다. 가장 적절한 처치는?",
+      "prompt": "다음 중 유방암 발생위험이 가장 높은 경우는 ?",
       "choices": [
         {
           "number": 1,
-          "text": "1년 후 추적검사"
+          "text": "경화선증 (sclerosing adenosis)"
         },
         {
           "number": 2,
-          "text": "3개월 후 재촬영"
+          "text": "거대섬유선종 (giant fibroadenoma)"
         },
         {
           "number": 3,
-          "text": "세침흡인세포검사"
+          "text": "엽상종양 (phylloides tumor)"
         },
         {
           "number": 4,
-          "text": "초음파 유도하 중심침생검"
+          "text": "유소엽 상피내암 (lobular carcinoma in situ)"
         },
         {
           "number": 5,
-          "text": "정위 중심침생검"
+          "text": "정형 유관증식증 (atypical ductal hyperplasia)"
         }
       ],
       "source": {
@@ -1042,42 +1146,48 @@
         "page": 13,
         "image": "assets/questions/won-taewan/16-47.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/figures/won-taewan/16-47-figure1.webp",
-          "alt": "16-47 문제 원본 임상 사진",
-          "caption": "16-47 문제 필수 원본 영상 · PDF 11쪽 (필기 포함)"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": 5,
-      "answerSource": "lecture_double_checked",
-      "explanation": "BI-RADS 4 미세석회화에서 초음파상 병변이 보이지 않는 경우 정위 유도 생검으로 조직검사를 시행합니다.",
-      "candidateEvidence": [],
-      "evidence": [
+      "answer": 4,
+      "answerSource": "highlight_reviewed",
+      "explanation": "원본의 ④ 유소엽 상피내암(LCIS)은 유방암 발생 위험을 높이는 중요한 고위험 병변입니다. ⑤ 비정형 유관증식증(ADH)도 위험을 높이지만, 원본 표시 정답은 ④입니다. 종전의 BI-RADS4 정위생검 해설은 다른 문제의 내용이므로 제거했습니다.",
+      "candidateEvidence": [
         {
-          "lectureId": "benign",
           "file": "원태완pf_261020_혈액과종양_유방 양성질환.pdf.pdf",
-          "page": 23,
-          "image": "assets/evidence/won-taewan/benign-p023.webp",
-          "quote": "BI-RADS4 biopsy stereotactic"
+          "page": 27,
+          "image": "assets/evidence/won-taewan/benign-p027.webp",
+          "quote": "ADH 및 유방암 발생 위험 관련 강의안 페이지; LCIS 위험도 우열은 이 페이지로만 입증하지 않음"
         }
       ],
+      "evidence": [],
       "validation": {
-        "stage": "accepted",
-        "check1": "강의안 PDF 원본 페이지와 해당 진술 대조",
-        "check2": "기출 지문과 선택지 전체의 정답 일치 대조",
-        "verifiedAgainst": "원태완 교수님 업로드 강의안",
-        "anchor": "BI-RADS4 biopsy stereotactic",
-        "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
+        "stage": "highlight_reviewed",
+        "check1": "기출 원본 캡처 실제 ④번 형광펜 확인",
+        "check2": "④ LCIS 및 ⑤ ADH 선택지 상대 위험도 비교",
+        "verifiedAgainst": "최운정 기출원본 PDF 13쪽 및 원태완 강의안의 유방암 위험인자",
+        "anchor": "LCIS breast cancer risk > atypical ductal hyperplasia",
+        "decisionReason": "v12.7 원문 교정: 이전 16-47번에는 전혀 다른 BI-RADS 검사 문항이 저장돼 있어 정답 ⑤와 근거가 연결되어 있었다. 실제 원본은 유방암 위험도 문제이고 ④ LCIS 강조 표시. 정답 ④로 교정했다."
       },
-      "transcriptionStatus": "visually_checked_against_source",
-      "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
+      "transcriptionStatus": "source_text_restored_v127",
+      "transcriptionWarning": "v12.7 전수 대조로 기존에 잘못 들어간 BI-RADS4 지문 및 사진을 제거하고, PDF 13쪽 실제 47번 문제와 강조된 ④번으로 교정했습니다.",
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: BI-RADS 4 미세석회화에서 초음파상 병변이 보이지 않는 경우 정위 유도 생검으로 조직검사를 시행합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "유방암 위험인자 문제입니다. LCIS와 ADH는 모두 향후 유방암 위험을 높이지만, 원본에서 LCIS인 ④가 강조되어 있습니다. 해당 강의안의 위험인자 설명과 함께 비교합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 13,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      },
+      "choiceExplanations": {
+        "1": "경화선증은 양성 증식성 유방질환입니다. LCIS와 비교해 유방암 위험 증가 정도가 낮습니다.",
+        "2": "거대 섬유선종은 대개 양성 종양으로, LCIS보다 유방암 위험 증가와의 관련성이 낮습니다.",
+        "3": "엽상종양은 기질성 종양으로, 여기서 묻는 향후 유방암 발생 위험 증가의 대표 병변은 아닙니다.",
+        "4": "LCIS는 침윤성 유방암 발생 위험을 유의하게 높이는 고위험 병변이자 위험 표지자입니다. 원본에서 ④가 강조되어 있습니다.",
+        "5": "비정형 유관증식증(ADH)도 향후 유방암 위험을 높이지만, 이 기출의 정답 표시는 ④ LCIS입니다. 두 병변 모두 고위험 병변임을 기억해야 합니다."
+      }
     },
     {
       "id": "won-taewan:16-48",
@@ -1087,7 +1197,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "30대 폐경 전 여성이 T1 N2 유방암으로 유방보존술과 액와림프절 절제술을 받았고 Luminal A형이었다. 치료계획으로 옳지 않은 것은?",
+      "prompt": "30대 폐경 전 여성이 T1, N2 유방암으로 유방보존술 및 겨드랑이 림프절 절제술을 받았다. 면역조직화학적염색 결과 ‘luminal A’형이었다. 치료 계 획으로 옳지 않은 것은?",
       "choices": [
         {
           "number": 1,
@@ -1099,11 +1209,11 @@
         },
         {
           "number": 3,
-          "text": "Tamoxifen"
+          "text": "tamoxifen"
         },
         {
           "number": 4,
-          "text": "Trastuzumab"
+          "text": "transtuzumab"
         },
         {
           "number": 5,
@@ -1139,12 +1249,18 @@
         "anchor": "Luminal A HER2 negative",
         "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: Luminal A는 HER2 음성이므로 trastuzumab 사용과 맞지 않습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: Luminal A는 HER2 음성이므로 trastuzumab 사용과 맞지 않습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 13,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-49",
@@ -1154,7 +1270,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "유방암에서 유방보존술이 가능한 경우는?",
+      "prompt": "유방암에서 유방보존술이 가능한 경우는 ?",
       "choices": [
         {
           "number": 1,
@@ -1174,7 +1290,7 @@
         },
         {
           "number": 5,
-          "text": "전신성 홍반성 루푸스 환자에서 발생한 직경 2cm의 유방암"
+          "text": "전신성 홍반성 루푸스 환자에 발생한 직경 2cm의 유방암"
         }
       ],
       "source": {
@@ -1206,12 +1322,18 @@
         "anchor": "breast-conserving surgery / contraindications",
         "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 작은 크기의 단일 병변은 액와림프절 전이 여부와 별개로 유방보존술의 후보가 될 수 있습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 작은 크기의 단일 병변은 액와림프절 전이 여부와 별개로 유방보존술의 후보가 될 수 있습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 13,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-50",
@@ -1221,7 +1343,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "40세 여성이 피부발적·부종을 동반한 유방종괴를 보였고 생검은 침윤성 유관암, 삼중음성암이었다. 림프절 전이(+), 원격전이(-)인 경우 적절한 치료계획은?",
+      "prompt": "40세 여성의 좌측 유방에 피부발적 및 부종을 동반한 종물이 촉지돼 중심침생검을 시행한 결과 ‘침윤성 유관암’이었고 면역조직화학적검사 결과 삼중 음성암이었다. PET을 포함한 영상검사결과 림프절 전이 (+), 원격전이 (-) 이었다. 적절할 치료계획은 ?",
       "choices": [
         {
           "number": 1,
@@ -1280,12 +1402,18 @@
         "anchor": "염증성 유방암: 선행항암요법 + 수술",
         "decisionReason": "원태완 교수님 기존 강의안에서 근거를 찾지 못한 문항을 최운정 교수님 강의안 11.1_5,6교시_최운정.pdf PDF 33쪽으로 이중 대조 후 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: 피부 발적과 부종을 동반한 림프절 양성·원격전이 음성의 국소진행성/염증성 유방암에서는 선행항암요법 이후 수술을 시행하고 추가 보조치료를 고려한다. 강의안의 국소진행성·염증성 유방암 치료 순서와 ③이 일치한다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 피부 발적과 부종을 동반한 림프절 양성·원격전이 음성의 국소진행성/염증성 유방암에서는 선행항암요법 이후 수술을 시행하고 추가 보조치료를 고려한다. 강의안의 국소진행성·염증성 유방암 치료 순서와 ③이 일치한다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 13,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-51",
@@ -1295,7 +1423,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "유방암의 발생위험 증가와 관련이 없는 것은?",
+      "prompt": "유방암의 발생위험 증가와 관련이 없는 것은 ?",
       "choices": [
         {
           "number": 1,
@@ -1311,11 +1439,11 @@
         },
         {
           "number": 4,
-          "text": "비정형 유관증식증(ADH)"
+          "text": "비정형 유관증식증"
         },
         {
           "number": 5,
-          "text": "BRCA1 돌연변이"
+          "text": "BRCA-1 돌연변이"
         }
       ],
       "source": {
@@ -1348,12 +1476,18 @@
         "anchor": "피임약 복용은 유방암과 무관",
         "decisionReason": "원태완 교수님 기존 강의안에서 근거를 찾지 못한 문항을 최운정 교수님 강의안 11.1_5,6교시_최운정.pdf PDF 20쪽으로 이중 대조 후 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 강의안은 유방암 위험인자 가운데 가족력, 긴 에스트로겐 노출, 비정형 증식증·BRCA 등을 다루면서 피임약 복용은 유방암과 무관하다고 서술한다. 본 기출의 ②가 강의안 설명에 해당한다. (교육자료의 서술이며 일반 진료 지침 전체를 뜻하지 않음.)\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 강의안은 유방암 위험인자 가운데 가족력, 긴 에스트로겐 노출, 비정형 증식증·BRCA 등을 다루면서 피임약 복용은 유방암과 무관하다고 서술한다. 본 기출의 ②가 강의안 설명에 해당한다. (교육자료의 서술이며 일반 진료 지침 전체를 뜻하지 않음.)\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 13,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-52",
@@ -1363,27 +1497,27 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "유방에 종물이 촉지되어 암 감별이 필요한 질환들이다. 관련이 없는 것은?",
+      "prompt": "유방에 종물이 촉지되어 암 감별이 필요한 질환들이다. 관련이 없는 것은 ?",
       "choices": [
         {
           "number": 1,
-          "text": "경화선증(sclerosing adenosis)"
+          "text": "경화선증 (sclerosing adenosis)"
         },
         {
           "number": 2,
-          "text": "지방괴사(fat necrosis)"
+          "text": "지방괴사 (fat necrosis)"
         },
         {
           "number": 3,
-          "text": "유관확장증(mammary duct ectasia)"
+          "text": "유관확장증 (mammary duct ectasia)"
         },
         {
           "number": 4,
-          "text": "방사형 반흔(radial scar)"
+          "text": "방사형 반흔 (radial scar)"
         },
         {
           "number": 5,
-          "text": "소엽상피내암(lobular carcinoma in situ)"
+          "text": "소엽상피내암 (lobular carcinoma in situ)"
         }
       ],
       "source": {
@@ -1416,12 +1550,18 @@
         "anchor": "LCIS 촉지되는 mass 형성하지 않음",
         "decisionReason": "원태완 교수님 기존 강의안에서 근거를 찾지 못한 문항을 최운정 교수님 강의안 11.1_5,6교시_최운정.pdf PDF 21쪽으로 이중 대조 후 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 강의안은 소엽상피내암(LCIS)이 촉지되는 종괴를 형성하지 않고 유방촬영 소견도 없는 경우가 흔하다고 설명한다. 종괴로 암을 감별하는 상황에서 관련성이 가장 낮은 ⑤를 지지한다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 강의안은 소엽상피내암(LCIS)이 촉지되는 종괴를 형성하지 않고 유방촬영 소견도 없는 경우가 흔하다고 설명한다. 종괴로 암을 감별하는 상황에서 관련성이 가장 낮은 ⑤를 지지한다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 13,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-53",
@@ -1431,7 +1571,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "5년 전 유방암 수술을 받은 65세 여성이 폐경 상태이며 최근 발생한 요통으로 시행한 CT·골스캔에서 척추 다발성 골전이가 발견되었다. 수술 당시 HER2 양성형이었다. 치료방법으로 옳지 않은 것은?",
+      "prompt": "5년 전에 유방암 수술을 받은 65세 여자가 최근 요통이 발생하여 CT 및 골스캔을 시행한 결과 척추에 다발성 골전이가 발견되었다. 환자는 폐경상태이고 수술 당시 면역조직화학적 검사결과 ‘HER-2 양성’형이었다. 치료방법으로 옳지 않은 것은?",
       "choices": [
         {
           "number": 1,
@@ -1439,11 +1579,11 @@
         },
         {
           "number": 2,
-          "text": "Aromatase inhibitor"
+          "text": "aromatase inhibitor"
         },
         {
           "number": 3,
-          "text": "Trastuzumab"
+          "text": "transtuzumab"
         },
         {
           "number": 4,
@@ -1459,14 +1599,8 @@
         "page": 13,
         "image": "assets/questions/won-taewan/16-53.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/figures/won-taewan/16-53-continuation.webp",
-          "alt": "16-53 문제 다음 페이지 원본 선택지",
-          "caption": "16-53 이어지는 원본 선택지 · PDF 14쪽"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
       "answer": null,
       "answerSource": "pending",
@@ -1480,12 +1614,18 @@
         "verifiedAgainst": "원태완 교수님 업로드 강의안",
         "decisionReason": "최운정 교수님 강의안 추가 대조 미채택: HER2 양성 전이성 유방암의 치료는 호르몬 수용체/증상 등에 따라 달라지므로 단일 선택 근거 불충분"
       },
-      "transcriptionStatus": "review_required",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "원본 PDF의 흐릿한 글씨/선지와 다시 대조해 주세요. 임의 완성하지 않았습니다.",
       "notes": "최운정 교수님 강의안 추가 대조: HER2 양성 전이성 유방암의 치료는 호르몬 수용체/증상 등에 따라 달라지므로 단일 선택 근거 불충분",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "이 문항(16-53)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 5년 전 유방암 수술을 받은 65세 여성이 폐경 상태이며 최근 발생한 요통으로 시행한 CT·골스캔에서 척추 다발성 골전이가 발견되었다. 수술 당시 HER2 양성형이었다. 치료방법으로 옳지 않은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(16-53)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 5년 전 유방암 수술을 받은 65세 여성이 폐경 상태이며 최근 발생한 요통으로 시행한 CT·골스캔에서 척추 다발성 골전이가 발견되었다. 수술 당시 HER2 양성형이었다. 치료방법으로 옳지 않은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 13,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:16-54",
@@ -1495,7 +1635,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "산욕기에 발생한 화농성 유선염에 대한 설명으로 옳지 않은 것은?",
+      "prompt": "산욕기에 발생한 화농성 유선염에 대한 설명으로 옳지 않은 것은 ?",
       "choices": [
         {
           "number": 1,
@@ -1515,7 +1655,7 @@
         },
         {
           "number": 5,
-          "text": "절개배농 및 항생제 투여로 잘 치료된다."
+          "text": "절개배농 및 항생제 투여로 잘 치료된다. 폐경 후, ER(+) 다발성 골전이 = 방사선 치료 적응증 약제에 반응 없을 때 ER(+)"
         }
       ],
       "source": {
@@ -1539,12 +1679,25 @@
         "decisionReason": "2026-11-11 사용자 요청: 원문에서 강조된 선지 2를 잠정 사용자 지정 정답으로 등록. ① 수유 중단에 대한 설명도 검토 여지가 있으므로 사용자 재확인 권장",
         "note": "기출 형광펜에 근거한 사용자 요청 기본 답으로 강의안 검증 정답과 구별."
       },
-      "transcriptionStatus": "review_required",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "원본 PDF의 흐릿한 글씨/선지와 다시 대조해 주세요. 임의 완성하지 않았습니다.",
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답. ① 수유 중단에 대한 설명도 검토 여지가 있으므로 사용자 재확인 권장",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(16-54)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 산욕기에 발생한 화농성 유선염에 대한 설명으로 옳지 않은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(16-54)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 산욕기에 발생한 화농성 유선염에 대한 설명으로 옳지 않은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 14,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2. ① 수유 중단에 대한 설명도 검토 여지가 있으므로 사용자 재확인 권장",
+        "2": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 2. ① 수유 중단에 대한 설명도 검토 여지가 있으므로 사용자 재확인 권장",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2. ① 수유 중단에 대한 설명도 검토 여지가 있으므로 사용자 재확인 권장",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2. ① 수유 중단에 대한 설명도 검토 여지가 있으므로 사용자 재확인 권장",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2. ① 수유 중단에 대한 설명도 검토 여지가 있으므로 사용자 재확인 권장"
+      }
     },
     {
       "id": "won-taewan:17-26",
@@ -1618,7 +1771,21 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(17-26)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암세포의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(17-26)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암세포의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 3,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "6": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥"
+      }
     },
     {
       "id": "won-taewan:17-27",
@@ -1686,7 +1853,13 @@
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: 보조치료는 수술 후 영상·검사로 보이지 않는 미세전이(micrometastasis)가 잔존할 수 있다는 전제에서 재발을 줄이기 위한 치료이므로 ③이 정답이다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 보조치료는 수술 후 영상·검사로 보이지 않는 미세전이(micrometastasis)가 잔존할 수 있다는 전제에서 재발을 줄이기 위한 치료이므로 ③이 정답이다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 3,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:17-28",
@@ -1753,7 +1926,20 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(17-28)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암 성장에 관한 특징 중 급성기의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(17-28)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암 성장에 관한 특징 중 급성기의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 3,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "4": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4."
+      }
     },
     {
       "id": "won-taewan:17-29",
@@ -1820,7 +2006,13 @@
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 종양 진행에 따라 paracrine에서 autocrine 신호의 비중이 증가하는 설명을 강의안에서 확인했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 종양 진행에 따라 paracrine에서 autocrine 신호의 비중이 증가하는 설명을 강의안에서 확인했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 3,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:17-30",
@@ -1879,7 +2071,20 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(17-30)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음 유방을 진찰하는 올바른 순서는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(17-30)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음 유방을 진찰하는 올바른 순서는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 4,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "3": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3."
+      }
     },
     {
       "id": "won-taewan:17-31",
@@ -1952,7 +2157,13 @@
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 유방 피부 함몰을 유발할 수 있는 지지 구조는 Cooper 인대입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 유방 피부 함몰을 유발할 수 있는 지지 구조는 Cooper 인대입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 4,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:17-32",
@@ -2011,7 +2222,20 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "이 문항(17-32)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방암 수술 도중 염료에 의해 감시림프절이 파란색으로 생검되었 다. 향후 조치는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(17-32)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방암 수술 도중 염료에 의해 감시림프절이 파란색으로 생검되었 다. 향후 조치는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 4,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "3": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3."
+      }
     },
     {
       "id": "won-taewan:17-33",
@@ -2079,7 +2303,13 @@
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: 근치적 유방절제술에는 유방·유방 피부·흉근·겨드랑이 림프절의 절제가 포함되지만 쇄골상 림프절은 표준 절제 구성요소가 아니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 근치적 유방절제술에는 유방·유방 피부·흉근·겨드랑이 림프절의 절제가 포함되지만 쇄골상 림프절은 표준 절제 구성요소가 아니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 4,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:17-34",
@@ -2149,7 +2379,22 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(17-34)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음 석회화의 분포가 양성에 가까운 것은? (20학번: 다음 중 미세석회 [Microcalcification] 양상 중 양성에 가까 운 것은?)\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(17-34)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음 석회화의 분포가 양성에 가까운 것은? (20학번: 다음 중 미세석회 [Microcalcification] 양상 중 양성에 가까 운 것은?)\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 4,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "6": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "7": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함"
+      }
     },
     {
       "id": "won-taewan:17-35",
@@ -2159,7 +2404,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "50대 환자의 귀밑샘에 저에코성 종물이 관찰되었고 침생검 결과 악성소견은 없었다. 가장 가능성 높은 진단은?",
+      "prompt": "50대 여자의 우측 귀 앞쪽에 무통성 종물이 촉지되어 초음파검사를 한 결과 우측 귀밑샘에 직경 약 3cm의 저에코성 종물이 관찰되었고 침생검 결과 악성소견은 없었다. 가장 가능성이 높은 진단명은?",
       "choices": [
         {
           "number": 1,
@@ -2187,14 +2432,8 @@
         "page": 5,
         "image": "assets/questions/won-taewan/17-35.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/figures/won-taewan/17-35-source-figure.webp",
-          "alt": "17-35 기출에 포함된 임상 그림 또는 자료",
-          "caption": "17-35 원본 임상자료 · 야마 PDF 5쪽 (필기 포함)"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
       "answer": 2,
       "answerSource": "user_confirmed_per_highlight_instruction_2026",
@@ -2209,12 +2448,25 @@
         "decisionReason": "2026-11-11 사용자 요청: 원문에서 강조된 선지 2를 잠정 사용자 지정 정답으로 등록. ",
         "note": "기출 형광펜에 근거한 사용자 요청 기본 답으로 강의안 검증 정답과 구별."
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(17-35)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 50대 환자의 귀밑샘에 저에코성 종물이 관찰되었고 침생검 결과 악성소견은 없었다. 가장 가능성 높은 진단은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(17-35)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 50대 환자의 귀밑샘에 저에코성 종물이 관찰되었고 침생검 결과 악성소견은 없었다. 가장 가능성 높은 진단은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 5,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "2": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2."
+      }
     },
     {
       "id": "won-taewan:17-36",
@@ -2282,7 +2534,13 @@
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: Gail 위험도 계산에는 초경 나이, 첫 출산 나이 등 생식 관련 변수가 포함된다. 제시된 선택지 가운데 강의안에서 Gail 구성요인으로 직접 명시한 것은 ⑤이다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: Gail 위험도 계산에는 초경 나이, 첫 출산 나이 등 생식 관련 변수가 포함된다. 제시된 선택지 가운데 강의안에서 Gail 구성요인으로 직접 명시한 것은 ⑤이다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 5,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:17-37",
@@ -2341,7 +2599,20 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(17-37)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 85세 여성이 유방암으로 진단되었다. 척추 뼈의 전이양상을 보였으 며 면역화학염색에서 ER(+), PR(-), HER2(+) 보였다. 첫 치료의 선택 은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(17-37)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 85세 여성이 유방암으로 진단되었다. 척추 뼈의 전이양상을 보였으 며 면역화학염색에서 ER(+), PR(-), HER2(+) 보였다. 첫 치료의 선택 은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 5,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "Tamoxifen은 선택적 에스트로겐 수용체 조절제(SERM)로, 호르몬수용체 양성 유방암에서 사용합니다. 이 사례의 ER/PR 조건과 비교하세요.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "4": "Aromatase inhibitor는 폐경 후 HR 양성 유방암 치료에서 중요한 내분비치료입니다. 폐경 여부와 HR 발현을 확인하세요.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4."
+      }
     },
     {
       "id": "won-taewan:18-8",
@@ -2409,7 +2680,13 @@
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: 감시림프절은 종양에서 첫 배액 림프절이므로 음성 결과는 다른 겨드랑이 림프절에 전이가 없을 가능성이 높음을 뜻한다. ④가 본 문항의 취지와 맞지만 임상적으로 위음성 가능성은 존재한다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 감시림프절은 종양에서 첫 배액 림프절이므로 음성 결과는 다른 겨드랑이 림프절에 전이가 없을 가능성이 높음을 뜻한다. ④가 본 문항의 취지와 맞지만 임상적으로 위음성 가능성은 존재한다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 4,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:18-11",
@@ -2479,7 +2756,22 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(18-11)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음 석회화의 분포가 양성에 가까운 것은? (20학번: 다음 중 미세석회 [Microcalcification] 양상 중 양성에 가까 운 것은?)\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(18-11)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음 석회화의 분포가 양성에 가까운 것은? (20학번: 다음 중 미세석회 [Microcalcification] 양상 중 양성에 가까 운 것은?)\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 4,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "6": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "7": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함"
+      }
     },
     {
       "id": "won-taewan:18-13",
@@ -2546,7 +2838,13 @@
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: Trastuzumab은 HER2 표적 항체이며 나머지 보기들은 호르몬 치료 계열로 구별됩니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: Trastuzumab은 HER2 표적 항체이며 나머지 보기들은 호르몬 치료 계열로 구별됩니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 5,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:18-17",
@@ -2614,7 +2912,13 @@
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 강의안은 전이 경로를 림프성·혈행성·파종성·이식성 네 가지로 명시한다. 선택지 중 신경성 전이는 이 네 가지 경로에 포함되지 않는다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 강의안은 전이 경로를 림프성·혈행성·파종성·이식성 네 가지로 명시한다. 선택지 중 신경성 전이는 이 네 가지 경로에 포함되지 않는다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 5,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:18-18",
@@ -2688,7 +2992,21 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(18-18)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암세포의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(18-18)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암세포의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 3,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "6": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥"
+      }
     },
     {
       "id": "won-taewan:18-22",
@@ -2756,7 +3074,13 @@
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 강의안은 피부부종·궤양·위성 결절·흉벽 고정을 진행성 소견으로, 피부함몰은 작은 암에서도 가능하다고 구분한다. 따라서 ②가 상대적으로 진행성 소견이 아니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 강의안은 피부부종·궤양·위성 결절·흉벽 고정을 진행성 소견으로, 피부함몰은 작은 암에서도 가능하다고 구분한다. 따라서 ②가 상대적으로 진행성 소견이 아니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 6,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:18-36",
@@ -2766,7 +3090,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "50대 환자의 귀밑샘에 저에코성 종물이 관찰되었고 침생검 결과 악성소견은 없었다. 가장 가능성 높은 진단은?",
+      "prompt": "50대 여자의 우측 귀 앞쪽에 무통성 종물이 촉지되어 초음파검사를 한 결과 우측 귀밑샘에 직경 약 3cm의 저에코성 종물이 관찰되었고 침생검 결과 악성소견은 없었다. 가장 가능성이 높은 진단명은?",
       "choices": [
         {
           "number": 1,
@@ -2794,14 +3118,8 @@
         "page": 5,
         "image": "assets/questions/won-taewan/18-36.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/figures/won-taewan/18-36-source-figure.webp",
-          "alt": "18-36 기출에 포함된 임상 그림 또는 자료",
-          "caption": "18-36 원본 임상자료 · 야마 PDF 5쪽 (필기 포함)"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
       "answer": 2,
       "answerSource": "user_confirmed_per_highlight_instruction_2026",
@@ -2816,12 +3134,25 @@
         "decisionReason": "2026-11-11 사용자 요청: 원문에서 강조된 선지 2를 잠정 사용자 지정 정답으로 등록. ",
         "note": "기출 형광펜에 근거한 사용자 요청 기본 답으로 강의안 검증 정답과 구별."
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(18-36)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 50대 환자의 귀밑샘에 저에코성 종물이 관찰되었고 침생검 결과 악성소견은 없었다. 가장 가능성 높은 진단은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(18-36)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 50대 환자의 귀밑샘에 저에코성 종물이 관찰되었고 침생검 결과 악성소견은 없었다. 가장 가능성 높은 진단은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 5,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "2": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2."
+      }
     },
     {
       "id": "won-taewan:18-37",
@@ -2889,7 +3220,13 @@
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: 겨드랑이 level II는 소흉근의 내측연과 외측연 사이에 위치하므로 해당 영역의 내측 경계는 소흉근의 내측연이다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 겨드랑이 level II는 소흉근의 내측연과 외측연 사이에 위치하므로 해당 영역의 내측 경계는 소흉근의 내측연이다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 6,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:18-40",
@@ -2957,7 +3294,13 @@
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: 수술 후 보조요법의 논리는 검출되지 않는 미세전이가 남았을 수 있다는 것이다. 강의안의 보조항암치료 정의와 ③이 일치한다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 수술 후 보조요법의 논리는 검출되지 않는 미세전이가 남았을 수 있다는 것이다. 강의안의 보조항암치료 정의와 ③이 일치한다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 3,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:18-49",
@@ -3016,7 +3359,20 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "이 문항(18-49)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 60대의 폐경 후 여성이 제2기 유방암으로 유방보존수술을 받았다. 종양은 2cm이었고, 림프절 1개에 암 전이가 있었으며 종양 내 호르 몬수용체는 음성, c-erbB2 음성이었다. 수술 후 치료계획은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(18-49)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 60대의 폐경 후 여성이 제2기 유방암으로 유방보존수술을 받았다. 종양은 2cm이었고, 림프절 1개에 암 전이가 있었으며 종양 내 호르 몬수용체는 음성, c-erbB2 음성이었다. 수술 후 치료계획은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 6,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "2": "유방보존술 후에는 일반적으로 동측 유방 방사선치료를 고려하며, 림프절 전이 범위에 따라 영역 림프절 조사 여부가 달라집니다.",
+        "3": "Aromatase inhibitor는 폐경 후 HR 양성 유방암 치료에서 중요한 내분비치료입니다. 폐경 여부와 HR 발현을 확인하세요.",
+        "4": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4."
+      }
     },
     {
       "id": "won-taewan:18-52",
@@ -3083,7 +3439,20 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(18-52)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암 성장에 관한 특징 중 급성기의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(18-52)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암 성장에 관한 특징 중 급성기의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 3,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "4": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4."
+      }
     },
     {
       "id": "won-taewan:18-53",
@@ -3142,7 +3511,20 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "이 문항(18-53)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방암 수술 도중 염료에 의해 감시림프절이 파란색으로 생검되었 다. 향후 조치는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(18-53)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방암 수술 도중 염료에 의해 감시림프절이 파란색으로 생검되었 다. 향후 조치는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 4,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "3": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3."
+      }
     },
     {
       "id": "won-taewan:18-54",
@@ -3201,7 +3583,20 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(18-54)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 85세 여성이 유방암으로 진단되었다. 척추 뼈의 전이양상을 보였으 며 면역화학염색에서 ER(+), PR(-), HER2(+) 보였다. 첫 치료의 선택 은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(18-54)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 85세 여성이 유방암으로 진단되었다. 척추 뼈의 전이양상을 보였으 며 면역화학염색에서 ER(+), PR(-), HER2(+) 보였다. 첫 치료의 선택 은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 5,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "Tamoxifen은 선택적 에스트로겐 수용체 조절제(SERM)로, 호르몬수용체 양성 유방암에서 사용합니다. 이 사례의 ER/PR 조건과 비교하세요.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "4": "Aromatase inhibitor는 폐경 후 HR 양성 유방암 치료에서 중요한 내분비치료입니다. 폐경 여부와 HR 발현을 확인하세요.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4."
+      }
     },
     {
       "id": "won-taewan:18-59",
@@ -3269,7 +3664,13 @@
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: Gail 모델의 직접적인 생식 관련 인자(초경·첫 출산 연령)가 강의안에 명시되어 있어 ⑤를 채택한다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: Gail 모델의 직접적인 생식 관련 인자(초경·첫 출산 연령)가 강의안에 명시되어 있어 ⑤를 채택한다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 5,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:18-65",
@@ -3336,7 +3737,13 @@
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 종양 진행에 따라 paracrine에서 autocrine 신호의 비중이 증가하는 설명을 강의안에서 확인했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 종양 진행에 따라 paracrine에서 autocrine 신호의 비중이 증가하는 설명을 강의안에서 확인했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 3,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:18-69",
@@ -3395,7 +3802,20 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(18-69)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음 유방을 진찰하는 올바른 순서는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(18-69)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음 유방을 진찰하는 올바른 순서는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 4,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "3": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3."
+      }
     },
     {
       "id": "won-taewan:18-71",
@@ -3463,7 +3883,13 @@
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: 표준 근치적 유방절제술은 유방과 유방 피부·흉근·겨드랑이 림프절을 포함하지만 쇄골상 림프절 절제는 포함되지 않는다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 표준 근치적 유방절제술은 유방과 유방 피부·흉근·겨드랑이 림프절을 포함하지만 쇄골상 림프절 절제는 포함되지 않는다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 4,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:18-76",
@@ -3522,7 +3948,20 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(18-76)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 침샘의 악성종양 중 가장 흔한 병리학적 타입은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(18-76)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 침샘의 악성종양 중 가장 흔한 병리학적 타입은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 6,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "3": "선암은 샘상피 기원의 병리학적 분류로, 원발 장기는 면역염색 및 임상 병력과 함께 판단합니다.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1."
+      }
     },
     {
       "id": "won-taewan:18-78",
@@ -3590,7 +4029,13 @@
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 면포성 DCIS는 유관 중심부 괴사와 석회화로 유방촬영에서 군집성 미세석회화가 나타난다는 강의안 설명이 ②와 직접 일치한다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 면포성 DCIS는 유관 중심부 괴사와 석회화로 유방촬영에서 군집성 미세석회화가 나타난다는 강의안 설명이 ②와 직접 일치한다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 6,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:19-29",
@@ -3664,7 +4109,21 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(19-29)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암세포의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(19-29)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암세포의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 3,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "6": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥"
+      }
     },
     {
       "id": "won-taewan:19-30",
@@ -3731,7 +4190,20 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(19-30)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암 성장에 관한 특징 중 급성기의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(19-30)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암 성장에 관한 특징 중 급성기의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 3,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "4": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4."
+      }
     },
     {
       "id": "won-taewan:19-31",
@@ -3799,7 +4271,13 @@
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 보조치료(adjuvant therapy)는 검출되지 않는 미세전이가 존재할 수 있다는 가정에 따라 시행한다. 따라서 ③이다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 보조치료(adjuvant therapy)는 검출되지 않는 미세전이가 존재할 수 있다는 가정에 따라 시행한다. 따라서 ③이다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 3,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:19-32",
@@ -3867,7 +4345,13 @@
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: level II는 소흉근의 두 경계 사이이므로 내측 경계는 소흉근의 내측연이다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: level II는 소흉근의 두 경계 사이이므로 내측 경계는 소흉근의 내측연이다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 6,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:19-33",
@@ -3935,7 +4419,13 @@
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 피부함몰은 진행암이 아니어도 나타날 수 있는 반면, 흉벽고정·피부부종·궤양·위성피부결절은 진행성 소견이다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 피부함몰은 진행암이 아니어도 나타날 수 있는 반면, 흉벽고정·피부부종·궤양·위성피부결절은 진행성 소견이다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 6,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:19-34",
@@ -3994,7 +4484,20 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "이 문항(19-34)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방암 수술 도중 염료에 의해 감시림프절이 파란색으로 생검되었 다. 향후 조치는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(19-34)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방암 수술 도중 염료에 의해 감시림프절이 파란색으로 생검되었 다. 향후 조치는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 4,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "3": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3."
+      }
     },
     {
       "id": "won-taewan:19-35",
@@ -4061,7 +4564,13 @@
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 핵심생검에서 비정형 유관증식증(ADH)이 확인되면 외과적 절제생검으로 추가 평가하는 것을 강의안에서 확인했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 핵심생검에서 비정형 유관증식증(ADH)이 확인되면 외과적 절제생검으로 추가 평가하는 것을 강의안에서 확인했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 6,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:19-36",
@@ -4128,7 +4637,13 @@
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: Basal-like/TNBC는 Luminal A형에 비해 예후가 불량한 분자아형입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: Basal-like/TNBC는 Luminal A형에 비해 예후가 불량한 분자아형입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 7,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:19-37",
@@ -4195,7 +4710,13 @@
       "notes": "",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: Ki-67은 종양 세포 증식능과 관련된 표지자입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: Ki-67은 종양 세포 증식능과 관련된 표지자입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 7,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:19-38",
@@ -4262,7 +4783,13 @@
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: Trastuzumab은 HER2를 표적으로 합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: Trastuzumab은 HER2를 표적으로 합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 7,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:19-39",
@@ -4321,7 +4848,20 @@
       "notes": "사용자 요청 잠정 고정 2026-11-11. 19 종양 해설.pdf 17쪽 ① 제시; 경계성 엽상종양 재발 증례에서 원문 ① 유방전절제술과 대조 학습 중 사용자가 정답을 변경할 수 있습니다.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(19-39)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 37세 여자환자가 유방종양절제 후 조직검사 결과 5cm의 경계성 엽 상종양이 절제면에 포함되어 나왔다. 2년 전에도 같은 진단으로 절 제한 과거력이 있다. 적절한 치료는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(19-39)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 37세 여자환자가 유방종양절제 후 조직검사 결과 5cm의 경계성 엽 상종양이 절제면에 포함되어 나왔다. 2년 전에도 같은 진단으로 절 제한 과거력이 있다. 적절한 치료는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 7,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항의 채택 정답입니다. 2026-11-11 사용자 요청 반영: 19 종양 해설.pdf 17쪽 ① 제시; 경계성 엽상종양 재발 증례에서 원문 ① 유방전절제술과 대조",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 2026-11-11 사용자 요청 반영: 19 종양 해설.pdf 17쪽 ① 제시; 경계성 엽상종양 재발 증례에서 원문 ① 유방전절제술과 대조",
+        "3": "방사선치료는 종양 위치, 수술 범위, 전이와 치료 목표에 따라 적응증이 달라집니다. 이 문제의 병기와 치료 목적에 대조하세요.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 2026-11-11 사용자 요청 반영: 19 종양 해설.pdf 17쪽 ① 제시; 경계성 엽상종양 재발 증례에서 원문 ① 유방전절제술과 대조",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 2026-11-11 사용자 요청 반영: 19 종양 해설.pdf 17쪽 ① 제시; 경계성 엽상종양 재발 증례에서 원문 ① 유방전절제술과 대조"
+      }
     },
     {
       "id": "won-taewan:19-40",
@@ -4380,7 +4920,20 @@
       "notes": "사용자 요청 잠정 고정 2026-11-11. 19 종양 해설.pdf 18쪽 ⑤ 제시; 원문 ⑤ coarse calcification과 일치 학습 중 사용자가 정답을 변경할 수 있습니다.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(19-40)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방촬영에서 나타나는 석회화의 모양과 분포가 가장 양성 질환에 가까운 소견은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(19-40)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방촬영에서 나타나는 석회화의 모양과 분포가 가장 양성 질환에 가까운 소견은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 5,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 2026-11-11 사용자 요청 반영: 19 종양 해설.pdf 18쪽 ⑤ 제시; 원문 ⑤ coarse calcification과 일치",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 2026-11-11 사용자 요청 반영: 19 종양 해설.pdf 18쪽 ⑤ 제시; 원문 ⑤ coarse calcification과 일치",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 2026-11-11 사용자 요청 반영: 19 종양 해설.pdf 18쪽 ⑤ 제시; 원문 ⑤ coarse calcification과 일치",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 2026-11-11 사용자 요청 반영: 19 종양 해설.pdf 18쪽 ⑤ 제시; 원문 ⑤ coarse calcification과 일치",
+        "5": "이 문항의 채택 정답입니다. 2026-11-11 사용자 요청 반영: 19 종양 해설.pdf 18쪽 ⑤ 제시; 원문 ⑤ coarse calcification과 일치"
+      }
     },
     {
       "id": "won-taewan:19-41",
@@ -4390,7 +4943,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "55세 여성이 미세석회화로 needle localization biopsy를 받았다. DCIS 16mm, margin negative(5mm), ER/PR(-/-), HER2 과발현, 괴사 없음, 조직등급 low였다. 다음 치료는?",
+      "prompt": "55세 여자 환자가 microcalcification 소견으로 needle localization biopsy를 진행하였다. 그 결과는 다음과 같다. DCIS 크기: 16mm Margin: negative (5mm) ER/PR (-/-) HER2 과발현 괴사 없음 조직등급: Low 다음으로 실시할 치료는?",
       "choices": [
         {
           "number": 1,
@@ -4449,12 +5002,18 @@
         "anchor": "DCIS localized single lesion excision followed by radiotherapy",
         "decisionReason": "원태완 교수님 기존 강의안에서 근거를 찾지 못한 문항을 최운정 교수님 강의안 11.1_5,6교시_최운정.pdf PDF 33쪽으로 이중 대조 후 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: DCIS에서 유방보존술과 음성 절제연을 확보한 작은 단일 병변은 수술 후 방사선치료가 표준적인 국소 보조치료이다. ER/PR 음성이라 타목시펜 대상이 아니며 HER2 양성만으로 trastuzumab이 일반적 DCIS 보조치료는 아니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: DCIS에서 유방보존술과 음성 절제연을 확보한 작은 단일 병변은 수술 후 방사선치료가 표준적인 국소 보조치료이다. ER/PR 음성이라 타목시펜 대상이 아니며 HER2 양성만으로 trastuzumab이 일반적 DCIS 보조치료는 아니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 7,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:19-42",
@@ -4464,7 +5023,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "42세 여성이 유방보존술 및 액와림프절곽청술 후 침윤성 유관암 3cm, 액와 림프절 1/13 양성, ER/PR (+/+), HER2 2+이지만 FISH (-), Ki-67 < 5%였다. 분자생물학적 아형은?",
+      "prompt": "42세 여자 유방암으로 유방보존술 및 액와림프절곽청술 시행 후 나온 결과이다. 면역조직학적 결과에 따른 분자생물학적 아형은? Infiltrating ductal carcinoma Size: 3cm 1 metastasis of 13 axillary lymph node Nuclear grade 3 Histologic grade 3 ER/PR: (+/+) HER2: 2+ → FISH: (-) Ki-67 < 5%",
       "choices": [
         {
           "number": 1,
@@ -4484,7 +5043,7 @@
         },
         {
           "number": 5,
-          "text": "Normal Breast-like"
+          "text": "Normal Breast like"
         }
       ],
       "source": {
@@ -4522,12 +5081,18 @@
         "anchor": "ER PR positive HER2 negative Luminal A",
         "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: ER/PR 양성, HER2 FISH 음성, 낮은 Ki-67 결과는 Luminal A에 부합합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: ER/PR 양성, HER2 FISH 음성, 낮은 Ki-67 결과는 Luminal A에 부합합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 8,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:19-43",
@@ -4586,7 +5151,20 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(19-43)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 경부 결핵성 림프선염(tuberculous lymphadenitis)의 진단에 대해서 옳은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(19-43)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 경부 결핵성 림프선염(tuberculous lymphadenitis)의 진단에 대해서 옳은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 8,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "4": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4."
+      }
     },
     {
       "id": "won-taewan:19-44",
@@ -4653,7 +5231,13 @@
       "notes": "연도별 출제 명칭은 원태완(최운정 기출) 유지. 근거 출처는 최운정 교수님 강의안으로 구분.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 전이성 경부 림프절 편평상피세포암은 상기도·인두·후두 등 두경부 점막의 원발병소를 확인해야 합니다. 최운정 교수님 두경부암 강의안 PDF 2쪽에서 후두·하인두·비인강에 대한 간접후두경/유연 내시경 검사와 병소 탐색을 제시해 ③을 채택합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 전이성 경부 림프절 편평상피세포암은 상기도·인두·후두 등 두경부 점막의 원발병소를 확인해야 합니다. 최운정 교수님 두경부암 강의안 PDF 2쪽에서 후두·하인두·비인강에 대한 간접후두경/유연 내시경 검사와 병소 탐색을 제시해 ③을 채택합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "19 종양 해설.pdf",
+        "sourcePage": 20,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:19-45",
@@ -4663,7 +5247,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "50대 남자의 경부초음파 검사상 우측 귀밑샘에 약 2cm의 단단한 종물이 발견되었다. 99mTc 스캔상 냉결절이고 침생검에서 악성소견은 없었다. 가장 가능성이 높은 진단은?",
+      "prompt": "50대 남자의 경부초음파검사 결과 우측 귀밑샘에 직경 약 2cm의 단단한 종물이 발견되었다. 99mTc 스캔 결과는 냉결절 소견을 보였으며 침생검 결과 악성소견은 없었다. 가장 가능성이 높은 진단명은?",
       "choices": [
         {
           "number": 1,
@@ -4691,14 +5275,8 @@
         "page": 5,
         "image": "assets/questions/won-taewan/19-45.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/figures/won-taewan/19-45-source-figure.webp",
-          "alt": "19-45 기출에 포함된 임상 그림 또는 자료",
-          "caption": "19-45 원본 임상자료 · 야마 PDF 5쪽 (필기 포함)"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
       "answer": 2,
       "answerSource": "user_confirmed_per_highlight_instruction_2026",
@@ -4713,12 +5291,25 @@
         "decisionReason": "2026-11-11 사용자 요청: 원문에서 강조된 선지 2를 잠정 사용자 지정 정답으로 등록. ",
         "note": "기출 형광펜에 근거한 사용자 요청 기본 답으로 강의안 검증 정답과 구별."
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(19-45)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 50대 남자의 경부초음파 검사상 우측 귀밑샘에 약 2cm의 단단한 종물이 발견되었다. 99mTc 스캔상 냉결절이고 침생검에서 악성소견은 없었다. 가장 가능성이 높은 진단은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(19-45)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 50대 남자의 경부초음파 검사상 우측 귀밑샘에 약 2cm의 단단한 종물이 발견되었다. 99mTc 스캔상 냉결절이고 침생검에서 악성소견은 없었다. 가장 가능성이 높은 진단은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 5,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "2": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2."
+      }
     },
     {
       "id": "won-taewan:20-21",
@@ -4786,7 +5377,13 @@
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 강의안에서 검출 불가능한 미세전이를 전제로 시행하는 치료가 바로 Adjuvant(보조치료)임을 명시한다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 강의안에서 검출 불가능한 미세전이를 전제로 시행하는 치료가 바로 Adjuvant(보조치료)임을 명시한다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 8,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:20-22",
@@ -4856,7 +5453,22 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(20-22)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음 석회화의 분포가 양성에 가까운 것은? (20학번: 다음 중 미세석회 [Microcalcification] 양상 중 양성에 가까 운 것은?)\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(20-22)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음 석회화의 분포가 양성에 가까운 것은? (20학번: 다음 중 미세석회 [Microcalcification] 양상 중 양성에 가까 운 것은?)\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 4,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "6": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함",
+        "7": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. 원본에 ①과 ⑥이 모두 강조돼 복수정답으로 등록함"
+      }
     },
     {
       "id": "won-taewan:20-23",
@@ -4923,7 +5535,13 @@
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: Trastuzumab은 단클론항체로 다른 보기의 저분자 표적 약제와 성격이 다릅니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: Trastuzumab은 단클론항체로 다른 보기의 저분자 표적 약제와 성격이 다릅니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 8,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:20-24",
@@ -4997,7 +5615,21 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(20-24)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암세포의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(20-24)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암세포의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 3,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥",
+        "6": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 [1, 6]. ④ homogeneity도 종양의 일반적 특성과 대조할 때 검토 여지. 원본에서 강하게 강조된 것은 ①·⑥"
+      }
     },
     {
       "id": "won-taewan:20-25",
@@ -5064,7 +5696,20 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(20-25)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암 성장에 관한 특징 중 급성기의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(20-25)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암 성장에 관한 특징 중 급성기의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 3,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "4": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4."
+      }
     },
     {
       "id": "won-taewan:20-26",
@@ -5123,7 +5768,20 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(20-26)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음 유방을 진찰하는 올바른 순서는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(20-26)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음 유방을 진찰하는 올바른 순서는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 4,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "3": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3."
+      }
     },
     {
       "id": "won-taewan:20-27",
@@ -5190,7 +5848,13 @@
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 엽상종양은 주로 혈행성 전이를 하므로 액와 림프절 종대의 전형적인 원인은 아닙니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 엽상종양은 주로 혈행성 전이를 하므로 액와 림프절 종대의 전형적인 원인은 아닙니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 8,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:20-28",
@@ -5200,7 +5864,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "22세 여자가 좌측 상외측 유방에 멍울이 만져져서 내원했다. 압통이 없는 타원형 2cm 종괴가 잘 움직이고 초음파상 경계가 명확한 고형성 종괴였다. 진단은?",
+      "prompt": "22세 여자가 좌측 상외측 유방에 멍울이 만져져서 내원하였다. 신 체 진찰상 압통이 없는 타원형의 약 2cm 종괴가 만져졌다. 경계가 명확하였으며 잘 움직였다. 초음파검사상 경계가 명확한 2cm의 타 원형 고형성 종괴가 관찰되었다. 진단은?",
       "choices": [
         {
           "number": 1,
@@ -5252,12 +5916,18 @@
         "anchor": "fibroadenoma mobile well-circumscribed",
         "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "",
       "unitTitle": "유방 양성질환",
       "unitId": "2d3643a85d17",
-      "aiExplanation": "판단 포인트: 경계가 명확하고 잘 움직이는 무통성 유방 종괴는 섬유선종의 전형적인 임상 양상과 일치합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 경계가 명확하고 잘 움직이는 무통성 유방 종괴는 섬유선종의 전형적인 임상 양상과 일치합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 8,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:20-29",
@@ -5325,7 +5995,13 @@
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 피부함몰은 Cooper 인대의 당김으로 비교적 초기에도 나타나며 나머지 피부부종·위성결절·궤양·흉벽 고정은 진행 소견으로 기술된다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 피부함몰은 Cooper 인대의 당김으로 비교적 초기에도 나타나며 나머지 피부부종·위성결절·궤양·흉벽 고정은 진행 소견으로 기술된다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 6,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:20-30",
@@ -5384,7 +6060,20 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "이 문항(20-30)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방암 수술 도중 염료에 의해 감시림프절이 파란색으로 생검되었 다. 향후 조치는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(20-30)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방암 수술 도중 염료에 의해 감시림프절이 파란색으로 생검되었 다. 향후 조치는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 4,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "3": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3."
+      }
     },
     {
       "id": "won-taewan:20-31",
@@ -5394,7 +6083,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "42세 여성이 유방보존술 및 액와림프절곽청술 후 침윤성 유관암 3cm, 액와 림프절 1/13 양성, ER/PR (+/+), HER2 2+이지만 FISH (-), Ki-67 < 5%였다. 분자생물학적 아형은?",
+      "prompt": "42세 여자 유방암으로 유방보존술 및 액와림프절곽청술 시행 후 나온 결과이다. 면역조직학적 결과에 따른 분자생물학적 아형은? Infiltrating ductal carcinoma Size: 3cm 1 metastasis of 13 axillary lymph node Nuclear grade 3 Histologic grade 3 ER/PR: (+/+) HER2: 2+ → FISH: (-) Ki-67 < 5%",
       "choices": [
         {
           "number": 1,
@@ -5414,7 +6103,7 @@
         },
         {
           "number": 5,
-          "text": "Normal Breast-like"
+          "text": "Normal Breast like"
         }
       ],
       "source": {
@@ -5452,12 +6141,18 @@
         "anchor": "ER PR positive HER2 negative Luminal A",
         "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: ER/PR 양성, HER2 FISH 음성, 낮은 Ki-67 결과는 Luminal A에 부합합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: ER/PR 양성, HER2 FISH 음성, 낮은 Ki-67 결과는 Luminal A에 부합합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 8,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      }
     },
     {
       "id": "won-taewan:20-32",
@@ -5524,7 +6219,13 @@
       "notes": "",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: Ki-67은 종양 세포 증식능과 관련된 표지자입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: Ki-67은 종양 세포 증식능과 관련된 표지자입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 7,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:20-33",
@@ -5591,7 +6292,13 @@
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: Basal-like/TNBC는 Luminal A형에 비해 예후가 불량한 분자아형입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: Basal-like/TNBC는 Luminal A형에 비해 예후가 불량한 분자아형입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 7,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:20-34",
@@ -5658,7 +6365,13 @@
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 핵심생검에서 비정형 유관증식증(ADH)이 확인되면 외과적 절제생검으로 추가 평가하는 것을 강의안에서 확인했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 핵심생검에서 비정형 유관증식증(ADH)이 확인되면 외과적 절제생검으로 추가 평가하는 것을 강의안에서 확인했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 6,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:20-35",
@@ -5668,7 +6381,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "50대 환자의 귀밑샘에 저에코성 종물이 관찰되었고 침생검 결과 악성소견은 없었다. 가장 가능성 높은 진단은?",
+      "prompt": "50대 여자의 우측 귀 앞쪽에 무통성 종물이 촉지되어 초음파검사를 한 결과 우측 귀밑샘에 직경 약 3cm의 저에코성 종물이 관찰되었고 침생검 결과 악성소견은 없었다. 가장 가능성이 높은 진단명은?",
       "choices": [
         {
           "number": 1,
@@ -5696,14 +6409,8 @@
         "page": 5,
         "image": "assets/questions/won-taewan/20-35.webp"
       },
-      "figureRequired": true,
-      "figureImages": [
-        {
-          "src": "assets/figures/won-taewan/20-35-source-figure.webp",
-          "alt": "20-35 기출에 포함된 임상 그림 또는 자료",
-          "caption": "20-35 원본 임상자료 · 야마 PDF 5쪽 (필기 포함)"
-        }
-      ],
+      "figureRequired": false,
+      "figureImages": [],
       "showOriginalByDefault": false,
       "answer": 2,
       "answerSource": "user_confirmed_per_highlight_instruction_2026",
@@ -5718,12 +6425,25 @@
         "decisionReason": "2026-11-11 사용자 요청: 원문에서 강조된 선지 2를 잠정 사용자 지정 정답으로 등록. ",
         "note": "기출 형광펜에 근거한 사용자 요청 기본 답으로 강의안 검증 정답과 구별."
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(20-35)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 50대 환자의 귀밑샘에 저에코성 종물이 관찰되었고 침생검 결과 악성소견은 없었다. 가장 가능성 높은 진단은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(20-35)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 50대 환자의 귀밑샘에 저에코성 종물이 관찰되었고 침생검 결과 악성소견은 없었다. 가장 가능성 높은 진단은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "text_pdf",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 5,
+        "note": "원문 PDF 지문·선지 다시 대조. 유의미한 축약 복원."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "2": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2."
+      }
     },
     {
       "id": "won-taewan:20-36",
@@ -5782,7 +6502,20 @@
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(20-36)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 침샘의 악성종양 중 가장 흔한 병리학적 타입은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(20-36)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 침샘의 악성종양 중 가장 흔한 병리학적 타입은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 6,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      },
+      "choiceExplanations": {
+        "1": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "3": "선암은 샘상피 기원의 병리학적 분류로, 원발 장기는 면역염색 및 임상 병력과 함께 판단합니다.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1."
+      }
     },
     {
       "id": "won-taewan:21-21",
@@ -5845,12 +6578,18 @@
         "anchor": "hallmarks of cancer, proliferation angiogenesis heterogeneity",
         "decisionReason": "원태완 교수님 기존 강의안에서 근거를 찾지 못한 문항을 최운정 교수님 강의안 10.24_7교시_최운정pf_외과종양학.pdf PDF 4쪽으로 이중 대조 후 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 강의안의 암세포 특징에 자율증식·세포사 회피·혈관신생·침습·전이 등이 제시되고, Homeostasis는 정상 조직의 항상성 개념이므로 암의 특징이 아니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 강의안의 암세포 특징에 자율증식·세포사 회피·혈관신생·침습·전이 등이 제시되고, Homeostasis는 정상 조직의 항상성 개념이므로 암의 특징이 아니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "visual_page",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 1,
+        "note": "원본 PDF 이미지와 대조한 전사. 인쇄본에 중첩된 선배 필기와 기출 문항을 구분함."
+      }
     },
     {
       "id": "won-taewan:21-22",
@@ -5904,12 +6643,25 @@
         "decisionReason": "2026-11-11 사용자 요청: 원문에서 강조된 선지 1를 잠정 사용자 지정 정답으로 등록. ",
         "note": "기출 형광펜에 근거한 사용자 요청 기본 답으로 강의안 검증 정답과 구별."
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다. 2023학년도 「21_혈액과종양_1차_종양학_해설.pdf」 PDF 6페이지에서는 1번을 정답 후보로 제시합니다. 다만 기존 강의안 이중검증을 통과하지 못했으므로 사이트 채점 기준은 여전히 정답 검토 필요입니다.",
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(21-22)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암 성장에 관한 특징 중 급성 성장기의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(21-22)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 암 성장에 관한 특징 중 급성 성장기의 특징이 아닌 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "visual_page",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 1,
+        "note": "원본 PDF 이미지와 대조한 전사. 인쇄본에 중첩된 선배 필기와 기출 문항을 구분함."
+      },
+      "choiceExplanations": {
+        "1": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1."
+      }
     },
     {
       "id": "won-taewan:21-23",
@@ -5971,12 +6723,18 @@
         "anchor": "erbB2 oncogene tumor suppressor",
         "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: C-erbB2/HER2는 종양유전자로 대표적인 종양억제유전자가 아닙니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: C-erbB2/HER2는 종양유전자로 대표적인 종양억제유전자가 아닙니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "visual_page",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 1,
+        "note": "원본 PDF 이미지와 대조한 전사. 인쇄본에 중첩된 선배 필기와 기출 문항을 구분함."
+      }
     },
     {
       "id": "won-taewan:21-24",
@@ -6039,12 +6797,18 @@
         "anchor": "adjuvant assumes micrometastases",
         "decisionReason": "원태완 교수님 기존 강의안에서 근거를 찾지 못한 문항을 최운정 교수님 강의안 10.25_6교시_최운정pf.pdf PDF 56쪽으로 이중 대조 후 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 강의안이 보조항암치료를 검출되지 않은 미세전이의 제거를 전제로 시행하는 치료라고 명시한다. 본 문항에서는 이를 설명하는 선택지가 ⑤이다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 강의안이 보조항암치료를 검출되지 않은 미세전이의 제거를 전제로 시행하는 치료라고 명시한다. 본 문항에서는 이를 설명하는 선택지가 ⑤이다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "visual_page",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 1,
+        "note": "원본 PDF 이미지와 대조한 전사. 인쇄본에 중첩된 선배 필기와 기출 문항을 구분함."
+      }
     },
     {
       "id": "won-taewan:21-25",
@@ -6098,12 +6862,25 @@
         "decisionReason": "2026-11-11 사용자 요청: 원문에서 강조된 선지 4를 잠정 사용자 지정 정답으로 등록. ",
         "note": "기출 형광펜에 근거한 사용자 요청 기본 답으로 강의안 검증 정답과 구별."
       },
-      "transcriptionStatus": "review_required",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "원본 PDF의 흐릿한 글씨/선지와 다시 대조해 주세요. 임의 완성하지 않았습니다. 2023학년도 「21_혈액과종양_1차_종양학_해설.pdf」 PDF 6페이지에서는 4번을 정답 후보로 제시합니다. 다만 기존 강의안 이중검증을 통과하지 못했으므로 사이트 채점 기준은 여전히 정답 검토 필요입니다.",
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(21-25)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 최초의 복합 화학요법(combined chemotherapy)은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(21-25)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 최초의 복합 화학요법(combined chemotherapy)은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "visual_page",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 1,
+        "note": "원본 PDF 이미지와 대조한 전사. 인쇄본에 중첩된 선배 필기와 기출 문항을 구분함."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "4": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4."
+      }
     },
     {
       "id": "won-taewan:21-26",
@@ -6170,7 +6947,13 @@
       "notes": "사용자가 지정한 정답과 2023학년도 해설 PDF 정답 일치. 최운정 교수님 강의안 원본과 각 보기를 별도 검정.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 항암 항생물질에서 개발된 anthracycline 계열 항암제에 doxorubicin이 속합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 항암 항생물질에서 개발된 anthracycline 계열 항암제에 doxorubicin이 속합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "21_혈액과종양_1차_종양학_해설.pdf",
+        "sourcePage": 7,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:21-27",
@@ -6237,7 +7020,13 @@
       "notes": "사용자가 지정한 정답과 2023학년도 해설 PDF 정답 일치. 최운정 교수님 강의안 원본과 각 보기를 별도 검정.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: BCG 방광 내 주입은 비근침윤성 방광암의 재발을 줄이기 위해 사용되는 면역요법입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: BCG 방광 내 주입은 비근침윤성 방광암의 재발을 줄이기 위해 사용되는 면역요법입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "21_혈액과종양_1차_종양학_해설.pdf",
+        "sourcePage": 7,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:21-28",
@@ -6304,7 +7093,13 @@
       "notes": "사용자가 지정한 정답과 2023학년도 해설 PDF 정답 일치. 최운정 교수님 강의안 원본과 각 보기를 별도 검정.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 면역관문억제제는 T세포의 억제 신호를 해제해 cytotoxic T lymphocyte의 항종양 작용을 강화합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 면역관문억제제는 T세포의 억제 신호를 해제해 cytotoxic T lymphocyte의 항종양 작용을 강화합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "21_혈액과종양_1차_종양학_해설.pdf",
+        "sourcePage": 7,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
+      }
     },
     {
       "id": "won-taewan:21-29",
@@ -6314,7 +7109,7 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "35세 여성의 유방촬영술에서 선형 미세석회화가 보였으나 초음파는 정상이었다. 정위 생검 결과 atypical ductal hyperplasia였다. 다음으로 시행할 검사는?",
+      "prompt": "35세 여자 환자의 유방촬영술 결과에 선형 미세석회화 병변을 보이나, 초음파 결과는 정상이었고, 정위 생검 결과 Atypical ductal hyperplasia로 나왔다. 추후 해야 할 검사는?",
       "choices": [
         {
           "number": 1,
@@ -6366,12 +7161,18 @@
         "anchor": "ADH needle localization excisional biopsy",
         "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 비정형 유관증식증이 생검에서 발견되면 절제생검으로 추가 평가합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 비정형 유관증식증이 생검에서 발견되면 절제생검으로 추가 평가합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "visual_page",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 1,
+        "note": "원본 PDF 이미지와 대조한 전사. 인쇄본에 중첩된 선배 필기와 기출 문항을 구분함."
+      }
     },
     {
       "id": "won-taewan:21-30",
@@ -6385,23 +7186,23 @@
       "choices": [
         {
           "number": 1,
-          "text": "Skin edema"
+          "text": "skin edema"
         },
         {
           "number": 2,
-          "text": "Skin ulceration"
+          "text": "skin ulceration"
         },
         {
           "number": 3,
-          "text": "Skin satellite nodules"
+          "text": "skin satellite nodules"
         },
         {
           "number": 4,
-          "text": "Eczema on nipple"
+          "text": "eczema on nipple"
         },
         {
           "number": 5,
-          "text": "Chest wall fixation"
+          "text": "chest wall fixation"
         }
       ],
       "source": {
@@ -6434,12 +7235,18 @@
         "anchor": "Paget disease eczematoid nipple lesion",
         "decisionReason": "원태완 교수님 기존 강의안에서 근거를 찾지 못한 문항을 최운정 교수님 강의안 11.1_5,6교시_최운정.pdf PDF 7쪽으로 이중 대조 후 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 유두의 습진양 변화는 파제트병에서 나타날 수 있지만 다른 보기의 피부부종·궤양·위성결절·흉벽 고정보다 진행성 암의 직접적 소견은 아니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 유두의 습진양 변화는 파제트병에서 나타날 수 있지만 다른 보기의 피부부종·궤양·위성결절·흉벽 고정보다 진행성 암의 직접적 소견은 아니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "visual_page",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 1,
+        "note": "원본 PDF 이미지와 대조한 전사. 인쇄본에 중첩된 선배 필기와 기출 문항을 구분함."
+      }
     },
     {
       "id": "won-taewan:21-31",
@@ -6449,23 +7256,23 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "다음 유방암의 예후인자 중 좋은 예후를 나타내는 것은?",
+      "prompt": "다음 유방암의 예후인자 중 좋은 예후는?",
       "choices": [
         {
           "number": 1,
-          "text": "낮은 핵등급(Nuclear grade I)"
+          "text": "Ⅰ급 핵등급(nuclear grade)"
         },
         {
           "number": 2,
-          "text": "림프혈관 침범"
+          "text": "림프혈관 침범(lymphovascular invasion)"
         },
         {
           "number": 3,
-          "text": "HER2 단백질 과발현"
+          "text": "HER-2 단백질 과발현"
         },
         {
           "number": 4,
-          "text": "FISH 유전자 증폭"
+          "text": "FISH 유전자 증식"
         },
         {
           "number": 5,
@@ -6501,12 +7308,25 @@
         "decisionReason": "2026-11-11 사용자 요청: 원문에서 강조된 선지 1를 잠정 사용자 지정 정답으로 등록. ",
         "note": "기출 형광펜에 근거한 사용자 요청 기본 답으로 강의안 검증 정답과 구별."
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다. 2023학년도 「21_혈액과종양_1차_종양학_해설.pdf」 PDF 8페이지에서는 1번을 정답 후보로 제시합니다. 다만 기존 강의안 이중검증을 통과하지 못했으므로 사이트 채점 기준은 여전히 정답 검토 필요입니다.",
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(21-31)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음 유방암의 예후인자 중 좋은 예후를 나타내는 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(21-31)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음 유방암의 예후인자 중 좋은 예후를 나타내는 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "visual_page",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 2,
+        "note": "원본 PDF 이미지와 대조한 전사. 인쇄본에 중첩된 선배 필기와 기출 문항을 구분함."
+      },
+      "choiceExplanations": {
+        "1": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 1."
+      }
     },
     {
       "id": "won-taewan:21-32",
@@ -6516,27 +7336,27 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "다음 유방보존술의 절대적 금기가 아닌 것은?",
+      "prompt": "다음 유방보존술의 절대적 금기증이 아닌 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "Chest wall irradiation"
+          "text": "chest wall irradiation"
         },
         {
           "number": 2,
-          "text": "Pregnant breast cancer"
+          "text": "pregnant breast cancer"
         },
         {
           "number": 3,
-          "text": "Previous breast irradiation"
+          "text": "previous breast irradiation"
         },
         {
           "number": 4,
-          "text": "Active lupus or scleroderma"
+          "text": "active lupus or scleroderma"
         },
         {
           "number": 5,
-          "text": "Previous breast silicon augmentation"
+          "text": "previous breast silicon augmentation"
         }
       ],
       "source": {
@@ -6569,12 +7389,18 @@
         "anchor": "breast conserving surgery contraindications irradiation lupus pregnancy",
         "decisionReason": "원태완 교수님 기존 강의안에서 근거를 찾지 못한 문항을 최운정 교수님 강의안 11.1_5,6교시_최운정.pdf PDF 29쪽으로 이중 대조 후 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "판단 포인트: 강의안의 유방보존술 금기에는 과거 유방·흉벽 방사선조사, 활동성 루푸스/경피증, 임신 등이 포함되지만 과거 실리콘 보형물 삽입은 절대적 금기로 제시되지 않는다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 강의안의 유방보존술 금기에는 과거 유방·흉벽 방사선조사, 활동성 루푸스/경피증, 임신 등이 포함되지만 과거 실리콘 보형물 삽입은 절대적 금기로 제시되지 않는다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "visual_page",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 2,
+        "note": "원본 PDF 이미지와 대조한 전사. 인쇄본에 중첩된 선배 필기와 기출 문항을 구분함."
+      }
     },
     {
       "id": "won-taewan:21-33",
@@ -6636,12 +7462,25 @@
         "decisionReason": "2026-11-11 사용자 요청: 원문에서 강조된 선지 2를 잠정 사용자 지정 정답으로 등록. ① tamoxifen도 ER 양성 폐경 전 유방암에 사용 가능하므로 단일 정답 주의",
         "note": "기출 형광펜에 근거한 사용자 요청 기본 답으로 강의안 검증 정답과 구별."
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다. 2023학년도 「21_혈액과종양_1차_종양학_해설.pdf」 PDF 9페이지에서는 2번을 정답 후보로 제시합니다. 다만 기존 강의안 이중검증을 통과하지 못했으므로 사이트 채점 기준은 여전히 정답 검토 필요입니다. 해설 자체에도 Tamoxifen과 LHRH analog가 모두 사용 가능하다는 설명이 있으므로 단일 정답 여부를 재검토해야 합니다.",
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답. ① tamoxifen도 ER 양성 폐경 전 유방암에 사용 가능하므로 단일 정답 주의",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(21-33)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 폐경 전 유방암 환자가 호르몬수용체(ER, PgR)가 모두 양성일 때 효과적인 약제는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(21-33)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 폐경 전 유방암 환자가 호르몬수용체(ER, PgR)가 모두 양성일 때 효과적인 약제는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "visual_page",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 2,
+        "note": "원본 PDF 이미지와 대조한 전사. 인쇄본에 중첩된 선배 필기와 기출 문항을 구분함."
+      },
+      "choiceExplanations": {
+        "1": "Tamoxifen은 선택적 에스트로겐 수용체 조절제(SERM)로, 호르몬수용체 양성 유방암에서 사용합니다. 이 사례의 ER/PR 조건과 비교하세요.",
+        "2": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 2. ① tamoxifen도 ER 양성 폐경 전 유방암에 사용 가능하므로 단일 정답 주의",
+        "3": "Aromatase inhibitor는 폐경 후 HR 양성 유방암 치료에서 중요한 내분비치료입니다. 폐경 여부와 HR 발현을 확인하세요.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2. ① tamoxifen도 ER 양성 폐경 전 유방암에 사용 가능하므로 단일 정답 주의",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2. ① tamoxifen도 ER 양성 폐경 전 유방암에 사용 가능하므로 단일 정답 주의"
+      }
     },
     {
       "id": "won-taewan:21-34",
@@ -6663,7 +7502,7 @@
         },
         {
           "number": 3,
-          "text": "HER2형"
+          "text": "HER-2 형"
         },
         {
           "number": 4,
@@ -6671,7 +7510,7 @@
         },
         {
           "number": 5,
-          "text": "삼중양성암"
+          "text": "정상유방암"
         }
       ],
       "source": {
@@ -6703,12 +7542,18 @@
         "anchor": "Luminal A best prognosis",
         "decisionReason": "강의안 직접 지지와 보기 대조를 통과한 것으로 채택"
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다.",
       "notes": "",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: Luminal A가 다른 분자아형에 비해 대체로 예후가 좋다는 설명을 강의안과 대조했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: Luminal A가 다른 분자아형에 비해 대체로 예후가 좋다는 설명을 강의안과 대조했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "visual_page",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 2,
+        "note": "원본 PDF 이미지와 대조한 전사. 인쇄본에 중첩된 선배 필기와 기출 문항을 구분함."
+      }
     },
     {
       "id": "won-taewan:21-35",
@@ -6726,7 +7571,7 @@
         },
         {
           "number": 2,
-          "text": "향후 항암치료를 해야 한다."
+          "text": "항암 화학치료를 해야 한다."
         },
         {
           "number": 3,
@@ -6762,12 +7607,25 @@
         "decisionReason": "2026-11-11 사용자 요청: 원문에서 강조된 선지 3를 잠정 사용자 지정 정답으로 등록. ",
         "note": "기출 형광펜에 근거한 사용자 요청 기본 답으로 강의안 검증 정답과 구별."
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다. 2023학년도 「21_혈액과종양_1차_종양학_해설.pdf」 PDF 10페이지에서는 3번을 정답 후보로 제시합니다. 다만 기존 강의안 이중검증을 통과하지 못했으므로 사이트 채점 기준은 여전히 정답 검토 필요입니다.",
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암 수술 및 보조치료",
       "unitId": "5b1c8e7b955b",
-      "aiExplanation": "이 문항(21-35)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방암 수술 도중 감시림프절이 생검되었다. 향후 조치는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(21-35)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방암 수술 도중 감시림프절이 생검되었다. 향후 조치는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "visual_page",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 2,
+        "note": "원본 PDF 이미지와 대조한 전사. 인쇄본에 중첩된 선배 필기와 기출 문항을 구분함."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "3": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 3."
+      }
     },
     {
       "id": "won-taewan:21-36",
@@ -6781,23 +7639,23 @@
       "choices": [
         {
           "number": 1,
-          "text": "림프절의 2mm 이하 미세전이"
+          "text": "림프절의 크기가 2mm 이하일 때"
         },
         {
           "number": 2,
-          "text": "전이된 림프절들이 뭉쳐 있고 고정된 경우"
+          "text": "전이된 림프절들이 뭉쳐있고 고정된 경우"
         },
         {
           "number": 3,
-          "text": "전이된 림프절 개수가 1~3개인 경우"
+          "text": "전이된 림프절의 개수가 1~3개인 경우"
         },
         {
           "number": 4,
-          "text": "전이된 림프절 개수가 4~9개인 경우"
+          "text": "전이된 림프절의 개수가 4~9개인 경우"
         },
         {
           "number": 5,
-          "text": "전이된 림프절 개수가 10개 이상인 경우"
+          "text": "전이된 림프절의 개수가 10개 이상인 경우"
         }
       ],
       "source": {
@@ -6821,12 +7679,25 @@
         "decisionReason": "2026-11-11 사용자 요청: 원문에서 강조된 선지 2를 잠정 사용자 지정 정답으로 등록. ",
         "note": "기출 형광펜에 근거한 사용자 요청 기본 답으로 강의안 검증 정답과 구별."
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다. 2023학년도 「21_혈액과종양_1차_종양학_해설.pdf」 PDF 10페이지에서는 2번을 정답 후보로 제시합니다. 다만 기존 강의안 이중검증을 통과하지 못했으므로 사이트 채점 기준은 여전히 정답 검토 필요입니다.",
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(21-36)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방암의 병기 중 cN2 병기에 속하는 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(21-36)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 유방암의 병기 중 cN2 병기에 속하는 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "visual_page",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 2,
+        "note": "원본 PDF 이미지와 대조한 전사. 인쇄본에 중첩된 선배 필기와 기출 문항을 구분함."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "2": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "4": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 2."
+      }
     },
     {
       "id": "won-taewan:21-37",
@@ -6836,27 +7707,27 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "생검 결과가 선암(adenocarcinoma)이었다. 원발병소가 아닌 것은?",
+      "prompt": "생검 결과가 ‘선암(adenocarcinoma)’이었다. 원발병소가 아닌 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "Thyroid"
+          "text": "thyroid"
         },
         {
           "number": 2,
-          "text": "Salivary gland"
+          "text": "salivary gland"
         },
         {
           "number": 3,
-          "text": "Nasopharynx"
+          "text": "nasopharynx"
         },
         {
           "number": 4,
-          "text": "Breast"
+          "text": "breast"
         },
         {
           "number": 5,
-          "text": "Lung"
+          "text": "lung"
         }
       ],
       "source": {
@@ -6889,12 +7760,18 @@
         "anchor": "adenocarcinoma origin thyroid salivary alimentary breast lung",
         "decisionReason": "원태완 교수님 기존 강의안에서 근거를 찾지 못한 문항을 최운정 교수님 강의안 11.1_8교시_최운정(두경부암).pdf PDF 2쪽으로 이중 대조 후 채택"
       },
-      "transcriptionStatus": "review_required",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "원본 PDF의 흐릿한 글씨/선지와 다시 대조해 주세요. 임의 완성하지 않았습니다.",
       "notes": "추가 근거 출처는 현재 담당 원태완 교수님이 아닌 과거 담당 최운정 교수님 강의안입니다.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "판단 포인트: 경부 림프절의 선암 전이에서 가능한 원발병소로 강의안은 갑상선·타액선·소화관·유방·폐를 명시한다. 제시된 선택지 중 비인강은 그 목록에 해당하지 않는다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "판단 포인트: 경부 림프절의 선암 전이에서 가능한 원발병소로 강의안은 갑상선·타액선·소화관·유방·폐를 명시한다. 제시된 선택지 중 비인강은 그 목록에 해당하지 않는다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다.",
+      "sourceAudit": {
+        "mode": "visual_page",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 2,
+        "note": "원본 PDF 이미지와 대조한 전사. 인쇄본에 중첩된 선배 필기와 기출 문항을 구분함."
+      }
     },
     {
       "id": "won-taewan:21-38",
@@ -6904,15 +7781,15 @@
       "subject": "hematology-1",
       "professor": "won-taewan",
       "type": "choice",
-      "prompt": "경부 결핵성 림프선염(tuberculous lymphadenitis)의 진단에 대해 옳은 것은?",
+      "prompt": "경부 결핵성 림프선염(tuberculous lymphadenitis)의 진단에 대해서 옳은 것은?",
       "choices": [
         {
           "number": 1,
-          "text": "객담 결핵균배양검사로 진단 가능하다."
+          "text": "객담 결핵균배양검사로 진단이 가능하다."
         },
         {
           "number": 2,
-          "text": "흉부 X선에서 대부분 폐결핵을 동반한다."
+          "text": "흉부 X-선 촬영상 대부분 폐결핵을 동반한다."
         },
         {
           "number": 3,
@@ -6920,11 +7797,11 @@
         },
         {
           "number": 4,
-          "text": "림프절 흡인물의 AFB-PCR 검사가 양성이다."
+          "text": "림프절 흡인물의 AFB-PCR 검사상 양성을 보인다."
         },
         {
           "number": 5,
-          "text": "암과 감별을 위해 림프절 절제생검이 중요하다."
+          "text": "암과의 감별을 위해서 림프절 절제생검이 중요하다."
         }
       ],
       "source": {
@@ -6948,12 +7825,25 @@
         "decisionReason": "2026-11-11 사용자 요청: 원문에서 강조된 선지 4를 잠정 사용자 지정 정답으로 등록. ",
         "note": "기출 형광펜에 근거한 사용자 요청 기본 답으로 강의안 검증 정답과 구별."
       },
-      "transcriptionStatus": "visually_checked_against_source",
+      "transcriptionStatus": "source_text_restored_v127",
       "transcriptionWarning": "야마에 표시된 하이라이트·필기 내용은 정답 확정 근거가 아닙니다. 2023학년도 「21_혈액과종양_1차_종양학_해설.pdf」 PDF 10페이지에서는 4번을 정답 후보로 제시합니다. 다만 기존 강의안 이중검증을 통과하지 못했으므로 사이트 채점 기준은 여전히 정답 검토 필요입니다.",
       "notes": "기출 원본 강조 표시로 지정된 잠정 사용자 정답.",
       "unitTitle": "유방암",
       "unitId": "f29124c291bd",
-      "aiExplanation": "이 문항(21-38)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 경부 결핵성 림프선염(tuberculous lymphadenitis)의 진단에 대해 옳은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "이 문항(21-38)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 경부 결핵성 림프선염(tuberculous lymphadenitis)의 진단에 대해 옳은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다.",
+      "sourceAudit": {
+        "mode": "visual_page",
+        "sourceFile": "최운정pf_21-16_종양외과_보팡.pdf",
+        "sourcePage": 2,
+        "note": "원본 PDF 이미지와 대조한 전사. 인쇄본에 중첩된 선배 필기와 기출 문항을 구분함."
+      },
+      "choiceExplanations": {
+        "1": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "2": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "3": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "4": "이 문항의 채택 정답입니다. 형광펜 선택지 대조: 원본 강조 선지 4.",
+        "5": "이 문항에서는 채택되지 않는 선택지입니다. 판단에 이용한 핵심 설명: 형광펜 선택지 대조: 원본 강조 선지 4."
+      }
     },
     {
       "id": "won-taewan:22-28",
@@ -7031,6 +7921,12 @@
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "sourcePage": 2,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
       }
     },
     {
@@ -7109,6 +8005,12 @@
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "sourcePage": 2,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
       }
     },
     {
@@ -7187,6 +8089,12 @@
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "sourcePage": 3,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
       }
     },
     {
@@ -7265,6 +8173,12 @@
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "sourcePage": 3,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
       }
     },
     {
@@ -7344,6 +8258,12 @@
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "sourcePage": 3,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
       }
     },
     {
@@ -7422,6 +8342,12 @@
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "sourcePage": 3,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
       }
     },
     {
@@ -7500,6 +8426,12 @@
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "sourceAudit": {
+        "mode": "existing_data_crosscheck",
+        "sourceFile": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "sourcePage": 4,
+        "note": "기존 등록된 지문·선지의 원본 파일 연결 및 학번별 재검토; 이전 문항 원문 유지."
       }
     }
   ]

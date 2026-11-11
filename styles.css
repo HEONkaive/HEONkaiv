@@ -576,3 +576,25 @@ html[data-theme=light]{--bg:#f3f6fb;--panel:#fff;--panel2:#f6f9fd;--panel3:#edf3
 
 /* Three equal mode tabs, including mobile, stay on one row. */
 .study-mode-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}
+
+/* v12.7: stable green answer treatments and an explicit option-by-option study panel. */
+.choice-reason-list{margin:18px 0 12px;border:1px solid var(--stroke2);border-radius:15px;overflow:hidden;background:var(--panel)}
+.choice-reason-list h4{font-size:13px;margin:0;padding:13px 16px;background:var(--panel2);color:var(--text);border-bottom:1px solid var(--stroke2)}
+.choice-reason{padding:10px 15px;border-bottom:1px solid var(--stroke);line-height:1.6}
+.choice-reason:last-child{border-bottom:0}
+.choice-reason b{color:var(--muted);font-size:11px}
+.choice-reason.right{background:color-mix(in srgb,var(--green) 8%,var(--panel))}
+.choice-reason.right b{color:var(--green)}
+.choice-reason p{font-size:12px;margin:4px 0 0;color:var(--text);white-space:normal;word-break:keep-all;overflow-wrap:anywhere}
+.review-export-actions{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.print-nav{color:var(--green);font-weight:800}
+.print-nav:hover{background:color-mix(in srgb,var(--green) 12%,var(--panel))}
+@media(max-width:760px){
+ .review-export-actions{width:100%}
+ .review-export-actions .button{padding:8px 9px;font-size:10px;flex:1 1 auto}
+ .review-compact-title{flex-wrap:wrap}
+}
+
+/* v12.7: confirmed-answer support notes use calm green, not warning orange.
+   Actual source conflicts retain their explicit textual caveat. */
+.evidence-panel .review-note{color:var(--green,#087d55)!important;background:color-mix(in srgb,var(--green,#087d55) 6%,var(--panel))!important;border-color:color-mix(in srgb,var(--green,#087d55) 24%,var(--stroke))!important;}
