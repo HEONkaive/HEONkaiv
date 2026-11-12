@@ -781,3 +781,11 @@ html[data-theme=light]{--bg:#f3f6fb;--panel:#fff;--panel2:#f6f9fd;--panel3:#edf3
 .pdf-archive-evidence .archive-choice-reason{border-bottom:1px solid var(--stroke);padding:10px 15px}
 .pdf-archive-evidence .archive-choice-reason:last-child{border-bottom:0}
 .pdf-archive-evidence .archive-choice-reason p{margin:0;white-space:pre-wrap}
+
+/* Compact question numbers and collection actions. */
+.review-number-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}
+.review-number-button{min-height:38px;padding:4px 2px;grid-template-columns:minmax(0,1fr) auto;column-gap:1px}
+.review-number-button strong{font-size:clamp(9px,2.6vw,12px);white-space:nowrap}
+.review-number-button>span{font-size:9px}
+.unresolved-button{cursor:pointer;font:inherit;font-size:12px}
+.review-export-actions .print-nav{color:var(--green)}

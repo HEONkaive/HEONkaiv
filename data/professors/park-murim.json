@@ -880,8 +880,8 @@
       },
       "figureRequired": true,
       "transcriptionStatus": "visual_checked",
-      "answer": null,
-      "explanation": "Rituximab의 표적은 CD20이며 bevacizumab은 VEGF 리간드를 표적으로 합니다. 현재 보기에는 CD22와 VEGFR라는 두 오류가 있어 단일 정답 ①을 확정하지 않습니다.",
+      "answer": 1,
+      "explanation": "Rituximab은 CD20을 표적하므로 ①을 정답으로 채점합니다. ⑤의 VEGFR는 VEGF 리간드를 뜻한 오기로 해석했습니다.",
       "evidence": [
         {
           "lectureId": "audit116-park-murim-2026-최신항암제의 임상적용 및 부작용",
@@ -915,33 +915,33 @@
         }
       ],
       "validation": {
-        "stage": "audit_review",
+        "stage": "user_confirmed",
         "check1": "professor_and_source_page_reconciled",
         "check2": "conflict",
         "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
-        "decisionReason": "Rituximab의 표적은 CD20이며 bevacizumab은 VEGF 리간드를 표적으로 합니다. 현재 보기에는 CD22와 VEGFR라는 두 오류가 있어 단일 정답 ①을 확정하지 않습니다."
+        "decisionReason": "운영자 지정 채점 기준"
       },
       "notes": "",
       "type": "choice",
       "showOriginalByDefault": true,
       "candidateEvidence": [],
-      "answerSource": "user_direct_decision_2026-11-10",
+      "answerSource": "owner_confirmed_1_1_7",
       "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
       "unitTitle": "암 생물학",
       "unitId": "a46d836ec390",
       "aiExplanation": "",
       "choiceExplanations": {},
       "lectureAudit": {
-        "version": "1.1.6",
+        "version": "1.1.7",
         "date": "2026-11-12",
-        "status": "conflict",
+        "status": "owner",
         "professor": "park-murim",
-        "gradingHold": true,
-        "answerRevised": false,
+        "gradingHold": false,
+        "answerRevised": true,
         "referenceAnswer": 1,
         "previousAnswerSource": "user_direct_decision_2026-11-10",
-        "reason": "Rituximab의 표적은 CD20이며 bevacizumab은 VEGF 리간드를 표적으로 합니다. 현재 보기에는 CD22와 VEGFR라는 두 오류가 있어 단일 정답 ①을 확정하지 않습니다.",
-        "limitations": "Rituximab의 표적은 CD20이며 bevacizumab은 VEGF 리간드를 표적으로 합니다. 현재 보기에는 CD22와 VEGFR라는 두 오류가 있어 단일 정답 ①을 확정하지 않습니다.",
+        "reason": "운영자 지정 채점 기준",
+        "limitations": "",
         "checks": [
           {
             "pass": 1,
@@ -3049,7 +3049,7 @@
         },
         {
           "number": 2,
-          "text": "Doxorubicin, Trastuzumab - 심부전"
+          "text": "Doxorubicin, Trastuzumab - 신부전"
         },
         {
           "number": 3,
@@ -3071,8 +3071,8 @@
       },
       "figureRequired": true,
       "transcriptionStatus": "visual_checked",
-      "answer": null,
-      "explanation": "현재 전사된 부작용 연결에서 기존 정답 ②도 doxorubicin·trastuzumab의 심장독성과 부합합니다. 틀린 보기를 하나로 고를 근거가 없습니다.",
+      "answer": 2,
+      "explanation": "Doxorubicin과 trastuzumab의 대표적인 문제는 심독성과 심기능 저하입니다. ②를 신부전으로 정정했으므로 ②가 틀린 연결입니다.",
       "evidence": [
         {
           "lectureId": "audit116-park-murim-2026-최신항암제의 임상적용 및 부작용",
@@ -3121,33 +3121,33 @@
         }
       ],
       "validation": {
-        "stage": "audit_review",
+        "stage": "user_confirmed",
         "check1": "professor_and_source_page_reconciled",
         "check2": "conflict",
         "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
-        "decisionReason": "현재 전사된 부작용 연결에서 기존 정답 ②도 doxorubicin·trastuzumab의 심장독성과 부합합니다. 틀린 보기를 하나로 고를 근거가 없습니다."
+        "decisionReason": "운영자 지정 채점 기준"
       },
       "notes": "",
       "type": "choice",
       "showOriginalByDefault": true,
       "candidateEvidence": [],
-      "answerSource": "user_confirmed",
+      "answerSource": "owner_confirmed_1_1_7",
       "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
       "unitTitle": "최신 항암제의 임상적용 및 부작용",
       "unitId": "4b6754310d28",
       "aiExplanation": "",
       "choiceExplanations": {},
       "lectureAudit": {
-        "version": "1.1.6",
+        "version": "1.1.7",
         "date": "2026-11-12",
-        "status": "conflict",
+        "status": "owner",
         "professor": "park-murim",
-        "gradingHold": true,
-        "answerRevised": false,
+        "gradingHold": false,
+        "answerRevised": true,
         "referenceAnswer": 2,
         "previousAnswerSource": "user_confirmed",
-        "reason": "현재 전사된 부작용 연결에서 기존 정답 ②도 doxorubicin·trastuzumab의 심장독성과 부합합니다. 틀린 보기를 하나로 고를 근거가 없습니다.",
-        "limitations": "현재 전사된 부작용 연결에서 기존 정답 ②도 doxorubicin·trastuzumab의 심장독성과 부합합니다. 틀린 보기를 하나로 고를 근거가 없습니다.",
+        "reason": "운영자 지정 채점 기준",
+        "limitations": "",
         "checks": [
           {
             "pass": 1,
@@ -3183,9 +3183,9 @@
       "showOriginalByDefault": false,
       "transcriptionStatus": "source_text_verified",
       "transcriptionWarning": "PDF의 필기·주석과 문제 본문을 구분하고 읽기 편하게 정리한 전사입니다. 원본 문구·수치·영상은 아래 기출 원본 캡처와 대조해 확인하세요.",
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
+      "answer": "A. an incidence / B. mortality / C. prevalence",
+      "answerSource": "owner_confirmed_1_1_7",
+      "explanation": "지정 참고답안은 A 발생률, B 사망률, C 유병률입니다. 수동으로 채점합니다.",
       "evidence": [
         {
           "lectureId": "audit116-park-murim-2026-최신항암제의 임상적용 및 부작용",
@@ -3205,27 +3205,27 @@
       ],
       "candidateEvidence": [],
       "validation": {
-        "stage": "audit_review",
+        "stage": "user_confirmed",
         "check1": "professor_and_source_page_reconciled",
         "check2": "partial",
         "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
-        "decisionReason": "Imatinib의 기전은 확인되지만 역학 지표 빈칸 전체의 수치·표현은 이번 자료에서 확인되지 않습니다."
+        "decisionReason": "해당 문항의 직접 근거가 되는 강의안은 확인하지 못했습니다."
       },
       "notes": "기출 정리본에 A incidence, B mortality, C prevalence라는 필기가 있지만 업로드된 강의안에서 같은 문장을 확인하지 못했습니다. 현재 학습 범위는 박무림 교수님이며 과거 기출 PDF는 이승신 명의로 정리되어 있습니다.\n2026 박무림 강의안 재검토 — 확인 불가: 2026 암 유전학에는 CML의 유전학적 기전이 있으나 질문의 연간 발생률·imatinib 도입 후 사망률 감소 수치·유병 환자 수 변화를 직접 제시하지 않습니다.",
       "unitTitle": "암 역학 및 예방",
       "unitId": "b6827c7446dc",
       "aiExplanation": "",
       "lectureAudit": {
-        "version": "1.1.6",
+        "version": "1.1.7",
         "date": "2026-11-12",
-        "status": "partial",
+        "status": "owner",
         "professor": "park-murim",
         "gradingHold": false,
-        "answerRevised": false,
+        "answerRevised": true,
         "referenceAnswer": null,
         "previousAnswerSource": "pending",
-        "reason": "Imatinib의 기전은 확인되지만 역학 지표 빈칸 전체의 수치·표현은 이번 자료에서 확인되지 않습니다.",
-        "limitations": "Imatinib의 기전은 확인되지만 역학 지표 빈칸 전체의 수치·표현은 이번 자료에서 확인되지 않습니다.",
+        "reason": "운영자 지정 채점 기준",
+        "limitations": "해당 문항의 직접 근거가 되는 강의안은 확인하지 못했습니다.",
         "checks": [
           {
             "pass": 1,
@@ -3241,7 +3241,8 @@
         "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       },
       "gradingMode": "manual",
-      "gradingLabel": "채점 보류 · 서술형 수동 채점"
+      "gradingLabel": "채점 보류 · 서술형 수동 채점",
+      "choiceExplanations": {}
     },
     {
       "id": "park-murim:17-주4",
@@ -5851,9 +5852,9 @@
       "figureRequired": true,
       "figureImages": [
         {
-          "src": "assets/figures/park-murim/from-lee-18-61-1.webp",
-          "alt": "박무림 교수님 18-61번 실제 기출 원본 검사·의료 영상",
-          "caption": "18-61번 기출 원본 검사·영상 · PDF 3쪽"
+          "src": "assets/figures/park-murim/18-61-v117.png",
+          "alt": "18-61번 첨부 이미지",
+          "caption": "18-61번 제보로 교체한 그림"
         }
       ],
       "showOriginalByDefault": false,
@@ -10724,9 +10725,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "user_confirmed_per_general_highlight_instruction_2026",
-      "explanation": "현재 보기에서 EGFR–lazertinib과 c-KIT–imatinib이 모두 타당합니다. 단일 정답 ③으로 자동채점하지 않습니다.",
+      "answer": 3,
+      "answerSource": "owner_confirmed_1_1_7",
+      "explanation": "지정 채점 정답은 c-KIT–imatinib을 연결한 ③입니다. Lazertinib은 EGFR 억제제로 감수성 변이에도 사용되므로, ①을 배제하는 근거로 내성 변이 전용이라고 설명할 수 없습니다.",
       "candidateEvidence": [],
       "evidence": [
         {
@@ -10776,11 +10777,11 @@
         }
       ],
       "validation": {
-        "stage": "audit_review",
+        "stage": "user_confirmed",
         "check1": "professor_and_source_page_reconciled",
         "check2": "conflict",
         "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
-        "decisionReason": "현재 보기에서 EGFR–lazertinib과 c-KIT–imatinib이 모두 타당합니다. 단일 정답 ③으로 자동채점하지 않습니다."
+        "decisionReason": "FDA 허가 자료: https://www.fda.gov/drugs/cancer-approvals/fda-approves-lazertinib-amivantamab-vmjw-non-small-lung-cancer"
       },
       "transcriptionStatus": "verified_against_2022_solution_pdf",
       "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
@@ -10790,16 +10791,16 @@
       "aiExplanation": "",
       "choiceExplanations": {},
       "lectureAudit": {
-        "version": "1.1.6",
+        "version": "1.1.7",
         "date": "2026-11-12",
-        "status": "conflict",
+        "status": "owner",
         "professor": "park-murim",
-        "gradingHold": true,
-        "answerRevised": false,
+        "gradingHold": false,
+        "answerRevised": true,
         "referenceAnswer": 3,
         "previousAnswerSource": "user_confirmed_per_general_highlight_instruction_2026",
-        "reason": "현재 보기에서 EGFR–lazertinib과 c-KIT–imatinib이 모두 타당합니다. 단일 정답 ③으로 자동채점하지 않습니다.",
-        "limitations": "현재 보기에서 EGFR–lazertinib과 c-KIT–imatinib이 모두 타당합니다. 단일 정답 ③으로 자동채점하지 않습니다.",
+        "reason": "운영자 지정 채점 기준",
+        "limitations": "FDA 허가 자료: https://www.fda.gov/drugs/cancer-approvals/fda-approves-lazertinib-amivantamab-vmjw-non-small-lung-cancer",
         "checks": [
           {
             "pass": 1,
@@ -10854,9 +10855,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "user_confirmed_per_general_highlight_instruction_2026",
-      "explanation": "강한 opioid에는 일반적인 진통효과의 ceiling이 없다는 보기와 meperidine·혼합작용제를 피한다는 보기가 함께 타당합니다. 강의안 내 morphine ceiling 표기도 서로 모순되어 단일 정답을 보류합니다.",
+      "answer": 4,
+      "answerSource": "owner_confirmed_1_1_7",
+      "explanation": "암환자 완화의료 강의안 단원 14쪽의 morphine 천장효과 표기를 출제 기준으로 적용해 ④를 채택했습니다. 해당 강의안 안에서도 천장효과 표기가 일치하지 않아 문항의 채점 기준으로 참고하세요.",
       "candidateEvidence": [],
       "evidence": [
         {
@@ -10921,11 +10922,11 @@
         }
       ],
       "validation": {
-        "stage": "audit_review",
+        "stage": "user_confirmed",
         "check1": "professor_and_source_page_reconciled",
         "check2": "conflict",
         "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
-        "decisionReason": "강한 opioid에는 일반적인 진통효과의 ceiling이 없다는 보기와 meperidine·혼합작용제를 피한다는 보기가 함께 타당합니다. 강의안 내 morphine ceiling 표기도 서로 모순되어 단일 정답을 보류합니다."
+        "decisionReason": "운영자 지정 채점 기준"
       },
       "transcriptionStatus": "verified_against_2022_solution_pdf",
       "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
@@ -10935,16 +10936,16 @@
       "aiExplanation": "",
       "choiceExplanations": {},
       "lectureAudit": {
-        "version": "1.1.6",
+        "version": "1.1.7",
         "date": "2026-11-12",
-        "status": "conflict",
+        "status": "owner",
         "professor": "park-murim",
-        "gradingHold": true,
-        "answerRevised": false,
+        "gradingHold": false,
+        "answerRevised": true,
         "referenceAnswer": 4,
         "previousAnswerSource": "user_confirmed_per_general_highlight_instruction_2026",
-        "reason": "강한 opioid에는 일반적인 진통효과의 ceiling이 없다는 보기와 meperidine·혼합작용제를 피한다는 보기가 함께 타당합니다. 강의안 내 morphine ceiling 표기도 서로 모순되어 단일 정답을 보류합니다.",
-        "limitations": "강한 opioid에는 일반적인 진통효과의 ceiling이 없다는 보기와 meperidine·혼합작용제를 피한다는 보기가 함께 타당합니다. 강의안 내 morphine ceiling 표기도 서로 모순되어 단일 정답을 보류합니다.",
+        "reason": "운영자 지정 채점 기준",
+        "limitations": "",
         "checks": [
           {
             "pass": 1,
@@ -16940,9 +16941,9 @@
       "showOriginalByDefault": false,
       "transcriptionStatus": "manual_visual_transcription_v126",
       "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
-      "answer": null,
-      "answerSource": "official_last_page_key_only",
-      "explanation": "공식 정답표는 ①이나 TTF-1은 폐뿐 아니라 갑상선에서도 발현됩니다. 첨부 강의안의 해당 필기만으로 ①을 틀린 보기로 확정할 수 없습니다.",
+      "answer": 1,
+      "answerSource": "owner_confirmed_1_1_7",
+      "explanation": "갑상선암에서도 TTF-1이 발현될 수 있습니다. 이 문항은 강의안의 분류에 따른 출제 의도를 적용하여 ①로 채점합니다.",
       "evidence": [
         {
           "lectureId": "audit116-park-murim-2026-원발병소불명암 (CUP)",
@@ -16977,11 +16978,11 @@
       ],
       "candidateEvidence": [],
       "validation": {
-        "stage": "audit_review",
+        "stage": "user_confirmed",
         "check1": "professor_and_source_page_reconciled",
         "check2": "conflict",
         "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
-        "decisionReason": "공식 정답표는 ①이나 TTF-1은 폐뿐 아니라 갑상선에서도 발현됩니다. 첨부 강의안의 해당 필기만으로 ①을 틀린 보기로 확정할 수 없습니다."
+        "decisionReason": "운영자 지정 채점 기준"
       },
       "notes": "",
       "unitTitle": "원발병소 불명암",
@@ -16996,16 +16997,16 @@
       },
       "choiceExplanations": {},
       "lectureAudit": {
-        "version": "1.1.6",
+        "version": "1.1.7",
         "date": "2026-11-12",
-        "status": "conflict",
+        "status": "owner",
         "professor": "park-murim",
-        "gradingHold": true,
-        "answerRevised": false,
+        "gradingHold": false,
+        "answerRevised": true,
         "referenceAnswer": 1,
         "previousAnswerSource": "official_last_page_key_only",
-        "reason": "공식 정답표는 ①이나 TTF-1은 폐뿐 아니라 갑상선에서도 발현됩니다. 첨부 강의안의 해당 필기만으로 ①을 틀린 보기로 확정할 수 없습니다.",
-        "limitations": "공식 정답표는 ①이나 TTF-1은 폐뿐 아니라 갑상선에서도 발현됩니다. 첨부 강의안의 해당 필기만으로 ①을 틀린 보기로 확정할 수 없습니다.",
+        "reason": "운영자 지정 채점 기준",
+        "limitations": "",
         "checks": [
           {
             "pass": 1,
@@ -17353,70 +17354,6 @@
             "pass": 2,
             "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
             "result": "matched"
-          }
-        ],
-        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
-      },
-      "gradingLabel": "채점 보류 · 서술형 수동 채점"
-    },
-    {
-      "id": "park-murim:22-주2",
-      "label": "22-주2",
-      "year": 22,
-      "number": 1002,
-      "subject": "hematology-1",
-      "professor": "park-murim",
-      "type": "short",
-      "prompt": "종양 용해 증후군이 1) 잘 발생하는 cancer 종류(2가지 이상), 2) 검사실 소견(laboratory findings)을 쓰세요.",
-      "choices": [],
-      "source": {
-        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
-        "page": 6,
-        "image": "assets/questions/2025-class22/70.webp"
-      },
-      "figureRequired": false,
-      "figureImages": [],
-      "showOriginalByDefault": false,
-      "transcriptionStatus": "manual_visual_transcription_v126",
-      "transcriptionWarning": "객관식 정답표에는 주관식 정답이 없으므로 자동 채점을 보류합니다.",
-      "answer": null,
-      "answerSource": "unconfirmed_subjective",
-      "explanation": "주관식 문항의 공식 모범답안은 제공된 시험지 마지막 정답표에 없습니다. 강의안의 관련 개념을 바탕으로 학습하되 채점은 보류합니다.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "validation": {
-        "stage": "audit_review",
-        "check1": "same_professor_source_not_found",
-        "check2": "missing",
-        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
-        "decisionReason": "첨부 박무림 교수님 강의안에서 종양용해증후군의 암종과 검사실 소견을 직접 설명한 페이지를 확보하지 못했습니다. 이승신 교수님 자료를 대신 붙이지 않았습니다."
-      },
-      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
-      "unitTitle": "종양수반증후군",
-      "unitId": "360fde4c07d1",
-      "gradingMode": "manual",
-      "aiExplanation": "",
-      "lectureAudit": {
-        "version": "1.1.6",
-        "date": "2026-11-12",
-        "status": "missing",
-        "professor": "park-murim",
-        "gradingHold": false,
-        "answerRevised": false,
-        "referenceAnswer": null,
-        "previousAnswerSource": "unconfirmed_subjective",
-        "reason": "첨부 박무림 교수님 강의안에서 종양용해증후군의 암종과 검사실 소견을 직접 설명한 페이지를 확보하지 못했습니다. 이승신 교수님 자료를 대신 붙이지 않았습니다.",
-        "limitations": "첨부 박무림 교수님 강의안에서 종양용해증후군의 암종과 검사실 소견을 직접 설명한 페이지를 확보하지 못했습니다. 이승신 교수님 자료를 대신 붙이지 않았습니다.",
-        "checks": [
-          {
-            "pass": 1,
-            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
-            "result": "not_located"
-          },
-          {
-            "pass": 2,
-            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
-            "result": "missing"
           }
         ],
         "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"

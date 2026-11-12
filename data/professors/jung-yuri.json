@@ -176,9 +176,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "출제 의도는 ②로 보이지만 “수술 후 반드시 방사선”은 선택된 고령·저위험군 생략 예외와 충돌합니다. 4 cm라는 절대 경계도 일반 기준으로 확정하기 어려워 문구를 보존하고 미확정으로 둡니다.",
+      "answer": 2,
+      "answerSource": "owner_confirmed_1_1_7",
+      "explanation": "유방보존술 후 방사선치료를 설명하려는 출제 의도에 따라 ②로 채점합니다. 종양 크기 4 cm를 일률적 기준으로 적용하거나 모든 환자에게 수술 후 방사선치료가 필수라고 일반화하기는 어렵습니다.",
       "candidateEvidence": [],
       "evidence": [
         {
@@ -258,11 +258,11 @@
         }
       ],
       "validation": {
-        "stage": "audit_review",
+        "stage": "user_confirmed",
         "check1": "professor_and_source_page_reconciled",
         "check2": "conflict",
         "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
-        "decisionReason": "출제 의도는 ②로 보이지만 “수술 후 반드시 방사선”은 선택된 고령·저위험군 생략 예외와 충돌합니다. 4 cm라는 절대 경계도 일반 기준으로 확정하기 어려워 문구를 보존하고 미확정으로 둡니다."
+        "decisionReason": "운영자 지정 채점 기준"
       },
       "transcriptionStatus": "full_user_supplied_options",
       "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
@@ -272,16 +272,16 @@
       "aiExplanation": "",
       "choiceExplanations": {},
       "lectureAudit": {
-        "version": "1.1.6",
+        "version": "1.1.7",
         "date": "2026-11-12",
-        "status": "conflict",
+        "status": "owner",
         "professor": "jung-yuri",
-        "gradingHold": true,
-        "answerRevised": false,
+        "gradingHold": false,
+        "answerRevised": true,
         "referenceAnswer": null,
         "previousAnswerSource": "pending",
-        "reason": "출제 의도는 ②로 보이지만 “수술 후 반드시 방사선”은 선택된 고령·저위험군 생략 예외와 충돌합니다. 4 cm라는 절대 경계도 일반 기준으로 확정하기 어려워 문구를 보존하고 미확정으로 둡니다.",
-        "limitations": "출제 의도는 ②로 보이지만 “수술 후 반드시 방사선”은 선택된 고령·저위험군 생략 예외와 충돌합니다. 4 cm라는 절대 경계도 일반 기준으로 확정하기 어려워 문구를 보존하고 미확정으로 둡니다.",
+        "reason": "운영자 지정 채점 기준",
+        "limitations": "",
         "checks": [
           {
             "pass": 1,

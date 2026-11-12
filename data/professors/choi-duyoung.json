@@ -2356,9 +2356,9 @@
         }
       ],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "user_confirmed",
-      "explanation": "원본 이미지에서 누락된 ① rituximab을 복원했습니다. 그러나 13-cis-retinoic acid와 etoposide 모두 신경모세포종 치료에 쓰일 수 있고 치료 단계 조건이 없어 단일 정답 ③은 확정하지 않습니다.",
+      "answer": 3,
+      "answerSource": "owner_confirmed_1_1_7",
+      "explanation": "최두영 교수님 강의안의 신경모세포종 치료에서 분화치료 약제로 제시된 13-cis-retinoic acid에 해당하는 ③을 채택했습니다.",
       "candidateEvidence": [],
       "evidence": [
         {
@@ -2378,11 +2378,11 @@
         }
       ],
       "validation": {
-        "stage": "audit_review",
+        "stage": "user_confirmed",
         "check1": "professor_and_source_page_reconciled",
         "check2": "conflict",
         "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
-        "decisionReason": "원본 이미지에서 누락된 ① rituximab을 복원했습니다. 그러나 13-cis-retinoic acid와 etoposide 모두 신경모세포종 치료에 쓰일 수 있고 치료 단계 조건이 없어 단일 정답 ③은 확정하지 않습니다."
+        "decisionReason": "운영자 지정 채점 기준"
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
@@ -2392,16 +2392,16 @@
       "aiExplanation": "",
       "choiceExplanations": {},
       "lectureAudit": {
-        "version": "1.1.6",
+        "version": "1.1.7",
         "date": "2026-11-12",
-        "status": "conflict",
+        "status": "owner",
         "professor": "choi-duyoung",
-        "gradingHold": true,
-        "answerRevised": false,
+        "gradingHold": false,
+        "answerRevised": true,
         "referenceAnswer": 3,
         "previousAnswerSource": "user_confirmed",
-        "reason": "원본 이미지에서 누락된 ① rituximab을 복원했습니다. 그러나 13-cis-retinoic acid와 etoposide 모두 신경모세포종 치료에 쓰일 수 있고 치료 단계 조건이 없어 단일 정답 ③은 확정하지 않습니다.",
-        "limitations": "원본 이미지에서 누락된 ① rituximab을 복원했습니다. 그러나 13-cis-retinoic acid와 etoposide 모두 신경모세포종 치료에 쓰일 수 있고 치료 단계 조건이 없어 단일 정답 ③은 확정하지 않습니다.",
+        "reason": "운영자 지정 채점 기준",
+        "limitations": "",
         "checks": [
           {
             "pass": 1,
@@ -2456,9 +2456,9 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "user_confirmed",
-      "explanation": "기출 전사 ⑤ “뼈에 발생한다”는 Ewing sarcoma에 맞는 설명입니다. 신경계 유래와 발생 부위를 혼동해서 ⑤를 오답으로 볼 수 없으므로 원본 표현을 추가 확인합니다.",
+      "answer": 5,
+      "answerSource": "owner_confirmed_1_1_7",
+      "explanation": "⑤의 “뼈에 발생한다”를 “뼈 조직에서 기원한다”는 취지로 적은 것으로 해석해 ⑤로 채점합니다. 발생 부위와 조직 기원은 구분해야 하며, 원래 문구 그대로라면 뼈에 발생할 수 있습니다.",
       "candidateEvidence": [],
       "evidence": [
         {
@@ -2493,11 +2493,11 @@
         }
       ],
       "validation": {
-        "stage": "audit_review",
+        "stage": "user_confirmed",
         "check1": "professor_and_source_page_reconciled",
         "check2": "conflict",
         "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
-        "decisionReason": "기출 전사 ⑤ “뼈에 발생한다”는 Ewing sarcoma에 맞는 설명입니다. 신경계 유래와 발생 부위를 혼동해서 ⑤를 오답으로 볼 수 없으므로 원본 표현을 추가 확인합니다."
+        "decisionReason": "운영자 지정 채점 기준"
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
@@ -2507,16 +2507,16 @@
       "aiExplanation": "",
       "choiceExplanations": {},
       "lectureAudit": {
-        "version": "1.1.6",
+        "version": "1.1.7",
         "date": "2026-11-12",
-        "status": "conflict",
+        "status": "owner",
         "professor": "choi-duyoung",
-        "gradingHold": true,
-        "answerRevised": false,
+        "gradingHold": false,
+        "answerRevised": true,
         "referenceAnswer": 5,
         "previousAnswerSource": "user_confirmed",
-        "reason": "기출 전사 ⑤ “뼈에 발생한다”는 Ewing sarcoma에 맞는 설명입니다. 신경계 유래와 발생 부위를 혼동해서 ⑤를 오답으로 볼 수 없으므로 원본 표현을 추가 확인합니다.",
-        "limitations": "기출 전사 ⑤ “뼈에 발생한다”는 Ewing sarcoma에 맞는 설명입니다. 신경계 유래와 발생 부위를 혼동해서 ⑤를 오답으로 볼 수 없으므로 원본 표현을 추가 확인합니다.",
+        "reason": "운영자 지정 채점 기준",
+        "limitations": "",
         "checks": [
           {
             "pass": 1,
@@ -3111,7 +3111,7 @@
       "subject": "hematology-1",
       "professor": "choi-duyoung",
       "type": "choice",
-      "prompt": "횡문근육종에 대한 올바른 설명은?",
+      "prompt": "횡문 근육종에 대한 올바른 설명은?",
       "choices": [
         {
           "number": 1,
@@ -3119,11 +3119,11 @@
         },
         {
           "number": 2,
-          "text": "연장아는 사지에 많이 발생한다."
+          "text": "사춘기에는 비뇨생식기에 호발한다."
         },
         {
           "number": 3,
-          "text": "Alveolar type은 예후가 가장 좋다."
+          "text": "폐포형(alveolar)은 예후가 불량하다."
         },
         {
           "number": 4,
@@ -3143,8 +3143,8 @@
       "figureImages": [],
       "showOriginalByDefault": false,
       "answer": 2,
-      "answerSource": "lecture_audit_1_1_6",
-      "explanation": "연장아에서 사지에 호발한다는 ②가 맞습니다. 폐포형(alveolar)은 예후가 가장 나쁜 형으로 제시되어 기존 정답 ③의 “가장 좋다”는 틀립니다. 횡문근 기원·예후 연령·방사선치료도 나머지 보기와 대조했습니다.",
+      "answerSource": "owner_confirmed_1_1_7",
+      "explanation": "제보에서 지정한 채점 정답은 ②입니다. 수정된 ③도 강의안의 폐포형 예후 설명에 부합하므로, 선택지 문구와 지정 답안 사이에 충돌이 남아 있습니다.",
       "candidateEvidence": [],
       "evidence": [
         {
@@ -3194,11 +3194,11 @@
         }
       ],
       "validation": {
-        "stage": "accepted",
+        "stage": "user_confirmed",
         "check1": "professor_and_source_page_reconciled",
         "check2": "matched",
         "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
-        "decisionReason": "연장아에서 사지에 호발한다는 ②가 맞습니다. 폐포형(alveolar)은 예후가 가장 나쁜 형으로 제시되어 기존 정답 ③의 “가장 좋다”는 틀립니다. 횡문근 기원·예후 연령·방사선치료도 나머지 보기와 대조했습니다."
+        "decisionReason": "운영자 지정 채점 기준"
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
@@ -3208,15 +3208,15 @@
       "aiExplanation": "",
       "choiceExplanations": {},
       "lectureAudit": {
-        "version": "1.1.6",
+        "version": "1.1.7",
         "date": "2026-11-12",
-        "status": "matched",
+        "status": "owner",
         "professor": "choi-duyoung",
         "gradingHold": false,
         "answerRevised": true,
         "referenceAnswer": 3,
         "previousAnswerSource": "user_confirmed",
-        "reason": "연장아에서 사지에 호발한다는 ②가 맞습니다. 폐포형(alveolar)은 예후가 가장 나쁜 형으로 제시되어 기존 정답 ③의 “가장 좋다”는 틀립니다. 횡문근 기원·예후 연령·방사선치료도 나머지 보기와 대조했습니다.",
+        "reason": "운영자 지정 채점 기준",
         "limitations": "",
         "checks": [
           {

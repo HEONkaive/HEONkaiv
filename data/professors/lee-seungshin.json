@@ -2323,6 +2323,87 @@
         "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       },
       "gradingLabel": "채점 보류 · 서술형 수동 채점"
+    },
+    {
+      "id": "park-murim:22-주2",
+      "label": "22-주2",
+      "year": 22,
+      "number": 1002,
+      "subject": "hematology-1",
+      "professor": "lee-seungshin",
+      "type": "short",
+      "prompt": "종양 용해 증후군이 1) 잘 발생하는 cancer 종류(2가지 이상), 2) 검사실 소견(laboratory findings)을 쓰세요.",
+      "choices": [],
+      "source": {
+        "name": "22_혈액과종양1차_종양학_문제,정답.pdf",
+        "page": 6,
+        "image": "assets/questions/2025-class22/70.webp"
+      },
+      "figureRequired": false,
+      "figureImages": [],
+      "showOriginalByDefault": false,
+      "transcriptionStatus": "manual_visual_transcription_v126",
+      "transcriptionWarning": "객관식 정답표에는 주관식 정답이 없으므로 자동 채점을 보류합니다.",
+      "answer": "버킷 림프종, 급성 림프모구백혈병(ALL), 그 밖의 고등급 림프종 중 2가지 이상 / 고요산혈증, 고칼륨혈증, 고인산혈증, 저칼슘혈증",
+      "answerSource": "owner_confirmed_1_1_7",
+      "explanation": "이승신 교수님 종양학적 응급질환 강의안 PDF 35쪽의 종양용해증후군 호발 암종과 검사실 소견입니다. 주관식은 수동으로 채점합니다.",
+      "evidence": [
+        {
+          "lectureId": "audit116-lee-seungshin-2026-종양학적 응급질환 — 증례토의",
+          "lectureOwner": "이승신 교수님",
+          "professor": "lee-seungshin",
+          "file": "이승신pf_261112_혈액과종양_종양학적 응급질환-증례토의.pdf.pdf",
+          "page": 35,
+          "image": "assets/evidence/audit-1.1.6/lee-seungshin/p035.webp",
+          "quote": "",
+          "lectureTitle": "종양학적 응급질환 — 증례토의",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "이승신pf_261112_혈액과종양_종양학적 응급질환-증례토의.pdf.pdf",
+          "sourcePage": 35,
+          "sourceSha256": "e253dc7f938b8b1a48d60ce660c863bd64cb44baf7c0df9eacc1ec47e2a0e956"
+        }
+      ],
+      "candidateEvidence": [],
+      "validation": {
+        "stage": "user_confirmed",
+        "check1": "same_professor_source_located",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "이승신 교수님 종양학적 응급질환 강의안 PDF 35쪽의 종양용해증후군 호발 암종과 검사실 소견입니다. 주관식은 수동으로 채점합니다."
+      },
+      "notes": "정답표 출처와 강의안 이중검정을 혼동하지 않음. 교수님 소속이 추정으로 표시된 경우 확인 가능.",
+      "unitTitle": "종양학적 응급질환",
+      "unitId": "4806492b3ba4",
+      "gradingMode": "manual",
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.7",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seungshin",
+        "gradingHold": false,
+        "answerRevised": true,
+        "referenceAnswer": null,
+        "previousAnswerSource": "unconfirmed_subjective",
+        "reason": "운영자 지정 채점 기준",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "not_located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "missing"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      },
+      "gradingLabel": "채점 보류 · 서술형 수동 채점",
+      "choiceExplanations": {}
     }
   ]
 }

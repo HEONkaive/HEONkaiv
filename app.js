@@ -9,7 +9,7 @@
   const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
   const circles = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
   const TALLY_FORM_ID = '6DjZg5';
-  const PUBLIC_VERSION = '1.1.6';
+  const PUBLIC_VERSION = '1.1.7';
   const PUBLIC_RELEASE_DATE = '2026-11-12';
   const LEADERBOARD_IMAGE_BY_RANK = {1:'assets/ui/rank-first.png',2:'assets/ui/rank-second.png',3:'assets/ui/rank-third.png'};
   // Keep the underlying provenance, but omit internal answer-approval workflow from study copy.
@@ -563,7 +563,11 @@
   function professorCourseStats(meta,loaded) {
     if (loaded) { const qs=(loaded.questions||[]).filter(q=>!q.isPrediction); const a=stats(qs,'professor'); return {...a, unresolved:qs.filter(q=>effectiveAnswer(q)==null).length}; }
     const total=Number(meta.questionCount)||0;
-    const completed=Object.entries(state.records).filter(([id,r])=>id.startsWith(meta.id+':') && r?.submitted).length;
+    const movedQuestionId = 'park-murim:22-주2';
+    const completed=Object.entries(state.records).filter(([id,r])=>{
+      const owner=id===movedQuestionId?'lee-seungshin':id.split(':')[0];
+      return owner===meta.id && r?.submitted;
+    }).length;
     return {total,completed,unresolved:Number(meta.pendingCount)||0};
   }
   function professorCourseStage(meta,loaded) {
@@ -842,8 +846,7 @@
             <nav class="quick-nav" aria-label="빠른 메뉴">
               <button data-action="nav-quiz" class="nav-tab ${view==='quiz'?'active':''}">문제 풀이</button>
               <button data-action="home" class="nav-tab ${view==='home'?'active':''}">문제집</button>
-              <button data-action="nav-wrong" class="nav-tab ${view==='review'&&reviewFilter==='wrong'?'active':''}">오답 노트</button><button data-action="save-collection-pdf" data-kind="wrong" class="nav-tab print-nav" title="틀린 문제를 PDF 파일로 저장">오답 PDF 저장</button><button data-action="save-collection-pdf" data-kind="bookmarks" class="nav-tab print-nav" title="북마크를 PDF 파일로 저장">북마크 PDF 저장</button><button class="nav-tab report-nav" data-action="report-popup" title="문항 번호와 설명, 10MB 이하 이미지 파일을 첨부해 오류를 제보할 수 있어요">✎ 오류 제보하기</button>
-              <button data-action="nav-due" class="nav-tab ${view==='review'&&reviewFilter==='due'?'active':''}">스마트 복습${currentProfessor?` ${dueReviewCount()}`:''}</button>
+              <button data-action="nav-wrong" class="nav-tab ${view==='review'&&reviewFilter==='wrong'?'active':''}">오답 노트</button><button data-action="nav-bookmarks" class="nav-tab ${view==='review'&&reviewFilter==='bookmarks'?'active':''}">북마크</button><button class="nav-tab report-nav" data-action="report-popup" title="문항 번호와 설명, 10MB 이하 이미지 파일을 첨부해 오류를 제보할 수 있어요">✎ 오류 제보하기</button>
               <button data-action="nav-stats" class="nav-tab ${view==='review'&&reviewFilter!=='wrong'?'active':''}">학습 통계</button>
             </nav>
           </div>
@@ -895,7 +898,7 @@
     const percentage=s.total ? Math.round(s.completed/s.total*100) : 0;
     const subjectTitle=({ 'hematology-1':'HEMATOLOGY I', 'hematology-2':'HEMATOLOGY II', 'maternal-newborn':'MATERNAL · NEWBORN', 'growth-aging':'GROWTH · AGING' })[currentProfessor.professor.subjectId]||'MEDICAL';
     return `<div class="course-header compact-course-header"><div class="course-identity"><div class="eyebrow">${studyMode==='prediction'?'AI GENERATED PRACTICE · NOT PAST EXAMS':esc(subjectTitle)+' · EXAM LIBRARY'}</div><div class="course-title-line"><h1>${esc(currentProfessor.professor.name)}${['prediction','unit','year-exam'].includes(studyMode)?'':' 교수님'}</h1><p>${esc(currentProfessor.professor.description||'교수님별 기출 문제')} &nbsp; / &nbsp; 연도별 또는 전체 문항 풀이</p></div></div>
-      <div class="course-header-right"><div class="header-pills"><span class="pill blue">${s.total}문제</span><span class="pill ok">근거 검증 ${verified}건</span>${manual?`<span class="pill blue">정답 확인 ${manual}건</span>`:''}<span class="pill warn">미확정 ${pending}건</span><button class="button secondary small" data-action="open-review">Review ↗</button></div>
+      <div class="course-header-right"><div class="header-pills"><span class="pill blue">${s.total}문제</span><span class="pill ok">근거 검증 ${verified}건</span>${manual?`<span class="pill blue">정답 확인 ${manual}건</span>`:''}<button type="button" class="pill warn unresolved-button" data-action="nav-unresolved">미확정 ${pending}건</button><button class="button secondary small" data-action="open-review">Review ↗</button></div>
       <div class="header-study-controls"><div class="study-progress" aria-label="${esc(currentProfessor.professor.name)} 교수님 학습 진행률 ${percentage}%"><span>진행률</span><div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${percentage}" aria-label="교수님별 진행률"><div class="progress-fill ${s.total&&s.completed===s.total?'done':''}" style="width:${percentage}%"></div></div><strong>${percentage}%</strong></div>
         <button class="study-reset" data-action="${studyMode==='unit'?'reset-unit':'reset-professor'}" title="${esc(currentProfessor.professor.name)} ${studyMode==='unit'?'단원':'교수님'} 기록만 초기화 · 다른 교수님 기록 유지" aria-label="${esc(currentProfessor.professor.name)} 교수님 학습 기록 초기화">↺ <span>기록 초기화</span></button></div></div>
     </div>`;
@@ -1020,7 +1023,7 @@
     </aside>`;
   }
   function lectureAuditLabel(q) {
-    return {matched:'✓ 검증 완료',partial:'◐ 관련 근거 확인 · 일부 검토 필요',missing:'! 같은 교수님 강의안 근거 미확보',conflict:'! 문항·정답 충돌 · 채점 보류'}[q.lectureAudit?.status]||'근거 재검토';
+    return {matched:'✓ 검증 완료',owner:'운영자 지정 답안',partial:'◐ 관련 근거 확인 · 일부 검토 필요',missing:'! 같은 교수님 강의안 근거 미확보',conflict:'! 문항·정답 충돌 · 채점 보류'}[q.lectureAudit?.status]||'근거 재검토';
   }
   function lecturePageLabel(e) {
     return `${e.pageBasis?.startsWith('단원')?'단원':'PDF'} ${e.page}쪽`;
@@ -1040,6 +1043,7 @@
     return `<aside class="evidence-panel"><div class="evidence-head"><div><div class="evidence-kicker">EVIDENCE & EXPLANATION</div><h3>정답 근거 및 해설</h3></div><button class="icon-btn" data-action="toggle-evidence" title="해설 접기">✕</button></div>
       <div class="question-meta" style="margin-top:12px"><span class="pill ${matched?'ok':'warn'}">${esc(lectureAuditLabel(q))}</span>${q.type==='short'?'<span class="pill blue">채점 보류 · 서술형 수동 채점</span>':''}</div>
       ${answer!=null?`<div class="result-box ${matched&&!custom?'correct':'pending'}"><b>${esc(title)}</b><p>${esc(auditAnswerText(q,answer))}</p></div>`:'<div class="review-note">정답 미확정 · 이 문항은 자동으로 정답·오답을 판정하지 않습니다.</div>'}
+      ${q.explanationNotice?`<p class="review-note">${esc(q.explanationNotice)}</p>`:''}
       ${q.explanation?`<p class="evidence-explanation">${esc(q.explanation)}</p>`:''}
       ${audit.limitations&&audit.limitations!==explain?`<p class="review-note"><b>근거의 한계</b> · ${esc(audit.limitations)}</p>`:''}
       ${audit.reason&&audit.reason!==explain&&audit.reason!==audit.limitations&&!audit.reason.startsWith('같은 교수님 강의안')?`<p class="review-note">${esc(audit.reason)}</p>`:''}
@@ -1049,7 +1053,7 @@
       ${refs.map(e=>`<article class="evidence-item"><div class="evidence-meta"><span class="file-page">${esc(lecturePageLabel(e))} · ${esc(e.lectureYear)}년</span><p class="file-name">${esc(e.file)}</p><p class="fine">${esc(e.lectureOwner)} · ${esc(e.pageBasis)}</p></div><img class="evidence-image" src="${esc(e.image)}" alt="${esc(e.lectureTitle)} · ${esc(lecturePageLabel(e))}" loading="lazy" data-action="zoom" data-caption="${esc(e.file)} · ${esc(lecturePageLabel(e))}"><div class="zoom-label">이미지를 누르면 확대됩니다 ⤢</div></article>`).join('')||'<div class="empty" style="padding:21px">첨부된 같은 교수님 자료에서 직접 근거를 확보하지 못했습니다.</div>'}
       ${q.answerKey?.image?`<details class="source-card exam-answer-key"><summary>기출 공식 정답표 원본 · 강의안 검토와 구분</summary><img class="source-image" src="${esc(q.answerKey.image)}" alt="기출 공식 정답표" loading="lazy" data-action="zoom" data-caption="기출 공식 정답표"></details>`:''}
       ${!q.answerKey&&!audit.gradingHold&&!audit.answerRevised&&!matched?`<section class="user-answer"><h4>직접 정답 지정</h4><p>개인 지정 답안은 강의안 검증 결과와 별개입니다.${q.type==='short'?' 주관식은 지정해도 수동채점을 유지합니다.':''}</p>${q.type==='short'?`<input class="search" id="custom-short" type="text" placeholder="참고답안 입력" value="${esc(custom?String(answer):'')}" style="width:100%;margin-bottom:8px"><button class="button small secondary" data-action="save-custom-short">정답 저장</button>`:`<div class="custom-answers">${(q.choices||[]).map(c=>`<button class="number-pill ${(Array.isArray(answer)?answer:[answer]).includes(c.number)?'active':''}" data-action="custom-answer" data-number="${c.number}">${circles[c.number-1]||c.number}</button>`).join('')}</div><label class="fine"><input type="checkbox" data-action="custom-multi" ${state.customMulti[q.id]?'checked':''}> 복수 정답 지정</label>`}${custom?'<button class="button ghost tiny" data-action="remove-custom">내 지정 정답 해제</button>':''}</section>`:''}
-      <details class="question-audit-history"><summary>재검토 기록 · v1.1.6</summary><p>1차: 같은 교수님·단원·연도·근거 위치 대조. 2차: 선택지와 정답·전사 및 근거의 충분성 재검토.</p><p>동일 AI가 두 차례 검토했습니다. 부분 근거나 충돌이 남은 문항은 검증 완료로 표시하지 않습니다.</p></details>
+      <details class="question-audit-history"><summary>재검토 기록 · ${esc(audit.version)}</summary><p>1차: 같은 교수님·단원·연도·근거 위치 대조. 2차: 선택지와 정답·전사 및 근거의 충분성 재검토.</p><p>동일 AI가 두 차례 검토했습니다. 부분 근거나 충돌이 남은 문항은 검증 완료로 표시하지 않습니다.</p></details>
     </aside>`;
   }
 
@@ -1091,17 +1095,17 @@
       ${imgs.map(f=>`<img class="review-detail-figure" src="${esc(f.src||f.image)}" alt="${esc(f.alt||'문제 원본')}" loading="lazy" data-action="zoom" data-caption="${esc(f.caption||q.label+' 문제 원본')}"/>`).join('')}
       ${q.type==='short'?`<div class="review-readonly-choice"><b>내 답안</b> ${esc(chosen.join('')||'미제출')}</div>`:`<div class="review-readonly-choices">${(q.choices||[]).map(ch=>`<div class="review-readonly-choice ${answerArr.includes(ch.number)?'correct':chosen.includes(ch.number)?'wrong':''}"><span>${circles[ch.number-1]||ch.number}</span>${esc(ch.text)} ${answerArr.includes(ch.number)?' ✓ 정답':''}${chosen.includes(ch.number)?' · 내 선택':''}</div>`).join('')}</div>`}
       <div class="review-key-line"><strong>정답: ${esc(answerText)}</strong> <span>내 답안: ${esc(chosen.length?chosen.map(n=>typeof n==='number'?(circles[n-1]||n):String(n)).join(', '):'미제출')}</span></div>
-      <section class="review-detail-explanation"><h3>해설 및 근거</h3>${q.lectureAudit?`<p class="review-note">${esc(lectureAuditLabel(q))}${q.lectureAudit.limitations?' · '+esc(q.lectureAudit.limitations):''}</p>`:''}<p>${esc(q.explanation||'등록된 해설이 없습니다. 관련 강의안과 기출 원본을 직접 대조해야 합니다.')}</p>${studyAiExplanation(q)?`<div class="ai-study-explanation"><b>✦ AI 학습 보충 (검증된 강의안과 구분)</b><p>${esc(studyAiExplanation(q))}</p></div>`:''}
+      <section class="review-detail-explanation"><h3>해설 및 근거</h3>${q.explanationNotice?`<p class="review-note">${esc(q.explanationNotice)}</p>`:''}${q.lectureAudit?`<p class="review-note">${esc(lectureAuditLabel(q))}${q.lectureAudit.limitations?' · '+esc(q.lectureAudit.limitations):''}</p>`:''}<p>${esc(q.explanation||'등록된 해설이 없습니다. 관련 강의안과 기출 원본을 직접 대조해야 합니다.')}</p>${studyAiExplanation(q)?`<div class="ai-study-explanation"><b>✦ AI 학습 보충 (검증된 강의안과 구분)</b><p>${esc(studyAiExplanation(q))}</p></div>`:''}
       ${refs.map(e=>`<div class="review-evidence-card"><small>${q.validation?.stage==='accepted'?'채택된 강의안 근거':'검토용 강의안 · 미채택'} · ${esc(e.file||'')} · ${esc(e.pageBasis?lecturePageLabel(e):'PDF '+e.page+'쪽')}</small><img src="${esc(e.image||'')}" alt="${esc(e.file||'강의안')} ${esc(e.page||'')}쪽" loading="lazy" data-action="zoom" data-caption="${esc(e.file||'')} · PDF ${esc(e.page)}쪽"/></div>`).join('')}
       ${choiceReasonList(q)}${renderExplanationImages(q)}${questionAuditHTML(q)}${q.answerKey?.image?`<details class="source-card exam-answer-key"><summary>시험지 마지막 PDF 7페이지 정답표 (원본 보기)</summary><img class="source-image" src="${esc(q.answerKey.image)}" alt="공식 정답표" loading="lazy" data-action="zoom" data-caption="22학번 기출 공식 정답표 · 7페이지"/></details>`:''}
       ${q.source?.image?`<details class="source-card"><summary>기출 원본 확인</summary><img class="source-image" src="${esc(q.source.image)}" alt="기출 원본" loading="lazy" data-action="zoom" data-caption="${esc(q.label)} 원본"/></details>`:''}</section></article>`;
   }
   function renderReview() {
     const all=questions(),s=stats(all),icons={correct:'✓',wrong:'✕',pending:'!', 'not-started':'–'};
-    const list=all.filter(q=>reviewFilter==='wrong'?evaluation(q)==='wrong':reviewFilter==='pending'?evaluation(q)==='pending'||effectiveAnswer(q)==null:reviewFilter==='bookmarks'?isBookmark(q):reviewFilter==='due'?isDueForReview(q):true);
+    const list=all.filter(q=>reviewFilter==='wrong'?evaluation(q)==='wrong':reviewFilter==='unresolved'?effectiveAnswer(q)==null:reviewFilter==='pending'?evaluation(q)==='pending'||effectiveAnswer(q)==null:reviewFilter==='bookmarks'?isBookmark(q):reviewFilter==='due'?isDueForReview(q):true);
     if(!list.some(q=>q.id===selectedReviewId))selectedReviewId=list[0]?.id||null;
     const focus=list.find(q=>q.id===selectedReviewId);
-    return `${renderCourseHeader()}<div class="review-compact-title"><div><div class="eyebrow">${studyMode==='year-exam'?'YEAR EXAM RESULTS':'LEARNING REVIEW'}</div><h1>${studyMode==='year-exam'?esc(selectedExamYear)+'학번 시험 결과':'최종 Review'}</h1><p>문제 번호를 누르면 오른쪽에 지문·정답·내 선택·해설·강의안 근거가 표시됩니다.</p></div><div class="review-export-actions">${studyMode==='year-exam'&&canUseLeaderboard(selectedSubject,selectedExamYear)&&stats(questions(),'year-exam').completed===questions().length?'<button class="button small" data-action="enter-leaderboard">🏆 리더보드 참가</button>':''}<button class="button secondary small" data-action="save-collection-pdf" data-kind="wrong">오답 PDF 저장</button><button class="button secondary small" data-action="save-collection-pdf" data-kind="bookmarks">북마크 PDF 저장</button><button class="button secondary small" data-action="back-quiz">← 문제풀이로 돌아가기</button></div></div>
+    return `${renderCourseHeader()}<div class="review-compact-title"><div><div class="eyebrow">${studyMode==='year-exam'?'YEAR EXAM RESULTS':'LEARNING REVIEW'}</div><h1>${studyMode==='year-exam'?esc(selectedExamYear)+'학번 시험 결과':({wrong:'오답 노트',bookmarks:'북마크',unresolved:'미확정 문항'}[reviewFilter]||'최종 Review')}</h1><p>문제 번호를 누르면 오른쪽에 지문·정답·내 선택·해설·강의안 근거가 표시됩니다.</p></div><div class="review-export-actions">${studyMode==='year-exam'&&canUseLeaderboard(selectedSubject,selectedExamYear)&&stats(questions(),'year-exam').completed===questions().length?'<button class="button small" data-action="enter-leaderboard">🏆 리더보드 참가</button>':''}${['wrong','bookmarks'].includes(reviewFilter)?`<button class="button secondary small print-nav" data-action="save-collection-pdf" data-kind="${reviewFilter}">${reviewFilter==='wrong'?'오답':'북마크'} PDF 저장</button>`:''}<button class="button secondary small" data-action="back-quiz">← 문제풀이로 돌아가기</button></div></div>
       <div class="review-score-strip">${[['전체',s.total],['제출',s.completed],['정답',s.correct],['오답',s.wrong],['채점 보류',s.pending],['미제출',s.total-s.completed]].map(([name,n])=>`<span>${name} <b>${n}</b></span>`).join('')}</div>
       <div class="review-layout"><aside class="review-number-sidebar"><div class="review-side-heading"><b>문제 번호</b><small>${list.length}문항</small></div><div class="review-side-filters">${[['all','전체'],['wrong','오답'],['pending','보류'],['bookmarks','북마크'],['due','오늘 복습']].map(([f,l])=>`<button class="chip ${reviewFilter===f?'active':''}" data-action="review-filter" data-filter="${f}">${l}</button>`).join('')}</div><div class="review-number-grid">${list.map(q=>{const status=evaluation(q);return `<button class="review-number-button ${status} ${q.id===selectedReviewId?'active':''}" data-action="review-select" data-id="${esc(q.id)}" title="${esc(yearExamTeacherLabel(q.professor))} · ${esc(q.label)} · ${status}" aria-pressed="${q.id===selectedReviewId}"><strong>${studyMode==='year-exam'?(q.type==='short'?esc('주'+q.label.split('주').pop()):esc(String(q.number))):esc(q.label)}</strong><span>${icons[status]}</span>${studyMode==='year-exam'?`<small>${esc(yearExamTeacherLabel(q.professor))}</small>`:''}</button>`}).join('')}</div></aside>
       <section class="review-detail-pane">${focus?renderReviewQuestion(focus):'<div class="empty">선택한 조건에 해당하는 문제가 없습니다.</div>'}</section></div>`;
@@ -1164,8 +1168,7 @@
     const dialog=openPdfDialog(kind);
     try {
       const mode=printRecordsMode();
-      const subj=subjectById(selectedSubject);
-      const metas=subj?.professors||[];
+      const metas=subjectById(selectedSubject)?.professors||[];
       const docs=await Promise.all(metas.map(p=>loadProfessor(p.id).catch(()=>null)));
       let all=docs.flatMap(x=>x?.questions||[]);
       if(mode==='prediction') all=all.filter(q=>q.isPrediction);
@@ -1282,7 +1285,6 @@
       case 'save-collection-pdf':await exportCollection(btn.dataset.kind==='bookmarks'?'bookmarks':'wrong');break;
       case 'report-popup':openReportPopup(btn.dataset.questionId||'');break;
       case 'study-account-open':window.HeonStudyAccount?.open();break;
-      case 'nav-due':{if(!currentProfessor){toast('복습하려면 먼저 교수님 또는 학번별 시험을 선택해주세요.');break;}reviewFilter='due';selectedReviewId=null;view='review';render();break;}
       case 'refresh-leaderboard':await loadSharedLeaderboard(selectedSubject,'22');break;
       case 'enter-leaderboard':await maybeOfferPublicRank();break;
       case 'save-leaderboard-rank':await submitPublicRank(btn);break;
@@ -1312,9 +1314,11 @@
         else{view='quiz';reviewFilter='all';restoringReview=false;infoExpanded=false;render();window.scrollTo(0,0);}
         break;
       }
+      case 'nav-unresolved':
+      case 'nav-bookmarks':
       case 'nav-wrong':{
-        if(!currentProfessor){toast('오답을 보려면 먼저 교수님을 선택해주세요.');break;}
-        reviewFilter='wrong';view='review';restoringReview=false;render();window.scrollTo(0,0);break;
+        if(!currentProfessor){toast('먼저 교수님을 선택해주세요.');break;}
+        reviewFilter=({ 'nav-wrong':'wrong', 'nav-bookmarks':'bookmarks', 'nav-unresolved':'unresolved' })[action];selectedReviewId=null;view='review';restoringReview=false;render();window.scrollTo(0,0);break;
       }
       case 'nav-stats':{
         if(!currentProfessor){toast('학습 통계를 보려면 먼저 교수님을 선택해주세요.');break;}
