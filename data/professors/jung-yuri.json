@@ -46,40 +46,96 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
-      "candidateEvidence": [
+      "answer": 4,
+      "answerSource": "lecture_audit_1_1_6",
+      "explanation": "강의안의 PCI 설명은 SCLC에서 chemotherapy/CCRT 후 완전반응을 얻은 경우를 대상으로 하며 제한병기만으로 한정하지 않습니다. 먼저 PCI 후 원발 치료라는 ①, NSCLC에 일률적으로 시행한다는 ②는 맞지 않습니다. 최근 MRI 추적에 따른 논의는 별도 슬라이드에서 구분합니다.",
+      "candidateEvidence": [],
+      "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 95,
-          "image": "assets/evidence/jung-yuri/radiation2-p095.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 96,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p096.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 96,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         },
         {
-          "lectureId": "yu",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 96,
-          "image": "assets/evidence/jung-yuri/v123-yu-p096.webp",
-          "quote": "SCLC: CCRT 후 치료 반응",
-          "lectureOwner": "정유리 교수님 강의안"
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 98,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p098.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 98,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 99,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p099.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 99,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
-      "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "강의안의 PCI 설명은 SCLC에서 chemotherapy/CCRT 후 완전반응을 얻은 경우를 대상으로 하며 제한병기만으로 한정하지 않습니다. 먼저 PCI 후 원발 치료라는 ①, NSCLC에 일률적으로 시행한다는 ②는 맞지 않습니다. 최근 MRI 추적에 따른 논의는 별도 슬라이드에서 구분합니다."
       },
       "transcriptionStatus": "full_user_supplied_options",
-      "transcriptionWarning": "사용자 제공 17학번 원문으로 선택지를 보완했습니다. 강의안은 제한병기/확장병기에서 PCI 적용 기준이 달라질 수 있으므로 단일 정답은 미확정입니다.",
-      "notes": "선택지 복구 완료. 사용자 지정 정답이 없으므로 강의안 검증 전까지 정답 검토 필요.",
+      "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
+      "notes": "",
       "unitTitle": "방사선치료 2",
       "unitId": "cd5ca72686ac",
-      "aiExplanation": "이 문항(17-52)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음 중 폐암의 prophylactic cranial irradiation (PCI)에 대한 설명 중 옳은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "",
+      "choiceExplanations": {},
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": true,
+        "referenceAnswer": null,
+        "previousAnswerSource": "pending",
+        "reason": "강의안의 PCI 설명은 SCLC에서 chemotherapy/CCRT 후 완전반응을 얻은 경우를 대상으로 하며 제한병기만으로 한정하지 않습니다. 먼저 PCI 후 원발 치료라는 ①, NSCLC에 일률적으로 시행한다는 ②는 맞지 않습니다. 최근 MRI 추적에 따른 논의는 별도 슬라이드에서 구분합니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "jung-yuri:17-53",
@@ -122,37 +178,124 @@
       "showOriginalByDefault": false,
       "answer": null,
       "answerSource": "pending",
-      "explanation": "",
-      "candidateEvidence": [
+      "explanation": "출제 의도는 ②로 보이지만 “수술 후 반드시 방사선”은 선택된 고령·저위험군 생략 예외와 충돌합니다. 4 cm라는 절대 경계도 일반 기준으로 확정하기 어려워 문구를 보존하고 미확정으로 둡니다.",
+      "candidateEvidence": [],
+      "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 50,
-          "image": "assets/evidence/jung-yuri/radiation2-p050.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 43,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p043.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 43,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         },
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 55,
-          "image": "assets/evidence/jung-yuri/radiation2-p055.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 44,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p044.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 44,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 45,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p045.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 45,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 47,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p047.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 47,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 48,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p048.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 48,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
-      "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "conflict",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "출제 의도는 ②로 보이지만 “수술 후 반드시 방사선”은 선택된 고령·저위험군 생략 예외와 충돌합니다. 4 cm라는 절대 경계도 일반 기준으로 확정하기 어려워 문구를 보존하고 미확정으로 둡니다."
       },
       "transcriptionStatus": "full_user_supplied_options",
-      "transcriptionWarning": "장문 선지 원문을 사용자 제공 자료로 보완했습니다. 강의안 PDF 50·55쪽 참고; 보존수술의 절대 조건/방사선치료 적응증의 단정적 서술은 추가 검토 필요합니다.",
-      "notes": "선택지 복구 완료. 본 문제와 박무림 교수님 17-53번은 같은 번호이지만 지문이 다릅니다. 자동 병합 금지.",
+      "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
+      "notes": "",
       "unitTitle": "방사선치료 2",
       "unitId": "cd5ca72686ac",
-      "aiExplanation": "이 문항(17-53)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 다음은 유방암의 치료와 관련된 설명이다. 다음 설명 중 옳은 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "",
+      "choiceExplanations": {},
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "conflict",
+        "professor": "jung-yuri",
+        "gradingHold": true,
+        "answerRevised": false,
+        "referenceAnswer": null,
+        "previousAnswerSource": "pending",
+        "reason": "출제 의도는 ②로 보이지만 “수술 후 반드시 방사선”은 선택된 고령·저위험군 생략 예외와 충돌합니다. 4 cm라는 절대 경계도 일반 기준으로 확정하기 어려워 문구를 보존하고 미확정으로 둡니다.",
+        "limitations": "출제 의도는 ②로 보이지만 “수술 후 반드시 방사선”은 선택된 고령·저위험군 생략 예외와 충돌합니다. 4 cm라는 절대 경계도 일반 기준으로 확정하기 어려워 문구를 보존하고 미확정으로 둡니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "conflict"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "jung-yuri:18-16",
@@ -196,23 +339,60 @@
       "answer": 3,
       "answerSource": "user_confirmed",
       "explanation": "림프절 5개 전이·유방보존술 후에는 항암화학요법, 유방과 영역림프절 방사선치료를 고려하며 HR 양성 종양은 내분비치료 대상입니다.",
-      "candidateEvidence": [
+      "candidateEvidence": [],
+      "evidence": [
         {
-          "lectureId": "yu",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 42,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p042.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 42,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 43,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p043.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 43,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
           "page": 55,
-          "image": "assets/evidence/jung-yuri/v123-yu-p055.webp",
-          "quote": "advanced stage의 경우 regional RT 추가",
-          "lectureOwner": "정유리 교수님 강의안"
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p055.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 55,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
-      "evidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "full_user_supplied_question_and_options",
-        "check2": "user_explicitly_selected_answer_3",
-        "verifiedAgainst": "user_instruction",
-        "decisionReason": "사용자 지정 ③을 채점 기준으로 적용. 정유리 교수님 강의안에서 국소 방사선과 영역림프절 방사선 계획의 근거를 참고하지만, 강의안 이중검정으로 확정한 정답 표시는 아님."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "full_user_supplied_options",
       "transcriptionWarning": "사용자 제공 전체 지문과 다섯 선택지를 복구했고 사용자 지정 정답 ③을 반영했습니다. 기존 학습 기록은 유지됩니다.",
@@ -226,6 +406,31 @@
         "3": "림프절 5개 전이·유방보존술 후에는 항암화학요법, 유방과 영역림프절 방사선치료를 고려하며 HR 양성 종양은 내분비치료 대상입니다.",
         "4": "항암화학요법이 빠져 있고 HER2 음성인데 trastuzumab을 포함하는 조합입니다.",
         "5": "HER2 음성인데 trastuzumab을 투여하고, 유방보존술 후 필요한 방사선치료도 빠져 있습니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 3,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -270,30 +475,75 @@
       "answer": 4,
       "answerSource": "user_confirmed_per_general_highlight_instruction_2026",
       "explanation": "소형 간세포암의 SBRT는 정밀한 고선량 조사로 높은 국소제어율을 얻을 수 있어, 지문에서 제시한 80~90% 이상이라는 치료 성적 설명에 해당합니다.",
-      "candidateEvidence": [
+      "candidateEvidence": [],
+      "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 118,
-          "image": "assets/evidence/jung-yuri/radiation2-p118.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 117,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p117.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 117,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         },
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 124,
-          "image": "assets/evidence/jung-yuri/radiation2-p124.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 118,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p118.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 118,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 119,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p119.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 119,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 123,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p123.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 123,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
-      "evidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "question_text_options_cross_checked",
-        "check2": "highlight_or_supplied_explanation_or_lecture_compared",
-        "verifiedAgainst": "이강규/정유리 강의 범위의 SBRT 설명과 보기 ④를 대조. 기존 정유리 18-35 강의안 이중 검증 내용과 주제 일치",
-        "decisionReason": "사용자 요청으로 4번 잠정 고정. 이강규/정유리 강의 범위의 SBRT 설명과 보기 ④를 대조. 기존 정유리 18-35 강의안 이중 검증 내용과 주제 일치",
-        "note": "이 상태는 교수님 강의안 이중검증 완료가 아니라 사용자 요청에 따른 기본 정답입니다."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "강의안 118쪽은 SBRT 대 RFA 성적 비교를 제시하지만 치료 선택은 위치와 위험도를 고려해야 하므로 단정적 선택지는 보류합니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
@@ -307,6 +557,31 @@
         "3": "위·장 등 선량 제한 장기가 가까울 때 SBRT에도 위장관 궤양·천공 위험이 있어 항상 안전하다는 단정은 틀립니다.",
         "4": "소형 간세포암의 SBRT는 정밀한 고선량 조사로 높은 국소제어율을 얻을 수 있어, 지문에서 제시한 80~90% 이상이라는 치료 성적 설명에 해당합니다.",
         "5": "횡격막 인접부는 경피적 RFA의 접근이 어려울 수 있습니다. 움직임 관리가 필요한 SBRT가 항상 더 위험한 것은 아닙니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "user_confirmed_per_general_highlight_instruction_2026",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -354,33 +629,89 @@
       "candidateEvidence": [],
       "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 77,
-          "image": "assets/evidence/jung-yuri/radiation2-p077.webp",
-          "quote": "SBRT deliver large doses of radiation to a small treatment volume"
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 74,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p074.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 74,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         },
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 77,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p077.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 77,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
           "page": 84,
-          "image": "assets/evidence/jung-yuri/radiation2-p084.webp",
-          "quote": ""
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p084.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 84,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
       "validation": {
         "stage": "accepted",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "lecture_quote_and_option_crosscheck",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "강의안 원문 근거와 지문·선지 비교 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
       "notes": "",
       "unitTitle": "방사선치료 2",
       "unitId": "cd5ca72686ac",
-      "aiExplanation": "판단 포인트: 정유리 강의안은 작은 치료 표적에 대선량을 정밀 조사하는 SBRT를 설명합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 5,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "jung-yuri:18-38",
@@ -424,23 +755,30 @@
       "answer": 3,
       "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
       "explanation": "기출에서 인용한 2016년 자료는 유방암 → 폐암 → 대장직장암 → 간암 → 전립선암 → 자궁경부암 순입니다.",
-      "candidateEvidence": [
+      "candidateEvidence": [],
+      "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 10,
-          "image": "assets/evidence/jung-yuri/radiation2-p010.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 5,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p005.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 5,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
-      "evidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "uploaded_explanation_or_original_question_compared",
-        "check2": "selection_text_and_number_checked",
-        "verifiedAgainst": "19 종양 해설.pdf 9쪽 19번의 정답③; 18-38의 선택지와 19-19 선택지가 완전히 일치",
-        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 19 종양 해설.pdf 9쪽 19번의 정답③; 18-38의 선택지와 19-19 선택지가 완전히 일치",
-        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "구년 통계라서 강의안 10쪽 2017~2019 그래프만으로 2016년 정확한 순위를 재확정하기 어렵습니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
@@ -454,6 +792,31 @@
         "3": "기출에서 인용한 2016년 자료는 유방암 → 폐암 → 대장직장암 → 간암 → 전립선암 → 자궁경부암 순입니다.",
         "4": "위암을 1위로 둔 배열은 방사선치료 환자 수 통계가 아니라 일반 암 발생률과 혼동한 결과입니다.",
         "5": "위암·갑상선암을 앞세운 배열은 강의안에서 제시한 방사선치료 이용 건수 순서와 다릅니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 3,
+        "previousAnswerSource": "user_confirmed_per_annotated_explanation_review_2026",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -498,30 +861,30 @@
       "answer": 3,
       "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
       "explanation": "수술 불가능한 국소진행 III기 비소세포폐암에서는 근치 목적의 동시 항암화학방사선치료가 표준적인 접근입니다.",
-      "candidateEvidence": [
+      "candidateEvidence": [],
+      "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 70,
-          "image": "assets/evidence/jung-yuri/radiation2-p070.webp",
-          "quote": ""
-        },
-        {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 95,
-          "image": "assets/evidence/jung-yuri/radiation2-p095.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 88,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p088.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 88,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
-      "evidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "uploaded_explanation_or_original_question_compared",
-        "check2": "selection_text_and_number_checked",
-        "verifiedAgainst": "기존 선택지 ③ 동시항암화학방사선치료; III기 원격전이 없는 폐암의 국소진행 병기와 방사선종양학 강의의 병합치료 원칙에 대조",
-        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 기존 선택지 ③ 동시항암화학방사선치료; III기 원격전이 없는 폐암의 국소진행 병기와 방사선종양학 강의의 병합치료 원칙에 대조",
-        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "원문 병기와 치료 전략을 직접 재확인해야 합니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
@@ -535,6 +898,31 @@
         "3": "수술 불가능한 국소진행 III기 비소세포폐암에서는 근치 목적의 동시 항암화학방사선치료가 표준적인 접근입니다.",
         "4": "항암화학요법만으로는 원격전이가 없는 흉부 국소·림프절 병변을 치료하는 근치 방사선치료 이점을 놓칩니다.",
         "5": "단독 통상분할 방사선치료보다 동시 항암제 병용이 생존 성적을 향상시키는 대상입니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 3,
+        "previousAnswerSource": "user_confirmed_per_annotated_explanation_review_2026",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -579,23 +967,30 @@
       "answer": 2,
       "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
       "explanation": "DCIS의 T category는 Tis입니다. 유방보존술 후 국소재발 위험을 줄이기 위해 방사선치료를 고려합니다.",
-      "candidateEvidence": [
+      "candidateEvidence": [],
+      "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 50,
-          "image": "assets/evidence/jung-yuri/radiation2-p050.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 45,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p045.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 45,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
-      "evidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "uploaded_explanation_or_original_question_compared",
-        "check2": "selection_text_and_number_checked",
-        "verifiedAgainst": "Tis = ductal carcinoma in situ(상피내암); 유방보존술 후 방사선치료의 강의안 원칙과 ② 보기 대조",
-        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. Tis = ductal carcinoma in situ(상피내암); 유방보존술 후 방사선치료의 강의안 원칙과 ② 보기 대조",
-        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "원본에는 종괴 크기 및 DCIS 소견이 있어 반드시 원문을 재확인하세요. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
@@ -609,6 +1004,31 @@
         "3": "상피내암을 T2로 분류하는 것부터 잘못됐고, 침윤암에 대한 항암요법 적응증과 혼동했습니다.",
         "4": "방사선치료 자체는 고려되지만, DCIS를 T2로 표기한 병기 부분이 틀렸습니다.",
         "5": "Tis는 맞지만 유방보존술 후 방사선치료가 일반적으로 권고되므로 단순 경과관찰을 보편적 처치로 단정하기 어렵습니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "user_confirmed_per_annotated_explanation_review_2026",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -653,23 +1073,30 @@
       "answer": 3,
       "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
       "explanation": "기출에서 인용한 2016년 자료는 유방암 → 폐암 → 대장직장암 → 간암 → 전립선암 → 자궁경부암 순입니다.",
-      "candidateEvidence": [
+      "candidateEvidence": [],
+      "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 10,
-          "image": "assets/evidence/jung-yuri/radiation2-p010.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 5,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p005.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 5,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
-      "evidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "uploaded_explanation_or_original_question_compared",
-        "check2": "selection_text_and_number_checked",
-        "verifiedAgainst": "19 종양 해설.pdf 9쪽 19번 정답③; 선택지 본문 대조",
-        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 19 종양 해설.pdf 9쪽 19번 정답③; 선택지 본문 대조",
-        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "구년 통계라서 강의안 10쪽 2017~2019 그래프만으로 2016년 정확한 순위를 재확정하기 어렵습니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
@@ -683,6 +1110,31 @@
         "3": "기출에서 인용한 2016년 자료는 유방암 → 폐암 → 대장직장암 → 간암 → 전립선암 → 자궁경부암 순입니다.",
         "4": "위암을 1위로 둔 배열은 방사선치료 환자 수 통계가 아니라 일반 암 발생률과 혼동한 결과입니다.",
         "5": "위암·갑상선암을 앞세운 배열은 강의안에서 제시한 방사선치료 이용 건수 순서와 다릅니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 3,
+        "previousAnswerSource": "user_confirmed_per_annotated_explanation_review_2026",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -727,30 +1179,60 @@
       "answer": 2,
       "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
       "explanation": "HER2 양성으로 trastuzumab이 필요하고, 림프절 4개 전이이므로 항암화학요법 및 유방·영역림프절 방사선치료 조합이 적절합니다.",
-      "candidateEvidence": [
+      "candidateEvidence": [],
+      "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
           "page": 42,
-          "image": "assets/evidence/jung-yuri/radiation2-p042.webp",
-          "quote": ""
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p042.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 42,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         },
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 43,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p043.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 43,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
           "page": 55,
-          "image": "assets/evidence/jung-yuri/radiation2-p055.webp",
-          "quote": ""
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p055.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 55,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
-      "evidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "uploaded_explanation_or_original_question_compared",
-        "check2": "selection_text_and_number_checked",
-        "verifiedAgainst": "19 종양 해설.pdf 9~10쪽 20번에서 ② 항암화학요법 + 유방·영역림프절 방사선치료 + trastuzumab 정답 표시, HR(-), HER2(+) 증례",
-        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 19 종양 해설.pdf 9~10쪽 20번에서 ② 항암화학요법 + 유방·영역림프절 방사선치료 + trastuzumab 정답 표시, HR(-), HER2(+) 증례",
-        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "manually_checked_against_19_explanation_pdf_p9_2026",
       "transcriptionWarning": "보기를 원본 해설 PDF 9쪽 스캔에서 직접 확인해 복구했습니다. 기출 원본과 비교할 수 있습니다.",
@@ -764,6 +1246,31 @@
         "3": "HR 음성인데 내분비치료를 포함하고, 영역림프절 전이에 비해 방사선 조사 범위도 좁습니다.",
         "4": "HER2 양성 종양의 표적치료가 누락됐고 HR 음성에서 내분비치료는 기대효과가 낮습니다.",
         "5": "내분비치료가 HR 음성 종양에 부적절하고 유방보존술 후 방사선치료도 빠져 있습니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "user_confirmed_per_annotated_explanation_review_2026",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -811,33 +1318,89 @@
       "candidateEvidence": [],
       "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 77,
-          "image": "assets/evidence/jung-yuri/radiation2-p077.webp",
-          "quote": "SBRT deliver large doses of radiation to a small treatment volume"
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 74,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p074.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 74,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         },
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 77,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p077.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 77,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
           "page": 84,
-          "image": "assets/evidence/jung-yuri/radiation2-p084.webp",
-          "quote": ""
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p084.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 84,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
       "validation": {
         "stage": "accepted",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "lecture_quote_and_option_crosscheck",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "강의안 원문 근거와 지문·선지 비교 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
       "notes": "",
       "unitTitle": "방사선치료 2",
       "unitId": "cd5ca72686ac",
-      "aiExplanation": "판단 포인트: 정유리 강의안은 작은 치료 표적에 대선량을 정밀 조사하는 SBRT를 설명합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 5,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "jung-yuri:19-22",
@@ -881,30 +1444,75 @@
       "answer": 4,
       "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
       "explanation": "소형 간세포암의 SBRT는 정밀한 고선량 조사로 높은 국소제어율을 얻을 수 있어, 지문에서 제시한 80~90% 이상이라는 치료 성적 설명에 해당합니다.",
-      "candidateEvidence": [
+      "candidateEvidence": [],
+      "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 118,
-          "image": "assets/evidence/jung-yuri/radiation2-p118.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 117,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p117.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 117,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         },
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 124,
-          "image": "assets/evidence/jung-yuri/radiation2-p124.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 118,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p118.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 118,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 119,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p119.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 119,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 123,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p123.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 123,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
-      "evidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "uploaded_explanation_or_original_question_compared",
-        "check2": "selection_text_and_number_checked",
-        "verifiedAgainst": "19 종양 해설.pdf 11쪽 22번에서 ④, SBRT 국소제어율 관련 보기와 문구 일치",
-        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 19 종양 해설.pdf 11쪽 22번에서 ④, SBRT 국소제어율 관련 보기와 문구 일치",
-        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "강의안 118쪽은 SBRT 대 RFA 성적 비교를 제시하지만 치료 선택은 위치와 위험도를 고려해야 하므로 단정적 선택지는 보류합니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
@@ -918,6 +1526,31 @@
         "3": "위·장 등 선량 제한 장기가 가까울 때 SBRT에도 위장관 궤양·천공 위험이 있어 항상 안전하다는 단정은 틀립니다.",
         "4": "소형 간세포암의 SBRT는 정밀한 고선량 조사로 높은 국소제어율을 얻을 수 있어, 지문에서 제시한 80~90% 이상이라는 치료 성적 설명에 해당합니다.",
         "5": "횡격막 인접부는 경피적 RFA의 접근이 어려울 수 있습니다. 움직임 관리가 필요한 SBRT가 항상 더 위험한 것은 아닙니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "user_confirmed_per_annotated_explanation_review_2026",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -962,23 +1595,30 @@
       "answer": 3,
       "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
       "explanation": "기출에서 인용한 2016년 자료는 유방암 → 폐암 → 대장직장암 → 간암 → 전립선암 → 자궁경부암 순입니다.",
-      "candidateEvidence": [
+      "candidateEvidence": [],
+      "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 10,
-          "image": "assets/evidence/jung-yuri/radiation2-p010.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 5,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p005.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 5,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
-      "evidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "uploaded_explanation_or_original_question_compared",
-        "check2": "selection_text_and_number_checked",
-        "verifiedAgainst": "19 종양 해설.pdf 9쪽 19번 정답③; 20-61 선택지와 19-19 선택지가 완전히 일치",
-        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 19 종양 해설.pdf 9쪽 19번 정답③; 20-61 선택지와 19-19 선택지가 완전히 일치",
-        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "구년 통계라서 강의안 10쪽 2017~2019 그래프만으로 2016년 정확한 순위를 재확정하기 어렵습니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
@@ -992,6 +1632,31 @@
         "3": "기출에서 인용한 2016년 자료는 유방암 → 폐암 → 대장직장암 → 간암 → 전립선암 → 자궁경부암 순입니다.",
         "4": "위암을 1위로 둔 배열은 방사선치료 환자 수 통계가 아니라 일반 암 발생률과 혼동한 결과입니다.",
         "5": "위암·갑상선암을 앞세운 배열은 강의안에서 제시한 방사선치료 이용 건수 순서와 다릅니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 3,
+        "previousAnswerSource": "user_confirmed_per_annotated_explanation_review_2026",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -1036,30 +1701,60 @@
       "answer": 4,
       "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
       "explanation": "호르몬수용체 양성 → 내분비치료, 림프절 양성 고위험 → 항암치료 고려, 유방보존술과 영역림프절 전이 → 유방·림프절 방사선치료를 종합합니다.",
-      "candidateEvidence": [
+      "candidateEvidence": [],
+      "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
           "page": 42,
-          "image": "assets/evidence/jung-yuri/radiation2-p042.webp",
-          "quote": ""
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p042.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 42,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         },
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 43,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p043.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 43,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
           "page": 55,
-          "image": "assets/evidence/jung-yuri/radiation2-p055.webp",
-          "quote": ""
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p055.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 55,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
-      "evidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "uploaded_explanation_or_original_question_compared",
-        "check2": "selection_text_and_number_checked",
-        "verifiedAgainst": "제시 지문의 HR(+),HER2(-) 및 림프절 전이: ④ 항암요법+유방·영역림프절 방사선+내분비치료 (Trastuzumab 불필요)",
-        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 제시 지문의 HR(+),HER2(-) 및 림프절 전이: ④ 항암요법+유방·영역림프절 방사선+내분비치료 (Trastuzumab 불필요)",
-        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "원문에는 상세한 수술·병리결과가 있습니다. 원본 이미지에서 문장과 선택지 확인 권장. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
@@ -1073,6 +1768,31 @@
         "3": "HER2 음성인데 trastuzumab을 포함하며, 여러 영역림프절 전이에 필요한 방사선치료 범위도 좁습니다.",
         "4": "호르몬수용체 양성 → 내분비치료, 림프절 양성 고위험 → 항암치료 고려, 유방보존술과 영역림프절 전이 → 유방·림프절 방사선치료를 종합합니다.",
         "5": "HER2 음성인데 trastuzumab을 포함하며 유방보존술 후 방사선치료를 생략합니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "user_confirmed_per_annotated_explanation_review_2026",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -1120,33 +1840,89 @@
       "candidateEvidence": [],
       "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 77,
-          "image": "assets/evidence/jung-yuri/radiation2-p077.webp",
-          "quote": "SBRT deliver large doses of radiation to a small treatment volume"
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 74,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p074.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 74,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         },
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 77,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p077.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 77,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
           "page": 84,
-          "image": "assets/evidence/jung-yuri/radiation2-p084.webp",
-          "quote": ""
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p084.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 84,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
       "validation": {
         "stage": "accepted",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "lecture_quote_and_option_crosscheck",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "강의안 원문 근거와 지문·선지 비교 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
       "notes": "",
       "unitTitle": "방사선치료 2",
       "unitId": "cd5ca72686ac",
-      "aiExplanation": "판단 포인트: 정유리 강의안은 작은 치료 표적에 대선량을 정밀 조사하는 SBRT를 설명합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 5,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "jung-yuri:20-64",
@@ -1190,30 +1966,75 @@
       "answer": 4,
       "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
       "explanation": "소형 간세포암의 SBRT는 정밀한 고선량 조사로 높은 국소제어율을 얻을 수 있어, 지문에서 제시한 80~90% 이상이라는 치료 성적 설명에 해당합니다.",
-      "candidateEvidence": [
+      "candidateEvidence": [],
+      "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 118,
-          "image": "assets/evidence/jung-yuri/radiation2-p118.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 117,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p117.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 117,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         },
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 124,
-          "image": "assets/evidence/jung-yuri/radiation2-p124.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 118,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p118.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 118,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 119,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p119.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 119,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 123,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p123.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 123,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
-      "evidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "uploaded_explanation_or_original_question_compared",
-        "check2": "selection_text_and_number_checked",
-        "verifiedAgainst": "19 종양 해설.pdf 11쪽 22번 ④, 19-22와 선택지 본문 일치",
-        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 19 종양 해설.pdf 11쪽 22번 ④, 19-22와 선택지 본문 일치",
-        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "강의안 118쪽은 SBRT 대 RFA 성적 비교를 제시하지만 치료 선택은 위치와 위험도를 고려해야 하므로 단정적 선택지는 보류합니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
@@ -1227,6 +2048,31 @@
         "3": "위·장 등 선량 제한 장기가 가까울 때 SBRT에도 위장관 궤양·천공 위험이 있어 항상 안전하다는 단정은 틀립니다.",
         "4": "소형 간세포암의 SBRT는 정밀한 고선량 조사로 높은 국소제어율을 얻을 수 있어, 지문에서 제시한 80~90% 이상이라는 치료 성적 설명에 해당합니다.",
         "5": "횡격막 인접부는 경피적 RFA의 접근이 어려울 수 있습니다. 움직임 관리가 필요한 SBRT가 항상 더 위험한 것은 아닙니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "user_confirmed_per_annotated_explanation_review_2026",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -1253,7 +2099,7 @@
         },
         {
           "number": 4,
-          "text": "유방암–자궁경부암–폐암–전립선암–대장직장암–간암"
+          "text": "유방암–자궁경부암–폐암–전립선암–간암–대장직장암"
         },
         {
           "number": 5,
@@ -1268,32 +2114,81 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
-      "candidateEvidence": [
+      "answer": 4,
+      "answerSource": "lecture_audit_1_1_6",
+      "explanation": "기출 원본 ④는 유방암–자궁경부암–폐암–전립선암–간암–대장직장암입니다. 전사에서 뒤의 두 암종 순서가 바뀌어 있었으므로 원문을 복원했습니다. 환자 수가 아닌 해당 암종 환자 중 방사선치료 비율을 비교합니다.",
+      "candidateEvidence": [],
+      "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 10,
-          "image": "assets/evidence/jung-yuri/radiation2-p010.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 8,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p008.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 8,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 9,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p009.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 9,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
-      "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "기출 원본 ④는 유방암–자궁경부암–폐암–전립선암–간암–대장직장암입니다. 전사에서 뒤의 두 암종 순서가 바뀌어 있었으므로 원문을 복원했습니다. 환자 수가 아닌 해당 암종 환자 중 방사선치료 비율을 비교합니다."
       },
       "transcriptionStatus": "review_required",
-      "transcriptionWarning": "2023학년도 시험지 번호 3번입니다. 21학번 배정은 추정이며 학번 원본 표기는 없습니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": "2023학년도 1차 평가 기출로, 21학번 해당 여부는 파일에서 직접 확인되지 않았습니다. 21학번 추정 분류이므로 재확인이 필요합니다.",
+      "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
+      "notes": "",
       "unitTitle": "방사선치료 1",
       "unitId": "9fcda10f0a85",
-      "aiExplanation": "이 문항(21-3)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 2023학년도 종양학 시험: 암종별 방사선치료 비율이 높은 암종부터 낮은 암종까지 올바르게 나열한 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "",
+      "choiceExplanations": {},
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": true,
+        "referenceAnswer": null,
+        "previousAnswerSource": "pending",
+        "reason": "기출 원본 ④는 유방암–자궁경부암–폐암–전립선암–간암–대장직장암입니다. 전사에서 뒤의 두 암종 순서가 바뀌어 있었으므로 원문을 복원했습니다. 환자 수가 아닌 해당 암종 환자 중 방사선치료 비율을 비교합니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "jung-yuri:21-59",
@@ -1334,39 +2229,65 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": 2,
-      "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
-      "explanation": "강의안에 제시된 방사선치료 이용 순서는 유방암·폐암·대장직장암·간암·전립선암·자궁경부암입니다.",
-      "candidateEvidence": [
+      "answer": 5,
+      "answerSource": "lecture_audit_1_1_6",
+      "explanation": "2019년 환자 수 그래프의 순서는 유방암–폐암–전립선암–대장직장암–간암–자궁경부암입니다. 2016년 그래프와 혼동한 기존 ②를 ⑤로 수정했습니다.",
+      "candidateEvidence": [],
+      "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 10,
-          "image": "assets/evidence/jung-yuri/radiation2-p010.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 6,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p006.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 6,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
-      "evidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "uploaded_explanation_or_original_question_compared",
-        "check2": "selection_text_and_number_checked",
-        "verifiedAgainst": "19 종양 해설.pdf 9쪽 암종별 방사선치료 순위의 순서와 ② 보기 문장 일치",
-        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 19 종양 해설.pdf 9쪽 암종별 방사선치료 순위의 순서와 ② 보기 문장 일치",
-        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "2019년 환자 수 그래프의 순서는 유방암–폐암–전립선암–대장직장암–간암–자궁경부암입니다. 2016년 그래프와 혼동한 기존 ②를 ⑤로 수정했습니다."
       },
       "transcriptionStatus": "review_required",
-      "transcriptionWarning": "2023학년도 기출 59번. 원본 9쪽 오른쪽에 있으며, 21학번 분류는 추정입니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": "잠정 사용자 지정 답안. 19 종양 해설.pdf 9쪽 암종별 방사선치료 순위의 순서와 ② 보기 문장 일치 ",
+      "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
+      "notes": "",
       "unitTitle": "방사선치료 1",
       "unitId": "9fcda10f0a85",
       "aiExplanation": "",
-      "choiceExplanations": {
-        "1": "해당 시기의 방사선치료 환자 수 통계는 유방암이 폐암보다 많아, 순서의 첫 두 항목이 반대입니다.",
-        "2": "강의안에 제시된 방사선치료 이용 순서는 유방암·폐암·대장직장암·간암·전립선암·자궁경부암입니다.",
-        "3": "전립선암을 폐암보다 앞에 둔 배열은 해당 연도 방사선치료 통계와 다릅니다.",
-        "4": "위암을 유방암보다 앞세우는 순서는 방사선치료 시행 환자 수와 일치하지 않습니다.",
-        "5": "전립선암을 대장직장암보다 앞에 두었으나 강의안의 집계 순서는 반대입니다."
+      "choiceExplanations": {},
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": true,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "user_confirmed_per_annotated_explanation_review_2026",
+        "reason": "2019년 환자 수 그래프의 순서는 유방암–폐암–전립선암–대장직장암–간암–자궁경부암입니다. 2016년 그래프와 혼동한 기존 ②를 ⑤로 수정했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -1377,7 +2298,7 @@
       "subject": "hematology-1",
       "professor": "jung-yuri",
       "type": "choice",
-      "prompt": "55세 여성의 왼쪽 유방암, 유방보존술 및 액와림프절절제술 이후 병리학적 T1, N2 소견. 호르몬수용체 양성·HER2 양성인 환자의 보조치료는?",
+      "prompt": "55세 여성이 왼쪽 유방암으로 유방보존술 및 액와림프절절제술을 받았다. 전체 병변은 4 cm, 상피내암 부분은 2.5 cm이며 침윤성 유방암의 장경은 1.5 cm이다. 절제연은 1 cm 이상 확보되었다. 호르몬수용체 양성, HER2 음성이고, 절제된 림프절 14개 중 5개에서 전이가 확인되었다. 이 환자의 병기(T category)와 고려할 수 있는 표준 치료는?",
       "choices": [
         {
           "number": 1,
@@ -1408,39 +2329,96 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": null,
-      "answerSource": "pending",
-      "explanation": "",
-      "candidateEvidence": [
+      "answer": 2,
+      "answerSource": "lecture_audit_1_1_6",
+      "explanation": "기출 원본은 침윤성 부분 1.5 cm, HR 양성·HER2 음성, 림프절 5개 양성입니다. 기존 전사의 HER2 양성을 음성으로 바로잡았습니다. T1에 항암치료·유방 및 영역림프절 방사선치료·내분비치료를 시행하는 ②가 부합합니다.",
+      "candidateEvidence": [],
+      "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 37,
-          "image": "assets/evidence/jung-yuri/radiation2-p037.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 42,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p042.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 42,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         },
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 43,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p043.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 43,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
           "page": 55,
-          "image": "assets/evidence/jung-yuri/radiation2-p055.webp",
-          "quote": ""
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p055.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 55,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
-      "evidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "not_verified_to_single_answer",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "업로드한 강의안만으로 단일 정답 확정 불가 · 후보 이미지 검토용"
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "기출 원본은 침윤성 부분 1.5 cm, HR 양성·HER2 음성, 림프절 5개 양성입니다. 기존 전사의 HER2 양성을 음성으로 바로잡았습니다. T1에 항암치료·유방 및 영역림프절 방사선치료·내분비치료를 시행하는 ②가 부합합니다."
       },
-      "transcriptionStatus": "review_required",
-      "transcriptionWarning": "2023학년도 기출 60번. 일부 원문 선택지가 길어서 더 자세한 판독은 기출 원본으로 확인하세요. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
-      "notes": "2023학년도 1차 평가 기출로, 21학번 해당 여부는 파일에서 직접 확인되지 않았습니다. 21학번 추정 분류이므로 재확인이 필요합니다.",
+      "transcriptionStatus": "original_image_reconciled_1_1_6",
+      "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
+      "notes": "",
       "unitTitle": "방사선치료 2",
       "unitId": "cd5ca72686ac",
-      "aiExplanation": "이 문항(21-60)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 55세 여성의 왼쪽 유방암, 유방보존술 및 액와림프절절제술 이후 병리학적 T1, N2 소견. 호르몬수용체 양성·HER2 양성인 환자의 보조치료는?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "",
+      "choiceExplanations": {},
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": true,
+        "referenceAnswer": null,
+        "previousAnswerSource": "pending",
+        "reason": "기출 원본은 침윤성 부분 1.5 cm, HR 양성·HER2 음성, 림프절 5개 양성입니다. 기존 전사의 HER2 양성을 음성으로 바로잡았습니다. T1에 항암치료·유방 및 영역림프절 방사선치료·내분비치료를 시행하는 ②가 부합합니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "jung-yuri:21-61",
@@ -1487,33 +2465,89 @@
       "candidateEvidence": [],
       "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 77,
-          "image": "assets/evidence/jung-yuri/radiation2-p077.webp",
-          "quote": "Stereotactic Body Radiation Therapy"
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 74,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p074.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 74,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         },
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 77,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p077.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 77,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
           "page": 84,
-          "image": "assets/evidence/jung-yuri/radiation2-p084.webp",
-          "quote": ""
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p084.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 84,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
       "validation": {
         "stage": "accepted",
-        "check1": "original_joint_exam_pdf_source_page_reviewed",
-        "check2": "lecture_quote_and_option_crosscheck",
-        "verifiedAgainst": "uploaded_lecture_original_pages",
-        "decisionReason": "강의안 원문 근거와 지문·선지 비교 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
       "notes": "2023학년도 1차 평가 기출로, 21학번 해당 여부는 파일에서 직접 확인되지 않았습니다. 21학번 추정 분류이므로 재확인이 필요합니다.",
       "unitTitle": "방사선치료 2",
       "unitId": "cd5ca72686ac",
-      "aiExplanation": "판단 포인트: 수술 부적합 조기 폐암에 적용되는 고정밀 SBRT 기법을 강의안에서 확인했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 5,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "jung-yuri:21-62",
@@ -1557,30 +2591,75 @@
       "answer": 4,
       "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
       "explanation": "3 cm 이하 소형 간암에 대한 SBRT는 정확한 표적조사로 높은 국소제어율(약 80~90% 이상)을 보고합니다.",
-      "candidateEvidence": [
+      "candidateEvidence": [],
+      "evidence": [
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 118,
-          "image": "assets/evidence/jung-yuri/radiation2-p118.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 117,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p117.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 117,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         },
         {
-          "lectureId": "radiation2",
-          "file": "25.11.12_혈액과종양_정유리_방사선 치료2.pdf",
-          "page": 124,
-          "image": "assets/evidence/jung-yuri/radiation2-p124.webp",
-          "quote": ""
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 118,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p118.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 118,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 119,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p119.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 119,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
+        },
+        {
+          "lectureId": "audit116-jung-yuri-2025-방사선 치료2",
+          "lectureOwner": "정유리 교수님",
+          "professor": "jung-yuri",
+          "file": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "page": 123,
+          "image": "assets/evidence/audit-1.1.6/jung-yuri/p123.webp",
+          "quote": "",
+          "lectureTitle": "방사선 치료2",
+          "lectureYear": 2025,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "25.11.12_혈액과종양_정유리_방사선 치료2(1).pdf",
+          "sourcePage": 123,
+          "sourceSha256": "aafe36c25c5c010ea357df8243d31a29a61cae19faa3a1ffc66565617dd4d57a"
         }
       ],
-      "evidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "uploaded_explanation_or_original_question_compared",
-        "check2": "selection_text_and_number_checked",
-        "verifiedAgainst": "19 종양 해설.pdf 11쪽 22번 ④; 문제에 나타난 SBRT 국소제어율 내용과 일치",
-        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 19 종양 해설.pdf 11쪽 22번 ④; 문제에 나타난 SBRT 국소제어율 내용과 일치",
-        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "review_required",
       "transcriptionWarning": "2023학년도 기출 62번. 원본에는 ④를 강조한 필기가 있으나 이를 독립 근거로 채택하지 않았습니다. 표시 지문과 선택지는 학습용 정리본으로, 정확한 원문은 아래 기출 원본 캡처와 반드시 대조하십시오.",
@@ -1594,6 +2673,31 @@
         "3": "위와 인접한 부위의 SBRT는 장기 선량 제한과 소화관 손상 위험이 있어 무조건 안전하지 않습니다.",
         "4": "3 cm 이하 소형 간암에 대한 SBRT는 정확한 표적조사로 높은 국소제어율(약 80~90% 이상)을 보고합니다.",
         "5": "횡격막 인접 간암은 경피적 RFA 접근이 어려울 수 있어 두 치료법의 위험은 위치·호흡운동에 따라 달라집니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "jung-yuri",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "user_confirmed_per_annotated_explanation_review_2026",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     }
   ]

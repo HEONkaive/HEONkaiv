@@ -49,24 +49,30 @@
       "answer": 5,
       "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
       "explanation": "ER/PR 양성·HER2 음성의 일부 조기 유방암에서는 다유전자 발현 검사가 재발 위험과 항암요법 추가 이득 추정에 사용됩니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "evidence": [
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
           "page": 87,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p087.webp",
-          "quote": "Prognostic factors: stage (pT and lymph node), histologic grade, lymphovascular invasion, biomarker profile; gene expression signature"
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p087.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 87,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "uploaded_explanation_or_original_question_compared",
-        "check2": "selection_text_and_number_checked",
-        "verifiedAgainst": "ER/PR 양성 HER2 음성 종양의 항암치료 효과/예후 예측에 유전자발현 프로파일검사 이용; 현재 선택지 ⑤ 검토",
-        "anchor": "",
-        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. ER/PR 양성 HER2 음성 종양의 항암치료 효과/예후 예측에 유전자발현 프로파일검사 이용; 현재 선택지 ⑤ 검토",
-        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "partial",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "강의안은 gene expression signature를 예후인자로 제시합니다. 다유전자 검사의 항암치료 추가 이득·적응증 전체를 직접 입증하는 설명은 부족해 부분 근거로 구분합니다."
       },
       "transcriptionStatus": "source_based_normalized_review_original",
       "transcriptionWarning": "기출 본문은 원본의 줄바꿈·일부 표기를 학습용으로 정리했으며 완전한 축어 전사를 보증하지 않습니다. 기출 원본 캡처로 확인하세요. 강의안 87쪽에 gene expression signature는 있으나 항암치료 이득을 판별하는 특정 검사 적응증까지 명시하지는 않아 미확정으로 둡니다.",
@@ -80,6 +86,31 @@
         "3": "FISH는 주로 HER2 유전자 증폭을 확인합니다. HER2 음성·호르몬수용체 양성 종양의 항암치료 이득을 직접 산출하지 않습니다.",
         "4": "BRCA1은 유전성 소인 검사이며, 해당 종양의 다유전자 재발 위험 점수와는 목적이 다릅니다.",
         "5": "ER/PR 양성·HER2 음성의 일부 조기 유방암에서는 다유전자 발현 검사가 재발 위험과 항암요법 추가 이득 추정에 사용됩니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "partial",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 5,
+        "previousAnswerSource": "user_confirmed_per_annotated_explanation_review_2026",
+        "reason": "강의안은 gene expression signature를 예후인자로 제시합니다. 다유전자 검사의 항암치료 추가 이득·적응증 전체를 직접 입증하는 설명은 부족해 부분 근거로 구분합니다.",
+        "limitations": "강의안은 gene expression signature를 예후인자로 제시합니다. 다유전자 검사의 항암치료 추가 이득·적응증 전체를 직접 입증하는 설명은 부족해 부분 근거로 구분합니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "partial"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -123,38 +154,78 @@
       "showOriginalByDefault": false,
       "answer": 3,
       "answerSource": "lecture_double_checked",
-      "explanation": "c-erbB2(HER2)는 유방암의 단백질 수용체이며 IHC 3+는 HER2 단백질 과발현 소견입니다. 강의안 PDF 80쪽과 88쪽에 HER2 발현 근거가 제시됩니다.",
+      "explanation": "c-erbB2(HER2)는 유방암의 단백질 수용체이며 IHC 3+는 HER2 단백질 과발현 소견입니다. 첨부 강의안과 88쪽에 HER2 발현 근거가 제시됩니다.",
       "evidence": [
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-          "page": 80,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p080.webp",
-          "quote": "Paget cells usually show HER2 protein overexpression"
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 88,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p088.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 88,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         },
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-          "page": 88,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p088.webp",
-          "quote": "유방암 분자 아형: Luminal A/B, HER2 positive, triple negative"
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 109,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p109.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 109,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
       "candidateEvidence": [],
       "validation": {
-        "stage": "accepted",
-        "check1": "PDF 원본 슬라이드 내용과 검사·임상 조건 대조",
-        "check2": "기출 원본의 문항 및 각 선택지와 강의안 진술을 별도로 대조",
-        "verifiedAgainst": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-        "anchor": "Paget cells usually show HER2 protein overexpression",
-        "decisionReason": "근거 페이지가 답을 직접 지지하고 다른 선택지와 대조해 채택"
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "partial",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "HER2 표적치료와 분자아형은 확인되지만 IHC 2+/3+ 및 SISH/FISH 판독 세부 기준은 이 강의안에서 충분히 직접 제시되지 않습니다. 이미지 기반 검사 판독과 일반 치료 근거를 구분합니다."
       },
       "transcriptionStatus": "source_based_normalized_review_original",
       "transcriptionWarning": "기출 본문은 원본의 줄바꿈·일부 표기를 학습용으로 정리했으며 완전한 축어 전사를 보증하지 않습니다. 기출 원본 캡처로 확인하세요. 기출 원본의 형광펜·필기는 출처 자료이며, 강의안 이중검증의 근거로 사용하지 않습니다.",
       "notes": "",
       "unitTitle": "유방병리",
       "unitId": "e94cd889bbec",
-      "aiExplanation": "판단 포인트: c-erbB2(HER2)는 유방암의 단백질 수용체이며 IHC 3+는 HER2 단백질 과발현 소견입니다. 강의안 PDF 80쪽과 88쪽에 HER2 발현 근거가 제시됩니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "partial",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 3,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "HER2 표적치료와 분자아형은 확인되지만 IHC 2+/3+ 및 SISH/FISH 판독 세부 기준은 이 강의안에서 충분히 직접 제시되지 않습니다. 이미지 기반 검사 판독과 일반 치료 근거를 구분합니다.",
+        "limitations": "HER2 표적치료와 분자아형은 확인되지만 IHC 2+/3+ 및 SISH/FISH 판독 세부 기준은 이 강의안에서 충분히 직접 제시되지 않습니다. 이미지 기반 검사 판독과 일반 치료 근거를 구분합니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "partial"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "choi-geumha:17-60",
@@ -198,24 +269,30 @@
       "answer": 3,
       "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
       "explanation": "감시림프절만 검사해 불필요한 전체 액와림프절 곽청을 줄이면 상지 림프부종 등 수술 합병증 위험을 줄일 수 있습니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "evidence": [
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
           "page": 87,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p087.webp",
-          "quote": "Prognostic factors: stage (pT and lymph node), histologic grade, lymphovascular invasion, biomarker profile; gene expression signature"
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p087.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 87,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "uploaded_explanation_or_original_question_compared",
-        "check2": "selection_text_and_number_checked",
-        "verifiedAgainst": "청색 염색 감시림프절 생검은 액와림프절 곽청 범위를 줄여 림프부종 위험을 줄일 수 있음. ③ 보기와 연결",
-        "anchor": "",
-        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 청색 염색 감시림프절 생검은 액와림프절 곽청 범위를 줄여 림프부종 위험을 줄일 수 있음. ③ 보기와 연결",
-        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "partial",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "림프절 상태가 병기·예후인자라는 내용은 있으나 sentinel node의 수술 방법·정의는 이 병리 강의안에 충분히 설명되어 있지 않습니다."
       },
       "transcriptionStatus": "source_based_normalized_review_original",
       "transcriptionWarning": "기출 본문은 원본의 줄바꿈·일부 표기를 학습용으로 정리했으며 완전한 축어 전사를 보증하지 않습니다. 기출 원본 캡처로 확인하세요. 최금하 교수님 강의안에서 감시림프절 생검을 통한 불필요한 액와림프절 절제와 림프부종 예방의 직접 근거가 부족하므로 보류합니다.",
@@ -229,6 +306,31 @@
         "3": "감시림프절만 검사해 불필요한 전체 액와림프절 곽청을 줄이면 상지 림프부종 등 수술 합병증 위험을 줄일 수 있습니다.",
         "4": "감시림프절생검은 이미 존재할 수 있는 원격 미세전이를 직접 제거하거나 예방하는 시술이 아닙니다.",
         "5": "전이된 림프절을 찾는 진단·병기 시술이지, 다른 림프절로의 전이를 예방하는 치료는 아닙니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "partial",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 3,
+        "previousAnswerSource": "user_confirmed_per_annotated_explanation_review_2026",
+        "reason": "림프절 상태가 병기·예후인자라는 내용은 있으나 sentinel node의 수술 방법·정의는 이 병리 강의안에 충분히 설명되어 있지 않습니다.",
+        "limitations": "림프절 상태가 병기·예후인자라는 내용은 있으나 sentinel node의 수술 방법·정의는 이 병리 강의안에 충분히 설명되어 있지 않습니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "partial"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -272,31 +374,63 @@
       "showOriginalByDefault": false,
       "answer": 1,
       "answerSource": "lecture_double_checked",
-      "explanation": "ER, PR 음성이고 HER2 증폭도 없어, 강의안 PDF 88쪽의 triple negative/basal-like 분류에 해당합니다. IHC 2+만으로 HER2 양성이라고 확정하지 않습니다.",
+      "explanation": "ER, PR 음성이고 HER2 증폭도 없어, 첨부 강의안의 triple negative/basal-like 분류에 해당합니다. IHC 2+만으로 HER2 양성이라고 확정하지 않습니다.",
       "evidence": [
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
           "page": 88,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p088.webp",
-          "quote": "유방암 분자 아형: Luminal A/B, HER2 positive, triple negative"
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p088.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 88,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "PDF 원본 슬라이드 내용과 검사·임상 조건 대조",
-        "check2": "기출 원본의 문항 및 각 선택지와 강의안 진술을 별도로 대조",
-        "verifiedAgainst": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-        "anchor": "유방암 분자 아형: Luminal A/B, HER2 positive, triple negative",
-        "decisionReason": "근거 페이지가 답을 직접 지지하고 다른 선택지와 대조해 채택"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "source_based_normalized_review_original",
       "transcriptionWarning": "기출 본문은 원본의 줄바꿈·일부 표기를 학습용으로 정리했으며 완전한 축어 전사를 보증하지 않습니다. 기출 원본 캡처로 확인하세요. 기출 원본의 형광펜·필기는 출처 자료이며, 강의안 이중검증의 근거로 사용하지 않습니다.",
       "notes": "",
       "unitTitle": "유방병리",
       "unitId": "e94cd889bbec",
-      "aiExplanation": "판단 포인트: ER, PR 음성이고 HER2 증폭도 없어, 강의안 PDF 88쪽의 triple negative/basal-like 분류에 해당합니다. IHC 2+만으로 HER2 양성이라고 확정하지 않습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 1,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "choi-geumha:18-42",
@@ -340,31 +474,30 @@
       "answer": 1,
       "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
       "explanation": "ER/PR 양성·HER2 음성의 조기 유방암에서는 Oncotype DX 같은 다유전자 검사를 통해 재발 위험과 항암요법 이득을 평가할 수 있습니다. 적용 가능 여부는 병기·임상 조건에 따릅니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "evidence": [
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-          "page": 87,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p087.webp",
-          "quote": "Prognostic factors: stage (pT and lymph node), histologic grade, lymphovascular invasion, biomarker profile; gene expression signature"
-        },
-        {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-          "page": 109,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p109.webp",
-          "quote": "유방암 치료: hormone receptor positive에는 항에스트로겐 치료, HER2 positive에는 trastuzumab 표적치료"
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 88,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p088.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 88,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "uploaded_explanation_or_original_question_compared",
-        "check2": "selection_text_and_number_checked",
-        "verifiedAgainst": "ER+/HER2- 액와림프절 음성 종양, Oncotype DX 검사 적응 여부 검토; ① 보기와 연결",
-        "anchor": "",
-        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. ER+/HER2- 액와림프절 음성 종양, Oncotype DX 검사 적응 여부 검토; ① 보기와 연결",
-        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "source_based_normalized_review_original",
       "transcriptionWarning": "기출 본문은 원본의 줄바꿈·일부 표기를 학습용으로 정리했으며 완전한 축어 전사를 보증하지 않습니다. 기출 원본 캡처로 확인하세요. 선배 표기상 ①번이나 강의안에는 Oncotype DX의 세부 적응증이 명시되지 않아 미확정으로 두었습니다.",
@@ -378,6 +511,31 @@
         "3": "감시림프절 음성이라는 정보만으로 림프부종이 발생했다고 진단할 수 없습니다.",
         "4": "증례에는 면역관문억제제의 적응증을 뒷받침하는 표지가 제시되지 않았습니다.",
         "5": "HER2 음성 종양은 trastuzumab 등 HER2 표적치료의 대상이 아닙니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 1,
+        "previousAnswerSource": "user_confirmed_per_annotated_explanation_review_2026",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -421,38 +579,78 @@
       "showOriginalByDefault": false,
       "answer": 2,
       "answerSource": "lecture_double_checked",
-      "explanation": "강의안 PDF 61쪽의 BRCA1 가족성 유방암 위험과 88쪽의 triple-negative 아형을 함께 대조했습니다. 젊은 나이와 직계 가족의 유사 병력은 BRCA1 유전성 위험을 시사합니다.",
+      "explanation": "첨부 강의안의 BRCA1 가족성 유방암 위험과 88쪽의 triple-negative 아형을 함께 대조했습니다. 젊은 나이와 직계 가족의 유사 병력은 BRCA1 유전성 위험을 시사합니다.",
       "evidence": [
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-          "page": 61,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p061.webp",
-          "quote": "BRCA1 mutation이 있는 가족에서 유방암 위험 증가"
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 88,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p088.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 88,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         },
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-          "page": 88,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p088.webp",
-          "quote": "유방암 분자 아형: Luminal A/B, HER2 positive, triple negative"
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 109,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p109.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 109,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "PDF 원본 슬라이드 내용과 검사·임상 조건 대조",
-        "check2": "기출 원본의 문항 및 각 선택지와 강의안 진술을 별도로 대조",
-        "verifiedAgainst": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-        "anchor": "BRCA1 mutation이 있는 가족에서 유방암 위험 증가",
-        "decisionReason": "근거 페이지가 답을 직접 지지하고 다른 선택지와 대조해 채택"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "source_based_normalized_review_original",
       "transcriptionWarning": "기출 본문은 원본의 줄바꿈·일부 표기를 학습용으로 정리했으며 완전한 축어 전사를 보증하지 않습니다. 기출 원본 캡처로 확인하세요. 기출 원본의 형광펜·필기는 출처 자료이며, 강의안 이중검증의 근거로 사용하지 않습니다.",
       "notes": "",
       "unitTitle": "유방병리",
       "unitId": "e94cd889bbec",
-      "aiExplanation": "판단 포인트: 강의안 PDF 61쪽의 BRCA1 가족성 유방암 위험과 88쪽의 triple-negative 아형을 함께 대조했습니다. 젊은 나이와 직계 가족의 유사 병력은 BRCA1 유전성 위험을 시사합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "choi-geumha:19-1",
@@ -496,24 +694,30 @@
       "answer": 4,
       "answerSource": "user_confirmed_per_general_highlight_instruction_2026",
       "explanation": "HER2 면역염색 2+는 판정이 애매한 경우여서 ISH/FISH 등 증폭 검사를 시행해 양성 여부를 확정합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "evidence": [
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
           "page": 88,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p088.webp",
-          "quote": "유방암 분자 아형: Luminal A/B, HER2 positive, triple negative"
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p088.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 88,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "question_text_options_cross_checked",
-        "check2": "highlight_or_supplied_explanation_or_lecture_compared",
-        "verifiedAgainst": "19 종양 해설.pdf 1쪽에서 ④ HER2 FISH 검사; 사이트 ④ 보기와 문구 일치",
-        "anchor": "",
-        "decisionReason": "사용자 요청으로 4번 잠정 고정. 19 종양 해설.pdf 1쪽에서 ④ HER2 FISH 검사; 사이트 ④ 보기와 문구 일치",
-        "note": "이 상태는 교수님 강의안 이중검증 완료가 아니라 사용자 요청에 따른 기본 정답입니다."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "source_based_normalized_review_original",
       "transcriptionWarning": "기출 본문은 원본의 줄바꿈·일부 표기를 학습용으로 정리했으며 완전한 축어 전사를 보증하지 않습니다. 기출 원본 캡처로 확인하세요. HER2 IHC 2+일 때 ISH 확인검사의 필요성은 이번 병리 강의안 PDF에서 직접 확인되지 않아 보류합니다.",
@@ -527,6 +731,31 @@
         "3": "ER/PR 양성이므로 내분비치료의 효과를 기대할 수 있습니다.",
         "4": "HER2 면역염색 2+는 판정이 애매한 경우여서 ISH/FISH 등 증폭 검사를 시행해 양성 여부를 확정합니다.",
         "5": "HER2 양성이 아직 확정되지 않아 trastuzumab 투여를 바로 결정할 수 없습니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "user_confirmed_per_general_highlight_instruction_2026",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -570,31 +799,78 @@
       "showOriginalByDefault": false,
       "answer": 1,
       "answerSource": "lecture_double_checked",
-      "explanation": "강의안 PDF 87쪽은 병기 결정에 포함되는 림프절 전이를 주요 예후 인자로 제시합니다. ER·PR 양성은 오히려 비교적 유리한 인자입니다.",
+      "explanation": "첨부 강의안은 병기 결정에 포함되는 림프절 전이를 주요 예후 인자로 제시합니다. ER·PR 양성은 오히려 비교적 유리한 인자입니다.",
       "evidence": [
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-          "page": 87,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p087.webp",
-          "quote": "Prognostic factors: stage (pT and lymph node), histologic grade, lymphovascular invasion, biomarker profile; gene expression signature"
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 88,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p088.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 88,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
+        },
+        {
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 109,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p109.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 109,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "PDF 원본 슬라이드 내용과 검사·임상 조건 대조",
-        "check2": "기출 원본의 문항 및 각 선택지와 강의안 진술을 별도로 대조",
-        "verifiedAgainst": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-        "anchor": "Prognostic factors: stage (pT and lymph node), histologic grade, lymphovascular invasion, biomarker profile; gene expression signature",
-        "decisionReason": "근거 페이지가 답을 직접 지지하고 다른 선택지와 대조해 채택"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "source_based_normalized_review_original",
       "transcriptionWarning": "기출 본문은 원본의 줄바꿈·일부 표기를 학습용으로 정리했으며 완전한 축어 전사를 보증하지 않습니다. 기출 원본 캡처로 확인하세요. 기출 원본의 형광펜·필기는 출처 자료이며, 강의안 이중검증의 근거로 사용하지 않습니다.",
       "notes": "",
       "unitTitle": "유방병리",
       "unitId": "e94cd889bbec",
-      "aiExplanation": "판단 포인트: 강의안 PDF 87쪽은 병기 결정에 포함되는 림프절 전이를 주요 예후 인자로 제시합니다. ER·PR 양성은 오히려 비교적 유리한 인자입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 1,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "choi-geumha:19-3",
@@ -640,42 +916,105 @@
       "explanation": "강의안 PDF 77~79쪽의 Paget disease는 유두·유륜의 홍반성, 습진양, 비늘 병변과 Paget 세포의 큰 핵·뚜렷한 핵소체 소견을 제시합니다.",
       "evidence": [
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
           "page": 77,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p077.webp",
-          "quote": "Paget disease: malignant glandular epithelial cells of the nipple-areolar epidermis"
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p077.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 77,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         },
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
           "page": 78,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p078.webp",
-          "quote": "Paget disease: erythematous, eczematous, scaly appearance"
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p078.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 78,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         },
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
           "page": 79,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p079.webp",
-          "quote": "Paget disease 조직병리: 뚜렷한 핵소체와 풍부한 세포질의 Paget cells"
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p079.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 79,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
+        },
+        {
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 80,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p080.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 80,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "PDF 원본 슬라이드 내용과 검사·임상 조건 대조",
-        "check2": "기출 원본의 문항 및 각 선택지와 강의안 진술을 별도로 대조",
-        "verifiedAgainst": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-        "anchor": "Paget disease: malignant glandular epithelial cells of the nipple-areolar epidermis",
-        "decisionReason": "근거 페이지가 답을 직접 지지하고 다른 선택지와 대조해 채택"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "source_based_normalized_review_original",
       "transcriptionWarning": "기출 본문은 원본의 줄바꿈·일부 표기를 학습용으로 정리했으며 완전한 축어 전사를 보증하지 않습니다. 기출 원본 캡처로 확인하세요. 기출 원본의 형광펜·필기는 출처 자료이며, 강의안 이중검증의 근거로 사용하지 않습니다.",
       "notes": "",
       "unitTitle": "유방병리",
       "unitId": "e94cd889bbec",
-      "aiExplanation": "판단 포인트: 강의안 PDF 77~79쪽의 Paget disease는 유두·유륜의 홍반성, 습진양, 비늘 병변과 Paget 세포의 큰 핵·뚜렷한 핵소체 소견을 제시합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 3,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "choi-geumha:20-17",
@@ -724,31 +1063,78 @@
       "showOriginalByDefault": false,
       "answer": 3,
       "answerSource": "lecture_double_checked",
-      "explanation": "기출의 FISH 그림에서 HER2 증폭이 관찰되며 ER·PR 음성과 함께, 강의안 PDF 88쪽의 HER2 positive 아형과 맞습니다.",
+      "explanation": "기출의 FISH 그림에서 HER2 증폭이 관찰되며 ER·PR 음성과 함께, 첨부 강의안의 HER2 positive 아형과 맞습니다.",
       "evidence": [
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
           "page": 88,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p088.webp",
-          "quote": "유방암 분자 아형: Luminal A/B, HER2 positive, triple negative"
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p088.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 88,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
+        },
+        {
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 109,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p109.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 109,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
       "candidateEvidence": [],
       "validation": {
-        "stage": "accepted",
-        "check1": "PDF 원본 슬라이드 내용과 검사·임상 조건 대조",
-        "check2": "기출 원본의 문항 및 각 선택지와 강의안 진술을 별도로 대조",
-        "verifiedAgainst": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-        "anchor": "유방암 분자 아형: Luminal A/B, HER2 positive, triple negative",
-        "decisionReason": "근거 페이지가 답을 직접 지지하고 다른 선택지와 대조해 채택"
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "partial",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "HER2 표적치료와 분자아형은 확인되지만 IHC 2+/3+ 및 SISH/FISH 판독 세부 기준은 이 강의안에서 충분히 직접 제시되지 않습니다. 이미지 기반 검사 판독과 일반 치료 근거를 구분합니다."
       },
       "transcriptionStatus": "source_based_normalized_review_original",
       "transcriptionWarning": "기출 본문은 원본의 줄바꿈·일부 표기를 학습용으로 정리했으며 완전한 축어 전사를 보증하지 않습니다. 기출 원본 캡처로 확인하세요. 기출 원본의 형광펜·필기는 출처 자료이며, 강의안 이중검증의 근거로 사용하지 않습니다.",
       "notes": "",
       "unitTitle": "유방병리",
       "unitId": "e94cd889bbec",
-      "aiExplanation": "판단 포인트: 기출의 FISH 그림에서 HER2 증폭이 관찰되며 ER·PR 음성과 함께, 강의안 PDF 88쪽의 HER2 positive 아형과 맞습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "partial",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 3,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "HER2 표적치료와 분자아형은 확인되지만 IHC 2+/3+ 및 SISH/FISH 판독 세부 기준은 이 강의안에서 충분히 직접 제시되지 않습니다. 이미지 기반 검사 판독과 일반 치료 근거를 구분합니다.",
+        "limitations": "HER2 표적치료와 분자아형은 확인되지만 IHC 2+/3+ 및 SISH/FISH 판독 세부 기준은 이 강의안에서 충분히 직접 제시되지 않습니다. 이미지 기반 검사 판독과 일반 치료 근거를 구분합니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "partial"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "choi-geumha:20-18",
@@ -791,38 +1177,78 @@
       "showOriginalByDefault": false,
       "answer": 4,
       "answerSource": "lecture_double_checked",
-      "explanation": "HER2 양성 유방암은 강의안 PDF 109쪽의 HER2 표적치료(trastuzumab) 도식과 연결됩니다.",
+      "explanation": "HER2 양성 유방암은 첨부 강의안의 HER2 표적치료(trastuzumab) 도식과 연결됩니다.",
       "evidence": [
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
           "page": 88,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p088.webp",
-          "quote": "유방암 분자 아형: Luminal A/B, HER2 positive, triple negative"
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p088.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 88,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         },
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
           "page": 109,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p109.webp",
-          "quote": "유방암 치료: hormone receptor positive에는 항에스트로겐 치료, HER2 positive에는 trastuzumab 표적치료"
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p109.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 109,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
       "candidateEvidence": [],
       "validation": {
-        "stage": "accepted",
-        "check1": "PDF 원본 슬라이드 내용과 검사·임상 조건 대조",
-        "check2": "기출 원본의 문항 및 각 선택지와 강의안 진술을 별도로 대조",
-        "verifiedAgainst": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-        "anchor": "유방암 분자 아형: Luminal A/B, HER2 positive, triple negative",
-        "decisionReason": "근거 페이지가 답을 직접 지지하고 다른 선택지와 대조해 채택"
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "partial",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "HER2 표적치료와 분자아형은 확인되지만 IHC 2+/3+ 및 SISH/FISH 판독 세부 기준은 이 강의안에서 충분히 직접 제시되지 않습니다. 이미지 기반 검사 판독과 일반 치료 근거를 구분합니다."
       },
       "transcriptionStatus": "source_based_normalized_review_original",
       "transcriptionWarning": "기출 본문은 원본의 줄바꿈·일부 표기를 학습용으로 정리했으며 완전한 축어 전사를 보증하지 않습니다. 기출 원본 캡처로 확인하세요. 기출 원본의 형광펜·필기는 출처 자료이며, 강의안 이중검증의 근거로 사용하지 않습니다.",
       "notes": "",
       "unitTitle": "유방병리",
       "unitId": "e94cd889bbec",
-      "aiExplanation": "판단 포인트: HER2 양성 유방암은 강의안 PDF 109쪽의 HER2 표적치료(trastuzumab) 도식과 연결됩니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "partial",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "HER2 표적치료와 분자아형은 확인되지만 IHC 2+/3+ 및 SISH/FISH 판독 세부 기준은 이 강의안에서 충분히 직접 제시되지 않습니다. 이미지 기반 검사 판독과 일반 치료 근거를 구분합니다.",
+        "limitations": "HER2 표적치료와 분자아형은 확인되지만 IHC 2+/3+ 및 SISH/FISH 판독 세부 기준은 이 강의안에서 충분히 직접 제시되지 않습니다. 이미지 기반 검사 판독과 일반 치료 근거를 구분합니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "partial"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "choi-geumha:20-19",
@@ -872,24 +1298,30 @@
       "answer": 5,
       "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
       "explanation": "기출 문맥의 정답은 추가 액와 림프절 치료 여부 평가입니다. 다만 현대 치료에서는 감시림프절 양성이라도 조건에 따라 곽청을 생략하므로 모든 환자에서 곽청이 필수인 것은 아닙니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "evidence": [
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-          "page": 87,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p087.webp",
-          "quote": "Prognostic factors: stage (pT and lymph node), histologic grade, lymphovascular invasion, biomarker profile; gene expression signature"
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 88,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p088.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 88,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "uploaded_explanation_or_original_question_compared",
-        "check2": "selection_text_and_number_checked",
-        "verifiedAgainst": "감시림프절 전이가 확인되면 추가 액와림프절 관리가 필요하다는 과거 기출 문맥의 ⑤ 보기; 현대 치료에서 모든 환자에게 일률적 곽청을 요구하지 않는 예외를 해설에 표시",
-        "anchor": "",
-        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 감시림프절 전이가 확인되면 추가 액와림프절 관리가 필요하다는 과거 기출 문맥의 ⑤ 보기; 현대 치료에서 모든 환자에게 일률적 곽청을 요구하지 않는 예외를 해설에 표시",
-        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "source_based_normalized_review_original",
       "transcriptionWarning": "기출 본문은 원본의 줄바꿈·일부 표기를 학습용으로 정리했으며 완전한 축어 전사를 보증하지 않습니다. 기출 원본 캡처로 확인하세요. 선배 정리본에는 ②번이 형광펜으로 표시되어 있으나 감시림프절 양성이 곧 원격전이라는 의미는 아닙니다. 본 강의안으로 단일 정답을 확정하지 않았습니다.",
@@ -903,6 +1335,31 @@
         "3": "내분비치료 적응증은 ER/PR 등 호르몬수용체에 근거하며 림프절 양성 여부만으로 결정하지 않습니다.",
         "4": "림프절 전이는 재발 위험을 높여 항암치료 고려 근거가 될 수 있습니다. 치료 생략을 확정하는 소견이 아닙니다.",
         "5": "기출 문맥의 정답은 추가 액와 림프절 치료 여부 평가입니다. 다만 현대 치료에서는 감시림프절 양성이라도 조건에 따라 곽청을 생략하므로 모든 환자에서 곽청이 필수인 것은 아닙니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 5,
+        "previousAnswerSource": "user_confirmed_per_annotated_explanation_review_2026",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -947,24 +1404,30 @@
       "answer": 1,
       "answerSource": "user_confirmed_per_annotated_explanation_review_2026",
       "explanation": "MammaPrint는 유방암 유전자 발현을 분석해 재발 위험과 일부 환자의 추가 항암치료 필요성을 판단하는 데 도움을 줍니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "evidence": [
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
           "page": 87,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p087.webp",
-          "quote": "Prognostic factors: stage (pT and lymph node), histologic grade, lymphovascular invasion, biomarker profile; gene expression signature"
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p087.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 87,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "uploaded_explanation_or_original_question_compared",
-        "check2": "selection_text_and_number_checked",
-        "verifiedAgainst": "19 종양 해설.pdf 3~4쪽 20번 MammaPrint ①; 현재 보기 ①과 문구 일치",
-        "anchor": "",
-        "decisionReason": "사용자 요청에 따라 기본 정답으로 잠정 고정. 19 종양 해설.pdf 3~4쪽 20번 MammaPrint ①; 현재 보기 ①과 문구 일치",
-        "note": "강의안 이중검증 정답이 아닌 사용자 요청 기본 정답입니다. 재검토하며 정답 직접 수정 가능."
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "partial",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "강의안은 gene expression signature를 예후인자로 제시합니다. 다유전자 검사의 항암치료 추가 이득·적응증 전체를 직접 입증하는 설명은 부족해 부분 근거로 구분합니다."
       },
       "transcriptionStatus": "source_based_normalized_review_original",
       "transcriptionWarning": "기출 본문은 원본의 줄바꿈·일부 표기를 학습용으로 정리했으며 완전한 축어 전사를 보증하지 않습니다. 기출 원본 캡처로 확인하세요. 원문에 HER2 SISH (→FISH인데 오타인 듯?)라는 선배 주석이 있으나 실제 선택지에는 HER2 SISH로 표기돼 있습니다. 강의안에 MammaPrint의 적응증이 명시되지 않아 미확정입니다.",
@@ -978,6 +1441,31 @@
         "3": "BRCA1은 유전성 유방암 감수성을 확인하는 검사로, 종양의 항암치료 이득 예측 검사와 구분해야 합니다.",
         "4": "미세부수체 불안정성은 dMMR/MSI 관련 생물학적 특성을 평가하며 해당 유방암의 다유전자 재발 위험 검사는 아닙니다.",
         "5": "E-cadherin은 유관암·소엽암 감별 등 병리 분류에 이용되며 항암치료 이득을 예측하는 다유전자 검사와 다릅니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "partial",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 1,
+        "previousAnswerSource": "user_confirmed_per_annotated_explanation_review_2026",
+        "reason": "강의안은 gene expression signature를 예후인자로 제시합니다. 다유전자 검사의 항암치료 추가 이득·적응증 전체를 직접 입증하는 설명은 부족해 부분 근거로 구분합니다.",
+        "limitations": "강의안은 gene expression signature를 예후인자로 제시합니다. 다유전자 검사의 항암치료 추가 이득·적응증 전체를 직접 입증하는 설명은 부족해 부분 근거로 구분합니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "partial"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -1028,37 +1516,77 @@
       "answer": null,
       "answerSource": "pending_review",
       "explanation": "",
-      "evidence": [],
-      "candidateEvidence": [
+      "evidence": [
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-          "page": 87,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p087.webp",
-          "quote": "Prognostic factors: stage (pT and lymph node), histologic grade, lymphovascular invasion, biomarker profile; gene expression signature"
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 88,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p088.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 88,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         },
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-          "page": 88,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p088.webp",
-          "quote": "유방암 분자 아형: Luminal A/B, HER2 positive, triple negative"
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 109,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p109.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 109,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "pending",
-        "check1": "강의안에서 관련 대목은 검토했지만 정답 확정에 부족함",
-        "check2": "선택지 또는 검사 적응증을 강의안만으로 유일하게 판정할 수 없음",
-        "verifiedAgainst": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-        "anchor": "",
-        "decisionReason": "원문 출처/강의안만으로 채점 정답을 확정하지 않음. 원본 확인 후 사용자 지정 필요"
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "partial",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "림프절 곽청 후 림프부종 위험과 나머지 보기의 검사 적응증을 이 교수님 자료만으로 모두 대조할 수 없어 정답을 새로 확정하지 않습니다."
       },
       "transcriptionStatus": "source_based_normalized_review_original",
       "transcriptionWarning": "기출 본문은 원본의 줄바꿈·일부 표기를 학습용으로 정리했으며 완전한 축어 전사를 보증하지 않습니다. 기출 원본 캡처로 확인하세요. 선택지는 PDF 2쪽, 종양의 HER2 면역염색/SISH 그림은 PDF 1쪽입니다. 표시된 정답은 강의안 근거로 확정되지 않았습니다. 이 문제의 영상은 원본 PDF 1쪽이고 선택지 원문은 PDF 2쪽입니다.",
       "notes": "정답 검토 필요: 선배 필기 표시와 강의안 직접 근거는 구분해야 합니다.",
       "unitTitle": "유방병리",
       "unitId": "e94cd889bbec",
-      "aiExplanation": "이 문항(21-71)의 판단에서는 지문에 제시된 질환·검사·치료 조건을 각각 구별하고 원본 보기와 비교해야 합니다. 지문: 58세 여자환자가 좌측 유방에 2.5cm 덩이가 만져졌고 같은 쪽 겨드랑이에도 1.5cm 덩이가 만져졌다. 중심부바늘생검에서 침윤성관암종으로 진단되어 수술하였다. ER·PR 음성이며 HER2/neu 면역조직화학염색과 HER2 SISH 결과가 다음과 같았다. 이 종양의 특징에 해당하는 것은?\n현재 해당 문항에 검증된 단일 정답 해설이 없으므로 정답을 추정하여 추가하지 않았습니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "partial",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": null,
+        "previousAnswerSource": "pending_review",
+        "reason": "림프절 곽청 후 림프부종 위험과 나머지 보기의 검사 적응증을 이 교수님 자료만으로 모두 대조할 수 없어 정답을 새로 확정하지 않습니다.",
+        "limitations": "림프절 곽청 후 림프부종 위험과 나머지 보기의 검사 적응증을 이 교수님 자료만으로 모두 대조할 수 없어 정답을 새로 확정하지 않습니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "partial"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "choi-geumha:21-72",
@@ -1101,38 +1629,78 @@
       "showOriginalByDefault": false,
       "answer": 4,
       "answerSource": "lecture_double_checked",
-      "explanation": "HER2 양성 아형에서 항-HER2 표적치료인 trastuzumab을 사용할 수 있습니다. 강의안 PDF 88쪽의 HER2 아형과 109쪽 치료 그림을 확인했습니다. 앞선 71번의 검사 사진과 연결된 문항입니다.",
+      "explanation": "HER2 양성 아형에서 항-HER2 표적치료인 trastuzumab을 사용할 수 있습니다. 첨부 강의안의 HER2 아형과 109쪽 치료 그림을 확인했습니다. 앞선 71번의 검사 사진과 연결된 문항입니다.",
       "evidence": [
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
           "page": 88,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p088.webp",
-          "quote": "유방암 분자 아형: Luminal A/B, HER2 positive, triple negative"
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p088.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 88,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         },
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
           "page": 109,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p109.webp",
-          "quote": "유방암 치료: hormone receptor positive에는 항에스트로겐 치료, HER2 positive에는 trastuzumab 표적치료"
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p109.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 109,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
       "candidateEvidence": [],
       "validation": {
-        "stage": "accepted",
-        "check1": "PDF 원본 슬라이드 내용과 검사·임상 조건 대조",
-        "check2": "기출 원본의 문항 및 각 선택지와 강의안 진술을 별도로 대조",
-        "verifiedAgainst": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-        "anchor": "유방암 분자 아형: Luminal A/B, HER2 positive, triple negative",
-        "decisionReason": "근거 페이지가 답을 직접 지지하고 다른 선택지와 대조해 채택"
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "partial",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "HER2 표적치료와 분자아형은 확인되지만 IHC 2+/3+ 및 SISH/FISH 판독 세부 기준은 이 강의안에서 충분히 직접 제시되지 않습니다. 이미지 기반 검사 판독과 일반 치료 근거를 구분합니다."
       },
       "transcriptionStatus": "source_based_normalized_review_original",
       "transcriptionWarning": "기출 본문은 원본의 줄바꿈·일부 표기를 학습용으로 정리했으며 완전한 축어 전사를 보증하지 않습니다. 기출 원본 캡처로 확인하세요. 기출 원본의 형광펜·필기는 출처 자료이며, 강의안 이중검증의 근거로 사용하지 않습니다.",
       "notes": "",
       "unitTitle": "유방병리",
       "unitId": "e94cd889bbec",
-      "aiExplanation": "판단 포인트: HER2 양성 아형에서 항-HER2 표적치료인 trastuzumab을 사용할 수 있습니다. 강의안 PDF 88쪽의 HER2 아형과 109쪽 치료 그림을 확인했습니다. 앞선 71번의 검사 사진과 연결된 문항입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "partial",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "HER2 표적치료와 분자아형은 확인되지만 IHC 2+/3+ 및 SISH/FISH 판독 세부 기준은 이 강의안에서 충분히 직접 제시되지 않습니다. 이미지 기반 검사 판독과 일반 치료 근거를 구분합니다.",
+        "limitations": "HER2 표적치료와 분자아형은 확인되지만 IHC 2+/3+ 및 SISH/FISH 판독 세부 기준은 이 강의안에서 충분히 직접 제시되지 않습니다. 이미지 기반 검사 판독과 일반 치료 근거를 구분합니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "partial"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "choi-geumha:21-73",
@@ -1181,38 +1749,63 @@
       "showOriginalByDefault": false,
       "answer": 3,
       "answerSource": "lecture_double_checked",
-      "explanation": "제시된 ER/PR 염색 양성, HER2 음성의 영상과 강의안 PDF 109쪽의 hormone receptor 양성 유방암 내분비치료 도식을 대조했습니다.",
+      "explanation": "제시된 ER/PR 염색 양성, HER2 음성의 영상과 첨부 강의안의 hormone receptor 양성 유방암 내분비치료 도식을 대조했습니다.",
       "evidence": [
         {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
           "page": 88,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p088.webp",
-          "quote": "유방암 분자 아형: Luminal A/B, HER2 positive, triple negative"
-        },
-        {
-          "lectureId": "breast-pathology",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-          "page": 109,
-          "image": "assets/evidence/choi-geumha/breast-pathology-p109.webp",
-          "quote": "유방암 치료: hormone receptor positive에는 항에스트로겐 치료, HER2 positive에는 trastuzumab 표적치료"
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p088.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 88,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "PDF 원본 슬라이드 내용과 검사·임상 조건 대조",
-        "check2": "기출 원본의 문항 및 각 선택지와 강의안 진술을 별도로 대조",
-        "verifiedAgainst": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-        "anchor": "유방암 분자 아형: Luminal A/B, HER2 positive, triple negative",
-        "decisionReason": "근거 페이지가 답을 직접 지지하고 다른 선택지와 대조해 채택"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "source_based_normalized_review_original",
       "transcriptionWarning": "기출 본문은 원본의 줄바꿈·일부 표기를 학습용으로 정리했으며 완전한 축어 전사를 보증하지 않습니다. 기출 원본 캡처로 확인하세요. 기출 원본의 형광펜·필기는 출처 자료이며, 강의안 이중검증의 근거로 사용하지 않습니다.",
       "notes": "",
       "unitTitle": "유방병리",
       "unitId": "e94cd889bbec",
-      "aiExplanation": "판단 포인트: 제시된 ER/PR 염색 양성, HER2 음성의 영상과 강의안 PDF 109쪽의 hormone receptor 양성 유방암 내분비치료 도식을 대조했습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 3,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "choi-geumha:22-31",
@@ -1257,39 +1850,67 @@
       "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 4,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 4입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "explanation": "침윤성 소엽암의 조직학적 특징은 제시되나 임상 촉지·다중심성 등 모든 보기를 직접 검증할 자료는 부족합니다.",
+      "evidence": [
         {
-          "lectureId": "22-class-topic-31",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-          "page": 36,
-          "image": "assets/evidence/class22/lecture-31-p036.webp",
-          "quote": "침윤성 소엽암의 E-cadherin 및 병리 조직소견",
-          "lectureOwner": "최금하 교수님"
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 94,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p094.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 94,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "exam_answer_key",
-        "check1": "official_exam_answer_sheet_last_page_transcribed",
-        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
-        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
-        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
-        "classificationNote": "강의안 주제 기반 소속 추정: choi-geumha / 유방병리",
-        "classificationConfidence": "review",
-        "lectureLinkStatus": "lecture_topic_matched_visual_page_checked_not_accepted_as_proof",
-        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "partial",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "침윤성 소엽암의 조직학적 특징은 제시되나 임상 촉지·다중심성 등 모든 보기를 직접 검증할 자료는 부족합니다."
       },
       "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "유방병리",
       "unitId": "e94cd889bbec",
-      "aiExplanation": "침윤성 소엽암은 E-cadherin 소실과 분리된 침윤세포의 single-file pattern이 특징적일 수 있습니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "aiExplanation": "",
       "answerKey": {
         "image": "assets/evidence/class22/exam-answer-key-p07.webp",
         "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "partial",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "official_last_page_key_only",
+        "reason": "침윤성 소엽암의 조직학적 특징은 제시되나 임상 촉지·다중심성 등 모든 보기를 직접 검증할 자료는 부족합니다.",
+        "limitations": "침윤성 소엽암의 조직학적 특징은 제시되나 임상 촉지·다중심성 등 모든 보기를 직접 검증할 자료는 부족합니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "partial"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -1335,39 +1956,67 @@
       "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 3,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 3입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "explanation": "섬유선종의 양성 이중성분 구조는 직접 확인됩니다. 석회화 양상 등 나머지 보기에 대한 직접 근거는 제한적입니다.",
+      "evidence": [
         {
-          "lectureId": "22-class-topic-32",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-          "page": 38,
-          "image": "assets/evidence/class22/lecture-32-p038.webp",
-          "quote": "섬유선종의 병리학적 특성",
-          "lectureOwner": "최금하 교수님"
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 39,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p039.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 39,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "exam_answer_key",
-        "check1": "official_exam_answer_sheet_last_page_transcribed",
-        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
-        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
-        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
-        "classificationNote": "강의안 주제 기반 소속 추정: choi-geumha / 유방병리",
-        "classificationConfidence": "review",
-        "lectureLinkStatus": "lecture_topic_matched_visual_page_checked_not_accepted_as_proof",
-        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "partial",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "섬유선종의 양성 이중성분 구조는 직접 확인됩니다. 석회화 양상 등 나머지 보기에 대한 직접 근거는 제한적입니다."
       },
       "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "유방병리",
       "unitId": "e94cd889bbec",
-      "aiExplanation": "유방 섬유선종은 젊은 여성에서 흔한 양성 종괴로, 경계·유동성·발견 연령을 종합하여 판단합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "aiExplanation": "",
       "answerKey": {
         "image": "assets/evidence/class22/exam-answer-key-p07.webp",
         "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "partial",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 3,
+        "previousAnswerSource": "official_last_page_key_only",
+        "reason": "섬유선종의 양성 이중성분 구조는 직접 확인됩니다. 석회화 양상 등 나머지 보기에 대한 직접 근거는 제한적입니다.",
+        "limitations": "섬유선종의 양성 이중성분 구조는 직접 확인됩니다. 석회화 양상 등 나머지 보기에 대한 직접 근거는 제한적입니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "partial"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -1413,39 +2062,67 @@
       "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 3,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 3입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "explanation": "p63은 근상피세포의 핵에 염색됩니다. Calponin·SMA의 세포질 염색과 구분합니다.",
+      "evidence": [
         {
-          "lectureId": "22-class-topic-46",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-          "page": 32,
-          "image": "assets/evidence/class22/lecture-46-p032.webp",
-          "quote": "유방 근상피세포 표지자 p63",
-          "lectureOwner": "최금하 교수님"
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 9,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p009.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 9,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "exam_answer_key",
-        "check1": "official_exam_answer_sheet_last_page_transcribed",
-        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
-        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
-        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
-        "classificationNote": "강의안 주제 기반 소속 추정: choi-geumha / 유방병리",
-        "classificationConfidence": "topic_matched",
-        "lectureLinkStatus": "lecture_topic_matched_visual_page_checked_not_accepted_as_proof",
-        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "유방병리",
       "unitId": "e94cd889bbec",
-      "aiExplanation": "유방의 근상피세포는 calponin, SMA, p63 등 표지자와 연결되며, 침윤성 병변에서는 근상피층 소실이 중요합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "aiExplanation": "",
       "answerKey": {
         "image": "assets/evidence/class22/exam-answer-key-p07.webp",
         "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 3,
+        "previousAnswerSource": "official_last_page_key_only",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -1491,39 +2168,67 @@
       "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 4,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 4입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "explanation": "E-cadherin은 유관성 병변에서 유지되는 반면 소엽성 병변에서는 소실되는 특징이 있어 DCIS/LCIS 감별에 유용합니다.",
+      "evidence": [
         {
-          "lectureId": "22-class-topic-47",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-          "page": 36,
-          "image": "assets/evidence/class22/lecture-47-p036.webp",
-          "quote": "소엽암 및 E-cadherin",
-          "lectureOwner": "최금하 교수님"
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 82,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p082.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 82,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "exam_answer_key",
-        "check1": "official_exam_answer_sheet_last_page_transcribed",
-        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
-        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
-        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
-        "classificationNote": "강의안 주제 기반 소속 추정: choi-geumha / 유방병리",
-        "classificationConfidence": "topic_matched",
-        "lectureLinkStatus": "lecture_topic_matched_visual_page_checked_not_accepted_as_proof",
-        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "유방병리",
       "unitId": "e94cd889bbec",
-      "aiExplanation": "LCIS와 DCIS 감별에서는 E-cadherin 면역염색이 도움이 될 수 있습니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "aiExplanation": "",
       "answerKey": {
         "image": "assets/evidence/class22/exam-answer-key-p07.webp",
         "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "official_last_page_key_only",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -1569,39 +2274,82 @@
       "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 5,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 5입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "explanation": "DCIS는 관내 종양이며 comedo형은 중심 괴사를 보입니다. 레포트의 negative margin은 절제연에 종양이 없다는 뜻이고, high nuclear grade는 균일한 저등급 핵과 다릅니다.",
+      "evidence": [
         {
-          "lectureId": "22-class-topic-48",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
           "page": 64,
-          "image": "assets/evidence/class22/lecture-48-p064.webp",
-          "quote": "유관상피내암 DCIS 병리 소견",
-          "lectureOwner": "최금하 교수님"
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p064.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 64,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
+        },
+        {
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 65,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p065.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 65,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "exam_answer_key",
-        "check1": "official_exam_answer_sheet_last_page_transcribed",
-        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
-        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
-        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
-        "classificationNote": "강의안 주제 기반 소속 추정: choi-geumha / 유방병리",
-        "classificationConfidence": "topic_matched",
-        "lectureLinkStatus": "lecture_topic_matched_visual_page_checked_not_accepted_as_proof",
-        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "유방병리",
       "unitId": "e94cd889bbec",
-      "aiExplanation": "유방병리 판독 시 핵등급, 괴사, 미세석회화, 절제연, 침윤 여부와 병변 크기를 각각 확인합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "aiExplanation": "",
       "answerKey": {
         "image": "assets/evidence/class22/exam-answer-key-p07.webp",
         "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 5,
+        "previousAnswerSource": "official_last_page_key_only",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -1647,39 +2395,67 @@
       "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 2,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "explanation": "관 형성 90%는 1점, 작고 균일한 핵은 1점, 제시된 강의안 표에서 10 HPF당 유사분열 5개는 1점입니다. 합계 3점으로 grade I, well differentiated(②)입니다.",
+      "evidence": [
         {
-          "lectureId": "22-class-topic-49",
-          "file": "최금하pf_261013_혈액과종양_유방병리.pdf.pdf",
-          "page": 87,
-          "image": "assets/evidence/class22/lecture-49-p087.webp",
-          "quote": "조직학적 등급 및 예후인자",
-          "lectureOwner": "최금하 교수님"
+          "lectureId": "audit116-choi-geumha-2026-유방병리",
+          "lectureOwner": "최금하 교수님",
+          "professor": "choi-geumha",
+          "file": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "page": 90,
+          "image": "assets/evidence/audit-1.1.6/choi-geumha/p090.webp",
+          "quote": "",
+          "lectureTitle": "유방병리",
+          "lectureYear": 2026,
+          "pageBasis": "PDF 실제 페이지",
+          "sourceFile": "최금하pf_261013_혈액과종양_유방병리.pdf(1).pdf",
+          "sourcePage": 90,
+          "sourceSha256": "800942a3e061284c2f6d792035132457a3903cd9b9846f5a2632c5e5d8ced7de"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "exam_answer_key",
-        "check1": "official_exam_answer_sheet_last_page_transcribed",
-        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
-        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
-        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
-        "classificationNote": "강의안 주제 기반 소속 추정: choi-geumha / 유방병리",
-        "classificationConfidence": "topic_matched",
-        "lectureLinkStatus": "lecture_topic_matched_visual_page_checked_not_accepted_as_proof",
-        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "유방병리",
       "unitId": "e94cd889bbec",
-      "aiExplanation": "Nottingham 조직학적 등급은 관 형성, 핵 다형성, 유사분열 수의 점수를 합산하여 분화도를 판단합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "aiExplanation": "",
       "answerKey": {
         "image": "assets/evidence/class22/exam-answer-key-p07.webp",
         "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "choi-geumha",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "official_last_page_key_only",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     }
   ]

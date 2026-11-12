@@ -48,28 +48,58 @@
       "explanation": "암은 종양억제유전자 기능 소실 및 oncogene 활성화와 연관되고, 조절되지 않는 증식과 전이 가능성을 특징으로 합니다. ①~④가 모두 맞으므로 ⑤입니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 12,
-          "image": "assets/evidence/lee-seoul/lecture1-p012.webp",
-          "quote": "oncogenes ... loss of functional ... tumor-suppressor genes"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 11,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p012.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 12,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         },
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 13,
-          "image": "assets/evidence/lee-seoul/lecture1-p013.webp",
-          "quote": "metastases — stage IV"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 12,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p013.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 13,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 113,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p114.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 114,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "oncogenes ... loss of functional ... tumor-suppressor genes",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -78,7 +108,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "판단 포인트: 암은 종양억제유전자 기능 소실 및 oncogene 활성화와 연관되고, 조절되지 않는 증식과 전이 가능성을 특징으로 합니다. ①~④가 모두 맞으므로 ⑤입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 5,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:17-60",
@@ -121,28 +176,43 @@
       "explanation": "강의안에서 glucocorticoid의 항암 관련 효과는 lympholytic effect(림프구의 분열 억제)로 설명합니다. 단순한 항염작용은 이 문제에서 제시한 직접적인 항종양 작용기전이 아닙니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 109,
-          "image": "assets/evidence/lee-seoul/lecture1-p109.webp",
-          "quote": "Glucocorticoids — Lympholytic effect — Suppress mitosis of lymphocyte"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 53,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p054.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 54,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         },
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 54,
-          "image": "assets/evidence/lee-seoul/lecture1-p054.webp",
-          "quote": "antimetabolites DNA synthesis / alkylating DNA / plant derivatives microtubule"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 108,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p109.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 109,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "Glucocorticoids — Lympholytic effect — Suppress mitosis of lymphocyte",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -151,7 +221,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "판단 포인트: 강의안에서 glucocorticoid의 항암 관련 효과는 lympholytic effect(림프구의 분열 억제)로 설명합니다. 단순한 항염작용은 이 문제에서 제시한 직접적인 항종양 작용기전이 아닙니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:17-62",
@@ -192,31 +287,65 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": 1,
+      "answer": null,
       "answerSource": "user_confirmed",
-      "explanation": "과거 수업 강의안의 신규 남성 암 환자 수 예측에서 대장암이 최다로 제시되었다는 사용자 제공 해설입니다. 이 통계는 발표 시점에 따라 달라지므로 2026년 최신 통계의 현재 순위와 혼동하지 않습니다.",
+      "explanation": "이번 강의안에 2020년 예측 통계는 있으나 남성 신규 발생은 폐암이 가장 높게 제시되어 기존 답 ① 대장암을 직접 지지하지 않습니다. 연도 없는 향후 예측 질문이므로 과거 답의 적합성을 보류합니다.",
       "candidateEvidence": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 5,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p006.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 6,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        }
+      ],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "original_question_reexamined",
-        "check2": "user_assigned_answer",
-        "verifiedAgainst": "explicit_user_instruction",
-        "anchor": "",
-        "decisionReason": "사용자 지정 답안 유지; 강의안 확정과 별도"
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "conflict",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "이번 강의안에 2020년 예측 통계는 있으나 남성 신규 발생은 폐암이 가장 높게 제시되어 기존 답 ① 대장암을 직접 지지하지 않습니다. 연도 없는 향후 예측 질문이므로 과거 답의 적합성을 보류합니다."
       },
       "transcriptionStatus": "user_supplied_or_original_image_verified",
-      "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
-      "notes": "정답은 사용자가 직접 지정. 강의안에서 직접 확인되지 않은 세부 내용은 검증된 강의안 정답으로 표시하지 않음.",
+      "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
+      "notes": "",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
       "aiExplanation": "",
-      "choiceExplanations": {
-        "1": "기출 당시 강의안의 남성 신규 암 환자 수 예측 그래프에서 대장암이 가장 높은 항목으로 표시되어 있습니다. 현재 암등록 통계의 순위와 구별해야 합니다.",
-        "2": "위암은 과거 높은 발생률을 보였지만 해당 예측 그래프에서 대장암보다 낮게 표시됩니다.",
-        "3": "폐암은 중요한 암 사망 원인이지만 “신규 환자 수”와 “사망 수”는 서로 다른 지표입니다.",
-        "4": "간암은 남성에서 주요 암종이지만 해당 연도 신규 환자 수 예측 1위는 아닙니다.",
-        "5": "신장암은 열거된 암종 중 해당 과거 예측 자료의 1위로 제시되지 않았습니다."
+      "choiceExplanations": {},
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "conflict",
+        "professor": "lee-seoul",
+        "gradingHold": true,
+        "answerRevised": false,
+        "referenceAnswer": 1,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "이번 강의안에 2020년 예측 통계는 있으나 남성 신규 발생은 폐암이 가장 높게 제시되어 기존 답 ① 대장암을 직접 지지하지 않습니다. 연도 없는 향후 예측 질문이므로 과거 답의 적합성을 보류합니다.",
+        "limitations": "이번 강의안에 2020년 예측 통계는 있으나 남성 신규 발생은 폐암이 가장 높게 제시되어 기존 답 ① 대장암을 직접 지지하지 않습니다. 연도 없는 향후 예측 질문이므로 과거 답의 적합성을 보류합니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "conflict"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -258,31 +387,80 @@
       "figureRequired": false,
       "figureImages": [],
       "showOriginalByDefault": false,
-      "answer": 2,
+      "answer": null,
       "answerSource": "user_confirmed",
-      "explanation": "사용자 제공 기존 해설의 정답은 ②입니다. MTX는 세포 내 유입 감소, vincristine과 teniposide는 MDR1/P-glycoprotein 증가, bleomycin은 DNA 절단 복구능 증가 등이 약물 내성과 관련됩니다. Cyclophosphamide의 해독·대사 증강 가능성은 구체적 대사 경로를 강의안에서 추가 확인해야 합니다.",
+      "explanation": "강의안의 내성 총론만으로 약물별 보기 ②와 ④를 유일하게 구분할 수 없습니다. Cyclophosphamide는 대사 활성화가 필요한 전구약물이므로 단순 “enhanced metabolism”을 무조건 내성으로 해석할 수도 없습니다.",
       "candidateEvidence": [],
-      "evidence": [],
+      "evidence": [
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 79,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p080.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 80,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Cancer Chemotherapy — 증례토의",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Cancer Chemotherapy — 증례토의",
+          "page": 15,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p129.webp",
+          "quote": "",
+          "lectureTitle": "Cancer Chemotherapy — 증례토의",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 129,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        }
+      ],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "original_question_reexamined",
-        "check2": "user_assigned_answer",
-        "verifiedAgainst": "explicit_user_instruction",
-        "anchor": "",
-        "decisionReason": "사용자 지정 답안 유지; 강의안 확정과 별도"
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "conflict",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "강의안의 내성 총론만으로 약물별 보기 ②와 ④를 유일하게 구분할 수 없습니다. Cyclophosphamide는 대사 활성화가 필요한 전구약물이므로 단순 “enhanced metabolism”을 무조건 내성으로 해석할 수도 없습니다."
       },
       "transcriptionStatus": "user_supplied_or_original_image_verified",
-      "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
-      "notes": "정답은 사용자가 직접 지정. 강의안에서 직접 확인되지 않은 세부 내용은 검증된 강의안 정답으로 표시하지 않음.",
+      "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
+      "notes": "",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
       "aiExplanation": "",
-      "choiceExplanations": {
-        "1": "MTX는 세포 유입 저하나 DHFR 관련 변화를 통해 내성이 생길 수 있습니다. 단순한 활성화 실패만으로 대표기전을 설명하지 않습니다.",
-        "2": "Cyclophosphamide는 대사 과정 변화로 활성형 약제 농도가 달라져 내성이 생길 수 있습니다. 다만 활성화·해독 대사를 구별해야 합니다.",
-        "3": "Vincristine 내성에서는 MDR1/P-glycoprotein의 과발현에 따른 약물 배출 증가가 중요합니다. 펌프의 차단이 아니라 증가입니다.",
-        "4": "Bleomycin의 DNA 손상에 대한 복구 증가 등이 내성 기전이 될 수 있습니다. 소거제 증가를 대표 연결로 제시한 부분은 강의안과 다릅니다.",
-        "5": "Teniposide는 topoisomerase II 억제제이며 MDR1/P-glycoprotein 관련 다약제 내성이 알려져 있습니다. 빠른 DNA 복구를 대표 연결로 단정하기 어렵습니다."
+      "choiceExplanations": {},
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "conflict",
+        "professor": "lee-seoul",
+        "gradingHold": true,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "강의안의 내성 총론만으로 약물별 보기 ②와 ④를 유일하게 구분할 수 없습니다. Cyclophosphamide는 대사 활성화가 필요한 전구약물이므로 단순 “enhanced metabolism”을 무조건 내성으로 해석할 수도 없습니다.",
+        "limitations": "강의안의 내성 총론만으로 약물별 보기 ②와 ④를 유일하게 구분할 수 없습니다. Cyclophosphamide는 대사 활성화가 필요한 전구약물이므로 단순 “enhanced metabolism”을 무조건 내성으로 해석할 수도 없습니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "conflict"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -330,20 +508,57 @@
       "candidateEvidence": [],
       "evidence": [
         {
-          "lectureId": "v124-lee-2026",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
           "page": 53,
-          "image": "assets/evidence/lee-seoul/v124-lee-2026-p053.webp",
-          "quote": "Plant alkaloids and terpenoids; Taxanes"
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p054.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 54,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 75,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p076.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 76,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 76,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p077.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 77,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "original_question_reexamined",
-        "check2": "user_assigned_answer",
-        "verifiedAgainst": "explicit_user_instruction",
-        "anchor": "Plant alkaloids and terpenoids; Taxanes",
-        "decisionReason": "사용자 지정 답안 유지; 강의안 확정과 별도"
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "user_supplied_or_original_image_verified",
       "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
@@ -357,6 +572,31 @@
         "3": "Anthracycline은 DNA 삽입과 topoisomerase II 억제 등을 유발하며 혈관신생 억제가 대표기전은 아닙니다.",
         "4": "Taxane은 microtubule의 분해·재구성을 방해해 유사분열을 차단하는 plant-derived 항암제입니다.",
         "5": "Tamoxifen은 에스트로겐 수용체를 조절하는 호르몬제이며 topoisomerase 억제제가 아닙니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -404,20 +644,42 @@
       "candidateEvidence": [],
       "evidence": [
         {
-          "lectureId": "v124-lee-2026",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 45,
-          "image": "assets/evidence/lee-seoul/v124-lee-2026-p045.webp",
-          "quote": "Cardiotoxicity doxorubicin; pulmonary fibrosis bleomycin"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 44,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p045.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 45,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 74,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p075.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 75,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "original_question_reexamined",
-        "check2": "user_assigned_answer",
-        "verifiedAgainst": "explicit_user_instruction",
-        "anchor": "Cardiotoxicity doxorubicin; pulmonary fibrosis bleomycin",
-        "decisionReason": "사용자 지정 답안 유지; 강의안 확정과 별도"
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "user_supplied_or_original_image_verified",
       "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
@@ -431,6 +693,31 @@
         "3": "Cyclophosphamide는 acrolein 대사산물에 의해 출혈성 방광염을 유발할 수 있습니다.",
         "4": "Doxorubicin은 anthracycline 계열의 용량 관련 심근손상·심부전 위험이 있습니다.",
         "5": "Irinotecan은 설사와 골수억제를 유발할 수 있습니다. 골수억제는 맞는 부작용 연결입니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -478,20 +765,57 @@
       "candidateEvidence": [],
       "evidence": [
         {
-          "lectureId": "v124-lee-2026",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 104,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p105.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 105,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
           "page": 105,
-          "image": "assets/evidence/lee-seoul/v124-lee-2026-p105.webp",
-          "quote": "Competitive inhibitor of estradiol bind to ER; SERMs tamoxifen"
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p106.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 106,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 106,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p107.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 107,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "original_question_reexamined",
-        "check2": "user_assigned_answer",
-        "verifiedAgainst": "explicit_user_instruction",
-        "anchor": "Competitive inhibitor of estradiol bind to ER; SERMs tamoxifen",
-        "decisionReason": "사용자 지정 답안 유지; 강의안 확정과 별도"
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "transcriptionStatus": "user_supplied_or_original_image_verified",
       "transcriptionWarning": "기출 원문 자료를 바탕으로 등록. 강의안 캡처가 없는 정답은 강의안 검증 답으로 취급하지 않습니다.",
@@ -505,6 +829,31 @@
         "3": "Leuprolide는 GnRH agonist로 초기 flare 후 지속 투여하면 LH/FSH와 testosterone이 감소합니다.",
         "4": "Flutamide는 안드로겐 수용체를 차단하지만 testosterone 합성을 직접 낮추는 약제는 아닙니다.",
         "5": "Fulvestrant는 ER 분해를 유도하는 SERD이며 antiandrogen 제제가 아닙니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 1,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -544,46 +893,81 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": 5,
-      "explanation": "Gefitinib은 EGFR 티로신키나아제 억제제로 EGFR 작용을 억제하므로 “EGFR antagonist”라는 기능상 설명도 성립할 수 있습니다. 이 문항은 잘못된 연결을 묻지만 ⑤도 맞는 연결일 가능성이 있어 원문·정답 기준에 충돌이 있습니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "answer": null,
+      "explanation": "Gefitinib은 EGFR의 tyrosine kinase 억제제로 EGFR을 표적으로 한다는 보기 자체를 틀리다고 할 수 없습니다. 단클론항체만을 묻는다는 조건이 없는 현재 지문은 모호합니다.",
+      "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 112,
-          "image": "assets/evidence/lee-seoul/lecture1-p112.webp",
-          "quote": "Cetuximab EGFR; Rituximab CD20; Gemtuzumab CD33; Trastuzumab HER2"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 91,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p092.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 92,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         },
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 92,
-          "image": "assets/evidence/lee-seoul/lecture1-p092.webp",
-          "quote": "Gefitinib — EGFR"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 111,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p112.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 112,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "user_override_explicit",
-        "check2": "NOT_a_new_double_lecture_verification",
-        "verifiedAgainst": "user_decision",
-        "decisionReason": "사용자 요청에 따라 5번 지정. 강의안 검증 채택과 구분."
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "conflict",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "Gefitinib은 EGFR의 tyrosine kinase 억제제로 EGFR을 표적으로 한다는 보기 자체를 틀리다고 할 수 없습니다. 단클론항체만을 묻는다는 조건이 없는 현재 지문은 모호합니다."
       },
       "notes": "",
       "type": "choice",
       "showOriginalByDefault": false,
       "answerSource": "user_confirmed",
-      "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
+      "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
       "aiExplanation": "",
-      "choiceExplanations": {
-        "1": "Cetuximab은 EGFR 표적 단일클론항체로 연결이 맞습니다.",
-        "2": "Rituximab은 B 림프구 CD20을 표적으로 하는 단일클론항체입니다.",
-        "3": "Gemtuzumab ozogamicin은 CD33을 표적으로 하는 항체-약물 접합체입니다.",
-        "4": "Trastuzumab은 HER2를 표적으로 합니다.",
-        "5": "Gefitinib은 EGFR 티로신키나아제 억제제로 EGFR 작용을 억제하므로 “EGFR antagonist”라는 기능상 설명도 성립할 수 있습니다. 이 문항은 잘못된 연결을 묻지만 ⑤도 맞는 연결일 가능성이 있어 원문·정답 기준에 충돌이 있습니다."
+      "choiceExplanations": {},
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "conflict",
+        "professor": "lee-seoul",
+        "gradingHold": true,
+        "answerRevised": false,
+        "referenceAnswer": 5,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "Gefitinib은 EGFR의 tyrosine kinase 억제제로 EGFR을 표적으로 한다는 보기 자체를 틀리다고 할 수 없습니다. 단클론항체만을 묻는다는 조건이 없는 현재 지문은 모호합니다.",
+        "limitations": "Gefitinib은 EGFR의 tyrosine kinase 억제제로 EGFR을 표적으로 한다는 보기 자체를 틀리다고 할 수 없습니다. 단클론항체만을 묻는다는 조건이 없는 현재 지문은 모호합니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "conflict"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -623,46 +1007,81 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": 2,
-      "explanation": "Cyclophosphamide는 대사 과정 변화로 활성형 약제 농도가 달라져 내성이 생길 수 있습니다. 다만 활성화·해독 대사를 구별해야 합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "answer": null,
+      "explanation": "강의안의 내성 총론만으로 약물별 보기 ②와 ④를 유일하게 구분할 수 없습니다. Cyclophosphamide는 대사 활성화가 필요한 전구약물이므로 단순 “enhanced metabolism”을 무조건 내성으로 해석할 수도 없습니다.",
+      "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 80,
-          "image": "assets/evidence/lee-seoul/lecture1-p080.webp",
-          "quote": "Resistance of anticancers — P-glycoprotein, enzymatic metabolism, rapid DNA repair"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 79,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p080.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 80,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         },
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 44,
-          "image": "assets/evidence/lee-seoul/lecture1-p044.webp",
-          "quote": "Acquire resistance; multi-drug resistance"
+          "lectureId": "audit116-lee-seoul-2026-Cancer Chemotherapy — 증례토의",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Cancer Chemotherapy — 증례토의",
+          "page": 15,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p129.webp",
+          "quote": "",
+          "lectureTitle": "Cancer Chemotherapy — 증례토의",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 129,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "user_override_explicit",
-        "check2": "NOT_a_new_double_lecture_verification",
-        "verifiedAgainst": "user_decision",
-        "decisionReason": "사용자 요청에 따라 2번 지정. 강의안 검증 채택과 구분."
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "conflict",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "강의안의 내성 총론만으로 약물별 보기 ②와 ④를 유일하게 구분할 수 없습니다. Cyclophosphamide는 대사 활성화가 필요한 전구약물이므로 단순 “enhanced metabolism”을 무조건 내성으로 해석할 수도 없습니다."
       },
       "notes": "",
       "type": "choice",
       "showOriginalByDefault": false,
       "answerSource": "user_confirmed",
-      "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
+      "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
       "aiExplanation": "",
-      "choiceExplanations": {
-        "1": "Teniposide는 topoisomerase II 억제제이며 MDR1/P-glycoprotein 관련 다약제 내성이 알려져 있습니다. 빠른 DNA 복구를 대표 연결로 단정하기 어렵습니다.",
-        "2": "Cyclophosphamide는 대사 과정 변화로 활성형 약제 농도가 달라져 내성이 생길 수 있습니다. 다만 활성화·해독 대사를 구별해야 합니다.",
-        "3": "Vincristine 내성에서는 MDR1/P-glycoprotein의 과발현에 따른 약물 배출 증가가 중요합니다. 펌프의 차단이 아니라 증가입니다.",
-        "4": "Bleomycin의 DNA 손상에 대한 복구 증가 등이 내성 기전이 될 수 있습니다. 소거제 증가를 대표 연결로 제시한 부분은 강의안과 다릅니다.",
-        "5": "MTX는 세포 유입 저하나 DHFR 관련 변화를 통해 내성이 생길 수 있습니다. 단순한 활성화 실패만으로 대표기전을 설명하지 않습니다."
+      "choiceExplanations": {},
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "conflict",
+        "professor": "lee-seoul",
+        "gradingHold": true,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "강의안의 내성 총론만으로 약물별 보기 ②와 ④를 유일하게 구분할 수 없습니다. Cyclophosphamide는 대사 활성화가 필요한 전구약물이므로 단순 “enhanced metabolism”을 무조건 내성으로 해석할 수도 없습니다.",
+        "limitations": "강의안의 내성 총론만으로 약물별 보기 ②와 ④를 유일하게 구분할 수 없습니다. Cyclophosphamide는 대사 활성화가 필요한 전구약물이므로 단순 “enhanced metabolism”을 무조건 내성으로 해석할 수도 없습니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "conflict"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -704,22 +1123,45 @@
       "transcriptionStatus": "visually_checked_against_source",
       "answer": 4,
       "explanation": "Hydroxyurea는 ribonucleotide reductase를 억제하여 ribonucleotide가 deoxyribonucleotide로 전환되는 과정을 차단합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 78,
-          "image": "assets/evidence/lee-seoul/lecture1-p078.webp",
-          "quote": "Hydroxyurea inhibits the enzyme ribonucleotide reductase"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 77,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p078.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 78,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Cancer Chemotherapy — 증례토의",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Cancer Chemotherapy — 증례토의",
+          "page": 23,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p137.webp",
+          "quote": "",
+          "lectureTitle": "Cancer Chemotherapy — 증례토의",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 137,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "user_override_explicit",
-        "check2": "NOT_a_new_double_lecture_verification",
-        "verifiedAgainst": "user_decision",
-        "decisionReason": "사용자 요청에 따라 4번 지정. 강의안 검증 채택과 구분."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -735,6 +1177,31 @@
         "3": "Fludarabine은 purine 유사체로 DNA polymerase 등 핵산 합성 효소에 영향을 주며 DNA intercalation이 핵심 기전이 아닙니다.",
         "4": "Hydroxyurea는 ribonucleotide reductase를 억제하여 ribonucleotide가 deoxyribonucleotide로 전환되는 것을 방해합니다.",
         "5": "Thioguanine(TG)은 purine 유사체의 핵산 대사 억제 약제로, IMP dehydrogenase 자체를 대표 표적으로 하는 약제는 아닙니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -778,21 +1245,58 @@
       "explanation": "Taxanes의 대표약 paclitaxel은 microtubule assembly/분열방추 형성에 관여합니다. 선택지 ③~⑤의 기전들은 각각 다른 계열의 설명입니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 54,
-          "image": "assets/evidence/lee-seoul/lecture1-p054.webp",
-          "quote": "Plant derivatives — Taxanes — Microtubule assembly; prevents spindle formation"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 53,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p054.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 54,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 75,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p076.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 76,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 76,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p077.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 77,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "Plant derivatives — Taxanes — Microtubule assembly; prevents spindle formation",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -801,7 +1305,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "판단 포인트: Taxanes의 대표약 paclitaxel은 microtubule assembly/분열방추 형성에 관여합니다. 선택지 ③~⑤의 기전들은 각각 다른 계열의 설명입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 1,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:18-34",
@@ -844,28 +1373,58 @@
       "explanation": "Tamoxifen은 SERM으로 유방조직에서 estrogen receptor를 차단합니다. Fulvestrant는 SERD이고, leuprolide는 testosterone 감소, toremifene은 SERM, flutamide는 androgen receptor 차단제입니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 105,
-          "image": "assets/evidence/lee-seoul/lecture1-p105.webp",
-          "quote": "Tamoxifen — selective estrogen receptor modulators; competitive inhibitor of estradiol bind to ER"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 104,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p105.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 105,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         },
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 107,
-          "image": "assets/evidence/lee-seoul/lecture1-p107.webp",
-          "quote": "GnRH agonists ... testosterone level reduced"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 105,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p106.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 106,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 106,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p107.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 107,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "Tamoxifen — selective estrogen receptor modulators; competitive inhibitor of estradiol bind to ER",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -874,7 +1433,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "판단 포인트: Tamoxifen은 SERM으로 유방조직에서 estrogen receptor를 차단합니다. Fulvestrant는 SERD이고, leuprolide는 testosterone 감소, toremifene은 SERM, flutamide는 androgen receptor 차단제입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 1,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:18-55",
@@ -917,28 +1501,58 @@
       "explanation": "MTX(methotrexate)는 dihydrofolate reductase를 억제합니다. Paclitaxel은 미세소관, camptothecin은 topoisomerase, gemcitabine은 DNA 합성, 5-FU는 thymidylate synthesis를 표적으로 합니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 72,
-          "image": "assets/evidence/lee-seoul/lecture1-p072.webp",
-          "quote": "Methotrexate inhibits dihydrofolate reductase"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 53,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p054.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 54,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         },
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 54,
-          "image": "assets/evidence/lee-seoul/lecture1-p054.webp",
-          "quote": "Taxanes microtubule; gemcitabine antimetabolite"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 66,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p067.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 67,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 71,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p072.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 72,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "Methotrexate inhibits dihydrofolate reductase",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -947,7 +1561,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "판단 포인트: MTX(methotrexate)는 dihydrofolate reductase를 억제합니다. Paclitaxel은 미세소관, camptothecin은 topoisomerase, gemcitabine은 DNA 합성, 5-FU는 thymidylate synthesis를 표적으로 합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 5,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:18-58",
@@ -990,28 +1629,43 @@
       "explanation": "Imatinib의 표적에 BCR-ABL tyrosine kinase가 포함됩니다. Bevacizumab은 VEGF, trastuzumab은 HER2, gefitinib은 EGFR 표적입니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 92,
-          "image": "assets/evidence/lee-seoul/lecture1-p092.webp",
-          "quote": "Imatinib targets BCR-ABL; Gefitinib targets EGFR; Sorafenib targets BRAF, VEGFR, EGFR, PDGFR"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 91,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p092.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 92,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         },
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 112,
-          "image": "assets/evidence/lee-seoul/lecture1-p112.webp",
-          "quote": "Bevacizumab — VEGF; Trastuzumab — HER2/neu"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 111,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p112.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 112,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "Imatinib targets BCR-ABL; Gefitinib targets EGFR; Sorafenib targets BRAF, VEGFR, EGFR, PDGFR",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -1020,7 +1674,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "항암약물 TBL",
       "unitId": "0a9ea0e8dc04",
-      "aiExplanation": "판단 포인트: Imatinib의 표적에 BCR-ABL tyrosine kinase가 포함됩니다. Bevacizumab은 VEGF, trastuzumab은 HER2, gefitinib은 EGFR 표적입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:18-64",
@@ -1063,21 +1742,43 @@
       "explanation": "Sorafenib은 EGFR만 억제하는 약이 아니라 BRAF, VEGFR, EGFR, PDGFR 등 여러 kinase를 표적으로 합니다. 나머지 연결은 강의안 표에 제시되어 있습니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 92,
-          "image": "assets/evidence/lee-seoul/lecture1-p092.webp",
-          "quote": "Sorafenib — BRAF, VEGFR, EGFR, PDGFR"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 91,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p092.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 92,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 111,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p112.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 112,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "Sorafenib — BRAF, VEGFR, EGFR, PDGFR",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -1086,7 +1787,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "면역항암제 및 표적항암제",
       "unitId": "a9c1c073a6c0",
-      "aiExplanation": "판단 포인트: Sorafenib은 EGFR만 억제하는 약이 아니라 BRAF, VEGFR, EGFR, PDGFR 등 여러 kinase를 표적으로 합니다. 나머지 연결은 강의안 표에 제시되어 있습니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:19-54",
@@ -1129,21 +1855,43 @@
       "explanation": "강의안의 TBL 임상사례는 35세 미만 유방 종괴 환자에서 mammography보다 breast ultrasound를 초기 진단 방법으로 설명합니다. 따라서 ① 유방초음파를 선택합니다.",
       "evidence": [
         {
-          "lectureId": "lecture2",
-          "file": "이서울pf_261022_혈액과종양_항암제2(TBL).pdf(1).pdf",
+          "lectureId": "audit116-lee-seoul-2026-Cancer Chemotherapy — 증례토의",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Cancer Chemotherapy — 증례토의",
+          "page": 2,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p116.webp",
+          "quote": "",
+          "lectureTitle": "Cancer Chemotherapy — 증례토의",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 116,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Cancer Chemotherapy — 증례토의",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Cancer Chemotherapy — 증례토의",
           "page": 3,
-          "image": "assets/evidence/lee-seoul/lecture2-p003.webp",
-          "quote": "Mammography — Usually not use under age than 35; Breast ultrasound — Commonly use due on simple, painless"
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p117.webp",
+          "quote": "",
+          "lectureTitle": "Cancer Chemotherapy — 증례토의",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 117,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "Mammography — Usually not use under age than 35; Breast ultrasound — Commonly use due on simple, painless",
-        "decisionReason": "TBL 3쪽 사례와 환자 연령·증상·선지 재대조"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -1152,7 +1900,32 @@
       "transcriptionWarning": "원본에 같은 문제가 19-54, 20-65 두 학번으로 표기되었습니다. 두 ID는 동일 지문이지만 학번별로 별도 학습 기록을 저장합니다.",
       "unitTitle": "항암약물 TBL",
       "unitId": "0a9ea0e8dc04",
-      "aiExplanation": "판단 포인트: 강의안의 TBL 임상사례는 35세 미만 유방 종괴 환자에서 mammography보다 breast ultrasound를 초기 진단 방법으로 설명합니다. 따라서 ① 유방초음파를 선택합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 1,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:19-55",
@@ -1195,28 +1968,28 @@
       "explanation": "Topoisomerase 억제제는 DNA의 topology 조절을 저해하여 DNA/RNA 합성·전사에 영향을 줍니다. 다른 네 항목은 kinase 또는 nucleotide 합성 경로 억제에 해당합니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 75,
-          "image": "assets/evidence/lee-seoul/lecture1-p075.webp",
-          "quote": "topoisomerase II action; inhibiting transcription"
-        },
-        {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 58,
-          "image": "assets/evidence/lee-seoul/lecture1-p058.webp",
-          "quote": "inhibit DNA synthesis / interfere with DNA expression"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 74,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p075.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 75,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "topoisomerase II action; inhibiting transcription",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -1225,7 +1998,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "판단 포인트: Topoisomerase 억제제는 DNA의 topology 조절을 저해하여 DNA/RNA 합성·전사에 영향을 줍니다. 다른 네 항목은 kinase 또는 nucleotide 합성 경로 억제에 해당합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 5,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:19-56",
@@ -1266,29 +2064,45 @@
       "transcriptionStatus": "visually_checked_against_source",
       "answer": 4,
       "explanation": "MTX의 세포 내 polyglutamylation은 세포 잔류와 표적 효소에 대한 억제효과를 증강할 수 있습니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 72,
-          "image": "assets/evidence/lee-seoul/lecture1-p072.webp",
-          "quote": "Methotrexate inhibits dihydrofolate reductase; converted to the polyglutamate form"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 69,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p070.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 70,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         },
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 70,
-          "image": "assets/evidence/lee-seoul/lecture1-p070.webp",
-          "quote": "Methotrexate and folic acid shown as polyglutamates"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 71,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p072.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 72,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "user_override_explicit",
-        "check2": "NOT_a_new_double_lecture_verification",
-        "verifiedAgainst": "user_decision",
-        "decisionReason": "사용자 요청에 따라 4번 지정. 강의안 검증 채택과 구분."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -1304,6 +2118,31 @@
         "3": "MTX는 세포 내 엽산 대사를 억제하여 DNA·RNA뿐 아니라 단백질 합성 관련 경로에도 영향을 줄 수 있으므로 범위를 단정하기 어렵습니다.",
         "4": "MTX의 세포 내 polyglutamylation은 세포 잔류와 표적 효소에 대한 억제효과를 증강할 수 있습니다.",
         "5": "MTX의 직접 대표 표적은 DHFR이며 ribonucleotide reductase의 경쟁 억제제로 분류하지 않습니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -1345,22 +2184,30 @@
       "transcriptionStatus": "visually_checked_against_source",
       "answer": 1,
       "explanation": "Doxorubicin은 DNA intercalation과 topoisomerase II 억제를 통해 DNA 손상과 전사·복제 장애를 유발합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 75,
-          "image": "assets/evidence/lee-seoul/lecture1-p075.webp",
-          "quote": "Doxorubicin inhibits DNA and RNA synthesis ... topoisomerase II action"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 74,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p075.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 75,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "user_override_explicit",
-        "check2": "NOT_a_new_double_lecture_verification",
-        "verifiedAgainst": "user_decision",
-        "decisionReason": "사용자 요청에 따라 1번 지정. 강의안 검증 채택과 구분."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -1376,6 +2223,31 @@
         "3": "Bleomycin은 자유라디칼 매개 DNA 가닥 절단을 일으킵니다. 알킬화제 전구약물처럼 활성화되는 기전과 다릅니다.",
         "4": "Mitomycin C는 환원적 활성화 후 DNA 교차결합을 유도합니다. 단순한 가닥 분절이 주기전은 아닙니다.",
         "5": "Idarubicin은 anthracycline 항암제로 Streptomyces 유래 계열이지만, 이 선택지는 계열 기원만 제시해 다른 약물과의 비교 기준이 불명확합니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 1,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -1419,21 +2291,43 @@
       "explanation": "강의안 표에서 imatinib 표적을 BCR-ABL, c-KIT, PDGFR로 제시하고 승인 적응증으로 ALL·CML·GIST를 열거합니다. 다른 선택지는 표적이 어긋납니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 92,
-          "image": "assets/evidence/lee-seoul/lecture1-p092.webp",
-          "quote": "Imatinib — BCR-ABL, c-KIT, PDGFR — ALL, CML, GIST"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 91,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p092.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 92,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 111,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p112.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 112,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "Imatinib — BCR-ABL, c-KIT, PDGFR — ALL, CML, GIST",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -1442,7 +2336,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "판단 포인트: 강의안 표에서 imatinib 표적을 BCR-ABL, c-KIT, PDGFR로 제시하고 승인 적응증으로 ALL·CML·GIST를 열거합니다. 다른 선택지는 표적이 어긋납니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:19-59",
@@ -1481,39 +2400,96 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": 4,
-      "explanation": "Aromatase inhibitor는 에스트로겐의 합성을 줄이지 ER을 직접 분해하는 SERD가 아닙니다. 기출의 ④ 지정 답과 실제 약물 분류가 충돌하며, SERD의 예로는 fulvestrant가 적절합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "answer": null,
+      "explanation": "SERD는 fulvestrant입니다. 기존 정답 ④ aromatase inhibitors는 다른 계열이며 현재 보기에는 SERD가 없어 자동채점을 보류합니다.",
+      "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 105,
-          "image": "assets/evidence/lee-seoul/lecture1-p105.webp",
-          "quote": "Selective ER downregulators (SERDs) — fulvestrant; aromatase inhibitors (AIs) separate"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 104,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p105.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 105,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Cancer Chemotherapy — 증례토의",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Cancer Chemotherapy — 증례토의",
+          "page": 6,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p120.webp",
+          "quote": "",
+          "lectureTitle": "Cancer Chemotherapy — 증례토의",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 120,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Cancer Chemotherapy — 증례토의",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Cancer Chemotherapy — 증례토의",
+          "page": 19,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p133.webp",
+          "quote": "",
+          "lectureTitle": "Cancer Chemotherapy — 증례토의",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 133,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "user_override_explicit",
-        "check2": "NOT_a_new_double_lecture_verification",
-        "verifiedAgainst": "user_decision",
-        "decisionReason": "사용자 요청에 따라 4번 지정. 강의안 검증 채택과 구분."
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "conflict",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "SERD는 fulvestrant입니다. 기존 정답 ④ aromatase inhibitors는 다른 계열이며 현재 보기에는 SERD가 없어 자동채점을 보류합니다."
       },
       "notes": "",
       "type": "choice",
       "showOriginalByDefault": false,
       "answerSource": "user_confirmed",
-      "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
+      "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
       "aiExplanation": "",
-      "choiceExplanations": {
-        "1": "Tamoxifen은 SERM입니다. ER을 분해하는 SERD와 기전이 다릅니다.",
-        "2": "Glucocorticoid는 림프계 종양 등에 쓰이는 호르몬제이지 ER 분해제가 아닙니다.",
-        "3": "Antiandrogen은 안드로겐 수용체 경로를 차단하므로 에스트로겐 수용체 분해제와 무관합니다.",
-        "4": "Aromatase inhibitor는 에스트로겐의 합성을 줄이지 ER을 직접 분해하는 SERD가 아닙니다. 기출의 ④ 지정 답과 실제 약물 분류가 충돌하며, SERD의 예로는 fulvestrant가 적절합니다.",
-        "5": "Immunomodulator는 면역조절 계열 항암제로 ER 분해 기전이 아닙니다."
+      "choiceExplanations": {},
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "conflict",
+        "professor": "lee-seoul",
+        "gradingHold": true,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "SERD는 fulvestrant입니다. 기존 정답 ④ aromatase inhibitors는 다른 계열이며 현재 보기에는 SERD가 없어 자동채점을 보류합니다.",
+        "limitations": "SERD는 fulvestrant입니다. 기존 정답 ④ aromatase inhibitors는 다른 계열이며 현재 보기에는 SERD가 없어 자동채점을 보류합니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "conflict"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -1557,21 +2533,43 @@
       "explanation": "강의안의 TBL 임상사례는 35세 미만 유방 종괴 환자에서 mammography보다 breast ultrasound를 초기 진단 방법으로 설명합니다. 따라서 ① 유방초음파를 선택합니다.",
       "evidence": [
         {
-          "lectureId": "lecture2",
-          "file": "이서울pf_261022_혈액과종양_항암제2(TBL).pdf(1).pdf",
+          "lectureId": "audit116-lee-seoul-2026-Cancer Chemotherapy — 증례토의",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Cancer Chemotherapy — 증례토의",
+          "page": 2,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p116.webp",
+          "quote": "",
+          "lectureTitle": "Cancer Chemotherapy — 증례토의",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 116,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Cancer Chemotherapy — 증례토의",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Cancer Chemotherapy — 증례토의",
           "page": 3,
-          "image": "assets/evidence/lee-seoul/lecture2-p003.webp",
-          "quote": "Mammography — Usually not use under age than 35; Breast ultrasound — Commonly use due on simple, painless"
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p117.webp",
+          "quote": "",
+          "lectureTitle": "Cancer Chemotherapy — 증례토의",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 117,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "Mammography — Usually not use under age than 35; Breast ultrasound — Commonly use due on simple, painless",
-        "decisionReason": "TBL 3쪽 사례와 환자 연령·증상·선지 재대조"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -1580,7 +2578,32 @@
       "transcriptionWarning": "원본에 같은 문제가 19-54, 20-65 두 학번으로 표기되었습니다. 두 ID는 동일 지문이지만 학번별로 별도 학습 기록을 저장합니다.",
       "unitTitle": "항암약물 TBL",
       "unitId": "0a9ea0e8dc04",
-      "aiExplanation": "판단 포인트: 강의안의 TBL 임상사례는 35세 미만 유방 종괴 환자에서 mammography보다 breast ultrasound를 초기 진단 방법으로 설명합니다. 따라서 ① 유방초음파를 선택합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 1,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:20-66",
@@ -1623,28 +2646,28 @@
       "explanation": "Topoisomerase 억제제는 DNA의 topology 조절을 저해하여 DNA/RNA 합성·전사에 영향을 줍니다. 다른 네 항목은 kinase 또는 nucleotide 합성 경로 억제에 해당합니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 75,
-          "image": "assets/evidence/lee-seoul/lecture1-p075.webp",
-          "quote": "topoisomerase II action; inhibiting transcription"
-        },
-        {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 58,
-          "image": "assets/evidence/lee-seoul/lecture1-p058.webp",
-          "quote": "inhibit DNA synthesis / interfere with DNA expression"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 74,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p075.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 75,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "topoisomerase II action; inhibiting transcription",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -1653,7 +2676,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "판단 포인트: Topoisomerase 억제제는 DNA의 topology 조절을 저해하여 DNA/RNA 합성·전사에 영향을 줍니다. 다른 네 항목은 kinase 또는 nucleotide 합성 경로 억제에 해당합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 5,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:20-67",
@@ -1694,29 +2742,45 @@
       "transcriptionStatus": "visually_checked_against_source",
       "answer": 4,
       "explanation": "MTX의 세포 내 polyglutamylation은 세포 잔류와 표적 효소에 대한 억제효과를 증강할 수 있습니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 72,
-          "image": "assets/evidence/lee-seoul/lecture1-p072.webp",
-          "quote": "Methotrexate inhibits dihydrofolate reductase; converted to the polyglutamate form"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 69,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p070.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 70,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         },
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 70,
-          "image": "assets/evidence/lee-seoul/lecture1-p070.webp",
-          "quote": "Methotrexate and folic acid shown as polyglutamates"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 71,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p072.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 72,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "user_override_explicit",
-        "check2": "NOT_a_new_double_lecture_verification",
-        "verifiedAgainst": "user_decision",
-        "decisionReason": "사용자 요청에 따라 4번 지정. 강의안 검증 채택과 구분."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -1732,6 +2796,31 @@
         "3": "MTX는 세포 내 엽산 대사를 억제하여 DNA·RNA뿐 아니라 단백질 합성 관련 경로에도 영향을 줄 수 있으므로 범위를 단정하기 어렵습니다.",
         "4": "MTX의 세포 내 polyglutamylation은 세포 잔류와 표적 효소에 대한 억제효과를 증강할 수 있습니다.",
         "5": "MTX의 직접 대표 표적은 DHFR이며 ribonucleotide reductase의 경쟁 억제제로 분류하지 않습니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -1773,22 +2862,30 @@
       "transcriptionStatus": "visually_checked_against_source",
       "answer": 1,
       "explanation": "Doxorubicin은 DNA intercalation과 topoisomerase II 억제를 통해 DNA 손상과 전사·복제 장애를 유발합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 75,
-          "image": "assets/evidence/lee-seoul/lecture1-p075.webp",
-          "quote": "Doxorubicin inhibits DNA and RNA synthesis ... topoisomerase II action"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 74,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p075.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 75,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "user_override_explicit",
-        "check2": "NOT_a_new_double_lecture_verification",
-        "verifiedAgainst": "user_decision",
-        "decisionReason": "사용자 요청에 따라 1번 지정. 강의안 검증 채택과 구분."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -1804,6 +2901,31 @@
         "3": "Bleomycin은 자유라디칼 매개 DNA 가닥 절단을 일으킵니다. 알킬화제 전구약물처럼 활성화되는 기전과 다릅니다.",
         "4": "Mitomycin C는 환원적 활성화 후 DNA 교차결합을 유도합니다. 단순한 가닥 분절이 주기전은 아닙니다.",
         "5": "Idarubicin은 anthracycline 항암제로 Streptomyces 유래 계열이지만, 이 선택지는 계열 기원만 제시해 다른 약물과의 비교 기준이 불명확합니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 1,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -1847,21 +2969,43 @@
       "explanation": "강의안 표에서 imatinib 표적을 BCR-ABL, c-KIT, PDGFR로 제시하고 승인 적응증으로 ALL·CML·GIST를 열거합니다. 다른 선택지는 표적이 어긋납니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 92,
-          "image": "assets/evidence/lee-seoul/lecture1-p092.webp",
-          "quote": "Imatinib — BCR-ABL, c-KIT, PDGFR — ALL, CML, GIST"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 91,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p092.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 92,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 111,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p112.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 112,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "Imatinib — BCR-ABL, c-KIT, PDGFR — ALL, CML, GIST",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -1870,7 +3014,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "판단 포인트: 강의안 표에서 imatinib 표적을 BCR-ABL, c-KIT, PDGFR로 제시하고 승인 적응증으로 ALL·CML·GIST를 열거합니다. 다른 선택지는 표적이 어긋납니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:20-70",
@@ -1909,39 +3078,96 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": 4,
-      "explanation": "Aromatase inhibitor는 에스트로겐의 합성을 줄이지 ER을 직접 분해하는 SERD가 아닙니다. 기출의 ④ 지정 답과 실제 약물 분류가 충돌하며, SERD의 예로는 fulvestrant가 적절합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "answer": null,
+      "explanation": "SERD는 fulvestrant입니다. 기존 정답 ④ aromatase inhibitors는 다른 계열이며 현재 보기에는 SERD가 없어 자동채점을 보류합니다.",
+      "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 105,
-          "image": "assets/evidence/lee-seoul/lecture1-p105.webp",
-          "quote": "Selective ER downregulators (SERDs) — fulvestrant; aromatase inhibitors (AIs) separate"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 104,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p105.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 105,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Cancer Chemotherapy — 증례토의",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Cancer Chemotherapy — 증례토의",
+          "page": 6,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p120.webp",
+          "quote": "",
+          "lectureTitle": "Cancer Chemotherapy — 증례토의",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 120,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Cancer Chemotherapy — 증례토의",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Cancer Chemotherapy — 증례토의",
+          "page": 19,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p133.webp",
+          "quote": "",
+          "lectureTitle": "Cancer Chemotherapy — 증례토의",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 133,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "user_override_explicit",
-        "check2": "NOT_a_new_double_lecture_verification",
-        "verifiedAgainst": "user_decision",
-        "decisionReason": "사용자 요청에 따라 4번 지정. 강의안 검증 채택과 구분."
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "conflict",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "SERD는 fulvestrant입니다. 기존 정답 ④ aromatase inhibitors는 다른 계열이며 현재 보기에는 SERD가 없어 자동채점을 보류합니다."
       },
       "notes": "",
       "type": "choice",
       "showOriginalByDefault": false,
       "answerSource": "user_confirmed",
-      "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
+      "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
       "aiExplanation": "",
-      "choiceExplanations": {
-        "1": "Tamoxifen은 SERM입니다. ER을 분해하는 SERD와 기전이 다릅니다.",
-        "2": "Glucocorticoid는 림프계 종양 등에 쓰이는 호르몬제이지 ER 분해제가 아닙니다.",
-        "3": "Antiandrogen은 안드로겐 수용체 경로를 차단하므로 에스트로겐 수용체 분해제와 무관합니다.",
-        "4": "Aromatase inhibitor는 에스트로겐의 합성을 줄이지 ER을 직접 분해하는 SERD가 아닙니다. 기출의 ④ 지정 답과 실제 약물 분류가 충돌하며, SERD의 예로는 fulvestrant가 적절합니다.",
-        "5": "Immunomodulator는 면역조절 계열 항암제로 ER 분해 기전이 아닙니다."
+      "choiceExplanations": {},
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "conflict",
+        "professor": "lee-seoul",
+        "gradingHold": true,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "SERD는 fulvestrant입니다. 기존 정답 ④ aromatase inhibitors는 다른 계열이며 현재 보기에는 SERD가 없어 자동채점을 보류합니다.",
+        "limitations": "SERD는 fulvestrant입니다. 기존 정답 ④ aromatase inhibitors는 다른 계열이며 현재 보기에는 SERD가 없어 자동채점을 보류합니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "conflict"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -1985,28 +3211,43 @@
       "explanation": "Gemcitabine은 대사길항제 중 pyrimidine 유사체로 DNA 합성을 억제합니다. 나머지는 proteasome·microtubule·단백질 합성 등에 작용합니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 54,
-          "image": "assets/evidence/lee-seoul/lecture1-p054.webp",
-          "quote": "Gemcitabine: antimetabolites — blocking the synthesis of DNA and/or RNA"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 53,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p054.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 54,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         },
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 67,
-          "image": "assets/evidence/lee-seoul/lecture1-p067.webp",
-          "quote": "gemcitabine — antimetabolites"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 66,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p067.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 67,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "Gemcitabine: antimetabolites — blocking the synthesis of DNA and/or RNA",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -2015,7 +3256,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "판단 포인트: Gemcitabine은 대사길항제 중 pyrimidine 유사체로 DNA 합성을 억제합니다. 나머지는 proteasome·microtubule·단백질 합성 등에 작용합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 1,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:20-72",
@@ -2058,28 +3324,43 @@
       "explanation": "강의안은 doxorubicin을 cytotoxic antibiotics 항목의 anthracycline으로 분류합니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 54,
-          "image": "assets/evidence/lee-seoul/lecture1-p054.webp",
-          "quote": "Cytotoxic antibiotics — Anthracyclines: doxorubicin"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 53,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p054.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 54,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         },
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 75,
-          "image": "assets/evidence/lee-seoul/lecture1-p075.webp",
-          "quote": "Anticancer drugs: cytotoxic antibiotics — Doxorubicin"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 74,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p075.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 75,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "Cytotoxic antibiotics — Anthracyclines: doxorubicin",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -2088,7 +3369,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "판단 포인트: 강의안은 doxorubicin을 cytotoxic antibiotics 항목의 anthracycline으로 분류합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:21-63",
@@ -2131,21 +3437,43 @@
       "explanation": "Methotrexate는 folate antagonist 계열 antimetabolite입니다. 항대사제들은 엽산·퓨린·피리미딘 유사체로 핵산 합성을 저해합니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 67,
-          "image": "assets/evidence/lee-seoul/lecture1-p067.webp",
-          "quote": "The antimetabolites are compounds that mimic ... folic acid, pyrimidines, or purines; Methotrexate"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 53,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p054.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 54,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 66,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p067.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 67,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "The antimetabolites are compounds that mimic ... folic acid, pyrimidines, or purines; Methotrexate",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -2154,7 +3482,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "판단 포인트: Methotrexate는 folate antagonist 계열 antimetabolite입니다. 항대사제들은 엽산·퓨린·피리미딘 유사체로 핵산 합성을 저해합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 1,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:21-64",
@@ -2197,28 +3550,58 @@
       "explanation": "강의안의 ‘Alkylating and related agents’ 분류에 cisplatin을 포함한 platinum compounds가 명시되어 있습니다. 엄밀히는 백금계 DNA 결합 약물로 구분할 수 있어 강의안의 관련 계열 기준에 따라 채점합니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 54,
-          "image": "assets/evidence/lee-seoul/lecture1-p054.webp",
-          "quote": "Alkylating and related agents — Platinum compounds: cisplatin; intrastrand cross-linking of DNA"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 53,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p054.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 54,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         },
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 63,
-          "image": "assets/evidence/lee-seoul/lecture1-p063.webp",
-          "quote": "effects of bifunctional alkylating drugs on DNA"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 62,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p063.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 63,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Cancer Chemotherapy — 증례토의",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Cancer Chemotherapy — 증례토의",
+          "page": 15,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p129.webp",
+          "quote": "",
+          "lectureTitle": "Cancer Chemotherapy — 증례토의",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 129,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "Alkylating and related agents — Platinum compounds: cisplatin; intrastrand cross-linking of DNA",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -2227,7 +3610,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "판단 포인트: 강의안의 ‘Alkylating and related agents’ 분류에 cisplatin을 포함한 platinum compounds가 명시되어 있습니다. 엄밀히는 백금계 DNA 결합 약물로 구분할 수 있어 강의안의 관련 계열 기준에 따라 채점합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:21-65",
@@ -2266,46 +3674,96 @@
       },
       "figureRequired": false,
       "transcriptionStatus": "visually_checked_against_source",
-      "answer": 2,
-      "explanation": "Bleomycin은 폐섬유화의 대표 약제이지만 구조적으로 anthracycline은 아닙니다. 문제의 두 조건이 충돌합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "answer": null,
+      "explanation": "폐섬유화라는 단서는 bleomycin을 가리키지만 지문의 anthracycline 계열이라는 조건과 모순됩니다. Bleomycin은 항암 항생물질이나 anthracycline은 아닙니다. 원문은 보존하고 채점을 보류합니다.",
+      "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 54,
-          "image": "assets/evidence/lee-seoul/lecture1-p054.webp",
-          "quote": "Anthracyclines: doxorubicin ...; Other: bleomycin"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 44,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p045.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 45,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         },
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 45,
-          "image": "assets/evidence/lee-seoul/lecture1-p045.webp",
-          "quote": "Pulmonary fibrosis; bleomycin"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 53,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p054.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 54,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 74,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p075.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 75,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "user_override_explicit",
-        "check2": "NOT_a_new_double_lecture_verification",
-        "verifiedAgainst": "user_decision",
-        "decisionReason": "사용자 요청에 따라 2번 지정. 강의안 검증 채택과 구분."
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "conflict",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "폐섬유화라는 단서는 bleomycin을 가리키지만 지문의 anthracycline 계열이라는 조건과 모순됩니다. Bleomycin은 항암 항생물질이나 anthracycline은 아닙니다. 원문은 보존하고 채점을 보류합니다."
       },
       "notes": "",
       "type": "choice",
       "showOriginalByDefault": false,
       "answerSource": "user_confirmed",
-      "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
+      "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
       "aiExplanation": "",
-      "choiceExplanations": {
-        "1": "Doxorubicin은 anthracycline 계열이나 대표적인 용량 관련 독성은 심장독성입니다.",
-        "2": "Bleomycin은 폐섬유화의 대표 약제이지만 구조적으로 anthracycline은 아닙니다. 문제의 두 조건이 충돌합니다.",
-        "3": "Dactinomycin은 항종양 항생제지만 폐섬유화를 특징으로 하는 anthracycline은 아닙니다.",
-        "4": "Mitomycin은 DNA 교차결합성 항생제로, 본 문항의 두 조건을 모두 만족하지 않습니다.",
-        "5": "Irinotecan은 topoisomerase I 억제제이며 anthracycline이 아닙니다."
+      "choiceExplanations": {},
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "conflict",
+        "professor": "lee-seoul",
+        "gradingHold": true,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "폐섬유화라는 단서는 bleomycin을 가리키지만 지문의 anthracycline 계열이라는 조건과 모순됩니다. Bleomycin은 항암 항생물질이나 anthracycline은 아닙니다. 원문은 보존하고 채점을 보류합니다.",
+        "limitations": "폐섬유화라는 단서는 bleomycin을 가리키지만 지문의 anthracycline 계열이라는 조건과 모순됩니다. Bleomycin은 항암 항생물질이나 anthracycline은 아닙니다. 원문은 보존하고 채점을 보류합니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "conflict"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -2349,21 +3807,28 @@
       "explanation": "Tamoxifen은 estrogen receptor에 작용하는 SERM 계열 항호르몬 항암제입니다. 다른 약물들은 DNA 손상, 항대사, 미세소관, kinase를 표적으로 합니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 105,
-          "image": "assets/evidence/lee-seoul/lecture1-p105.webp",
-          "quote": "Selective estrogen receptor modulators (SERMs) — Tamoxifen"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 104,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p105.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 105,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "Selective estrogen receptor modulators (SERMs) — Tamoxifen",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -2372,7 +3837,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "판단 포인트: Tamoxifen은 estrogen receptor에 작용하는 SERM 계열 항호르몬 항암제입니다. 다른 약물들은 DNA 손상, 항대사, 미세소관, kinase를 표적으로 합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:21-67",
@@ -2415,28 +3905,28 @@
       "explanation": "Bevacizumab은 VEGF를 표적으로 하여 angiogenesis(혈관신생)를 억제하는 단클론항체입니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 112,
-          "image": "assets/evidence/lee-seoul/lecture1-p112.webp",
-          "quote": "Antigen: VEGF — Angiogenesis — Bevacizumab"
-        },
-        {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 54,
-          "image": "assets/evidence/lee-seoul/lecture1-p054.webp",
-          "quote": "Anti-VEGF — Bevacizumab — Prevents angiogenesis"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 111,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p112.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 112,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "Antigen: VEGF — Angiogenesis — Bevacizumab",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -2445,7 +3935,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "판단 포인트: Bevacizumab은 VEGF를 표적으로 하여 angiogenesis(혈관신생)를 억제하는 단클론항체입니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 5,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:21-68",
@@ -2488,21 +4003,58 @@
       "explanation": "Paclitaxel은 taxane 계열이며 미세소관에 작용해 분열방추(spindle) 형성을 교란하므로 mitosis를 억제합니다.",
       "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 54,
-          "image": "assets/evidence/lee-seoul/lecture1-p054.webp",
-          "quote": "Taxanes — Paclitaxel — Microtubule assembly; prevents spindle formation"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 53,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p054.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 54,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 75,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p076.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 76,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 76,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p077.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 77,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
       "candidateEvidence": [],
       "validation": {
         "stage": "accepted",
-        "check1": "lecture_original_page_read",
-        "check2": "all_five_options_reconciled",
-        "verifiedAgainst": "uploaded_lecture_only",
-        "anchor": "Taxanes — Paclitaxel — Microtubule assembly; prevents spindle formation",
-        "decisionReason": "원문과 선지 2단계 대조 통과"
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -2511,7 +4063,32 @@
       "transcriptionWarning": "원본의 손글씨·형광표시는 답안의 근거로 사용하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "판단 포인트: Paclitaxel은 taxane 계열이며 미세소관에 작용해 분열방추(spindle) 형성을 교란하므로 mitosis를 억제합니다.\n이 요약은 기존 해설을 학습용으로 정리한 것이며, 검증 상태는 아래 강의안 근거와 별도로 확인해야 합니다."
+      "aiExplanation": "",
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "lecture_double_checked",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
+      }
     },
     {
       "id": "lee-seoul:21-69",
@@ -2552,29 +4129,45 @@
       "transcriptionStatus": "visually_checked_against_source",
       "answer": 2,
       "explanation": "Trastuzumab은 세포분열 기구 자체를 직접 억제하는 항유사분열제(taxane·vinca)와 기전이 다릅니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 112,
-          "image": "assets/evidence/lee-seoul/lecture1-p112.webp",
-          "quote": "HER2/neu — Trastuzumab"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 111,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p112.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 112,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         },
         {
-          "lectureId": "lecture2",
-          "file": "이서울pf_261022_혈액과종양_항암제2(TBL).pdf(1).pdf",
-          "page": 7,
-          "image": "assets/evidence/lee-seoul/lecture2-p007.webp",
-          "quote": "Trastuzumab의 작용기전 설명 문항(12번)"
+          "lectureId": "audit116-lee-seoul-2026-Cancer Chemotherapy — 증례토의",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Cancer Chemotherapy — 증례토의",
+          "page": 21,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p135.webp",
+          "quote": "",
+          "lectureTitle": "Cancer Chemotherapy — 증례토의",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 135,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "user_override_explicit",
-        "check2": "NOT_a_new_double_lecture_verification",
-        "verifiedAgainst": "user_decision",
-        "decisionReason": "사용자 요청에 따라 2번 지정. 강의안 검증 채택과 구분."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -2590,6 +4183,31 @@
         "3": "HER2 표면 발현·신호 감소가 표적 항체의 작용 설명에 포함될 수 있습니다.",
         "4": "항체 Fc 부위가 NK 세포의 Fcγ 수용체와 결합해 면역세포 활성화를 유도할 수 있습니다.",
         "5": "Trastuzumab은 NK 세포 등을 통한 ADCC(항체의존성 세포매개 세포독성)를 유도할 수 있습니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -2631,22 +4249,30 @@
       "transcriptionStatus": "visually_checked_against_source",
       "answer": 5,
       "explanation": "막의 돌연변이가 일어난다는 모호한 문장만으로는 일반적 내성 기전을 특정하지 못합니다. 표적변이·유입 감소·배출 증가 등 구체적 변화가 필요합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 80,
-          "image": "assets/evidence/lee-seoul/lecture1-p080.webp",
-          "quote": "Resistance: P-glycoprotein, decreased penetration, enzymatic metabolism, alternative path, rapid DNA repair"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 79,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p080.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 80,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "user_confirmed",
-        "check1": "user_override_explicit",
-        "check2": "NOT_a_new_double_lecture_verification",
-        "verifiedAgainst": "user_decision",
-        "decisionReason": "사용자 요청에 따라 5번 지정. 강의안 검증 채택과 구분."
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "",
       "type": "choice",
@@ -2662,6 +4288,31 @@
         "3": "대체 대사경로가 활성화되면 표적 효소를 억제하더라도 종양세포가 살아남을 수 있습니다.",
         "4": "DNA 복구 등 손상 회복 기전이 강화되면 세포독성 약제 효과가 감소할 수 있습니다.",
         "5": "막의 돌연변이가 일어난다는 모호한 문장만으로는 일반적 내성 기전을 특정하지 못합니다. 표적변이·유입 감소·배출 증가 등 구체적 변화가 필요합니다."
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 5,
+        "previousAnswerSource": "user_confirmed",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -2707,40 +4358,82 @@
       "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 1,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 1입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "explanation": "정답표의 답안을 유지했습니다. 아래의 같은 교수님 강의안에서 관련 내용을 대조할 수 있습니다.",
+      "evidence": [
         {
-          "lectureId": "v126-lecture-59",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 72,
-          "image": "assets/evidence/class22/2026-lecture-59-p072.webp",
-          "quote": "Methotrexate 항대사제 및 엽산 대사",
-          "lectureOwner": "이서울 교수님"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 53,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p054.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 54,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 66,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p067.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 67,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "exam_answer_key",
-        "check1": "official_exam_answer_sheet_last_page_transcribed",
-        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
-        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
-        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
-        "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암제 1 · 작용기전",
-        "classificationConfidence": "topic_matched",
-        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
-        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
-        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. Methotrexate 항대사제 및 엽산 대사"
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "항대사제는 핵산 합성 경로를 방해합니다. Methotrexate는 엽산 대사, 5-FU 등은 피리미딘 대사에 작용합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "aiExplanation": "",
       "answerKey": {
         "image": "assets/evidence/class22/exam-answer-key-p07.webp",
         "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 1,
+        "previousAnswerSource": "official_last_page_key_only",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -2786,40 +4479,97 @@
       "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 2,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "explanation": "정답표의 답안을 유지했습니다. 아래의 같은 교수님 강의안에서 관련 내용을 대조할 수 있습니다.",
+      "evidence": [
         {
-          "lectureId": "v126-lecture-60",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
           "page": 53,
-          "image": "assets/evidence/class22/2026-lecture-60-p053.webp",
-          "quote": "알킬화제 기전, 항대사제·천연물 항암제 분류",
-          "lectureOwner": "이서울 교수님"
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p054.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 54,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 62,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p063.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 63,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Cancer Chemotherapy — 증례토의",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Cancer Chemotherapy — 증례토의",
+          "page": 15,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p129.webp",
+          "quote": "",
+          "lectureTitle": "Cancer Chemotherapy — 증례토의",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 129,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "exam_answer_key",
-        "check1": "official_exam_answer_sheet_last_page_transcribed",
-        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
-        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
-        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
-        "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암제 1 · 작용기전",
-        "classificationConfidence": "topic_matched",
-        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
-        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
-        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. 알킬화제 기전, 항대사제·천연물 항암제 분류"
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "알킬화제는 DNA의 공유결합성 손상과 가교형성을 유도하여 복제 및 세포분열을 방해합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "aiExplanation": "",
       "answerKey": {
         "image": "assets/evidence/class22/exam-answer-key-p07.webp",
         "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "official_last_page_key_only",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -2862,43 +4612,101 @@
       "figureImages": [],
       "showOriginalByDefault": false,
       "transcriptionStatus": "manual_visual_transcription_v126",
-      "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
-      "answer": 2,
+      "transcriptionWarning": "기출 원본 이미지는 그대로 보존했습니다. 재검토 내용과 강의안 근거를 함께 확인하세요.",
+      "answer": null,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "explanation": "폐섬유화라는 단서는 bleomycin을 가리키지만 지문의 anthracycline 계열이라는 조건과 모순됩니다. Bleomycin은 항암 항생물질이나 anthracycline은 아닙니다. 원문은 보존하고 채점을 보류합니다.",
+      "evidence": [
         {
-          "lectureId": "v126-lecture-61",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 45,
-          "image": "assets/evidence/class22/2026-lecture-61-p045.webp",
-          "quote": "Doxorubicin 심장독성 vs bleomycin 폐섬유화",
-          "lectureOwner": "이서울 교수님"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 44,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p045.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 45,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 53,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p054.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 54,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 74,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p075.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 75,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "exam_answer_key",
-        "check1": "official_exam_answer_sheet_last_page_transcribed",
-        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
-        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
-        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
-        "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암제 1 · 작용기전",
-        "classificationConfidence": "topic_matched",
-        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
-        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
-        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. Doxorubicin 심장독성 vs bleomycin 폐섬유화"
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "conflict",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "폐섬유화라는 단서는 bleomycin을 가리키지만 지문의 anthracycline 계열이라는 조건과 모순됩니다. Bleomycin은 항암 항생물질이나 anthracycline은 아닙니다. 원문은 보존하고 채점을 보류합니다."
       },
-      "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
+      "notes": "",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "Anthracycline 계열에는 doxorubicin이 있고, bleomycin은 별도의 계열로 DNA 손상을 유발합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "aiExplanation": "",
       "answerKey": {
         "image": "assets/evidence/class22/exam-answer-key-p07.webp",
         "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "choiceExplanations": {},
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "conflict",
+        "professor": "lee-seoul",
+        "gradingHold": true,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "official_last_page_key_only",
+        "reason": "폐섬유화라는 단서는 bleomycin을 가리키지만 지문의 anthracycline 계열이라는 조건과 모순됩니다. Bleomycin은 항암 항생물질이나 anthracycline은 아닙니다. 원문은 보존하고 채점을 보류합니다.",
+        "limitations": "폐섬유화라는 단서는 bleomycin을 가리키지만 지문의 anthracycline 계열이라는 조건과 모순됩니다. Bleomycin은 항암 항생물질이나 anthracycline은 아닙니다. 원문은 보존하고 채점을 보류합니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "conflict"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -2944,39 +4752,67 @@
       "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 4,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 4입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "explanation": "정답표의 답안을 유지했습니다. 아래의 같은 교수님 강의안에서 관련 내용을 대조할 수 있습니다.",
+      "evidence": [
         {
-          "lectureId": "lecture1",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 105,
-          "image": "assets/evidence/lee-seoul/lecture1-p105.webp",
-          "quote": "Tamoxifen — selective estrogen receptor modulators; competitive inhibitor of estradiol bind to ER",
-          "lectureOwner": "이서울 교수님"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 104,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p105.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 105,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "exam_answer_key",
-        "check1": "official_exam_answer_sheet_last_page_transcribed",
-        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
-        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
-        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
-        "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암제 1 · 작용기전",
-        "classificationConfidence": "topic_matched",
-        "lectureLinkStatus": "topic_referenced_not_evidence_accepted",
-        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표"
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "호르몬의존성 암에서는 수용체 길항제, aromatase 억제제, GnRH 작용제 등으로 성장 신호를 차단합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "aiExplanation": "",
       "answerKey": {
         "image": "assets/evidence/class22/exam-answer-key-p07.webp",
         "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "official_last_page_key_only",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -3022,40 +4858,67 @@
       "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 5,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 5입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "explanation": "정답표의 답안을 유지했습니다. 아래의 같은 교수님 강의안에서 관련 내용을 대조할 수 있습니다.",
+      "evidence": [
         {
-          "lectureId": "v126-lecture-63",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 112,
-          "image": "assets/evidence/class22/2026-lecture-63-p112.webp",
-          "quote": "VEGF 억제 항체 Bevacizumab (혈관 신생 억제)",
-          "lectureOwner": "이서울 교수님"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 111,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p112.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 112,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "exam_answer_key",
-        "check1": "official_exam_answer_sheet_last_page_transcribed",
-        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
-        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
-        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
-        "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암제 1 · 작용기전",
-        "classificationConfidence": "topic_matched",
-        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
-        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
-        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. VEGF 억제 항체 Bevacizumab (혈관 신생 억제)"
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "미세소관 억제제, VEGF 억제제, CD20 항체 등의 표적은 서로 다르며 암세포 성장의 어느 단계를 막는지 확인해야 합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "aiExplanation": "",
       "answerKey": {
         "image": "assets/evidence/class22/exam-answer-key-p07.webp",
         "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 5,
+        "previousAnswerSource": "official_last_page_key_only",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -3101,40 +4964,97 @@
       "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 2,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "explanation": "정답표의 답안을 유지했습니다. 아래의 같은 교수님 강의안에서 관련 내용을 대조할 수 있습니다.",
+      "evidence": [
         {
-          "lectureId": "v126-lecture-64",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
           "page": 53,
-          "image": "assets/evidence/class22/2026-lecture-64-p053.webp",
-          "quote": "Paclitaxel 등 천연물 유래 세포분열 억제제",
-          "lectureOwner": "이서울 교수님"
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p054.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 54,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 75,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p076.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 76,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 76,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p077.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 77,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "exam_answer_key",
-        "check1": "official_exam_answer_sheet_last_page_transcribed",
-        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
-        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
-        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
-        "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암제 1 · 작용기전",
-        "classificationConfidence": "topic_matched",
-        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
-        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
-        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. Paclitaxel 등 천연물 유래 세포분열 억제제"
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암제 1 · 작용기전",
       "unitId": "8e749f569f10",
-      "aiExplanation": "Taxane 계열은 미세소관의 정상적인 동역학을 방해하여 세포분열을 억제합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "aiExplanation": "",
       "answerKey": {
         "image": "assets/evidence/class22/exam-answer-key-p07.webp",
         "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "official_last_page_key_only",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -3180,40 +5100,82 @@
       "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 2,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 2입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "explanation": "정답표의 답안을 유지했습니다. 아래의 같은 교수님 강의안에서 관련 내용을 대조할 수 있습니다.",
+      "evidence": [
         {
-          "lectureId": "v126-lecture-65",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 112,
-          "image": "assets/evidence/class22/2026-lecture-65-p112.webp",
-          "quote": "HER2 수용체 표적 Trastuzumab (ADCC 직접 설명 여부는 별도)",
-          "lectureOwner": "이서울 교수님"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 111,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p112.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 112,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Cancer Chemotherapy — 증례토의",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Cancer Chemotherapy — 증례토의",
+          "page": 21,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p135.webp",
+          "quote": "",
+          "lectureTitle": "Cancer Chemotherapy — 증례토의",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 135,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "exam_answer_key",
-        "check1": "official_exam_answer_sheet_last_page_transcribed",
-        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
-        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
-        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
-        "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암약물 TBL",
-        "classificationConfidence": "review",
-        "lectureLinkStatus": "lecture_related_topic_only_not_direct_proof",
-        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
-        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. HER2 수용체 표적 Trastuzumab (ADCC 직접 설명 여부는 별도)"
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암약물 TBL",
       "unitId": "0a9ea0e8dc04",
-      "aiExplanation": "Trastuzumab은 HER2를 표적하는 항체이며, 신호 차단 외에 항체의존성 세포독성(ADCC)과 관련됩니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "aiExplanation": "",
       "answerKey": {
         "image": "assets/evidence/class22/exam-answer-key-p07.webp",
         "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 2,
+        "previousAnswerSource": "official_last_page_key_only",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -3259,40 +5221,67 @@
       "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 5,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 5입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "explanation": "정답표의 답안을 유지했습니다. 아래의 같은 교수님 강의안에서 관련 내용을 대조할 수 있습니다.",
+      "evidence": [
         {
-          "lectureId": "v126-lecture-66",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 80,
-          "image": "assets/evidence/class22/2026-lecture-66-p080.webp",
-          "quote": "항암제 내성: efflux, 대사, DNA 복구, 유전자 발현",
-          "lectureOwner": "이서울 교수님"
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 79,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p080.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 80,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "exam_answer_key",
-        "check1": "official_exam_answer_sheet_last_page_transcribed",
-        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
-        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
-        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
-        "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암약물 TBL",
-        "classificationConfidence": "review",
-        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
-        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
-        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. 항암제 내성: efflux, 대사, DNA 복구, 유전자 발현"
+        "stage": "accepted",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "matched",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다."
       },
       "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암약물 TBL",
       "unitId": "0a9ea0e8dc04",
-      "aiExplanation": "항암제 내성은 약물 세포내 유입 감소, 배출 증가, 표적 변화, DNA 복구 증가, 대체 대사경로 활성화 등으로 생깁니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "aiExplanation": "",
       "answerKey": {
         "image": "assets/evidence/class22/exam-answer-key-p07.webp",
         "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "matched",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 5,
+        "previousAnswerSource": "official_last_page_key_only",
+        "reason": "같은 교수님 강의안의 해당 개념과 문항의 선택지를 재대조했습니다.",
+        "limitations": "",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "matched"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -3334,40 +5323,82 @@
       "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 4,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 4입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
-      "evidence": [],
-      "candidateEvidence": [
+      "explanation": "Aromatase inhibitor의 계열과 기전은 확인되지만 tamoxifen 대비 효과 및 1차 표준치료 비교까지 이 자료에 직접 제시되어 있지는 않습니다.",
+      "evidence": [
         {
-          "lectureId": "v126-lecture-67",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
+          "page": 104,
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p105.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 105,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
+        },
+        {
+          "lectureId": "audit116-lee-seoul-2026-Principles of Antineoplastic Drug Use",
+          "lectureOwner": "이서울 교수님",
+          "professor": "lee-seoul",
+          "file": "이서울 · 26년도 강의안 · Principles of Antineoplastic Drug Use",
           "page": 105,
-          "image": "assets/evidence/class22/2026-lecture-67-p105.webp",
-          "quote": "Tamoxifen 및 aromatase inhibitors의 유방암 내분비치료",
-          "lectureOwner": "이서울 교수님"
+          "image": "assets/evidence/audit-1.1.6/lee-seoul/p106.webp",
+          "quote": "",
+          "lectureTitle": "Principles of Antineoplastic Drug Use",
+          "lectureYear": 2026,
+          "pageBasis": "단원 첫 페이지를 1쪽으로 계산",
+          "sourceFile": "이서울 합본.pdf",
+          "sourcePage": 106,
+          "sourceSha256": "dfd9099aebeb60b3bb3887024b88c32151a1de1e09744ec39e2448ac83571837"
         }
       ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "exam_answer_key",
-        "check1": "official_exam_answer_sheet_last_page_transcribed",
-        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
-        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
-        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
-        "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암약물 TBL",
-        "classificationConfidence": "review",
-        "lectureLinkStatus": "source_page_directly_relevant_topic_but_answer_not_reverified",
-        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
-        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. Tamoxifen 및 aromatase inhibitors의 유방암 내분비치료"
+        "stage": "audit_review",
+        "check1": "professor_and_source_page_reconciled",
+        "check2": "partial",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "Aromatase inhibitor의 계열과 기전은 확인되지만 tamoxifen 대비 효과 및 1차 표준치료 비교까지 이 자료에 직접 제시되어 있지는 않습니다."
       },
       "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암약물 TBL",
       "unitId": "0a9ea0e8dc04",
-      "aiExplanation": "호르몬수용체 양성 폐경 후 유방암의 내분비치료에서는 aromatase 억제제와 tamoxifen의 약리적 차이를 평가합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "aiExplanation": "",
       "answerKey": {
         "image": "assets/evidence/class22/exam-answer-key-p07.webp",
         "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "partial",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "official_last_page_key_only",
+        "reason": "Aromatase inhibitor의 계열과 기전은 확인되지만 tamoxifen 대비 효과 및 1차 표준치료 비교까지 이 자료에 직접 제시되어 있지는 않습니다.",
+        "limitations": "Aromatase inhibitor의 계열과 기전은 확인되지만 tamoxifen 대비 효과 및 1차 표준치료 비교까지 이 자료에 직접 제시되어 있지는 않습니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "partial"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     },
     {
@@ -3409,40 +5440,51 @@
       "transcriptionWarning": "기출 원본 스캔을 보며 지문과 선택지를 직접 전사했습니다. 불분명한 부분은 접힌 원본 이미지와 비교할 수 있습니다.",
       "answer": 4,
       "answerSource": "official_last_page_key_only",
-      "explanation": "22학번 시험지 PDF 7페이지에 표시된 정답 번호는 4입니다. 문제의 핵심과 관련된 강의안 캡처를 아래에 첨부했습니다. 관련 강의안의 특정 페이지가 해당 선택지 하나를 완전히 입증하는지는 별도 검토 등급으로 구분합니다.",
+      "explanation": "이번 첨부된 이서울 교수님 강의안에서 이 문항의 직접 근거를 확보하지 못했습니다. 다른 교수님 강의안이나 기출 해설을 강의안 근거로 대체하지 않았습니다.",
       "evidence": [],
-      "candidateEvidence": [
-        {
-          "lectureId": "v126-lecture-68",
-          "file": "이서울pf_261015_혈액과종양_항암제 1.pdf(1).pdf",
-          "page": 112,
-          "image": "assets/evidence/class22/2026-lecture-68-p112.webp",
-          "quote": "HER2 항체 표적 약물 범주 (T-DXd 간질성 폐질환 직접 근거 없음)",
-          "lectureOwner": "이서울 교수님"
-        }
-      ],
+      "candidateEvidence": [],
       "validation": {
-        "stage": "exam_answer_key",
-        "check1": "official_exam_answer_sheet_last_page_transcribed",
-        "check2": "answer_indices_cross_checked_with_pdf_7_visual",
-        "verifiedAgainst": "22학번 기출 PDF 7페이지 답안표만",
-        "decisionReason": "답 번호는 시험지 마지막 페이지에만 의존하며 강의안 원문 검증은 별개",
-        "classificationNote": "강의안 주제 기반 소속 추정: lee-seoul / 항암약물 TBL",
-        "classificationConfidence": "review",
-        "lectureLinkStatus": "lecture_related_topic_only_not_direct_proof",
-        "examKeySource": "22학번 기출 PDF 7쪽 인쇄된 정답표",
-        "lectureAuditNote": "PDF 페이지 이미지를 확인하여 관련 강의안으로 연결했지만, 이 캡처 단독으로 정답표의 유일 정답이 검증됐다고 주장하지 않음. HER2 항체 표적 약물 범주 (T-DXd 간질성 폐질환 직접 근거 없음)"
+        "stage": "audit_review",
+        "check1": "same_professor_source_not_found",
+        "check2": "missing",
+        "verifiedAgainst": "사용자 제공 같은 교수님 강의안",
+        "decisionReason": "이번 첨부된 이서울 교수님 강의안에서 이 문항의 직접 근거를 확보하지 못했습니다. 다른 교수님 강의안이나 기출 해설을 강의안 근거로 대체하지 않았습니다."
       },
       "notes": "시험지 마지막 페이지의 공식 정답을 유지했습니다. 첨부한 강의안은 주제 관련 원본 검토 자료이며, 정답에 대한 직접적인 이중검정을 자동으로 통과했다고 표시하지 않습니다.",
       "unitTitle": "항암약물 TBL",
       "unitId": "0a9ea0e8dc04",
-      "aiExplanation": "Trastuzumab deruxtecan(T-DXd)과 같은 항체약물접합체는 간질성 폐질환(ILD)/폐렴 가능성의 모니터링이 중요합니다.\n이 설명은 독립적인 AI 학습 보충이며, 시험 정답의 출처는 PDF 마지막 페이지입니다. 강의안 원문과 선지까지 대조한 이중검증 결과로 간주하지 않습니다.",
+      "aiExplanation": "",
       "answerKey": {
         "image": "assets/evidence/class22/exam-answer-key-p07.webp",
         "file": "22_혈액과종양1차_종양학_문제,정답.pdf",
         "page": 7,
         "kind": "printed_exam_key",
         "note": "마지막 7페이지 왼쪽 1~5번과 오른쪽 6~10번 묶음을 차례대로 읽어 대응"
+      },
+      "lectureAudit": {
+        "version": "1.1.6",
+        "date": "2026-11-12",
+        "status": "missing",
+        "professor": "lee-seoul",
+        "gradingHold": false,
+        "answerRevised": false,
+        "referenceAnswer": 4,
+        "previousAnswerSource": "official_last_page_key_only",
+        "reason": "이번 첨부된 이서울 교수님 강의안에서 이 문항의 직접 근거를 확보하지 못했습니다. 다른 교수님 강의안이나 기출 해설을 강의안 근거로 대체하지 않았습니다.",
+        "limitations": "이번 첨부된 이서울 교수님 강의안에서 이 문항의 직접 근거를 확보하지 못했습니다. 다른 교수님 강의안이나 기출 해설을 강의안 근거로 대체하지 않았습니다.",
+        "checks": [
+          {
+            "pass": 1,
+            "scope": "같은 교수님·단원·연도·실제 원문 페이지 대조",
+            "result": "not_located"
+          },
+          {
+            "pass": 2,
+            "scope": "정답 선택지·기출 전사·근거의 충분성 재검토",
+            "result": "missing"
+          }
+        ],
+        "reviewer": "동일 AI의 두 차례 검토; 독립된 두 명의 검토를 의미하지 않음"
       }
     }
   ]

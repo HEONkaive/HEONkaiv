@@ -1,0 +1,10 @@
+{
+  "questions": 492,
+  "manualShort": 17,
+  "pendingChoices": 31,
+  "gradedChoices": 444,
+  "mirrors": "pass",
+  "grading": "pass",
+  "evidenceHtml": "pass",
+  "browserRender": "not_run: local Chromium socket permission denied"
+}
