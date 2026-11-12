@@ -861,3 +861,223 @@ html[data-theme=light] .review-number-button.pending{background:#fff4d9;border-c
   .review-number-button,.review-number-button.active{min-height:44px}
   .review-number-button strong{font-size:11px}
 }
+
+
+/* ==============================================================
+   HEON ARCHIVE v1.1.9  · Desktop three-column review and mobile header
+   Layout-only release: stored answers, scoring and question data unchanged.
+   ============================================================== */
+/* Keep the professor identity at the left and all study controls at the right. */
+@media (min-width: 961px){
+  .review-mode .compact-course-header{
+    display:grid;grid-template-columns:minmax(0,1fr) minmax(490px,620px);
+    align-items:center;column-gap:24px;justify-content:space-between;
+    padding:16px 22px;
+  }
+  .review-mode .compact-course-header .course-identity{
+    min-width:0;max-width:none;width:auto;align-self:center;
+  }
+  .review-mode .compact-course-header .course-header-right{
+    min-width:0;max-width:none;width:100%;margin:0;justify-self:end;
+    display:flex;flex-direction:column;align-items:stretch;gap:10px;
+  }
+  .review-mode .compact-course-header .header-pills{
+    width:100%;display:flex;flex-wrap:nowrap;justify-content:space-between;gap:5px;
+  }
+  .review-mode .compact-course-header .header-pills>*{white-space:nowrap;flex:0 1 auto}
+  .review-mode .header-study-controls{
+    display:grid;grid-template-columns:minmax(0,1fr) auto;
+    width:100%;gap:12px;align-items:center;justify-content:stretch;
+  }
+  .review-mode .study-progress{
+    width:100%;min-width:0;display:grid;
+    grid-template-columns:auto minmax(0,1fr) auto;
+    gap:10px;align-items:center;
+  }
+  .review-mode .study-progress .progress-track{
+    width:100%;min-width:0;max-width:none;height:7px;
+  }
+  .review-mode .study-reset{
+    justify-self:end;min-width:132px;min-height:36px;
+    border-radius:11px;white-space:nowrap;
+  }
+  .review-mode .review-compact-title{justify-content:space-between;width:100%;}
+  .review-mode .review-compact-title .review-export-actions{
+    margin-left:auto;justify-content:flex-end;
+  }
+}
+@media (min-width: 961px) and (max-width: 1190px){
+  .review-mode .compact-course-header{grid-template-columns:minmax(0,1fr) minmax(460px,560px);gap:15px}
+  .review-mode .compact-course-header .header-pills .pill{font-size:10px;padding:5px 7px}
+  .review-mode .compact-course-header .header-pills .button{padding-inline:9px}
+}
+@media (min-width: 761px) and (max-width: 960px){
+  .review-mode .compact-course-header{justify-content:space-between}
+  .review-mode .compact-course-header .course-identity{flex:1 1 240px;min-width:0}
+  .review-mode .compact-course-header .course-header-right{
+    margin-left:auto;flex:1 1 460px;max-width:560px;align-items:stretch;
+  }
+  .review-mode .compact-course-header .header-pills{justify-content:space-between;width:100%}
+  .review-mode .header-study-controls{width:100%;justify-content:space-between;flex-wrap:nowrap}
+  .review-mode .study-progress{flex:1 1 auto;min-width:0}
+  .review-mode .study-progress .progress-track{flex:1 1 auto;width:auto;min-width:50px}
+  .review-mode .review-compact-title{justify-content:space-between}
+  .review-mode .review-compact-title .review-export-actions{margin-left:auto}
+}
+/* Left question list, center question/answers, right explanation/evidence. */
+@media (min-width: 961px){
+  .review-layout{
+    grid-template-columns:clamp(235px,21vw,310px) minmax(0,1fr);
+    gap:12px;max-height:calc(100dvh - 245px);
+    min-height:420px;
+  }
+  .review-number-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+  .review-number-button,.review-number-button.active{min-height:49px}
+  .review-detail-pane{
+    background:transparent;border:0;border-radius:0;padding:0;
+    min-width:0;min-height:0;max-height:none;overflow:visible;
+    display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:12px;
+  }
+  .review-detail,.review-detail-explanation{
+    min-width:0;min-height:0;overflow-y:auto;overscroll-behavior:contain;
+    scrollbar-width:thin;background:var(--panel);border:1px solid var(--stroke);
+    border-radius:16px;padding:clamp(14px,1.35vw,24px);
+  }
+  .review-detail-explanation{margin:0;padding-top:clamp(14px,1.35vw,24px);border-top:1px solid var(--stroke)}
+  .review-detail-head{flex-wrap:wrap}
+  .review-detail-head .button{font-size:11px}
+  .review-detail-prompt{overflow-wrap:anywhere}
+  .review-detail-explanation h3{margin-top:2px}
+  .review-evidence-card img{height:auto;max-width:100%;object-fit:contain}
+}
+@media (min-width: 961px) and (max-width: 1190px){
+  .review-layout{grid-template-columns:220px minmax(0,1fr)}
+  .review-detail-pane{grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:9px}
+  .review-detail,.review-detail-explanation{padding:13px}
+  .review-number-sidebar{padding:12px}
+  .review-number-button strong{font-size:11px}
+}
+/* Portrait tablets retain a readable two-pane review. */
+@media (min-width: 761px) and (max-width: 960px){
+  .review-layout{grid-template-columns:210px minmax(0,1fr);max-height:calc(100dvh - 245px)}
+  .review-number-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+  .review-detail-pane{overflow-y:auto;overscroll-behavior:contain}
+  .review-detail-explanation{margin-top:18px}
+}
+/* Home icon — desktop has both icon and label, mobile has a compact touch target. */
+.header-actions .return-home{display:inline-flex;align-items:center;justify-content:center;gap:7px}
+.header-actions .return-home .return-home-svg{width:18px;height:18px;display:block;flex:none}
+@media (min-width: 761px) and (max-width: 1280px){
+  .header-actions .return-home{font-size:0;padding:8px 9px}
+  .header-actions .return-home::before{content:none!important}
+  .header-actions .return-home .return-home-label{display:none}
+}
+/* Small phones: align H, cloud account, home, theme on ONE row, search below. */
+@media (max-width: 760px){
+  .topbar{
+    display:grid!important;grid-template-columns:minmax(0,1fr) auto;
+    grid-template-areas:"brand controls" "search search";
+    align-items:center;column-gap:10px;row-gap:10px;
+    padding:11px 14px 12px;min-height:0;width:100%;
+  }
+  .topbar-navigation{grid-area:brand;display:flex;min-width:0;align-items:center;justify-self:start;flex:none}
+  .topbar-navigation .quick-nav{display:none!important}
+  .topbar-brand{padding:0;border-right:0;min-height:39px}
+  .topbar-mark{flex:none}
+  .topbar-tools{display:contents!important}
+  .topbar-tools .header-actions{
+    grid-area:controls;display:flex;order:initial;width:auto;max-width:100%;
+    justify-self:end;justify-content:flex-end;align-items:center;
+    flex-wrap:nowrap;gap:6px;min-width:0;
+  }
+  .topbar-tools .global-search{
+    grid-area:search;order:initial;display:block;width:100%;max-width:100%;
+    min-width:0;justify-self:stretch;flex:none;
+  }
+  .account-nav-btn{
+    max-width:min(42vw,164px);min-height:40px;min-width:0;
+    padding:7px 10px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;
+    font-size:11px;border-radius:11px;
+  }
+  .header-actions .return-home{
+    display:grid!important;place-items:center;min-width:40px;width:40px;height:40px;
+    padding:0!important;border:1px solid var(--stroke2);
+    border-radius:12px;background:var(--panel2);color:var(--text);
+    font-size:0!important;box-shadow:0 2px 8px rgba(0,0,0,.035);
+    transition:background .15s,border-color .15s,transform .15s;
+  }
+  .header-actions .return-home::before{content:none!important}
+  .header-actions .return-home:hover{background:var(--panel3);border-color:var(--accent);transform:translateY(-1px)}
+  .header-actions .return-home .return-home-label{display:none}
+  .header-actions .return-home .return-home-svg{width:21px;height:21px;display:block}
+  .header-actions .theme-btn{
+    min-width:40px;width:40px;min-height:40px;height:40px;
+    padding:0;display:grid;place-items:center;border-radius:12px;
+  }
+  .review-layout{grid-template-columns:1fr;max-height:none;gap:10px}
+  .review-detail-pane{display:block;max-height:none;overflow:visible}
+  .review-detail-explanation{margin-top:16px}
+  .review-number-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}
+  .review-mode .compact-course-header .course-header-right{align-items:stretch}
+  .review-mode .compact-course-header .header-pills{justify-content:space-between;width:100%;gap:5px}
+  .review-mode .header-study-controls{width:100%;justify-content:space-between;flex-wrap:nowrap;gap:8px}
+  .review-mode .study-progress{min-width:0;flex:1 1 auto}
+  .review-mode .study-progress .progress-track{min-width:42px;flex:1 1 auto;width:auto}
+  .review-mode .review-compact-title .review-export-actions{margin-left:0}
+  /* The course filters beneath the name occupy the full width, rather than half a row. */
+  .quiz-mode .course-header-right{flex:1 1 100%;width:100%;min-width:0}
+  .quiz-mode .compact-course-header .header-pills{width:100%;justify-content:space-between;gap:4px}
+  .quiz-mode .compact-course-header .header-pills>*{flex:0 1 auto}
+  .quiz-mode .header-study-controls{width:100%;display:flex;justify-content:space-between;gap:8px}
+  .quiz-mode .header-study-controls .study-progress{min-width:0;flex:1 1 auto}
+  .quiz-mode .filterbar{width:100%;display:flex;align-items:stretch;flex-direction:column;gap:10px}
+  .quiz-mode .filterbar .year-chips{width:100%;max-width:100%;justify-content:space-between;padding-bottom:2px}
+  .quiz-mode .filterbar .filter-actions{
+    width:100%;max-width:none;display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(125px,1.8fr);
+    gap:7px;
+  }
+  .quiz-mode .filterbar .filter-actions .chip,.quiz-mode .filterbar .filter-actions .select{width:100%;min-width:0}
+}
+@media(max-width:400px){
+  .topbar{padding-inline:10px;gap:8px}
+  .topbar-tools .header-actions{gap:5px}
+  .account-nav-btn{font-size:10px;max-width:43vw;padding-inline:8px}
+  .header-actions .return-home,.header-actions .theme-btn{width:38px;min-width:38px;height:38px;min-height:38px}
+  .review-number-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .quiz-mode .compact-course-header .header-pills{flex-wrap:wrap;justify-content:flex-start}
+}
+
+/* v1.1.9 refinement: make the three desktop columns independently scroll
+   instead of allowing the 4-column number grid to stretch the whole page. */
+@media (min-width: 961px){
+  .review-layout{
+    height:clamp(460px,calc(100dvh - 340px),800px);
+    min-height:0;max-height:none;
+    grid-template-rows:minmax(0,1fr);
+  }
+  .review-number-sidebar,.review-detail-pane{height:100%;min-height:0}
+  .review-detail-pane{grid-template-rows:minmax(0,1fr)}
+  .review-detail,.review-detail-explanation{height:100%;min-height:0;max-height:100%;overflow-y:auto}
+}
+@media (min-width: 761px) and (max-width: 960px){
+  .review-layout{
+    height:clamp(470px,calc(100dvh - 345px),800px);
+    min-height:0;max-height:none;grid-template-rows:minmax(0,1fr);
+  }
+  .review-number-sidebar,.review-detail-pane{height:100%;min-height:0}
+  .review-detail-pane{overflow-y:auto}
+}
+@media (max-width: 760px){
+  .topbar-mark{width:40px;height:40px;border-radius:12px;font-size:23px}
+  .topbar-brand{min-height:40px}
+  .review-layout{height:auto;max-height:none;min-height:0;grid-template-rows:auto}
+  .review-number-sidebar{height:auto;max-height:220px}
+  .review-detail-pane{height:auto;max-height:none;overflow:visible}
+}
+/* Remove the legacy house glyph; only the new SVG home icon remains. */
+.header-actions .return-home::after{content:none!important;display:none!important}
+/* Empty review states remain in a bordered panel across desktop layouts. */
+@media (min-width: 961px){
+  .review-detail-pane>.empty{align-self:stretch;justify-self:stretch;border:1px dashed var(--stroke2);border-radius:16px;background:var(--panel);grid-column:1/-1}
+}
