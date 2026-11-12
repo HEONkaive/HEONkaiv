@@ -9,8 +9,8 @@
   const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
   const circles = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
   const TALLY_FORM_ID = '6DjZg5';
-  const PUBLIC_VERSION = '1.1.0';
-  const PUBLIC_RELEASE_DATE = '2026-11-11';
+  const PUBLIC_VERSION = '1.1.3';
+  const PUBLIC_RELEASE_DATE = '2026-11-12';
   const LEADERBOARD_IMAGE_BY_RANK = {1:'assets/ui/rank-first.png',2:'assets/ui/rank-second.png',3:'assets/ui/rank-third.png'};
   // Keep the underlying provenance, but omit internal answer-approval workflow from study copy.
   function studyCopy(v) {
@@ -918,12 +918,12 @@
   function renderQuizDock(q,scope) {
     const index=scope.findIndex(x=>x.id===q.id);
     const r=record(q);
-    const ready=q.type==='short'?!!String(r.selected||'').trim():!!(Array.isArray(r.selected)?r.selected.length:r.selected);
+    const ready=q.archiveUnrecovered || (q.type==='short'?!!String(r.selected||'').trim():!!(Array.isArray(r.selected)?r.selected.length:r.selected));
     return `<div class="quiz-dock" role="group" aria-label="문제 이동 및 답안 제출">
       <div class="dock-position"><span class="dock-heading">NOW STUDYING</span><strong>${esc(q.label)}</strong><span>${index+1} / ${scope.length}</span></div>
       <div class="dock-controls"><button class="button secondary small dock-nav" data-action="step" data-direction="-1" ${index===0?'disabled':''}>← 이전 문제</button><button class="button secondary small dock-nav" data-action="step" data-direction="1" ${index===scope.length-1?'disabled':''}>다음 문제 →</button>
       ${restoringReview?'<button class="button ghost small" data-action="back-review">← Review</button>':''}${studyMode==='year-exam'&&(index===scope.length-1||stats(scope).completed===scope.length)?'<button class="button secondary small" data-action="open-review">시험 결과 보기 ↗</button>':''}
-      <button class="button dock-submit ${r.submitted?'secondary':''}" data-action="submit" ${ready?'':'disabled'}>${r.submitted?'다시 제출':'답안 제출'} ✓</button></div>
+      <button class="button dock-submit ${r.submitted?'secondary':''}" data-action="submit" ${ready?'':'disabled'}>${q.archiveUnrecovered?'미복원 확인 완료':r.submitted?'다시 제출':'답안 제출'} ✓</button></div>
     </div>`;
   }
   function renderEvidenceClosed() {
@@ -955,23 +955,24 @@
     const checked=Array.isArray(r.selected)?r.selected:r.selected?[r.selected]:[];
     const answer=effectiveAnswer(q);const answers=answer==null?[]:Array.isArray(answer)?answer:[answer];
     const maxSelection=Number(q.maxSelections)||1;
-    return `<section class="exam-panel" data-question-id="${esc(q.id)}"><div class="question-header"><div><div class="question-id">${studyMode==='year-exam'?esc(yearExamTeacherLabel(q.professor))+' 교수님 · ':''}QUESTION / ${esc(q.label)}</div><h2 class="question-num">${esc(q.label)} <span class="question-index">${curr+1} / ${scope.length}</span></h2><div class="question-meta"><span class="pill ${q.isPrediction?'blue':q.validation.stage==='accepted'?'ok':['user_confirmed','highlight_reviewed','exam_answer_key'].includes(q.validation.stage)?'ok':'warn'}">${q.isPrediction?'✦ AI 예상문제 · 강의안 기반':q.validation.stage==='accepted'?'✓ 강의안 이중 검증':q.validation.stage==='exam_answer_key'?'● 22학번 공식 정답표 · 강의안 검증과 별개':q.validation.stage==='highlight_reviewed'?'✓ 정답 확인':q.validation.stage==='user_confirmed'?(q.validation?.supplemental2026?.status==='match'?'✓ 정답 확인 · 2026 강의안 비교':q.validation?.supplemental2026?.status==='conflict'?'✓ 정답 확인 · 강의안과 해설 비교 필요':'✓ 정답 확인'):'! 정답 검토 필요'}</span><span class="pill">${esc(yearName(q.year))}</span>${submission(q)?`<span class="pill blue">제출 완료</span>`:''}</div></div>
+    return `<section class="exam-panel" data-question-id="${esc(q.id)}"><div class="question-header"><div><div class="question-id">${studyMode==='year-exam'?esc(yearExamTeacherLabel(q.professor))+' 교수님 · ':''}QUESTION / ${esc(q.label)}</div><h2 class="question-num">${esc(q.label)} <span class="question-index">${curr+1} / ${scope.length}</span></h2><div class="question-meta"><span class="pill ${q.isPrediction?'blue':q.validation.stage==='accepted'?'ok':['user_confirmed','highlight_reviewed','exam_answer_key'].includes(q.validation.stage)?'ok':'warn'}">${q.isPrediction?'✦ AI 예상문제 · 강의안 기반':q.archivePdf?'● 제공 PDF 원문 · 별도 의학적 재검증 없음':q.validation.stage==='accepted'?'✓ 강의안 이중 검증':q.validation.stage==='exam_answer_key'?'● 22학번 공식 정답표 · 강의안 검증과 별개':q.validation.stage==='highlight_reviewed'?'✓ 정답 확인':q.validation.stage==='user_confirmed'?(q.validation?.supplemental2026?.status==='match'?'✓ 정답 확인 · 2026 강의안 비교':q.validation?.supplemental2026?.status==='conflict'?'✓ 정답 확인 · 강의안과 해설 비교 필요':'✓ 정답 확인'):'! 정답 검토 필요'}</span><span class="pill">${esc(yearName(q.year))}</span>${submission(q)?`<span class="pill blue">제출 완료</span>`:''}</div></div>
       <div class="row"><button class="bookmark ${isBookmark(q)?'saved':''}" data-action="bookmark" data-id="${esc(q.id)}" title="북마크" aria-pressed="${isBookmark(q)}">${isBookmark(q)?'★':'☆'}</button><button class="icon-btn report-question-btn" data-action="report-popup" data-question-id="${esc(q.id)}" title="문항 번호·설명·이미지를 첨부해 오류 제보" aria-label="${esc(q.label)}번 문제 오류 제보하기">✎ 제보하기</button><button class="icon-btn" data-action="toggle-evidence">${infoExpanded?'해설 접기':'해설 열기'}</button></div></div>
       <div class="prompt">${esc(q.prompt||'원본 이미지에서 문제 본문을 확인하세요.')}</div>
       ${renderInlineQuestionFigures(q)}
       ${q.type==='short'?`<label class="muted" for="short-answer">주관식 답안</label><textarea class="short-input" id="short-answer" data-question="${esc(q.id)}" placeholder="답안을 입력하세요. 입력하는 즉시 저장됩니다.">${esc(typeof r.selected==='string'?r.selected:'')}</textarea>`:
       q.choices?.length?`<div class="options">${q.choices.map(ch=>{const selected=checked.includes(ch.number);const correct=submission(q)&&answer!=null&&answers.includes(ch.number);const wrong=submission(q)&&selected&&!answers.includes(ch.number)&&answer!=null;return `<button class="option ${selected?'selected':''} ${correct?'correct-choice':''} ${wrong?'wrong-choice':''}" data-action="choose" data-number="${ch.number}" aria-pressed="${selected}"><span class="option-letter">${circles[ch.number-1]||ch.number}</span><span class="option-text">${esc(ch.text)}</span>${correct?'<span class="option-flag">정답</span>':wrong?'<span class="option-flag">선택 오답</span>':''}</button>`}).join('')}</div>${maxSelection>1?`<p class="help-text">이 문항은 정답 ${maxSelection}개를 선택합니다.</p>`:''}`:
+      q.archiveUnrecovered?`<p class="review-note">제공 PDF에서 해당 문항이 미복원으로 표시되어 있습니다. 문제와 보기를 임의로 만들지 않았습니다.</p>`:
       `<p class="review-note">텍스트 선택지의 판독이 불완전합니다. 아래 원본에서 선택지 번호와 문장을 확인한 후 답 번호를 선택하세요.</p><div class="options">${circles.map((v,i)=>`<button class="option ${checked.includes(i+1)?'selected':''} ${submission(q)&&answer!=null&&answers.includes(i+1)?'correct-choice':''}" data-action="choose" data-number="${i+1}"><span class="option-letter">${v}</span><span class="option-text">${i+1}번 선택지 — 원본 캡처 확인</span></button>`).join('')}</div>`}
       ${renderResult(q,grading)}
       ${q.source?.image?`<details class="source-card"><summary>기출 원본 이미지 보기 · ${esc(q.source.name)}${q.source.page?' · PDF '+q.source.page+'페이지':''}</summary><img class="source-image" src="${esc(q.source.image)}" alt="${esc(q.label)} 기출 원본 캡처" loading="lazy" data-action="zoom" data-caption="${esc(q.source.name)}${q.source.page?' · PDF '+q.source.page+'페이지':''}"><p class="source-warning">기출 원본에는 기존 필기와 정답 표기가 포함되어 있을 수 있습니다. 채점 기준과 해설은 오른쪽 정답 근거 영역에서 확인할 수 있습니다.</p>${q.transcriptionWarning?`<p class="source-warning">${esc(q.transcriptionWarning)}</p>`:''}</details>`:`<div class="review-note" style="margin-top:15px">기출 원본 파일의 별도 이미지가 제공되지 않았습니다. 문제와 선택지는 사용자가 제공한 원문을 기준으로 입력했습니다.</div>`}
-      <div class="question-footer"><div class="quiz-actions"><div class="row"><button class="button secondary small" data-action="step" data-direction="-1" ${curr<=0?'disabled':''}>← 이전</button><button class="button secondary small" data-action="step" data-direction="1" ${curr===scope.length-1?'disabled':''}>다음 →</button></div><div class="row">${restoringReview?'<button class="button ghost small" data-action="back-review">← Review</button>':''}<button class="button ${r.submitted?'secondary':''}" data-action="submit" ${q.type==='short'?(!String(r.selected||'').trim()?'disabled':''):(!checked.length?'disabled':'')}>${r.submitted?'다시 제출':'답안 제출'} &nbsp; ✓</button></div></div>${saysAllCompleted()?`<div class="result-box correct"><b>전체 문항 풀이가 완료되었습니다.</b><p>정답 검토 필요 문항을 제외한 결과는 Review에서 확인할 수 있습니다.</p><button class="button small review-button" data-action="open-review" style="margin-top:11px">최종 Review 열기 →</button></div>`:''}</div>
+      <div class="question-footer"><div class="quiz-actions"><div class="row"><button class="button secondary small" data-action="step" data-direction="-1" ${curr<=0?'disabled':''}>← 이전</button><button class="button secondary small" data-action="step" data-direction="1" ${curr===scope.length-1?'disabled':''}>다음 →</button></div><div class="row">${restoringReview?'<button class="button ghost small" data-action="back-review">← Review</button>':''}<button class="button ${r.submitted?'secondary':''}" data-action="submit" ${q.archiveUnrecovered?'':q.type==='short'?(!String(r.selected||'').trim()?'disabled':''):(!checked.length?'disabled':'')}>${q.archiveUnrecovered?'미복원 확인 완료':r.submitted?'다시 제출':'답안 제출'} &nbsp; ✓</button></div></div>${saysAllCompleted()?`<div class="result-box correct"><b>전체 문항 풀이가 완료되었습니다.</b><p>정답 검토 필요 문항을 제외한 결과는 Review에서 확인할 수 있습니다.</p><button class="button small review-button" data-action="open-review" style="margin-top:11px">최종 Review 열기 →</button></div>`:''}</div>
     </section>`;
   }
   function saysAllCompleted() {const s=stats(questions());return !!s.total&&s.completed===s.total;}
   function renderResult(q,grade) {
     if(!submission(q))return '';
-    const label=grade==='correct'?'정답입니다':grade==='wrong'?'오답입니다':q.gradingMode==='manual'?'채점 보류 · 서술형 수동 채점':'채점 보류 · 정답 미확정';
-    const description=grade==='pending'?(q.gradingMode==='manual'?'강의안 모범답안과 비교할 수 있지만 서술형은 문자열 자동 채점하지 않습니다.':'강의안에서 정답을 확정하지 못했습니다. 해설창을 열고 직접 지정할 수 있습니다.'):grade==='correct'?'제출한 선택지가 현재 확정된 정답과 일치합니다.':q.validation?.stage==='user_confirmed'?'정답과 다른 답안을 선택했습니다.':'강의안에 근거한 정답과 다른 답안을 선택했습니다.';
+    const label=q.archiveUnrecovered?'미복원 문항 · 확인 완료':grade==='correct'?'정답입니다':grade==='wrong'?'오답입니다':q.gradingMode==='manual'?'채점 보류 · 서술형 수동 채점':'채점 보류 · 정답 미확정';
+    const description=q.archiveUnrecovered?'원문에 문제·선택지가 복원되지 않아 채점하지 않습니다.':grade==='pending'?(q.gradingMode==='manual'?'강의안 모범답안과 비교할 수 있지만 서술형은 문자열 자동 채점하지 않습니다.':'강의안에서 정답을 확정하지 못했습니다. 해설창을 열고 직접 지정할 수 있습니다.'):grade==='correct'?'제출한 선택지가 현재 확정된 정답과 일치합니다.':q.validation?.stage==='user_confirmed'?'정답과 다른 답안을 선택했습니다.':'강의안에 근거한 정답과 다른 답안을 선택했습니다.';
     return `<div class="result-box ${grade==='not-started'?'':grade}"><b>${label}</b><p>${description}</p></div>`;
   }
   // Additional images supplied with a correction report. They are learning
@@ -982,7 +983,27 @@
     if(!images.length)return '';
     return `<section class="supplemental-explanation-images"><div class="section-head"><h4 class="section-title" style="font-size:14px">추가 해설 참고 이미지</h4><span class="fine">사용자 제공 · 출처 확인 전</span></div>${images.map(item=>`<article class="evidence-item"><div class="evidence-meta"><p class="file-name">${esc(item.caption||'사용자 제공 해설 참고 이미지')}</p></div><img class="evidence-image" src="${esc(item.src||item.image)}" alt="${esc(item.alt||'해설 참고 이미지')}" loading="lazy" data-action="zoom" data-caption="${esc(item.caption||'해설 참고 이미지')}"><div class="zoom-label">이미지를 누르면 확대됩니다 ⤢</div></article>`).join('')}</section>`;
   }
+  // User-supplied PDF archive: keep the original answer, explanation and lecture excerpts visually intact.
+  // No answer validation is performed beyond faithful transcription of the provided PDF.
+  function renderPdfArchiveEvidence(q) {
+    const meta=q.archivePdf;const ans=effectiveAnswer(q);
+    const pending=q.validation?.stage==='pending';
+    const choices=Object.entries(q.choiceExplanations||{}).map(([n,t])=>
+      `<p><b>${esc(circles[Number(n)-1]||n)}</b> ${esc(t)}</p>`).join('');
+    const refText=(meta.lectureReferences||[]).map(v=>`<p class="file-name">${esc(v)}</p>`).join('');
+    return `<aside class="evidence-panel pdf-archive-evidence"><div class="evidence-head"><div><div class="evidence-kicker">USER-PROVIDED PDF · v1.3</div><h3>원문 정답 및 해설</h3></div><button class="icon-btn" data-action="toggle-evidence" title="해설 접기">✕</button></div>
+      <div class="question-meta" style="margin-top:12px"><span class="pill ${pending?'warn':'blue'}">${pending?'⚠ PDF 원문에서 판정 보류':'● 제공 PDF에 수록된 답안'}</span><span class="pill">22학번 · 홍기연</span></div>
+      <div class="result-box ${pending?'pending':'correct'}"><b>PDF 원문 답안 · ${esc(meta.answerText||'판정 불가')}</b><p>${pending?'PDF에 기재된 불확실성을 그대로 유지하며 임의로 정답 처리하지 않습니다.':'사용자가 제공한 PDF의 정답이며, 별도의 의학적 검증을 새로 수행하지 않았습니다.'}</p></div>
+      ${q.explanation?`<div class="evidence-explanation" style="white-space:pre-line">${esc(q.explanation)}</div>`:''}
+      ${choices?`<section class="choice-reason-list"><h4>나머지 보기 · PDF 원문 정정</h4>${choices}</section>`:''}
+      <div class="section-head"><h4 class="section-title" style="font-size:14px">PDF 원문 전체 해설 · 강의안 발췌</h4><span class="fine">원본 ${meta.pdfPage}페이지</span></div>
+      ${refText}
+      <article class="evidence-item"><div class="evidence-meta"><p class="file-name">홍기연 교수님 · 사용자 제공 Medical Question Archive v1.3</p><small>정답 · 상세 이유 · 강의안 발췌 · 선택지별 정정 전부 보존</small></div><img class="evidence-image" src="${esc(meta.answerImage)}" alt="PDF ${meta.pdfPage}쪽 정답 해설과 강의안 이미지" loading="lazy" data-action="zoom" data-caption="홍기연 22학번 · PDF ${meta.pdfPage}쪽 원문 해설"/><div class="zoom-label">이미지를 누르면 확대됩니다 ⤢</div></article>
+      <p class="help-text"><a href="${esc(meta.pdfFile)}" target="_blank" rel="noopener">사용자가 제공한 전체 원본 PDF 열기 ↗</a> · 재검증 또는 재서술 없이 수록했습니다.</p>
+    </aside>`;
+  }
   function renderEvidencePanel(q) {
+    if(q.archivePdf)return renderPdfArchiveEvidence(q);
     const accepted=q.validation.stage==='accepted';const officialKey=q.validation.stage==='exam_answer_key';const highlighted=q.validation.stage==='highlight_reviewed';const userConfirmed=q.validation.stage==='user_confirmed';const ans=effectiveAnswer(q);const audit2026=q.validation?.supplemental2026;const sourceMatch2026=userConfirmed&&audit2026?.status==='match';
     const usedCustom=Object.prototype.hasOwnProperty.call(state.customAnswers,q.id);
     const userEvidence=Array.isArray(q.evidence)&&q.evidence.length>0;
@@ -1270,8 +1291,8 @@
       }
       case 'submit':{
         const q=currentQuestion();if(!q)break;const r={...record(q)};
-        if(q.type==='short'&&!String(r.selected||'').trim())break;
-        if(q.type!=='short'&&!r.selected?.length)break;
+        if(!q.archiveUnrecovered&&q.type==='short'&&!String(r.selected||'').trim())break;
+        if(!q.archiveUnrecovered&&q.type!=='short'&&!r.selected?.length)break;
         r.submitted=true;r.submittedAt=new Date().toISOString();r.updatedAt=r.submittedAt;recordBucket()[q.id]=r;markSmartReview(q);markRecordChange(q);infoExpanded=true;saveState();
         const finishedYearExam=studyMode==='year-exam'&&questions().length>0&&questions().every(item=>submission(item,'year-exam'));
         const shouldCheckRank=finishedYearExam && canUseLeaderboard(selectedSubject, selectedExamYear);
