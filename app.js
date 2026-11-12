@@ -9,7 +9,7 @@
   const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
   const circles = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
   const TALLY_FORM_ID = '6DjZg5';
-  const PUBLIC_VERSION = '1.1.9';
+  const PUBLIC_VERSION = '1.1.10';
   const PUBLIC_RELEASE_DATE = '2026-11-12';
   const LEADERBOARD_IMAGE_BY_RANK = {1:'assets/ui/rank-first.png',2:'assets/ui/rank-second.png',3:'assets/ui/rank-third.png'};
   // Keep the underlying provenance, but omit internal answer-approval workflow from study copy.
@@ -418,6 +418,8 @@
     return {subjectId:selectedSubject,year:String(selectedExamYear),score:s.correct,total:s.total,answers};
   }
   async function maybeOfferPublicRank(){
+    // v1.1.10: mobile intentionally has no leaderboard, including automatic ranking popups.
+    if(window.matchMedia?.('(max-width: 760px)').matches)return;
     const candidate=buildPublicCandidate();
     if(!candidate || !leaderboardConfigured())return;
     try{

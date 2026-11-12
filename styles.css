@@ -1081,3 +1081,58 @@ html[data-theme=light] .review-number-button.pending{background:#fff4d9;border-c
 @media (min-width: 961px){
   .review-detail-pane>.empty{align-self:stretch;justify-self:stretch;border:1px dashed var(--stroke2);border-radius:16px;background:var(--panel);grid-column:1/-1}
 }
+
+
+/* HEON ARCHIVE v1.1.10 — align five review metrics with the existing progress/reset row.
+ * Desktop: preserve the original tight gaps; shorten ONLY the progress row to that width.
+ * Mobile: leave progress and reset untouched; distribute remaining room into five chips. */
+@media (min-width: 961px) {
+  .review-mode .compact-course-header {
+    grid-template-columns:minmax(0,1fr) max-content;
+  }
+  .review-mode .compact-course-header .course-header-right {
+    width:max-content;max-width:100%;justify-self:end;
+  }
+  .review-mode .compact-course-header .header-pills {
+    width:max-content;max-width:100%;justify-content:flex-start;gap:8px;
+  }
+  .review-mode .compact-course-header .header-pills > * {
+    flex:0 0 auto;
+  }
+  .review-mode .header-study-controls {
+    width:100%;
+  }
+}
+@media (min-width: 761px) and (max-width: 960px) {
+  .review-mode .compact-course-header .course-header-right {
+    flex:0 1 auto;width:max-content;max-width:100%;margin-left:auto;
+  }
+  .review-mode .compact-course-header .header-pills {
+    width:max-content;max-width:100%;justify-content:flex-start;gap:8px;
+  }
+  .review-mode .compact-course-header .header-pills > * {
+    flex:0 0 auto;
+  }
+  .review-mode .header-study-controls {width:100%;}
+}
+@media (max-width: 760px) {
+  /* Remove public leaderboard surfaces from phones only. Desktop behavior is unchanged. */
+  .leaderboard-card,.year-special-badge,
+  .review-export-actions [data-action="enter-leaderboard"] {display:none!important;}
+
+  /* Five metrics fill exactly the width already occupied by progress + reset. */
+  .review-mode .compact-course-header .header-pills {
+    display:flex;width:100%;max-width:100%;flex-wrap:nowrap;
+    justify-content:flex-start;align-items:stretch;gap:5px;
+  }
+  .review-mode .compact-course-header .header-pills > * {
+    flex:1 1 auto;min-width:0;max-width:none;
+    white-space:nowrap;display:inline-flex;justify-content:center;align-items:center;
+    font-size:clamp(9px,2.5vw,10.5px)!important;
+    letter-spacing:-.2px;padding-left:clamp(2px,.72vw,5px);
+    padding-right:clamp(2px,.72vw,5px);
+  }
+  .review-mode .compact-course-header .header-pills .button {
+    min-height:29px;
+  }
+}
