@@ -1,4 +1,4 @@
-/* HEON ARCHIVE v1.1.0 - independent study account and encrypted-in-transit cloud sync.
+/* HEON ARCHIVE v1.1.1 - independent study account and encrypted-in-transit cloud sync.
  * Public leaderboard anonymous auth uses a DIFFERENT Supabase session key.
  * Passwords are handled only by Supabase Auth; never stored in app state.
  */
@@ -246,7 +246,7 @@
     else if(mode==='signup') body.innerHTML=form('signup',true)+'<p class="fine">이메일 확인 후 로그인해야 합니다. 아이디는 표시 이름이며, 로그인은 이메일로 진행합니다.</p><div class="heon-account-links"><button data-account="login">로그인하기</button></div>';
     else if(mode==='password-reset')body.innerHTML=form('password-reset')+'<button data-account="login" class="button secondary">로그인 화면</button>';
     else if(mode==='devices'){
-      body.innerHTML='<h3>등록된 기기 (최대 2개)</h3><div id="heon-device-list">불러오는 중…</div><button class="button secondary" data-account="home">돌아가기</button>';
+      body.innerHTML=`<h3>등록된 기기 (${profile?.role==='master'?'마스터 계정 · 제한 없음':'최대 2개'})</h3><div id="heon-device-list">불러오는 중…</div><button class="button secondary" data-account="home">돌아가기</button>`;
       listDevices();
     } else if(mode==='master') {
       body.innerHTML=`<h3>문항 검증·수정 이력 등록</h3><p class="fine">이력만 등록됩니다. 정답이나 문제 본문을 수정하려면 소스 데이터와 서버 정답표를 별도로 검토·배포해야 합니다.</p>
@@ -264,6 +264,7 @@
       body.innerHTML='<p>이미 등록된 기기 2개가 있습니다. 기존 세션을 하나 해제하면 이 기기에서 동기화할 수 있어요.</p><button class="button" data-account="devices">등록 기기 관리</button><button class="button secondary" data-account="logout">로그아웃</button>';
     } else if(active) {
       body.innerHTML=`<div class="heon-account-ok"><strong>${esc(profile?.username||user?.email||'')}</strong><small>${esc(user?.email||'')}</small><p>동기화 ${lastError?'문제: '+esc(lastError):lastSyncAt?lastSyncAt.toLocaleString('ko-KR'):'대기 중'}</p></div>
+        ${profile?.role==='master'?'<p class="fine">마스터 계정 · 로그인 기기 수 제한 없음</p>':''}
         <div class="heon-account-actions"><button class="button" data-account="sync">지금 동기화</button><button class="button secondary" data-account="devices">기기 관리</button><button class="button secondary" data-account="download">기록 JSON 백업</button><button class="button secondary" data-account="upload">기록 JSON 복원</button>${profile?.role==='master'?'<button class="button secondary" data-account="master">문항 검증 관리</button>':''}<button class="button secondary" data-account="logout">로그아웃</button></div>
         <input id="heon-import-file" type="file" accept=".json,application/json" hidden>`;
     } else body.innerHTML=form('login')+'<button data-account="signup" class="button secondary">회원가입</button>';

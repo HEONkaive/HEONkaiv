@@ -98,3 +98,12 @@
 
 상세 설치: `SETUP_STUDY_ACCOUNTS.md` · `TALLY_AUTOFILL_SETUP.md` · `QUALITY_AND_REVIEW.md`.
 비밀번호, Supabase Secret Key 및 service_role Key는 절대 저장소에 올리지 마세요.
+
+
+## v1.1.1 — 마스터 계정 로그인 기기 수 무제한
+
+- 일반 학습 계정의 최대 **2개 세션** 제한은 유지합니다.
+- Supabase DB에서 확인된 **마스터(`role='master'`) 계정만 세션 수 제한 없이** 사용할 수 있습니다.
+- 리더보드 익명 로그인·학습 기록·문항 데이터·스마트 복습은 변경하지 않았습니다.
+- v1.1.0 DB를 이미 설정했다면 `supabase/upgrade_master_unlimited.sql`만 실행하세요.
+- v1.1.1 앱 패치는 `index.html`, `study-account.js`, `pwa-register.js`, `sw.js`로 구성됩니다.

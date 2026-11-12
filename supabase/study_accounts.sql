@@ -1,4 +1,5 @@
--- HEON ARCHIVE v1.1.0 — learning accounts, private sync, two active sessions,
+-- HEON ARCHIVE v1.1.1 — learning accounts, private sync, 2 learner sessions,
+-- unlimited master sessions (role checked server-side),
 -- and an audit ledger. Run AFTER the existing leaderboard.sql.
 -- This SQL DOES NOT modify heon_leaderboard or heon_exam_keys.
 -- Important: never paste account passwords/service_role keys into SQL or GitHub.
@@ -81,6 +82,7 @@ as $$
 $$;
 revoke all on function public.heon_study_session_ok() from public,anon,authenticated;
 
+-- Learners: max 2 sessions. Masters: unlimited registered sessions.
 -- Logged-in permanent users register their current Auth session. A separate
 -- session ID is used instead of an easily spoofed browser-generated device ID.
 create or replace function public.heon_study_claim_session(p_username text,p_device_label text default '기기')
@@ -100,25 +102,32 @@ begin
   if exists(select 1 from public.heon_study_revoked_sessions where session_id=v_session) then
     raise exception 'REVOKED_SESSION: 이 기기의 로그인은 해제되었습니다. 로그아웃 후 다시 로그인하세요.';
   end if;
-  select username into v_existing from public.heon_study_profiles where user_id=v_uid;
+  -- Check the server-side profile role before enforcing the device cap.
+  -- Never accept a role from the client; only a Supabase admin can promote a master.
+  select username,role into v_existing,v_role
+    from public.heon_study_profiles where user_id=v_uid;
   if v_existing is null then
     if v_username !~ '^[A-Za-z0-9_]{3,24}$' or lower(v_username)='ssk8181' then
       raise exception '아이디는 영문, 숫자, 밑줄 3~24자이며 예약된 아이디는 사용할 수 없습니다.';
     end if;
     insert into public.heon_study_profiles(user_id,username) values (v_uid,v_username);
+    v_existing := v_username;
+    v_role := 'learner';
   end if;
   -- Forget sessions inactive for 90 days. Active devices refresh last_seen.
   delete from public.heon_study_sessions where user_id=v_uid and last_seen < now()-interval '90 days';
   if not exists(select 1 from public.heon_study_sessions where session_id=v_session and user_id=v_uid) then
-    select count(*) into v_count from public.heon_study_sessions where user_id=v_uid;
-    if v_count>=2 then raise exception 'DEVICE_LIMIT_2: 기존 기기에서 로그아웃하거나 등록된 기기를 해제해주세요.'; end if;
+    if v_role <> 'master' then
+      select count(*) into v_count from public.heon_study_sessions where user_id=v_uid;
+      if v_count>=2 then raise exception 'DEVICE_LIMIT_2: 기존 기기에서 로그아웃하거나 등록된 기기를 해제해주세요.'; end if;
+    end if;
     insert into public.heon_study_sessions(session_id,user_id,device_label)
       values(v_session,v_uid,left(btrim(coalesce(p_device_label,'기기')),60));
   else
     update public.heon_study_sessions set last_seen=now() where session_id=v_session and user_id=v_uid;
   end if;
-  select role,username into v_role,v_existing from public.heon_study_profiles where user_id=v_uid;
-  return jsonb_build_object('username',v_existing,'role',v_role,'maxDevices',2);
+  return jsonb_build_object('username',v_existing,'role',v_role,
+    'maxDevices',case when v_role='master' then null else 2 end);
 end;
 $$;
 revoke all on function public.heon_study_claim_session(text,text) from public,anon,authenticated;
