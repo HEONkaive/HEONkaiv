@@ -9,7 +9,7 @@
   const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
   const circles = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
   const TALLY_FORM_ID = '6DjZg5';
-  const PUBLIC_VERSION = '1.1.7';
+  const PUBLIC_VERSION = '1.1.8';
   const PUBLIC_RELEASE_DATE = '2026-11-12';
   const LEADERBOARD_IMAGE_BY_RANK = {1:'assets/ui/rank-first.png',2:'assets/ui/rank-second.png',3:'assets/ui/rank-third.png'};
   // Keep the underlying provenance, but omit internal answer-approval workflow from study copy.
@@ -81,6 +81,8 @@
   let toastTimer = null;
   // Search is a UI preference only: it never alters or overwrites saved answers.
   let searchText = '';
+  // null = the subject currently selected in the study menu. 'all' = every subject.
+  let searchSubjectOverride = null;
   let searchOpen = false;
   let searchLoading = false;
   let searchIndexLoaded = false;
@@ -725,6 +727,9 @@
     saveState();render();window.scrollTo({top:0,behavior:'instant'});
   }
   function selectYear(y) {infoExpanded=false;currentYear=y;filter='all';currentId=scopedQuestions()[0]?.id||null;view='quiz';render();}
+  function activeSearchSubject() {
+    return searchSubjectOverride===null ? selectedSubject : searchSubjectOverride;
+  }
   function searchEntries() {
     const query=searchText.trim();
     if(!query || !catalog)return [];
@@ -732,6 +737,7 @@
     const compressed=normalizeText(query);
     const found=[];
     for(const sub of catalog.subjects)for(const meta of sub.professors){
+      if(activeSearchSubject()!=='all' && sub.id!==activeSearchSubject())continue;
       const data=professorCache.get(meta.id);
       if(!data)continue;
       for(const q of data.questions){
@@ -749,19 +755,19 @@
         const choiceMatch=normalizeText(choices).includes(compressed);
         const score=(numberExact?1200:0)+(numberStart?600:0)+(promptMatch?120:0)+(choiceMatch?80:0)+
           (meta.id===currentProfessor?.professor.id?25:0);
-        found.push({q,meta,score});
+        found.push({q,meta,subjectName:sub.name,score});
       }
     }
     return found.sort((a,b)=>b.score-a.score||(yearSortValue(a.q.year)-yearSortValue(b.q.year))||(a.q.number-b.q.number)).slice(0,30);
   }
   function searchSuggestionsHTML(){
-    if(!searchText.trim()) return '<div class="search-message"><strong>문항 빠른 검색</strong><p>문제 번호(예: 17-8), 지문 키워드 또는 선택지·약물명을 입력하세요. 등록된 모든 교수님에서 찾습니다.</p></div>';
+    if(!searchText.trim()) return '<div class="search-message"><strong>문항 빠른 검색</strong><p>과목을 선택한 뒤 문제 번호(예: 22-10), 지문·약물명으로 검색하세요. 전체 과목 검색도 가능합니다.</p></div>';
     const hits=searchEntries();
     const pending=searchLoading?'<span class="fine"> · 다른 교수님 자료 검색 중…</span>':'';
     const header=`<div class="search-results-head">검색 결과 ${hits.length>=30?'30개 이상':hits.length+'개'}${pending}</div>`;
-    const rows=hits.slice(0,12).map(({q,meta})=>{
+    const rows=hits.slice(0,12).map(({q,meta,subjectName})=>{
       const preview=String(q.prompt||q.choices?.map(c=>c.text).join(' / ')||'원본 이미지 참고').replace(/\s+/g,' ').slice(0,92);
-      return `<button class="search-result" type="button" role="option" data-action="search-result" data-professor="${esc(meta.id)}" data-id="${esc(q.id)}"><span class="search-result-top"><strong>${esc(q.label)}</strong><span>${esc(meta.name)} 교수님 · ${esc(yearName(q.year))}</span></span><span class="search-result-text">${esc(preview)}</span></button>`;
+      return `<button class="search-result" type="button" role="option" data-action="search-result" data-professor="${esc(meta.id)}" data-id="${esc(q.id)}"><span class="search-result-top"><strong>${esc(q.label)}</strong><span>${esc(subjectName)} · ${esc(meta.name)} 교수님 · ${esc(yearName(q.year))}</span></span><span class="search-result-text">${esc(preview)}</span></button>`;
     }).join('');
     if(!hits.length) return header+`<div class="search-message"><strong>${searchLoading?'검색 범위를 확장하고 있습니다':'일치하는 문제가 없습니다'}</strong><p>${searchLoading?'등록 교수님 데이터를 불러오는 중입니다.':'번호나 다른 키워드로 다시 검색해 보세요.'}${searchLoadErrors?' 일부 교수님 파일을 읽지 못했습니다.':''}</p></div>`;
     return header+rows+(hits.length>12?`<div class="search-foot">상위 12개 결과를 표시 중입니다. 검색어를 더 구체적으로 입력하세요.</div>`:'');
@@ -793,7 +799,7 @@
       selectedSubject=profMeta(profId).subjectId;
       currentYear='all';filter='all';view='quiz';infoExpanded=false;restoringReview=false;
       currentId=qId;state.lastProfessor=profId;state.lastVisited[profId]=qId;
-      searchText='';searchOpen=false;mobileMenuOpen=false;
+      searchText='';searchOpen=false;searchSubjectOverride=null;mobileMenuOpen=false;
       saveState();render();window.scrollTo({top:0,behavior:'instant'});
     }catch(err){toast('검색한 문제를 열지 못했습니다: '+err.message);}
   }
@@ -850,7 +856,7 @@
               <button data-action="nav-stats" class="nav-tab ${view==='review'&&reviewFilter!=='wrong'?'active':''}">학습 통계</button>
             </nav>
           </div>
-          <div class="topbar-tools"><div class="global-search" role="search"><label class="search-shell" for="global-search-input"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="global-search-input" autocomplete="off" spellcheck="false" value="${esc(searchText)}" placeholder="문제 번호, 키워드, 약물명 검색..." aria-label="모든 교수님 문제 검색" aria-controls="search-suggestions" aria-expanded="${searchOpen}"/><span class="search-shortcut" aria-hidden="true">/</span></label><div id="search-suggestions" class="search-suggestions" role="listbox" ${searchOpen?'':'hidden'}>${searchOpen?searchSuggestionsHTML():''}</div></div>
+          <div class="topbar-tools"><div class="global-search" role="search"><div class="search-control-group"><label class="search-subject-filter" title="검색할 과목 선택"><span class="visually-hidden">검색 과목 선택</span><select id="global-search-subject" class="search-subject-select" aria-label="검색할 과목 선택"><option value="current" ${searchSubjectOverride===null?'selected':''}>${esc(currSubject?.name||'현재 과목')}</option><option value="all" ${searchSubjectOverride==='all'?'selected':''}>전체 과목</option>${(catalog?.subjects||[]).filter(sub=>sub.id!==selectedSubject).map(sub=>`<option value="${esc(sub.id)}" ${searchSubjectOverride===sub.id?'selected':''}>${esc(sub.name)}</option>`).join('')}</select></label><label class="search-shell" for="global-search-input"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="global-search-input" autocomplete="off" spellcheck="false" value="${esc(searchText)}" placeholder="문제 번호, 키워드, 약물명 검색..." aria-label="선택한 과목 문제 검색" aria-controls="search-suggestions" aria-expanded="${searchOpen}"/></label></div><div id="search-suggestions" class="search-suggestions" role="listbox" ${searchOpen?'':'hidden'}>${searchOpen?searchSuggestionsHTML():''}</div></div>
             <div class="header-actions"><button data-action="study-account-open" class="account-nav-btn" title="학습기록 계정·동기화">${esc(window.HeonStudyAccount?.statusLabel?.()||'학습 기록 계정')}</button>${view!=='home'?'<button class="button secondary small return-home" data-action="home" title="과목·교수님 선택 화면으로 돌아가기">← 교수님 선택</button>':''}<button class="icon-btn theme-btn" data-action="theme" title="라이트 / 다크모드 변경" aria-label="테마 전환">${state.prefs.theme==='dark'?'☀':'☾'}</button></div>
           </div>
         </header>
@@ -1101,13 +1107,13 @@
       ${q.source?.image?`<details class="source-card"><summary>기출 원본 확인</summary><img class="source-image" src="${esc(q.source.image)}" alt="기출 원본" loading="lazy" data-action="zoom" data-caption="${esc(q.label)} 원본"/></details>`:''}</section></article>`;
   }
   function renderReview() {
-    const all=questions(),s=stats(all),icons={correct:'✓',wrong:'✕',pending:'!', 'not-started':'–'};
+    const all=questions(),s=stats(all);
     const list=all.filter(q=>reviewFilter==='wrong'?evaluation(q)==='wrong':reviewFilter==='unresolved'?effectiveAnswer(q)==null:reviewFilter==='pending'?evaluation(q)==='pending'||effectiveAnswer(q)==null:reviewFilter==='bookmarks'?isBookmark(q):reviewFilter==='due'?isDueForReview(q):true);
     if(!list.some(q=>q.id===selectedReviewId))selectedReviewId=list[0]?.id||null;
     const focus=list.find(q=>q.id===selectedReviewId);
     return `${renderCourseHeader()}<div class="review-compact-title"><div><div class="eyebrow">${studyMode==='year-exam'?'YEAR EXAM RESULTS':'LEARNING REVIEW'}</div><h1>${studyMode==='year-exam'?esc(selectedExamYear)+'학번 시험 결과':({wrong:'오답 노트',bookmarks:'북마크',unresolved:'미확정 문항'}[reviewFilter]||'최종 Review')}</h1><p>문제 번호를 누르면 오른쪽에 지문·정답·내 선택·해설·강의안 근거가 표시됩니다.</p></div><div class="review-export-actions">${studyMode==='year-exam'&&canUseLeaderboard(selectedSubject,selectedExamYear)&&stats(questions(),'year-exam').completed===questions().length?'<button class="button small" data-action="enter-leaderboard">🏆 리더보드 참가</button>':''}${['wrong','bookmarks'].includes(reviewFilter)?`<button class="button secondary small print-nav" data-action="save-collection-pdf" data-kind="${reviewFilter}">${reviewFilter==='wrong'?'오답':'북마크'} PDF 저장</button>`:''}<button class="button secondary small" data-action="back-quiz">← 문제풀이로 돌아가기</button></div></div>
       <div class="review-score-strip">${[['전체',s.total],['제출',s.completed],['정답',s.correct],['오답',s.wrong],['채점 보류',s.pending],['미제출',s.total-s.completed]].map(([name,n])=>`<span>${name} <b>${n}</b></span>`).join('')}</div>
-      <div class="review-layout"><aside class="review-number-sidebar"><div class="review-side-heading"><b>문제 번호</b><small>${list.length}문항</small></div><div class="review-side-filters">${[['all','전체'],['wrong','오답'],['pending','보류'],['bookmarks','북마크'],['due','오늘 복습']].map(([f,l])=>`<button class="chip ${reviewFilter===f?'active':''}" data-action="review-filter" data-filter="${f}">${l}</button>`).join('')}</div><div class="review-number-grid">${list.map(q=>{const status=evaluation(q);return `<button class="review-number-button ${status} ${q.id===selectedReviewId?'active':''}" data-action="review-select" data-id="${esc(q.id)}" title="${esc(yearExamTeacherLabel(q.professor))} · ${esc(q.label)} · ${status}" aria-pressed="${q.id===selectedReviewId}"><strong>${studyMode==='year-exam'?(q.type==='short'?esc('주'+q.label.split('주').pop()):esc(String(q.number))):esc(q.label)}</strong><span>${icons[status]}</span>${studyMode==='year-exam'?`<small>${esc(yearExamTeacherLabel(q.professor))}</small>`:''}</button>`}).join('')}</div></aside>
+      <div class="review-layout"><aside class="review-number-sidebar"><div class="review-side-heading"><b>문제 번호</b><small>${list.length}문항</small></div><div class="review-side-filters">${[['all','전체'],['wrong','오답'],['pending','보류'],['bookmarks','북마크'],['due','오늘 복습']].map(([f,l])=>`<button class="chip ${reviewFilter===f?'active':''}" data-action="review-filter" data-filter="${f}">${l}</button>`).join('')}</div><div class="review-number-grid">${list.map(q=>{const status=evaluation(q);const statusText={'correct':'정답','wrong':'오답','pending':'채점 보류','not-started':'미풀이'}[status]||status;return `<button class="review-number-button ${status} ${q.id===selectedReviewId?'active':''}" data-action="review-select" data-id="${esc(q.id)}" title="${esc(q.label)} · ${esc(yearExamTeacherLabel(q.professor))} 교수님 · ${statusText}" aria-label="${esc(q.label)}번 · ${statusText}" aria-pressed="${q.id===selectedReviewId}"><strong>${esc(q.label)}</strong></button>`}).join('')}</div></aside>
       <section class="review-detail-pane">${focus?renderReviewQuestion(focus):'<div class="empty">선택한 조건에 해당하는 문제가 없습니다.</div>'}</section></div>`;
   }
 
@@ -1393,6 +1399,12 @@
   });
   root.addEventListener('change',(e)=>{
     const el=e.target;
+    if(el.id==='global-search-subject'){
+      searchSubjectOverride=el.value==='current'?null:el.value;
+      searchOpen=!!searchText.trim();
+      updateSearchSuggestions();
+      return;
+    }
     if(el.dataset.action==='number-select'&&el.value)selectCurrent(el.value);
     if(el.dataset.action==='custom-multi'){
       const q=currentQuestion();if(!q)return;state.customMulti[q.id]=el.checked;
