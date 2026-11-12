@@ -9,7 +9,7 @@
   const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
   const circles = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
   const TALLY_FORM_ID = '6DjZg5';
-  const PUBLIC_VERSION = '1.1.4';
+  const PUBLIC_VERSION = '1.1.5';
   const PUBLIC_RELEASE_DATE = '2026-11-12';
   const LEADERBOARD_IMAGE_BY_RANK = {1:'assets/ui/rank-first.png',2:'assets/ui/rank-second.png',3:'assets/ui/rank-third.png'};
   // Keep the underlying provenance, but omit internal answer-approval workflow from study copy.
@@ -955,7 +955,21 @@
     const checked=Array.isArray(r.selected)?r.selected:r.selected?[r.selected]:[];
     const answer=effectiveAnswer(q);const answers=answer==null?[]:Array.isArray(answer)?answer:[answer];
     const maxSelection=Number(q.maxSelections)||1;
-    return `<section class="exam-panel" data-question-id="${esc(q.id)}"><div class="question-header"><div><div class="question-id">${studyMode==='year-exam'?esc(yearExamTeacherLabel(q.professor))+' 교수님 · ':''}QUESTION / ${esc(q.label)}</div><h2 class="question-num">${esc(q.label)} <span class="question-index">${curr+1} / ${scope.length}</span></h2><div class="question-meta"><span class="pill ${q.isPrediction?'blue':q.validation.stage==='accepted'?'ok':['user_confirmed','highlight_reviewed','exam_answer_key'].includes(q.validation.stage)?'ok':'warn'}">${q.isPrediction?'✦ AI 예상문제 · 강의안 기반':q.archivePdf?'● 제공 PDF 정답·해설':q.validation.stage==='accepted'?'✓ 강의안 이중 검증':q.validation.stage==='exam_answer_key'?'● 22학번 공식 정답표 · 강의안 검증과 별개':q.validation.stage==='highlight_reviewed'?'✓ 정답 확인':q.validation.stage==='user_confirmed'?(q.validation?.supplemental2026?.status==='match'?'✓ 정답 확인 · 2026 강의안 비교':q.validation?.supplemental2026?.status==='conflict'?'✓ 정답 확인 · 강의안과 해설 비교 필요':'✓ 정답 확인'):'! 정답 검토 필요'}</span><span class="pill">${esc(yearName(q.year))}</span>${submission(q)?`<span class="pill blue">제출 완료</span>`:''}</div></div>
+    // This badge is a concise display label only. The underlying validation stage,
+    // pending/manual grading decisions, and evidence remain unchanged.
+    const status=q.validation?.stage||'pending';
+    const ungradedArchive=!!q.archivePdf && (status==='pending'||q.archiveUnrecovered);
+    const verifiedLabel=!!q.archivePdf ? !ungradedArchive :
+      (status==='accepted'||status==='exam_answer_key'||
+       (status==='user_confirmed'&&q.validation?.supplemental2026?.status==='conflict'));
+    const verifiedDisplay=q.isPrediction?'✦ AI 예상문제 · 강의안 기반':
+      ungradedArchive?'! 정답 판정 보류':verifiedLabel?'✓ 검증 완료':
+      status==='highlight_reviewed'?'✓ 정답 확인':
+      status==='user_confirmed'&&q.validation?.supplemental2026?.status==='match'?'✓ 정답 확인 · 2026 강의안 비교':
+      status==='user_confirmed'?'✓ 정답 확인':'! 정답 검토 필요';
+    const validationPillClass=q.isPrediction?'blue':
+      (ungradedArchive||status==='pending'?'warn':'ok');
+    return `<section class="exam-panel" data-question-id="${esc(q.id)}"><div class="question-header"><div><div class="question-id">${studyMode==='year-exam'?esc(yearExamTeacherLabel(q.professor))+' 교수님 · ':''}QUESTION / ${esc(q.label)}</div><h2 class="question-num">${esc(q.label)} <span class="question-index">${curr+1} / ${scope.length}</span></h2><div class="question-meta"><span class="pill ${validationPillClass}">${verifiedDisplay}</span><span class="pill">${esc(yearName(q.year))}</span>${submission(q)?`<span class="pill blue">제출 완료</span>`:''}</div></div>
       <div class="row"><button class="bookmark ${isBookmark(q)?'saved':''}" data-action="bookmark" data-id="${esc(q.id)}" title="북마크" aria-pressed="${isBookmark(q)}">${isBookmark(q)?'★':'☆'}</button><button class="icon-btn report-question-btn" data-action="report-popup" data-question-id="${esc(q.id)}" title="문항 번호·설명·이미지를 첨부해 오류 제보" aria-label="${esc(q.label)}번 문제 오류 제보하기">✎ 제보하기</button><button class="icon-btn" data-action="toggle-evidence">${infoExpanded?'해설 접기':'해설 열기'}</button></div></div>
       <div class="prompt">${esc(q.prompt||'원본 이미지에서 문제 본문을 확인하세요.')}</div>
       ${renderInlineQuestionFigures(q)}
