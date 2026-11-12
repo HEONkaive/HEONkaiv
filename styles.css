@@ -684,3 +684,54 @@ html[data-theme=light]{--bg:#f3f6fb;--panel:#fff;--panel2:#f6f9fd;--panel3:#edf3
 .heon-account-ok{border:1px solid var(--stroke2);background:var(--panel2);border-radius:13px;padding:12px;margin-bottom:14px}.heon-account-ok strong{display:block;font-size:16px}.heon-account-ok small{color:var(--muted)}.heon-account-ok p{font-size:11px;margin:8px 0 0;color:var(--soft)}
 .heon-device-row{border:1px solid var(--stroke);border-radius:12px;padding:10px;display:flex;align-items:center;justify-content:space-between;gap:8px;margin:8px 0}.heon-device-row span{display:flex;flex-direction:column;gap:5px}.heon-device-row small{font-size:10px;color:var(--muted)}
 @media(max-width:760px){.account-nav-btn{font-size:10px;max-width:130px;overflow:hidden;text-overflow:ellipsis}.heon-account-dialog{padding:20px 15px}.heon-account-actions>.button{flex-basis:100%}}
+
+
+/* v1.1.2 · viewport-fit repair: prevent desktop toolbar from widening quiz page. */
+.site,.workspace,.content{min-width:0;max-width:100%}
+.topbar{min-width:0;max-width:100%}
+.topbar-navigation,.topbar-tools,.quick-nav,.global-search{min-width:0}
+.topbar-tools .header-actions{flex-shrink:0}
+.account-nav-btn{max-width:146px;overflow:hidden;text-overflow:ellipsis}
+.quiz-mode .compact-course-header,.quiz-mode .course-header-right,
+.quiz-mode .header-pills,.quiz-mode .header-study-controls,
+.quiz-mode .filterbar,.quiz-mode .exam-layout,.quiz-mode .quiz-dock{min-width:0;max-width:100%}
+.quiz-mode .exam-layout>*{min-width:0}
+@media (min-width:761px){
+  .site.quiz-mode{width:100%;max-width:100%;height:100dvh;overflow-x:clip}
+  .quiz-mode .workspace{width:100%;min-width:0;max-width:100%;height:100dvh;overflow:hidden}
+  .quiz-mode .quiz-content{min-width:0;max-width:100%;width:100%;overflow:hidden}
+}
+@media (min-width:761px) and (max-width:1850px){
+  .topbar{gap:8px;padding-inline:clamp(14px,1.7vw,29px)}
+  .topbar-navigation{gap:6px;flex:0 1 auto}
+  .topbar-navigation .quick-nav{gap:2px;flex:0 1 auto}
+  .topbar-navigation .quick-nav .nav-tab{padding:8px 7px;font-size:11px}
+  .topbar-tools{gap:8px;flex:1 1 0}
+  .topbar-tools .global-search{width:auto;max-width:285px;flex:1 1 160px}
+  .topbar-tools .header-actions{gap:5px}
+  .account-nav-btn{max-width:125px;padding-inline:8px}
+  .quiz-mode .course-header-right{flex:0 1 auto}
+  .quiz-mode .course-header-right .header-pills{flex-wrap:wrap}
+  .quiz-mode .header-study-controls{min-width:0}
+  .quiz-mode .filterbar .year-chips{flex:1 1 auto;min-width:0}
+  .quiz-mode .filterbar .filter-actions{max-width:55%;min-width:0}
+}
+@media (min-width:761px) and (max-width:1280px){
+  .topbar-brand span:last-child{display:none}
+  .topbar-brand{padding-right:5px}
+  .topbar-navigation{flex:1 1 0;min-width:0}
+  .topbar-navigation .quick-nav{flex:1 1 auto;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none}
+  .topbar-navigation .quick-nav::-webkit-scrollbar{display:none}
+  .topbar-tools{flex:1 1 0;min-width:0}
+  .topbar-tools .global-search{flex:1 1 105px;min-width:78px}
+  .header-actions .return-home{font-size:0;padding:8px 9px;min-width:33px}
+  .header-actions .return-home::before{content:'←';font-size:14px}
+  .header-actions .autosave-indicator .desktop-label{display:none}
+  .quiz-mode .course-header-right .header-pills{gap:4px}
+  .quiz-mode .compact-course-header{gap:5px 10px}
+}
+@media (max-width:760px){
+  .site,.workspace,.content{max-width:100%}
+  .topbar-navigation{max-width:100%}
+  .topbar-tools{max-width:100%;min-width:0}
+}
