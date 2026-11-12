@@ -49,8 +49,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q01-explanation.webp",
-          "caption": "사용자 제공 PDF 5쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q01-lecture-1.webp",
+          "caption": "홍기연 PDF 5페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -62,25 +62,31 @@
         "sourceVersion": "v1.3",
         "pdfPage": 5,
         "answerText": "③ Diagonal conjugate",
-        "answerImage": "assets/hong-kiyeon-22/q01-explanation.webp",
         "lectureReferences": [
           "L4 | Ch.1·2 산과학개괄·골반 | PDF p.5"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q01-lecture-1.webp",
+            "alt": "홍기연 22학번 Q01 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
       "figureImages": [
         {
-          "src": "assets/hong-kiyeon-22/q01-question.webp",
-          "caption": "문제에 포함된 그림 및 원문 전체 (제공 PDF)"
+          "src": "assets/hong-kiyeon-22/q01-figure-only.webp",
+          "alt": "홍기연 22학번 1번 문제에 포함된 그림",
+          "caption": "문항 원본 그림"
         }
       ],
       "figureRequired": true,
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -131,8 +137,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q02-explanation.webp",
-          "caption": "사용자 제공 PDF 6쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q02-lecture-1.webp",
+          "caption": "홍기연 PDF 6페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -144,25 +150,31 @@
         "sourceVersion": "v1.3",
         "pdfPage": 6,
         "answerText": "① 프로게스테론 (그림 판독 추정)",
-        "answerImage": "assets/hong-kiyeon-22/q02-explanation.webp",
         "lectureReferences": [
           "L3 | Ch.4·5 모체생리·착상 | PDF p.22"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q02-lecture-1.webp",
+            "alt": "홍기연 22학번 Q02 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
       "figureImages": [
         {
-          "src": "assets/hong-kiyeon-22/q02-question.webp",
-          "caption": "문제에 포함된 그림 및 원문 전체 (제공 PDF)"
+          "src": "assets/hong-kiyeon-22/q02-figure-only.webp",
+          "alt": "홍기연 22학번 2번 문제에 포함된 그림",
+          "caption": "문항 원본 그림"
         }
       ],
       "figureRequired": true,
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -214,8 +226,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q03-explanation.webp",
-          "caption": "사용자 제공 PDF 7쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q03-lecture-1.webp",
+          "caption": "홍기연 PDF 7페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -227,11 +239,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 7,
         "answerText": "③ 10주 (선택지 중)",
-        "answerImage": "assets/hong-kiyeon-22/q03-explanation.webp",
         "lectureReferences": [
           "L3 | Ch.4·5 모체생리·착상 | PDF p.4"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q03-lecture-1.webp",
+            "alt": "홍기연 22학번 Q03 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -240,7 +257,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -291,8 +308,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q04-explanation.webp",
-          "caption": "사용자 제공 PDF 8쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q04-lecture-1.webp",
+          "caption": "홍기연 PDF 8페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -304,11 +321,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 8,
         "answerText": "② 수정 후 8주 / LMP 후 10주",
-        "answerImage": "assets/hong-kiyeon-22/q04-explanation.webp",
         "lectureReferences": [
           "L3 | Ch.4·5 모체생리·착상 | PDF p.26"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q04-lecture-1.webp",
+            "alt": "홍기연 22학번 Q04 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -317,7 +339,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -344,8 +366,8 @@
       "choiceExplanations": {},
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q05-explanation.webp",
-          "caption": "사용자 제공 PDF 9쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q05-lecture-1.webp",
+          "caption": "홍기연 PDF 9페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -357,11 +379,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 9,
         "answerText": "11월 22일 (원문 기재 답)",
-        "answerImage": "assets/hong-kiyeon-22/q05-explanation.webp",
         "lectureReferences": [
           "L3 | Ch.4·5 모체생리·착상 | PDF p.22"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q05-lecture-1.webp",
+            "alt": "홍기연 22학번 Q05 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -370,7 +397,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -422,8 +449,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q06-explanation.webp",
-          "caption": "사용자 제공 PDF 10쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q06-lecture-1.webp",
+          "caption": "홍기연 PDF 10페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -435,11 +462,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 10,
         "answerText": "① 도플러로 태아 심박동 확인",
-        "answerImage": "assets/hong-kiyeon-22/q06-explanation.webp",
         "lectureReferences": [
           "L6 | Ch.9·10 산전진찰 | PDF p.1"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q06-lecture-1.webp",
+            "alt": "홍기연 22학번 Q06 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -448,7 +480,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -499,8 +531,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q07-explanation.webp",
-          "caption": "사용자 제공 PDF 11쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q07-lecture-1.webp",
+          "caption": "홍기연 PDF 11페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -512,11 +544,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 11,
         "answerText": "③ 양쪽마루뼈지름(BPD)",
-        "answerImage": "assets/hong-kiyeon-22/q07-explanation.webp",
         "lectureReferences": [
           "L5 | Ch.6·7·8 태반·배아 | PDF p.13"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q07-lecture-1.webp",
+            "alt": "홍기연 22학번 Q07 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -525,7 +562,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -576,8 +613,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q08-explanation.webp",
-          "caption": "사용자 제공 PDF 12쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q08-lecture-1.webp",
+          "caption": "홍기연 PDF 12페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -589,11 +626,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 12,
         "answerText": "⑤ 포상기태에서 hCG 감소 (틀림)",
-        "answerImage": "assets/hong-kiyeon-22/q08-explanation.webp",
         "lectureReferences": [
           "L3 | Ch.4·5 모체생리·착상 | PDF p.32"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q08-lecture-1.webp",
+            "alt": "홍기연 22학번 Q08 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -602,7 +644,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -653,8 +695,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q09-explanation.webp",
-          "caption": "사용자 제공 PDF 13쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q09-lecture-1.webp",
+          "caption": "홍기연 PDF 13페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -666,25 +708,31 @@
         "sourceVersion": "v1.3",
         "pdfPage": 13,
         "answerText": "⑤ 배란의 간접 소견",
-        "answerImage": "assets/hong-kiyeon-22/q09-explanation.webp",
         "lectureReferences": [
           "L3 | Ch.4·5 모체생리·착상 | PDF p.3"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q09-lecture-1.webp",
+            "alt": "홍기연 22학번 Q09 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
       "figureImages": [
         {
-          "src": "assets/hong-kiyeon-22/q09-question.webp",
-          "caption": "문제에 포함된 그림 및 원문 전체 (제공 PDF)"
+          "src": "assets/hong-kiyeon-22/q09-figure-only.webp",
+          "alt": "홍기연 22학번 9번 문제에 포함된 그림",
+          "caption": "문항 원본 그림"
         }
       ],
       "figureRequired": true,
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -735,8 +783,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q10-explanation.webp",
-          "caption": "사용자 제공 PDF 14쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q10-lecture-1.webp",
+          "caption": "홍기연 PDF 14페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -748,11 +796,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 14,
         "answerText": "① 체위 변경",
-        "answerImage": "assets/hong-kiyeon-22/q10-explanation.webp",
         "lectureReferences": [
           "L3 | Ch.4·5 모체생리·착상 | PDF p.13"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q10-lecture-1.webp",
+            "alt": "홍기연 22학번 Q10 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -761,7 +814,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -810,12 +863,7 @@
         "3": "알려진 기형유발 위험인자에 해당합니다.",
         "4": "알려진 기형유발 위험인자에 해당합니다."
       },
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/q11-explanation.webp",
-          "caption": "사용자 제공 PDF 15쪽 · 정답 및 해설 원문 전체"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 15,
@@ -825,9 +873,9 @@
         "sourceVersion": "v1.3",
         "pdfPage": 15,
         "answerText": "⑤ 갑상선기능항진증",
-        "answerImage": "assets/hong-kiyeon-22/q11-explanation.webp",
         "lectureReferences": [],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -836,7 +884,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -887,8 +935,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q12-explanation.webp",
-          "caption": "사용자 제공 PDF 16쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q12-lecture-1.webp",
+          "caption": "홍기연 PDF 16페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -900,25 +948,31 @@
         "sourceVersion": "v1.3",
         "pdfPage": 16,
         "answerText": "④ 계류유산",
-        "answerImage": "assets/hong-kiyeon-22/q12-explanation.webp",
         "lectureReferences": [
           "L7 | Ch.15~18 태아질환·유산 | PDF p.17"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q12-lecture-1.webp",
+            "alt": "홍기연 22학번 Q12 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
       "figureImages": [
         {
-          "src": "assets/hong-kiyeon-22/q12-question.webp",
-          "caption": "문제에 포함된 그림 및 원문 전체 (제공 PDF)"
+          "src": "assets/hong-kiyeon-22/q12-figure-only.webp",
+          "alt": "홍기연 22학번 12번 문제에 포함된 그림",
+          "caption": "문항 원본 그림"
         }
       ],
       "figureRequired": true,
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -969,8 +1023,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q13-explanation.webp",
-          "caption": "사용자 제공 PDF 17쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q13-lecture-1.webp",
+          "caption": "홍기연 PDF 17페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -982,11 +1036,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 17,
         "answerText": "④ D&C (과거 시험의 선택지 기준)",
-        "answerImage": "assets/hong-kiyeon-22/q13-explanation.webp",
         "lectureReferences": [
           "L7 | Ch.15~18 태아질환·유산 | PDF p.17"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q13-lecture-1.webp",
+            "alt": "홍기연 22학번 Q13 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -995,7 +1054,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -1044,12 +1103,7 @@
         "3": "고칼슘혈증은 전형적 증상이 아니다.",
         "4": "황달은 대표 진단 소견이 아니다."
       },
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/q14-explanation.webp",
-          "caption": "사용자 제공 PDF 18쪽 · 정답 및 해설 원문 전체"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 18,
@@ -1059,9 +1113,9 @@
         "sourceVersion": "v1.3",
         "pdfPage": 18,
         "answerText": "⑤ ADHD 등 행동장애",
-        "answerImage": "assets/hong-kiyeon-22/q14-explanation.webp",
         "lectureReferences": [],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -1070,7 +1124,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -1093,12 +1147,7 @@
       "answerSource": "user_supplied_pdf_2026_11_12",
       "explanation": "원본 문제지에 이 번호의 지문과 선택지가 남아 있지 않습니다. 정답·근거를 임의로 복원하지 않습니다.",
       "choiceExplanations": {},
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/q15-explanation.webp",
-          "caption": "사용자 제공 PDF 19쪽 · 정답 및 해설 원문 전체"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 19,
@@ -1108,9 +1157,9 @@
         "sourceVersion": "v1.3",
         "pdfPage": 19,
         "answerText": "판정 불가",
-        "answerImage": "assets/hong-kiyeon-22/q15-explanation.webp",
         "lectureReferences": [],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -1119,7 +1168,7 @@
       "validation": {
         "stage": "pending",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -1171,8 +1220,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q16-explanation.webp",
-          "caption": "사용자 제공 PDF 20쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q16-lecture-1.webp",
+          "caption": "홍기연 PDF 20페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -1184,11 +1233,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 20,
         "answerText": "② 임신 주수와 무관하다 (틀림)",
-        "answerImage": "assets/hong-kiyeon-22/q16-explanation.webp",
         "lectureReferences": [
           "L3 | Ch.4·5 모체생리·착상 | PDF p.8"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q16-lecture-1.webp",
+            "alt": "홍기연 22학번 Q16 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -1197,7 +1251,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -1246,12 +1300,7 @@
         "4": "태아경 검사는 이 시기 피임약 노출의 표준 추적법이 아니다.",
         "5": "우발적 경구피임약 노출 자체만으로 임신 종결을 권고하지 않는다."
       },
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/q17-explanation.webp",
-          "caption": "사용자 제공 PDF 21쪽 · 정답 및 해설 원문 전체"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 21,
@@ -1261,9 +1310,9 @@
         "sourceVersion": "v1.3",
         "pdfPage": 21,
         "answerText": "② 초음파 추적관찰",
-        "answerImage": "assets/hong-kiyeon-22/q17-explanation.webp",
         "lectureReferences": [],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -1272,7 +1321,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -1323,8 +1372,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q18-explanation.webp",
-          "caption": "사용자 제공 PDF 22쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q18-lecture-1.webp",
+          "caption": "홍기연 PDF 22페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -1336,11 +1385,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 22,
         "answerText": "③ NIPT (제시 보기 중 차선)",
-        "answerImage": "assets/hong-kiyeon-22/q18-explanation.webp",
         "lectureReferences": [
           "L8 | Ch.11~14 양수·태아평가·기형 | PDF p.28"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q18-lecture-1.webp",
+            "alt": "홍기연 22학번 Q18 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -1349,7 +1403,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -1398,12 +1452,7 @@
         "4": "스트렙토마이신은 태아 청각독성 위험이 있어 일반적으로 피한다.",
         "5": "이소트레티노인은 중대한 태아 기형유발 위험이 있으므로 임신 중 금기이다."
       },
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/q19-explanation.webp",
-          "caption": "사용자 제공 PDF 23쪽 · 정답 및 해설 원문 전체"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 23,
@@ -1413,9 +1462,9 @@
         "sourceVersion": "v1.3",
         "pdfPage": 23,
         "answerText": "③ 시메티딘",
-        "answerImage": "assets/hong-kiyeon-22/q19-explanation.webp",
         "lectureReferences": [],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -1424,7 +1473,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -1475,8 +1524,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q20-explanation.webp",
-          "caption": "사용자 제공 PDF 24쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q20-lecture-1.webp",
+          "caption": "홍기연 PDF 24페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -1488,11 +1537,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 24,
         "answerText": "② Maternal LDL cholesterol",
-        "answerImage": "assets/hong-kiyeon-22/q20-explanation.webp",
         "lectureReferences": [
           "L3 | Ch.4·5 모체생리·착상 | PDF p.34"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q20-lecture-1.webp",
+            "alt": "홍기연 22학번 Q20 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -1501,7 +1555,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -1552,8 +1606,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q21-explanation.webp",
-          "caption": "사용자 제공 PDF 25쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q21-lecture-1.webp",
+          "caption": "홍기연 PDF 25페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -1565,25 +1619,31 @@
         "sourceVersion": "v1.3",
         "pdfPage": 25,
         "answerText": "③ 자궁목 무력증",
-        "answerImage": "assets/hong-kiyeon-22/q21-explanation.webp",
         "lectureReferences": [
           "L7 | Ch.15~18 태아질환·유산 | PDF p.21"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q21-lecture-1.webp",
+            "alt": "홍기연 22학번 Q21 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
       "figureImages": [
         {
-          "src": "assets/hong-kiyeon-22/q21-question.webp",
-          "caption": "문제에 포함된 그림 및 원문 전체 (제공 PDF)"
+          "src": "assets/hong-kiyeon-22/q21-figure-only.webp",
+          "alt": "홍기연 22학번 21번 문제에 포함된 그림",
+          "caption": "문항 원본 그림"
         }
       ],
       "figureRequired": true,
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -1634,8 +1694,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q22-explanation.webp",
-          "caption": "사용자 제공 PDF 26쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q22-lecture-1.webp",
+          "caption": "홍기연 PDF 26페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -1647,11 +1707,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 26,
         "answerText": "⑤ 혈색소",
-        "answerImage": "assets/hong-kiyeon-22/q22-explanation.webp",
         "lectureReferences": [
           "L3 | Ch.4·5 모체생리·착상 | PDF p.8"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q22-lecture-1.webp",
+            "alt": "홍기연 22학번 Q22 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -1660,7 +1725,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -1683,12 +1748,7 @@
       "answerSource": "user_supplied_pdf_2026_11_12",
       "explanation": "원본 문제지에 이 번호의 지문과 선택지가 남아 있지 않습니다. 정답·근거를 임의로 복원하지 않습니다.",
       "choiceExplanations": {},
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/q23-explanation.webp",
-          "caption": "사용자 제공 PDF 27쪽 · 정답 및 해설 원문 전체"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 27,
@@ -1698,9 +1758,9 @@
         "sourceVersion": "v1.3",
         "pdfPage": 27,
         "answerText": "판정 불가",
-        "answerImage": "assets/hong-kiyeon-22/q23-explanation.webp",
         "lectureReferences": [],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -1709,7 +1769,7 @@
       "validation": {
         "stage": "pending",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -1733,12 +1793,7 @@
       "answerSource": "user_supplied_pdf_2026_11_12",
       "explanation": "원본 문제지에 이 번호의 지문과 선택지가 남아 있지 않습니다. 정답·근거를 임의로 복원하지 않습니다.",
       "choiceExplanations": {},
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/q24-explanation.webp",
-          "caption": "사용자 제공 PDF 28쪽 · 정답 및 해설 원문 전체"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 28,
@@ -1748,9 +1803,9 @@
         "sourceVersion": "v1.3",
         "pdfPage": 28,
         "answerText": "판정 불가",
-        "answerImage": "assets/hong-kiyeon-22/q24-explanation.webp",
         "lectureReferences": [],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -1759,7 +1814,7 @@
       "validation": {
         "stage": "pending",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -1811,8 +1866,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q25-explanation.webp",
-          "caption": "사용자 제공 PDF 29쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q25-lecture-1.webp",
+          "caption": "홍기연 PDF 29페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -1824,11 +1879,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 29,
         "answerText": "① Isthmus",
-        "answerImage": "assets/hong-kiyeon-22/q25-explanation.webp",
         "lectureReferences": [
           "L9 | Ch.21·22 분만생리·정상분만 | PDF p.5"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q25-lecture-1.webp",
+            "alt": "홍기연 22학번 Q25 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -1837,7 +1897,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -1860,12 +1920,7 @@
       "answerSource": "user_supplied_pdf_2026_11_12",
       "explanation": "원본 문제지에 이 번호의 지문과 선택지가 남아 있지 않습니다. 정답·근거를 임의로 복원하지 않습니다.",
       "choiceExplanations": {},
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/q26-explanation.webp",
-          "caption": "사용자 제공 PDF 30쪽 · 정답 및 해설 원문 전체"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 30,
@@ -1875,9 +1930,9 @@
         "sourceVersion": "v1.3",
         "pdfPage": 30,
         "answerText": "판정 불가",
-        "answerImage": "assets/hong-kiyeon-22/q26-explanation.webp",
         "lectureReferences": [],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -1886,7 +1941,7 @@
       "validation": {
         "stage": "pending",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -1938,8 +1993,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q27-explanation.webp",
-          "caption": "사용자 제공 PDF 31쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q27-lecture-1.webp",
+          "caption": "홍기연 PDF 31페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -1951,11 +2006,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 31,
         "answerText": "⑤ 양수량",
-        "answerImage": "assets/hong-kiyeon-22/q27-explanation.webp",
         "lectureReferences": [
           "L7 | Ch.15~18 태아질환·유산 | PDF p.11"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q27-lecture-1.webp",
+            "alt": "홍기연 22학번 Q27 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -1964,7 +2024,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -2015,8 +2075,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q28-explanation.webp",
-          "caption": "사용자 제공 PDF 32쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q28-lecture-1.webp",
+          "caption": "홍기연 PDF 32페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -2028,11 +2088,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 32,
         "answerText": "④ CRL",
-        "answerImage": "assets/hong-kiyeon-22/q28-explanation.webp",
         "lectureReferences": [
           "L5 | Ch.6·7·8 태반·배아 | PDF p.4"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q28-lecture-1.webp",
+            "alt": "홍기연 22학번 Q28 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -2041,7 +2106,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -2092,8 +2157,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q29-explanation.webp",
-          "caption": "사용자 제공 PDF 33쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q29-lecture-1.webp",
+          "caption": "홍기연 PDF 33페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -2105,25 +2170,31 @@
         "sourceVersion": "v1.3",
         "pdfPage": 33,
         "answerText": "② 제왕절개술 (그림 판독 추정)",
-        "answerImage": "assets/hong-kiyeon-22/q29-explanation.webp",
         "lectureReferences": [
           "L7 | Ch.15~18 태아질환·유산 | PDF p.10"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q29-lecture-1.webp",
+            "alt": "홍기연 22학번 Q29 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
       "figureImages": [
         {
-          "src": "assets/hong-kiyeon-22/q29-question.webp",
-          "caption": "문제에 포함된 그림 및 원문 전체 (제공 PDF)"
+          "src": "assets/hong-kiyeon-22/q29-figure-only.webp",
+          "alt": "홍기연 22학번 29번 문제에 포함된 그림",
+          "caption": "문항 원본 그림"
         }
       ],
       "figureRequired": true,
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -2174,8 +2245,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q30-explanation.webp",
-          "caption": "사용자 제공 PDF 34쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q30-lecture-1.webp",
+          "caption": "홍기연 PDF 34페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -2187,11 +2258,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 34,
         "answerText": "③ 항인지질항체",
-        "answerImage": "assets/hong-kiyeon-22/q30-explanation.webp",
         "lectureReferences": [
           "L7 | Ch.15~18 태아질환·유산 | PDF p.18"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q30-lecture-1.webp",
+            "alt": "홍기연 22학번 Q30 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -2200,7 +2276,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -2251,8 +2327,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q31-explanation.webp",
-          "caption": "사용자 제공 PDF 35쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q31-lecture-1.webp",
+          "caption": "홍기연 PDF 35페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -2264,11 +2340,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 35,
         "answerText": "⑤ 하지정맥류",
-        "answerImage": "assets/hong-kiyeon-22/q31-explanation.webp",
         "lectureReferences": [
           "L3 | Ch.4·5 모체생리·착상 | PDF p.9"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q31-lecture-1.webp",
+            "alt": "홍기연 22학번 Q31 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -2277,7 +2358,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -2328,8 +2409,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q32-explanation.webp",
-          "caption": "사용자 제공 PDF 36쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q32-lecture-1.webp",
+          "caption": "홍기연 PDF 36페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -2341,11 +2422,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 36,
         "answerText": "⑤ 자궁경부 원형결찰술 (문맥 추정)",
-        "answerImage": "assets/hong-kiyeon-22/q32-explanation.webp",
         "lectureReferences": [
           "L7 | Ch.15~18 태아질환·유산 | PDF p.22"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q32-lecture-1.webp",
+            "alt": "홍기연 22학번 Q32 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -2354,7 +2440,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -2377,12 +2463,7 @@
       "answerSource": "user_supplied_pdf_2026_11_12",
       "explanation": "원본 문제지에 이 번호의 지문과 선택지가 남아 있지 않습니다. 정답·근거를 임의로 복원하지 않습니다.",
       "choiceExplanations": {},
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/q33-explanation.webp",
-          "caption": "사용자 제공 PDF 37쪽 · 정답 및 해설 원문 전체"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 37,
@@ -2392,9 +2473,9 @@
         "sourceVersion": "v1.3",
         "pdfPage": 37,
         "answerText": "판정 불가",
-        "answerImage": "assets/hong-kiyeon-22/q33-explanation.webp",
         "lectureReferences": [],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -2403,7 +2484,7 @@
       "validation": {
         "stage": "pending",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -2455,8 +2536,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q34-explanation.webp",
-          "caption": "사용자 제공 PDF 38쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q34-lecture-1.webp",
+          "caption": "홍기연 PDF 38페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -2468,11 +2549,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 38,
         "answerText": "⑤ 횡위",
-        "answerImage": "assets/hong-kiyeon-22/q34-explanation.webp",
         "lectureReferences": [
           "L9 | Ch.21·22 분만생리·정상분만 | PDF p.13"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q34-lecture-1.webp",
+            "alt": "홍기연 22학번 Q34 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -2481,7 +2567,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -2532,8 +2618,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q35-explanation.webp",
-          "caption": "사용자 제공 PDF 39쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q35-lecture-1.webp",
+          "caption": "홍기연 PDF 39페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -2545,25 +2631,31 @@
         "sourceVersion": "v1.3",
         "pdfPage": 39,
         "answerText": "④ CPD 평가 후 제왕절개 (출제 의도 추정)",
-        "answerImage": "assets/hong-kiyeon-22/q35-explanation.webp",
         "lectureReferences": [
           "L2 | Ch.23·24 이상분만 | PDF p.3"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q35-lecture-1.webp",
+            "alt": "홍기연 22학번 Q35 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
       "figureImages": [
         {
-          "src": "assets/hong-kiyeon-22/q35-question.webp",
-          "caption": "문제에 포함된 그림 및 원문 전체 (제공 PDF)"
+          "src": "assets/hong-kiyeon-22/q35-figure-only.webp",
+          "alt": "홍기연 22학번 35번 문제에 포함된 그림",
+          "caption": "문항 원본 그림"
         }
       ],
       "figureRequired": true,
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -2586,12 +2678,7 @@
       "answerSource": "user_supplied_pdf_2026_11_12",
       "explanation": "원본 문제지에 이 번호의 지문과 선택지가 남아 있지 않습니다. 정답·근거를 임의로 복원하지 않습니다.",
       "choiceExplanations": {},
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/q36-explanation.webp",
-          "caption": "사용자 제공 PDF 40쪽 · 정답 및 해설 원문 전체"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 40,
@@ -2601,9 +2688,9 @@
         "sourceVersion": "v1.3",
         "pdfPage": 40,
         "answerText": "판정 불가",
-        "answerImage": "assets/hong-kiyeon-22/q36-explanation.webp",
         "lectureReferences": [],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -2612,7 +2699,7 @@
       "validation": {
         "stage": "pending",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -2664,8 +2751,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q37-explanation.webp",
-          "caption": "사용자 제공 PDF 41쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q37-lecture-1.webp",
+          "caption": "홍기연 PDF 41페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -2677,25 +2764,31 @@
         "sourceVersion": "v1.3",
         "pdfPage": 41,
         "answerText": "⑤ 제왕절개술 (잠정)",
-        "answerImage": "assets/hong-kiyeon-22/q37-explanation.webp",
         "lectureReferences": [
           "L2 | Ch.23·24 이상분만 | PDF p.9"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q37-lecture-1.webp",
+            "alt": "홍기연 22학번 Q37 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
       "figureImages": [
         {
-          "src": "assets/hong-kiyeon-22/q37-question.webp",
-          "caption": "문제에 포함된 그림 및 원문 전체 (제공 PDF)"
+          "src": "assets/hong-kiyeon-22/q37-figure-only.webp",
+          "alt": "홍기연 22학번 37번 문제에 포함된 그림",
+          "caption": "문항 원본 그림"
         }
       ],
       "figureRequired": true,
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -2718,12 +2811,7 @@
       "answerSource": "user_supplied_pdf_2026_11_12",
       "explanation": "원본 문제지에 이 번호의 지문과 선택지가 남아 있지 않습니다. 정답·근거를 임의로 복원하지 않습니다.",
       "choiceExplanations": {},
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/q38-explanation.webp",
-          "caption": "사용자 제공 PDF 42쪽 · 정답 및 해설 원문 전체"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 42,
@@ -2733,9 +2821,9 @@
         "sourceVersion": "v1.3",
         "pdfPage": 42,
         "answerText": "판정 불가",
-        "answerImage": "assets/hong-kiyeon-22/q38-explanation.webp",
         "lectureReferences": [],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -2744,7 +2832,7 @@
       "validation": {
         "stage": "pending",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -2796,8 +2884,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q39-explanation.webp",
-          "caption": "사용자 제공 PDF 43쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q39-lecture-1.webp",
+          "caption": "홍기연 PDF 43페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -2809,11 +2897,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 43,
         "answerText": "③ 임신 1개월 전 ~ 제1삼분기",
-        "answerImage": "assets/hong-kiyeon-22/q39-explanation.webp",
         "lectureReferences": [
           "L8 | Ch.11~14 양수·태아평가·기형 | PDF p.24"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q39-lecture-1.webp",
+            "alt": "홍기연 22학번 Q39 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -2822,7 +2915,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -2873,8 +2966,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q40-explanation.webp",
-          "caption": "사용자 제공 PDF 44쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q40-lecture-1.webp",
+          "caption": "홍기연 PDF 44페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -2886,11 +2979,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 44,
         "answerText": "④ 이소트레티노인",
-        "answerImage": "assets/hong-kiyeon-22/q40-explanation.webp",
         "lectureReferences": [
           "L8 | Ch.11~14 양수·태아평가·기형 | PDF p.11"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q40-lecture-1.webp",
+            "alt": "홍기연 22학번 Q40 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -2899,7 +2997,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -2922,12 +3020,7 @@
       "answerSource": "user_supplied_pdf_2026_11_12",
       "explanation": "원본 문제지에 이 번호의 지문과 선택지가 남아 있지 않습니다. 정답·근거를 임의로 복원하지 않습니다.",
       "choiceExplanations": {},
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/q41-explanation.webp",
-          "caption": "사용자 제공 PDF 45쪽 · 정답 및 해설 원문 전체"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 45,
@@ -2937,9 +3030,9 @@
         "sourceVersion": "v1.3",
         "pdfPage": 45,
         "answerText": "판정 불가",
-        "answerImage": "assets/hong-kiyeon-22/q41-explanation.webp",
         "lectureReferences": [],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -2948,7 +3041,7 @@
       "validation": {
         "stage": "pending",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -3000,8 +3093,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q42-explanation.webp",
-          "caption": "사용자 제공 PDF 46쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q42-lecture-1.webp",
+          "caption": "홍기연 PDF 46페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -3013,11 +3106,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 46,
         "answerText": "② 조산아는 머리가 작아 불필요 (과거 시험 의도)",
-        "answerImage": "assets/hong-kiyeon-22/q42-explanation.webp",
         "lectureReferences": [
           "L9 | Ch.21·22 분만생리·정상분만 | PDF p.33"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q42-lecture-1.webp",
+            "alt": "홍기연 22학번 Q42 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -3026,7 +3124,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -3075,12 +3173,7 @@
         "3": "배꼽정맥은 태반에서 산소화된 혈액을 보내 태아순환에서 산소 포화도가 가장 높은 혈관 중 하나다.",
         "4": "하대정맥에는 정맥관을 통한 산소화 혈액이 섞인다."
       },
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/q43-explanation.webp",
-          "caption": "사용자 제공 PDF 47쪽 · 정답 및 해설 원문 전체"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 47,
@@ -3090,9 +3183,9 @@
         "sourceVersion": "v1.3",
         "pdfPage": 47,
         "answerText": "⑤ 상대정맥",
-        "answerImage": "assets/hong-kiyeon-22/q43-explanation.webp",
         "lectureReferences": [],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -3101,7 +3194,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -3152,8 +3245,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q44-explanation.webp",
-          "caption": "사용자 제공 PDF 48쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q44-lecture-1.webp",
+          "caption": "홍기연 PDF 48페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -3165,11 +3258,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 48,
         "answerText": "④ 양수감압술 (제시된 유일 선택지)",
-        "answerImage": "assets/hong-kiyeon-22/q44-explanation.webp",
         "lectureReferences": [
           "L8 | Ch.11~14 양수·태아평가·기형 | PDF p.3"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q44-lecture-1.webp",
+            "alt": "홍기연 22학번 Q44 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -3178,7 +3276,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -3229,8 +3327,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q45-explanation.webp",
-          "caption": "사용자 제공 PDF 49쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q45-lecture-1.webp",
+          "caption": "홍기연 PDF 49페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -3242,11 +3340,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 49,
         "answerText": "① 질초음파",
-        "answerImage": "assets/hong-kiyeon-22/q45-explanation.webp",
         "lectureReferences": [
           "L6 | Ch.9·10 산전진찰 | PDF p.2"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q45-lecture-1.webp",
+            "alt": "홍기연 22학번 Q45 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -3255,7 +3358,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -3308,8 +3411,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q46-explanation.webp",
-          "caption": "사용자 제공 PDF 50쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q46-lecture-1.webp",
+          "caption": "홍기연 PDF 50페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -3321,11 +3424,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 50,
         "answerText": "② 복부초음파 + ③ CVS (문맥상 추정)",
-        "answerImage": "assets/hong-kiyeon-22/q46-explanation.webp",
         "lectureReferences": [
           "L8 | Ch.11~14 양수·태아평가·기형 | PDF p.30"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q46-lecture-1.webp",
+            "alt": "홍기연 22학번 Q46 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -3334,7 +3442,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -3388,8 +3496,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q47-explanation.webp",
-          "caption": "사용자 제공 PDF 51쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q47-lecture-1.webp",
+          "caption": "홍기연 PDF 51페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -3401,11 +3509,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 51,
         "answerText": "② 복부초음파 + ④ 양수천자",
-        "answerImage": "assets/hong-kiyeon-22/q47-explanation.webp",
         "lectureReferences": [
           "L8 | Ch.11~14 양수·태아평가·기형 | PDF p.28"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q47-lecture-1.webp",
+            "alt": "홍기연 22학번 Q47 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -3414,7 +3527,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -3468,8 +3581,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q48-explanation.webp",
-          "caption": "사용자 제공 PDF 52쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q48-lecture-1.webp",
+          "caption": "홍기연 PDF 52페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -3481,11 +3594,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 52,
         "answerText": "② 복부초음파 + ⑤ NST",
-        "answerImage": "assets/hong-kiyeon-22/q48-explanation.webp",
         "lectureReferences": [
           "L7 | Ch.15~18 태아질환·유산 | PDF p.11"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q48-lecture-1.webp",
+            "alt": "홍기연 22학번 Q48 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -3494,7 +3612,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -3543,8 +3661,12 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q49-explanation.webp",
-          "caption": "사용자 제공 PDF 53쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q49-lecture-1.webp",
+          "caption": "홍기연 PDF 53페이지 · 강의안 원본 발췌"
+        },
+        {
+          "src": "assets/hong-kiyeon-22/q49-lecture-2.webp",
+          "caption": "홍기연 PDF 53페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -3556,11 +3678,20 @@
         "sourceVersion": "v1.3",
         "pdfPage": 53,
         "answerText": "① Oxytocin + ③ PGE2",
-        "answerImage": "assets/hong-kiyeon-22/q49-explanation.webp",
         "lectureReferences": [
           "L9 | Ch.21·22 분만생리·정상분만 | PDF p.32"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q49-lecture-1.webp",
+            "alt": "홍기연 22학번 Q49 · PDF에서 직접 추출한 강의안 발췌 1"
+          },
+          {
+            "src": "assets/hong-kiyeon-22/q49-lecture-2.webp",
+            "alt": "홍기연 22학번 Q49 · PDF에서 직접 추출한 강의안 발췌 2"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -3569,7 +3700,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -3616,8 +3747,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q50-explanation.webp",
-          "caption": "사용자 제공 PDF 54쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q50-lecture-1.webp",
+          "caption": "홍기연 PDF 54페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -3629,11 +3760,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 54,
         "answerText": "① Oxytocin",
-        "answerImage": "assets/hong-kiyeon-22/q50-explanation.webp",
         "lectureReferences": [
           "L9 | Ch.21·22 분만생리·정상분만 | PDF p.32"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q50-lecture-1.webp",
+            "alt": "홍기연 22학번 Q50 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -3642,7 +3778,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -3688,8 +3824,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q51-explanation.webp",
-          "caption": "사용자 제공 PDF 55쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q51-lecture-1.webp",
+          "caption": "홍기연 PDF 55페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -3701,11 +3837,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 55,
         "answerText": "② Ergonovine",
-        "answerImage": "assets/hong-kiyeon-22/q51-explanation.webp",
         "lectureReferences": [
           "L9 | Ch.21·22 분만생리·정상분만 | PDF p.32"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q51-lecture-1.webp",
+            "alt": "홍기연 22학번 Q51 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -3714,7 +3855,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -3760,8 +3901,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q52-explanation.webp",
-          "caption": "사용자 제공 PDF 56쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q52-lecture-1.webp",
+          "caption": "홍기연 PDF 56페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -3773,11 +3914,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 56,
         "answerText": "① Oxytocin",
-        "answerImage": "assets/hong-kiyeon-22/q52-explanation.webp",
         "lectureReferences": [
           "L9 | Ch.21·22 분만생리·정상분만 | PDF p.32"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q52-lecture-1.webp",
+            "alt": "홍기연 22학번 Q52 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -3786,7 +3932,7 @@
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -3832,8 +3978,8 @@
       },
       "explanationImages": [
         {
-          "src": "assets/hong-kiyeon-22/q53-explanation.webp",
-          "caption": "사용자 제공 PDF 57쪽 · 정답 및 해설 원문 전체"
+          "src": "assets/hong-kiyeon-22/q53-lecture-1.webp",
+          "caption": "홍기연 PDF 57페이지 · 강의안 원본 발췌"
         }
       ],
       "source": {
@@ -3845,11 +3991,16 @@
         "sourceVersion": "v1.3",
         "pdfPage": 57,
         "answerText": "② Ergonovine 확실 / ④ PGF2α는 주의 (2개 요구, 논란)",
-        "answerImage": "assets/hong-kiyeon-22/q53-explanation.webp",
         "lectureReferences": [
           "L9 | Ch.21·22 분만생리·정상분만 | PDF p.32"
         ],
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": [
+          {
+            "src": "assets/hong-kiyeon-22/q53-lecture-1.webp",
+            "alt": "홍기연 22학번 Q53 · PDF에서 직접 추출한 강의안 발췌 1"
+          }
+        ]
       },
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "showOriginalByDefault": false,
@@ -3858,7 +4009,7 @@
       "validation": {
         "stage": "pending",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자가 직접 해설을 완성한 PDF의 내용을 변경 없이 수록; 별도 의학적 재검증 없음"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 정답과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -3883,12 +4034,7 @@
       ],
       "answerSource": "user_supplied_pdf_2026_11_12",
       "explanation": "자궁근 성장과 자궁·태반 혈류 증가를 촉진합니다. 유방 조직과 태아 발달에 관여합니다. 분만 시 gap junction, 프로스타글란딘 경로 등을 통해 자궁수축 준비를 촉진합니다.\n강의안은 임신 중 estrogen의 작용으로 자궁수축력·혈류·유방발달을 명시합니다. 강의안 근거 L3 PDF p.35 · L9 PDF p.10 · L9 PDF p.11",
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/s1-1-explanation.webp",
-          "caption": "사용자 제공 PDF 58쪽 · 서술형 정답 및 해설 원문"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 58,
@@ -3898,15 +4044,15 @@
         "sourceVersion": "v1.3",
         "pdfPage": 58,
         "answerText": "자궁증식·혈류·진통 준비",
-        "answerImage": "assets/hong-kiyeon-22/s1-1-explanation.webp",
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "gradingMode": "manual",
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자 제공 PDF 수록 답변(내용 재검증 없음)"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 서술형 답안과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -3933,12 +4079,7 @@
       ],
       "answerSource": "user_supplied_pdf_2026_11_12",
       "explanation": "자궁근의 불필요한 수축을 억제하고 임신을 유지합니다. 자궁내막의 분비성 변화와 착상·임신 유지에 관여합니다. 유방의 소엽·선포 발달에 기여하며, 장관 및 요관 평활근 이완 등의 모체 변화에도 관여합니다.\n임신 초에는 황체, 이후에는 모체 LDL을 이용한 태반 합성이 주 공급원입니다. 강의안 근거 L3 PDF p.22 · L3 PDF p.34 · L9 PDF p.11",
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/s1-2-explanation.webp",
-          "caption": "사용자 제공 PDF 59쪽 · 서술형 정답 및 해설 원문"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 59,
@@ -3948,15 +4089,15 @@
         "sourceVersion": "v1.3",
         "pdfPage": 59,
         "answerText": "임신 유지·자궁 이완",
-        "answerImage": "assets/hong-kiyeon-22/s1-2-explanation.webp",
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "gradingMode": "manual",
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자 제공 PDF 수록 답변(내용 재검증 없음)"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 서술형 답안과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -3983,12 +4124,7 @@
       ],
       "answerSource": "user_supplied_pdf_2026_11_12",
       "explanation": "저용량 aspirin은 혈소판 COX-1을 억제해 thromboxane A2를 줄이고 항혈소판 효과를 냅니다. 항인지질항체증후군에서는 헤파린과 함께 임신 손실 예방을 위해 사용될 수 있습니다. 전자간증 고위험 임신에서는 예방 목적으로 권고될 수 있으며 투여 시기·적응증 확인이 필요합니다.\n강의안의 반복유산/APS 단원은 저용량 aspirin+heparin 치료를 설명합니다. 전자간증 예방은 외부최신 지침을 통한 보충 개념입니다. 검토 주의보충 지침은 본문 참고강의안 근거 L7 PDF p.17 · L7 PDF p.18",
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/s2-explanation.webp",
-          "caption": "사용자 제공 PDF 60쪽 · 서술형 정답 및 해설 원문"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 60,
@@ -3998,15 +4134,15 @@
         "sourceVersion": "v1.3",
         "pdfPage": 60,
         "answerText": "혈소판 TXA2 억제 → 태반 혈전·전자간증 위험 감소",
-        "answerImage": "assets/hong-kiyeon-22/s2-explanation.webp",
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "gradingMode": "manual",
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자 제공 PDF 수록 답변(내용 재검증 없음)"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 서술형 답안과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -4033,12 +4169,7 @@
       ],
       "answerSource": "user_supplied_pdf_2026_11_12",
       "explanation": "태아 폐의 type II 폐포세포가 계면활성제(surfactant)를 분비해 폐포 표면장력을 낮춥니다. 충분하지 않으면 출생 후 폐포가 허탈하고 신생아 호흡곤란증후군(RDS) 위험이 높습니다. 후기 조산에서도 RDS 위험이 남으므로 실제 처치는 재태주수와 예상 분만 시점을 함께 고려합니다.\n강의안은 임신 32~36주에 폐 성숙과 태아 호흡운동 변화가 진행됨을 기술합니다. 검토 주의 「34주에 완성」은 절대적 경계 아님강의안 근거 L7 PDF p.7 · L5 PDF p.17",
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/s3-explanation.webp",
-          "caption": "사용자 제공 PDF 61쪽 · 서술형 정답 및 해설 원문"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 61,
@@ -4048,15 +4179,15 @@
         "sourceVersion": "v1.3",
         "pdfPage": 61,
         "answerText": "계면활성제와 폐포 안정성·호흡기 생존능",
-        "answerImage": "assets/hong-kiyeon-22/s3-explanation.webp",
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "gradingMode": "manual",
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자 제공 PDF 수록 답변(내용 재검증 없음)"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 서술형 답안과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",
@@ -4083,12 +4214,7 @@
       ],
       "answerSource": "user_supplied_pdf_2026_11_12",
       "explanation": "특히 임신 초기·중기에 심한 양수과소가 지속되면 폐 발달이 충분하지 못해 출생 후 생존에 큰 문제가 생깁니다. 사지 구축·압박 변형·제대압박도 발생할 수 있습니다. 만삭에 새로 발생한 양수과소에서는 폐형성부전보다 제대압박·태아 심박 이상이 임상적으로 더 중요할 수 있습니다.\n강의안은 무신장증과 지속적인 양수과소에서 폐형성부전이 발생하는 Potter sequence를 설명합니다. 강의안 근거 L8 PDF p.1 · L8 PDF p.3 · L8 PDF p.4",
-      "explanationImages": [
-        {
-          "src": "assets/hong-kiyeon-22/s4-explanation.webp",
-          "caption": "사용자 제공 PDF 62쪽 · 서술형 정답 및 해설 원문"
-        }
-      ],
+      "explanationImages": [],
       "source": {
         "name": "모성과신생아_홍기연PF_Medical_Question_Archive_v1.3_가독성개선_정답근거중심.pdf",
         "page": 62,
@@ -4098,15 +4224,15 @@
         "sourceVersion": "v1.3",
         "pdfPage": 62,
         "answerText": "폐형성부전(pulmonary hypoplasia)",
-        "answerImage": "assets/hong-kiyeon-22/s4-explanation.webp",
-        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf"
+        "pdfFile": "assets/hong-kiyeon-22/hong-kiyeon-original-v1.3.pdf",
+        "lectureImages": []
       },
       "gradingMode": "manual",
       "transcriptionStatus": "imported_from_user_supplied_pdf",
       "validation": {
         "stage": "user_confirmed",
         "verifiedAgainst": "user_supplied_pdf_v1.3_only",
-        "decisionReason": "사용자 제공 PDF 수록 답변(내용 재검증 없음)"
+        "decisionReason": "제공된 Medical Question Archive v1.3의 서술형 답안과 해설을 그대로 수록함."
       },
       "unitTitle": "홍기연 교수님 22학번 기출",
       "unitId": "hong-kiyeon-22-archive",

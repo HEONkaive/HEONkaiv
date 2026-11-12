@@ -9,7 +9,7 @@
   const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
   const circles = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
   const TALLY_FORM_ID = '6DjZg5';
-  const PUBLIC_VERSION = '1.1.3';
+  const PUBLIC_VERSION = '1.1.4';
   const PUBLIC_RELEASE_DATE = '2026-11-12';
   const LEADERBOARD_IMAGE_BY_RANK = {1:'assets/ui/rank-first.png',2:'assets/ui/rank-second.png',3:'assets/ui/rank-third.png'};
   // Keep the underlying provenance, but omit internal answer-approval workflow from study copy.
@@ -52,7 +52,7 @@
     return `<section class="choice-reason-list"><h4>선택지별 해설</h4>${q.choices.map(ch=>{
        const answer=effectiveAnswer(q), right=answer!=null && (Array.isArray(answer)?answer.includes(ch.number):answer===ch.number);
        const reason=q.choiceExplanations[String(ch.number)] || '이 선택지를 판단할 직접 근거를 충분히 확보하지 못했습니다.';
-       return `<div class="choice-reason ${right?'right':''}"><b>${circles[ch.number-1]||ch.number} ${right?'정답 이유':'선택지 해설'}</b><p>${esc(studyCopy(reason))}</p></div>`;
+       return `<div class="choice-reason ${right?'right':''}"><p><b>${circles[ch.number-1]||ch.number}</b> ${esc(studyCopy(reason))}</p></div>`;
     }).join('')}</section>`;
   }
 
@@ -955,7 +955,7 @@
     const checked=Array.isArray(r.selected)?r.selected:r.selected?[r.selected]:[];
     const answer=effectiveAnswer(q);const answers=answer==null?[]:Array.isArray(answer)?answer:[answer];
     const maxSelection=Number(q.maxSelections)||1;
-    return `<section class="exam-panel" data-question-id="${esc(q.id)}"><div class="question-header"><div><div class="question-id">${studyMode==='year-exam'?esc(yearExamTeacherLabel(q.professor))+' 교수님 · ':''}QUESTION / ${esc(q.label)}</div><h2 class="question-num">${esc(q.label)} <span class="question-index">${curr+1} / ${scope.length}</span></h2><div class="question-meta"><span class="pill ${q.isPrediction?'blue':q.validation.stage==='accepted'?'ok':['user_confirmed','highlight_reviewed','exam_answer_key'].includes(q.validation.stage)?'ok':'warn'}">${q.isPrediction?'✦ AI 예상문제 · 강의안 기반':q.archivePdf?'● 제공 PDF 원문 · 별도 의학적 재검증 없음':q.validation.stage==='accepted'?'✓ 강의안 이중 검증':q.validation.stage==='exam_answer_key'?'● 22학번 공식 정답표 · 강의안 검증과 별개':q.validation.stage==='highlight_reviewed'?'✓ 정답 확인':q.validation.stage==='user_confirmed'?(q.validation?.supplemental2026?.status==='match'?'✓ 정답 확인 · 2026 강의안 비교':q.validation?.supplemental2026?.status==='conflict'?'✓ 정답 확인 · 강의안과 해설 비교 필요':'✓ 정답 확인'):'! 정답 검토 필요'}</span><span class="pill">${esc(yearName(q.year))}</span>${submission(q)?`<span class="pill blue">제출 완료</span>`:''}</div></div>
+    return `<section class="exam-panel" data-question-id="${esc(q.id)}"><div class="question-header"><div><div class="question-id">${studyMode==='year-exam'?esc(yearExamTeacherLabel(q.professor))+' 교수님 · ':''}QUESTION / ${esc(q.label)}</div><h2 class="question-num">${esc(q.label)} <span class="question-index">${curr+1} / ${scope.length}</span></h2><div class="question-meta"><span class="pill ${q.isPrediction?'blue':q.validation.stage==='accepted'?'ok':['user_confirmed','highlight_reviewed','exam_answer_key'].includes(q.validation.stage)?'ok':'warn'}">${q.isPrediction?'✦ AI 예상문제 · 강의안 기반':q.archivePdf?'● 제공 PDF 정답·해설':q.validation.stage==='accepted'?'✓ 강의안 이중 검증':q.validation.stage==='exam_answer_key'?'● 22학번 공식 정답표 · 강의안 검증과 별개':q.validation.stage==='highlight_reviewed'?'✓ 정답 확인':q.validation.stage==='user_confirmed'?(q.validation?.supplemental2026?.status==='match'?'✓ 정답 확인 · 2026 강의안 비교':q.validation?.supplemental2026?.status==='conflict'?'✓ 정답 확인 · 강의안과 해설 비교 필요':'✓ 정답 확인'):'! 정답 검토 필요'}</span><span class="pill">${esc(yearName(q.year))}</span>${submission(q)?`<span class="pill blue">제출 완료</span>`:''}</div></div>
       <div class="row"><button class="bookmark ${isBookmark(q)?'saved':''}" data-action="bookmark" data-id="${esc(q.id)}" title="북마크" aria-pressed="${isBookmark(q)}">${isBookmark(q)?'★':'☆'}</button><button class="icon-btn report-question-btn" data-action="report-popup" data-question-id="${esc(q.id)}" title="문항 번호·설명·이미지를 첨부해 오류 제보" aria-label="${esc(q.label)}번 문제 오류 제보하기">✎ 제보하기</button><button class="icon-btn" data-action="toggle-evidence">${infoExpanded?'해설 접기':'해설 열기'}</button></div></div>
       <div class="prompt">${esc(q.prompt||'원본 이미지에서 문제 본문을 확인하세요.')}</div>
       ${renderInlineQuestionFigures(q)}
@@ -983,23 +983,25 @@
     if(!images.length)return '';
     return `<section class="supplemental-explanation-images"><div class="section-head"><h4 class="section-title" style="font-size:14px">추가 해설 참고 이미지</h4><span class="fine">사용자 제공 · 출처 확인 전</span></div>${images.map(item=>`<article class="evidence-item"><div class="evidence-meta"><p class="file-name">${esc(item.caption||'사용자 제공 해설 참고 이미지')}</p></div><img class="evidence-image" src="${esc(item.src||item.image)}" alt="${esc(item.alt||'해설 참고 이미지')}" loading="lazy" data-action="zoom" data-caption="${esc(item.caption||'해설 참고 이미지')}"><div class="zoom-label">이미지를 누르면 확대됩니다 ⤢</div></article>`).join('')}</section>`;
   }
-  // User-supplied PDF archive: keep the original answer, explanation and lecture excerpts visually intact.
-  // No answer validation is performed beyond faithful transcription of the provided PDF.
+  // PDF archive: display the supplied explanation as text, and the embedded
+  // *lecture image only* as image evidence. Do not repeat the full answer pane screenshot.
   function renderPdfArchiveEvidence(q) {
-    const meta=q.archivePdf;const ans=effectiveAnswer(q);
+    const meta=q.archivePdf;
     const pending=q.validation?.stage==='pending';
     const choices=Object.entries(q.choiceExplanations||{}).map(([n,t])=>
-      `<p><b>${esc(circles[Number(n)-1]||n)}</b> ${esc(t)}</p>`).join('');
-    const refText=(meta.lectureReferences||[]).map(v=>`<p class="file-name">${esc(v)}</p>`).join('');
+      `<div class="archive-choice-reason"><p><b>${esc(circles[Number(n)-1]||n)}</b> ${esc(t)}</p></div>`).join('');
+    const refs=meta.lectureReferences||[];
+    const lectures=meta.lectureImages||[];
+    const evidences=lectures.map((fig,i)=>`<article class="evidence-item archive-lecture-item">
+      <img class="evidence-image" src="${esc(fig.src)}" alt="${esc(fig.alt||'PDF 원본 강의안 부분 발췌')}" loading="lazy" data-action="zoom" data-caption="홍기연 22학번 · PDF ${meta.pdfPage}페이지 · 강의안 근거 ${i+1}"/>
+      <div class="zoom-label">이미지를 누르면 확대됩니다 ⤢</div></article>`).join('');
     return `<aside class="evidence-panel pdf-archive-evidence"><div class="evidence-head"><div><div class="evidence-kicker">USER-PROVIDED PDF · v1.3</div><h3>원문 정답 및 해설</h3></div><button class="icon-btn" data-action="toggle-evidence" title="해설 접기">✕</button></div>
       <div class="question-meta" style="margin-top:12px"><span class="pill ${pending?'warn':'blue'}">${pending?'⚠ PDF 원문에서 판정 보류':'● 제공 PDF에 수록된 답안'}</span><span class="pill">22학번 · 홍기연</span></div>
-      <div class="result-box ${pending?'pending':'correct'}"><b>PDF 원문 답안 · ${esc(meta.answerText||'판정 불가')}</b><p>${pending?'PDF에 기재된 불확실성을 그대로 유지하며 임의로 정답 처리하지 않습니다.':'사용자가 제공한 PDF의 정답이며, 별도의 의학적 검증을 새로 수행하지 않았습니다.'}</p></div>
-      ${q.explanation?`<div class="evidence-explanation" style="white-space:pre-line">${esc(q.explanation)}</div>`:''}
-      ${choices?`<section class="choice-reason-list"><h4>나머지 보기 · PDF 원문 정정</h4>${choices}</section>`:''}
-      <div class="section-head"><h4 class="section-title" style="font-size:14px">PDF 원문 전체 해설 · 강의안 발췌</h4><span class="fine">원본 ${meta.pdfPage}페이지</span></div>
-      ${refText}
-      <article class="evidence-item"><div class="evidence-meta"><p class="file-name">홍기연 교수님 · 사용자 제공 Medical Question Archive v1.3</p><small>정답 · 상세 이유 · 강의안 발췌 · 선택지별 정정 전부 보존</small></div><img class="evidence-image" src="${esc(meta.answerImage)}" alt="PDF ${meta.pdfPage}쪽 정답 해설과 강의안 이미지" loading="lazy" data-action="zoom" data-caption="홍기연 22학번 · PDF ${meta.pdfPage}쪽 원문 해설"/><div class="zoom-label">이미지를 누르면 확대됩니다 ⤢</div></article>
-      <p class="help-text"><a href="${esc(meta.pdfFile)}" target="_blank" rel="noopener">사용자가 제공한 전체 원본 PDF 열기 ↗</a> · 재검증 또는 재서술 없이 수록했습니다.</p>
+      <div class="result-box ${pending?'pending':'correct'}"><b>PDF 원문 답안 · ${esc(meta.answerText||'판정 불가')}</b>${pending?'<p>PDF에 명시된 판정 유보 상태를 그대로 유지합니다.</p>':''}</div>
+      ${q.explanation?`<p class="evidence-explanation">${esc(q.explanation)}</p>`:''}
+      ${lectures.length?`<section class="archive-lecture-section"><h4>정답의 강의안 근거</h4>${evidences}${refs.map(v=>`<p class="file-name">${esc(v)}</p>`).join('')}</section>`:''}
+      ${choices?`<section class="choice-reason-list archive-choice-list"><h4>나머지 보기 · PDF 원문 정정</h4>${choices}</section>`:''}
+      <p class="help-text"><a href="${esc(meta.pdfFile)}" target="_blank" rel="noopener">전체 원본 PDF 열기 ↗</a></p>
     </aside>`;
   }
   function renderEvidencePanel(q) {

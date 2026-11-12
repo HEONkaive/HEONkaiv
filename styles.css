@@ -735,3 +735,30 @@ html[data-theme=light]{--bg:#f3f6fb;--panel:#fff;--panel2:#f6f9fd;--panel3:#edf3
   .topbar-navigation{max-width:100%}
   .topbar-tools{max-width:100%;min-width:0}
 }
+
+/* v1.1.4: progress tracks in the year-exam grid must respect both card insets. */
+.home-year-list .home-year-card .home-year-progress{
+  position:absolute;left:13px;right:13px;bottom:10px;width:auto;max-width:none;
+  margin:0;box-sizing:border-box;
+}
+.home-year-list .home-year-card .home-year-progress i{display:block;max-width:100%}
+/* Equal size/font for PDF-based and original per-choice explanations. */
+.evidence-panel .evidence-explanation,
+.evidence-panel .choice-reason p,
+.evidence-panel .archive-choice-reason p{
+  font-family:var(--body-font);font-size:14px;line-height:1.85;
+  font-weight:400;color:var(--text);word-break:keep-all;overflow-wrap:anywhere;
+}
+.evidence-panel .choice-reason p{margin:0;white-space:pre-wrap}
+.evidence-panel .choice-reason p b,
+.evidence-panel .archive-choice-reason p b{font-size:inherit;font-weight:800;color:var(--accent);margin-right:5px}
+.evidence-panel .choice-reason.right p b{color:var(--green)}
+.pdf-archive-evidence .evidence-explanation{white-space:pre-line;margin:17px 0 20px}
+.pdf-archive-evidence .archive-lecture-section{margin:10px 0 14px}
+.pdf-archive-evidence .archive-lecture-section h4{font-size:14px;margin:5px 0 10px;color:var(--accent)}
+.pdf-archive-evidence .archive-lecture-section .file-name{font-size:11px;color:var(--muted);margin:6px 0 12px}
+.pdf-archive-evidence .archive-lecture-item .evidence-image{width:100%;max-height:none;border-top:0}
+.pdf-archive-evidence .archive-choice-list{margin-top:18px}
+.pdf-archive-evidence .archive-choice-reason{border-bottom:1px solid var(--stroke);padding:11px 15px}
+.pdf-archive-evidence .archive-choice-reason:last-child{border-bottom:0}
+.pdf-archive-evidence .archive-choice-reason p{margin:0;white-space:pre-wrap}
