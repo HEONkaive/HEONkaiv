@@ -1,29 +1,16 @@
 {
-  "createdAt": "2026-11-12T00:54:32.000243+00:00",
+  "createdAt": "2026-11-12T07:49:48.711396+00:00",
   "totals": {
-    "questions": 492
+    "questions": 550
   },
   "validationStages": {
-    "user_confirmed": 139,
+    "user_confirmed": 188,
     "accepted": 259,
     "exam_answer_key": 68,
-    "pending": 23,
+    "pending": 32,
     "highlight_reviewed": 3
   },
   "errors": 0,
-  "warnings": 2,
-  "issues": [
-    {
-      "level": "warning",
-      "code": "missing_media",
-      "ref": "lee-seungshin:17-주8",
-      "message": "figureImages: assets/figures/lee-seungshin/17-주8-user-2026.webp"
-    },
-    {
-      "level": "warning",
-      "code": "missing_media",
-      "ref": "lee-seungshin:21-주2",
-      "message": "figureImages: assets/figures/lee-seungshin/21-주2-user-2026.webp"
-    }
-  ]
+  "warnings": 0,
+  "issues": []
 }

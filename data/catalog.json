@@ -78,7 +78,15 @@
     {
       "id": "maternal-newborn",
       "name": "모성과 신생아",
-      "professors": []
+      "professors": [
+        {
+          "id": "hong-kiyeon",
+          "name": "홍기연",
+          "data": "data/professors/hong-kiyeon.json",
+          "questionCount": 58,
+          "pendingCount": 9
+        }
+      ]
     },
     {
       "id": "growth-aging",
