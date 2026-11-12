@@ -9,7 +9,7 @@
   const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
   const circles = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
   const TALLY_FORM_ID = '6DjZg5';
-  const PUBLIC_VERSION = '1.1.10';
+  const PUBLIC_VERSION = '1.1.11';
   const PUBLIC_RELEASE_DATE = '2026-11-12';
   const LEADERBOARD_IMAGE_BY_RANK = {1:'assets/ui/rank-first.png',2:'assets/ui/rank-second.png',3:'assets/ui/rank-third.png'};
   // Keep the underlying provenance, but omit internal answer-approval workflow from study copy.
@@ -1031,7 +1031,7 @@
     </aside>`;
   }
   function lectureAuditLabel(q) {
-    return {matched:'✓ 검증 완료',owner:'운영자 지정 답안',partial:'◐ 관련 근거 확인 · 일부 검토 필요',missing:'! 같은 교수님 강의안 근거 미확보',conflict:'! 문항·정답 충돌 · 채점 보류'}[q.lectureAudit?.status]||'근거 재검토';
+    return {matched:'✓ 검증 완료',owner:'운영자 지정 답안',partial:'◐ 관련 근거 확인 · 일부 검토 필요',missing:'! 같은 교수님 강의안 근거 미확보',unresolved:'! 정답 미확정 · 채점 보류',conflict:'! 문항·정답 충돌 · 채점 보류'}[q.lectureAudit?.status]||'근거 재검토';
   }
   function lecturePageLabel(e) {
     return `${e.pageBasis?.startsWith('단원')?'단원':'PDF'} ${e.page}쪽`;
@@ -1057,6 +1057,7 @@
       ${audit.reason&&audit.reason!==explain&&audit.reason!==audit.limitations&&!audit.reason.startsWith('같은 교수님 강의안')?`<p class="review-note">${esc(audit.reason)}</p>`:''}
       ${prior?`<details class="source-card"><summary>${audit.gradingHold?'이전 답안 기록 (채점에 사용하지 않음)':'정답 변경 기록'}</summary><p>이전: ${esc(auditAnswerText(q,audit.referenceAnswer))}</p>${audit.answerRevised?`<p>재검토: ${esc(auditAnswerText(q,q.answer))}</p>`:''}</details>`:''}
       ${choiceReasonList(q)}${renderExplanationImages(q)}
+      ${(q.annualSources||[]).map(a=>`<details class="source-card"><summary>${esc(a.file.includes('수정사항')?'교수님 수정사항':'해당 연도 해설·복원자료')} · PDF ${esc(a.page)}쪽</summary><p class="file-name">${esc(a.file)}</p><p class="fine">당시 해설 원문입니다. 오류·정정 내용은 위 재검토 해설을 함께 확인하세요.</p><img class="source-image" src="${esc(a.image)}" alt="${esc(a.file)} PDF ${esc(a.page)}쪽" loading="lazy" data-action="zoom" data-caption="${esc(a.file)} · PDF ${esc(a.page)}쪽"></details>`).join('')}
       <div class="section-head"><h4 class="section-title" style="font-size:14px">${matched?'확인한 강의안 원본':'검토한 강의안 원본'}</h4><span class="fine">${refs.length}페이지</span></div>
       ${refs.map(e=>`<article class="evidence-item"><div class="evidence-meta"><span class="file-page">${esc(lecturePageLabel(e))} · ${esc(e.lectureYear)}년</span><p class="file-name">${esc(e.file)}</p><p class="fine">${esc(e.lectureOwner)} · ${esc(e.pageBasis)}</p></div><img class="evidence-image" src="${esc(e.image)}" alt="${esc(e.lectureTitle)} · ${esc(lecturePageLabel(e))}" loading="lazy" data-action="zoom" data-caption="${esc(e.file)} · ${esc(lecturePageLabel(e))}"><div class="zoom-label">이미지를 누르면 확대됩니다 ⤢</div></article>`).join('')||'<div class="empty" style="padding:21px">첨부된 같은 교수님 자료에서 직접 근거를 확보하지 못했습니다.</div>'}
       ${q.answerKey?.image?`<details class="source-card exam-answer-key"><summary>기출 공식 정답표 원본 · 강의안 검토와 구분</summary><img class="source-image" src="${esc(q.answerKey.image)}" alt="기출 공식 정답표" loading="lazy" data-action="zoom" data-caption="기출 공식 정답표"></details>`:''}
