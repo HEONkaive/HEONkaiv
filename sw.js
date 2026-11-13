@@ -1,7 +1,7 @@
-/* HEON ARCHIVE PWA v1.1.11. Only this site's public static files are cached.
+/* HEON ARCHIVE PWA v1.1.12. Only this site's public static files are cached.
  * Supabase, Tally and user credentials are NEVER intercepted or cached.
  */
-const CACHE='heon-public-v1.1.11';
+const CACHE='heon-public-v1.1.12';
 const SHELL=['./','./index.html','./styles.css','./app.js','./pdf-export.js',
   './study-account.js','./leaderboard-config.js','./data/catalog.js',
   './data/correction-ledger.js','./manifest.webmanifest','./assets/ui/heon-icon-192.png'];

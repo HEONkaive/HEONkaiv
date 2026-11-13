@@ -19,19 +19,19 @@
       "choices": [
         {
           "number": 1,
-          "text": "미복원"
+          "text": "침범된 팔의 자발운동이 감소할 수 있다. (임의복원)"
         },
         {
           "number": 2,
-          "text": "미복원"
+          "text": "쇄골 골절이 동반될 수 있다. (임의복원)"
         },
         {
           "number": 3,
-          "text": "미복원"
+          "text": "Erb 마비에서는 어깨가 내전·내회전될 수 있다. (임의복원)"
         },
         {
           "number": 4,
-          "text": "미복원"
+          "text": "동측 횡격막신경 손상이 함께 있을 수 있다. (임의복원)"
         },
         {
           "number": 5,
@@ -40,7 +40,7 @@
       ],
       "answer": null,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "⑤의 문구도 불완전하고 나머지 보기가 없어 정답을 확정하지 않습니다.\n\n늑골하연 약 2cm에서 만져지는 간, 턱의 간대성 움직임, 호르몬 영향의 유방비대는 정상일 수 있습니다. 비대칭 모로반사는 쇄골골절·위팔신경 손상 등을 확인해야 합니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 1쪽.",
+      "explanation": "①~④를 학습용으로 보완했지만 기존⑤의 구체적 진술이 불명확합니다. ⑤ 문구는 그대로 두고 정답을 보류합니다.\n\n늑골하연 약 2cm에서 만져지는 간, 턱의 간대성 움직임, 호르몬 영향의 유방비대는 정상일 수 있습니다. 비대칭 모로반사는 쇄골골절·위팔신경 손상 등을 확인해야 합니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 1쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261019_모성과신생아_정상신생아.pdf(1).pdf",
@@ -80,7 +80,12 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "1": "[임의복원 보기 해설] 상완신경총 손상에서 가능한 소견입니다.",
+        "2": "[임의복원 보기 해설] 출생손상과 비대칭 모로반사에서 감별합니다.",
+        "3": "[임의복원 보기 해설] 상부 상완신경총 손상에서 가능한 자세입니다.",
+        "4": "[임의복원 보기 해설] 출생손상으로 동반될 수 있습니다. 기존⑤가 불명확하므로 정답은 보류합니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -102,17 +107,50 @@
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
-        "reason": "⑤의 문구도 불완전하고 나머지 보기가 없어 정답을 확정하지 않습니다.",
+        "reason": "①~④를 학습용으로 보완했지만 기존⑤의 구체적 진술이 불명확합니다. ⑤ 문구는 그대로 두고 정답을 보류합니다.",
         "limitations": "지문 또는 선택지 일부가 미복원되어 복원된 내용 안에서 검토했습니다.",
         "gradingHold": true,
         "referenceAnswer": 5,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "⑤의 문구도 불완전하고 나머지 보기가 없어 정답을 확정하지 않습니다."
+        "decisionReason": "①~④를 학습용으로 보완했지만 기존⑤의 구체적 진술이 불명확합니다. ⑤ 문구는 그대로 두고 정답을 보류합니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "미복원"
+          },
+          {
+            "number": 2,
+            "text": "미복원"
+          },
+          {
+            "number": 3,
+            "text": "미복원"
+          },
+          {
+            "number": 4,
+            "text": "미복원"
+          },
+          {
+            "number": 5,
+            "text": "흡기와 호기 시 복부팽창에 관한 설명"
+          }
+        ],
+        "changedNumbers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -127,7 +165,7 @@
       "choices": [
         {
           "number": 1,
-          "text": "미복원"
+          "text": "태아심박수의 일시적인 상승을 나타내는 가속 소견이다. (임의복원)"
         },
         {
           "number": 2,
@@ -146,12 +184,15 @@
           "text": "거짓음성률이 낮고 거짓양성률이 높은 생물리학계수를 대체한다."
         }
       ],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "인쇄 답 ③과 손글씨·variable deceleration 그래프의 ②가 충돌합니다. 직접 태아감시 강의안도 없어 보류합니다.\n\n해당 연도 해설의 산전검사·태아감시 내용을 참고했습니다. 1삼분기 혈청 선별검사는 PAPP-A와 hCG, 2삼분기 4중선별검사는 AFP·hCG·비결합 에스트리올·인히빈 A입니다. 후기 심박수 저하는 자궁태반부전, 불규칙 저하는 탯줄압박과 연결합니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 1쪽.",
+      "answer": 2,
+      "answerSource": "v1.1.12_evidence_based_exam_answer_adoption",
+      "explanation": "그림의 variable deceleration(변이성 심박수 감소)에 맞는 기존②를 채택합니다. 머리압박은 조기감소③, 자궁태반부전은 후기감소④와 연결됩니다. 그림과 손글씨가 인쇄 답③보다 타당합니다. 변이성 감소만으로 모든 경우의 저산소증을 확진한다는 의미는 아닙니다.\n\n제공 강의안에서 태아감시 직접 근거를 찾지 못했습니다. 연도별 그림과 AAFP 자료를 대조한 AI 판단이며 공식 정답표 확인은 아닙니다.\n\n해당 연도 해설의 산전검사·태아감시 내용을 참고했습니다. 1삼분기 혈청 선별검사는 PAPP-A와 hCG, 2삼분기 4중선별검사는 AFP·hCG·비결합 에스트리올·인히빈 A입니다. 후기 심박수 저하는 자궁태반부전, 불규칙 저하는 탯줄압박과 연결합니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 1쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.\n\n외부 보완근거: https://www.aafp.org/afp/2020/0801/p158",
       "evidence": [],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "1": "[임의복원 보기 해설] 제시 그림은 상승이 아닌 심박수 저하입니다.",
+        "2": "채택 정답: 그림의 variable deceleration(변이성 심박수 감소)에 맞는 기존②를 채택합니다. 머리압박은 조기감소③, 자궁태반부전은 후기감소④와 연결됩니다. 그림과 손글씨가 인쇄 답③보다 타당합니다. 변이성 감소만으로 모든 경우의 저산소증을 확진한다는 의미는 아닙니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -178,18 +219,74 @@
       "unitId": "neonatal-prenatal",
       "archiveUnrecovered": false,
       "lectureAudit": {
-        "status": "unresolved",
-        "reason": "인쇄 답 ③과 손글씨·variable deceleration 그래프의 ②가 충돌합니다. 직접 태아감시 강의안도 없어 보류합니다.",
-        "limitations": "제공 2026 정상신생아 강의안은 출생 전 관리 부분을 생략하므로 직접 근거를 확보하지 못했습니다. 지문 또는 선택지 일부가 미복원되어 복원된 내용 안에서 검토했습니다.",
-        "gradingHold": true,
+        "status": "partial",
+        "reason": "그림의 variable deceleration(변이성 심박수 감소)에 맞는 기존②를 채택합니다. 머리압박은 조기감소③, 자궁태반부전은 후기감소④와 연결됩니다. 그림과 손글씨가 인쇄 답③보다 타당합니다. 변이성 감소만으로 모든 경우의 저산소증을 확진한다는 의미는 아닙니다.",
+        "limitations": "제공 강의안에서 태아감시 직접 근거를 찾지 못했습니다. 연도별 그림과 AAFP 자료를 대조한 AI 판단이며 공식 정답표 확인은 아닙니다.",
+        "gradingHold": false,
         "referenceAnswer": 3,
-        "answerRevised": false,
-        "version": "1.1.11"
+        "answerRevised": true,
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "needs_review",
+        "stage": "accepted",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "인쇄 답 ③과 손글씨·variable deceleration 그래프의 ②가 충돌합니다. 직접 태아감시 강의안도 없어 보류합니다."
+        "decisionReason": "그림의 variable deceleration(변이성 심박수 감소)에 맞는 기존②를 채택합니다. 머리압박은 조기감소③, 자궁태반부전은 후기감소④와 연결됩니다. 그림과 손글씨가 인쇄 답③보다 타당합니다. 변이성 감소만으로 모든 경우의 저산소증을 확진한다는 의미는 아닙니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "미복원"
+          },
+          {
+            "number": 2,
+            "text": "탯줄 압박으로 나타나고 태아저산소증이 나타난다."
+          },
+          {
+            "number": 3,
+            "text": "태아머리 압박 때 나타나며 임상적으로 중요성이 없다."
+          },
+          {
+            "number": 4,
+            "text": "자궁태반부전증 때 나타나며 태아저산소증이 있다."
+          },
+          {
+            "number": 5,
+            "text": "거짓음성률이 낮고 거짓양성률이 높은 생물리학계수를 대체한다."
+          }
+        ],
+        "changedNumbers": [
+          1
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
+      },
+      "reviewHistoryV111": {
+        "answer": null,
+        "lectureAudit": {
+          "status": "unresolved",
+          "reason": "인쇄 답 ③과 손글씨·variable deceleration 그래프의 ②가 충돌합니다. 직접 태아감시 강의안도 없어 보류합니다.",
+          "limitations": "제공 2026 정상신생아 강의안은 출생 전 관리 부분을 생략하므로 직접 근거를 확보하지 못했습니다. 지문 또는 선택지 일부가 미복원되어 복원된 내용 안에서 검토했습니다.",
+          "gradingHold": true,
+          "referenceAnswer": 3,
+          "answerRevised": false,
+          "version": "1.1.12"
+        },
+        "explanation": "인쇄 답 ③과 손글씨·variable deceleration 그래프의 ②가 충돌합니다. 직접 태아감시 강의안도 없어 보류합니다.\n\n해당 연도 해설의 산전검사·태아감시 내용을 참고했습니다. 1삼분기 혈청 선별검사는 PAPP-A와 hCG, 2삼분기 4중선별검사는 AFP·hCG·비결합 에스트리올·인히빈 A입니다. 후기 심박수 저하는 자궁태반부전, 불규칙 저하는 탯줄압박과 연결합니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 1쪽."
+      },
+      "externalEvidence": [
+        {
+          "url": "https://www.aafp.org/afp/2020/0801/p158",
+          "role": "lecture_gap_supplement",
+          "accessed": "2026-11-13"
+        }
+      ],
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "ai_review",
+        "version": "1.1.12",
+        "reason": "그림의 variable deceleration(변이성 심박수 감소)에 맞는 기존②를 채택합니다. 머리압박은 조기감소③, 자궁태반부전은 후기감소④와 연결됩니다. 그림과 손글씨가 인쇄 답③보다 타당합니다. 변이성 감소만으로 모든 경우의 저산소증을 확진한다는 의미는 아닙니다."
       }
     },
     {
@@ -298,56 +395,6 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "보온·호흡 확인·비타민 K1 근육주사·안정 후 이른 수유가 기본입니다. 영아급사증후군 예방에는 앙와위를 권합니다. 구개·후두를 거즈로 문지르거나 출생 직후 목욕하는 것은 적절하지 않습니다. 제대동맥은 2개, 제대정맥은 1개입니다."
-      }
-    },
-    {
-      "id": "choi-duyoung-neonatal:17-4",
-      "label": "17-4",
-      "year": 17,
-      "number": 4,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원 문항 — 제공 자료에 지문과 선택지가 없습니다.",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "17 모성과신생아 이승현,오연균 JOIN(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f02-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "17 모성과신생아 이승현,오연균 JOIN(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f02-p001.webp"
-      },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
       }
     },
     {
@@ -474,24 +521,24 @@
         },
         {
           "number": 2,
-          "text": "미복원"
+          "text": "몽고반 (임의복원)"
         },
         {
           "number": 3,
-          "text": "미복원"
+          "text": "독성홍반 (임의복원)"
         },
         {
           "number": 4,
-          "text": "미복원"
+          "text": "비립종 (임의복원)"
         },
         {
           "number": 5,
-          "text": "미복원"
+          "text": "신생아 여드름 (임의복원)"
         }
       ],
       "answer": 1,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "연어반·독성홍반·할리퀸 색조 변화는 정상 신생아에게 나타날 수 있는 일시적 소견입니다. 뒷목의 홍반은 연어반, 홍반 위 작은 농포·구진은 독성홍반과 연결합니다. 해면혈관종은 정상적인 일시적 피부소견과 구분합니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 2쪽.",
+      "explanation": "연어반·독성홍반·할리퀸 색조 변화는 정상 신생아에게 나타날 수 있는 일시적 소견입니다. 뒷목의 홍반은 연어반, 홍반 위 작은 농포·구진은 독성홍반과 연결합니다. 해면혈관종은 정상적인 일시적 피부소견과 구분합니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 2쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261019_모성과신생아_정상신생아.pdf(1).pdf",
@@ -531,7 +578,12 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "2": "[임의복원 보기 해설] 천골 부위 청회색 반점과 구별합니다.",
+        "3": "[임의복원 보기 해설] 홍반 바탕의 구진·농포와 구별합니다.",
+        "4": "[임의복원 보기 해설] 작은 백색 각질낭종과 구별합니다.",
+        "5": "[임의복원 보기 해설] 구진·농포성 병변과 구별합니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -564,12 +616,45 @@
         "gradingHold": false,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "연어반·독성홍반·할리퀸 색조 변화는 정상 신생아에게 나타날 수 있는 일시적 소견입니다. 뒷목의 홍반은 연어반, 홍반 위 작은 농포·구진은 독성홍반과 연결합니다. 해면혈관종은 정상적인 일시적 피부소견과 구분합니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "연어반"
+          },
+          {
+            "number": 2,
+            "text": "미복원"
+          },
+          {
+            "number": 3,
+            "text": "미복원"
+          },
+          {
+            "number": 4,
+            "text": "미복원"
+          },
+          {
+            "number": 5,
+            "text": "미복원"
+          }
+        ],
+        "changedNumbers": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -806,7 +891,7 @@
       "choices": [],
       "answer": null,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "심박·호흡·근긴장도·자극반응·피부색을 각각 0~2점으로 계산합니다. 소생술은 총점을 기다리지 않고 호흡과 심박수로 즉시 결정합니다. 5분 이후 점수 변화는 소생술 반응을 평가하는 데 도움이 됩니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 2쪽.",
+      "explanation": "심박·호흡·근긴장도·자극반응·피부색을 각각 0~2점으로 계산합니다. 소생술은 총점을 기다리지 않고 호흡과 심박수로 즉시 결정합니다. 5분 이후 점수 변화는 소생술 반응을 평가하는 데 도움이 됩니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 2쪽.\n\n지문은 남아 있어 삭제하지 않았습니다. 선택지가 전부 없어 기존 보기 중에서 답을 채택할 수 없습니다. 선택지·정답을 통째로 만들어 원시험 답으로 처리하지 않고 보류합니다.",
       "evidence": [
         {
           "file": "최두영pf_261019_모성과신생아_정상신생아.pdf(1).pdf",
@@ -873,56 +958,6 @@
       }
     },
     {
-      "id": "choi-duyoung-neonatal:17-10",
-      "label": "17-10",
-      "year": 17,
-      "number": 10,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원 문항 — 제공 자료에 지문과 선택지가 없습니다.",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "17 모성과신생아 이승현,오연균 JOIN(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f02-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "17 모성과신생아 이승현,오연균 JOIN(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f02-p001.webp"
-      },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
-      }
-    },
-    {
       "id": "choi-duyoung-neonatal:17-11",
       "label": "17-11",
       "year": 17,
@@ -934,7 +969,7 @@
       "choices": [],
       "answer": null,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "미숙아는 충분한 단백질·열량 공급과 성장 추적이 필요합니다. 중심체온과 보육기온도를 구별하며 예방접종은 일반적으로 출생 후 나이를 기준으로 합니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 2쪽.",
+      "explanation": "미숙아는 충분한 단백질·열량 공급과 성장 추적이 필요합니다. 중심체온과 보육기온도를 구별하며 예방접종은 일반적으로 출생 후 나이를 기준으로 합니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 2쪽.\n\n지문은 남아 있어 삭제하지 않았습니다. 선택지가 전부 없어 기존 보기 중에서 답을 채택할 수 없습니다. 선택지·정답을 통째로 만들어 원시험 답으로 처리하지 않고 보류합니다.",
       "evidence": [
         {
           "file": "최두영pf_261020_모성과신생아_고위험 신생아.pdf(1).pdf",
@@ -1034,24 +1069,24 @@
         },
         {
           "number": 2,
-          "text": "미복원"
+          "text": "피부가 투명하고 혈관이 뚜렷하게 비친다. (임의복원)"
         },
         {
           "number": 3,
-          "text": "미복원"
+          "text": "발바닥에 주름이 거의 없다. (임의복원)"
         },
         {
           "number": 4,
-          "text": "미복원"
+          "text": "귓바퀴가 접힌 뒤 원래 모양으로 잘 돌아오지 않는다. (임의복원)"
         },
         {
           "number": 5,
-          "text": "미복원"
+          "text": "음낭 주름이 없고 고환이 내려오지 않았다. (임의복원)"
         }
       ],
       "answer": 1,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "신경근육 성숙도는 자세·손목각도·팔 되돌아오기·오금각도·스카프 징후·발뒤꿈치-귀 시험으로 평가합니다. 미숙할수록 근긴장도가 낮고 오금각도가 큽니다. 성숙한 신생아는 두껍고 갈라진 피부·깊은 발바닥 주름·음낭주름을 보입니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 2쪽.",
+      "explanation": "신경근육 성숙도는 자세·손목각도·팔 되돌아오기·오금각도·스카프 징후·발뒤꿈치-귀 시험으로 평가합니다. 미숙할수록 근긴장도가 낮고 오금각도가 큽니다. 성숙한 신생아는 두껍고 갈라진 피부·깊은 발바닥 주름·음낭주름을 보입니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 2쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261020_모성과신생아_고위험 신생아.pdf(1).pdf",
@@ -1091,7 +1126,12 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "2": "[임의복원 보기 해설] 미성숙 피부 소견입니다.",
+        "3": "[임의복원 보기 해설] 미숙아의 소견입니다.",
+        "4": "[임의복원 보기 해설] 귀 연골 성숙도가 낮은 소견입니다.",
+        "5": "[임의복원 보기 해설] 미성숙 생식기 소견입니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -1118,12 +1158,45 @@
         "gradingHold": false,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "신경근육 성숙도는 자세·손목각도·팔 되돌아오기·오금각도·스카프 징후·발뒤꿈치-귀 시험으로 평가합니다. 미숙할수록 근긴장도가 낮고 오금각도가 큽니다. 성숙한 신생아는 두껍고 갈라진 피부·깊은 발바닥 주름·음낭주름을 보입니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "양피지 같고 깊은 금이 있다."
+          },
+          {
+            "number": 2,
+            "text": "미복원"
+          },
+          {
+            "number": 3,
+            "text": "미복원"
+          },
+          {
+            "number": 4,
+            "text": "미복원"
+          },
+          {
+            "number": 5,
+            "text": "미복원"
+          }
+        ],
+        "changedNumbers": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -1237,7 +1310,7 @@
       "choices": [],
       "answer": null,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "초기 처치 후 무호흡·헐떡호흡 또는 심박수 100회/분 미만이면 양압환기가 우선입니다. 효과적인 환기 30초 후에도 60회/분 미만이면 가슴압박을 추가하며 압박:환기=3:1입니다. 태변착색만으로 일률적 기관내흡인을 시행하여 환기를 지연시키지 않습니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 3쪽.",
+      "explanation": "초기 처치 후 무호흡·헐떡호흡 또는 심박수 100회/분 미만이면 양압환기가 우선입니다. 효과적인 환기 30초 후에도 60회/분 미만이면 가슴압박을 추가하며 압박:환기=3:1입니다. 태변착색만으로 일률적 기관내흡인을 시행하여 환기를 지연시키지 않습니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 3쪽.\n\n지문은 남아 있어 삭제하지 않았습니다. 선택지가 전부 없어 기존 보기 중에서 답을 채택할 수 없습니다. 선택지·정답을 통째로 만들어 원시험 답으로 처리하지 않고 보류합니다.",
       "evidence": [
         {
           "file": "최두영pf_261019_모성과신생아_신생아 소생술과 분만실에서의 응급상황.pdf(1).pdf",
@@ -1436,24 +1509,24 @@
         },
         {
           "number": 2,
-          "text": "미복원"
+          "text": "두혈종 (임의복원)"
         },
         {
           "number": 3,
-          "text": "미복원"
+          "text": "수두증 (임의복원)"
         },
         {
           "number": 4,
-          "text": "미복원"
+          "text": "두개골 함몰골절 (임의복원)"
         },
         {
           "number": 5,
-          "text": "미복원"
+          "text": "선천성 뇌류 (임의복원)"
         }
       ],
       "answer": 1,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "머리부종은 경계가 불분명하고 봉합선을 넘으며, 머리혈종은 골막하 출혈로 경계가 명확하고 봉합선을 넘지 않습니다. 대개 관찰하되 황달·감염에 유의합니다. 머리혈종의 절개·배액은 피합니다. 모상건막밑출혈은 대량출혈 위험이 있는 별도 질환입니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 3쪽.",
+      "explanation": "머리부종은 경계가 불분명하고 봉합선을 넘으며, 머리혈종은 골막하 출혈로 경계가 명확하고 봉합선을 넘지 않습니다. 대개 관찰하되 황달·감염에 유의합니다. 머리혈종의 절개·배액은 피합니다. 모상건막밑출혈은 대량출혈 위험이 있는 별도 질환입니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 3쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261020_모성과신생아_신경질환.pdf(1).pdf",
@@ -1493,7 +1566,12 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "2": "[임의복원 보기 해설] 골막하 출혈로 봉합선을 넘지 않습니다.",
+        "3": "[임의복원 보기 해설] 뇌실확장과 두피 부종은 다릅니다.",
+        "4": "[임의복원 보기 해설] 뼈의 함몰과 표재성 부종은 다릅니다.",
+        "5": "[임의복원 보기 해설] 두개골 결손을 통한 돌출과 구별합니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -1526,12 +1604,45 @@
         "gradingHold": false,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "머리부종은 경계가 불분명하고 봉합선을 넘으며, 머리혈종은 골막하 출혈로 경계가 명확하고 봉합선을 넘지 않습니다. 대개 관찰하되 황달·감염에 유의합니다. 머리혈종의 절개·배액은 피합니다. 모상건막밑출혈은 대량출혈 위험이 있는 별도 질환입니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "출산머리부종"
+          },
+          {
+            "number": 2,
+            "text": "미복원"
+          },
+          {
+            "number": 3,
+            "text": "미복원"
+          },
+          {
+            "number": 4,
+            "text": "미복원"
+          },
+          {
+            "number": 5,
+            "text": "미복원"
+          }
+        ],
+        "changedNumbers": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -1873,7 +1984,7 @@
       "choices": [
         {
           "number": 1,
-          "text": "미복원"
+          "text": "저산소성 손상은 미숙아의 백질에는 발생하지 않는다. (임의복원)"
         },
         {
           "number": 2,
@@ -1885,16 +1996,16 @@
         },
         {
           "number": 4,
-          "text": "미복원"
+          "text": "경련이 없으면 저산소허혈뇌병증을 배제할 수 있다. (임의복원)"
         },
         {
           "number": 5,
-          "text": "미복원"
+          "text": "모든 임신나이의 신생아에게 같은 기준으로 저체온치료를 시행한다. (임의복원)"
         }
       ],
       "answer": 2,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "주산기가사 후 경련은 저산소허혈뇌병증을 의심합니다. MRI로 손상 범위를 평가하고 aEEG로 무증상 경련을 감시합니다. 과도한 수액과 산소를 피합니다. 강의안의 치료적 저체온은 36주 이상 등 적응증에서 33.5℃이며 23.5℃가 아닙니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 4쪽.",
+      "explanation": "주산기가사 후 경련은 저산소허혈뇌병증을 의심합니다. MRI로 손상 범위를 평가하고 aEEG로 무증상 경련을 감시합니다. 과도한 수액과 산소를 피합니다. 강의안의 치료적 저체온은 36주 이상 등 적응증에서 33.5℃이며 23.5℃가 아닙니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 4쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261020_모성과신생아_신경질환.pdf(1).pdf",
@@ -1952,7 +2063,11 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "1": "[임의복원 보기 해설] 미숙아 백질도 손상에 취약합니다.",
+        "4": "[임의복원 보기 해설] 경련이 없다고 배제하지 않습니다.",
+        "5": "[임의복원 보기 해설] 임신나이·출생 후 시간·중증도 등의 적응증을 확인합니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -1979,12 +2094,44 @@
         "gradingHold": false,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "주산기가사 후 경련은 저산소허혈뇌병증을 의심합니다. MRI로 손상 범위를 평가하고 aEEG로 무증상 경련을 감시합니다. 과도한 수액과 산소를 피합니다. 강의안의 치료적 저체온은 36주 이상 등 적응증에서 33.5℃이며 23.5℃가 아닙니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "미복원"
+          },
+          {
+            "number": 2,
+            "text": "미숙아에서 뇌실주위 백질연화증이 생길 수 있다."
+          },
+          {
+            "number": 3,
+            "text": "심부체온 22.5℃ 유지"
+          },
+          {
+            "number": 4,
+            "text": "미복원"
+          },
+          {
+            "number": 5,
+            "text": "미복원"
+          }
+        ],
+        "changedNumbers": [
+          1,
+          4,
+          5
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -3392,56 +3539,6 @@
       }
     },
     {
-      "id": "choi-duyoung-neonatal:17-33",
-      "label": "17-33",
-      "year": 17,
-      "number": 33,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원 문항 — 제공 자료에 지문과 선택지가 없습니다.",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 17 모성과신생아 이승현,오연균 JOIN(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "17 모성과신생아 이승현,오연균 JOIN(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f02-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "17 모성과신생아 이승현,오연균 JOIN(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f02-p001.webp"
-      },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
-      }
-    },
-    {
       "id": "choi-duyoung-neonatal:17-34",
       "label": "17-34",
       "year": 17,
@@ -4252,56 +4349,6 @@
       }
     },
     {
-      "id": "choi-duyoung-neonatal:18-2",
-      "label": "18-2",
-      "year": 18,
-      "number": 2,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원 문항 — 제공 자료에 지문과 선택지가 없습니다.",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "18_모신_소아과_SJ(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f03-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "18_모신_소아과_SJ(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f03-p001.webp"
-      },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
-      }
-    },
-    {
       "id": "choi-duyoung-neonatal:18-3",
       "label": "18-3",
       "year": 18,
@@ -4317,7 +4364,7 @@
         },
         {
           "number": 2,
-          "text": "미복원"
+          "text": "폐표면활성제는 제2형 폐포세포에서 생성된다. (임의복원)"
         },
         {
           "number": 3,
@@ -4334,7 +4381,7 @@
       ],
       "answer": null,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "질문은 옳지 않은 것을 묻지만 ③·④·⑤가 모두 문제되고 ②는 미복원입니다. 자료가 질문 방향 불확실성을 명시하여 보류합니다.\n\n조산아의 표면활성제 부족으로 무기폐·저산소혈증·고탄산혈증·산증이 생깁니다. 제2형 폐포세포가 표면활성제를 만들며 양수에서는 28~32주에 나타납니다. X선은 미세과립상·공기기관지음영이 특징입니다. 호흡보조·기도 내 표면활성제 투여와 산전 스테로이드가 중요합니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 1쪽.",
+      "explanation": "②를 학습용으로 보완했지만 기존③·④·⑤와 질문 방향의 불확실성이 남아 단일답을 보류합니다.\n\n조산아의 표면활성제 부족으로 무기폐·저산소혈증·고탄산혈증·산증이 생깁니다. 제2형 폐포세포가 표면활성제를 만들며 양수에서는 28~32주에 나타납니다. X선은 미세과립상·공기기관지음영이 특징입니다. 호흡보조·기도 내 표면활성제 투여와 산전 스테로이드가 중요합니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 1쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261030_모성과신생아_신생아호흡기질환.pdf(1).pdf",
@@ -4392,7 +4439,9 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "2": "[임의복원 보기 해설] 옳은 설명이나 다른 보기와 질문 방향의 충돌은 남습니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -4414,67 +4463,47 @@
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
-        "reason": "질문은 옳지 않은 것을 묻지만 ③·④·⑤가 모두 문제되고 ②는 미복원입니다. 자료가 질문 방향 불확실성을 명시하여 보류합니다.",
+        "reason": "②를 학습용으로 보완했지만 기존③·④·⑤와 질문 방향의 불확실성이 남아 단일답을 보류합니다.",
         "limitations": "지문 또는 선택지 일부가 미복원되어 복원된 내용 안에서 검토했습니다.",
         "gradingHold": true,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "질문은 옳지 않은 것을 묻지만 ③·④·⑤가 모두 문제되고 ②는 미복원입니다. 자료가 질문 방향 불확실성을 명시하여 보류합니다."
-      }
-    },
-    {
-      "id": "choi-duyoung-neonatal:18-4",
-      "label": "18-4",
-      "year": 18,
-      "number": 4,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원 문항 — 제공 자료에 지문과 선택지가 없습니다.",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "18_모신_소아과_SJ(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f03-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "18_모신_소아과_SJ(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f03-p001.webp"
+        "decisionReason": "②를 학습용으로 보완했지만 기존③·④·⑤와 질문 방향의 불확실성이 남아 단일답을 보류합니다."
       },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "계면활성제는 양수에서 28~32주에 검출"
+          },
+          {
+            "number": 2,
+            "text": "미복원"
+          },
+          {
+            "number": 3,
+            "text": "INSURE·MIST는 기계환기 기간연장"
+          },
+          {
+            "number": 4,
+            "text": "고빈도환기 금기"
+          },
+          {
+            "number": 5,
+            "text": "출생 직후 임산부보다 신생아를 신생아응급실로 보낸다."
+          }
+        ],
+        "changedNumbers": [
+          2
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -4489,7 +4518,7 @@
       "choices": [
         {
           "number": 1,
-          "text": "미복원"
+          "text": "생후 8주까지의 산소·환기 의존은 기관지폐형성이상과 무관하다. (임의복원)"
         },
         {
           "number": 2,
@@ -4508,9 +4537,9 @@
           "text": "덱사메타손 신중 고려·매달 폐렴구균백신"
         }
       ],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "8주 환기 의존은 BPD이나 white-out이라는 복원은 RDS와 섞여 있습니다. 불완전 증례와 보기를 단일정답화하지 않습니다.\n\n조산아의 장기간 산소·환기 의존은 BPD를 시사합니다. 폐포·폐혈관 발달 저하, 폐손상·염증이 관여하며 기포성·불균질 영상이 나타납니다. 영양·산소화·감염 관리가 기본이고 환기이탈이 어려우면 부작용을 고려하여 덱사메타손을 신중하게 사용합니다. 이뇨제 효과는 단기적입니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 1쪽.",
+      "answer": 4,
+      "answerSource": "v1.1.12_evidence_based_exam_answer_adoption",
+      "explanation": "30주 출생 후 8주까지 기계환기 의존이라는 경과는 BPD에 부합하여 기존④를 채택합니다. 강의안 PDF51쪽은 교정36주 평가에서 산소30% 이상 또는 양압환기 필요를 중증 기준으로 제시합니다. ⑤의 매달 폐렴구균백신은 맞지 않습니다.\n\nX선 white-out 복원 문구는 초기 RDS 소견과 혼재되어 있습니다. 이 표현은 유지하고 장기 환기 경과 및 중증 기준에 근거해 채택했습니다.\n\n조산아의 장기간 산소·환기 의존은 BPD를 시사합니다. 폐포·폐혈관 발달 저하, 폐손상·염증이 관여하며 기포성·불균질 영상이 나타납니다. 영양·산소화·감염 관리가 기본이고 환기이탈이 어려우면 부작용을 고려하여 덱사메타손을 신중하게 사용합니다. 이뇨제 효과는 단기적입니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 1쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261030_모성과신생아_신생아호흡기질환.pdf(1).pdf",
@@ -4568,7 +4597,10 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "1": "[임의복원 보기 해설] 장기간 산소·환기 의존은 BPD를 시사합니다.",
+        "4": "채택 정답: 30주 출생 후 8주까지 기계환기 의존이라는 경과는 BPD에 부합하여 기존④를 채택합니다. 강의안 PDF51쪽은 교정36주 평가에서 산소30% 이상 또는 양압환기 필요를 중증 기준으로 제시합니다. ⑤의 매달 폐렴구균백신은 맞지 않습니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -4589,18 +4621,67 @@
       "unitId": "neonatal-bpd",
       "archiveUnrecovered": false,
       "lectureAudit": {
-        "status": "unresolved",
-        "reason": "8주 환기 의존은 BPD이나 white-out이라는 복원은 RDS와 섞여 있습니다. 불완전 증례와 보기를 단일정답화하지 않습니다.",
-        "limitations": "지문 또는 선택지 일부가 미복원되어 복원된 내용 안에서 검토했습니다.",
-        "gradingHold": true,
+        "status": "partial",
+        "reason": "30주 출생 후 8주까지 기계환기 의존이라는 경과는 BPD에 부합하여 기존④를 채택합니다. 강의안 PDF51쪽은 교정36주 평가에서 산소30% 이상 또는 양압환기 필요를 중증 기준으로 제시합니다. ⑤의 매달 폐렴구균백신은 맞지 않습니다.",
+        "limitations": "X선 white-out 복원 문구는 초기 RDS 소견과 혼재되어 있습니다. 이 표현은 유지하고 장기 환기 경과 및 중증 기준에 근거해 채택했습니다.",
+        "gradingHold": false,
         "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
+        "answerRevised": true,
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "needs_review",
+        "stage": "accepted",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "8주 환기 의존은 BPD이나 white-out이라는 복원은 RDS와 섞여 있습니다. 불완전 증례와 보기를 단일정답화하지 않습니다."
+        "decisionReason": "30주 출생 후 8주까지 기계환기 의존이라는 경과는 BPD에 부합하여 기존④를 채택합니다. 강의안 PDF51쪽은 교정36주 평가에서 산소30% 이상 또는 양압환기 필요를 중증 기준으로 제시합니다. ⑤의 매달 폐렴구균백신은 맞지 않습니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "미복원"
+          },
+          {
+            "number": 2,
+            "text": "Surfactant가 많아 생긴 질환"
+          },
+          {
+            "number": 3,
+            "text": "X선 과립상·공기기관지음영"
+          },
+          {
+            "number": 4,
+            "text": "30% 이상 산소투여가 필요한 기계환기면 중증"
+          },
+          {
+            "number": 5,
+            "text": "덱사메타손 신중 고려·매달 폐렴구균백신"
+          }
+        ],
+        "changedNumbers": [
+          1
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
+      },
+      "reviewHistoryV111": {
+        "answer": null,
+        "lectureAudit": {
+          "status": "unresolved",
+          "reason": "8주 환기 의존은 BPD이나 white-out이라는 복원은 RDS와 섞여 있습니다. 불완전 증례와 보기를 단일정답화하지 않습니다.",
+          "limitations": "지문 또는 선택지 일부가 미복원되어 복원된 내용 안에서 검토했습니다.",
+          "gradingHold": true,
+          "referenceAnswer": null,
+          "answerRevised": false,
+          "version": "1.1.12"
+        },
+        "explanation": "8주 환기 의존은 BPD이나 white-out이라는 복원은 RDS와 섞여 있습니다. 불완전 증례와 보기를 단일정답화하지 않습니다.\n\n조산아의 장기간 산소·환기 의존은 BPD를 시사합니다. 폐포·폐혈관 발달 저하, 폐손상·염증이 관여하며 기포성·불균질 영상이 나타납니다. 영양·산소화·감염 관리가 기본이고 환기이탈이 어려우면 부작용을 고려하여 덱사메타손을 신중하게 사용합니다. 이뇨제 효과는 단기적입니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 1쪽."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "ai_review",
+        "version": "1.1.12",
+        "reason": "30주 출생 후 8주까지 기계환기 의존이라는 경과는 BPD에 부합하여 기존④를 채택합니다. 강의안 PDF51쪽은 교정36주 평가에서 산소30% 이상 또는 양압환기 필요를 중증 기준으로 제시합니다. ⑤의 매달 폐렴구균백신은 맞지 않습니다."
       }
     },
     {
@@ -4868,9 +4949,9 @@
           "text": "고혈압·고혈당·장천공 의심 시 steroid"
         }
       ],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "앞 증례는 MAS인데 보기는 BPD 관리에 가까워 어느 증례를 지시하는지 불명확합니다.\n\n조산아의 장기간 산소·환기 의존은 BPD를 시사합니다. 폐포·폐혈관 발달 저하, 폐손상·염증이 관여하며 기포성·불균질 영상이 나타납니다. 영양·산소화·감염 관리가 기본이고 환기이탈이 어려우면 부작용을 고려하여 덱사메타손을 신중하게 사용합니다. 이뇨제 효과는 단기적입니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 2쪽.",
+      "answer": 2,
+      "answerSource": "v1.1.12_evidence_based_exam_answer_adoption",
+      "explanation": "기존②의 적절한 영양·산소화 유지·감염의 신속한 치료를 채택합니다. 강의안 PDF52쪽의 BPD 기본 치료와 일치합니다. 앞 증례를 MAS로 해석해도 이 기본 지지치료는 배치되지 않습니다. 장기 이뇨제를 일률적으로 쓰거나 산소포화도85%를 목표로 하는 보기는 적절하지 않습니다.\n\n상기질환이 가리키는 원래 증례는 불명확합니다. 복원된 보기 중 두 해석 모두에 타당한 기본 관리 원칙을 채택했습니다.\n\n조산아의 장기간 산소·환기 의존은 BPD를 시사합니다. 폐포·폐혈관 발달 저하, 폐손상·염증이 관여하며 기포성·불균질 영상이 나타납니다. 영양·산소화·감염 관리가 기본이고 환기이탈이 어려우면 부작용을 고려하여 덱사메타손을 신중하게 사용합니다. 이뇨제 효과는 단기적입니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 2쪽.",
       "evidence": [
         {
           "file": "최두영pf_261030_모성과신생아_신생아호흡기질환.pdf(1).pdf",
@@ -4928,7 +5009,9 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "2": "채택 정답: 기존②의 적절한 영양·산소화 유지·감염의 신속한 치료를 채택합니다. 강의안 PDF52쪽의 BPD 기본 치료와 일치합니다. 앞 증례를 MAS로 해석해도 이 기본 지지치료는 배치되지 않습니다. 장기 이뇨제를 일률적으로 쓰거나 산소포화도85%를 목표로 하는 보기는 적절하지 않습니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -4949,18 +5032,37 @@
       "unitId": "neonatal-bpd",
       "archiveUnrecovered": false,
       "lectureAudit": {
-        "status": "unresolved",
-        "reason": "앞 증례는 MAS인데 보기는 BPD 관리에 가까워 어느 증례를 지시하는지 불명확합니다.",
-        "limitations": "",
-        "gradingHold": true,
+        "status": "partial",
+        "reason": "기존②의 적절한 영양·산소화 유지·감염의 신속한 치료를 채택합니다. 강의안 PDF52쪽의 BPD 기본 치료와 일치합니다. 앞 증례를 MAS로 해석해도 이 기본 지지치료는 배치되지 않습니다. 장기 이뇨제를 일률적으로 쓰거나 산소포화도85%를 목표로 하는 보기는 적절하지 않습니다.",
+        "limitations": "상기질환이 가리키는 원래 증례는 불명확합니다. 복원된 보기 중 두 해석 모두에 타당한 기본 관리 원칙을 채택했습니다.",
+        "gradingHold": false,
         "referenceAnswer": 2,
-        "answerRevised": false,
-        "version": "1.1.11"
+        "answerRevised": true,
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "needs_review",
+        "stage": "accepted",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "앞 증례는 MAS인데 보기는 BPD 관리에 가까워 어느 증례를 지시하는지 불명확합니다."
+        "decisionReason": "기존②의 적절한 영양·산소화 유지·감염의 신속한 치료를 채택합니다. 강의안 PDF52쪽의 BPD 기본 치료와 일치합니다. 앞 증례를 MAS로 해석해도 이 기본 지지치료는 배치되지 않습니다. 장기 이뇨제를 일률적으로 쓰거나 산소포화도85%를 목표로 하는 보기는 적절하지 않습니다."
+      },
+      "reviewHistoryV111": {
+        "answer": null,
+        "lectureAudit": {
+          "status": "unresolved",
+          "reason": "앞 증례는 MAS인데 보기는 BPD 관리에 가까워 어느 증례를 지시하는지 불명확합니다.",
+          "limitations": "",
+          "gradingHold": true,
+          "referenceAnswer": 2,
+          "answerRevised": false,
+          "version": "1.1.11"
+        },
+        "explanation": "앞 증례는 MAS인데 보기는 BPD 관리에 가까워 어느 증례를 지시하는지 불명확합니다.\n\n조산아의 장기간 산소·환기 의존은 BPD를 시사합니다. 폐포·폐혈관 발달 저하, 폐손상·염증이 관여하며 기포성·불균질 영상이 나타납니다. 영양·산소화·감염 관리가 기본이고 환기이탈이 어려우면 부작용을 고려하여 덱사메타손을 신중하게 사용합니다. 이뇨제 효과는 단기적입니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 2쪽."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "ai_review",
+        "version": "1.1.12",
+        "reason": "기존②의 적절한 영양·산소화 유지·감염의 신속한 치료를 채택합니다. 강의안 PDF52쪽의 BPD 기본 치료와 일치합니다. 앞 증례를 MAS로 해석해도 이 기본 지지치료는 배치되지 않습니다. 장기 이뇨제를 일률적으로 쓰거나 산소포화도85%를 목표로 하는 보기는 적절하지 않습니다."
       }
     },
     {
@@ -4994,9 +5096,9 @@
           "text": "농축적혈구에 백혈구 여과필터 미사용"
         }
       ],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "DAT 음성만으로 유전구형적혈구증을 주원인으로 확정하지 못합니다. 실혈 감별 보기와 경쟁하고 직접·간접빌리루빈 수치도 재확인이 필요합니다.\n\n임신 후기 주요 Hb는 HbF입니다. 빈혈은 실혈·파괴증가·생산감소로 분류하고 망상적혈구·DAT·말초도말·병력을 함께 봅니다. DAT 음성 용혈에서는 적혈구막 질환도 감별하지만 이것만으로 유전구형적혈구증을 확진하지 않습니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 2쪽.",
+      "answer": 4,
+      "answerSource": "v1.1.12_evidence_based_exam_answer_adoption",
+      "explanation": "실혈·용혈 감별을 위한 기존④ Kleihauer–Betke 검사를 채택합니다. 산모 혈액의 태아 적혈구를 검출해 태아모체출혈을 평가합니다. DAT 음성만으로② 유전구형적혈구증을 주원인으로 확정하지 못합니다.\n\n제공 강의안은 빈혈 감별의 배경 근거이며 Kleihauer–Betke의 산모 검체·용도는 외부 자료로 보완했습니다. 복원된 빌리루빈 수치의 불확실성은 남습니다.\n\n임신 후기 주요 Hb는 HbF입니다. 빈혈은 실혈·파괴증가·생산감소로 분류하고 망상적혈구·DAT·말초도말·병력을 함께 봅니다. DAT 음성 용혈에서는 적혈구막 질환도 감별하지만 이것만으로 유전구형적혈구증을 확진하지 않습니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 2쪽.\n\n외부 보완근거: https://www.msdmanuals.com/professional/pediatrics/perinatal-hematologic-disorders/perinatal-anemia",
       "evidence": [
         {
           "file": "25.11.11._모성과신생아_최두영pf_신생아혈액질환(1).pdf",
@@ -5045,7 +5147,9 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "4": "채택 정답: 실혈·용혈 감별을 위한 기존④ Kleihauer–Betke 검사를 채택합니다. 산모 혈액의 태아 적혈구를 검출해 태아모체출혈을 평가합니다. DAT 음성만으로② 유전구형적혈구증을 주원인으로 확정하지 못합니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -5066,18 +5170,44 @@
       "unitId": "neonatal-anemia",
       "archiveUnrecovered": false,
       "lectureAudit": {
-        "status": "unresolved",
-        "reason": "DAT 음성만으로 유전구형적혈구증을 주원인으로 확정하지 못합니다. 실혈 감별 보기와 경쟁하고 직접·간접빌리루빈 수치도 재확인이 필요합니다.",
-        "limitations": "",
-        "gradingHold": true,
+        "status": "partial",
+        "reason": "실혈·용혈 감별을 위한 기존④ Kleihauer–Betke 검사를 채택합니다. 산모 혈액의 태아 적혈구를 검출해 태아모체출혈을 평가합니다. DAT 음성만으로② 유전구형적혈구증을 주원인으로 확정하지 못합니다.",
+        "limitations": "제공 강의안은 빈혈 감별의 배경 근거이며 Kleihauer–Betke의 산모 검체·용도는 외부 자료로 보완했습니다. 복원된 빌리루빈 수치의 불확실성은 남습니다.",
+        "gradingHold": false,
         "referenceAnswer": 2,
-        "answerRevised": false,
-        "version": "1.1.11"
+        "answerRevised": true,
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "needs_review",
+        "stage": "accepted",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "DAT 음성만으로 유전구형적혈구증을 주원인으로 확정하지 못합니다. 실혈 감별 보기와 경쟁하고 직접·간접빌리루빈 수치도 재확인이 필요합니다."
+        "decisionReason": "실혈·용혈 감별을 위한 기존④ Kleihauer–Betke 검사를 채택합니다. 산모 혈액의 태아 적혈구를 검출해 태아모체출혈을 평가합니다. DAT 음성만으로② 유전구형적혈구증을 주원인으로 확정하지 못합니다."
+      },
+      "reviewHistoryV111": {
+        "answer": null,
+        "lectureAudit": {
+          "status": "unresolved",
+          "reason": "DAT 음성만으로 유전구형적혈구증을 주원인으로 확정하지 못합니다. 실혈 감별 보기와 경쟁하고 직접·간접빌리루빈 수치도 재확인이 필요합니다.",
+          "limitations": "",
+          "gradingHold": true,
+          "referenceAnswer": 2,
+          "answerRevised": false,
+          "version": "1.1.11"
+        },
+        "explanation": "DAT 음성만으로 유전구형적혈구증을 주원인으로 확정하지 못합니다. 실혈 감별 보기와 경쟁하고 직접·간접빌리루빈 수치도 재확인이 필요합니다.\n\n임신 후기 주요 Hb는 HbF입니다. 빈혈은 실혈·파괴증가·생산감소로 분류하고 망상적혈구·DAT·말초도말·병력을 함께 봅니다. DAT 음성 용혈에서는 적혈구막 질환도 감별하지만 이것만으로 유전구형적혈구증을 확진하지 않습니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 2쪽."
+      },
+      "externalEvidence": [
+        {
+          "url": "https://www.msdmanuals.com/professional/pediatrics/perinatal-hematologic-disorders/perinatal-anemia",
+          "role": "lecture_gap_supplement",
+          "accessed": "2026-11-13"
+        }
+      ],
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "ai_review",
+        "version": "1.1.12",
+        "reason": "실혈·용혈 감별을 위한 기존④ Kleihauer–Betke 검사를 채택합니다. 산모 혈액의 태아 적혈구를 검출해 태아모체출혈을 평가합니다. DAT 음성만으로② 유전구형적혈구증을 주원인으로 확정하지 못합니다."
       }
     },
     {
@@ -6184,56 +6314,6 @@
       }
     },
     {
-      "id": "choi-duyoung-neonatal:18-20",
-      "label": "18-20",
-      "year": 18,
-      "number": 20,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원 문항 — 제공 자료에 지문과 선택지가 없습니다.",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "18_모신_소아과_SJ(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f03-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "18_모신_소아과_SJ(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f03-p001.webp"
-      },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
-      }
-    },
-    {
       "id": "choi-duyoung-neonatal:18-21",
       "label": "18-21",
       "year": 18,
@@ -6681,24 +6761,24 @@
         },
         {
           "number": 2,
-          "text": "미복원"
+          "text": "몽고반 (임의복원)"
         },
         {
           "number": 3,
-          "text": "미복원"
+          "text": "독성홍반 (임의복원)"
         },
         {
           "number": 4,
-          "text": "미복원"
+          "text": "비립종 (임의복원)"
         },
         {
           "number": 5,
-          "text": "미복원"
+          "text": "신생아 여드름 (임의복원)"
         }
       ],
       "answer": 1,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "연어반·독성홍반·할리퀸 색조 변화는 정상 신생아에게 나타날 수 있는 일시적 소견입니다. 뒷목의 홍반은 연어반, 홍반 위 작은 농포·구진은 독성홍반과 연결합니다. 해면혈관종은 정상적인 일시적 피부소견과 구분합니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 5쪽.",
+      "explanation": "연어반·독성홍반·할리퀸 색조 변화는 정상 신생아에게 나타날 수 있는 일시적 소견입니다. 뒷목의 홍반은 연어반, 홍반 위 작은 농포·구진은 독성홍반과 연결합니다. 해면혈관종은 정상적인 일시적 피부소견과 구분합니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 5쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261019_모성과신생아_정상신생아.pdf(1).pdf",
@@ -6738,7 +6818,12 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "2": "[임의복원 보기 해설] 천골 부위 청회색 반점과 구별합니다.",
+        "3": "[임의복원 보기 해설] 홍반 바탕의 구진·농포와 구별합니다.",
+        "4": "[임의복원 보기 해설] 작은 백색 각질낭종과 구별합니다.",
+        "5": "[임의복원 보기 해설] 구진·농포성 병변과 구별합니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -6771,12 +6856,45 @@
         "gradingHold": false,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "연어반·독성홍반·할리퀸 색조 변화는 정상 신생아에게 나타날 수 있는 일시적 소견입니다. 뒷목의 홍반은 연어반, 홍반 위 작은 농포·구진은 독성홍반과 연결합니다. 해면혈관종은 정상적인 일시적 피부소견과 구분합니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "연어반"
+          },
+          {
+            "number": 2,
+            "text": "미복원"
+          },
+          {
+            "number": 3,
+            "text": "미복원"
+          },
+          {
+            "number": 4,
+            "text": "미복원"
+          },
+          {
+            "number": 5,
+            "text": "미복원"
+          }
+        ],
+        "changedNumbers": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -6890,7 +7008,7 @@
       "choices": [],
       "answer": null,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "신경근육 성숙도는 자세·손목각도·팔 되돌아오기·오금각도·스카프 징후·발뒤꿈치-귀 시험으로 평가합니다. 미숙할수록 근긴장도가 낮고 오금각도가 큽니다. 성숙한 신생아는 두껍고 갈라진 피부·깊은 발바닥 주름·음낭주름을 보입니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 6쪽.",
+      "explanation": "신경근육 성숙도는 자세·손목각도·팔 되돌아오기·오금각도·스카프 징후·발뒤꿈치-귀 시험으로 평가합니다. 미숙할수록 근긴장도가 낮고 오금각도가 큽니다. 성숙한 신생아는 두껍고 갈라진 피부·깊은 발바닥 주름·음낭주름을 보입니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 6쪽.\n\n지문은 남아 있어 삭제하지 않았습니다. 선택지가 전부 없어 기존 보기 중에서 답을 채택할 수 없습니다. 선택지·정답을 통째로 만들어 원시험 답으로 처리하지 않고 보류합니다.",
       "evidence": [
         {
           "file": "최두영pf_261020_모성과신생아_고위험 신생아.pdf(1).pdf",
@@ -7065,56 +7183,6 @@
       }
     },
     {
-      "id": "choi-duyoung-neonatal:18-30",
-      "label": "18-30",
-      "year": 18,
-      "number": 30,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원 문항 — 제공 자료에 지문과 선택지가 없습니다.",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "18_모신_소아과_SJ(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f03-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "18_모신_소아과_SJ(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f03-p001.webp"
-      },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
-      }
-    },
-    {
       "id": "choi-duyoung-neonatal:18-31",
       "label": "18-31",
       "year": 18,
@@ -7250,12 +7318,12 @@
         },
         {
           "number": 5,
-          "text": "미복원"
+          "text": "귓바퀴 연골이 부드럽고 접힌 상태로 남는다. (임의복원)"
         }
       ],
       "answer": 1,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "신경근육 성숙도는 자세·손목각도·팔 되돌아오기·오금각도·스카프 징후·발뒤꿈치-귀 시험으로 평가합니다. 미숙할수록 근긴장도가 낮고 오금각도가 큽니다. 성숙한 신생아는 두껍고 갈라진 피부·깊은 발바닥 주름·음낭주름을 보입니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 6쪽.",
+      "explanation": "신경근육 성숙도는 자세·손목각도·팔 되돌아오기·오금각도·스카프 징후·발뒤꿈치-귀 시험으로 평가합니다. 미숙할수록 근긴장도가 낮고 오금각도가 큽니다. 성숙한 신생아는 두껍고 갈라진 피부·깊은 발바닥 주름·음낭주름을 보입니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 6쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261020_모성과신생아_고위험 신생아.pdf(1).pdf",
@@ -7295,7 +7363,9 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "5": "[임의복원 보기 해설] 미성숙 소견으로 과숙아에 부합하지 않습니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -7322,62 +7392,42 @@
         "gradingHold": false,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "신경근육 성숙도는 자세·손목각도·팔 되돌아오기·오금각도·스카프 징후·발뒤꿈치-귀 시험으로 평가합니다. 미숙할수록 근긴장도가 낮고 오금각도가 큽니다. 성숙한 신생아는 두껍고 갈라진 피부·깊은 발바닥 주름·음낭주름을 보입니다."
-      }
-    },
-    {
-      "id": "choi-duyoung-neonatal:18-33",
-      "label": "18-33",
-      "year": 18,
-      "number": 33,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원 문항 — 제공 자료에 지문과 선택지가 없습니다.",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "18_모신_소아과_SJ(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f03-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "18_모신_소아과_SJ(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f03-p001.webp"
       },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "음낭주름이 깊다."
+          },
+          {
+            "number": 2,
+            "text": "솜털이 드문드문"
+          },
+          {
+            "number": 3,
+            "text": "매끄러운 피부·실정맥"
+          },
+          {
+            "number": 4,
+            "text": "발바닥 앞쪽만 횡선"
+          },
+          {
+            "number": 5,
+            "text": "미복원"
+          }
+        ],
+        "changedNumbers": [
+          5
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -7584,16 +7634,16 @@
         },
         {
           "number": 4,
-          "text": "미복원"
+          "text": "선천성 뇌류 (임의복원)"
         },
         {
           "number": 5,
-          "text": "미복원"
+          "text": "수두증 (임의복원)"
         }
       ],
       "answer": 3,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "머리부종은 경계가 불분명하고 봉합선을 넘으며, 머리혈종은 골막하 출혈로 경계가 명확하고 봉합선을 넘지 않습니다. 대개 관찰하되 황달·감염에 유의합니다. 머리혈종의 절개·배액은 피합니다. 모상건막밑출혈은 대량출혈 위험이 있는 별도 질환입니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 7쪽.",
+      "explanation": "머리부종은 경계가 불분명하고 봉합선을 넘으며, 머리혈종은 골막하 출혈로 경계가 명확하고 봉합선을 넘지 않습니다. 대개 관찰하되 황달·감염에 유의합니다. 머리혈종의 절개·배액은 피합니다. 모상건막밑출혈은 대량출혈 위험이 있는 별도 질환입니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 7쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261020_모성과신생아_신경질환.pdf(1).pdf",
@@ -7633,7 +7683,10 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "4": "[임의복원 보기 해설] 두개골 결손을 통한 돌출과 구별합니다.",
+        "5": "[임의복원 보기 해설] 뇌실확장에 의한 머리둘레 증가와 구별합니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -7660,12 +7713,43 @@
         "gradingHold": false,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "머리부종은 경계가 불분명하고 봉합선을 넘으며, 머리혈종은 골막하 출혈로 경계가 명확하고 봉합선을 넘지 않습니다. 대개 관찰하되 황달·감염에 유의합니다. 머리혈종의 절개·배액은 피합니다. 모상건막밑출혈은 대량출혈 위험이 있는 별도 질환입니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "머리혈종"
+          },
+          {
+            "number": 2,
+            "text": "모상건막하출혈"
+          },
+          {
+            "number": 3,
+            "text": "머리부종"
+          },
+          {
+            "number": 4,
+            "text": "미복원"
+          },
+          {
+            "number": 5,
+            "text": "미복원"
+          }
+        ],
+        "changedNumbers": [
+          4,
+          5
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -7998,16 +8082,16 @@
         },
         {
           "number": 4,
-          "text": "미복원"
+          "text": "저산소허혈 손상은 경련과 의식 저하를 유발할 수 있다. (임의복원)"
         },
         {
           "number": 5,
-          "text": "미복원"
+          "text": "호흡·순환 안정화와 혈당·전해질 평가가 필요하다. (임의복원)"
         }
       ],
       "answer": null,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "② 고산소·저탄산혈증과 ③ 알칼리혈증이 모두 전형적 가사와 반대이며 보기도 미복원되어 단일답을 보류합니다.\n\n주산기가사 후 경련은 저산소허혈뇌병증을 의심합니다. MRI로 손상 범위를 평가하고 aEEG로 무증상 경련을 감시합니다. 과도한 수액과 산소를 피합니다. 강의안의 치료적 저체온은 36주 이상 등 적응증에서 33.5℃이며 23.5℃가 아닙니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 7쪽.",
+      "explanation": "④·⑤를 보완해도 기존② 고산소·저탄산혈증과③ 알칼리혈증이 모두 전형적 가사와 반대여서 단일답을 보류합니다.\n\n주산기가사 후 경련은 저산소허혈뇌병증을 의심합니다. MRI로 손상 범위를 평가하고 aEEG로 무증상 경련을 감시합니다. 과도한 수액과 산소를 피합니다. 강의안의 치료적 저체온은 36주 이상 등 적응증에서 33.5℃이며 23.5℃가 아닙니다.\n\n연도별 원자료: 18_모신_소아과_SJ(1).pdf PDF 7쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261020_모성과신생아_신경질환.pdf(1).pdf",
@@ -8065,7 +8149,10 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "4": "[임의복원 보기 해설] 가능한 신경학적 소견입니다.",
+        "5": "[임의복원 보기 해설] 필요한 지지치료입니다. 기존②·③ 충돌은 남습니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -8087,17 +8174,48 @@
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
-        "reason": "② 고산소·저탄산혈증과 ③ 알칼리혈증이 모두 전형적 가사와 반대이며 보기도 미복원되어 단일답을 보류합니다.",
+        "reason": "④·⑤를 보완해도 기존② 고산소·저탄산혈증과③ 알칼리혈증이 모두 전형적 가사와 반대여서 단일답을 보류합니다.",
         "limitations": "지문 또는 선택지 일부가 미복원되어 복원된 내용 안에서 검토했습니다.",
         "gradingHold": true,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "② 고산소·저탄산혈증과 ③ 알칼리혈증이 모두 전형적 가사와 반대이며 보기도 미복원되어 단일답을 보류합니다."
+        "decisionReason": "④·⑤를 보완해도 기존② 고산소·저탄산혈증과③ 알칼리혈증이 모두 전형적 가사와 반대여서 단일답을 보류합니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "MRI가 진단에 가장 중요"
+          },
+          {
+            "number": 2,
+            "text": "고산소·저탄산혈증"
+          },
+          {
+            "number": 3,
+            "text": "제대동맥 알칼리혈증"
+          },
+          {
+            "number": 4,
+            "text": "미복원"
+          },
+          {
+            "number": 5,
+            "text": "미복원"
+          }
+        ],
+        "changedNumbers": [
+          4,
+          5
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -12995,11 +13113,11 @@
         },
         {
           "number": 3,
-          "text": "미복원"
+          "text": "정상 혈액검사만 확인하고 처치 없이 귀가시킨다. (임의복원)"
         },
         {
           "number": 4,
-          "text": "미복원"
+          "text": "해열제만 투여하고 감염평가를 생략한다. (임의복원)"
         },
         {
           "number": 5,
@@ -13008,7 +13126,7 @@
       ],
       "answer": 5,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "패혈증은 발열 외에도 저체온·수유저하·처짐·무호흡으로 나타납니다. 혈액배양 등 원인평가와 경험적 항생제가 필요합니다. 강의안은 조기발현형 초기 약제로 ampicillin+gentamicin을 제시합니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 2쪽.",
+      "explanation": "패혈증은 발열 외에도 저체온·수유저하·처짐·무호흡으로 나타납니다. 혈액배양 등 원인평가와 경험적 항생제가 필요합니다. 강의안은 조기발현형 초기 약제로 ampicillin+gentamicin을 제시합니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 2쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "25.11.11._모성과신생아_최두영pf_신생아감염질환(1).pdf",
@@ -13066,7 +13184,10 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "3": "[임의복원 보기 해설] 초기 정상 검사만으로 패혈증을 배제하지 못합니다.",
+        "4": "[임의복원 보기 해설] 감염평가와 경험적 항생제를 고려합니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -13093,12 +13214,43 @@
         "gradingHold": false,
         "referenceAnswer": 5,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "패혈증은 발열 외에도 저체온·수유저하·처짐·무호흡으로 나타납니다. 혈액배양 등 원인평가와 경험적 항생제가 필요합니다. 강의안은 조기발현형 초기 약제로 ampicillin+gentamicin을 제시합니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "경구모유수유중단?"
+          },
+          {
+            "number": 2,
+            "text": "경구수액보충또는정맥으로공급"
+          },
+          {
+            "number": 3,
+            "text": "미복원"
+          },
+          {
+            "number": 4,
+            "text": "미복원"
+          },
+          {
+            "number": 5,
+            "text": "경험적항생제ampicillin + aminoglycoside 투여"
+          }
+        ],
+        "changedNumbers": [
+          3,
+          4
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -13327,15 +13479,15 @@
       "choices": [
         {
           "number": 1,
-          "text": "미복원"
+          "text": "혈당을 즉시 측정하고 저혈당이 확인되면 포도당으로 교정한다. (임의복원)"
         },
         {
           "number": 2,
-          "text": "미복원"
+          "text": "혈청 칼슘이 낮다면 저칼슘혈증을 교정한다. (임의복원)"
         },
         {
           "number": 3,
-          "text": "미복원"
+          "text": "경련이 있더라도 혈당과 전해질 검사는 필요하지 않다. (임의복원)"
         },
         {
           "number": 4,
@@ -13348,7 +13500,7 @@
       ],
       "answer": null,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "병력만으로 저칼슘혈증을 단정하지 못하며 저혈당 등도 확인해야 합니다. 검사·선택지가 빠져 보류합니다.\n\n경련·처짐이 있는 신생아는 혈당·칼슘 등 교정 가능한 대사원인을 확인합니다. 증상성 저혈당은 정맥 포도당 치료가 필요합니다. 저혈당과 저칼슘혈증을 실제 수치로 구분해야 합니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 2쪽.",
+      "explanation": "검사 수치가 없고 기존⑤의 일률적 생리식염수 투여는 병력만으로 정당화되지 않습니다. 새로 보완한 조건부 처치 보기를 원시험 답으로 확정하지 않고 보류합니다.\n\n경련·처짐이 있는 신생아는 혈당·칼슘 등 교정 가능한 대사원인을 확인합니다. 증상성 저혈당은 정맥 포도당 치료가 필요합니다. 저혈당과 저칼슘혈증을 실제 수치로 구분해야 합니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 2쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261020_모성과신생아_고위험 신생아.pdf(1).pdf",
@@ -13379,7 +13531,11 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "1": "[임의복원 보기 해설] 저혈당 평가가 필요합니다. 이 새 보기를 원시험 정답으로 확정하지는 않습니다.",
+        "2": "[임의복원 보기 해설] 검사로 확인한 후의 조건부 처치입니다.",
+        "3": "[임의복원 보기 해설] 교정 가능한 원인 평가가 필요합니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -13401,17 +13557,49 @@
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
-        "reason": "병력만으로 저칼슘혈증을 단정하지 못하며 저혈당 등도 확인해야 합니다. 검사·선택지가 빠져 보류합니다.",
+        "reason": "검사 수치가 없고 기존⑤의 일률적 생리식염수 투여는 병력만으로 정당화되지 않습니다. 새로 보완한 조건부 처치 보기를 원시험 답으로 확정하지 않고 보류합니다.",
         "limitations": "지문 또는 선택지 일부가 미복원되어 복원된 내용 안에서 검토했습니다.",
         "gradingHold": true,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "병력만으로 저칼슘혈증을 단정하지 못하며 저혈당 등도 확인해야 합니다. 검사·선택지가 빠져 보류합니다."
+        "decisionReason": "검사 수치가 없고 기존⑤의 일률적 생리식염수 투여는 병력만으로 정당화되지 않습니다. 새로 보완한 조건부 처치 보기를 원시험 답으로 확정하지 않고 보류합니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "미복원"
+          },
+          {
+            "number": 2,
+            "text": "미복원"
+          },
+          {
+            "number": 3,
+            "text": "미복원"
+          },
+          {
+            "number": 4,
+            "text": "치료후저칼륨혈증과저마그네슘혈증을감별해야한다"
+          },
+          {
+            "number": 5,
+            "text": "10% 포도당용액을주사하고생리식염수를투여한다"
+          }
+        ],
+        "changedNumbers": [
+          1,
+          2,
+          3
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -13520,56 +13708,6 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "기존 해설의 클라미디아 결막염 국소 tetracycline 단독 치료는 CDC 지침과 다릅니다. 최신 제공 슬라이드에도 과거 문구가 있으므로 확정답으로 두지 않습니다."
-      }
-    },
-    {
-      "id": "choi-duyoung-neonatal:20-11",
-      "label": "20-11",
-      "year": 20,
-      "number": 11,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원 문항 — 제공 자료에 지문과 선택지가 없습니다.",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "20 모성과신생아 이승현pf 해설(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "20 모성과신생아 이승현pf 해설(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-      },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
       }
     },
     {
@@ -13903,56 +14041,6 @@
       }
     },
     {
-      "id": "choi-duyoung-neonatal:20-15",
-      "label": "20-15",
-      "year": 20,
-      "number": 15,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원 문항 — 제공 자료에 지문과 선택지가 없습니다.",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "20 모성과신생아 이승현pf 해설(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "20 모성과신생아 이승현pf 해설(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-      },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
-      }
-    },
-    {
       "id": "choi-duyoung-neonatal:20-16",
       "label": "20-16",
       "year": 20,
@@ -14169,56 +14257,6 @@
       }
     },
     {
-      "id": "choi-duyoung-neonatal:20-18",
-      "label": "20-18",
-      "year": 20,
-      "number": 18,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원 문항 — 제공 자료에 지문과 선택지가 없습니다.",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "20 모성과신생아 이승현pf 해설(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "20 모성과신생아 이승현pf 해설(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-      },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
-      }
-    },
-    {
       "id": "choi-duyoung-neonatal:20-19",
       "label": "20-19",
       "year": 20,
@@ -14230,15 +14268,15 @@
       "choices": [
         {
           "number": 1,
-          "text": "미복원"
+          "text": "안면신경마비 (임의복원)"
         },
         {
           "number": 2,
-          "text": "미복원"
+          "text": "양측 횡격막마비 (임의복원)"
         },
         {
           "number": 3,
-          "text": "미복원"
+          "text": "선천성 고관절 탈구 (임의복원)"
         },
         {
           "number": 4,
@@ -14251,7 +14289,7 @@
       ],
       "answer": 5,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "Erb-Duchenne 마비는 C5~6 손상으로 어깨·팔 움직임과 모로반사에 이상이 생깁니다. 하부 손상의 Klumpke 마비는 파악기능이 저하하며 T1 교감신경 침범 시 축동·안검하수(Horner)가 동반됩니다. 신경전도검사와 MRI는 신경 찢김 평가에 도움이 됩니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 5쪽.",
+      "explanation": "Erb-Duchenne 마비는 C5~6 손상으로 어깨·팔 움직임과 모로반사에 이상이 생깁니다. 하부 손상의 Klumpke 마비는 파악기능이 저하하며 T1 교감신경 침범 시 축동·안검하수(Horner)가 동반됩니다. 신경전도검사와 MRI는 신경 찢김 평가에 도움이 됩니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 5쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261020_모성과신생아_신경질환.pdf(1).pdf",
@@ -14282,7 +14320,11 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "1": "[임의복원 보기 해설] 안면 비대칭을 주로 설명합니다.",
+        "2": "[임의복원 보기 해설] 주된 문제는 호흡장애입니다.",
+        "3": "[임의복원 보기 해설] 한쪽 팔 운동저하를 설명하지 못합니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -14309,12 +14351,44 @@
         "gradingHold": false,
         "referenceAnswer": 5,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "Erb-Duchenne 마비는 C5~6 손상으로 어깨·팔 움직임과 모로반사에 이상이 생깁니다. 하부 손상의 Klumpke 마비는 파악기능이 저하하며 T1 교감신경 침범 시 축동·안검하수(Horner)가 동반됩니다. 신경전도검사와 MRI는 신경 찢김 평가에 도움이 됩니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "미복원"
+          },
+          {
+            "number": 2,
+            "text": "미복원"
+          },
+          {
+            "number": 3,
+            "text": "미복원"
+          },
+          {
+            "number": 4,
+            "text": "횡격막신경마비"
+          },
+          {
+            "number": 5,
+            "text": "Erb-Duchenne 마비"
+          }
+        ],
+        "changedNumbers": [
+          1,
+          2,
+          3
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -14441,56 +14515,6 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "주산기가사 후 경련은 저산소허혈뇌병증을 의심합니다. MRI로 손상 범위를 평가하고 aEEG로 무증상 경련을 감시합니다. 과도한 수액과 산소를 피합니다. 강의안의 치료적 저체온은 36주 이상 등 적응증에서 33.5℃이며 23.5℃가 아닙니다."
-      }
-    },
-    {
-      "id": "choi-duyoung-neonatal:20-21",
-      "label": "20-21",
-      "year": 20,
-      "number": 21,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원 문항 — 제공 자료에 지문과 선택지가 없습니다.",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "20 모성과신생아 이승현pf 해설(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "20 모성과신생아 이승현pf 해설(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-      },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
       }
     },
     {
@@ -14884,56 +14908,6 @@
       }
     },
     {
-      "id": "choi-duyoung-neonatal:20-25",
-      "label": "20-25",
-      "year": 20,
-      "number": 25,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원 문항 — 제공 자료에 지문과 선택지가 없습니다.",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "20 모성과신생아 이승현pf 해설(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "20 모성과신생아 이승현pf 해설(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-      },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
-      }
-    },
-    {
       "id": "choi-duyoung-neonatal:20-26",
       "label": "20-26",
       "year": 20,
@@ -14964,9 +14938,9 @@
           "text": "기관지내 폐표면활성제 투여"
         }
       ],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "기존 해설은 BPD와 덱사메타손②를 연결하지만 해당 연도 앞 증례가 빠져 전제를 확인할 수 없어 참고답만 남깁니다.\n\n조산아의 장기간 산소·환기 의존은 BPD를 시사합니다. 폐포·폐혈관 발달 저하, 폐손상·염증이 관여하며 기포성·불균질 영상이 나타납니다. 영양·산소화·감염 관리가 기본이고 환기이탈이 어려우면 부작용을 고려하여 덱사메타손을 신중하게 사용합니다. 이뇨제 효과는 단기적입니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 8쪽.",
+      "answer": 2,
+      "answerSource": "v1.1.12_evidence_based_exam_answer_adoption",
+      "explanation": "현재 표시된 복원 증례의 30주·1000g·6주간 기계환기 의존과 해당 연도 해설의 BPD 진단을 기준으로 기존② 덱사메타손을 채택합니다. 강의안 PDF53쪽은 장기 환기 의존에서 부작용을 고려한 신중한 사용을 설명합니다. 모든 BPD 아기에게 일률적으로 투여한다는 뜻은 아닙니다.\n\n해당 연도 앞 증례 전체는 확인되지 않았습니다. 현재 복원 증례와 연도별 해설에 근거한 채택이며 원시험 지문 전체가 확인된 것은 아닙니다.\n\n조산아의 장기간 산소·환기 의존은 BPD를 시사합니다. 폐포·폐혈관 발달 저하, 폐손상·염증이 관여하며 기포성·불균질 영상이 나타납니다. 영양·산소화·감염 관리가 기본이고 환기이탈이 어려우면 부작용을 고려하여 덱사메타손을 신중하게 사용합니다. 이뇨제 효과는 단기적입니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 8쪽.",
       "evidence": [
         {
           "file": "최두영pf_261030_모성과신생아_신생아호흡기질환.pdf(1).pdf",
@@ -15024,7 +14998,9 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "2": "채택 정답: 현재 표시된 복원 증례의 30주·1000g·6주간 기계환기 의존과 해당 연도 해설의 BPD 진단을 기준으로 기존② 덱사메타손을 채택합니다. 강의안 PDF53쪽은 장기 환기 의존에서 부작용을 고려한 신중한 사용을 설명합니다. 모든 BPD 아기에게 일률적으로 투여한다는 뜻은 아닙니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -15051,18 +15027,37 @@
       "unitId": "neonatal-bpd",
       "archiveUnrecovered": false,
       "lectureAudit": {
-        "status": "unresolved",
-        "reason": "기존 해설은 BPD와 덱사메타손②를 연결하지만 해당 연도 앞 증례가 빠져 전제를 확인할 수 없어 참고답만 남깁니다.",
-        "limitations": "",
-        "gradingHold": true,
+        "status": "partial",
+        "reason": "현재 표시된 복원 증례의 30주·1000g·6주간 기계환기 의존과 해당 연도 해설의 BPD 진단을 기준으로 기존② 덱사메타손을 채택합니다. 강의안 PDF53쪽은 장기 환기 의존에서 부작용을 고려한 신중한 사용을 설명합니다. 모든 BPD 아기에게 일률적으로 투여한다는 뜻은 아닙니다.",
+        "limitations": "해당 연도 앞 증례 전체는 확인되지 않았습니다. 현재 복원 증례와 연도별 해설에 근거한 채택이며 원시험 지문 전체가 확인된 것은 아닙니다.",
+        "gradingHold": false,
         "referenceAnswer": 2,
-        "answerRevised": false,
-        "version": "1.1.11"
+        "answerRevised": true,
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "needs_review",
+        "stage": "accepted",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "기존 해설은 BPD와 덱사메타손②를 연결하지만 해당 연도 앞 증례가 빠져 전제를 확인할 수 없어 참고답만 남깁니다."
+        "decisionReason": "현재 표시된 복원 증례의 30주·1000g·6주간 기계환기 의존과 해당 연도 해설의 BPD 진단을 기준으로 기존② 덱사메타손을 채택합니다. 강의안 PDF53쪽은 장기 환기 의존에서 부작용을 고려한 신중한 사용을 설명합니다. 모든 BPD 아기에게 일률적으로 투여한다는 뜻은 아닙니다."
+      },
+      "reviewHistoryV111": {
+        "answer": null,
+        "lectureAudit": {
+          "status": "unresolved",
+          "reason": "기존 해설은 BPD와 덱사메타손②를 연결하지만 해당 연도 앞 증례가 빠져 전제를 확인할 수 없어 참고답만 남깁니다.",
+          "limitations": "",
+          "gradingHold": true,
+          "referenceAnswer": 2,
+          "answerRevised": false,
+          "version": "1.1.11"
+        },
+        "explanation": "기존 해설은 BPD와 덱사메타손②를 연결하지만 해당 연도 앞 증례가 빠져 전제를 확인할 수 없어 참고답만 남깁니다.\n\n조산아의 장기간 산소·환기 의존은 BPD를 시사합니다. 폐포·폐혈관 발달 저하, 폐손상·염증이 관여하며 기포성·불균질 영상이 나타납니다. 영양·산소화·감염 관리가 기본이고 환기이탈이 어려우면 부작용을 고려하여 덱사메타손을 신중하게 사용합니다. 이뇨제 효과는 단기적입니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 8쪽."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "ai_review",
+        "version": "1.1.12",
+        "reason": "현재 표시된 복원 증례의 30주·1000g·6주간 기계환기 의존과 해당 연도 해설의 BPD 진단을 기준으로 기존② 덱사메타손을 채택합니다. 강의안 PDF53쪽은 장기 환기 의존에서 부작용을 고려한 신중한 사용을 설명합니다. 모든 BPD 아기에게 일률적으로 투여한다는 뜻은 아닙니다."
       }
     },
     {
@@ -15347,56 +15342,6 @@
         "decisionReason": "과거 참고처치는 1~2일 모유중단입니다. 현재 권고는 대부분 수유를 지속하며 일시중단은 개별 판단합니다. 수치·선택지가 없으므로 참고답과 한계를 제시하고 수동채점합니다."
       },
       "gradingMode": "manual"
-    },
-    {
-      "id": "choi-duyoung-neonatal:20-30",
-      "label": "20-30",
-      "year": 20,
-      "number": 30,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원 문항 — 제공 자료에 지문과 선택지가 없습니다.",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "20 모성과신생아 이승현pf 해설(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "20 모성과신생아 이승현pf 해설(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-      },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
-      }
     },
     {
       "id": "choi-duyoung-neonatal:20-31",
@@ -15693,106 +15638,6 @@
       }
     },
     {
-      "id": "choi-duyoung-neonatal:20-33",
-      "label": "20-33",
-      "year": 20,
-      "number": 33,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원 문항 — 제공 자료에 지문과 선택지가 없습니다.",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "20 모성과신생아 이승현pf 해설(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "20 모성과신생아 이승현pf 해설(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-      },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
-      }
-    },
-    {
-      "id": "choi-duyoung-neonatal:20-34",
-      "label": "20-34",
-      "year": 20,
-      "number": 34,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원 문항 — 제공 자료에 지문과 선택지가 없습니다.",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "20 모성과신생아 이승현pf 해설(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "20 모성과신생아 이승현pf 해설(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-      },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
-      }
-    },
-    {
       "id": "choi-duyoung-neonatal:20-35",
       "label": "20-35",
       "year": 20,
@@ -15973,56 +15818,6 @@
       }
     },
     {
-      "id": "choi-duyoung-neonatal:20-37",
-      "label": "20-37",
-      "year": 20,
-      "number": 37,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원 문항 — 제공 자료에 지문과 선택지가 없습니다.",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "20 모성과신생아 이승현pf 해설(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "20 모성과신생아 이승현pf 해설(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f16-p001.webp"
-      },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
-      }
-    },
-    {
       "id": "choi-duyoung-neonatal:20-38",
       "label": "20-38",
       "year": 20,
@@ -16034,7 +15829,7 @@
       "choices": [
         {
           "number": 1,
-          "text": "미복원"
+          "text": "생후 40일에 발생했으므로 조기발현형이다. (임의복원)"
         },
         {
           "number": 2,
@@ -16042,20 +15837,20 @@
         },
         {
           "number": 3,
-          "text": "미복원"
+          "text": "극소저체중과 장기 NICU 입원은 감염 위험과 무관하다. (임의복원)"
         },
         {
           "number": 4,
-          "text": "미복원"
+          "text": "혈액배양을 시행하지 않고 감염 여부를 확정한다. (임의복원)"
         },
         {
           "number": 5,
           "text": "임산부 생식기"
         }
       ],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "② 늦은 후기형은 40일과 맞지만 다른 보기가 복원되지 않아 단일답을 확정하지 않습니다.\n\n강의안은 조기·후기·늦은 후기형을 구분하며 생후 30일 이후는 늦은 후기형입니다. 조산·저출생체중·장기 NICU 입원은 위험인자이고 감염평가를 혈액배양 하나로 제한하지 않습니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 10쪽.",
+      "answer": 2,
+      "answerSource": "v1.1.12_evidence_based_exam_answer_adoption",
+      "explanation": "생후40일 NICU 장기 입원 중 감염은 강의안 PDF16쪽의 생후30일 이상 늦은 후기발현형에 맞으므로 기존②를 채택합니다. 미복원 보기 때문에만 보류하던 사유를 해제합니다.\n\n원래①·③·④는 확인되지 않아 학습용으로 보완했습니다. 기존⑤의 짧은 문구는 사용자 기준에 따라 고치지 않았습니다.\n\n강의안은 조기·후기·늦은 후기형을 구분하며 생후 30일 이후는 늦은 후기형입니다. 조산·저출생체중·장기 NICU 입원은 위험인자이고 감염평가를 혈액배양 하나로 제한하지 않습니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 10쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "25.11.11._모성과신생아_최두영pf_신생아감염질환(1).pdf",
@@ -16104,7 +15899,12 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "1": "[임의복원 보기 해설] 강의안의 조기형은 생후7일 이내입니다.",
+        "3": "[임의복원 보기 해설] 둘 다 위험요인입니다.",
+        "4": "[임의복원 보기 해설] 혈액배양을 포함한 감염평가가 필요합니다.",
+        "2": "채택 정답: 생후40일 NICU 장기 입원 중 감염은 강의안 PDF16쪽의 생후30일 이상 늦은 후기발현형에 맞으므로 기존②를 채택합니다. 미복원 보기 때문에만 보류하던 사유를 해제합니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -16125,18 +15925,69 @@
       "unitId": "neonatal-late",
       "archiveUnrecovered": false,
       "lectureAudit": {
-        "status": "unresolved",
-        "reason": "② 늦은 후기형은 40일과 맞지만 다른 보기가 복원되지 않아 단일답을 확정하지 않습니다.",
-        "limitations": "지문 또는 선택지 일부가 미복원되어 복원된 내용 안에서 검토했습니다.",
-        "gradingHold": true,
+        "status": "partial",
+        "reason": "생후40일 NICU 장기 입원 중 감염은 강의안 PDF16쪽의 생후30일 이상 늦은 후기발현형에 맞으므로 기존②를 채택합니다. 미복원 보기 때문에만 보류하던 사유를 해제합니다.",
+        "limitations": "원래①·③·④는 확인되지 않아 학습용으로 보완했습니다. 기존⑤의 짧은 문구는 사용자 기준에 따라 고치지 않았습니다.",
+        "gradingHold": false,
         "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
+        "answerRevised": true,
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "needs_review",
+        "stage": "accepted",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "② 늦은 후기형은 40일과 맞지만 다른 보기가 복원되지 않아 단일답을 확정하지 않습니다."
+        "decisionReason": "생후40일 NICU 장기 입원 중 감염은 강의안 PDF16쪽의 생후30일 이상 늦은 후기발현형에 맞으므로 기존②를 채택합니다. 미복원 보기 때문에만 보류하던 사유를 해제합니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "미복원"
+          },
+          {
+            "number": 2,
+            "text": "늦은 후기발현형"
+          },
+          {
+            "number": 3,
+            "text": "미복원"
+          },
+          {
+            "number": 4,
+            "text": "미복원"
+          },
+          {
+            "number": 5,
+            "text": "임산부 생식기"
+          }
+        ],
+        "changedNumbers": [
+          1,
+          3,
+          4
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
+      },
+      "reviewHistoryV111": {
+        "answer": null,
+        "lectureAudit": {
+          "status": "unresolved",
+          "reason": "② 늦은 후기형은 40일과 맞지만 다른 보기가 복원되지 않아 단일답을 확정하지 않습니다.",
+          "limitations": "지문 또는 선택지 일부가 미복원되어 복원된 내용 안에서 검토했습니다.",
+          "gradingHold": true,
+          "referenceAnswer": null,
+          "answerRevised": false,
+          "version": "1.1.12"
+        },
+        "explanation": "② 늦은 후기형은 40일과 맞지만 다른 보기가 복원되지 않아 단일답을 확정하지 않습니다.\n\n강의안은 조기·후기·늦은 후기형을 구분하며 생후 30일 이후는 늦은 후기형입니다. 조산·저출생체중·장기 NICU 입원은 위험인자이고 감염평가를 혈액배양 하나로 제한하지 않습니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 10쪽."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "ai_review",
+        "version": "1.1.12",
+        "reason": "생후40일 NICU 장기 입원 중 감염은 강의안 PDF16쪽의 생후30일 이상 늦은 후기발현형에 맞으므로 기존②를 채택합니다. 미복원 보기 때문에만 보류하던 사유를 해제합니다."
       }
     },
     {
@@ -16269,7 +16120,7 @@
         },
         {
           "number": 2,
-          "text": "위흡인물 또는 혈액 Apt(검체 표현 미복원)"
+          "text": "혈성 위흡인물 또는 토혈 검체의 Apt 검사 (임의복원)"
         },
         {
           "number": 3,
@@ -16286,7 +16137,7 @@
       ],
       "answer": 2,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "Apt 검사는 알칼리에 대한 HbF 저항성으로 삼킨 모체혈액과 신생아 출혈을 구분합니다. 모체혈액에서 태아적혈구를 찾는 Kleihauer-Betke와 검체·목적이 다릅니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 12쪽.",
+      "explanation": "Apt 검사는 알칼리에 대한 HbF 저항성으로 삼킨 모체혈액과 신생아 출혈을 구분합니다. 모체혈액에서 태아적혈구를 찾는 Kleihauer-Betke와 검체·목적이 다릅니다.\n\n연도별 원자료: 20 모성과신생아 이승현pf 해설(1).pdf PDF 12쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261019_모성과신생아_신생아 소생술과 분만실에서의 응급상황.pdf(1).pdf",
@@ -16308,7 +16159,9 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "2": "[임의복원 보기 해설] 삼킨 모체혈과 신생아 자신의 출혈을 감별합니다. 누락된 검체 표현만 보완했습니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -16335,12 +16188,42 @@
         "gradingHold": false,
         "referenceAnswer": 2,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "Apt 검사는 알칼리에 대한 HbF 저항성으로 삼킨 모체혈액과 신생아 출혈을 구분합니다. 모체혈액에서 태아적혈구를 찾는 Kleihauer-Betke와 검체·목적이 다릅니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "신생아 혈액 Kleihauer-Betke"
+          },
+          {
+            "number": 2,
+            "text": "위흡인물 또는 혈액 Apt(검체 표현 미복원)"
+          },
+          {
+            "number": 3,
+            "text": "직접항글로불린검사"
+          },
+          {
+            "number": 4,
+            "text": "위내시경"
+          },
+          {
+            "number": 5,
+            "text": "복부 CT"
+          }
+        ],
+        "changedNumbers": [
+          2
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -16375,8 +16258,8 @@
         }
       ],
       "answer": 5,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "늑골하연 약 2cm에서 만져지는 간, 턱의 간대성 움직임, 호르몬 영향의 유방비대는 정상일 수 있습니다. 비대칭 모로반사는 쇄골골절·위팔신경 손상 등을 확인해야 합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 1쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n늑골하연 약 2cm에서 만져지는 간, 턱의 간대성 움직임, 호르몬 영향의 유방비대는 정상일 수 있습니다. 비대칭 모로반사는 쇄골골절·위팔신경 손상 등을 확인해야 합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 1쪽.",
       "evidence": [
         {
           "file": "최두영pf_261019_모성과신생아_정상신생아.pdf(1).pdf",
@@ -16449,12 +16332,18 @@
         "gradingHold": false,
         "referenceAnswer": 5,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "lecture_reviewed",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "늑골하연 약 2cm에서 만져지는 간, 턱의 간대성 움직임, 호르몬 영향의 유방비대는 정상일 수 있습니다. 비대칭 모로반사는 쇄골골절·위팔신경 손상 등을 확인해야 합니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -16489,8 +16378,8 @@
         }
       ],
       "answer": 3,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "연어반·독성홍반·할리퀸 색조 변화는 정상 신생아에게 나타날 수 있는 일시적 소견입니다. 뒷목의 홍반은 연어반, 홍반 위 작은 농포·구진은 독성홍반과 연결합니다. 해면혈관종은 정상적인 일시적 피부소견과 구분합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 1쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n연어반·독성홍반·할리퀸 색조 변화는 정상 신생아에게 나타날 수 있는 일시적 소견입니다. 뒷목의 홍반은 연어반, 홍반 위 작은 농포·구진은 독성홍반과 연결합니다. 해면혈관종은 정상적인 일시적 피부소견과 구분합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 1쪽.",
       "evidence": [
         {
           "file": "최두영pf_261019_모성과신생아_정상신생아.pdf(1).pdf",
@@ -16563,12 +16452,18 @@
         "gradingHold": false,
         "referenceAnswer": 3,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "lecture_reviewed",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "연어반·독성홍반·할리퀸 색조 변화는 정상 신생아에게 나타날 수 있는 일시적 소견입니다. 뒷목의 홍반은 연어반, 홍반 위 작은 농포·구진은 독성홍반과 연결합니다. 해면혈관종은 정상적인 일시적 피부소견과 구분합니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -16603,8 +16498,8 @@
         }
       ],
       "answer": 1,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "해당 연도 해설은 신생아 Hb14~20을 기준으로 Hb12인①을 제시합니다. 최신 제공 자료에서 나머지 정상수치를 모두 대조할 직접 표는 확보하지 못했습니다.\n\n임신 후기 주요 Hb는 HbF입니다. 빈혈은 실혈·파괴증가·생산감소로 분류하고 망상적혈구·DAT·말초도말·병력을 함께 봅니다. DAT 음성 용혈에서는 적혈구막 질환도 감별하지만 이것만으로 유전구형적혈구증을 확진하지 않습니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 1쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n해당 연도 해설은 신생아 Hb14~20을 기준으로 Hb12인①을 제시합니다. 최신 제공 자료에서 나머지 정상수치를 모두 대조할 직접 표는 확보하지 못했습니다.\n\n임신 후기 주요 Hb는 HbF입니다. 빈혈은 실혈·파괴증가·생산감소로 분류하고 망상적혈구·DAT·말초도말·병력을 함께 봅니다. DAT 음성 용혈에서는 적혈구막 질환도 감별하지만 이것만으로 유전구형적혈구증을 확진하지 않습니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 1쪽.",
       "evidence": [
         {
           "file": "25.11.11._모성과신생아_최두영pf_신생아혈액질환(1).pdf",
@@ -16680,12 +16575,18 @@
         "gradingHold": false,
         "referenceAnswer": 1,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "needs_review",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "해당 연도 해설은 신생아 Hb14~20을 기준으로 Hb12인①을 제시합니다. 최신 제공 자료에서 나머지 정상수치를 모두 대조할 직접 표는 확보하지 못했습니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -16720,8 +16621,8 @@
         }
       ],
       "answer": 3,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "보온·호흡 확인·비타민 K1 근육주사·안정 후 이른 수유가 기본입니다. 영아급사증후군 예방에는 앙와위를 권합니다. 구개·후두를 거즈로 문지르거나 출생 직후 목욕하는 것은 적절하지 않습니다. 제대동맥은 2개, 제대정맥은 1개입니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 1쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n보온·호흡 확인·비타민 K1 근육주사·안정 후 이른 수유가 기본입니다. 영아급사증후군 예방에는 앙와위를 권합니다. 구개·후두를 거즈로 문지르거나 출생 직후 목욕하는 것은 적절하지 않습니다. 제대동맥은 2개, 제대정맥은 1개입니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 1쪽.",
       "evidence": [
         {
           "file": "최두영pf_261019_모성과신생아_정상신생아.pdf(1).pdf",
@@ -16794,12 +16695,18 @@
         "gradingHold": false,
         "referenceAnswer": 3,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "lecture_reviewed",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "보온·호흡 확인·비타민 K1 근육주사·안정 후 이른 수유가 기본입니다. 영아급사증후군 예방에는 앙와위를 권합니다. 구개·후두를 거즈로 문지르거나 출생 직후 목욕하는 것은 적절하지 않습니다. 제대동맥은 2개, 제대정맥은 1개입니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -16834,8 +16741,8 @@
         }
       ],
       "answer": 3,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "미숙아는 37주 미만, 과숙아는 42주 이상입니다. LBW 2,500g 미만, VLBW 1,500g 미만, ELBW 1,000g 미만으로 구분합니다. SGA는 해당 임신나이 출생체중 10백분위수 미만이며, 성장경로를 뜻하는 IUGR와 정의가 다릅니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 1쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n미숙아는 37주 미만, 과숙아는 42주 이상입니다. LBW 2,500g 미만, VLBW 1,500g 미만, ELBW 1,000g 미만으로 구분합니다. SGA는 해당 임신나이 출생체중 10백분위수 미만이며, 성장경로를 뜻하는 IUGR와 정의가 다릅니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 1쪽.",
       "evidence": [
         {
           "file": "최두영pf_261020_모성과신생아_고위험 신생아.pdf(1).pdf",
@@ -16908,12 +16815,18 @@
         "gradingHold": false,
         "referenceAnswer": 3,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "lecture_reviewed",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "미숙아는 37주 미만, 과숙아는 42주 이상입니다. LBW 2,500g 미만, VLBW 1,500g 미만, ELBW 1,000g 미만으로 구분합니다. SGA는 해당 임신나이 출생체중 10백분위수 미만이며, 성장경로를 뜻하는 IUGR와 정의가 다릅니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -16948,8 +16861,8 @@
         }
       ],
       "answer": 4,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "조산아의 배기질·뇌실내출혈은 미숙한 혈관과 뇌혈류 변동에 관련됩니다. 열린 앞숫구멍을 통한 두부초음파로 확인합니다. 뇌실내 혈액이 있으나 확장 없으면 2단계, 뇌실확장 동반 시 3단계입니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 2쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n조산아의 배기질·뇌실내출혈은 미숙한 혈관과 뇌혈류 변동에 관련됩니다. 열린 앞숫구멍을 통한 두부초음파로 확인합니다. 뇌실내 혈액이 있으나 확장 없으면 2단계, 뇌실확장 동반 시 3단계입니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 2쪽.",
       "evidence": [
         {
           "file": "최두영pf_261020_모성과신생아_신경질환.pdf(1).pdf",
@@ -17007,12 +16920,18 @@
         "gradingHold": false,
         "referenceAnswer": 4,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "lecture_reviewed",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "조산아의 배기질·뇌실내출혈은 미숙한 혈관과 뇌혈류 변동에 관련됩니다. 열린 앞숫구멍을 통한 두부초음파로 확인합니다. 뇌실내 혈액이 있으나 확장 없으면 2단계, 뇌실확장 동반 시 3단계입니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -17047,8 +16966,8 @@
         }
       ],
       "answer": 3,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "해당 연도 해설의 조건부 필수아미노산③을 따릅니다. 최신 강의안은 영양원칙을 뒷받침하지만 3종을 직접 열거하지 않아 부분근거입니다.\n\n미숙아는 충분한 단백질·열량 공급과 성장 추적이 필요합니다. 중심체온과 보육기온도를 구별하며 예방접종은 일반적으로 출생 후 나이를 기준으로 합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 2쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n해당 연도 해설의 조건부 필수아미노산③을 따릅니다. 최신 강의안은 영양원칙을 뒷받침하지만 3종을 직접 열거하지 않아 부분근거입니다.\n\n미숙아는 충분한 단백질·열량 공급과 성장 추적이 필요합니다. 중심체온과 보육기온도를 구별하며 예방접종은 일반적으로 출생 후 나이를 기준으로 합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 2쪽.",
       "evidence": [
         {
           "file": "최두영pf_261020_모성과신생아_고위험 신생아.pdf(1).pdf",
@@ -17130,12 +17049,18 @@
         "gradingHold": false,
         "referenceAnswer": 3,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "needs_review",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "해당 연도 해설의 조건부 필수아미노산③을 따릅니다. 최신 강의안은 영양원칙을 뒷받침하지만 3종을 직접 열거하지 않아 부분근거입니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -17170,8 +17095,8 @@
         }
       ],
       "answer": 3,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "해당 연도 해설은 골절부 마찰음을 정답으로 제시합니다. 쇄골골절은 비대칭 모로반사를 보이며 대개 고정 등 보존적 처치를 합니다. T1 손상·Horner 증후군은 하부 위팔신경 손상과 구별합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 2쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n해당 연도 해설은 골절부 마찰음을 정답으로 제시합니다. 쇄골골절은 비대칭 모로반사를 보이며 대개 고정 등 보존적 처치를 합니다. T1 손상·Horner 증후군은 하부 위팔신경 손상과 구별합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 2쪽.",
       "evidence": [
         {
           "file": "최두영pf_261020_모성과신생아_신경질환.pdf(1).pdf",
@@ -17226,12 +17151,18 @@
         "gradingHold": false,
         "referenceAnswer": 3,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "needs_review",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "해당 연도 해설은 골절부 마찰음을 정답으로 제시합니다. 쇄골골절은 비대칭 모로반사를 보이며 대개 고정 등 보존적 처치를 합니다. T1 손상·Horner 증후군은 하부 위팔신경 손상과 구별합니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -17266,8 +17197,8 @@
         }
       ],
       "answer": 4,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "선천기형 원인은 다인자유전이 흔합니다. 아가미틈낭은 동통 없이 움직이고 이분척추는 하부허리·천골부에 흔합니다. 구순열과 구개열의 수술시기를 구분하며 갑상혀관낭은 혀갑상샘 감별이 중요합니다. 제공 강의안은 배꼽탈장의 대부분이 1세 이전 자연 폐쇄한다고 설명합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 2쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n선천기형 원인은 다인자유전이 흔합니다. 아가미틈낭은 동통 없이 움직이고 이분척추는 하부허리·천골부에 흔합니다. 구순열과 구개열의 수술시기를 구분하며 갑상혀관낭은 혀갑상샘 감별이 중요합니다. 제공 강의안은 배꼽탈장의 대부분이 1세 이전 자연 폐쇄한다고 설명합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 2쪽.",
       "evidence": [
         {
           "file": "25.11.06._모성과신생아_최두영pf_선천기형(1).pdf",
@@ -17352,12 +17283,18 @@
         "gradingHold": false,
         "referenceAnswer": 4,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "lecture_reviewed",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "선천기형 원인은 다인자유전이 흔합니다. 아가미틈낭은 동통 없이 움직이고 이분척추는 하부허리·천골부에 흔합니다. 구순열과 구개열의 수술시기를 구분하며 갑상혀관낭은 혀갑상샘 감별이 중요합니다. 제공 강의안은 배꼽탈장의 대부분이 1세 이전 자연 폐쇄한다고 설명합니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -17392,8 +17329,8 @@
         }
       ],
       "answer": 2,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "초기 처치 후 무호흡·헐떡호흡 또는 심박수 100회/분 미만이면 양압환기가 우선입니다. 효과적인 환기 30초 후에도 60회/분 미만이면 가슴압박을 추가하며 압박:환기=3:1입니다. 태변착색만으로 일률적 기관내흡인을 시행하여 환기를 지연시키지 않습니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 2쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n초기 처치 후 무호흡·헐떡호흡 또는 심박수 100회/분 미만이면 양압환기가 우선입니다. 효과적인 환기 30초 후에도 60회/분 미만이면 가슴압박을 추가하며 압박:환기=3:1입니다. 태변착색만으로 일률적 기관내흡인을 시행하여 환기를 지연시키지 않습니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 2쪽.",
       "evidence": [
         {
           "file": "최두영pf_261019_모성과신생아_신생아 소생술과 분만실에서의 응급상황.pdf(1).pdf",
@@ -17466,12 +17403,18 @@
         "gradingHold": false,
         "referenceAnswer": 2,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "lecture_reviewed",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "초기 처치 후 무호흡·헐떡호흡 또는 심박수 100회/분 미만이면 양압환기가 우선입니다. 효과적인 환기 30초 후에도 60회/분 미만이면 가슴압박을 추가하며 압박:환기=3:1입니다. 태변착색만으로 일률적 기관내흡인을 시행하여 환기를 지연시키지 않습니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -17506,8 +17449,8 @@
         }
       ],
       "answer": 4,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "심박2+호흡2+근긴장2+찡그림1+말단청색증1=8점,④입니다.\n\n심박·호흡·근긴장도·자극반응·피부색을 각각 0~2점으로 계산합니다. 소생술은 총점을 기다리지 않고 호흡과 심박수로 즉시 결정합니다. 5분 이후 점수 변화는 소생술 반응을 평가하는 데 도움이 됩니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 3쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n심박2+호흡2+근긴장2+찡그림1+말단청색증1=8점,④입니다.\n\n심박·호흡·근긴장도·자극반응·피부색을 각각 0~2점으로 계산합니다. 소생술은 총점을 기다리지 않고 호흡과 심박수로 즉시 결정합니다. 5분 이후 점수 변화는 소생술 반응을 평가하는 데 도움이 됩니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 3쪽.",
       "evidence": [
         {
           "file": "최두영pf_261019_모성과신생아_정상신생아.pdf(1).pdf",
@@ -17565,12 +17508,18 @@
         "gradingHold": false,
         "referenceAnswer": 4,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "lecture_reviewed",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "심박2+호흡2+근긴장2+찡그림1+말단청색증1=8점,④입니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -17605,8 +17554,8 @@
         }
       ],
       "answer": 4,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "초기 처치 후 무호흡·헐떡호흡 또는 심박수 100회/분 미만이면 양압환기가 우선입니다. 효과적인 환기 30초 후에도 60회/분 미만이면 가슴압박을 추가하며 압박:환기=3:1입니다. 태변착색만으로 일률적 기관내흡인을 시행하여 환기를 지연시키지 않습니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 3쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n초기 처치 후 무호흡·헐떡호흡 또는 심박수 100회/분 미만이면 양압환기가 우선입니다. 효과적인 환기 30초 후에도 60회/분 미만이면 가슴압박을 추가하며 압박:환기=3:1입니다. 태변착색만으로 일률적 기관내흡인을 시행하여 환기를 지연시키지 않습니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 3쪽.",
       "evidence": [
         {
           "file": "최두영pf_261019_모성과신생아_신생아 소생술과 분만실에서의 응급상황.pdf(1).pdf",
@@ -17679,12 +17628,18 @@
         "gradingHold": false,
         "referenceAnswer": 4,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "lecture_reviewed",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "초기 처치 후 무호흡·헐떡호흡 또는 심박수 100회/분 미만이면 양압환기가 우선입니다. 효과적인 환기 30초 후에도 60회/분 미만이면 가슴압박을 추가하며 압박:환기=3:1입니다. 태변착색만으로 일률적 기관내흡인을 시행하여 환기를 지연시키지 않습니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -17719,8 +17674,8 @@
         }
       ],
       "answer": 4,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "조산아의 표면활성제 부족으로 무기폐·저산소혈증·고탄산혈증·산증이 생깁니다. 제2형 폐포세포가 표면활성제를 만들며 양수에서는 28~32주에 나타납니다. X선은 미세과립상·공기기관지음영이 특징입니다. 호흡보조·기도 내 표면활성제 투여와 산전 스테로이드가 중요합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 3쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n조산아의 표면활성제 부족으로 무기폐·저산소혈증·고탄산혈증·산증이 생깁니다. 제2형 폐포세포가 표면활성제를 만들며 양수에서는 28~32주에 나타납니다. X선은 미세과립상·공기기관지음영이 특징입니다. 호흡보조·기도 내 표면활성제 투여와 산전 스테로이드가 중요합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 3쪽.",
       "evidence": [
         {
           "file": "최두영pf_261030_모성과신생아_신생아호흡기질환.pdf(1).pdf",
@@ -17817,12 +17772,18 @@
         "gradingHold": false,
         "referenceAnswer": 4,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "lecture_reviewed",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "조산아의 표면활성제 부족으로 무기폐·저산소혈증·고탄산혈증·산증이 생깁니다. 제2형 폐포세포가 표면활성제를 만들며 양수에서는 28~32주에 나타납니다. X선은 미세과립상·공기기관지음영이 특징입니다. 호흡보조·기도 내 표면활성제 투여와 산전 스테로이드가 중요합니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -17857,8 +17818,8 @@
         }
       ],
       "answer": 2,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "조산아의 장기간 산소·환기 의존은 BPD를 시사합니다. 폐포·폐혈관 발달 저하, 폐손상·염증이 관여하며 기포성·불균질 영상이 나타납니다. 영양·산소화·감염 관리가 기본이고 환기이탈이 어려우면 부작용을 고려하여 덱사메타손을 신중하게 사용합니다. 이뇨제 효과는 단기적입니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 4쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n조산아의 장기간 산소·환기 의존은 BPD를 시사합니다. 폐포·폐혈관 발달 저하, 폐손상·염증이 관여하며 기포성·불균질 영상이 나타납니다. 영양·산소화·감염 관리가 기본이고 환기이탈이 어려우면 부작용을 고려하여 덱사메타손을 신중하게 사용합니다. 이뇨제 효과는 단기적입니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 4쪽.",
       "evidence": [
         {
           "file": "최두영pf_261030_모성과신생아_신생아호흡기질환.pdf(1).pdf",
@@ -17955,12 +17916,18 @@
         "gradingHold": false,
         "referenceAnswer": 2,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "lecture_reviewed",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "조산아의 장기간 산소·환기 의존은 BPD를 시사합니다. 폐포·폐혈관 발달 저하, 폐손상·염증이 관여하며 기포성·불균질 영상이 나타납니다. 영양·산소화·감염 관리가 기본이고 환기이탈이 어려우면 부작용을 고려하여 덱사메타손을 신중하게 사용합니다. 이뇨제 효과는 단기적입니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -17995,8 +17962,8 @@
         }
       ],
       "answer": 2,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "장시간 양막파수 후 생후 초기 발열·호흡곤란이면 폐렴과 조기발현 감염을 고려합니다. 연도별 해설은 GBS를 정답으로 제시하며 강의안도 초기 전격 폐렴과 관련을 설명합니다. 배양 없이 원인균이 확진된 것은 아닙니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 4쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n장시간 양막파수 후 생후 초기 발열·호흡곤란이면 폐렴과 조기발현 감염을 고려합니다. 연도별 해설은 GBS를 정답으로 제시하며 강의안도 초기 전격 폐렴과 관련을 설명합니다. 배양 없이 원인균이 확진된 것은 아닙니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 4쪽.",
       "evidence": [
         {
           "file": "25.11.11._모성과신생아_최두영pf_신생아감염질환(1).pdf",
@@ -18069,12 +18036,18 @@
         "gradingHold": false,
         "referenceAnswer": 2,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "lecture_reviewed",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "장시간 양막파수 후 생후 초기 발열·호흡곤란이면 폐렴과 조기발현 감염을 고려합니다. 연도별 해설은 GBS를 정답으로 제시하며 강의안도 초기 전격 폐렴과 관련을 설명합니다. 배양 없이 원인균이 확진된 것은 아닙니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -18109,8 +18082,8 @@
         }
       ],
       "answer": 2,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "환기 중 갑작스러운 청색증·SpO2 저하·호흡음 감소는 기흉을 의심합니다. 호흡·순환장애를 일으킨 기흉은 늑강천자 후 흉관삽입으로 감압합니다. 안정적인 작은 공기누출의 관찰과 구별합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 5쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n환기 중 갑작스러운 청색증·SpO2 저하·호흡음 감소는 기흉을 의심합니다. 호흡·순환장애를 일으킨 기흉은 늑강천자 후 흉관삽입으로 감압합니다. 안정적인 작은 공기누출의 관찰과 구별합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 5쪽.",
       "evidence": [
         {
           "file": "최두영pf_261030_모성과신생아_신생아호흡기질환.pdf(1).pdf",
@@ -18174,12 +18147,18 @@
         "gradingHold": false,
         "referenceAnswer": 2,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "lecture_reviewed",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "환기 중 갑작스러운 청색증·SpO2 저하·호흡음 감소는 기흉을 의심합니다. 호흡·순환장애를 일으킨 기흉은 늑강천자 후 흉관삽입으로 감압합니다. 안정적인 작은 공기누출의 관찰과 구별합니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -18214,8 +18193,8 @@
         }
       ],
       "answer": 1,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "조산아의 복부팽만·혈변·담즙성구토·체온불안정과 창자벽공기는 NEC를 시사합니다. 원위회장·근위대장에 호발하며 장허혈·장관영양·세균전위가 관여합니다. 금식·비위관 감압·수액·광범위 항생제를 시작하며 천공 등 수술 적응증을 확인합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 5쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n조산아의 복부팽만·혈변·담즙성구토·체온불안정과 창자벽공기는 NEC를 시사합니다. 원위회장·근위대장에 호발하며 장허혈·장관영양·세균전위가 관여합니다. 금식·비위관 감압·수액·광범위 항생제를 시작하며 천공 등 수술 적응증을 확인합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 5쪽.",
       "evidence": [
         {
           "file": "최두영pf_261030_모성과신생아_신생아소화기질환.pdf(1).pdf",
@@ -18303,12 +18282,18 @@
         "gradingHold": false,
         "referenceAnswer": 1,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "lecture_reviewed",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "조산아의 복부팽만·혈변·담즙성구토·체온불안정과 창자벽공기는 NEC를 시사합니다. 원위회장·근위대장에 호발하며 장허혈·장관영양·세균전위가 관여합니다. 금식·비위관 감압·수액·광범위 항생제를 시작하며 천공 등 수술 적응증을 확인합니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -18343,8 +18328,8 @@
         }
       ],
       "answer": 2,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "수유·체중증가 양호한 건강한 영아의 생후 2~3주 간접고빌리루빈혈증은 모유황달에 부합합니다. 직접빌리루빈 상승·회색변·감염·용혈을 배제합니다. 실제 모유중단은 일률적으로 적용하지 않습니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 5쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n수유·체중증가 양호한 건강한 영아의 생후 2~3주 간접고빌리루빈혈증은 모유황달에 부합합니다. 직접빌리루빈 상승·회색변·감염·용혈을 배제합니다. 실제 모유중단은 일률적으로 적용하지 않습니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 5쪽.",
       "evidence": [
         {
           "file": "최두영pf_261030_모성과신생아_신생아소화기질환.pdf(1).pdf",
@@ -18390,12 +18375,18 @@
         "gradingHold": false,
         "referenceAnswer": 2,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "lecture_reviewed",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "수유·체중증가 양호한 건강한 영아의 생후 2~3주 간접고빌리루빈혈증은 모유황달에 부합합니다. 직접빌리루빈 상승·회색변·감염·용혈을 배제합니다. 실제 모유중단은 일률적으로 적용하지 않습니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -18430,8 +18421,8 @@
         }
       ],
       "answer": 1,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "광선치료 중 총빌리루빈이 6시간 사이12→27로 급증하고 용혈 소견이 있어 교환수혈①을 선택합니다. 하나의 수치를 모든 신생아의 기준으로 일반화하지 않습니다.\n\n태반을 통과하는 모체 IgG가 면역성 용혈과 관련됩니다. 태아 MCA 도플러는 빈혈 평가에 도움이 됩니다. 심한 빈혈·용혈·급격한 빌리루빈 상승에는 교환수혈을 고려하며 적합시험한 혈액을 사용합니다. 백혈구 제거는 CMV 위험 감소, 방사선조사는 수혈관련 GVHD 예방으로 목적이 다릅니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 6쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n광선치료 중 총빌리루빈이 6시간 사이12→27로 급증하고 용혈 소견이 있어 교환수혈①을 선택합니다. 하나의 수치를 모든 신생아의 기준으로 일반화하지 않습니다.\n\n태반을 통과하는 모체 IgG가 면역성 용혈과 관련됩니다. 태아 MCA 도플러는 빈혈 평가에 도움이 됩니다. 심한 빈혈·용혈·급격한 빌리루빈 상승에는 교환수혈을 고려하며 적합시험한 혈액을 사용합니다. 백혈구 제거는 CMV 위험 감소, 방사선조사는 수혈관련 GVHD 예방으로 목적이 다릅니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 6쪽.",
       "evidence": [
         {
           "file": "25.11.11._모성과신생아_최두영pf_신생아혈액질환(1).pdf",
@@ -18534,12 +18525,18 @@
         "gradingHold": false,
         "referenceAnswer": 1,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "lecture_reviewed",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "광선치료 중 총빌리루빈이 6시간 사이12→27로 급증하고 용혈 소견이 있어 교환수혈①을 선택합니다. 하나의 수치를 모든 신생아의 기준으로 일반화하지 않습니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -18574,8 +18571,8 @@
         }
       ],
       "answer": 3,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "패혈증은 발열 외에도 저체온·수유저하·처짐·무호흡으로 나타납니다. 혈액배양 등 원인평가와 경험적 항생제가 필요합니다. 강의안은 조기발현형 초기 약제로 ampicillin+gentamicin을 제시합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 6쪽.",
+      "answerSource": "annual_answer_accepted_by_user_kmle_instruction",
+      "explanation": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다.\n\n패혈증은 발열 외에도 저체온·수유저하·처짐·무호흡으로 나타납니다. 혈액배양 등 원인평가와 경험적 항생제가 필요합니다. 강의안은 조기발현형 초기 약제로 ampicillin+gentamicin을 제시합니다.\n\n연도별 원자료: 21_모성과신생아_소아과_해설(1).pdf PDF 6쪽.",
       "evidence": [
         {
           "file": "25.11.11._모성과신생아_최두영pf_신생아감염질환(1).pdf",
@@ -18660,12 +18657,18 @@
         "gradingHold": false,
         "referenceAnswer": 3,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "lecture_reviewed",
+        "stage": "user_confirmed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "패혈증은 발열 외에도 저체온·수유저하·처짐·무호흡으로 나타납니다. 혈액배양 등 원인평가와 경험적 항생제가 필요합니다. 강의안은 조기발현형 초기 약제로 ampicillin+gentamicin을 제시합니다."
+        "decisionReason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "user_kmle",
+        "version": "1.1.12",
+        "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
       }
     },
     {
@@ -18696,12 +18699,12 @@
         },
         {
           "number": 5,
-          "text": "미복원"
+          "text": "코 주변의 작은 흰색 비립종 (임의복원)"
         }
       ],
       "answer": 4,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "출생 직후 배꼽까지 황달이 있는④는 정상 일시적 소견이 아닙니다. ⑤ 미복원으로 복원된 보기 내 판단입니다.\n\n생후 24시간 이내 황달은 병적 원인을 평가합니다. 생리적 황달은 대개 2~3일경 관찰되지만 치료는 수치·임신나이·위험인자를 함께 판단합니다. 수유 부족의 조기황달과 2~3주 최고치의 모유황달을 구별합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 1쪽.",
+      "explanation": "출생 직후 배꼽까지 황달이 있는④는 정상 일시적 소견이 아닙니다. ⑤ 미복원으로 복원된 보기 내 판단입니다.\n\n생후 24시간 이내 황달은 병적 원인을 평가합니다. 생리적 황달은 대개 2~3일경 관찰되지만 치료는 수치·임신나이·위험인자를 함께 판단합니다. 수유 부족의 조기황달과 2~3주 최고치의 모유황달을 구별합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 1쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261030_모성과신생아_신생아소화기질환.pdf(1).pdf",
@@ -18732,7 +18735,9 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "5": "[임의복원 보기 해설] 신생아에서 가능한 양성 소견입니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -18759,12 +18764,42 @@
         "gradingHold": false,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "출생 직후 배꼽까지 황달이 있는④는 정상 일시적 소견이 아닙니다. ⑤ 미복원으로 복원된 보기 내 판단입니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "할리퀸 색조 변화"
+          },
+          {
+            "number": 2,
+            "text": "간이 늑골 하부 2cm에서 만져짐"
+          },
+          {
+            "number": 3,
+            "text": "생후 3일 동안 지속되는 체중 감소"
+          },
+          {
+            "number": 4,
+            "text": "출생 직후 배꼽까지 내려오는 황달"
+          },
+          {
+            "number": 5,
+            "text": "미복원"
+          }
+        ],
+        "changedNumbers": [
+          5
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -18981,7 +19016,7 @@
         },
         {
           "number": 2,
-          "text": "미복원"
+          "text": "발바닥 전체에 깊은 주름이 발달한다. (임의복원)"
         },
         {
           "number": 3,
@@ -18993,12 +19028,12 @@
         },
         {
           "number": 5,
-          "text": "미복원"
+          "text": "귀 연골이 단단하고 접은 뒤 즉시 원상복귀한다. (임의복원)"
         }
       ],
       "answer": null,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "정상 미숙아는 피부가 얇고 머리가 상대적으로 큽니다. ②·⑤ 미복원 및③ 부종 문구의 불확실성으로 보류합니다.\n\n미숙아는 37주 미만, 과숙아는 42주 이상입니다. LBW 2,500g 미만, VLBW 1,500g 미만, ELBW 1,000g 미만으로 구분합니다. SGA는 해당 임신나이 출생체중 10백분위수 미만이며, 성장경로를 뜻하는 IUGR와 정의가 다릅니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 1쪽.",
+      "explanation": "②·⑤를 보완했지만 기존③의 “다리 부종이 심하다”를 일반적 미숙아 특징으로 확정하기 어렵습니다. 기존 완성 문장은 고치지 않고 보류합니다.\n\n미숙아는 37주 미만, 과숙아는 42주 이상입니다. LBW 2,500g 미만, VLBW 1,500g 미만, ELBW 1,000g 미만으로 구분합니다. SGA는 해당 임신나이 출생체중 10백분위수 미만이며, 성장경로를 뜻하는 IUGR와 정의가 다릅니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 1쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261020_모성과신생아_고위험 신생아.pdf(1).pdf",
@@ -19038,7 +19073,10 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "2": "[임의복원 보기 해설] 성숙도가 높은 소견입니다.",
+        "5": "[임의복원 보기 해설] 성숙도가 높은 소견입니다. 기존③은 고치지 않고 정답 보류를 유지합니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -19060,17 +19098,48 @@
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
-        "reason": "정상 미숙아는 피부가 얇고 머리가 상대적으로 큽니다. ②·⑤ 미복원 및③ 부종 문구의 불확실성으로 보류합니다.",
+        "reason": "②·⑤를 보완했지만 기존③의 “다리 부종이 심하다”를 일반적 미숙아 특징으로 확정하기 어렵습니다. 기존 완성 문장은 고치지 않고 보류합니다.",
         "limitations": "지문 또는 선택지 일부가 미복원되어 복원된 내용 안에서 검토했습니다.",
         "gradingHold": true,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "정상 미숙아는 피부가 얇고 머리가 상대적으로 큽니다. ②·⑤ 미복원 및③ 부종 문구의 불확실성으로 보류합니다."
+        "decisionReason": "②·⑤를 보완했지만 기존③의 “다리 부종이 심하다”를 일반적 미숙아 특징으로 확정하기 어렵습니다. 기존 완성 문장은 고치지 않고 보류합니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "태지가 적고 피부가 뻣뻣하다"
+          },
+          {
+            "number": 2,
+            "text": "미복원"
+          },
+          {
+            "number": 3,
+            "text": "솜털이 많고 다리 부종이 심하다"
+          },
+          {
+            "number": 4,
+            "text": "머리 둘레에 비해 가슴 둘레가 더 크다"
+          },
+          {
+            "number": 5,
+            "text": "미복원"
+          }
+        ],
+        "changedNumbers": [
+          2,
+          5
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -19386,56 +19455,6 @@
       }
     },
     {
-      "id": "choi-duyoung-neonatal:22-8",
-      "label": "22-8",
-      "year": 22,
-      "number": 8,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 1쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "22_모성과신생아_최두영pf(1).pdf",
-          "page": 1,
-          "image": "assets/neonatal-1.1.11/sources/f04-p001.webp"
-        }
-      ],
-      "source": {
-        "name": "22_모성과신생아_최두영pf(1).pdf",
-        "page": 1,
-        "image": "assets/neonatal-1.1.11/sources/f04-p001.webp"
-      },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
-      }
-    },
-    {
       "id": "choi-duyoung-neonatal:22-9",
       "label": "22-9",
       "year": 22,
@@ -19466,9 +19485,9 @@
           "text": "양압환기는 PaO2가 지속적으로 50 이하일 때 사용한다."
         }
       ],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "⑤가 의도답에 가깝지만 PaO2 50 이하만으로 환기 적응증을 정하는 표현은 불완전합니다. 투여 산소·CPAP·pH·CO2·무호흡 조건 누락을 표시하고 보류합니다.\n\n조산아의 표면활성제 부족으로 무기폐·저산소혈증·고탄산혈증·산증이 생깁니다. 제2형 폐포세포가 표면활성제를 만들며 양수에서는 28~32주에 나타납니다. X선은 미세과립상·공기기관지음영이 특징입니다. 호흡보조·기도 내 표면활성제 투여와 산전 스테로이드가 중요합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 2쪽.",
+      "answer": 5,
+      "answerSource": "v1.1.12_evidence_based_exam_answer_adoption",
+      "explanation": "기존①~④는 각각 발생군·기전, 표면활성제 양, 과도한 산소화 목표, 투여 경로가 맞지 않습니다. 지속 저산소혈증에 호흡보조가 필요하다는 취지의⑤를 출제 의도상 답으로 채택합니다.\n\nPaO2 하나만으로 환기 적응증을 결정하는 임상 규칙은 아닙니다. 강의안 PDF29쪽은 산소·CPAP 조건, pH·PaCO2, 무호흡을 함께 제시합니다. 원보기의 누락된 조건은 해설로 보완했습니다.\n\n조산아의 표면활성제 부족으로 무기폐·저산소혈증·고탄산혈증·산증이 생깁니다. 제2형 폐포세포가 표면활성제를 만들며 양수에서는 28~32주에 나타납니다. X선은 미세과립상·공기기관지음영이 특징입니다. 호흡보조·기도 내 표면활성제 투여와 산전 스테로이드가 중요합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 2쪽.",
       "evidence": [
         {
           "file": "최두영pf_261030_모성과신생아_신생아호흡기질환.pdf(1).pdf",
@@ -19526,7 +19545,9 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "5": "채택 정답: 기존①~④는 각각 발생군·기전, 표면활성제 양, 과도한 산소화 목표, 투여 경로가 맞지 않습니다. 지속 저산소혈증에 호흡보조가 필요하다는 취지의⑤를 출제 의도상 답으로 채택합니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -19547,18 +19568,37 @@
       "unitId": "neonatal-rds",
       "archiveUnrecovered": false,
       "lectureAudit": {
-        "status": "unresolved",
-        "reason": "⑤가 의도답에 가깝지만 PaO2 50 이하만으로 환기 적응증을 정하는 표현은 불완전합니다. 투여 산소·CPAP·pH·CO2·무호흡 조건 누락을 표시하고 보류합니다.",
-        "limitations": "",
-        "gradingHold": true,
+        "status": "partial",
+        "reason": "기존①~④는 각각 발생군·기전, 표면활성제 양, 과도한 산소화 목표, 투여 경로가 맞지 않습니다. 지속 저산소혈증에 호흡보조가 필요하다는 취지의⑤를 출제 의도상 답으로 채택합니다.",
+        "limitations": "PaO2 하나만으로 환기 적응증을 결정하는 임상 규칙은 아닙니다. 강의안 PDF29쪽은 산소·CPAP 조건, pH·PaCO2, 무호흡을 함께 제시합니다. 원보기의 누락된 조건은 해설로 보완했습니다.",
+        "gradingHold": false,
         "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
+        "answerRevised": true,
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "needs_review",
+        "stage": "accepted",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "⑤가 의도답에 가깝지만 PaO2 50 이하만으로 환기 적응증을 정하는 표현은 불완전합니다. 투여 산소·CPAP·pH·CO2·무호흡 조건 누락을 표시하고 보류합니다."
+        "decisionReason": "기존①~④는 각각 발생군·기전, 표면활성제 양, 과도한 산소화 목표, 투여 경로가 맞지 않습니다. 지속 저산소혈증에 호흡보조가 필요하다는 취지의⑤를 출제 의도상 답으로 채택합니다."
+      },
+      "reviewHistoryV111": {
+        "answer": null,
+        "lectureAudit": {
+          "status": "unresolved",
+          "reason": "⑤가 의도답에 가깝지만 PaO2 50 이하만으로 환기 적응증을 정하는 표현은 불완전합니다. 투여 산소·CPAP·pH·CO2·무호흡 조건 누락을 표시하고 보류합니다.",
+          "limitations": "",
+          "gradingHold": true,
+          "referenceAnswer": null,
+          "answerRevised": false,
+          "version": "1.1.11"
+        },
+        "explanation": "⑤가 의도답에 가깝지만 PaO2 50 이하만으로 환기 적응증을 정하는 표현은 불완전합니다. 투여 산소·CPAP·pH·CO2·무호흡 조건 누락을 표시하고 보류합니다.\n\n조산아의 표면활성제 부족으로 무기폐·저산소혈증·고탄산혈증·산증이 생깁니다. 제2형 폐포세포가 표면활성제를 만들며 양수에서는 28~32주에 나타납니다. X선은 미세과립상·공기기관지음영이 특징입니다. 호흡보조·기도 내 표면활성제 투여와 산전 스테로이드가 중요합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 2쪽."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "ai_review",
+        "version": "1.1.12",
+        "reason": "기존①~④는 각각 발생군·기전, 표면활성제 양, 과도한 산소화 목표, 투여 경로가 맞지 않습니다. 지속 저산소혈증에 호흡보조가 필요하다는 취지의⑤를 출제 의도상 답으로 채택합니다."
       }
     },
     {
@@ -19581,7 +19621,7 @@
         },
         {
           "number": 3,
-          "text": "미복원"
+          "text": "호흡상태와 무관하게 예방적 흉관을 삽입한다. (임의복원)"
         },
         {
           "number": 4,
@@ -19594,7 +19634,7 @@
       ],
       "answer": 4,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "만삭·후기조산아의 제왕절개 후 경한 빠른호흡은 폐액 흡수 지연의 TTN을 고려합니다. 산소포화도 감시와 필요한 산소공급이 기본이며 RDS의 일차 표면활성제 결핍과 구분합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 2쪽.",
+      "explanation": "만삭·후기조산아의 제왕절개 후 경한 빠른호흡은 폐액 흡수 지연의 TTN을 고려합니다. 산소포화도 감시와 필요한 산소공급이 기본이며 RDS의 일차 표면활성제 결핍과 구분합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 2쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261030_모성과신생아_신생아호흡기질환.pdf(1).pdf",
@@ -19625,7 +19665,9 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "3": "[임의복원 보기 해설] 기흉 등 적응증이 제시되지 않았습니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -19652,62 +19694,42 @@
         "gradingHold": false,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "만삭·후기조산아의 제왕절개 후 경한 빠른호흡은 폐액 흡수 지연의 TTN을 고려합니다. 산소포화도 감시와 필요한 산소공급이 기본이며 RDS의 일차 표면활성제 결핍과 구분합니다."
-      }
-    },
-    {
-      "id": "choi-duyoung-neonatal:22-11",
-      "label": "22-11",
-      "year": 22,
-      "number": 11,
-      "subject": "maternal-newborn",
-      "professor": "choi-duyoung-neonatal",
-      "type": "choice",
-      "prompt": "미복원",
-      "choices": [],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 2쪽.",
-      "evidence": [],
-      "candidateEvidence": [],
-      "choiceExplanations": {},
-      "explanationImages": [],
-      "annualSources": [
-        {
-          "file": "22_모성과신생아_최두영pf(1).pdf",
-          "page": 2,
-          "image": "assets/neonatal-1.1.11/sources/f04-p002.webp"
-        }
-      ],
-      "source": {
-        "name": "22_모성과신생아_최두영pf(1).pdf",
-        "page": 2,
-        "image": "assets/neonatal-1.1.11/sources/f04-p002.webp"
       },
-      "figureImages": [],
-      "figureRequired": false,
-      "showOriginalByDefault": false,
-      "unitTitle": "미복원",
-      "unitId": "neonatal-missing",
-      "archiveUnrecovered": true,
-      "lectureAudit": {
-        "status": "unresolved",
-        "reason": "",
-        "limitations": "",
-        "gradingHold": true,
-        "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
-      },
-      "validation": {
-        "stage": "needs_review",
-        "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "제공 자료에 지문 또는 선택지가 없어 정답을 판단할 수 없습니다. 다른 연도 문항을 임의로 대입하지 않았습니다."
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "기관 삽관 및 기계환기"
+          },
+          {
+            "number": 2,
+            "text": "기관 삽관 및 폐표면 활성제 투여"
+          },
+          {
+            "number": 3,
+            "text": "미복원"
+          },
+          {
+            "number": 4,
+            "text": "보조적 산소요법"
+          },
+          {
+            "number": 5,
+            "text": "공격적 영양 보충"
+          }
+        ],
+        "changedNumbers": [
+          3
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -19738,12 +19760,12 @@
         },
         {
           "number": 5,
-          "text": "미복원"
+          "text": "감압 없이 경과만 관찰한다. (임의복원)"
         }
       ],
       "answer": 2,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "환기 중 갑작스러운 청색증·SpO2 저하·호흡음 감소는 기흉을 의심합니다. 호흡·순환장애를 일으킨 기흉은 늑강천자 후 흉관삽입으로 감압합니다. 안정적인 작은 공기누출의 관찰과 구별합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 2쪽.",
+      "explanation": "환기 중 갑작스러운 청색증·SpO2 저하·호흡음 감소는 기흉을 의심합니다. 호흡·순환장애를 일으킨 기흉은 늑강천자 후 흉관삽입으로 감압합니다. 안정적인 작은 공기누출의 관찰과 구별합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 2쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261030_모성과신생아_신생아호흡기질환.pdf(1).pdf",
@@ -19774,7 +19796,9 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "5": "[임의복원 보기 해설] 심한 호흡장애가 동반된 기흉에 적절하지 않습니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -19801,14 +19825,44 @@
         "gradingHold": false,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "환기 중 갑작스러운 청색증·SpO2 저하·호흡음 감소는 기흉을 의심합니다. 호흡·순환장애를 일으킨 기흉은 늑강천자 후 흉관삽입으로 감압합니다. 안정적인 작은 공기누출의 관찰과 구별합니다."
       },
-      "transcriptionWarning": "복원자료에 해당 사진의 설명만 남아 있어 다른 문항 사진으로 대체하지 않았습니다."
+      "transcriptionWarning": "복원자료에 해당 사진의 설명만 남아 있어 다른 문항 사진으로 대체하지 않았습니다.",
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "폐표면활성제"
+          },
+          {
+            "number": 2,
+            "text": "흉부 천자"
+          },
+          {
+            "number": 3,
+            "text": "베타메타손"
+          },
+          {
+            "number": 4,
+            "text": "기관확장제 흡입"
+          },
+          {
+            "number": 5,
+            "text": "미복원"
+          }
+        ],
+        "changedNumbers": [
+          5
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
+      }
     },
     {
       "id": "choi-duyoung-neonatal:22-13",
@@ -19929,24 +19983,24 @@
         },
         {
           "number": 2,
-          "text": "생리적 황달이다. ~가 필요하다."
+          "text": "생리적 황달이다. 수유상태와 빌리루빈 추적 관찰이 필요하다. (임의복원)"
         },
         {
           "number": 3,
-          "text": "모유 황달이다. ~가 필요하다."
+          "text": "모유 황달이다. 수유 및 체중 증가 상태 평가가 필요하다. (임의복원)"
         },
         {
           "number": 4,
-          "text": "미복원"
+          "text": "혈액형이 다르므로 검사 없이 즉시 교환수혈한다. (임의복원)"
         },
         {
           "number": 5,
-          "text": "미복원"
+          "text": "빌리루빈 수치와 임신나이는 치료 결정에 영향을 주지 않는다. (임의복원)"
         }
       ],
       "answer": null,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "47시간·혈액형만으로 생리적/병적 황달이나 광선치료 필요를 결정할 수 없습니다. 빌리루빈 수치·나머지 보기가 불완전해 보류합니다.\n\n생후 24시간 이내 황달은 병적 원인을 평가합니다. 생리적 황달은 대개 2~3일경 관찰되지만 치료는 수치·임신나이·위험인자를 함께 판단합니다. 수유 부족의 조기황달과 2~3주 최고치의 모유황달을 구별합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 2쪽.",
+      "explanation": "선택지는 보완했지만 실제 빌리루빈 수치가 없습니다. 혈액형 차이와 생후47시간만으로 광선치료 필요를 확정하지 않아 보류합니다.\n\n생후 24시간 이내 황달은 병적 원인을 평가합니다. 생리적 황달은 대개 2~3일경 관찰되지만 치료는 수치·임신나이·위험인자를 함께 판단합니다. 수유 부족의 조기황달과 2~3주 최고치의 모유황달을 구별합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 2쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261030_모성과신생아_신생아소화기질환.pdf(1).pdf",
@@ -19977,7 +20031,12 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "2": "[임의복원 보기 해설] 생리적 황달로 분류 가능한지 수치와 위험인자를 먼저 확인합니다.",
+        "3": "[임의복원 보기 해설] 47시간만으로 후기 모유황달을 확정할 수 없습니다.",
+        "4": "[임의복원 보기 해설] 혈액형 차이만으로 교환수혈 적응증이 되지 않습니다.",
+        "5": "[임의복원 보기 해설] 시간별 수치·임신나이·위험인자가 중요합니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -19999,17 +20058,50 @@
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
-        "reason": "47시간·혈액형만으로 생리적/병적 황달이나 광선치료 필요를 결정할 수 없습니다. 빌리루빈 수치·나머지 보기가 불완전해 보류합니다.",
+        "reason": "선택지는 보완했지만 실제 빌리루빈 수치가 없습니다. 혈액형 차이와 생후47시간만으로 광선치료 필요를 확정하지 않아 보류합니다.",
         "limitations": "지문 또는 선택지 일부가 미복원되어 복원된 내용 안에서 검토했습니다.",
         "gradingHold": true,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "47시간·혈액형만으로 생리적/병적 황달이나 광선치료 필요를 결정할 수 없습니다. 빌리루빈 수치·나머지 보기가 불완전해 보류합니다."
+        "decisionReason": "선택지는 보완했지만 실제 빌리루빈 수치가 없습니다. 혈액형 차이와 생후47시간만으로 광선치료 필요를 확정하지 않아 보류합니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "병적황달로 광선치료가 필요하다."
+          },
+          {
+            "number": 2,
+            "text": "생리적 황달이다. ~가 필요하다."
+          },
+          {
+            "number": 3,
+            "text": "모유 황달이다. ~가 필요하다."
+          },
+          {
+            "number": 4,
+            "text": "미복원"
+          },
+          {
+            "number": 5,
+            "text": "미복원"
+          }
+        ],
+        "changedNumbers": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -20024,28 +20116,28 @@
       "choices": [
         {
           "number": 1,
-          "text": "양수파열로 인한 패혈증·태어나자마자 감염이 심각(일부 미복원)"
+          "text": "양막파열 후 발생한 패혈증은 출생 직후부터 심한 감염 증상을 보일 수 있다. (임의복원)"
         },
         {
           "number": 2,
-          "text": "조기감염은 30일에 감염된 것(일부 미복원)"
+          "text": "조기감염은 생후 30일에 발생한 감염이다. (임의복원)"
         },
         {
           "number": 3,
-          "text": "미복원"
+          "text": "패혈증은 발열뿐 아니라 저체온과 수유저하로 나타날 수 있다. (임의복원)"
         },
         {
           "number": 4,
-          "text": "미복원"
+          "text": "초기 혈액검사가 정상이면 신생아 패혈증이 완전히 배제된다. (임의복원)"
         },
         {
           "number": 5,
-          "text": "미복원"
+          "text": "조기발현 패혈증의 경험적 치료에 ampicillin과 gentamicin을 사용한다. (임의복원)"
         }
       ],
       "answer": null,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "지문과 보기 다수가 미복원되어 단일 정답을 판단할 수 없습니다.\n\n패혈증은 발열 외에도 저체온·수유저하·처짐·무호흡으로 나타납니다. 혈액배양 등 원인평가와 경험적 항생제가 필요합니다. 강의안은 조기발현형 초기 약제로 ampicillin+gentamicin을 제시합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 2쪽.",
+      "explanation": "선택지를 보완했지만 질문 지문·질문 방향이 미복원입니다. 일부 원보기가 남아 있으므로 삭제하지 않고 보류합니다.\n\n패혈증은 발열 외에도 저체온·수유저하·처짐·무호흡으로 나타납니다. 혈액배양 등 원인평가와 경험적 항생제가 필요합니다. 강의안은 조기발현형 초기 약제로 ampicillin+gentamicin을 제시합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 2쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "25.11.11._모성과신생아_최두영pf_신생아감염질환(1).pdf",
@@ -20103,7 +20195,13 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "1": "[임의복원 보기 해설] 조기감염의 가능한 경과입니다. 질문 지문이 없어 정답은 판정하지 않습니다.",
+        "2": "[임의복원 보기 해설] 강의안의 조기형은 생후7일 이내입니다.",
+        "3": "[임의복원 보기 해설] 가능한 증상입니다. 질문 방향은 미확인입니다.",
+        "4": "[임의복원 보기 해설] 정상 초기 검사만으로 배제하지 못합니다.",
+        "5": "[임의복원 보기 해설] 강의안에 제시된 조합이며 배양·감수성 등으로 조정합니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -20125,17 +20223,51 @@
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
-        "reason": "지문과 보기 다수가 미복원되어 단일 정답을 판단할 수 없습니다.",
+        "reason": "선택지를 보완했지만 질문 지문·질문 방향이 미복원입니다. 일부 원보기가 남아 있으므로 삭제하지 않고 보류합니다.",
         "limitations": "지문 또는 선택지 일부가 미복원되어 복원된 내용 안에서 검토했습니다.",
         "gradingHold": true,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "지문과 보기 다수가 미복원되어 단일 정답을 판단할 수 없습니다."
+        "decisionReason": "선택지를 보완했지만 질문 지문·질문 방향이 미복원입니다. 일부 원보기가 남아 있으므로 삭제하지 않고 보류합니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "양수파열로 인한 패혈증·태어나자마자 감염이 심각(일부 미복원)"
+          },
+          {
+            "number": 2,
+            "text": "조기감염은 30일에 감염된 것(일부 미복원)"
+          },
+          {
+            "number": 3,
+            "text": "미복원"
+          },
+          {
+            "number": 4,
+            "text": "미복원"
+          },
+          {
+            "number": 5,
+            "text": "미복원"
+          }
+        ],
+        "changedNumbers": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -20162,7 +20294,7 @@
         },
         {
           "number": 4,
-          "text": "vancomycin+?"
+          "text": "vancomycin+ceftazidime (임의복원)"
         },
         {
           "number": 5,
@@ -20171,7 +20303,7 @@
       ],
       "answer": 5,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "패혈증은 발열 외에도 저체온·수유저하·처짐·무호흡으로 나타납니다. 혈액배양 등 원인평가와 경험적 항생제가 필요합니다. 강의안은 조기발현형 초기 약제로 ampicillin+gentamicin을 제시합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 2쪽.",
+      "explanation": "패혈증은 발열 외에도 저체온·수유저하·처짐·무호흡으로 나타납니다. 혈액배양 등 원인평가와 경험적 항생제가 필요합니다. 강의안은 조기발현형 초기 약제로 ampicillin+gentamicin을 제시합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 2쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "25.11.11._모성과신생아_최두영pf_신생아감염질환(1).pdf",
@@ -20229,7 +20361,9 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "4": "[임의복원 보기 해설] 후기·병원감염의 선택과 구별합니다. 제시 조기감염의 기본 조합은⑤입니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -20256,12 +20390,42 @@
         "gradingHold": false,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "패혈증은 발열 외에도 저체온·수유저하·처짐·무호흡으로 나타납니다. 혈액배양 등 원인평가와 경험적 항생제가 필요합니다. 강의안은 조기발현형 초기 약제로 ampicillin+gentamicin을 제시합니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "meropenem"
+          },
+          {
+            "number": 2,
+            "text": "vancomycin+gentamicin"
+          },
+          {
+            "number": 3,
+            "text": "cefotaxime+gentamicin"
+          },
+          {
+            "number": 4,
+            "text": "vancomycin+?"
+          },
+          {
+            "number": 5,
+            "text": "ampicillin+gentamicin"
+          }
+        ],
+        "changedNumbers": [
+          4
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -20295,9 +20459,9 @@
           "text": "광선치료"
         }
       ],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "수유부족·앞숫구멍 함몰은 탈수를 시사하지만 생후3일38.5℃ 발열은 감염평가도 필요합니다. 건강해 보인다는 이유로 수액만을 확정하지 않았습니다.\n\n패혈증은 발열 외에도 저체온·수유저하·처짐·무호흡으로 나타납니다. 혈액배양 등 원인평가와 경험적 항생제가 필요합니다. 강의안은 조기발현형 초기 약제로 ampicillin+gentamicin을 제시합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 3쪽.",
+      "answer": 2,
+      "answerSource": "v1.1.12_evidence_based_exam_answer_adoption",
+      "explanation": "수유량 부족·앞숫구멍 함몰·생후3일 발열이라는 단서를 탈수성 발열을 묻는 증례로 해석해 기존② 수액 투여를 채택합니다. 수분 부족 교정이 보기 중 가장 직접적인 처치입니다.\n\n제공 강의안에서 이 탈수성 발열 증례의 직접 근거는 찾지 못해 신생아 수분·전해질 지침으로 보완했습니다. 실제 신생아 발열에서는 건강해 보여도 감염평가를 생략할 수 없습니다. 수액 경로·양은 탈수 정도와 혈청나트륨 등에 따라 정합니다.\n\n패혈증은 발열 외에도 저체온·수유저하·처짐·무호흡으로 나타납니다. 혈액배양 등 원인평가와 경험적 항생제가 필요합니다. 강의안은 조기발현형 초기 약제로 ampicillin+gentamicin을 제시합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 3쪽.\n\n외부 보완근거: https://pmc.ncbi.nlm.nih.gov/articles/PMC6568306/",
       "evidence": [
         {
           "file": "25.11.11._모성과신생아_최두영pf_신생아감염질환(1).pdf",
@@ -20355,7 +20519,9 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "2": "채택 정답: 수유량 부족·앞숫구멍 함몰·생후3일 발열이라는 단서를 탈수성 발열을 묻는 증례로 해석해 기존② 수액 투여를 채택합니다. 수분 부족 교정이 보기 중 가장 직접적인 처치입니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -20376,18 +20542,44 @@
       "unitId": "neonatal-sepsis",
       "archiveUnrecovered": false,
       "lectureAudit": {
-        "status": "unresolved",
-        "reason": "수유부족·앞숫구멍 함몰은 탈수를 시사하지만 생후3일38.5℃ 발열은 감염평가도 필요합니다. 건강해 보인다는 이유로 수액만을 확정하지 않았습니다.",
-        "limitations": "",
-        "gradingHold": true,
+        "status": "partial",
+        "reason": "수유량 부족·앞숫구멍 함몰·생후3일 발열이라는 단서를 탈수성 발열을 묻는 증례로 해석해 기존② 수액 투여를 채택합니다. 수분 부족 교정이 보기 중 가장 직접적인 처치입니다.",
+        "limitations": "제공 강의안에서 이 탈수성 발열 증례의 직접 근거는 찾지 못해 신생아 수분·전해질 지침으로 보완했습니다. 실제 신생아 발열에서는 건강해 보여도 감염평가를 생략할 수 없습니다. 수액 경로·양은 탈수 정도와 혈청나트륨 등에 따라 정합니다.",
+        "gradingHold": false,
         "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
+        "answerRevised": true,
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "needs_review",
+        "stage": "accepted",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "수유부족·앞숫구멍 함몰은 탈수를 시사하지만 생후3일38.5℃ 발열은 감염평가도 필요합니다. 건강해 보인다는 이유로 수액만을 확정하지 않았습니다."
+        "decisionReason": "수유량 부족·앞숫구멍 함몰·생후3일 발열이라는 단서를 탈수성 발열을 묻는 증례로 해석해 기존② 수액 투여를 채택합니다. 수분 부족 교정이 보기 중 가장 직접적인 처치입니다."
+      },
+      "reviewHistoryV111": {
+        "answer": null,
+        "lectureAudit": {
+          "status": "unresolved",
+          "reason": "수유부족·앞숫구멍 함몰은 탈수를 시사하지만 생후3일38.5℃ 발열은 감염평가도 필요합니다. 건강해 보인다는 이유로 수액만을 확정하지 않았습니다.",
+          "limitations": "",
+          "gradingHold": true,
+          "referenceAnswer": null,
+          "answerRevised": false,
+          "version": "1.1.11"
+        },
+        "explanation": "수유부족·앞숫구멍 함몰은 탈수를 시사하지만 생후3일38.5℃ 발열은 감염평가도 필요합니다. 건강해 보인다는 이유로 수액만을 확정하지 않았습니다.\n\n패혈증은 발열 외에도 저체온·수유저하·처짐·무호흡으로 나타납니다. 혈액배양 등 원인평가와 경험적 항생제가 필요합니다. 강의안은 조기발현형 초기 약제로 ampicillin+gentamicin을 제시합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 3쪽."
+      },
+      "externalEvidence": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6568306/",
+          "role": "lecture_gap_supplement",
+          "accessed": "2026-11-13"
+        }
+      ],
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "ai_review",
+        "version": "1.1.12",
+        "reason": "수유량 부족·앞숫구멍 함몰·생후3일 발열이라는 단서를 탈수성 발열을 묻는 증례로 해석해 기존② 수액 투여를 채택합니다. 수분 부족 교정이 보기 중 가장 직접적인 처치입니다."
       }
     },
     {
@@ -20616,12 +20808,12 @@
         },
         {
           "number": 5,
-          "text": "미복원"
+          "text": "기계환기 의존 상태에서 모든 호흡보조를 즉시 중단한다. (임의복원)"
         }
       ],
       "answer": 2,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "조산아의 장기간 산소·환기 의존은 BPD를 시사합니다. 폐포·폐혈관 발달 저하, 폐손상·염증이 관여하며 기포성·불균질 영상이 나타납니다. 영양·산소화·감염 관리가 기본이고 환기이탈이 어려우면 부작용을 고려하여 덱사메타손을 신중하게 사용합니다. 이뇨제 효과는 단기적입니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 3쪽.",
+      "explanation": "조산아의 장기간 산소·환기 의존은 BPD를 시사합니다. 폐포·폐혈관 발달 저하, 폐손상·염증이 관여하며 기포성·불균질 영상이 나타납니다. 영양·산소화·감염 관리가 기본이고 환기이탈이 어려우면 부작용을 고려하여 덱사메타손을 신중하게 사용합니다. 이뇨제 효과는 단기적입니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 3쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261030_모성과신생아_신생아호흡기질환.pdf(1).pdf",
@@ -20679,7 +20871,9 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "5": "[임의복원 보기 해설] 호흡보조 이탈 여부는 상태를 평가해 결정합니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -20712,12 +20906,42 @@
         "gradingHold": false,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "조산아의 장기간 산소·환기 의존은 BPD를 시사합니다. 폐포·폐혈관 발달 저하, 폐손상·염증이 관여하며 기포성·불균질 영상이 나타납니다. 영양·산소화·감염 관리가 기본이고 환기이탈이 어려우면 부작용을 고려하여 덱사메타손을 신중하게 사용합니다. 이뇨제 효과는 단기적입니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "폐표면활성제 재투여"
+          },
+          {
+            "number": 2,
+            "text": "덱사메타손 투여"
+          },
+          {
+            "number": 3,
+            "text": "고농도 산소 요법"
+          },
+          {
+            "number": 4,
+            "text": "고농도 이뇨제 단독 장기 투여"
+          },
+          {
+            "number": 5,
+            "text": "미복원"
+          }
+        ],
+        "changedNumbers": [
+          5
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     },
     {
@@ -20748,12 +20972,12 @@
         },
         {
           "number": 5,
-          "text": "미복원"
+          "text": "복부 방사선치료를 시행한다. (임의복원)"
         }
       ],
-      "answer": null,
-      "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "분홍 육아조직은 육아종②이나 점액만 나오는 폴립③과 구별할 경도·반응 정보가 빠져 있습니다. 원 강의안의 감별을 제시하며 보류합니다.\n\n점액농 분비와 분홍색 육아조직은 육아종을 시사하며 강의안은 10% 질산은 소작을 제시합니다. 단단한 선홍색 조직·점액만 분비·소작 무반응이면 탯줄폴립을 감별하며 외과적 절제가 필요합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 3쪽.",
+      "answer": 2,
+      "answerSource": "v1.1.12_evidence_based_exam_answer_adoption",
+      "explanation": "탯줄 탈락 후 분홍색 조직과 분비물은 탯줄 육아종에 가장 잘 맞아 기존②를 채택합니다. 선천기형 강의안 PDF16쪽이 육아종의 10% 질산은 소작을 명시합니다.\n\n농도는 제공 강의안에 따른 시험 답안입니다. 단단한 선홍색 조직·소작 무반응이면 폴립을 감별하지만 지문에는 없습니다. 실제 처치에서는 주변 피부 손상을 주의합니다.\n\n점액농 분비와 분홍색 육아조직은 육아종을 시사하며 강의안은 10% 질산은 소작을 제시합니다. 단단한 선홍색 조직·점액만 분비·소작 무반응이면 탯줄폴립을 감별하며 외과적 절제가 필요합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 3쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "25.11.06._모성과신생아_최두영pf_선천기형(1).pdf",
@@ -20766,7 +20990,10 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "5": "[임의복원 보기 해설] 탯줄 육아종 치료가 아닙니다.",
+        "2": "채택 정답: 탯줄 탈락 후 분홍색 조직과 분비물은 탯줄 육아종에 가장 잘 맞아 기존②를 채택합니다. 선천기형 강의안 PDF16쪽이 육아종의 10% 질산은 소작을 명시합니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -20787,18 +21014,67 @@
       "unitId": "neonatal-umbilical",
       "archiveUnrecovered": false,
       "lectureAudit": {
-        "status": "unresolved",
-        "reason": "분홍 육아조직은 육아종②이나 점액만 나오는 폴립③과 구별할 경도·반응 정보가 빠져 있습니다. 원 강의안의 감별을 제시하며 보류합니다.",
-        "limitations": "지문 또는 선택지 일부가 미복원되어 복원된 내용 안에서 검토했습니다.",
-        "gradingHold": true,
+        "status": "partial",
+        "reason": "탯줄 탈락 후 분홍색 조직과 분비물은 탯줄 육아종에 가장 잘 맞아 기존②를 채택합니다. 선천기형 강의안 PDF16쪽이 육아종의 10% 질산은 소작을 명시합니다.",
+        "limitations": "농도는 제공 강의안에 따른 시험 답안입니다. 단단한 선홍색 조직·소작 무반응이면 폴립을 감별하지만 지문에는 없습니다. 실제 처치에서는 주변 피부 손상을 주의합니다.",
+        "gradingHold": false,
         "referenceAnswer": null,
-        "answerRevised": false,
-        "version": "1.1.11"
+        "answerRevised": true,
+        "version": "1.1.12"
       },
       "validation": {
-        "stage": "needs_review",
+        "stage": "accepted",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "분홍 육아조직은 육아종②이나 점액만 나오는 폴립③과 구별할 경도·반응 정보가 빠져 있습니다. 원 강의안의 감별을 제시하며 보류합니다."
+        "decisionReason": "탯줄 탈락 후 분홍색 조직과 분비물은 탯줄 육아종에 가장 잘 맞아 기존②를 채택합니다. 선천기형 강의안 PDF16쪽이 육아종의 10% 질산은 소작을 명시합니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "1% 질산은 도포"
+          },
+          {
+            "number": 2,
+            "text": "10% 질산은 소작술"
+          },
+          {
+            "number": 3,
+            "text": "외과적 절제술"
+          },
+          {
+            "number": 4,
+            "text": "경과관찰"
+          },
+          {
+            "number": 5,
+            "text": "미복원"
+          }
+        ],
+        "changedNumbers": [
+          5
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
+      },
+      "reviewHistoryV111": {
+        "answer": null,
+        "lectureAudit": {
+          "status": "unresolved",
+          "reason": "분홍 육아조직은 육아종②이나 점액만 나오는 폴립③과 구별할 경도·반응 정보가 빠져 있습니다. 원 강의안의 감별을 제시하며 보류합니다.",
+          "limitations": "지문 또는 선택지 일부가 미복원되어 복원된 내용 안에서 검토했습니다.",
+          "gradingHold": true,
+          "referenceAnswer": null,
+          "answerRevised": false,
+          "version": "1.1.12"
+        },
+        "explanation": "분홍 육아조직은 육아종②이나 점액만 나오는 폴립③과 구별할 경도·반응 정보가 빠져 있습니다. 원 강의안의 감별을 제시하며 보류합니다.\n\n점액농 분비와 분홍색 육아조직은 육아종을 시사하며 강의안은 10% 질산은 소작을 제시합니다. 단단한 선홍색 조직·점액만 분비·소작 무반응이면 탯줄폴립을 감별하며 외과적 절제가 필요합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 3쪽."
+      },
+      "answerConfirmation": {
+        "status": "confirmed",
+        "basis": "ai_review",
+        "version": "1.1.12",
+        "reason": "탯줄 탈락 후 분홍색 조직과 분비물은 탯줄 육아종에 가장 잘 맞아 기존②를 채택합니다. 선천기형 강의안 PDF16쪽이 육아종의 10% 질산은 소작을 명시합니다."
       }
     },
     {
@@ -20896,7 +21172,7 @@
       "subject": "maternal-newborn",
       "professor": "choi-duyoung-neonatal",
       "type": "choice",
-      "prompt": "조산아가 NICU에서 저혈압으로 인해 약물 치 료중이다. ~ 사진이다. 진단은? (자체복원: 해당사진과 비슷한 사진이긴 했으나, 정 확히는 뇌실 전체가 하얗게 채워져있었습니다... 강 의안에 없는 사진이었던 것 같습니다...!)",
+      "prompt": "조산아가 NICU에서 저혈압으로 인해 약물 치 료중이다. 뇌 영상 사진이다. (임의복원) 진단은? (자체복원: 해당사진과 비슷한 사진이긴 했으나, 정 확히는 뇌실 전체가 하얗게 채워져있었습니다... 강 의안에 없는 사진이었던 것 같습니다...!)",
       "choices": [
         {
           "number": 1,
@@ -20912,16 +21188,16 @@
         },
         {
           "number": 4,
-          "text": "미복원"
+          "text": "선천성 뇌수종 (임의복원)"
         },
         {
           "number": 5,
-          "text": "미복원"
+          "text": "경막외혈종 (임의복원)"
         }
       ],
       "answer": null,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "기술된 뇌실전체 고음영은②를 시사하나 실제 시험영상은 미확보이고 자료 그림은 유사 예시입니다. 실제 사진으로 오인하지 않도록 표시하고 보류합니다.\n\n조산아의 배기질·뇌실내출혈은 미숙한 혈관과 뇌혈류 변동에 관련됩니다. 열린 앞숫구멍을 통한 두부초음파로 확인합니다. 뇌실내 혈액이 있으나 확장 없으면 2단계, 뇌실확장 동반 시 3단계입니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 4쪽.",
+      "explanation": "기존 기록의 “뇌실 전체가 하얗게”는②를 시사하나 실제 시험영상이 없고 첨부 그림은 대체 예시입니다. ④·⑤ 보완만으로 영상 불일치를 해결하지 못해 참고답②와 함께 보류합니다.\n\n조산아의 배기질·뇌실내출혈은 미숙한 혈관과 뇌혈류 변동에 관련됩니다. 열린 앞숫구멍을 통한 두부초음파로 확인합니다. 뇌실내 혈액이 있으나 확장 없으면 2단계, 뇌실확장 동반 시 3단계입니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 4쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.\n\n지문의 ~ 연결부를 뇌 영상으로만 보완했습니다. 영상 종류·등급·원시험 사진은 추정하지 않았습니다.",
       "evidence": [
         {
           "file": "최두영pf_261020_모성과신생아_신경질환.pdf(1).pdf",
@@ -20952,7 +21228,10 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "4": "[임의복원 보기 해설] 뇌실 확대만으로 뇌실내 혈액을 설명하지 못합니다.",
+        "5": "[임의복원 보기 해설] 두개골과 경막 사이 출혈로 위치가 다릅니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -20980,19 +21259,52 @@
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
-        "reason": "기술된 뇌실전체 고음영은②를 시사하나 실제 시험영상은 미확보이고 자료 그림은 유사 예시입니다. 실제 사진으로 오인하지 않도록 표시하고 보류합니다.",
+        "reason": "기존 기록의 “뇌실 전체가 하얗게”는②를 시사하나 실제 시험영상이 없고 첨부 그림은 대체 예시입니다. ④·⑤ 보완만으로 영상 불일치를 해결하지 못해 참고답②와 함께 보류합니다.",
         "limitations": "지문 또는 선택지 일부가 미복원되어 복원된 내용 안에서 검토했습니다.",
         "gradingHold": true,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "기술된 뇌실전체 고음영은②를 시사하나 실제 시험영상은 미확보이고 자료 그림은 유사 예시입니다. 실제 사진으로 오인하지 않도록 표시하고 보류합니다."
+        "decisionReason": "기존 기록의 “뇌실 전체가 하얗게”는②를 시사하나 실제 시험영상이 없고 첨부 그림은 대체 예시입니다. ④·⑤ 보완만으로 영상 불일치를 해결하지 못해 참고답②와 함께 보류합니다."
       },
-      "transcriptionWarning": "복원자료의 유사 예시이며 실제 시험영상이 아닙니다."
+      "transcriptionWarning": "복원자료의 유사 예시이며 실제 시험영상이 아닙니다.",
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "germinal matrix hemorrhage"
+          },
+          {
+            "number": 2,
+            "text": "intraventricular hemorrhage"
+          },
+          {
+            "number": 3,
+            "text": "Periventricular leukomalacia"
+          },
+          {
+            "number": 4,
+            "text": "미복원"
+          },
+          {
+            "number": 5,
+            "text": "미복원"
+          }
+        ],
+        "changedNumbers": [
+          4,
+          5
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
+        "originalPrompt": "조산아가 NICU에서 저혈압으로 인해 약물 치 료중이다. ~ 사진이다. 진단은? (자체복원: 해당사진과 비슷한 사진이긴 했으나, 정 확히는 뇌실 전체가 하얗게 채워져있었습니다... 강 의안에 없는 사진이었던 것 같습니다...!)",
+        "promptNote": "지문의 ~ 연결부를 뇌 영상으로만 보완했습니다. 영상 종류·등급·원시험 사진은 추정하지 않았습니다."
+      }
     },
     {
       "id": "choi-duyoung-neonatal:22-24",
@@ -21006,15 +21318,15 @@
       "choices": [
         {
           "number": 1,
-          "text": "선천적 지연은 염색체 이상으로 ~가 원인이다."
+          "text": "선천적 지연은 염색체 이상으로 인한 태아 성장잠재력 저하가 원인이다. (임의복원)"
         },
         {
           "number": 2,
-          "text": "비대칭형은 염색체 이상으로 ~가 원인이다."
+          "text": "비대칭형은 염색체 이상으로 인한 태아 성장잠재력 저하가 원인이다. (임의복원)"
         },
         {
           "number": 3,
-          "text": "미복원"
+          "text": "비대칭형에서는 머리보다 체중이 상대적으로 보존된다. (임의복원)"
         },
         {
           "number": 4,
@@ -21027,7 +21339,7 @@
       ],
       "answer": null,
       "answerSource": "annual_explanation_and_supplied_lectures_review",
-      "explanation": "보기 상당 부분이 생략되어 대칭·비대칭,SGA·IUGR 정의를 비교할 수 없어 보류합니다.\n\n머리·키에 비해 체중·복위가 작은 비대칭형은 임신 후기 전자간증·만성고혈압 등과 관련됩니다. 영양공급으로 따라잡기 성장이 가능합니다. 대칭형은 더 이른 시기의 염색체·유전적 원인 등을 고려합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 4쪽.",
+      "explanation": "①~③의 생략 부분을 보완했지만 기존④의 포괄적 문구와 새로 보완한①을 원시험 단일 정답 근거로 구별할 수 없어 보류합니다.\n\n머리·키에 비해 체중·복위가 작은 비대칭형은 임신 후기 전자간증·만성고혈압 등과 관련됩니다. 영양공급으로 따라잡기 성장이 가능합니다. 대칭형은 더 이른 시기의 염색체·유전적 원인 등을 고려합니다.\n\n연도별 원자료: 22_모성과신생아_최두영pf(1).pdf PDF 4쪽.\n\n(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
       "evidence": [
         {
           "file": "최두영pf_261020_모성과신생아_고위험 신생아.pdf(1).pdf",
@@ -21058,7 +21370,11 @@
         }
       ],
       "candidateEvidence": [],
-      "choiceExplanations": {},
+      "choiceExplanations": {
+        "1": "[임의복원 보기 해설] 생략 부분의 학습용 보완입니다. 이것으로 원시험 정답을 새로 만들지는 않습니다.",
+        "2": "[임의복원 보기 해설] 비대칭형은 주로 후기 태반기능부전·영양공급 제한과 연결됩니다.",
+        "3": "[임의복원 보기 해설] 머리가 상대적으로 보존되는 경향입니다."
+      },
       "explanationImages": [],
       "annualSources": [
         {
@@ -21080,17 +21396,49 @@
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
-        "reason": "보기 상당 부분이 생략되어 대칭·비대칭,SGA·IUGR 정의를 비교할 수 없어 보류합니다.",
+        "reason": "①~③의 생략 부분을 보완했지만 기존④의 포괄적 문구와 새로 보완한①을 원시험 단일 정답 근거로 구별할 수 없어 보류합니다.",
         "limitations": "지문 또는 선택지 일부가 미복원되어 복원된 내용 안에서 검토했습니다.",
         "gradingHold": true,
         "referenceAnswer": null,
         "answerRevised": false,
-        "version": "1.1.11"
+        "version": "1.1.12"
       },
       "validation": {
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
-        "decisionReason": "보기 상당 부분이 생략되어 대칭·비대칭,SGA·IUGR 정의를 비교할 수 없어 보류합니다."
+        "decisionReason": "①~③의 생략 부분을 보완했지만 기존④의 포괄적 문구와 새로 보완한①을 원시험 단일 정답 근거로 구별할 수 없어 보류합니다."
+      },
+      "reconstruction": {
+        "version": "1.1.12",
+        "kind": "educational_not_original",
+        "originalChoices": [
+          {
+            "number": 1,
+            "text": "선천적 지연은 염색체 이상으로 ~가 원인이다."
+          },
+          {
+            "number": 2,
+            "text": "비대칭형은 염색체 이상으로 ~가 원인이다."
+          },
+          {
+            "number": 3,
+            "text": "미복원"
+          },
+          {
+            "number": 4,
+            "text": "비대칭형은 성장 속도가 느리다."
+          },
+          {
+            "number": 5,
+            "text": "대칭형은 머리와 가슴 둘레가 비슷하다."
+          }
+        ],
+        "changedNumbers": [
+          1,
+          2,
+          3
+        ],
+        "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
       }
     }
   ]

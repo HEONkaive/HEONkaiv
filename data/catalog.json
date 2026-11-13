@@ -83,15 +83,15 @@
           "id": "hong-kiyeon",
           "name": "홍기연",
           "data": "data/professors/hong-kiyeon.json",
-          "questionCount": 58,
-          "pendingCount": 9
+          "questionCount": 50,
+          "pendingCount": 7
         },
         {
           "id": "choi-duyoung-neonatal",
           "name": "최두영",
           "data": "data/professors/choi-duyoung-neonatal.json",
-          "questionCount": 204,
-          "pendingCount": 61
+          "questionCount": 185,
+          "pendingCount": 33
         }
       ]
     },

@@ -9,7 +9,7 @@
   const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
   const circles = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
   const TALLY_FORM_ID = '6DjZg5';
-  const PUBLIC_VERSION = '1.1.11';
+  const PUBLIC_VERSION = '1.1.12';
   const PUBLIC_RELEASE_DATE = '2026-11-12';
   const LEADERBOARD_IMAGE_BY_RANK = {1:'assets/ui/rank-first.png',2:'assets/ui/rank-second.png',3:'assets/ui/rank-third.png'};
   // Keep the underlying provenance, but omit internal answer-approval workflow from study copy.
@@ -526,7 +526,7 @@
   function record(q,mode=studyMode) { return recordBucket(mode)[q.id] || {selected:[],submitted:false}; }
   function isBookmark(q,mode=studyMode) { return !!bookmarkBucket(mode)[q.id]; }
   function submission(q,mode=studyMode) { return !!record(q,mode).submitted; }
-  function effectiveAnswer(q) { if(q.lectureAudit?.gradingHold)return null;if(q.lectureAudit&&(q.lectureAudit.answerRevised||q.answerKey))return q.answer;if(q.validation?.stage==='exam_answer_key')return q.answer;return Object.prototype.hasOwnProperty.call(state.customAnswers,q.id) ? state.customAnswers[q.id] : q.answer; }
+  function effectiveAnswer(q) { if(q.lectureAudit?.gradingHold)return null;if(q.answerConfirmation?.status==='confirmed')return q.answer;if(q.lectureAudit&&(q.lectureAudit.answerRevised||q.answerKey))return q.answer;if(q.validation?.stage==='exam_answer_key')return q.answer;return Object.prototype.hasOwnProperty.call(state.customAnswers,q.id) ? state.customAnswers[q.id] : q.answer; }
   const normalizeText = s => String(s||'').toLowerCase().replace(/[\s.!?,'"’‘“”\-_:;]+/g,'');
   function arraysEqual(a,b) { const sa=[...(Array.isArray(a)?a:[a])].map(String).sort();const sb=[...(Array.isArray(b)?b:[b])].map(String).sort();return sa.length===sb.length && sa.every((x,i)=>x===sb[i]); }
   function evaluation(q,mode=studyMode) {
@@ -1031,6 +1031,7 @@
     </aside>`;
   }
   function lectureAuditLabel(q) {
+    if(q.answerConfirmation?.status==='confirmed')return q.answerConfirmation.basis==='user_kmle'?'✓ 정답 확정 · KMLE 기출 (사용자 확인)':'✓ 정답 채택 · 근거와 한계 확인';
     return {matched:'✓ 검증 완료',owner:'운영자 지정 답안',partial:'◐ 관련 근거 확인 · 일부 검토 필요',missing:'! 같은 교수님 강의안 근거 미확보',unresolved:'! 정답 미확정 · 채점 보류',conflict:'! 문항·정답 충돌 · 채점 보류'}[q.lectureAudit?.status]||'근거 재검토';
   }
   function lecturePageLabel(e) {
@@ -1044,8 +1045,8 @@
   function renderLectureAudit(q) {
     const audit=q.lectureAudit, answer=effectiveAnswer(q), refs=q.evidence||[];
     const matched=audit.status==='matched';
-    const custom=!q.answerKey&&!audit.answerRevised&&!audit.gradingHold&&Object.prototype.hasOwnProperty.call(state.customAnswers,q.id);
-    const title=q.type==='short'?'참고답안 · 서술형 수동 채점':custom?'내가 지정한 답안':matched?'강의안 대조 정답':'기존 답안 · 강의안 검증 제한';
+    const custom=q.answerConfirmation?.status!=='confirmed'&&!q.answerKey&&!audit.answerRevised&&!audit.gradingHold&&Object.prototype.hasOwnProperty.call(state.customAnswers,q.id);
+    const title=q.type==='short'?'참고답안 · 서술형 수동 채점':q.answerConfirmation?.status==='confirmed'?(q.answerConfirmation.basis==='user_kmle'?'확정 정답 · 해당 연도 KMLE 답안':'채택 정답 · 재검토 결과'):custom?'내가 지정한 답안':matched?'강의안 대조 정답':'기존 답안 · 강의안 검증 제한';
     const prior=audit.referenceAnswer!=null && (audit.gradingHold||audit.answerRevised);
     const explain=q.explanation||audit.reason;
     return `<aside class="evidence-panel"><div class="evidence-head"><div><div class="evidence-kicker">EVIDENCE & EXPLANATION</div><h3>정답 근거 및 해설</h3></div><button class="icon-btn" data-action="toggle-evidence" title="해설 접기">✕</button></div>
@@ -1056,12 +1057,14 @@
       ${audit.limitations&&audit.limitations!==explain?`<p class="review-note"><b>근거의 한계</b> · ${esc(audit.limitations)}</p>`:''}
       ${audit.reason&&audit.reason!==explain&&audit.reason!==audit.limitations&&!audit.reason.startsWith('같은 교수님 강의안')?`<p class="review-note">${esc(audit.reason)}</p>`:''}
       ${prior?`<details class="source-card"><summary>${audit.gradingHold?'이전 답안 기록 (채점에 사용하지 않음)':'정답 변경 기록'}</summary><p>이전: ${esc(auditAnswerText(q,audit.referenceAnswer))}</p>${audit.answerRevised?`<p>재검토: ${esc(auditAnswerText(q,q.answer))}</p>`:''}</details>`:''}
+      ${q.reconstruction?`<details class="source-card"><summary>임의복원 전 선택지 확인</summary><p>${esc(q.reconstruction.notice)}</p>${q.reconstruction.originalChoices.map(c=>`<p>${esc(c.number)}. ${esc(c.text)}</p>`).join('')}</details>`:''}
+      ${(q.externalEvidence||[]).map(e=>`<p class="review-note">외부 보완근거 · <a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">자료 열기 ↗</a> (강의안 직접 근거와 구분)</p>`).join('')}
       ${choiceReasonList(q)}${renderExplanationImages(q)}
       ${(q.annualSources||[]).map(a=>`<details class="source-card"><summary>${esc(a.file.includes('수정사항')?'교수님 수정사항':'해당 연도 해설·복원자료')} · PDF ${esc(a.page)}쪽</summary><p class="file-name">${esc(a.file)}</p><p class="fine">당시 해설 원문입니다. 오류·정정 내용은 위 재검토 해설을 함께 확인하세요.</p><img class="source-image" src="${esc(a.image)}" alt="${esc(a.file)} PDF ${esc(a.page)}쪽" loading="lazy" data-action="zoom" data-caption="${esc(a.file)} · PDF ${esc(a.page)}쪽"></details>`).join('')}
       <div class="section-head"><h4 class="section-title" style="font-size:14px">${matched?'확인한 강의안 원본':'검토한 강의안 원본'}</h4><span class="fine">${refs.length}페이지</span></div>
       ${refs.map(e=>`<article class="evidence-item"><div class="evidence-meta"><span class="file-page">${esc(lecturePageLabel(e))} · ${esc(e.lectureYear)}년</span><p class="file-name">${esc(e.file)}</p><p class="fine">${esc(e.lectureOwner)} · ${esc(e.pageBasis)}</p></div><img class="evidence-image" src="${esc(e.image)}" alt="${esc(e.lectureTitle)} · ${esc(lecturePageLabel(e))}" loading="lazy" data-action="zoom" data-caption="${esc(e.file)} · ${esc(lecturePageLabel(e))}"><div class="zoom-label">이미지를 누르면 확대됩니다 ⤢</div></article>`).join('')||'<div class="empty" style="padding:21px">첨부된 같은 교수님 자료에서 직접 근거를 확보하지 못했습니다.</div>'}
       ${q.answerKey?.image?`<details class="source-card exam-answer-key"><summary>기출 공식 정답표 원본 · 강의안 검토와 구분</summary><img class="source-image" src="${esc(q.answerKey.image)}" alt="기출 공식 정답표" loading="lazy" data-action="zoom" data-caption="기출 공식 정답표"></details>`:''}
-      ${!q.answerKey&&!audit.gradingHold&&!audit.answerRevised&&!matched?`<section class="user-answer"><h4>직접 정답 지정</h4><p>개인 지정 답안은 강의안 검증 결과와 별개입니다.${q.type==='short'?' 주관식은 지정해도 수동채점을 유지합니다.':''}</p>${q.type==='short'?`<input class="search" id="custom-short" type="text" placeholder="참고답안 입력" value="${esc(custom?String(answer):'')}" style="width:100%;margin-bottom:8px"><button class="button small secondary" data-action="save-custom-short">정답 저장</button>`:`<div class="custom-answers">${(q.choices||[]).map(c=>`<button class="number-pill ${(Array.isArray(answer)?answer:[answer]).includes(c.number)?'active':''}" data-action="custom-answer" data-number="${c.number}">${circles[c.number-1]||c.number}</button>`).join('')}</div><label class="fine"><input type="checkbox" data-action="custom-multi" ${state.customMulti[q.id]?'checked':''}> 복수 정답 지정</label>`}${custom?'<button class="button ghost tiny" data-action="remove-custom">내 지정 정답 해제</button>':''}</section>`:''}
+      ${q.answerConfirmation?.status!=='confirmed'&&!q.answerKey&&!audit.gradingHold&&!audit.answerRevised&&!matched?`<section class="user-answer"><h4>직접 정답 지정</h4><p>개인 지정 답안은 강의안 검증 결과와 별개입니다.${q.type==='short'?' 주관식은 지정해도 수동채점을 유지합니다.':''}</p>${q.type==='short'?`<input class="search" id="custom-short" type="text" placeholder="참고답안 입력" value="${esc(custom?String(answer):'')}" style="width:100%;margin-bottom:8px"><button class="button small secondary" data-action="save-custom-short">정답 저장</button>`:`<div class="custom-answers">${(q.choices||[]).map(c=>`<button class="number-pill ${(Array.isArray(answer)?answer:[answer]).includes(c.number)?'active':''}" data-action="custom-answer" data-number="${c.number}">${circles[c.number-1]||c.number}</button>`).join('')}</div><label class="fine"><input type="checkbox" data-action="custom-multi" ${state.customMulti[q.id]?'checked':''}> 복수 정답 지정</label>`}${custom?'<button class="button ghost tiny" data-action="remove-custom">내 지정 정답 해제</button>':''}</section>`:''}
       <details class="question-audit-history"><summary>재검토 기록 · ${esc(audit.version)}</summary><p>1차: 같은 교수님·단원·연도·근거 위치 대조. 2차: 선택지와 정답·전사 및 근거의 충분성 재검토.</p><p>동일 AI가 두 차례 검토했습니다. 부분 근거나 충돌이 남은 문항은 검증 완료로 표시하지 않습니다.</p></details>
     </aside>`;
   }
