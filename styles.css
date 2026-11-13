@@ -1136,3 +1136,91 @@ html[data-theme=light] .review-number-button.pending{background:#fff4d9;border-c
     min-height:29px;
   }
 }
+
+/* ===== HEON ARCHIVE v1.2.0: landscape-oriented 38 : 31 : 31 learning ===== */
+@media (min-width:761px){
+  .quiz-mode .exam-layout,.quiz-mode .exam-layout.collapsed{
+    display:grid;grid-template-columns:minmax(0,38fr) 9px minmax(0,62fr);
+    min-width:0;min-height:0;max-height:none;align-items:stretch;gap:0;
+  }
+  .quiz-mode .evidence-panel{display:flex;flex-direction:column;min-width:0;overflow-y:auto;}
+  .quiz-mode .evidence-head{flex-shrink:0;margin-bottom:9px;}
+  .quiz-mode .evidence-flow{column-count:2;column-gap:clamp(12px,1.35vw,22px);column-fill:balance;overflow-wrap:anywhere;min-width:0;}
+  .quiz-mode .evidence-flow .result-box,.quiz-mode .evidence-flow .evidence-item,
+  .quiz-mode .evidence-flow .source-card,.quiz-mode .evidence-flow .choice-reason{
+    break-inside:avoid-column;-webkit-column-break-inside:avoid;
+  }
+  .quiz-mode .exam-panel,.quiz-mode .evidence-placeholder{min-width:0;overflow-y:auto;}
+  .quiz-mode .question-header{align-items:center;flex-wrap:wrap;gap:7px;}
+  .quiz-mode .question-header>.row{gap:5px;flex-wrap:wrap;justify-content:flex-end;}
+  .quiz-mode .question-header .icon-btn{font-size:11px;min-height:33px;padding:5px 7px;}
+  .quiz-mode .ink-tools{display:inline-flex;flex-wrap:wrap;align-items:center;gap:3px;max-width:100%;}
+  .quiz-mode .ink-tools button{cursor:pointer;font-size:11px;font-weight:750;padding:5px 7px;min-height:32px;color:var(--muted);background:var(--panel2);border:1px solid var(--stroke);border-radius:9px;}
+  .quiz-mode .ink-tools button.active{color:var(--accent);border-color:var(--accent);background:color-mix(in srgb,var(--accent) 11%,var(--panel));}
+  .quiz-mode .ink-tools input[type=color]{width:28px;height:30px;border:0;background:transparent;padding:0;cursor:pointer;}
+  .ink-section{margin-top:23px;border:1px solid var(--stroke2);border-radius:13px;background:var(--panel2);padding:11px;min-width:0;}
+  .ink-title{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:9px;}
+  .ink-title strong{font-size:13px;color:var(--accent)}
+  .ink-title span{font-size:10px;color:var(--muted)}
+  .ink-title button{margin-left:auto;background:transparent;color:var(--accent);border:0;font-size:11px;cursor:pointer}
+  .ink-paper{background:#fffefa;border:1px solid #d7dfe9;border-radius:8px;overflow:hidden;}
+  .ink-svg{width:100%;height:auto;display:block;touch-action:none;cursor:crosshair;background:repeating-linear-gradient(to bottom,transparent,transparent 31px,#e6edf5 32px);}
+  .ink-svg path{pointer-events:none;}
+  .ink-status{display:block;font-size:10px;color:var(--muted);margin-top:6px;}
+  .ink-section.ink-expanded{position:fixed;z-index:1100;inset:5vh 4vw;background:var(--panel);padding:16px;display:flex;flex-direction:column;box-shadow:0 0 0 150vmax rgba(0,0,0,.65);}
+  .ink-section.ink-expanded .ink-paper{overflow:auto;min-height:0;flex:1;}
+  .ink-section.ink-expanded .ink-svg{min-width:660px;width:100%;max-width:1050px;margin:auto;}
+  .lecture-source-line{display:flex;flex-wrap:wrap;align-items:baseline;gap:3px 10px;word-break:break-all;}
+  .lecture-source-line .file-name{margin:0!important;font-size:11px;}
+  .lecture-source-line .file-page{white-space:nowrap;}
+}
+@media (min-width:761px) and (max-width:1020px){
+  .quiz-mode .workspace{height:100dvh;min-height:0;overflow:hidden;}
+  .quiz-mode .quiz-content{height:calc(100dvh - 112px);display:flex;flex-direction:column;overflow:hidden;padding:10px 14px;}
+  .quiz-mode .exam-layout,.quiz-mode .exam-layout.collapsed{flex:1 1 auto;height:0;}
+  .quiz-mode .exam-panel,.quiz-mode .evidence-panel,.quiz-mode .evidence-placeholder{height:100%;max-height:100%;min-height:0;overflow-y:auto;padding:14px 12px;}
+  .quiz-mode .quiz-dock{display:flex;flex:0 0 auto;align-items:center;justify-content:space-between;gap:5px;padding:7px;margin-top:7px;background:var(--panel);border:1px solid var(--stroke);border-radius:12px;}
+  .quiz-mode .dock-controls{display:flex;gap:4px;flex-wrap:wrap;}
+  .quiz-mode .quiz-dock .button{font-size:10px;padding:5px 7px;}
+  .quiz-mode .question-footer .quiz-actions{display:none;}
+  .quiz-mode .evidence-head h3{font-size:15px;}
+}
+@media (max-width:760px){
+  .ink-tools,.ink-section{display:none!important;}
+  .quiz-mode .evidence-flow{display:block;column-count:auto;}
+}
+
+/* ===== 21-day personal goal planner ===== */
+.goal-overlay{position:fixed;inset:0;z-index:1300;background:rgba(9,18,34,.72);display:flex;align-items:center;justify-content:center;padding:12px;backdrop-filter:blur(3px)}
+.goal-dialog{width:min(1060px,100%);max-height:94dvh;overflow:auto;overscroll-behavior:contain;background:var(--panel);color:var(--text);border:1px solid var(--stroke2);border-radius:20px;padding:clamp(14px,2.4vw,25px);box-shadow:0 22px 65px rgba(0,0,0,.35)}
+.goal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:13px}
+.goal-head h2{margin:3px 0;font-size:24px}.goal-head p{font-size:12px;color:var(--muted);margin:3px 0}
+.goal-calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}
+.goal-day{display:flex;flex-direction:column;align-items:flex-start;gap:4px;border:1px solid var(--stroke);border-radius:10px;background:var(--panel2);color:var(--text);padding:9px 7px;min-height:65px;cursor:pointer;text-align:left}
+.goal-day span{font-size:11px;color:var(--muted)}.goal-day strong{font-size:12px}.goal-day small{font-size:10px;color:var(--orange);line-height:1.3}
+.goal-day.active{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--panel))}.goal-day.today span{color:var(--accent);font-weight:800}
+.goal-overview{display:flex;align-items:center;gap:13px;margin:14px 0;padding:13px;background:var(--panel2);border-radius:12px;flex-wrap:wrap}
+.goal-overview>div:first-child{min-width:190px;flex:1 1 200px}.goal-overview b{display:block;font-size:14px}.goal-overview small{display:block;color:var(--muted);font-size:11px;margin-top:4px}
+.goal-meter{min-width:120px;flex:2 1 180px;height:9px;background:var(--stroke2);border-radius:99px;overflow:hidden}
+.goal-meter i{display:block;background:var(--green);height:100%;border-radius:99px}
+.goal-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-items:start}
+.goal-controls>label{grid-column:1/-1;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:800}
+.goal-controls select{padding:9px 11px;border-radius:9px;border:1px solid var(--stroke2);background:var(--panel2);color:var(--text)}
+.goal-pick{min-width:0;background:var(--panel2);border:1px solid var(--stroke);border-radius:13px;padding:12px;max-height:290px;overflow-y:auto}
+.goal-pick h3{font-size:13px;margin:0 0 10px;color:var(--accent)}
+.goal-pick label{display:flex;align-items:flex-start;gap:6px;line-height:1.45;font-size:12px;margin:9px 0;cursor:pointer}
+.goal-pick label input{accent-color:var(--accent);flex:0 0 auto;margin-top:3px}
+.goal-pick label small{margin-left:auto;white-space:nowrap;color:var(--muted);font-size:10px}
+.goal-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}
+.goal-actions .button{font-size:12px}
+@media(max-width:760px){
+  .goal-calendar{grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}
+  .goal-day{padding:5px 2px;min-height:53px;align-items:center;text-align:center}
+  .goal-day span{font-size:9px}.goal-day strong{font-size:9px}.goal-day small{font-size:8px}
+  .goal-controls{grid-template-columns:1fr}
+  .goal-pick{max-height:170px}
+  .goal-dialog{max-height:96dvh}
+}
+
+/* Keep the home study goal shortcut aligned with the registration count. */
+.home-pick-tools{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap;}

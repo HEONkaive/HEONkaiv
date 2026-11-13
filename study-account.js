@@ -9,7 +9,7 @@
   const STUDY_CLIENT_STORAGE='heon.study.auth.session.v1';
   const DATA_FIELDS=['records','yearExamRecords','predictionRecords','unitRecords',
     'bookmarks','yearExamBookmarks','predictionBookmarks','unitBookmarks',
-    'customAnswers','customMulti','lastVisited','reviewSchedule','bookmarkChanges','recordChanges','customAnswerChanges'];
+    'customAnswers','customMulti','lastVisited','reviewSchedule','bookmarkChanges','recordChanges','customAnswerChanges','dailyGoals'];
   const RECORD_FIELDS=new Set(['records','yearExamRecords','predictionRecords','unitRecords']);
   const BOOKMARK_FIELDS=new Set(['bookmarks','yearExamBookmarks','predictionBookmarks','unitBookmarks']);
   const $=(q,ctx=document)=>ctx.querySelector(q);
@@ -58,7 +58,7 @@
         if(RECORD_FIELDS.has(field)){
           const left=stamp(v),right=stamp(b[k]);
           out[k]=left>right?v:right>left?b[k]:(v?.submitted&&!b[k]?.submitted?v:b[k]);
-        } else if(field==='reviewSchedule'||field==='bookmarkChanges'||field==='recordChanges'||field==='customAnswerChanges') {
+        } else if(field==='reviewSchedule'||field==='bookmarkChanges'||field==='recordChanges'||field==='customAnswerChanges'||field==='dailyGoals') {
           out[k]=stamp(v)>=stamp(b[k])?v:b[k];
         } else if(BOOKMARK_FIELDS.has(field)) {
           // Keep legacy bookmarks even when they were created before change timestamps existed.
@@ -371,6 +371,6 @@
   }
   window.HeonStudyAccount={init,open,scheduleSync,syncNow,statusLabel,
     get active(){return active;},get master(){return active&&profile?.role==='master';},
-    get profile(){return profile;},get blocked(){return blocked;},get lastError(){return lastError;},
+    get profile(){return profile;},get userId(){return active?user?.id:null;},get blocked(){return blocked;},get lastError(){return lastError;},
     get client(){return client;}};
 })();
