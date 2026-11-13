@@ -1,4 +1,4 @@
-/* HEON ARCHIVE v1.2.1 — on-page vector handwriting.
+/* HEON ARCHIVE v1.2.3 — iPad Pencil touch resilience, presets and palettes.
  * Notes are saved per question in IndexedDB, including independent question and
  * explanation overlays; existing v1.2.0 stroke data is retained unchanged.
  * Apple Pencil draws on the page itself. Solve mode restores native interaction.
@@ -6,7 +6,11 @@
 (()=>{'use strict';
   const DB='heon.archive.ink.v1', STORE='notes', W=1000;
   let dbPromise=null, active=null, loadToken=0, owner='guest', cloudTimer=null, cloudError='';
-  let drawingMode=false, selectedTool='pen', penColor='#2457bb', perfect=null;
+  let drawingMode=false, selectedTool='pen', penColor='#2457bb', markerColor='#ffdf59', perfect=null;
+  const WIDTHS={pen:[0.3,0.4,0.5,0.6,0.7],marker:[2,3,4]};
+  const COLORS={pen:[['빨강','#e24646'],['주황','#ed8729'],['초록','#26985e'],['파랑','#2457bb'],['검정','#252a35'],['보라','#9355be'],['갈색','#84563f']],marker:[['핑크','#fc75b1'],['하늘','#7bd9f6'],['노랑','#ffdf59']]};
+  const sizes={pen:0.5,marker:3};
+  let openSize='',openPalette=false;
   import('https://cdn.jsdelivr.net/npm/perfect-freehand@1.2.3/dist/esm/index.mjs')
     .then(m=>{if(typeof m.getStroke==='function')perfect=m.getStroke;}).catch(()=>{});
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -56,17 +60,28 @@
     return 'M'+shape.map(p=>`${p[0].toFixed(1)},${p[1].toFixed(1)}`).join('L')+'Z';
   }
   function asSvg(stroke){return `<path d="${path(stroke)}" fill="${esc(stroke.color||'#2457bb')}" opacity="${stroke.tool==='marker'?.27:1}"/>`;}
+  function sizeMenu(tool){
+    return `<div class="ink-size-popover" data-ink-size-menu="${tool}" hidden role="group" aria-label="${tool==='pen'?'펜':'형광펜'} 굵기 선택">
+      <div class="ink-menu-label">굵기 · ${tool==='pen'?'0.1mm 간격':'3단계'}</div>
+      ${WIDTHS[tool].map(mm=>`<button type="button" data-ink-width="${mm}" data-ink-width-tool="${tool}" aria-label="${mm.toFixed(1)}mm">
+        <span class="ink-size-line" style="height:${Math.max(2,mm*(tool==='pen'?5:2))}px"></span><span>${mm.toFixed(1)}mm</span></button>`).join('')}
+    </div>`;
+  }
   function controls(q){
     return `<div class="ink-toolbar" role="toolbar" aria-label="문항 필기 도구" data-ink-tools="${esc(q)}">
-      <button type="button" class="ink-mode-toggle" data-ink-action="mode" title="필기 모드 전환" aria-pressed="${drawingMode}">${drawingMode?'✓ 풀이모드':'✎ 필기모드'}</button>
       <div class="ink-tools" ${drawingMode?'':'hidden'}>
-        <button type="button" data-ink-tool="pen" class="${selectedTool==='pen'?'active':''}" title="펜 (P)">✎ 펜</button>
-        <button type="button" data-ink-tool="marker" class="${selectedTool==='marker'?'active':''}" title="형광펜 (H)">▰ 형광</button>
-        <button type="button" data-ink-tool="erase" class="${selectedTool==='erase'?'active':''}" title="지우개 (E)" aria-label="지우개"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15.5 14 22H7L2 17 14.8 4.2a2.8 2.8 0 0 1 4 0l1.7 1.7a2.8 2.8 0 0 1 0 4Z" transform="translate(-1 -1) scale(.95)"/><path d="m8 11 6 6M6 21h15"/></svg><span>지우개</span></button>
-        <label class="ink-color-label" title="펜 색상"><input type="color" value="${esc(penColor)}" aria-label="펜 색상" data-ink-color></label>
+        <div class="ink-tool-group"><button type="button" data-ink-tool="pen" title="펜 · 다시 누르면 굵기 선택 (P)" aria-expanded="false">✎ 펜</button>${sizeMenu('pen')}</div>
+        <div class="ink-tool-group"><button type="button" data-ink-tool="marker" title="형광펜 · 다시 누르면 굵기 선택 (H)" aria-expanded="false">▰ 형광</button>${sizeMenu('marker')}</div>
+        <button type="button" data-ink-tool="erase" title="지우개 (E)" aria-label="지우개"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15.5 14 22H7L2 17 14.8 4.2a2.8 2.8 0 0 1 4 0l1.7 1.7a2.8 2.8 0 0 1 0 4Z" transform="translate(-1 -1) scale(.95)"/><path d="m8 11 6 6M6 21h15"/></svg><span>지우개</span></button>
+        <div class="ink-color-group"><button type="button" class="ink-color-current" data-ink-action="palette" title="색상 팔레트 펼치기" aria-label="현재 색상 · 색상 선택" aria-expanded="false"><span class="ink-color-dot"></span></button>
+          <div class="ink-color-popover" hidden role="group" aria-label="필기 색상 선택">
+            ${['pen','marker'].map(tool=>`<div class="ink-color-options" data-ink-colors="${tool}" hidden>${COLORS[tool].map(([label,color])=>`<button type="button" class="ink-color-choice" data-ink-color-choice="${color}" data-ink-color-tool="${tool}" aria-label="${label}" title="${label}" style="--swatch:${color}"><span></span></button>`).join('')}</div>`).join('')}
+          </div>
+        </div>
         <button type="button" data-ink-action="undo" title="실행 취소 (Ctrl+Z)" aria-label="실행 취소">↶</button>
         <button type="button" data-ink-action="redo" title="다시 실행 (Ctrl+Shift+Z)" aria-label="다시 실행">↷</button>
       </div>
+      <button type="button" class="ink-mode-toggle" data-ink-action="mode" title="필기/풀이 모드 전환" aria-pressed="${drawingMode}">${drawingMode?'✓ 풀이모드':'✎ 필기모드'}</button>
     </div>`;
   }
   // Kept as an empty compatibility hook; no separate writing area is rendered.
@@ -86,13 +101,34 @@
       const button=t.querySelector('[data-ink-action="mode"]');
       if(button){button.textContent=drawingMode?'✓ 풀이모드':'✎ 필기모드';button.setAttribute('aria-pressed',String(drawingMode));}
       const tools=t.querySelector('.ink-tools');if(tools)tools.hidden=!drawingMode;
-      t.querySelectorAll('[data-ink-tool]').forEach(b=>b.classList.toggle('active',b.dataset.inkTool===selectedTool));
+      t.querySelectorAll('[data-ink-tool]').forEach(b=>{
+        b.classList.toggle('active',b.dataset.inkTool===selectedTool);
+        b.setAttribute('aria-expanded',String(drawingMode&&openSize===b.dataset.inkTool));
+      });
+      t.querySelectorAll('[data-ink-size-menu]').forEach(el=>{el.hidden=!(drawingMode&&selectedTool===el.dataset.inkSizeMenu&&openSize===el.dataset.inkSizeMenu);});
+      t.querySelectorAll('[data-ink-width]').forEach(b=>b.classList.toggle('selected',Number(b.dataset.inkWidth)===sizes[b.dataset.inkWidthTool]));
+      const color=t.querySelector('.ink-color-current');
+      const current=selectedTool==='marker'?markerColor:penColor;
+      if(color){color.hidden=selectedTool==='erase'||!drawingMode;color.querySelector('.ink-color-dot').style.backgroundColor=current;color.setAttribute('aria-expanded',String(openPalette&&drawingMode));}
+      const palette=t.querySelector('.ink-color-popover');if(palette)palette.hidden=!(openPalette&&drawingMode&&selectedTool!=='erase');
+      t.querySelectorAll('[data-ink-colors]').forEach(el=>{el.hidden=el.dataset.inkColors!==selectedTool;});
+      t.querySelectorAll('[data-ink-color-choice]').forEach(b=>b.classList.toggle('selected',b.dataset.inkColorTool===selectedTool&&b.dataset.inkColorChoice===current));
     }
-    for(const region of active?.regions||[])region.layer.classList.toggle('is-writing',drawingMode);
+    for(const region of active?.regions||[]){region.layer.classList.toggle('is-writing',drawingMode);}
     document.querySelector('.quiz-mode')?.classList.toggle('ink-writing-mode',drawingMode);
   }
-  function useTool(value){if(!['pen','marker','erase'].includes(value))return;selectedTool=value;renderControls();}
-  function toggleMode(){drawingMode=!drawingMode;renderControls();}
+  function useTool(value){if(!['pen','marker','erase'].includes(value))return;selectedTool=value;openSize='';openPalette=false;renderControls();}
+  function clickTool(value){
+    if(!drawingMode)return;
+    if(selectedTool===value&&value!=='erase'){openSize=openSize===value?'':value;openPalette=false;renderControls();}
+    else useTool(value);
+  }
+  function toggleMode(){drawingMode=!drawingMode;openSize='';openPalette=false;renderControls();}
+  function setColor(tool,color){
+    if(!COLORS[tool]?.some(([,c])=>c===color))return;
+    if(tool==='pen')penColor=color;else markerColor=color;
+    selectedTool=tool;openSize='';openPalette=false;renderControls();
+  }
   async function attach(q){
     const token=++loadToken;
     const previous=active;
@@ -145,6 +181,11 @@
         Math.max(0,Math.min(height,(e.clientY-rect.top)/rect.height*height)),
         Math.max(.1,Math.min(1,e.pressure||.5))];
     }
+    function strokeSize(mm,region){
+      // Logical stroke width calculated from the displayed panel width: approximate physical mm.
+      const displayedWidth=region.svg.getBoundingClientRect().width||400;
+      return Number((mm*96/25.4*W/displayedWidth).toFixed(3));
+    }
     function pushHistory(name){history.push({name,strokes:JSON.stringify(dataStrokes(name))});if(history.length>40)history.shift();redo.length=0;}
     function refreshAll(){for(const region of session.regions)paint(region);}
     function undoAction(){
@@ -168,60 +209,167 @@
       layer.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" class="ink-overlay-svg" preserveAspectRatio="none"><g class="ink-saved"></g><g class="ink-live"></g></svg>';
       panel.appendChild(layer);
       const svg=layer.querySelector('svg');
-      const region={name,panel,layer,svg,saved:svg.querySelector('.ink-saved'),live:svg.querySelector('.ink-live'),drawing:null,finger:null,top:0};
+      const region={name,panel,layer,svg,saved:svg.querySelector('.ink-saved'),live:svg.querySelector('.ink-live'),drawing:null,finger:null,activePointer:null,stylusTouch:null,top:0};
       session.regions.push(region);layout(region);
-      svg.addEventListener('pointerdown',e=>{
+      const touchToPoint=t=>pointerPos({clientX:t.clientX,clientY:t.clientY,pressure:t.force&&t.force>0?t.force:.5},region);
+      function schedulePreview(){
+        if(frame)return;
+        frame=requestAnimationFrame(()=>{
+          frame=0;
+          if(active!==session)return;
+          for(const item of session.regions)item.live.innerHTML=item.drawing?asSvg(item.drawing):'';
+        });
+      }
+      function movePoint(pt){
+        const drawing=region.drawing;if(!drawing)return;
+        const last=drawing.points.at(-1);
+        if(drawing.points.length<7000&&Math.hypot(pt[0]-last[0],pt[1]-last[1])>=1.35){drawing.points.push(pt);schedulePreview();}
+      }
+      function begin(pt,source,id){
         if(!drawingMode||!session.ready)return;
-        if(e.pointerType==='touch'){
-          region.finger={y:e.clientY};svg.setPointerCapture?.(e.pointerId);e.preventDefault();return;
-        }
-        if(e.button!==0&&e.pointerType!=='pen')return;
-        const point=pointerPos(e,region);e.preventDefault();
+        if(region.drawing)return;
+        const strokes=dataStrokes(name);
         if(selectedTool==='erase'){
-          const strokes=dataStrokes(name);
-          const idx=strokes.findLastIndex(s=>(s.points||[]).some(p=>Math.hypot(p[0]-point[0],p[1]-point[1])<19));
+          const idx=strokes.findLastIndex(s=>(s.points||[]).some(p=>Math.hypot(p[0]-pt[0],p[1]-pt[1])<19));
           if(idx>=0){pushHistory(name);strokes.splice(idx,1);paint(region);queueSave();}
           return;
         }
         pushHistory(name);
-        region.drawing={tool:selectedTool==='marker'?'marker':'pen',color:selectedTool==='marker'?'#ecc345':penColor,
-          width:selectedTool==='marker'?30:5,points:[point]};
-        svg.setPointerCapture?.(e.pointerId);
-      },{signal});
-      svg.addEventListener('pointermove',e=>{
-        if(region.finger&&e.pointerType==='touch'){
-          region.panel.scrollTop+=region.finger.y-e.clientY;region.finger.y=e.clientY;e.preventDefault();return;
+        const marker=selectedTool==='marker';
+        region.drawing={tool:marker?'marker':'pen',color:marker?markerColor:penColor,
+          width:strokeSize(sizes[marker?'marker':'pen'],region),widthMm:sizes[marker?'marker':'pen'],
+          points:[pt],source,id};
+      }
+      function finish(commit=true){
+        const drawing=region.drawing;
+        if(!drawing)return;
+        region.drawing=null;region.live.innerHTML='';
+        if(commit){
+          if(drawing.points.length===1){const p=drawing.points[0];drawing.points.push([p[0]+.5,p[1]+.5,p[2]]);}
+          dataStrokes(name).push(drawing);region.saved.insertAdjacentHTML('beforeend',asSvg(drawing));queueSave();
         }
-        const drawing=region.drawing;if(!drawing)return;
-        const events=typeof e.getCoalescedEvents==='function'?e.getCoalescedEvents():[e];
-        for(const ev of events){const point=pointerPos(ev,region),last=drawing.points.at(-1);
-          if(drawing.points.length<7000&&Math.hypot(point[0]-last[0],point[1]-last[1])>=1.7)drawing.points.push(point);
+      }
+      function scrollFinger(y){
+        if(!region.finger)return;
+        const delta=region.finger.y-y;region.finger.y=y;
+        const parent=[region.panel,region.panel.parentElement,document.querySelector('.quiz-content'),document.querySelector('.workspace')].find(el=>el&&el.scrollHeight>el.clientHeight+3&&getComputedStyle(el).overflowY!=='hidden');
+        if(parent)parent.scrollTop+=delta;else window.scrollBy(0,delta);
+      }
+      svg.addEventListener('pointerdown',e=>{
+        if(!drawingMode||!session.ready)return;
+        if(e.pointerType==='touch'){
+          if(region.stylusTouch!==null)return;
+          // iPad stylus can arrive as a TouchEvent after pointerdown; only fingers scroll.
+          region.finger={y:e.clientY,id:e.pointerId};
+          return;
         }
-        if(!frame)frame=requestAnimationFrame(()=>{frame=0;for(const item of session.regions)item.live.innerHTML=item.drawing?asSvg(item.drawing):'';});
+        if(e.pointerType==='mouse'&&e.button!==0)return;
+        if(region.stylusTouch!==null)return;
+        region.activePointer=e.pointerId;
+        begin(pointerPos(e,region),'pointer',e.pointerId);
+        try{svg.setPointerCapture(e.pointerId);}catch(_){}
         e.preventDefault();
       },{signal});
-      const finish=e=>{
-        if(e.pointerType==='touch'){region.finger=null;return;}
-        const drawing=region.drawing;if(!drawing)return;
-        if(drawing.points.length===1){const p=drawing.points[0];drawing.points.push([p[0]+.5,p[1]+.5,p[2]]);}
-        dataStrokes(name).push(drawing);region.drawing=null;region.live.innerHTML='';
-        region.saved.insertAdjacentHTML('beforeend',asSvg(drawing));queueSave();
+      function pointerMove(e){
+        if(!drawingMode||active!==session)return;
+        if(e.pointerType==='touch'&&region.finger?.id===e.pointerId){
+          if(region.stylusTouch===null&&region.finger.touchId===undefined){scrollFinger(e.clientY);e.preventDefault();}
+          return;
+        }
+        if(region.activePointer!==e.pointerId||region.drawing?.source==='touch')return;
+        const events=typeof e.getCoalescedEvents==='function'?e.getCoalescedEvents():[e];
+        for(const ev of events)movePoint(pointerPos(ev,region));
+        e.preventDefault();
+      }
+      function pointerEnd(e){
+        if(region.finger?.id===e.pointerId)region.finger=null;
+        if(region.activePointer!==e.pointerId)return;
+        region.activePointer=null;
+        if(region.drawing?.source==='pointer'){
+          if(e.type==='pointerup')movePoint(pointerPos(e,region));
+          // A cancelled gesture may be rescued by the stylus TouchEvent stream.
+          if(region.stylusTouch===null)finish(true);
+        }
         try{if(svg.hasPointerCapture(e.pointerId))svg.releasePointerCapture(e.pointerId);}catch(_){}
-      };
-      svg.addEventListener('pointerup',finish,{signal});svg.addEventListener('pointercancel',finish,{signal});
+      }
+      window.addEventListener('pointermove',pointerMove,{signal});
+      window.addEventListener('pointerup',pointerEnd,{signal});
+      window.addEventListener('pointercancel',pointerEnd,{signal});
+      // WebKit can hand over a Pencil stroke to native scrolling and emit pointercancel.
+      // The non-passive native stylus touch stream keeps the same stroke alive in Safari.
+      svg.addEventListener('touchstart',e=>{
+        if(!drawingMode||!session.ready)return;
+        for(const touch of e.changedTouches){
+          if(touch.touchType==='stylus'){
+            region.finger=null;
+            region.stylusTouch=touch.identifier;
+            if(region.drawing){region.drawing.source='touch';region.drawing.id=touch.identifier;}
+            else begin(touchToPoint(touch),'touch',touch.identifier);
+            e.preventDefault();
+            return;
+          }
+          if(region.stylusTouch===null){
+            if(!region.finger)region.finger={y:touch.clientY,touchId:touch.identifier};
+            else {region.finger.y=touch.clientY;region.finger.touchId=touch.identifier;}
+          }
+        }
+      },{signal,passive:false});
+      function nativeTouchMove(e){
+        if(active!==session||!drawingMode)return;
+        for(const touch of e.changedTouches){
+          if(region.stylusTouch===touch.identifier){
+            if(region.drawing?.source==='touch')movePoint(touchToPoint(touch));
+            e.preventDefault();return;
+          }
+          if(region.finger?.touchId===touch.identifier){
+            scrollFinger(touch.clientY);e.preventDefault();return;
+          }
+        }
+      }
+      function nativeTouchEnd(e){
+        for(const touch of e.changedTouches){
+          if(region.stylusTouch===touch.identifier){
+            if(region.drawing?.source==='touch'){
+              if(e.type==='touchend')movePoint(touchToPoint(touch));
+              finish(true);
+            }
+            region.stylusTouch=null;region.activePointer=null;
+            e.preventDefault();
+          }
+          if(region.finger?.touchId===touch.identifier)region.finger=null;
+        }
+      }
+      window.addEventListener('touchmove',nativeTouchMove,{signal,passive:false});
+      window.addEventListener('touchend',nativeTouchEnd,{signal,passive:false});
+      window.addEventListener('touchcancel',nativeTouchEnd,{signal,passive:false});
+      panel.addEventListener('dragstart',e=>{if(drawingMode)e.preventDefault();},{signal});
+      panel.addEventListener('contextmenu',e=>{if(drawingMode)e.preventDefault();},{signal});
       // Images can expand explanation height after initial mount.
       panel.addEventListener('load',()=>requestAnimationFrame(()=>{if(active===session)layout(region);}),{capture:true,signal});
     }
     const app=document.getElementById('app');
     app?.addEventListener('click',e=>{
-      const button=e.target.closest('[data-ink-action],[data-ink-tool]');if(!button||active!==session)return;
-      if(button.dataset.inkTool){useTool(button.dataset.inkTool);return;}
+      const button=e.target.closest('[data-ink-action],[data-ink-tool],[data-ink-width],[data-ink-color-choice]');
+      if(!button||active!==session)return;
+      e.stopPropagation();
+      if(button.dataset.inkTool){clickTool(button.dataset.inkTool);return;}
+      if(button.dataset.inkWidth){
+        const tool=button.dataset.inkWidthTool,mm=Number(button.dataset.inkWidth);
+        if(WIDTHS[tool]?.includes(mm)){sizes[tool]=mm;selectedTool=tool;openSize='';renderControls();}
+        return;
+      }
+      if(button.dataset.inkColorChoice){setColor(button.dataset.inkColorTool,button.dataset.inkColorChoice);return;}
+      if(button.dataset.inkAction==='palette'){
+        openPalette=!openPalette;openSize='';renderControls();return;
+      }
       if(button.dataset.inkAction==='mode')toggleMode();
       if(button.dataset.inkAction==='undo')undoAction();
       if(button.dataset.inkAction==='redo')redoAction();
     },{signal});
-    app?.addEventListener('input',e=>{
-      if(e.target.matches('[data-ink-color]')){penColor=e.target.value;useTool('pen');}
+    document.addEventListener('pointerdown',e=>{
+      if(active!==session||(!openPalette&&!openSize))return;
+      if(e.target.closest('.ink-color-group,.ink-tool-group'))return;
+      openPalette=false;openSize='';renderControls();
     },{signal});
     document.addEventListener('keydown',e=>{
       if(active!==session||!drawingMode)return;
