@@ -1358,3 +1358,31 @@ html[data-theme=light] .review-number-button.pending{background:#fff4d9;border-c
 .quiz-mode.ink-writing-mode .exam-panel,.quiz-mode.ink-writing-mode .evidence-panel{
   -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;
 }
+
+/* v1.2.4: compact single-row tools; menus never participate in toolbar layout. */
+.quiz-mode .ink-toolbar{flex-wrap:nowrap;gap:5px;max-width:100%;}
+.quiz-mode .ink-toolbar .ink-tools{flex:0 0 auto;width:auto;flex-wrap:nowrap;gap:3px;}
+.quiz-mode .ink-toolbar .ink-tools>button,
+.quiz-mode .ink-toolbar .ink-tool-group>button{width:34px;min-width:34px;height:36px;min-height:36px;padding:5px;flex:0 0 auto;}
+.quiz-mode .ink-toolbar .ink-mode-toggle{flex:0 0 auto;min-width:83px;padding:6px 8px;}
+.quiz-mode .ink-toolbar .ink-color-group{width:34px;}
+.quiz-mode .ink-toolbar .ink-size-popover.ink-eraser-sizes{flex-direction:row;align-items:center;gap:4px;min-width:0;width:max-content;}
+.quiz-mode .ink-toolbar .ink-eraser-sizes button{width:42px;height:42px;min-height:42px;padding:4px;border-radius:50%;justify-content:center;flex:none;}
+.ink-eraser-size-circle{display:block;border-radius:50%;border:1.5px solid currentColor;background:color-mix(in srgb,var(--accent) 10%,var(--panel));box-sizing:border-box;}
+.ink-overlay.is-writing.is-erasing,.ink-overlay.is-writing.is-erasing .ink-overlay-svg{cursor:none;}
+.ink-eraser-cursor{position:fixed;pointer-events:none;z-index:2000;border:1.5px solid #40516b;border-radius:50%;transform:translate(-50%,-50%);background:rgba(255,255,255,.16);box-shadow:0 0 0 1px rgba(255,255,255,.85);box-sizing:border-box;}
+.ink-eraser-cursor[hidden]{display:none!important;}
+@media(max-width:380px){
+ .quiz-mode .ink-toolbar{gap:3px;}
+ .quiz-mode .ink-toolbar .ink-tools{gap:2px;}
+ .quiz-mode .ink-toolbar .ink-tools>button,.quiz-mode .ink-toolbar .ink-tool-group>button{width:30px;min-width:30px;}
+ .quiz-mode .ink-toolbar .ink-color-group{width:30px;}
+ .quiz-mode .ink-toolbar .ink-mode-toggle{min-width:78px;padding:6px;}
+}
+@media print{.ink-eraser-cursor{display:none!important;}}
+@media(min-width:761px) and (max-width:1000px){
+ .quiz-mode .ink-toolbar .ink-tools>button,.quiz-mode .ink-toolbar .ink-tool-group>button{width:30px;min-width:30px;padding:4px;}
+ .quiz-mode .ink-toolbar .ink-color-group{width:32px;}
+ .quiz-mode .ink-toolbar button.ink-color-current{width:32px;min-width:32px;padding:3px;}
+ .quiz-mode .ink-toolbar .ink-mode-toggle{min-width:80px;padding:6px;}
+}
