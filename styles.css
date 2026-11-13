@@ -1290,3 +1290,26 @@ html[data-theme=light] .review-number-button.pending{background:#fff4d9;border-c
   .quiz-mode .ink-toolbar .ink-tools{flex:1 1 100%;width:100%;flex-wrap:wrap;justify-content:flex-start;}
   .quiz-mode .ink-toolbar .ink-tools button{min-height:35px;}
 }
+
+/* ===== v1.2.2: compact daily goal visibility and professor-grouped units ===== */
+.quick-nav .goal-today-nav{background:color-mix(in srgb,var(--accent) 8%,var(--panel));border:1px solid var(--stroke2);padding:7px 10px;max-width:190px;font-size:11px;}
+.quick-nav .goal-today-nav:hover{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 15%,var(--panel));}
+.goal-today-label{display:inline-flex;align-items:center;gap:3px;white-space:nowrap;color:var(--accent);font-size:11px;font-weight:700;}
+.goal-today-label b{font-weight:900;color:var(--green);}
+.goal-today-label.is-unset{color:var(--muted);}
+.home-today-goal{background:var(--panel2);color:var(--text);border:1px solid var(--stroke2);border-radius:9px;padding:7px 9px;cursor:pointer;}
+.home-today-goal:hover{border-color:var(--accent);}
+.goal-unit-hint{color:var(--muted);font-size:11px;line-height:1.6;margin:0 0 10px;}
+.goal-unit-prof{border:1px solid var(--stroke);background:var(--panel);border-radius:10px;overflow:hidden;margin:8px 0;}
+.goal-unit-prof summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:7px;padding:12px 10px;min-height:43px;}
+.goal-unit-prof summary::-webkit-details-marker{display:none;}
+.goal-unit-prof summary:hover{background:var(--panel3);}
+.goal-unit-prof summary strong{font-size:12px;flex:1;}
+.goal-unit-prof summary small{color:var(--muted);font-size:11px;}
+.goal-unit-chevron{color:var(--accent);font-size:18px;margin-left:5px;transition:transform .15s;}
+.goal-unit-prof[open] .goal-unit-chevron{transform:rotate(180deg);}
+.goal-unit-options{border-top:1px solid var(--stroke);padding:7px 10px 9px;}
+.goal-unit-options label{display:flex;align-items:flex-start;gap:7px;margin:9px 0;}
+.goal-unit-options label span{flex:1;min-width:0;overflow-wrap:anywhere;}
+.goal-unit-options label small{flex:none;}
+@media(max-width:760px){.home-pick-tools{flex-wrap:wrap;justify-content:flex-end;}.home-today-goal{max-width:100%;}}

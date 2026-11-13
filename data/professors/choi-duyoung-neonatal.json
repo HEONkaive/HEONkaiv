@@ -102,8 +102,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "정상 소견과 모로반사",
-      "unitId": "neonatal-moro",
+      "unitTitle": "복합 단원 문항",
+      "unitId": "lecture-composite",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -151,7 +151,9 @@
           4
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-moro",
+      "legacyUnitTitle": "정상 소견과 모로반사"
     },
     {
       "id": "choi-duyoung-neonatal:17-2",
@@ -215,8 +217,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "출생 전 관리",
-      "unitId": "neonatal-prenatal",
+      "unitTitle": "강의안 근거 미등록 문항",
+      "unitId": "lecture-unattributed",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -287,7 +289,9 @@
         "basis": "ai_review",
         "version": "1.1.12",
         "reason": "그림의 variable deceleration(변이성 심박수 감소)에 맞는 기존②를 채택합니다. 머리압박은 조기감소③, 자궁태반부전은 후기감소④와 연결됩니다. 그림과 손글씨가 인쇄 답③보다 타당합니다. 변이성 감소만으로 모든 경우의 저산소증을 확진한다는 의미는 아닙니다."
-      }
+      },
+      "legacyUnitId": "neonatal-prenatal",
+      "legacyUnitTitle": "출생 전 관리"
     },
     {
       "id": "choi-duyoung-neonatal:17-3",
@@ -379,8 +383,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "정상 신생아 관리",
-      "unitId": "neonatal-routine",
+      "unitTitle": "정상신생아",
+      "unitId": "lecture-normal",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -395,7 +399,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "보온·호흡 확인·비타민 K1 근육주사·안정 후 이른 수유가 기본입니다. 영아급사증후군 예방에는 앙와위를 권합니다. 구개·후두를 거즈로 문지르거나 출생 직후 목욕하는 것은 적절하지 않습니다. 제대동맥은 2개, 제대정맥은 1개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-routine",
+      "legacyUnitTitle": "정상 신생아 관리"
     },
     {
       "id": "choi-duyoung-neonatal:17-5",
@@ -487,8 +493,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "재태기간·체중 분류",
-      "unitId": "neonatal-class",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -503,7 +509,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "④ VLBW 1,000g 이하는 강의안의 1,500g 미만과 다릅니다. 나머지 분류도 기준에 맞지 않아 단일답이 없습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-class",
+      "legacyUnitTitle": "재태기간·체중 분류"
     },
     {
       "id": "choi-duyoung-neonatal:17-6",
@@ -606,8 +614,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "정상 신생아 피부",
-      "unitId": "neonatal-skin",
+      "unitTitle": "정상신생아",
+      "unitId": "lecture-normal",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -655,7 +663,9 @@
           5
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-skin",
+      "legacyUnitTitle": "정상 신생아 피부"
     },
     {
       "id": "choi-duyoung-neonatal:17-7",
@@ -747,8 +757,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "정상 신생아 관리",
-      "unitId": "neonatal-routine",
+      "unitTitle": "정상신생아",
+      "unitId": "lecture-normal",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -763,7 +773,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "보온·호흡 확인·비타민 K1 근육주사·안정 후 이른 수유가 기본입니다. 영아급사증후군 예방에는 앙와위를 권합니다. 구개·후두를 거즈로 문지르거나 출생 직후 목욕하는 것은 적절하지 않습니다. 제대동맥은 2개, 제대정맥은 1개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-routine",
+      "legacyUnitTitle": "정상 신생아 관리"
     },
     {
       "id": "choi-duyoung-neonatal:17-8",
@@ -861,8 +873,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "Ballard 성숙도",
-      "unitId": "neonatal-ballard",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -877,7 +889,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "원본에 그린 원과 보기번호의 대응이 불명확하여 숫자답을 추정하지 않았습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ballard",
+      "legacyUnitTitle": "Ballard 성숙도"
     },
     {
       "id": "choi-duyoung-neonatal:17-9",
@@ -939,8 +953,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "Apgar 점수",
-      "unitId": "neonatal-apgar",
+      "unitTitle": "복합 단원 문항",
+      "unitId": "lecture-composite",
       "archiveUnrecovered": true,
       "lectureAudit": {
         "status": "unresolved",
@@ -955,7 +969,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "심박·호흡·근긴장도·자극반응·피부색을 각각 0~2점으로 계산합니다. 소생술은 총점을 기다리지 않고 호흡과 심박수로 즉시 결정합니다. 5분 이후 점수 변화는 소생술 반응을 평가하는 데 도움이 됩니다."
-      }
+      },
+      "legacyUnitId": "neonatal-apgar",
+      "legacyUnitTitle": "Apgar 점수"
     },
     {
       "id": "choi-duyoung-neonatal:17-11",
@@ -1035,8 +1051,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "미숙아 영양",
-      "unitId": "neonatal-nutrition",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": true,
       "lectureAudit": {
         "status": "unresolved",
@@ -1051,7 +1067,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "미숙아는 충분한 단백질·열량 공급과 성장 추적이 필요합니다. 중심체온과 보육기온도를 구별하며 예방접종은 일반적으로 출생 후 나이를 기준으로 합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-nutrition",
+      "legacyUnitTitle": "미숙아 영양"
     },
     {
       "id": "choi-duyoung-neonatal:17-12",
@@ -1148,8 +1166,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "Ballard 성숙도",
-      "unitId": "neonatal-ballard",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -1197,7 +1215,9 @@
           5
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ballard",
+      "legacyUnitTitle": "Ballard 성숙도"
     },
     {
       "id": "choi-duyoung-neonatal:17-13",
@@ -1280,8 +1300,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "체온 관리",
-      "unitId": "neonatal-heat",
+      "unitTitle": "복합 단원 문항",
+      "unitId": "lecture-composite",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -1296,7 +1316,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "신생아는 체중 대비 체표면적이 크고 피하지방이 적어 열손실이 큽니다. 강의안의 열손실은 성인 4배, 체중 대비 체표면적은 3배입니다. 36.5~37℃의 목표 중심체온과 보육기 설정온도를 구별해야 합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-heat",
+      "legacyUnitTitle": "체온 관리"
     },
     {
       "id": "choi-duyoung-neonatal:17-14",
@@ -1367,8 +1389,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 소생술",
-      "unitId": "neonatal-ppv",
+      "unitTitle": "신생아 소생술과 분만실 응급상황",
+      "unitId": "lecture-resuscitation",
       "archiveUnrecovered": true,
       "lectureAudit": {
         "status": "unresolved",
@@ -1383,7 +1405,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "초기 처치 후 무호흡·헐떡호흡 또는 심박수 100회/분 미만이면 양압환기가 우선입니다. 효과적인 환기 30초 후에도 60회/분 미만이면 가슴압박을 추가하며 압박:환기=3:1입니다. 태변착색만으로 일률적 기관내흡인을 시행하여 환기를 지연시키지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ppv",
+      "legacyUnitTitle": "신생아 소생술"
     },
     {
       "id": "choi-duyoung-neonatal:17-15",
@@ -1475,8 +1499,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 소생술",
-      "unitId": "neonatal-ppv",
+      "unitTitle": "신생아 소생술과 분만실 응급상황",
+      "unitId": "lecture-resuscitation",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -1491,7 +1515,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "초기 처치 후 무호흡·헐떡호흡 또는 심박수 100회/분 미만이면 양압환기가 우선입니다. 효과적인 환기 30초 후에도 60회/분 미만이면 가슴압박을 추가하며 압박:환기=3:1입니다. 태변착색만으로 일률적 기관내흡인을 시행하여 환기를 지연시키지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ppv",
+      "legacyUnitTitle": "신생아 소생술"
     },
     {
       "id": "choi-duyoung-neonatal:17-16",
@@ -1594,8 +1620,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "두개외 손상",
-      "unitId": "neonatal-scalp",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -1643,7 +1669,9 @@
           5
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-scalp",
+      "legacyUnitTitle": "두개외 손상"
     },
     {
       "id": "choi-duyoung-neonatal:17-17",
@@ -1741,8 +1769,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "두개외 손상",
-      "unitId": "neonatal-scalp",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -1757,7 +1785,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "머리부종은 경계가 불분명하고 봉합선을 넘으며, 머리혈종은 골막하 출혈로 경계가 명확하고 봉합선을 넘지 않습니다. 대개 관찰하되 황달·감염에 유의합니다. 머리혈종의 절개·배액은 피합니다. 모상건막밑출혈은 대량출혈 위험이 있는 별도 질환입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-scalp",
+      "legacyUnitTitle": "두개외 손상"
     },
     {
       "id": "choi-duyoung-neonatal:17-18",
@@ -1846,8 +1876,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "위팔신경 손상",
-      "unitId": "neonatal-brachial",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -1862,7 +1892,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "Erb-Duchenne 마비는 C5~6 손상으로 어깨·팔 움직임과 모로반사에 이상이 생깁니다. 하부 손상의 Klumpke 마비는 파악기능이 저하하며 T1 교감신경 침범 시 축동·안검하수(Horner)가 동반됩니다. 신경전도검사와 MRI는 신경 찢김 평가에 도움이 됩니다."
-      }
+      },
+      "legacyUnitId": "neonatal-brachial",
+      "legacyUnitTitle": "위팔신경 손상"
     },
     {
       "id": "choi-duyoung-neonatal:17-19",
@@ -1954,8 +1986,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "위팔신경 손상",
-      "unitId": "neonatal-brachial",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -1970,7 +2002,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "Erb-Duchenne 마비는 C5~6 손상으로 어깨·팔 움직임과 모로반사에 이상이 생깁니다. 하부 손상의 Klumpke 마비는 파악기능이 저하하며 T1 교감신경 침범 시 축동·안검하수(Horner)가 동반됩니다. 신경전도검사와 MRI는 신경 찢김 평가에 도움이 됩니다."
-      }
+      },
+      "legacyUnitId": "neonatal-brachial",
+      "legacyUnitTitle": "위팔신경 손상"
     },
     {
       "id": "choi-duyoung-neonatal:17-20",
@@ -2084,8 +2118,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "저산소허혈뇌병증",
-      "unitId": "neonatal-hie",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -2132,7 +2166,9 @@
           5
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-hie",
+      "legacyUnitTitle": "저산소허혈뇌병증"
     },
     {
       "id": "choi-duyoung-neonatal:17-21",
@@ -2224,8 +2260,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "무호흡",
-      "unitId": "neonatal-apnea",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -2240,7 +2276,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "주기성호흡은 짧은 무호흡과 빠른호흡의 반복으로 심박 변화가 없는 정상 소견일 수 있습니다. 중한 무호흡은 20초 이상 정지하거나 짧아도 청색증·서맥을 동반하는 경우입니다. 중추성은 공기흐름·흉벽움직임 모두 없고 폐쇄성은 흉벽움직임이 남습니다. 반복 무호흡에 caffeine, 폐쇄·혼합형에 nCPAP을 고려합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-apnea",
+      "legacyUnitTitle": "무호흡"
     },
     {
       "id": "choi-duyoung-neonatal:17-22",
@@ -2332,8 +2370,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "무호흡",
-      "unitId": "neonatal-apnea",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -2348,7 +2386,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "주기성호흡은 짧은 무호흡과 빠른호흡의 반복으로 심박 변화가 없는 정상 소견일 수 있습니다. 중한 무호흡은 20초 이상 정지하거나 짧아도 청색증·서맥을 동반하는 경우입니다. 중추성은 공기흐름·흉벽움직임 모두 없고 폐쇄성은 흉벽움직임이 남습니다. 반복 무호흡에 caffeine, 폐쇄·혼합형에 nCPAP을 고려합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-apnea",
+      "legacyUnitTitle": "무호흡"
     },
     {
       "id": "choi-duyoung-neonatal:17-23",
@@ -2458,8 +2498,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 호흡곤란증후군",
-      "unitId": "neonatal-rds",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -2474,7 +2514,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "조산아의 표면활성제 부족으로 무기폐·저산소혈증·고탄산혈증·산증이 생깁니다. 제2형 폐포세포가 표면활성제를 만들며 양수에서는 28~32주에 나타납니다. X선은 미세과립상·공기기관지음영이 특징입니다. 호흡보조·기도 내 표면활성제 투여와 산전 스테로이드가 중요합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-rds",
+      "legacyUnitTitle": "신생아 호흡곤란증후군"
     },
     {
       "id": "choi-duyoung-neonatal:17-24",
@@ -2584,8 +2626,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 호흡곤란증후군",
-      "unitId": "neonatal-rds",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -2600,7 +2642,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "조산아의 표면활성제 부족으로 무기폐·저산소혈증·고탄산혈증·산증이 생깁니다. 제2형 폐포세포가 표면활성제를 만들며 양수에서는 28~32주에 나타납니다. X선은 미세과립상·공기기관지음영이 특징입니다. 호흡보조·기도 내 표면활성제 투여와 산전 스테로이드가 중요합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-rds",
+      "legacyUnitTitle": "신생아 호흡곤란증후군"
     },
     {
       "id": "choi-duyoung-neonatal:17-25",
@@ -2710,8 +2754,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 호흡곤란증후군",
-      "unitId": "neonatal-rds",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -2726,7 +2770,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "②는 과도한 수액을 피한다는 연도별 해설의 의도답입니다. 140mL/kg/일을 모든 환자의 고정 상한으로 일반화하지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-rds",
+      "legacyUnitTitle": "신생아 호흡곤란증후군"
     },
     {
       "id": "choi-duyoung-neonatal:17-26",
@@ -2818,8 +2864,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "기계환기",
-      "unitId": "neonatal-vent",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -2834,7 +2880,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "PaCO2 55,pH7.3,SpO2 92%는 제시된 환기목표에 대체로 맞으므로 불필요한 산소·압력 증가보다 현 상태 유지가 타당합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-vent",
+      "legacyUnitTitle": "기계환기"
     },
     {
       "id": "choi-duyoung-neonatal:17-27",
@@ -2926,8 +2974,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "기계환기",
-      "unitId": "neonatal-vent",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -2942,7 +2990,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "① 흡기압을 포함하여 모든 보기가 평균기도압을 높입니다. 필요한 FiO2 증가가 선택지에 없으므로 인쇄 답 ①은 확정하지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-vent",
+      "legacyUnitTitle": "기계환기"
     },
     {
       "id": "choi-duyoung-neonatal:17-28",
@@ -3034,8 +3084,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "기계환기",
-      "unitId": "neonatal-vent",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -3050,7 +3100,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "산소화는 FiO2 또는 평균기도압을 높여 개선합니다. 평균기도압은 흡기압·흡기시간·PEEP·호흡수·흡기유량 증가로 높일 수 있습니다. 호기시간 연장과 구별합니다. 발관 후 nCPAP은 무기폐와 재삽관을 줄입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-vent",
+      "legacyUnitTitle": "기계환기"
     },
     {
       "id": "choi-duyoung-neonatal:17-29",
@@ -3115,8 +3167,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "동맥관열림증",
-      "unitId": "neonatal-pda",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -3131,7 +3183,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "RDS 호전 중 다시 무호흡·심잡음이 생기면 PDA를 고려합니다. 폐혈관저항 저하 후 좌우단락으로 폐혈류가 증가할 수 있으며 강의안은 indomethacin·ibuprofen 치료를 제시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-pda",
+      "legacyUnitTitle": "동맥관열림증"
     },
     {
       "id": "choi-duyoung-neonatal:17-30",
@@ -3232,8 +3286,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 빈혈",
-      "unitId": "neonatal-anemia",
+      "unitTitle": "신생아 혈액질환",
+      "unitId": "lecture-hematology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -3248,7 +3302,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "EPO·ROP 관계와 고정 Hb 수혈목표를 제공 자료만으로 단일답화하기 어려워 기존 ⑤를 참고기록으로 보존합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-anemia",
+      "legacyUnitTitle": "신생아 빈혈"
     },
     {
       "id": "choi-duyoung-neonatal:17-31",
@@ -3376,8 +3432,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "용혈질환·교환수혈",
-      "unitId": "neonatal-hdfn",
+      "unitTitle": "신생아 혈액질환",
+      "unitId": "lecture-hematology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -3392,7 +3448,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "양수천자와 출생 후 시점을 섞은 ③ 등 문장이 불완전합니다. 제공 강의안에도 투여시점 표현에 확인이 필요하여 보류합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-hdfn",
+      "legacyUnitTitle": "용혈질환·교환수혈"
     },
     {
       "id": "choi-duyoung-neonatal:17-32",
@@ -3520,8 +3578,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "용혈질환·교환수혈",
-      "unitId": "neonatal-hdfn",
+      "unitTitle": "신생아 혈액질환",
+      "unitId": "lecture-hematology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -3536,7 +3594,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "태반을 통과하는 모체 IgG가 면역성 용혈과 관련됩니다. 태아 MCA 도플러는 빈혈 평가에 도움이 됩니다. 심한 빈혈·용혈·급격한 빌리루빈 상승에는 교환수혈을 고려하며 적합시험한 혈액을 사용합니다. 백혈구 제거는 CMV 위험 감소, 방사선조사는 수혈관련 GVHD 예방으로 목적이 다릅니다."
-      }
+      },
+      "legacyUnitId": "neonatal-hdfn",
+      "legacyUnitTitle": "용혈질환·교환수혈"
     },
     {
       "id": "choi-duyoung-neonatal:17-34",
@@ -3610,8 +3670,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 다혈구증",
-      "unitId": "neonatal-poly",
+      "unitTitle": "신생아 혈액질환",
+      "unitId": "lecture-hematology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -3626,7 +3686,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "만삭아 Hb22g/dL 이상 또는 Hct65% 이상은 다혈구증 기준입니다. 호흡곤란·청색증이 동반되면 과점도와의 관련을 평가하고 부분교환수혈을 고려합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-poly",
+      "legacyUnitTitle": "신생아 다혈구증"
     },
     {
       "id": "choi-duyoung-neonatal:17-35",
@@ -3718,8 +3780,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "지속성 폐고혈압",
-      "unitId": "neonatal-pphn",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -3734,7 +3796,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "출생 후 폐혈관저항이 감소하지 않아 난원공·동맥관의 우좌단락이 지속됩니다. 산소에 반응하지 않는 청색증과 동맥관 전후 SpO2 차이를 보면 PPHN을 고려합니다. 심초음파로 구조적 심질환을 감별하고 흡입 NO 등으로 폐혈관저항을 낮춥니다."
-      }
+      },
+      "legacyUnitId": "neonatal-pphn",
+      "legacyUnitTitle": "지속성 폐고혈압"
     },
     {
       "id": "choi-duyoung-neonatal:17-36",
@@ -3826,8 +3890,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "지속성 폐고혈압",
-      "unitId": "neonatal-pphn",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -3842,7 +3906,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "출생 후 폐혈관저항이 감소하지 않아 난원공·동맥관의 우좌단락이 지속됩니다. 산소에 반응하지 않는 청색증과 동맥관 전후 SpO2 차이를 보면 PPHN을 고려합니다. 심초음파로 구조적 심질환을 감별하고 흡입 NO 등으로 폐혈관저항을 낮춥니다."
-      }
+      },
+      "legacyUnitId": "neonatal-pphn",
+      "legacyUnitTitle": "지속성 폐고혈압"
     },
     {
       "id": "choi-duyoung-neonatal:17-37",
@@ -3925,8 +3991,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "광선치료",
-      "unitId": "neonatal-photo",
+      "unitTitle": "신생아 소화기질환",
+      "unitId": "lecture-digestive",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -3941,7 +4007,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "광선치료는 간접빌리루빈의 광이성화로 배설을 돕습니다. 청록색 빛·넓은 피부노출·눈 보호·체온 및 수분 관리·혈청수치 추적이 중요합니다. 피부색만으로 수치나 핵황달 위험을 판단하지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-photo",
+      "legacyUnitTitle": "광선치료"
     },
     {
       "id": "choi-duyoung-neonatal:17-38",
@@ -4024,8 +4092,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "광선치료",
-      "unitId": "neonatal-photo",
+      "unitTitle": "신생아 소화기질환",
+      "unitId": "lecture-digestive",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -4040,7 +4108,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "광선치료는 간접빌리루빈의 광이성화로 배설을 돕습니다. 청록색 빛·넓은 피부노출·눈 보호·체온 및 수분 관리·혈청수치 추적이 중요합니다. 피부색만으로 수치나 핵황달 위험을 판단하지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-photo",
+      "legacyUnitTitle": "광선치료"
     },
     {
       "id": "choi-duyoung-neonatal:17-39",
@@ -4123,8 +4193,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "저혈당·대사이상",
-      "unitId": "neonatal-glucose",
+      "unitTitle": "복합 단원 문항",
+      "unitId": "lecture-composite",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -4139,7 +4209,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "Na113의 중증 저나트륨혈증이 핵심이므로 ③입니다. Hb와 Hct의 불일치는 원문대로 보존했습니다. 제공 강의안에 해당 수치별 나트륨 치료법은 없습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-glucose",
+      "legacyUnitTitle": "저혈당·대사이상"
     },
     {
       "id": "choi-duyoung-neonatal:17-40",
@@ -4222,8 +4294,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "저혈당·대사이상",
-      "unitId": "neonatal-glucose",
+      "unitTitle": "복합 단원 문항",
+      "unitId": "lecture-composite",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -4238,7 +4310,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "혈당29와 경련이 있어 증상성 저혈당 치료인 ④를 선택합니다. 총칼슘8.9는 이 수치를 대신 설명하지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-glucose",
+      "legacyUnitTitle": "저혈당·대사이상"
     },
     {
       "id": "choi-duyoung-neonatal:18-1",
@@ -4330,8 +4404,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "무호흡",
-      "unitId": "neonatal-apnea",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -4346,7 +4420,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "주기성호흡은 짧은 무호흡과 빠른호흡의 반복으로 심박 변화가 없는 정상 소견일 수 있습니다. 중한 무호흡은 20초 이상 정지하거나 짧아도 청색증·서맥을 동반하는 경우입니다. 중추성은 공기흐름·흉벽움직임 모두 없고 폐쇄성은 흉벽움직임이 남습니다. 반복 무호흡에 caffeine, 폐쇄·혼합형에 nCPAP을 고려합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-apnea",
+      "legacyUnitTitle": "무호흡"
     },
     {
       "id": "choi-duyoung-neonatal:18-3",
@@ -4458,8 +4534,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 호흡곤란증후군",
-      "unitId": "neonatal-rds",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -4504,7 +4580,9 @@
           2
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-rds",
+      "legacyUnitTitle": "신생아 호흡곤란증후군"
     },
     {
       "id": "choi-duyoung-neonatal:18-5",
@@ -4617,8 +4695,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "기관지폐형성이상",
-      "unitId": "neonatal-bpd",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -4682,7 +4760,9 @@
         "basis": "ai_review",
         "version": "1.1.12",
         "reason": "30주 출생 후 8주까지 기계환기 의존이라는 경과는 BPD에 부합하여 기존④를 채택합니다. 강의안 PDF51쪽은 교정36주 평가에서 산소30% 이상 또는 양압환기 필요를 중증 기준으로 제시합니다. ⑤의 매달 폐렴구균백신은 맞지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-bpd",
+      "legacyUnitTitle": "기관지폐형성이상"
     },
     {
       "id": "choi-duyoung-neonatal:18-6",
@@ -4792,8 +4872,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "기관지폐형성이상",
-      "unitId": "neonatal-bpd",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -4808,7 +4888,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "①의 단기 이뇨제 효과와 ②의 영양·산소·감염 관리가 모두 성립하므로 단일답을 보류합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-bpd",
+      "legacyUnitTitle": "기관지폐형성이상"
     },
     {
       "id": "choi-duyoung-neonatal:18-7",
@@ -4900,8 +4982,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "태변흡인증후군",
-      "unitId": "neonatal-mas",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -4916,7 +4998,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "일차 표면활성제 결핍, 장운동 저하, 일률적 삽관흡인 등 여러 보기가 문제되어 단일답을 확정하지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-mas",
+      "legacyUnitTitle": "태변흡인증후군"
     },
     {
       "id": "choi-duyoung-neonatal:18-8",
@@ -5028,8 +5112,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "기관지폐형성이상",
-      "unitId": "neonatal-bpd",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -5063,7 +5147,9 @@
         "basis": "ai_review",
         "version": "1.1.12",
         "reason": "기존②의 적절한 영양·산소화 유지·감염의 신속한 치료를 채택합니다. 강의안 PDF52쪽의 BPD 기본 치료와 일치합니다. 앞 증례를 MAS로 해석해도 이 기본 지지치료는 배치되지 않습니다. 장기 이뇨제를 일률적으로 쓰거나 산소포화도85%를 목표로 하는 보기는 적절하지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-bpd",
+      "legacyUnitTitle": "기관지폐형성이상"
     },
     {
       "id": "choi-duyoung-neonatal:18-9",
@@ -5166,8 +5252,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 빈혈",
-      "unitId": "neonatal-anemia",
+      "unitTitle": "신생아 혈액질환",
+      "unitId": "lecture-hematology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -5208,7 +5294,9 @@
         "basis": "ai_review",
         "version": "1.1.12",
         "reason": "실혈·용혈 감별을 위한 기존④ Kleihauer–Betke 검사를 채택합니다. 산모 혈액의 태아 적혈구를 검출해 태아모체출혈을 평가합니다. DAT 음성만으로② 유전구형적혈구증을 주원인으로 확정하지 못합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-anemia",
+      "legacyUnitTitle": "신생아 빈혈"
     },
     {
       "id": "choi-duyoung-neonatal:18-10",
@@ -5336,8 +5424,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "용혈질환·교환수혈",
-      "unitId": "neonatal-hdfn",
+      "unitTitle": "신생아 혈액질환",
+      "unitId": "lecture-hematology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -5352,7 +5440,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "태반을 통과하는 모체 IgG가 면역성 용혈과 관련됩니다. 태아 MCA 도플러는 빈혈 평가에 도움이 됩니다. 심한 빈혈·용혈·급격한 빌리루빈 상승에는 교환수혈을 고려하며 적합시험한 혈액을 사용합니다. 백혈구 제거는 CMV 위험 감소, 방사선조사는 수혈관련 GVHD 예방으로 목적이 다릅니다."
-      }
+      },
+      "legacyUnitId": "neonatal-hdfn",
+      "legacyUnitTitle": "용혈질환·교환수혈"
     },
     {
       "id": "choi-duyoung-neonatal:18-11",
@@ -5480,8 +5570,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "용혈질환·교환수혈",
-      "unitId": "neonatal-hdfn",
+      "unitTitle": "신생아 혈액질환",
+      "unitId": "lecture-hematology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -5496,7 +5586,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "태반을 통과하는 모체 IgG가 면역성 용혈과 관련됩니다. 태아 MCA 도플러는 빈혈 평가에 도움이 됩니다. 심한 빈혈·용혈·급격한 빌리루빈 상승에는 교환수혈을 고려하며 적합시험한 혈액을 사용합니다. 백혈구 제거는 CMV 위험 감소, 방사선조사는 수혈관련 GVHD 예방으로 목적이 다릅니다."
-      }
+      },
+      "legacyUnitId": "neonatal-hdfn",
+      "legacyUnitTitle": "용혈질환·교환수혈"
     },
     {
       "id": "choi-duyoung-neonatal:18-12",
@@ -5579,8 +5671,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 황달",
-      "unitId": "neonatal-jaundice",
+      "unitTitle": "신생아 소화기질환",
+      "unitId": "lecture-digestive",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -5595,7 +5687,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "원문이 선택지 불확실을 명시합니다. 발생시기를 상호 배타적인 진단기준으로 강제하지 않았습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-jaundice",
+      "legacyUnitTitle": "신생아 황달"
     },
     {
       "id": "choi-duyoung-neonatal:18-13",
@@ -5696,8 +5790,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 괴사장염",
-      "unitId": "neonatal-nec",
+      "unitTitle": "신생아 소화기질환",
+      "unitId": "lecture-digestive",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -5712,7 +5806,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "조산아의 복부팽만·혈변·담즙성구토·체온불안정과 창자벽공기는 NEC를 시사합니다. 원위회장·근위대장에 호발하며 장허혈·장관영양·세균전위가 관여합니다. 금식·비위관 감압·수액·광범위 항생제를 시작하며 천공 등 수술 적응증을 확인합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-nec",
+      "legacyUnitTitle": "신생아 괴사장염"
     },
     {
       "id": "choi-duyoung-neonatal:18-14",
@@ -5791,8 +5887,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "선천 수두감염",
-      "unitId": "neonatal-varicella",
+      "unitTitle": "신생아 감염질환",
+      "unitId": "lecture-infection",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -5807,7 +5903,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "사지형성저하증·안구이상·피질위축은 선천 수두증후군과 연결됩니다. Zika의 소두증, Parvovirus B19의 태아빈혈·수종과 구별합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-varicella",
+      "legacyUnitTitle": "선천 수두감염"
     },
     {
       "id": "choi-duyoung-neonatal:18-15",
@@ -5899,8 +5997,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "재태기간·체중 분류",
-      "unitId": "neonatal-class",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -5915,7 +6013,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "미숙아는 37주 미만, 과숙아는 42주 이상입니다. LBW 2,500g 미만, VLBW 1,500g 미만, ELBW 1,000g 미만으로 구분합니다. SGA는 해당 임신나이 출생체중 10백분위수 미만이며, 성장경로를 뜻하는 IUGR와 정의가 다릅니다."
-      }
+      },
+      "legacyUnitId": "neonatal-class",
+      "legacyUnitTitle": "재태기간·체중 분류"
     },
     {
       "id": "choi-duyoung-neonatal:18-16",
@@ -5998,8 +6098,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "자궁내성장지연",
-      "unitId": "neonatal-sga",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -6014,7 +6114,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "머리·키에 비해 체중·복위가 작은 비대칭형은 임신 후기 전자간증·만성고혈압 등과 관련됩니다. 영양공급으로 따라잡기 성장이 가능합니다. 대칭형은 더 이른 시기의 염색체·유전적 원인 등을 고려합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-sga",
+      "legacyUnitTitle": "자궁내성장지연"
     },
     {
       "id": "choi-duyoung-neonatal:18-17",
@@ -6097,8 +6199,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "당뇨병 산모 신생아",
-      "unitId": "neonatal-idm",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -6113,7 +6215,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "모체 포도당은 태반을 통과하지만 인슐린은 통과하지 않습니다. 태아 고인슐린혈증으로 출생 후 저혈당 위험이 있고 RDS·적혈구증가증이 동반될 수 있습니다. 임신 전 당뇨와 임신 후기 발생 당뇨의 기형 위험은 구별합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-idm",
+      "legacyUnitTitle": "당뇨병 산모 신생아"
     },
     {
       "id": "choi-duyoung-neonatal:18-18",
@@ -6187,8 +6291,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "뇌실주위백질연화증",
-      "unitId": "neonatal-pvl",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -6203,7 +6307,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "PVL의 중심 손상부위는 측뇌실 주위 백질입니다. 대뇌 겉질을 함께 주손상부위로 적은 ②가 의도 오답입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-pvl",
+      "legacyUnitTitle": "뇌실주위백질연화증"
     },
     {
       "id": "choi-duyoung-neonatal:18-19",
@@ -6295,8 +6401,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "Ballard 성숙도",
-      "unitId": "neonatal-ballard",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -6311,7 +6417,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "신경근육 성숙도는 자세·손목각도·팔 되돌아오기·오금각도·스카프 징후·발뒤꿈치-귀 시험으로 평가합니다. 미숙할수록 근긴장도가 낮고 오금각도가 큽니다. 성숙한 신생아는 두껍고 갈라진 피부·깊은 발바닥 주름·음낭주름을 보입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ballard",
+      "legacyUnitTitle": "Ballard 성숙도"
     },
     {
       "id": "choi-duyoung-neonatal:18-21",
@@ -6366,8 +6474,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "출생 전 관리",
-      "unitId": "neonatal-prenatal",
+      "unitTitle": "강의안 근거 미등록 문항",
+      "unitId": "lecture-unattributed",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -6382,7 +6490,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "해당 연도 해설의 산전검사·태아감시 내용을 참고했습니다. 1삼분기 혈청 선별검사는 PAPP-A와 hCG, 2삼분기 4중선별검사는 AFP·hCG·비결합 에스트리올·인히빈 A입니다. 후기 심박수 저하는 자궁태반부전, 불규칙 저하는 탯줄압박과 연결합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-prenatal",
+      "legacyUnitTitle": "출생 전 관리"
     },
     {
       "id": "choi-duyoung-neonatal:18-22",
@@ -6443,8 +6553,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "출생 전 관리",
-      "unitId": "neonatal-prenatal",
+      "unitTitle": "강의안 근거 미등록 문항",
+      "unitId": "lecture-unattributed",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -6459,7 +6569,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "해당 연도 해설의 산전검사·태아감시 내용을 참고했습니다. 1삼분기 혈청 선별검사는 PAPP-A와 hCG, 2삼분기 4중선별검사는 AFP·hCG·비결합 에스트리올·인히빈 A입니다. 후기 심박수 저하는 자궁태반부전, 불규칙 저하는 탯줄압박과 연결합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-prenatal",
+      "legacyUnitTitle": "출생 전 관리"
     },
     {
       "id": "choi-duyoung-neonatal:18-23",
@@ -6514,8 +6626,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "출생 전 관리",
-      "unitId": "neonatal-prenatal",
+      "unitTitle": "강의안 근거 미등록 문항",
+      "unitId": "lecture-unattributed",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -6530,7 +6642,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "해당 연도 해설의 산전검사·태아감시 내용을 참고했습니다. 1삼분기 혈청 선별검사는 PAPP-A와 hCG, 2삼분기 4중선별검사는 AFP·hCG·비결합 에스트리올·인히빈 A입니다. 후기 심박수 저하는 자궁태반부전, 불규칙 저하는 탯줄압박과 연결합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-prenatal",
+      "legacyUnitTitle": "출생 전 관리"
     },
     {
       "id": "choi-duyoung-neonatal:18-24",
@@ -6628,8 +6742,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "Ballard 성숙도",
-      "unitId": "neonatal-ballard",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -6644,7 +6758,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "신경근육 성숙도는 자세·손목각도·팔 되돌아오기·오금각도·스카프 징후·발뒤꿈치-귀 시험으로 평가합니다. 미숙할수록 근긴장도가 낮고 오금각도가 큽니다. 성숙한 신생아는 두껍고 갈라진 피부·깊은 발바닥 주름·음낭주름을 보입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ballard",
+      "legacyUnitTitle": "Ballard 성숙도"
     },
     {
       "id": "choi-duyoung-neonatal:18-25",
@@ -6727,8 +6843,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "모유수유",
-      "unitId": "neonatal-milk",
+      "unitTitle": "정상신생아",
+      "unitId": "lecture-normal",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -6743,7 +6859,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "강의안은 안정 후 이른 모유수유와 의료진의 교육·지원을 강조합니다. 활동성 결핵을 수유 금기 항목으로 제시하되 치료로 감염성이 없어진 상태와 구별합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-milk",
+      "legacyUnitTitle": "모유수유"
     },
     {
       "id": "choi-duyoung-neonatal:18-26",
@@ -6846,8 +6964,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "정상 신생아 피부",
-      "unitId": "neonatal-skin",
+      "unitTitle": "정상신생아",
+      "unitId": "lecture-normal",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -6895,7 +7013,9 @@
           5
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-skin",
+      "legacyUnitTitle": "정상 신생아 피부"
     },
     {
       "id": "choi-duyoung-neonatal:18-27",
@@ -6978,8 +7098,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "모유수유",
-      "unitId": "neonatal-milk",
+      "unitTitle": "정상신생아",
+      "unitId": "lecture-normal",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -6994,7 +7114,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "강의안은 안정 후 이른 모유수유와 의료진의 교육·지원을 강조합니다. 활동성 결핵을 수유 금기 항목으로 제시하되 치료로 감염성이 없어진 상태와 구별합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-milk",
+      "legacyUnitTitle": "모유수유"
     },
     {
       "id": "choi-duyoung-neonatal:18-28",
@@ -7065,8 +7187,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "Ballard 성숙도",
-      "unitId": "neonatal-ballard",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": true,
       "lectureAudit": {
         "status": "unresolved",
@@ -7081,7 +7203,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "신경근육 성숙도는 자세·손목각도·팔 되돌아오기·오금각도·스카프 징후·발뒤꿈치-귀 시험으로 평가합니다. 미숙할수록 근긴장도가 낮고 오금각도가 큽니다. 성숙한 신생아는 두껍고 갈라진 피부·깊은 발바닥 주름·음낭주름을 보입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ballard",
+      "legacyUnitTitle": "Ballard 성숙도"
     },
     {
       "id": "choi-duyoung-neonatal:18-29",
@@ -7164,8 +7288,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "Apgar 점수",
-      "unitId": "neonatal-apgar",
+      "unitTitle": "복합 단원 문항",
+      "unitId": "lecture-composite",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -7180,7 +7304,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "심박·호흡·근긴장도·자극반응·피부색을 각각 0~2점으로 계산합니다. 소생술은 총점을 기다리지 않고 호흡과 심박수로 즉시 결정합니다. 5분 이후 점수 변화는 소생술 반응을 평가하는 데 도움이 됩니다."
-      }
+      },
+      "legacyUnitId": "neonatal-apgar",
+      "legacyUnitTitle": "Apgar 점수"
     },
     {
       "id": "choi-duyoung-neonatal:18-31",
@@ -7272,8 +7398,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 소생술",
-      "unitId": "neonatal-ppv",
+      "unitTitle": "신생아 소생술과 분만실 응급상황",
+      "unitId": "lecture-resuscitation",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -7288,7 +7414,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "초기 처치 후 무호흡·헐떡호흡 또는 심박수 100회/분 미만이면 양압환기가 우선입니다. 효과적인 환기 30초 후에도 60회/분 미만이면 가슴압박을 추가하며 압박:환기=3:1입니다. 태변착색만으로 일률적 기관내흡인을 시행하여 환기를 지연시키지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ppv",
+      "legacyUnitTitle": "신생아 소생술"
     },
     {
       "id": "choi-duyoung-neonatal:18-32",
@@ -7382,8 +7510,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "Ballard 성숙도",
-      "unitId": "neonatal-ballard",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -7428,7 +7556,9 @@
           5
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ballard",
+      "legacyUnitTitle": "Ballard 성숙도"
     },
     {
       "id": "choi-duyoung-neonatal:18-34",
@@ -7511,8 +7641,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "Apgar 점수",
-      "unitId": "neonatal-apgar",
+      "unitTitle": "복합 단원 문항",
+      "unitId": "lecture-composite",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -7527,7 +7657,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "심박·호흡·근긴장도·자극반응·피부색을 각각 0~2점으로 계산합니다. 소생술은 총점을 기다리지 않고 호흡과 심박수로 즉시 결정합니다. 5분 이후 점수 변화는 소생술 반응을 평가하는 데 도움이 됩니다."
-      }
+      },
+      "legacyUnitId": "neonatal-apgar",
+      "legacyUnitTitle": "Apgar 점수"
     },
     {
       "id": "choi-duyoung-neonatal:18-35",
@@ -7592,8 +7724,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "환기교정",
-      "unitId": "neonatal-mrsopa",
+      "unitTitle": "신생아 소생술과 분만실 응급상황",
+      "unitId": "lecture-resuscitation",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -7608,7 +7740,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "MR SOPA는 마스크 교정(M), 머리 재위치(R), 입·코 흡인(S), 입 벌리기(O), 압력 증가(P), 대체 기도(A)입니다. R은 respiration이 아니고 M은 입 벌리기가 아닙니다."
-      }
+      },
+      "legacyUnitId": "neonatal-mrsopa",
+      "legacyUnitTitle": "환기교정"
     },
     {
       "id": "choi-duyoung-neonatal:18-36",
@@ -7703,8 +7837,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "두개외 손상",
-      "unitId": "neonatal-scalp",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -7750,7 +7884,9 @@
           5
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-scalp",
+      "legacyUnitTitle": "두개외 손상"
     },
     {
       "id": "choi-duyoung-neonatal:18-37",
@@ -7842,8 +7978,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "두개외 손상",
-      "unitId": "neonatal-scalp",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -7858,7 +7994,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "머리부종은 경계가 불분명하고 봉합선을 넘으며, 머리혈종은 골막하 출혈로 경계가 명확하고 봉합선을 넘지 않습니다. 대개 관찰하되 황달·감염에 유의합니다. 머리혈종의 절개·배액은 피합니다. 모상건막밑출혈은 대량출혈 위험이 있는 별도 질환입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-scalp",
+      "legacyUnitTitle": "두개외 손상"
     },
     {
       "id": "choi-duyoung-neonatal:18-38",
@@ -7941,8 +8079,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "위팔신경 손상",
-      "unitId": "neonatal-brachial",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -7957,7 +8095,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "원 복원자료는 Klumpke 마비 사진과 주먹을 못 쥐는 모습을 명시합니다. 축동·안검하수는 T1 침범을 지지하므로 ⑤입니다. 비교용 Erb 그림을 시험사진으로 오인하지 않았습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-brachial",
+      "legacyUnitTitle": "위팔신경 손상"
     },
     {
       "id": "choi-duyoung-neonatal:18-39",
@@ -8040,8 +8180,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "위팔신경 손상",
-      "unitId": "neonatal-brachial",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -8056,7 +8196,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "Erb-Duchenne 마비는 C5~6 손상으로 어깨·팔 움직임과 모로반사에 이상이 생깁니다. 하부 손상의 Klumpke 마비는 파악기능이 저하하며 T1 교감신경 침범 시 축동·안검하수(Horner)가 동반됩니다. 신경전도검사와 MRI는 신경 찢김 평가에 도움이 됩니다."
-      }
+      },
+      "legacyUnitId": "neonatal-brachial",
+      "legacyUnitTitle": "위팔신경 손상"
     },
     {
       "id": "choi-duyoung-neonatal:18-40",
@@ -8169,8 +8311,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "저산소허혈뇌병증",
-      "unitId": "neonatal-hie",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -8216,7 +8358,9 @@
           5
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-hie",
+      "legacyUnitTitle": "저산소허혈뇌병증"
     },
     {
       "id": "choi-duyoung-neonatal:19-1",
@@ -8271,8 +8415,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "출생 전 관리",
-      "unitId": "neonatal-prenatal",
+      "unitTitle": "강의안 근거 미등록 문항",
+      "unitId": "lecture-unattributed",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -8287,7 +8431,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "AFI30cm는 양수과다에 해당하며 해당 연도 해설은 십이지장폐쇄인 ⑤를 제시합니다. 최신 제공 강의안의 산전관리 직접 근거는 미확보입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-prenatal",
+      "legacyUnitTitle": "출생 전 관리"
     },
     {
       "id": "choi-duyoung-neonatal:19-2",
@@ -8348,8 +8494,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "출생 전 관리",
-      "unitId": "neonatal-prenatal",
+      "unitTitle": "강의안 근거 미등록 문항",
+      "unitId": "lecture-unattributed",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -8364,7 +8510,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "해당 연도 해설은 후기 심박수 저하로 설명하며 ③을 제시합니다. 최신 강의안 직접 검증과 구별하여 원본 그래프·해설을 남깁니다."
-      }
+      },
+      "legacyUnitId": "neonatal-prenatal",
+      "legacyUnitTitle": "출생 전 관리"
     },
     {
       "id": "choi-duyoung-neonatal:19-3",
@@ -8419,8 +8567,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "출생 전 관리",
-      "unitId": "neonatal-prenatal",
+      "unitTitle": "강의안 근거 미등록 문항",
+      "unitId": "lecture-unattributed",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -8435,7 +8583,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "해당 연도 해설의 산전검사·태아감시 내용을 참고했습니다. 1삼분기 혈청 선별검사는 PAPP-A와 hCG, 2삼분기 4중선별검사는 AFP·hCG·비결합 에스트리올·인히빈 A입니다. 후기 심박수 저하는 자궁태반부전, 불규칙 저하는 탯줄압박과 연결합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-prenatal",
+      "legacyUnitTitle": "출생 전 관리"
     },
     {
       "id": "choi-duyoung-neonatal:19-4",
@@ -8545,8 +8695,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 호흡곤란증후군",
-      "unitId": "neonatal-rds",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -8561,7 +8711,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "② 생성세포는 맞지만 ⑤ saturated phosphatidylcholine도 폐성숙 평가와 관련됩니다. PG가 더 정확하다는 이유만으로 틀렸다고 단정하지 않아 단일답을 보류합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-rds",
+      "legacyUnitTitle": "신생아 호흡곤란증후군"
     },
     {
       "id": "choi-duyoung-neonatal:19-5",
@@ -8644,8 +8796,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "모유수유",
-      "unitId": "neonatal-milk",
+      "unitTitle": "정상신생아",
+      "unitId": "lecture-normal",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -8660,7 +8812,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "강의안은 안정 후 이른 모유수유와 의료진의 교육·지원을 강조합니다. 활동성 결핵을 수유 금기 항목으로 제시하되 치료로 감염성이 없어진 상태와 구별합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-milk",
+      "legacyUnitTitle": "모유수유"
     },
     {
       "id": "choi-duyoung-neonatal:19-6",
@@ -8758,8 +8912,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "정상 신생아 피부",
-      "unitId": "neonatal-skin",
+      "unitTitle": "정상신생아",
+      "unitId": "lecture-normal",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -8774,7 +8928,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "연어반·독성홍반·할리퀸 색조 변화는 정상 신생아에게 나타날 수 있는 일시적 소견입니다. 뒷목의 홍반은 연어반, 홍반 위 작은 농포·구진은 독성홍반과 연결합니다. 해면혈관종은 정상적인 일시적 피부소견과 구분합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-skin",
+      "legacyUnitTitle": "정상 신생아 피부"
     },
     {
       "id": "choi-duyoung-neonatal:19-7",
@@ -8863,8 +9019,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "체온 관리",
-      "unitId": "neonatal-heat",
+      "unitTitle": "복합 단원 문항",
+      "unitId": "lecture-composite",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -8879,7 +9035,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "신생아는 체중 대비 체표면적이 크고 피하지방이 적어 열손실이 큽니다. 강의안의 열손실은 성인 4배, 체중 대비 체표면적은 3배입니다. 36.5~37℃의 목표 중심체온과 보육기 설정온도를 구별해야 합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-heat",
+      "legacyUnitTitle": "체온 관리"
     },
     {
       "id": "choi-duyoung-neonatal:19-8",
@@ -8977,8 +9135,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "Ballard 성숙도",
-      "unitId": "neonatal-ballard",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -8993,7 +9151,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "신경근육 성숙도는 자세·손목각도·팔 되돌아오기·오금각도·스카프 징후·발뒤꿈치-귀 시험으로 평가합니다. 미숙할수록 근긴장도가 낮고 오금각도가 큽니다. 성숙한 신생아는 두껍고 갈라진 피부·깊은 발바닥 주름·음낭주름을 보입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ballard",
+      "legacyUnitTitle": "Ballard 성숙도"
     },
     {
       "id": "choi-duyoung-neonatal:19-9",
@@ -9076,8 +9236,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "Apgar 점수",
-      "unitId": "neonatal-apgar",
+      "unitTitle": "복합 단원 문항",
+      "unitId": "lecture-composite",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -9092,7 +9252,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "심박2+호흡1+움직임2+재채기2+말단청색증1=8점, ④입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-apgar",
+      "legacyUnitTitle": "Apgar 점수"
     },
     {
       "id": "choi-duyoung-neonatal:19-10",
@@ -9184,8 +9346,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "정상 신생아 관리",
-      "unitId": "neonatal-routine",
+      "unitTitle": "정상신생아",
+      "unitId": "lecture-normal",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -9200,7 +9362,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "보온·호흡 확인·비타민 K1 근육주사·안정 후 이른 수유가 기본입니다. 영아급사증후군 예방에는 앙와위를 권합니다. 구개·후두를 거즈로 문지르거나 출생 직후 목욕하는 것은 적절하지 않습니다. 제대동맥은 2개, 제대정맥은 1개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-routine",
+      "legacyUnitTitle": "정상 신생아 관리"
     },
     {
       "id": "choi-duyoung-neonatal:19-11",
@@ -9292,8 +9456,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 소생술",
-      "unitId": "neonatal-ppv",
+      "unitTitle": "신생아 소생술과 분만실 응급상황",
+      "unitId": "lecture-resuscitation",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -9308,7 +9472,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "초기 처치 후 무호흡·헐떡호흡 또는 심박수 100회/분 미만이면 양압환기가 우선입니다. 효과적인 환기 30초 후에도 60회/분 미만이면 가슴압박을 추가하며 압박:환기=3:1입니다. 태변착색만으로 일률적 기관내흡인을 시행하여 환기를 지연시키지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ppv",
+      "legacyUnitTitle": "신생아 소생술"
     },
     {
       "id": "choi-duyoung-neonatal:19-12",
@@ -9388,8 +9554,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "뇌실주위백질연화증",
-      "unitId": "neonatal-pvl",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -9404,7 +9570,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "해당 연도 해설의 ①을 유지합니다. 초음파 자체가 무용하다는 뜻으로 ④를 해설하지 않으며 MRI의 백질손상 평가 민감도를 구분합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-pvl",
+      "legacyUnitTitle": "뇌실주위백질연화증"
     },
     {
       "id": "choi-duyoung-neonatal:19-13",
@@ -9515,7 +9683,7 @@
       "figureRequired": false,
       "showOriginalByDefault": false,
       "unitTitle": "선천기형",
-      "unitId": "neonatal-anomaly",
+      "unitId": "lecture-anomaly",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -9530,7 +9698,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "선천기형 원인은 다인자유전이 흔합니다. 아가미틈낭은 동통 없이 움직이고 이분척추는 하부허리·천골부에 흔합니다. 구순열과 구개열의 수술시기를 구분하며 갑상혀관낭은 혀갑상샘 감별이 중요합니다. 제공 강의안은 배꼽탈장의 대부분이 1세 이전 자연 폐쇄한다고 설명합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-anomaly",
+      "legacyUnitTitle": "선천기형"
     },
     {
       "id": "choi-duyoung-neonatal:19-14",
@@ -9622,8 +9792,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 소생술",
-      "unitId": "neonatal-ppv",
+      "unitTitle": "신생아 소생술과 분만실 응급상황",
+      "unitId": "lecture-resuscitation",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -9638,7 +9808,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "초기 처치 후 무호흡·헐떡호흡 또는 심박수 100회/분 미만이면 양압환기가 우선입니다. 효과적인 환기 30초 후에도 60회/분 미만이면 가슴압박을 추가하며 압박:환기=3:1입니다. 태변착색만으로 일률적 기관내흡인을 시행하여 환기를 지연시키지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ppv",
+      "legacyUnitTitle": "신생아 소생술"
     },
     {
       "id": "choi-duyoung-neonatal:19-15",
@@ -9709,8 +9881,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "환기교정",
-      "unitId": "neonatal-mrsopa",
+      "unitTitle": "신생아 소생술과 분만실 응급상황",
+      "unitId": "lecture-resuscitation",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -9725,7 +9897,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "MR SOPA는 마스크 교정(M), 머리 재위치(R), 입·코 흡인(S), 입 벌리기(O), 압력 증가(P), 대체 기도(A)입니다. R은 respiration이 아니고 M은 입 벌리기가 아닙니다."
-      }
+      },
+      "legacyUnitId": "neonatal-mrsopa",
+      "legacyUnitTitle": "환기교정"
     },
     {
       "id": "choi-duyoung-neonatal:19-16",
@@ -9823,8 +9997,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "두개외 손상",
-      "unitId": "neonatal-scalp",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -9839,7 +10013,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "머리부종은 경계가 불분명하고 봉합선을 넘으며, 머리혈종은 골막하 출혈로 경계가 명확하고 봉합선을 넘지 않습니다. 대개 관찰하되 황달·감염에 유의합니다. 머리혈종의 절개·배액은 피합니다. 모상건막밑출혈은 대량출혈 위험이 있는 별도 질환입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-scalp",
+      "legacyUnitTitle": "두개외 손상"
     },
     {
       "id": "choi-duyoung-neonatal:19-17",
@@ -9937,8 +10113,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "두개외 손상",
-      "unitId": "neonatal-scalp",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -9953,7 +10129,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "머리부종은 경계가 불분명하고 봉합선을 넘으며, 머리혈종은 골막하 출혈로 경계가 명확하고 봉합선을 넘지 않습니다. 대개 관찰하되 황달·감염에 유의합니다. 머리혈종의 절개·배액은 피합니다. 모상건막밑출혈은 대량출혈 위험이 있는 별도 질환입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-scalp",
+      "legacyUnitTitle": "두개외 손상"
     },
     {
       "id": "choi-duyoung-neonatal:19-18",
@@ -10042,8 +10220,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "위팔신경 손상",
-      "unitId": "neonatal-brachial",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -10058,7 +10236,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "Erb-Duchenne 마비는 C5~6 손상으로 어깨·팔 움직임과 모로반사에 이상이 생깁니다. 하부 손상의 Klumpke 마비는 파악기능이 저하하며 T1 교감신경 침범 시 축동·안검하수(Horner)가 동반됩니다. 신경전도검사와 MRI는 신경 찢김 평가에 도움이 됩니다."
-      }
+      },
+      "legacyUnitId": "neonatal-brachial",
+      "legacyUnitTitle": "위팔신경 손상"
     },
     {
       "id": "choi-duyoung-neonatal:19-19",
@@ -10147,8 +10327,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "위팔신경 손상",
-      "unitId": "neonatal-brachial",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -10163,7 +10343,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "Erb-Duchenne 마비는 C5~6 손상으로 어깨·팔 움직임과 모로반사에 이상이 생깁니다. 하부 손상의 Klumpke 마비는 파악기능이 저하하며 T1 교감신경 침범 시 축동·안검하수(Horner)가 동반됩니다. 신경전도검사와 MRI는 신경 찢김 평가에 도움이 됩니다."
-      }
+      },
+      "legacyUnitId": "neonatal-brachial",
+      "legacyUnitTitle": "위팔신경 손상"
     },
     {
       "id": "choi-duyoung-neonatal:19-20",
@@ -10273,8 +10455,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "저산소허혈뇌병증",
-      "unitId": "neonatal-hie",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -10289,7 +10471,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "주산기가사 후 경련은 저산소허혈뇌병증을 의심합니다. MRI로 손상 범위를 평가하고 aEEG로 무증상 경련을 감시합니다. 과도한 수액과 산소를 피합니다. 강의안의 치료적 저체온은 36주 이상 등 적응증에서 33.5℃이며 23.5℃가 아닙니다."
-      }
+      },
+      "legacyUnitId": "neonatal-hie",
+      "legacyUnitTitle": "저산소허혈뇌병증"
     },
     {
       "id": "choi-duyoung-neonatal:19-21",
@@ -10387,8 +10571,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "무호흡",
-      "unitId": "neonatal-apnea",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -10403,7 +10587,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "시험지 ②는 “관찰하는 것은 중요하다”인데 해설에는 “중요하지 않다”로 전사되었습니다. 원문 기준 ②와 ⑤가 모두 성립하여 채점을 보류합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-apnea",
+      "legacyUnitTitle": "무호흡"
     },
     {
       "id": "choi-duyoung-neonatal:19-22",
@@ -10519,8 +10705,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 호흡곤란증후군",
-      "unitId": "neonatal-rds",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -10535,7 +10721,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "조산아의 표면활성제 부족으로 무기폐·저산소혈증·고탄산혈증·산증이 생깁니다. 제2형 폐포세포가 표면활성제를 만들며 양수에서는 28~32주에 나타납니다. X선은 미세과립상·공기기관지음영이 특징입니다. 호흡보조·기도 내 표면활성제 투여와 산전 스테로이드가 중요합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-rds",
+      "legacyUnitTitle": "신생아 호흡곤란증후군"
     },
     {
       "id": "choi-duyoung-neonatal:19-23",
@@ -10657,8 +10845,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 호흡곤란증후군",
-      "unitId": "neonatal-rds",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -10673,7 +10861,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "조산아의 표면활성제 부족으로 무기폐·저산소혈증·고탄산혈증·산증이 생깁니다. 제2형 폐포세포가 표면활성제를 만들며 양수에서는 28~32주에 나타납니다. X선은 미세과립상·공기기관지음영이 특징입니다. 호흡보조·기도 내 표면활성제 투여와 산전 스테로이드가 중요합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-rds",
+      "legacyUnitTitle": "신생아 호흡곤란증후군"
     },
     {
       "id": "choi-duyoung-neonatal:19-24",
@@ -10777,8 +10967,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "기계환기",
-      "unitId": "neonatal-vent",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -10793,7 +10983,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "산소화는 FiO2 또는 평균기도압을 높여 개선합니다. 평균기도압은 흡기압·흡기시간·PEEP·호흡수·흡기유량 증가로 높일 수 있습니다. 호기시간 연장과 구별합니다. 발관 후 nCPAP은 무기폐와 재삽관을 줄입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-vent",
+      "legacyUnitTitle": "기계환기"
     },
     {
       "id": "choi-duyoung-neonatal:19-25",
@@ -10909,8 +11101,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "기관지폐형성이상",
-      "unitId": "neonatal-bpd",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -10925,7 +11117,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "해설 답은 ④이나 ⑤의 과팽창·불규칙 폐음영도 BPD에서 성립하여 단일답으로 강제하지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-bpd",
+      "legacyUnitTitle": "기관지폐형성이상"
     },
     {
       "id": "choi-duyoung-neonatal:19-26",
@@ -11041,8 +11235,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "기관지폐형성이상",
-      "unitId": "neonatal-bpd",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -11057,7 +11251,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "조산아의 장기간 산소·환기 의존은 BPD를 시사합니다. 폐포·폐혈관 발달 저하, 폐손상·염증이 관여하며 기포성·불균질 영상이 나타납니다. 영양·산소화·감염 관리가 기본이고 환기이탈이 어려우면 부작용을 고려하여 덱사메타손을 신중하게 사용합니다. 이뇨제 효과는 단기적입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-bpd",
+      "legacyUnitTitle": "기관지폐형성이상"
     },
     {
       "id": "choi-duyoung-neonatal:19-27",
@@ -11155,8 +11351,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "태변흡인증후군",
-      "unitId": "neonatal-mas",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -11171,7 +11367,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "① 태아곤란은 타당하나 ⑤ 이차적 표면활성제 저하·무기폐도 MAS에서 나타날 수 있어 단일답을 보류합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-mas",
+      "legacyUnitTitle": "태변흡인증후군"
     },
     {
       "id": "choi-duyoung-neonatal:19-28",
@@ -11274,8 +11472,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "지속성 폐고혈압",
-      "unitId": "neonatal-pphn",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -11290,7 +11488,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "교수님 수정사항 PDF 1쪽의 ④→③(NO) 정정을 반영합니다. 산소 불응 청색증·동맥관 전후 SpO2 차이와 PPHN 강의안이 이를 지지합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-pphn",
+      "legacyUnitTitle": "지속성 폐고혈압"
     },
     {
       "id": "choi-duyoung-neonatal:19-29",
@@ -11378,8 +11578,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 황달",
-      "unitId": "neonatal-jaundice",
+      "unitTitle": "신생아 소화기질환",
+      "unitId": "lecture-digestive",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -11394,7 +11594,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "수정본은 ①/④ 이견을 남깁니다. 실제 총/직접빌리루빈9.3/0.5,체중감소4.1%,양호한 상태를 근거로 수유지원 ④를 선택했습니다. 기존 해설의 “12mg/dL 이상”은 실제 수치와 다릅니다."
-      }
+      },
+      "legacyUnitId": "neonatal-jaundice",
+      "legacyUnitTitle": "신생아 황달"
     },
     {
       "id": "choi-duyoung-neonatal:19-30",
@@ -11528,8 +11730,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "용혈질환·교환수혈",
-      "unitId": "neonatal-hdfn",
+      "unitTitle": "신생아 혈액질환",
+      "unitId": "lecture-hematology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -11544,7 +11746,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "태반을 통과하는 모체 IgG가 면역성 용혈과 관련됩니다. 태아 MCA 도플러는 빈혈 평가에 도움이 됩니다. 심한 빈혈·용혈·급격한 빌리루빈 상승에는 교환수혈을 고려하며 적합시험한 혈액을 사용합니다. 백혈구 제거는 CMV 위험 감소, 방사선조사는 수혈관련 GVHD 예방으로 목적이 다릅니다."
-      }
+      },
+      "legacyUnitId": "neonatal-hdfn",
+      "legacyUnitTitle": "용혈질환·교환수혈"
     },
     {
       "id": "choi-duyoung-neonatal:19-31",
@@ -11672,8 +11876,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "용혈질환·교환수혈",
-      "unitId": "neonatal-hdfn",
+      "unitTitle": "신생아 혈액질환",
+      "unitId": "lecture-hematology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -11688,7 +11892,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "태반을 통과하는 모체 IgG가 면역성 용혈과 관련됩니다. 태아 MCA 도플러는 빈혈 평가에 도움이 됩니다. 심한 빈혈·용혈·급격한 빌리루빈 상승에는 교환수혈을 고려하며 적합시험한 혈액을 사용합니다. 백혈구 제거는 CMV 위험 감소, 방사선조사는 수혈관련 GVHD 예방으로 목적이 다릅니다."
-      }
+      },
+      "legacyUnitId": "neonatal-hdfn",
+      "legacyUnitTitle": "용혈질환·교환수혈"
     },
     {
       "id": "choi-duyoung-neonatal:19-32",
@@ -11771,8 +11977,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 황달",
-      "unitId": "neonatal-jaundice",
+      "unitTitle": "신생아 소화기질환",
+      "unitId": "lecture-digestive",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -11787,7 +11993,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "생후 24시간 이내 황달은 병적 원인을 평가합니다. 생리적 황달은 대개 2~3일경 관찰되지만 치료는 수치·임신나이·위험인자를 함께 판단합니다. 수유 부족의 조기황달과 2~3주 최고치의 모유황달을 구별합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-jaundice",
+      "legacyUnitTitle": "신생아 황달"
     },
     {
       "id": "choi-duyoung-neonatal:19-33",
@@ -11894,8 +12102,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 괴사장염",
-      "unitId": "neonatal-nec",
+      "unitTitle": "신생아 소화기질환",
+      "unitId": "lecture-digestive",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -11910,7 +12118,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "조산아의 복부팽만·혈변·담즙성구토·체온불안정과 창자벽공기는 NEC를 시사합니다. 원위회장·근위대장에 호발하며 장허혈·장관영양·세균전위가 관여합니다. 금식·비위관 감압·수액·광범위 항생제를 시작하며 천공 등 수술 적응증을 확인합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-nec",
+      "legacyUnitTitle": "신생아 괴사장염"
     },
     {
       "id": "choi-duyoung-neonatal:19-34",
@@ -11975,8 +12185,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "미숙아망막병증",
-      "unitId": "neonatal-rop",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -11991,7 +12201,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "ROP의 가장 중요한 위험은 조산·망막 미숙입니다. 산소치료·감염·산증·무호흡·서맥도 관련되지만 산소만을 유일한 원인으로 설명하지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-rop",
+      "legacyUnitTitle": "미숙아망막병증"
     },
     {
       "id": "choi-duyoung-neonatal:19-35",
@@ -12074,8 +12286,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "출생 전후기 감염",
-      "unitId": "neonatal-perinatal",
+      "unitTitle": "신생아 감염질환",
+      "unitId": "lecture-infection",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -12090,7 +12302,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "분만 과정에서 산모로부터 전파되는 감염입니다. 장시간 양막파수가 위험이며 선천감염과 구분합니다. 화농성 분비물 하나만으로 Triple I 확진을 단정하지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-perinatal",
+      "legacyUnitTitle": "출생 전후기 감염"
     },
     {
       "id": "choi-duyoung-neonatal:19-36",
@@ -12179,8 +12393,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "자궁내성장지연",
-      "unitId": "neonatal-sga",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -12195,7 +12409,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "머리·키에 비해 체중·복위가 작은 비대칭형은 임신 후기 전자간증·만성고혈압 등과 관련됩니다. 영양공급으로 따라잡기 성장이 가능합니다. 대칭형은 더 이른 시기의 염색체·유전적 원인 등을 고려합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-sga",
+      "legacyUnitTitle": "자궁내성장지연"
     },
     {
       "id": "choi-duyoung-neonatal:19-37",
@@ -12278,8 +12494,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "당뇨병 산모 신생아",
-      "unitId": "neonatal-idm",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -12294,7 +12510,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "모체 포도당은 태반을 통과하지만 인슐린은 통과하지 않습니다. 태아 고인슐린혈증으로 출생 후 저혈당 위험이 있고 RDS·적혈구증가증이 동반될 수 있습니다. 임신 전 당뇨와 임신 후기 발생 당뇨의 기형 위험은 구별합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-idm",
+      "legacyUnitTitle": "당뇨병 산모 신생아"
     },
     {
       "id": "choi-duyoung-neonatal:19-38",
@@ -12395,8 +12613,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "후기 신생아 감염",
-      "unitId": "neonatal-late",
+      "unitTitle": "신생아 감염질환",
+      "unitId": "lecture-infection",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -12411,7 +12629,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "③ 조산 고위험은 맞지만 ⑤ NICU·지역사회도 성립합니다. 40일은 강의안의 늦은 후기형이므로 단일정답은 보류합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-late",
+      "legacyUnitTitle": "후기 신생아 감염"
     },
     {
       "id": "choi-duyoung-neonatal:19-39",
@@ -12514,8 +12734,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "Ballard 성숙도",
-      "unitId": "neonatal-ballard",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -12530,7 +12750,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "수정사항 PDF 3쪽의 손목각도②→스카프징후③을 반영합니다. 팔을 가슴 반대편으로 당기는 사진과 Ballard 표를 대조했습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ballard",
+      "legacyUnitTitle": "Ballard 성숙도"
     },
     {
       "id": "choi-duyoung-neonatal:19-40",
@@ -12622,8 +12844,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "Ballard 성숙도",
-      "unitId": "neonatal-ballard",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -12638,7 +12860,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "신경근육 성숙도는 자세·손목각도·팔 되돌아오기·오금각도·스카프 징후·발뒤꿈치-귀 시험으로 평가합니다. 미숙할수록 근긴장도가 낮고 오금각도가 큽니다. 성숙한 신생아는 두껍고 갈라진 피부·깊은 발바닥 주름·음낭주름을 보입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ballard",
+      "legacyUnitTitle": "Ballard 성숙도"
     },
     {
       "id": "choi-duyoung-neonatal:20-1",
@@ -12730,8 +12954,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "재태기간·체중 분류",
-      "unitId": "neonatal-class",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -12746,7 +12970,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "미숙아는 37주 미만, 과숙아는 42주 이상입니다. LBW 2,500g 미만, VLBW 1,500g 미만, ELBW 1,000g 미만으로 구분합니다. SGA는 해당 임신나이 출생체중 10백분위수 미만이며, 성장경로를 뜻하는 IUGR와 정의가 다릅니다."
-      }
+      },
+      "legacyUnitId": "neonatal-class",
+      "legacyUnitTitle": "재태기간·체중 분류"
     },
     {
       "id": "choi-duyoung-neonatal:20-2",
@@ -12801,8 +13027,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "출생 전 관리",
-      "unitId": "neonatal-prenatal",
+      "unitTitle": "강의안 근거 미등록 문항",
+      "unitId": "lecture-unattributed",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -12817,7 +13043,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "해당 연도 해설의 산전검사·태아감시 내용을 참고했습니다. 1삼분기 혈청 선별검사는 PAPP-A와 hCG, 2삼분기 4중선별검사는 AFP·hCG·비결합 에스트리올·인히빈 A입니다. 후기 심박수 저하는 자궁태반부전, 불규칙 저하는 탯줄압박과 연결합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-prenatal",
+      "legacyUnitTitle": "출생 전 관리"
     },
     {
       "id": "choi-duyoung-neonatal:20-3",
@@ -12878,8 +13106,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "출생 전 관리",
-      "unitId": "neonatal-prenatal",
+      "unitTitle": "강의안 근거 미등록 문항",
+      "unitId": "lecture-unattributed",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -12894,7 +13122,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "해당 연도 해설의 산전검사·태아감시 내용을 참고했습니다. 1삼분기 혈청 선별검사는 PAPP-A와 hCG, 2삼분기 4중선별검사는 AFP·hCG·비결합 에스트리올·인히빈 A입니다. 후기 심박수 저하는 자궁태반부전, 불규칙 저하는 탯줄압박과 연결합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-prenatal",
+      "legacyUnitTitle": "출생 전 관리"
     },
     {
       "id": "choi-duyoung-neonatal:20-4",
@@ -12949,8 +13179,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "출생 전 관리",
-      "unitId": "neonatal-prenatal",
+      "unitTitle": "강의안 근거 미등록 문항",
+      "unitId": "lecture-unattributed",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -12965,7 +13195,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "20학번 ②는 PAPP-A가 아니라 hCG입니다. 해당 연도의 선택지로 1삼분기 혈청검사 답을 판단했습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-prenatal",
+      "legacyUnitTitle": "출생 전 관리"
     },
     {
       "id": "choi-duyoung-neonatal:20-5",
@@ -13075,8 +13307,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 호흡곤란증후군",
-      "unitId": "neonatal-rds",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -13091,7 +13323,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "19-4와 같은 폐성숙 보기 충돌입니다. ②의 세포 설명은 맞지만 ⑤를 일률적으로 틀렸다고 볼 직접 근거가 부족합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-rds",
+      "legacyUnitTitle": "신생아 호흡곤란증후군"
     },
     {
       "id": "choi-duyoung-neonatal:20-6",
@@ -13204,8 +13438,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 감염",
-      "unitId": "neonatal-sepsis",
+      "unitTitle": "신생아 감염질환",
+      "unitId": "lecture-infection",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -13251,7 +13485,9 @@
           4
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-sepsis",
+      "legacyUnitTitle": "신생아 감염"
     },
     {
       "id": "choi-duyoung-neonatal:20-7",
@@ -13343,8 +13579,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "정상 신생아 피부",
-      "unitId": "neonatal-skin",
+      "unitTitle": "정상신생아",
+      "unitId": "lecture-normal",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -13360,7 +13596,9 @@
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "연어반·독성홍반·할리퀸 색조 변화는 정상 신생아에게 나타날 수 있는 일시적 소견입니다. 뒷목의 홍반은 연어반, 홍반 위 작은 농포·구진은 독성홍반과 연결합니다. 해면혈관종은 정상적인 일시적 피부소견과 구분합니다."
       },
-      "transcriptionWarning": "복원자료에 해당 사진의 설명만 남아 있어 다른 문항 사진으로 대체하지 않았습니다."
+      "transcriptionWarning": "복원자료에 해당 사진의 설명만 남아 있어 다른 문항 사진으로 대체하지 않았습니다.",
+      "legacyUnitId": "neonatal-skin",
+      "legacyUnitTitle": "정상 신생아 피부"
     },
     {
       "id": "choi-duyoung-neonatal:20-8",
@@ -13449,8 +13687,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "체온 관리",
-      "unitId": "neonatal-heat",
+      "unitTitle": "복합 단원 문항",
+      "unitId": "lecture-composite",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -13465,7 +13703,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "신생아는 체중 대비 체표면적이 크고 피하지방이 적어 열손실이 큽니다. 강의안의 열손실은 성인 4배, 체중 대비 체표면적은 3배입니다. 36.5~37℃의 목표 중심체온과 보육기 설정온도를 구별해야 합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-heat",
+      "legacyUnitTitle": "체온 관리"
     },
     {
       "id": "choi-duyoung-neonatal:20-9",
@@ -13552,8 +13792,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "저혈당·대사이상",
-      "unitId": "neonatal-glucose",
+      "unitTitle": "복합 단원 문항",
+      "unitId": "lecture-composite",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -13600,7 +13840,9 @@
           3
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-glucose",
+      "legacyUnitTitle": "저혈당·대사이상"
     },
     {
       "id": "choi-duyoung-neonatal:20-10",
@@ -13692,8 +13934,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "정상 신생아 관리",
-      "unitId": "neonatal-routine",
+      "unitTitle": "정상신생아",
+      "unitId": "lecture-normal",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -13708,7 +13950,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "기존 해설의 클라미디아 결막염 국소 tetracycline 단독 치료는 CDC 지침과 다릅니다. 최신 제공 슬라이드에도 과거 문구가 있으므로 확정답으로 두지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-routine",
+      "legacyUnitTitle": "정상 신생아 관리"
     },
     {
       "id": "choi-duyoung-neonatal:20-12",
@@ -13788,8 +14032,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "뇌실주위백질연화증",
-      "unitId": "neonatal-pvl",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -13804,7 +14048,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "미숙아의 저산소·허혈·염증과 관련된 측뇌실 주위 백질손상입니다. 영아기 후반 강직성 운동장애로 나타날 수 있습니다. MRI가 백질손상에 민감하며 초음파도 변화를 보일 수 있으므로 “초음파로 진단 불가”라고 해설하지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-pvl",
+      "legacyUnitTitle": "뇌실주위백질연화증"
     },
     {
       "id": "choi-duyoung-neonatal:20-13",
@@ -13915,7 +14161,7 @@
       "figureRequired": false,
       "showOriginalByDefault": false,
       "unitTitle": "선천기형",
-      "unitId": "neonatal-anomaly",
+      "unitId": "lecture-anomaly",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -13930,7 +14176,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "선천기형 원인은 다인자유전이 흔합니다. 아가미틈낭은 동통 없이 움직이고 이분척추는 하부허리·천골부에 흔합니다. 구순열과 구개열의 수술시기를 구분하며 갑상혀관낭은 혀갑상샘 감별이 중요합니다. 제공 강의안은 배꼽탈장의 대부분이 1세 이전 자연 폐쇄한다고 설명합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-anomaly",
+      "legacyUnitTitle": "선천기형"
     },
     {
       "id": "choi-duyoung-neonatal:20-14",
@@ -14022,8 +14270,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 소생술",
-      "unitId": "neonatal-ppv",
+      "unitTitle": "신생아 소생술과 분만실 응급상황",
+      "unitId": "lecture-resuscitation",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -14038,7 +14286,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "초기 처치 후 무호흡·헐떡호흡 또는 심박수 100회/분 미만이면 양압환기가 우선입니다. 효과적인 환기 30초 후에도 60회/분 미만이면 가슴압박을 추가하며 압박:환기=3:1입니다. 태변착색만으로 일률적 기관내흡인을 시행하여 환기를 지연시키지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ppv",
+      "legacyUnitTitle": "신생아 소생술"
     },
     {
       "id": "choi-duyoung-neonatal:20-16",
@@ -14130,8 +14380,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "두개외 손상",
-      "unitId": "neonatal-scalp",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -14146,7 +14396,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "머리부종은 경계가 불분명하고 봉합선을 넘으며, 머리혈종은 골막하 출혈로 경계가 명확하고 봉합선을 넘지 않습니다. 대개 관찰하되 황달·감염에 유의합니다. 머리혈종의 절개·배액은 피합니다. 모상건막밑출혈은 대량출혈 위험이 있는 별도 질환입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-scalp",
+      "legacyUnitTitle": "두개외 손상"
     },
     {
       "id": "choi-duyoung-neonatal:20-17",
@@ -14238,8 +14490,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "두개외 손상",
-      "unitId": "neonatal-scalp",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -14254,7 +14506,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "머리부종은 경계가 불분명하고 봉합선을 넘으며, 머리혈종은 골막하 출혈로 경계가 명확하고 봉합선을 넘지 않습니다. 대개 관찰하되 황달·감염에 유의합니다. 머리혈종의 절개·배액은 피합니다. 모상건막밑출혈은 대량출혈 위험이 있는 별도 질환입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-scalp",
+      "legacyUnitTitle": "두개외 손상"
     },
     {
       "id": "choi-duyoung-neonatal:20-19",
@@ -14341,8 +14595,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "위팔신경 손상",
-      "unitId": "neonatal-brachial",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -14389,7 +14643,9 @@
           3
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-brachial",
+      "legacyUnitTitle": "위팔신경 손상"
     },
     {
       "id": "choi-duyoung-neonatal:20-20",
@@ -14499,8 +14755,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "저산소허혈뇌병증",
-      "unitId": "neonatal-hie",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -14515,7 +14771,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "주산기가사 후 경련은 저산소허혈뇌병증을 의심합니다. MRI로 손상 범위를 평가하고 aEEG로 무증상 경련을 감시합니다. 과도한 수액과 산소를 피합니다. 강의안의 치료적 저체온은 36주 이상 등 적응증에서 33.5℃이며 23.5℃가 아닙니다."
-      }
+      },
+      "legacyUnitId": "neonatal-hie",
+      "legacyUnitTitle": "저산소허혈뇌병증"
     },
     {
       "id": "choi-duyoung-neonatal:20-22",
@@ -14631,8 +14889,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 호흡곤란증후군",
-      "unitId": "neonatal-rds",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -14647,7 +14905,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "조산아의 표면활성제 부족으로 무기폐·저산소혈증·고탄산혈증·산증이 생깁니다. 제2형 폐포세포가 표면활성제를 만들며 양수에서는 28~32주에 나타납니다. X선은 미세과립상·공기기관지음영이 특징입니다. 호흡보조·기도 내 표면활성제 투여와 산전 스테로이드가 중요합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-rds",
+      "legacyUnitTitle": "신생아 호흡곤란증후군"
     },
     {
       "id": "choi-duyoung-neonatal:20-23",
@@ -14769,8 +15029,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 호흡곤란증후군",
-      "unitId": "neonatal-rds",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -14785,7 +15045,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "조산아의 표면활성제 부족으로 무기폐·저산소혈증·고탄산혈증·산증이 생깁니다. 제2형 폐포세포가 표면활성제를 만들며 양수에서는 28~32주에 나타납니다. X선은 미세과립상·공기기관지음영이 특징입니다. 호흡보조·기도 내 표면활성제 투여와 산전 스테로이드가 중요합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-rds",
+      "legacyUnitTitle": "신생아 호흡곤란증후군"
     },
     {
       "id": "choi-duyoung-neonatal:20-24",
@@ -14889,8 +15151,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "기계환기",
-      "unitId": "neonatal-vent",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -14905,7 +15167,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "인용한 문항은 “틀린 것”, 해당 연도 복원 메모는 “옳은 것 같음”으로 질문 방향이 충돌하여 19학번 답을 복사 채점하지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-vent",
+      "legacyUnitTitle": "기계환기"
     },
     {
       "id": "choi-duyoung-neonatal:20-26",
@@ -15023,8 +15287,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "기관지폐형성이상",
-      "unitId": "neonatal-bpd",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -15058,7 +15322,9 @@
         "basis": "ai_review",
         "version": "1.1.12",
         "reason": "현재 표시된 복원 증례의 30주·1000g·6주간 기계환기 의존과 해당 연도 해설의 BPD 진단을 기준으로 기존② 덱사메타손을 채택합니다. 강의안 PDF53쪽은 장기 환기 의존에서 부작용을 고려한 신중한 사용을 설명합니다. 모든 BPD 아기에게 일률적으로 투여한다는 뜻은 아닙니다."
-      }
+      },
+      "legacyUnitId": "neonatal-bpd",
+      "legacyUnitTitle": "기관지폐형성이상"
     },
     {
       "id": "choi-duyoung-neonatal:20-27",
@@ -15150,8 +15416,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "태변흡인증후군",
-      "unitId": "neonatal-mas",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -15166,7 +15432,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "해설은 흉부방사선촬영을 의도하지만 복원 보기는 “심장방사선촬영”입니다. 원문 확인 없이 단어를 고쳐 정답화하지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-mas",
+      "legacyUnitTitle": "태변흡인증후군"
     },
     {
       "id": "choi-duyoung-neonatal:20-28",
@@ -15264,8 +15532,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "지속성 폐고혈압",
-      "unitId": "neonatal-pphn",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -15280,7 +15548,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "출생 후 폐혈관저항이 감소하지 않아 난원공·동맥관의 우좌단락이 지속됩니다. 산소에 반응하지 않는 청색증과 동맥관 전후 SpO2 차이를 보면 PPHN을 고려합니다. 심초음파로 구조적 심질환을 감별하고 흡입 NO 등으로 폐혈관저항을 낮춥니다."
-      }
+      },
+      "legacyUnitId": "neonatal-pphn",
+      "legacyUnitTitle": "지속성 폐고혈압"
     },
     {
       "id": "choi-duyoung-neonatal:20-29",
@@ -15324,8 +15594,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "모유황달",
-      "unitId": "neonatal-breastj",
+      "unitTitle": "신생아 소화기질환",
+      "unitId": "lecture-digestive",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -15341,7 +15611,9 @@
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "과거 참고처치는 1~2일 모유중단입니다. 현재 권고는 대부분 수유를 지속하며 일시중단은 개별 판단합니다. 수치·선택지가 없으므로 참고답과 한계를 제시하고 수동채점합니다."
       },
-      "gradingMode": "manual"
+      "gradingMode": "manual",
+      "legacyUnitId": "neonatal-breastj",
+      "legacyUnitTitle": "모유황달"
     },
     {
       "id": "choi-duyoung-neonatal:20-31",
@@ -15475,8 +15747,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "용혈질환·교환수혈",
-      "unitId": "neonatal-hdfn",
+      "unitTitle": "신생아 혈액질환",
+      "unitId": "lecture-hematology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -15491,7 +15763,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "태반을 통과하는 모체 IgG가 면역성 용혈과 관련됩니다. 태아 MCA 도플러는 빈혈 평가에 도움이 됩니다. 심한 빈혈·용혈·급격한 빌리루빈 상승에는 교환수혈을 고려하며 적합시험한 혈액을 사용합니다. 백혈구 제거는 CMV 위험 감소, 방사선조사는 수혈관련 GVHD 예방으로 목적이 다릅니다."
-      }
+      },
+      "legacyUnitId": "neonatal-hdfn",
+      "legacyUnitTitle": "용혈질환·교환수혈"
     },
     {
       "id": "choi-duyoung-neonatal:20-32",
@@ -15619,8 +15893,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "용혈질환·교환수혈",
-      "unitId": "neonatal-hdfn",
+      "unitTitle": "신생아 혈액질환",
+      "unitId": "lecture-hematology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -15635,7 +15909,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "태반을 통과하는 모체 IgG가 면역성 용혈과 관련됩니다. 태아 MCA 도플러는 빈혈 평가에 도움이 됩니다. 심한 빈혈·용혈·급격한 빌리루빈 상승에는 교환수혈을 고려하며 적합시험한 혈액을 사용합니다. 백혈구 제거는 CMV 위험 감소, 방사선조사는 수혈관련 GVHD 예방으로 목적이 다릅니다."
-      }
+      },
+      "legacyUnitId": "neonatal-hdfn",
+      "legacyUnitTitle": "용혈질환·교환수혈"
     },
     {
       "id": "choi-duyoung-neonatal:20-35",
@@ -15700,8 +15976,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "미숙아망막병증",
-      "unitId": "neonatal-rop",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -15716,7 +15992,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "ROP의 가장 중요한 위험은 조산·망막 미숙입니다. 산소치료·감염·산증·무호흡·서맥도 관련되지만 산소만을 유일한 원인으로 설명하지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-rop",
+      "legacyUnitTitle": "미숙아망막병증"
     },
     {
       "id": "choi-duyoung-neonatal:20-36",
@@ -15799,8 +16077,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "출생 전후기 감염",
-      "unitId": "neonatal-perinatal",
+      "unitTitle": "신생아 감염질환",
+      "unitId": "lecture-infection",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -15815,7 +16093,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "분만 과정에서 산모로부터 전파되는 감염입니다. 장시간 양막파수가 위험이며 선천감염과 구분합니다. 화농성 분비물 하나만으로 Triple I 확진을 단정하지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-perinatal",
+      "legacyUnitTitle": "출생 전후기 감염"
     },
     {
       "id": "choi-duyoung-neonatal:20-38",
@@ -15921,8 +16201,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "후기 신생아 감염",
-      "unitId": "neonatal-late",
+      "unitTitle": "신생아 감염질환",
+      "unitId": "lecture-infection",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -15988,7 +16268,9 @@
         "basis": "ai_review",
         "version": "1.1.12",
         "reason": "생후40일 NICU 장기 입원 중 감염은 강의안 PDF16쪽의 생후30일 이상 늦은 후기발현형에 맞으므로 기존②를 채택합니다. 미복원 보기 때문에만 보류하던 사유를 해제합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-late",
+      "legacyUnitTitle": "후기 신생아 감염"
     },
     {
       "id": "choi-duyoung-neonatal:20-39",
@@ -16086,8 +16368,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "Ballard 성숙도",
-      "unitId": "neonatal-ballard",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -16102,7 +16384,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "해당 연도 해설이 인용한 19학번 사진에 대해 수정사항·Ballard 표를 함께 대조하여 스카프 징후③으로 반영합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ballard",
+      "legacyUnitTitle": "Ballard 성숙도"
     },
     {
       "id": "choi-duyoung-neonatal:20-40",
@@ -16178,8 +16462,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "삼킨 모체혈액 감별",
-      "unitId": "neonatal-apt",
+      "unitTitle": "복합 단원 문항",
+      "unitId": "lecture-composite",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -16224,7 +16508,9 @@
           2
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-apt",
+      "legacyUnitTitle": "삼킨 모체혈액 감별"
     },
     {
       "id": "choi-duyoung-neonatal:21-1",
@@ -16322,8 +16608,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "정상 소견과 모로반사",
-      "unitId": "neonatal-moro",
+      "unitTitle": "복합 단원 문항",
+      "unitId": "lecture-composite",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -16344,7 +16630,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-moro",
+      "legacyUnitTitle": "정상 소견과 모로반사"
     },
     {
       "id": "choi-duyoung-neonatal:21-2",
@@ -16442,8 +16730,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "정상 신생아 피부",
-      "unitId": "neonatal-skin",
+      "unitTitle": "정상신생아",
+      "unitId": "lecture-normal",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -16464,7 +16752,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-skin",
+      "legacyUnitTitle": "정상 신생아 피부"
     },
     {
       "id": "choi-duyoung-neonatal:21-3",
@@ -16565,8 +16855,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 빈혈",
-      "unitId": "neonatal-anemia",
+      "unitTitle": "신생아 혈액질환",
+      "unitId": "lecture-hematology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -16587,7 +16877,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-anemia",
+      "legacyUnitTitle": "신생아 빈혈"
     },
     {
       "id": "choi-duyoung-neonatal:21-4",
@@ -16685,8 +16977,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "정상 신생아 관리",
-      "unitId": "neonatal-routine",
+      "unitTitle": "정상신생아",
+      "unitId": "lecture-normal",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -16707,7 +16999,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-routine",
+      "legacyUnitTitle": "정상 신생아 관리"
     },
     {
       "id": "choi-duyoung-neonatal:21-5",
@@ -16805,8 +17099,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "재태기간·체중 분류",
-      "unitId": "neonatal-class",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -16827,7 +17121,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-class",
+      "legacyUnitTitle": "재태기간·체중 분류"
     },
     {
       "id": "choi-duyoung-neonatal:21-6",
@@ -16910,8 +17206,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "뇌실내출혈",
-      "unitId": "neonatal-ivh",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -16932,7 +17228,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ivh",
+      "legacyUnitTitle": "뇌실내출혈"
     },
     {
       "id": "choi-duyoung-neonatal:21-7",
@@ -17039,8 +17337,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "미숙아 영양",
-      "unitId": "neonatal-nutrition",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -17061,7 +17359,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-nutrition",
+      "legacyUnitTitle": "미숙아 영양"
     },
     {
       "id": "choi-duyoung-neonatal:21-8",
@@ -17141,8 +17441,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "쇄골골절",
-      "unitId": "neonatal-clavicle",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -17163,7 +17463,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-clavicle",
+      "legacyUnitTitle": "쇄골골절"
     },
     {
       "id": "choi-duyoung-neonatal:21-9",
@@ -17274,7 +17576,7 @@
       "figureRequired": false,
       "showOriginalByDefault": false,
       "unitTitle": "선천기형",
-      "unitId": "neonatal-anomaly",
+      "unitId": "lecture-anomaly",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -17295,7 +17597,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-anomaly",
+      "legacyUnitTitle": "선천기형"
     },
     {
       "id": "choi-duyoung-neonatal:21-10",
@@ -17393,8 +17697,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 소생술",
-      "unitId": "neonatal-ppv",
+      "unitTitle": "신생아 소생술과 분만실 응급상황",
+      "unitId": "lecture-resuscitation",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -17415,7 +17719,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ppv",
+      "legacyUnitTitle": "신생아 소생술"
     },
     {
       "id": "choi-duyoung-neonatal:21-11",
@@ -17498,8 +17804,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "Apgar 점수",
-      "unitId": "neonatal-apgar",
+      "unitTitle": "복합 단원 문항",
+      "unitId": "lecture-composite",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -17520,7 +17826,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-apgar",
+      "legacyUnitTitle": "Apgar 점수"
     },
     {
       "id": "choi-duyoung-neonatal:21-12",
@@ -17618,8 +17926,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 소생술",
-      "unitId": "neonatal-ppv",
+      "unitTitle": "신생아 소생술과 분만실 응급상황",
+      "unitId": "lecture-resuscitation",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -17640,7 +17948,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ppv",
+      "legacyUnitTitle": "신생아 소생술"
     },
     {
       "id": "choi-duyoung-neonatal:21-13",
@@ -17762,8 +18072,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 호흡곤란증후군",
-      "unitId": "neonatal-rds",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -17784,7 +18094,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-rds",
+      "legacyUnitTitle": "신생아 호흡곤란증후군"
     },
     {
       "id": "choi-duyoung-neonatal:21-14",
@@ -17906,8 +18218,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "기관지폐형성이상",
-      "unitId": "neonatal-bpd",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -17928,7 +18240,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-bpd",
+      "legacyUnitTitle": "기관지폐형성이상"
     },
     {
       "id": "choi-duyoung-neonatal:21-15",
@@ -18026,8 +18340,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 폐렴",
-      "unitId": "neonatal-pneumonia",
+      "unitTitle": "신생아 감염질환",
+      "unitId": "lecture-infection",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -18048,7 +18362,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-pneumonia",
+      "legacyUnitTitle": "신생아 폐렴"
     },
     {
       "id": "choi-duyoung-neonatal:21-16",
@@ -18137,8 +18453,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "기흉·공기누출",
-      "unitId": "neonatal-airleak",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -18159,7 +18475,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-airleak",
+      "legacyUnitTitle": "기흉·공기누출"
     },
     {
       "id": "choi-duyoung-neonatal:21-17",
@@ -18272,8 +18590,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 괴사장염",
-      "unitId": "neonatal-nec",
+      "unitTitle": "신생아 소화기질환",
+      "unitId": "lecture-digestive",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -18294,7 +18612,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-nec",
+      "legacyUnitTitle": "신생아 괴사장염"
     },
     {
       "id": "choi-duyoung-neonatal:21-18",
@@ -18365,8 +18685,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "모유황달",
-      "unitId": "neonatal-breastj",
+      "unitTitle": "신생아 소화기질환",
+      "unitId": "lecture-digestive",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -18387,7 +18707,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-breastj",
+      "legacyUnitTitle": "모유황달"
     },
     {
       "id": "choi-duyoung-neonatal:21-19",
@@ -18515,8 +18837,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "용혈질환·교환수혈",
-      "unitId": "neonatal-hdfn",
+      "unitTitle": "신생아 혈액질환",
+      "unitId": "lecture-hematology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -18537,7 +18859,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-hdfn",
+      "legacyUnitTitle": "용혈질환·교환수혈"
     },
     {
       "id": "choi-duyoung-neonatal:21-20",
@@ -18647,8 +18971,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 감염",
-      "unitId": "neonatal-sepsis",
+      "unitTitle": "신생아 감염질환",
+      "unitId": "lecture-infection",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -18669,7 +18993,9 @@
         "basis": "user_kmle",
         "version": "1.1.12",
         "reason": "21학번 정답 확정: KMLE 발췌 출제라는 사용자 확인에 따라 해당 연도 해설의 기존 정답을 채택합니다. 강의안의 부분 근거는 정답 미확정 사유로 삼지 않으며, 강의안 확인 범위와 한계는 별도로 표시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-sepsis",
+      "legacyUnitTitle": "신생아 감염"
     },
     {
       "id": "choi-duyoung-neonatal:22-1",
@@ -18754,8 +19080,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 황달",
-      "unitId": "neonatal-jaundice",
+      "unitTitle": "신생아 소화기질환",
+      "unitId": "lecture-digestive",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -18800,7 +19126,9 @@
           5
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-jaundice",
+      "legacyUnitTitle": "신생아 황달"
     },
     {
       "id": "choi-duyoung-neonatal:22-2",
@@ -18883,8 +19211,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "Apgar 점수",
-      "unitId": "neonatal-apgar",
+      "unitTitle": "복합 단원 문항",
+      "unitId": "lecture-composite",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -18899,7 +19227,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "생후5분 SpO2 85%,HR140,잘 울고 활발한 정상 이행 상태이므로④ 관찰입니다. 말단청색증만으로 삽관·환기하지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-apgar",
+      "legacyUnitTitle": "Apgar 점수"
     },
     {
       "id": "choi-duyoung-neonatal:22-3",
@@ -18982,8 +19312,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "뇌실내출혈",
-      "unitId": "neonatal-ivh",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -18998,7 +19328,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "조산아의 배기질·뇌실내출혈은 미숙한 혈관과 뇌혈류 변동에 관련됩니다. 열린 앞숫구멍을 통한 두부초음파로 확인합니다. 뇌실내 혈액이 있으나 확장 없으면 2단계, 뇌실확장 동반 시 3단계입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ivh",
+      "legacyUnitTitle": "뇌실내출혈"
     },
     {
       "id": "choi-duyoung-neonatal:22-4",
@@ -19093,8 +19425,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "재태기간·체중 분류",
-      "unitId": "neonatal-class",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -19140,7 +19472,9 @@
           5
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-class",
+      "legacyUnitTitle": "재태기간·체중 분류"
     },
     {
       "id": "choi-duyoung-neonatal:22-5",
@@ -19220,8 +19554,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "쇄골골절",
-      "unitId": "neonatal-clavicle",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -19236,7 +19570,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "해당 연도 해설은 골절부 마찰음을 정답으로 제시합니다. 쇄골골절은 비대칭 모로반사를 보이며 대개 고정 등 보존적 처치를 합니다. T1 손상·Horner 증후군은 하부 위팔신경 손상과 구별합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-clavicle",
+      "legacyUnitTitle": "쇄골골절"
     },
     {
       "id": "choi-duyoung-neonatal:22-6",
@@ -19328,8 +19664,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 소생술",
-      "unitId": "neonatal-ppv",
+      "unitTitle": "신생아 소생술과 분만실 응급상황",
+      "unitId": "lecture-resuscitation",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -19344,7 +19680,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "초기 처치 후 무호흡·헐떡호흡 또는 심박수 100회/분 미만이면 양압환기가 우선입니다. 효과적인 환기 30초 후에도 60회/분 미만이면 가슴압박을 추가하며 압박:환기=3:1입니다. 태변착색만으로 일률적 기관내흡인을 시행하여 환기를 지연시키지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ppv",
+      "legacyUnitTitle": "신생아 소생술"
     },
     {
       "id": "choi-duyoung-neonatal:22-7",
@@ -19436,8 +19774,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "지속성 폐고혈압",
-      "unitId": "neonatal-pphn",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -19452,7 +19790,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "② 높은 폐저항·③ 우좌단락·④ NO가 모두 성립할 수 있고③ 원문이 좌우/우좌 불확실을 명시하여 보류합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-pphn",
+      "legacyUnitTitle": "지속성 폐고혈압"
     },
     {
       "id": "choi-duyoung-neonatal:22-9",
@@ -19564,8 +19904,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 호흡곤란증후군",
-      "unitId": "neonatal-rds",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -19599,7 +19939,9 @@
         "basis": "ai_review",
         "version": "1.1.12",
         "reason": "기존①~④는 각각 발생군·기전, 표면활성제 양, 과도한 산소화 목표, 투여 경로가 맞지 않습니다. 지속 저산소혈증에 호흡보조가 필요하다는 취지의⑤를 출제 의도상 답으로 채택합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-rds",
+      "legacyUnitTitle": "신생아 호흡곤란증후군"
     },
     {
       "id": "choi-duyoung-neonatal:22-10",
@@ -19684,8 +20026,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "일과성 빠른호흡",
-      "unitId": "neonatal-ttn",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -19730,7 +20072,9 @@
           3
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ttn",
+      "legacyUnitTitle": "일과성 빠른호흡"
     },
     {
       "id": "choi-duyoung-neonatal:22-12",
@@ -19815,8 +20159,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "기흉·공기누출",
-      "unitId": "neonatal-airleak",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -19862,7 +20206,9 @@
           5
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-airleak",
+      "legacyUnitTitle": "기흉·공기누출"
     },
     {
       "id": "choi-duyoung-neonatal:22-13",
@@ -19948,8 +20294,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 괴사장염",
-      "unitId": "neonatal-nec",
+      "unitTitle": "신생아 소화기질환",
+      "unitId": "lecture-digestive",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -19965,7 +20311,9 @@
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "자료는 전체 객관식이라 기록했지만 이 문항은 번호·선택지 없이 답만 남았습니다. 선택지를 만들지 않고 단답형 참고답으로 수동채점합니다."
       },
-      "gradingMode": "manual"
+      "gradingMode": "manual",
+      "legacyUnitId": "neonatal-nec",
+      "legacyUnitTitle": "신생아 괴사장염"
     },
     {
       "id": "choi-duyoung-neonatal:22-14",
@@ -20053,8 +20401,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 황달",
-      "unitId": "neonatal-jaundice",
+      "unitTitle": "신생아 소화기질환",
+      "unitId": "lecture-digestive",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -20102,7 +20450,9 @@
           5
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-jaundice",
+      "legacyUnitTitle": "신생아 황달"
     },
     {
       "id": "choi-duyoung-neonatal:22-15",
@@ -20218,8 +20568,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 감염",
-      "unitId": "neonatal-sepsis",
+      "unitTitle": "신생아 감염질환",
+      "unitId": "lecture-infection",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -20268,7 +20618,9 @@
           5
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-sepsis",
+      "legacyUnitTitle": "신생아 감염"
     },
     {
       "id": "choi-duyoung-neonatal:22-16",
@@ -20380,8 +20732,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 감염",
-      "unitId": "neonatal-sepsis",
+      "unitTitle": "신생아 감염질환",
+      "unitId": "lecture-infection",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -20426,7 +20778,9 @@
           4
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-sepsis",
+      "legacyUnitTitle": "신생아 감염"
     },
     {
       "id": "choi-duyoung-neonatal:22-17",
@@ -20538,8 +20892,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "신생아 감염",
-      "unitId": "neonatal-sepsis",
+      "unitTitle": "신생아 감염질환",
+      "unitId": "lecture-infection",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -20580,7 +20934,9 @@
         "basis": "ai_review",
         "version": "1.1.12",
         "reason": "수유량 부족·앞숫구멍 함몰·생후3일 발열이라는 단서를 탈수성 발열을 묻는 증례로 해석해 기존② 수액 투여를 채택합니다. 수분 부족 교정이 보기 중 가장 직접적인 처치입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-sepsis",
+      "legacyUnitTitle": "신생아 감염"
     },
     {
       "id": "choi-duyoung-neonatal:22-18",
@@ -20672,8 +21028,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "Ballard 성숙도",
-      "unitId": "neonatal-ballard",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -20688,7 +21044,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "신경근육 성숙도는 자세·손목각도·팔 되돌아오기·오금각도·스카프 징후·발뒤꿈치-귀 시험으로 평가합니다. 미숙할수록 근긴장도가 낮고 오금각도가 큽니다. 성숙한 신생아는 두껍고 갈라진 피부·깊은 발바닥 주름·음낭주름을 보입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ballard",
+      "legacyUnitTitle": "Ballard 성숙도"
     },
     {
       "id": "choi-duyoung-neonatal:22-19",
@@ -20762,8 +21120,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "저칼슘혈증",
-      "unitId": "neonatal-calcium",
+      "unitTitle": "복합 단원 문항",
+      "unitId": "lecture-composite",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -20778,7 +21136,9 @@
         "stage": "needs_review",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "혈당78보다 총칼슘4.4mg/dL의 현저한 저하가 핵심이며 선택지 중 calcium gluconate 정주가 이에 해당합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-calcium",
+      "legacyUnitTitle": "저칼슘혈증"
     },
     {
       "id": "choi-duyoung-neonatal:22-20",
@@ -20896,8 +21256,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "기관지폐형성이상",
-      "unitId": "neonatal-bpd",
+      "unitTitle": "신생아 호흡기질환",
+      "unitId": "lecture-respiratory",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -20942,7 +21302,9 @@
           5
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-bpd",
+      "legacyUnitTitle": "기관지폐형성이상"
     },
     {
       "id": "choi-duyoung-neonatal:22-21",
@@ -21010,8 +21372,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "배꼽 육아종·폴립",
-      "unitId": "neonatal-umbilical",
+      "unitTitle": "선천기형",
+      "unitId": "lecture-anomaly",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "partial",
@@ -21075,7 +21437,9 @@
         "basis": "ai_review",
         "version": "1.1.12",
         "reason": "탯줄 탈락 후 분홍색 조직과 분비물은 탯줄 육아종에 가장 잘 맞아 기존②를 채택합니다. 선천기형 강의안 PDF16쪽이 육아종의 10% 질산은 소작을 명시합니다."
-      }
+      },
+      "legacyUnitId": "neonatal-umbilical",
+      "legacyUnitTitle": "배꼽 육아종·폴립"
     },
     {
       "id": "choi-duyoung-neonatal:22-22",
@@ -21146,8 +21510,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "모유황달",
-      "unitId": "neonatal-breastj",
+      "unitTitle": "신생아 소화기질환",
+      "unitId": "lecture-digestive",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "matched",
@@ -21162,7 +21526,9 @@
         "stage": "lecture_reviewed",
         "verifiedAgainst": "annual_original_and_supplied_lecture_pdfs",
         "decisionReason": "수유·체중증가 양호한 건강한 영아의 생후 2~3주 간접고빌리루빈혈증은 모유황달에 부합합니다. 직접빌리루빈 상승·회색변·감염·용혈을 배제합니다. 실제 모유중단은 일률적으로 적용하지 않습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-breastj",
+      "legacyUnitTitle": "모유황달"
     },
     {
       "id": "choi-duyoung-neonatal:22-23",
@@ -21254,8 +21620,8 @@
       ],
       "figureRequired": true,
       "showOriginalByDefault": false,
-      "unitTitle": "뇌실내출혈",
-      "unitId": "neonatal-ivh",
+      "unitTitle": "신경질환",
+      "unitId": "lecture-neurology",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -21304,7 +21670,9 @@
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다.",
         "originalPrompt": "조산아가 NICU에서 저혈압으로 인해 약물 치 료중이다. ~ 사진이다. 진단은? (자체복원: 해당사진과 비슷한 사진이긴 했으나, 정 확히는 뇌실 전체가 하얗게 채워져있었습니다... 강 의안에 없는 사진이었던 것 같습니다...!)",
         "promptNote": "지문의 ~ 연결부를 뇌 영상으로만 보완했습니다. 영상 종류·등급·원시험 사진은 추정하지 않았습니다."
-      }
+      },
+      "legacyUnitId": "neonatal-ivh",
+      "legacyUnitTitle": "뇌실내출혈"
     },
     {
       "id": "choi-duyoung-neonatal:22-24",
@@ -21391,8 +21759,8 @@
       "figureImages": [],
       "figureRequired": false,
       "showOriginalByDefault": false,
-      "unitTitle": "자궁내성장지연",
-      "unitId": "neonatal-sga",
+      "unitTitle": "고위험 신생아",
+      "unitId": "lecture-high-risk",
       "archiveUnrecovered": false,
       "lectureAudit": {
         "status": "unresolved",
@@ -21439,7 +21807,9 @@
           3
         ],
         "notice": "(임의복원)은 AI가 학습용으로 보완한 보기이며 실제 시험 원문을 회수한 것이 아닙니다. 정답 채택과 원문 복원 여부는 별개입니다."
-      }
+      },
+      "legacyUnitId": "neonatal-sga",
+      "legacyUnitTitle": "자궁내성장지연"
     }
   ]
 }

@@ -9,7 +9,7 @@
   const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
   const circles = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
   const TALLY_FORM_ID = '6DjZg5';
-  const PUBLIC_VERSION = '1.2.1';
+  const PUBLIC_VERSION = '1.2.2';
   const PUBLIC_RELEASE_DATE = '2026-11-13';
   const LEADERBOARD_IMAGE_BY_RANK = {1:'assets/ui/rank-first.png',2:'assets/ui/rank-second.png',3:'assets/ui/rank-third.png'};
   // Keep the underlying provenance, but omit internal answer-approval workflow from study copy.
@@ -643,7 +643,13 @@
         collected.push(q);
       }
     }
-    const items=collected.sort((a,b)=>(a.number-b.number)||a.professor.localeCompare(b.professor));
+    // 모성과 신생아 학번별 문제는 교수님 단위로 묶어 표시한다.
+    // 등록 순서(홍기연 → 최두영 → 이후 추가되는 교수님)를 따르며,
+    // 혈액과 종양 등 다른 과목은 기존 번호 정렬을 유지한다.
+    const items=collected.sort(subjectId==='maternal-newborn'
+      ?(a,b)=>subject.professors.findIndex(p=>p.id===a.professor)-subject.professors.findIndex(p=>p.id===b.professor)
+        ||(a.number-b.number)||a.id.localeCompare(b.id)
+      :(a,b)=>(a.number-b.number)||a.professor.localeCompare(b.professor));
     return {items,duplicates:duplicate};
   }
   async function selectSubjectExam(year){
@@ -855,7 +861,7 @@
             <nav class="quick-nav" aria-label="빠른 메뉴">
               <button data-action="nav-quiz" class="nav-tab ${view==='quiz'?'active':''}">문제 풀이</button>
               <button data-action="home" class="nav-tab ${view==='home'?'active':''}">문제집</button>
-              <button data-action="nav-wrong" class="nav-tab ${view==='review'&&reviewFilter==='wrong'?'active':''}">오답 노트</button><button data-action="nav-bookmarks" class="nav-tab ${view==='review'&&reviewFilter==='bookmarks'?'active':''}">북마크</button><button data-action="nav-stats" class="nav-tab ${view==='review'&&reviewFilter!=='wrong'?'active':''}">학습 통계</button><button class="nav-tab goal-nav" data-action="open-goals">◎ 학습 목표</button><button class="nav-tab report-nav" data-action="report-popup" title="문항 번호와 설명, 10MB 이하 이미지 파일을 첨부해 오류를 제보할 수 있어요">✎ 오류 제보하기</button>
+              <button data-action="nav-wrong" class="nav-tab ${view==='review'&&reviewFilter==='wrong'?'active':''}">오답 노트</button><button data-action="nav-bookmarks" class="nav-tab ${view==='review'&&reviewFilter==='bookmarks'?'active':''}">북마크</button><button data-action="nav-stats" class="nav-tab ${view==='review'&&reviewFilter!=='wrong'?'active':''}">학습 통계</button><button class="nav-tab goal-nav" data-action="open-goals">◎ 학습 목표</button><button class="nav-tab goal-today-nav" data-action="open-goals" title="오늘 학습목표 달성률 보기">${todayGoalStatusHTML()}</button><button class="nav-tab report-nav" data-action="report-popup" title="문항 번호와 설명, 10MB 이하 이미지 파일을 첨부해 오류를 제보할 수 있어요">✎ 오류 제보하기</button>
             </nav>
           </div>
           <div class="topbar-tools"><div class="global-search" role="search"><div class="search-control-group"><label class="search-subject-filter" title="검색할 과목 선택"><span class="visually-hidden">검색 과목 선택</span><select id="global-search-subject" class="search-subject-select" aria-label="검색할 과목 선택"><option value="current" ${searchSubjectOverride===null?'selected':''}>${esc(currSubject?.name||'현재 과목')}</option><option value="all" ${searchSubjectOverride==='all'?'selected':''}>전체 과목</option>${(catalog?.subjects||[]).filter(sub=>sub.id!==selectedSubject).map(sub=>`<option value="${esc(sub.id)}" ${searchSubjectOverride===sub.id?'selected':''}>${esc(sub.name)}</option>`).join('')}</select></label><label class="search-shell" for="global-search-input"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="global-search-input" autocomplete="off" spellcheck="false" value="${esc(searchText)}" placeholder="문제 번호, 키워드, 약물명 검색..." aria-label="선택한 과목 문제 검색" aria-controls="search-suggestions" aria-expanded="${searchOpen}"/></label></div><div id="search-suggestions" class="search-suggestions" role="listbox" ${searchOpen?'':'hidden'}>${searchOpen?searchSuggestionsHTML():''}</div></div>
@@ -874,6 +880,7 @@
       evidenceCard.appendChild(flow);
     }
     window.HeonInk?.mount();
+    ensureTodayGoalLoaded();
     if(keepPanelScroll) {
       const nextPanel=root.querySelector('.exam-panel');
       const nextEvidence=root.querySelector('.evidence-panel');
@@ -894,7 +901,12 @@
     for(const key of goal.targets||[]){
       const [type,a,b]=key.split('|');let found=[];
       if(type==='prof')found=(professorCache.get(a)?.questions||[]).filter(q=>!q.isPrediction);
-      if(type==='unit')found=unitGroups(a).find(x=>x.id===b)?.items||[];
+      if(type==='unit'){
+        found=unitGroups(a).find(x=>x.id===b)?.items||[];
+        // Preserve pre-v1.2.2 saved study goals pointing to the original,
+        // more granular chapter IDs, without broadening their question scope.
+        if(!found.length)found=(professorCache.get(a)?.questions||[]).filter(q=>q.legacyUnitId===b);
+      }
       if(type==='year')found=yearQuestionsForSubject(a,b).items||[];
       for(const q of found)unique.set(q.id,q);
     }
@@ -911,14 +923,34 @@
   }
   function goalLabel(key){const [kind,a,b]=key.split('|');
     if(kind==='prof')return `${profMeta(a)?.name||a} 교수님 전체`;
-    if(kind==='unit')return `${profMeta(a)?.name||a} · ${unitGroups(a).find(u=>u.id===b)?.title||b}`;
+    if(kind==='unit')return `${profMeta(a)?.name||a} · ${unitGroups(a).find(u=>u.id===b)?.title||((professorCache.get(a)?.questions||[]).find(q=>q.legacyUnitId===b)?.legacyUnitTitle||b)}`;
     return `${subjectById(a)?.name||a} · ${b}학번 통합`;
+  }
+  function todayGoalStatusHTML(){
+    const g=activeGoal(studyDate());
+    if(!g.targets?.length)return '<span class="goal-today-label is-unset">학습목표 미설정</span>';
+    const total=goalProgress(studyDate());
+    const loaded=(subjectById(g.subjectId)?.professors||[]).every(prof=>professorCache.has(prof.id));
+    if(!loaded)return '<span class="goal-today-label">오늘 목표 불러오는 중…</span>';
+    return `<span class="goal-today-label">오늘 목표 <b>${total.completed}/${total.total}문항</b> · <b>${total.pct}%</b></span>`;
+  }
+  // Lazy non-blocking load supports a goal from another subject after cloud login.
+  const loadingTodayGoals=new Set();
+  function ensureTodayGoalLoaded(){
+    const g=activeGoal(studyDate());
+    if(!g.targets?.length || !g.subjectId || loadingTodayGoals.has(g.subjectId))return;
+    const subject=subjectById(g.subjectId);
+    if(!subject || subject.professors.every(prof=>professorCache.has(prof.id)))return;
+    loadingTodayGoals.add(g.subjectId);
+    loadGoalSubject(g.subjectId).then(()=>{if(catalog)render();})
+      .catch(err=>console.warn('오늘 학습목표 문항 로딩 실패',err))
+      .finally(()=>loadingTodayGoals.delete(g.subjectId));
   }
   function goalPlannerHTML(){
     const day=activeGoal(plannerDate),subject=subjectById(day.subjectId)||subjectById(selectedSubject);
     const d=studyDate(),yesterday=shiftDay(d,-1),yProgress=goalProgress(yesterday),todayProgress=goalProgress(d);
     const monday=shiftDay(d,-((new Date(d+'T12:00:00Z').getUTCDay()+6)%7));
-    const dates=Array.from({length:21},(_,i)=>shiftDay(monday,i-7));
+    const dates=Array.from({length:14},(_,i)=>shiftDay(monday,i));
     const subjectGoals=(subject?.professors||[]).flatMap(p=>{
       const groups=unitGroups(p.id);
       return [{key:targetKey('prof',p.id),text:`${p.name} 교수님 전체`,count:(professorCache.get(p.id)?.questions||[]).filter(q=>!q.isPrediction).length},
@@ -929,12 +961,20 @@
     const cards=dates.map(date=>{const a=goalProgress(date),event=EXAM_DAYS[date];
       return `<button type="button" class="goal-day ${date===plannerDate?'active':''} ${date===d?'today':''}" data-goal-date="${date}"><span>${date.slice(5)} ${['일','월','화','수','목','금','토'][new Date(date+'T12:00:00Z').getUTCDay()]}</span><strong>${a.total?a.pct+'%':'계획 없음'}</strong>${event?`<small>${esc(event)}</small>`:''}</button>`;}).join('');
     return `<div class="goal-overlay" role="presentation"><section class="goal-dialog" role="dialog" aria-modal="true" aria-label="일일 학습 목표 설정">
-      <div class="goal-head"><div><div class="eyebrow">WEEKLY STUDY PLAN</div><h2>학습 목표 설정</h2><p>어제부터 한 주 전·앞으로 한 주까지 총 21일을 확인할 수 있어요.</p></div><button class="icon-btn" data-goal-close aria-label="닫기">✕</button></div>
+      <div class="goal-head"><div><div class="eyebrow">WEEKLY STUDY PLAN</div><h2>학습 목표 설정</h2><p>이번 주와 다음 주, 총 14일의 목표를 설정할 수 있어요.</p></div><button class="icon-btn" data-goal-close aria-label="닫기">✕</button></div>
       <div class="goal-calendar">${cards}</div>
       <div class="goal-overview"><div><b>${plannerDate} · ${esc(EXAM_DAYS[plannerDate]||'오늘의 과제')}</b><small>${p.completed}/${p.total}문제 완료 · 목표에 중복 문항은 한 번만 포함돼요.</small></div><div class="goal-meter"><i style="width:${p.pct}%"></i></div><strong>${p.pct}%</strong></div>
       <div class="goal-controls"><label>계획할 과목 <select id="goal-subject">${catalog.subjects.map(s=>`<option value="${esc(s.id)}" ${subject.id===s.id?'selected':''}>${esc(s.name)}</option>`).join('')}</select></label>
         <div class="goal-pick"><h3>교수님별로 풀기</h3>${subjectGoals.filter(t=>t.key.startsWith('prof|')).map(t=>`<label><input type="checkbox" data-goal-target="${esc(t.key)}" ${selected.has(t.key)?'checked':''}> ${esc(t.text)} <small>${t.count}문항</small></label>`).join('')||'<p>등록된 문항 없음</p>'}</div>
-        <div class="goal-pick"><h3>단원별로 풀기</h3>${subjectGoals.filter(t=>t.key.startsWith('unit|')).map(t=>`<label><input type="checkbox" data-goal-target="${esc(t.key)}" ${selected.has(t.key)?'checked':''}> ${esc(t.text)} <small>${t.count}문항</small></label>`).join('')||'<p>등록된 단원 없음</p>'}</div>
+        <div class="goal-pick goal-unit-picker"><h3>단원별로 풀기</h3><p class="goal-unit-hint">교수님을 누르면 해당 단원이 펼쳐져요. 여러 단원을 선택할 수 있어요.</p>${(subject?.professors||[]).map(prof=>{
+          const units=unitGroups(prof.id);
+          const legacy=(day.targets||[]).filter(k=>k.startsWith('unit|'+prof.id+'|')&&!units.some(u=>k==='unit|'+prof.id+'|'+u.id)).map(k=>{
+            const oldId=k.split('|')[2],oldQs=(professorCache.get(prof.id)?.questions||[]).filter(q=>q.legacyUnitId===oldId);
+            return {key:k,title:oldQs[0]?.legacyUnitTitle||oldId,count:oldQs.length};
+          });
+          if(!units.length&&!legacy.length)return '';
+          return `<details class="goal-unit-prof" ${[...units.map(g=>targetKey('unit',prof.id,g.id)),...legacy.map(x=>x.key)].some(k=>selected.has(k))?'open':''}><summary><strong>${esc(prof.name)} 교수님</strong><small>${units.length}개 단원</small><span class="goal-unit-chevron" aria-hidden="true">⌄</span></summary><div class="goal-unit-options">${units.map(g=>{const key=targetKey('unit',prof.id,g.id);return `<label><input type="checkbox" data-goal-target="${esc(key)}" ${selected.has(key)?'checked':''}> <span>${esc(g.title)}</span> <small>${g.items.length}문항</small></label>`;}).join('')}${legacy.map(old=>`<label><input type="checkbox" data-goal-target="${esc(old.key)}" checked><span>이전 목표 · ${esc(old.title)}</span><small>${old.count}문항</small></label>`).join('')}</div></details>`;
+        }).join('')||'<p>등록된 단원 없음</p>'}</div>
         <div class="goal-pick"><h3>학번별로 풀기</h3>${years.map(year=>{const key=targetKey('year',subject.id,year),n=yearQuestionsForSubject(subject.id,year).items.length;
           return `<label><input type="checkbox" data-goal-target="${esc(key)}" ${selected.has(key)?'checked':''}> ${esc(year)}학번 통합 <small>${n}문항</small></label>`;}).join('')||'<p>등록된 학번 없음</p>'}</div>
       </div>
@@ -944,7 +984,12 @@
     </section></div>`;
   }
   async function openGoalPlanner(date=studyDate()){
-    plannerDate=date;await loadGoalSubject(activeGoal(date).subjectId||selectedSubject);
+    plannerDate=date;
+    const d=studyDate(),monday=shiftDay(d,-((new Date(d+'T12:00:00Z').getUTCDay()+6)%7));
+    const calendarDates=[...Array.from({length:14},(_,i)=>shiftDay(monday,i)),shiftDay(d,-1),date];
+    const subjects=new Set([activeGoal(date).subjectId||selectedSubject]);
+    for(const day of calendarDates){const g=activeGoal(day);if(g.targets?.length&&g.subjectId)subjects.add(g.subjectId);}
+    await Promise.allSettled([...subjects].map(loadGoalSubject));
     document.querySelector('.goal-overlay')?.remove();document.body.insertAdjacentHTML('beforeend',goalPlannerHTML());
   }
   async function startGoalSession(date){
@@ -983,7 +1028,7 @@
       const date=plannerDate,old=activeGoal(date);
       const targets=[...box.querySelectorAll('[data-goal-target]:checked')].map(x=>x.dataset.goalTarget);
       state.dailyGoals[date]={subjectId:box.querySelector('#goal-subject')?.value||selectedSubject,targets,done:old.done||{},updatedAt:new Date().toISOString()};
-      saveState();await openGoalPlanner(date);toast('학습 목표를 저장했어요.');return;
+      saveState();render();await openGoalPlanner(date);toast('학습 목표를 저장했어요.');return;
     }
   });
   document.addEventListener('change',async e=>{
@@ -1003,10 +1048,10 @@
     const yrs=[...new Set(profs.flatMap(p=>(professorCache.get(p.id)?.questions||[]).filter(q=>!q.isPrediction && Number.isFinite(Number(q.year))).map(q=>Number(q.year))))].sort((a,b)=>a-b);
     return `<div class="home-selector-layout"><aside class="home-subjects"><div class="eyebrow">SUBJECTS · ${subs.length}</div>
       ${subs.map((s,i)=>`<button class="home-subject ${s.id===selectedSubject?'selected':''}" data-action="subject-home" data-id="${esc(s.id)}"><span class="home-subject-index">0${i+1}</span><span class="home-subject-label"><strong>${esc(s.name)}</strong><small>${s.professors.length?`${s.professors.length}명의 교수님`:'등록 예정'}</small></span><span class="home-subject-arrow">${s.id===selectedSubject?'●':'›'}</span></button>`).join('')}${renderLeaderboardPanel(selectedSubject)}</aside>
-      <section class="home-pick-panel"><div class="home-pick-heading"><div><div class="eyebrow">${esc(selected?.name||'')} · SELECT STUDY MODE</div><h2>어떻게 공부할까요?</h2></div><div class="home-pick-tools"><span class="pill blue">${profs.length}명 등록</span><button class="button secondary small" data-action="open-goals">◎ 학습 목표</button></div></div>
+      <section class="home-pick-panel"><div class="home-pick-heading"><div><div class="eyebrow">${esc(selected?.name||'')} · SELECT STUDY MODE</div><h2>어떻게 공부할까요?</h2></div><div class="home-pick-tools"><span class="pill blue">${profs.length}명 등록</span><button class="button secondary small" data-action="open-goals">◎ 학습 목표</button><button class="home-today-goal" data-action="open-goals" title="오늘 학습목표 열기">${todayGoalStatusHTML()}</button></div></div>
       <div class="study-mode-tabs" role="tablist" aria-label="문제풀이 방식"><button role="tab" aria-selected="${homeStudyType==='professor'}" class="mode-tab ${homeStudyType==='professor'?'active':''}" data-action="home-mode" data-mode="professor">교수님별로 풀기</button><button role="tab" aria-selected="${homeStudyType==='unit'}" class="mode-tab ${homeStudyType==='unit'?'active':''}" data-action="home-mode" data-mode="unit">단원별로 풀기</button><button role="tab" aria-selected="${homeStudyType==='year'}" class="mode-tab ${homeStudyType==='year'?'active':''}" data-action="home-mode" data-mode="year">학번별로 풀기</button></div>
       ${!profs.length?`<div class="empty home-empty">아직 등록된 문제가 없는 과목입니다.</div>`:
-       homeStudyType==='professor'?`<p class="home-pick-hint">교수님을 선택하면 전체 또는 특정 학번 문제를 풀 수 있습니다.</p><div class="home-course-list">${profs.map(p=>courseCard(p)+(p.id==='lee-kanggyu'?predictionCard():'' )).join('')}</div>`:homeStudyType==='unit'?`<p class="home-pick-hint">교수님을 선택하면 하단에 해당 강의안 주제별 단원이 나타납니다. 단원별 기록은 독립적으로 저장됩니다.</p><div class="home-unit-prof-grid">${profs.map(p=>`<button class="home-unit-prof ${chosenUnitProfessor===p.id?'selected':''}" data-action="choose-unit-professor" data-id="${esc(p.id)}"><strong>${esc(p.name)} 교수님</strong><small>${unitGroups(p.id).length}개 단원</small></button>`).join('')}</div>${chosenUnitProfessor&&profs.some(p=>p.id===chosenUnitProfessor)?`<div class="unit-results-heading"><h3>${esc(profMeta(chosenUnitProfessor).name)} 교수님 단원 선택</h3><small>같은 교수님 전체 학습과는 별도 저장</small></div><div class="home-unit-grid">${unitGroups(chosenUnitProfessor).map(g=>{const a=stats(g.items,'unit');const pct=a.total?Math.round(100*a.completed/a.total):0;return `<button class="unit-card" data-action="start-unit" data-id="${esc(chosenUnitProfessor)}" data-unit="${esc(g.id)}"><strong>${esc(g.title)}</strong><small>${a.completed}/${a.total} 문제 · ${pct}% ${a.completed===a.total&&a.total?'✓':''}</small><span class="progress-track"><span class="progress-fill" style="width:${pct}%"></span></span></button>`}).join('')}</div>`:''}`:
+       homeStudyType==='professor'?`<p class="home-pick-hint">교수님을 선택하면 전체 또는 특정 학번 문제를 풀 수 있습니다.</p><div class="home-course-list">${profs.map(p=>courseCard(p)).join('')}${selectedSubject==='hematology-1'&&profs.some(p=>p.id==='lee-kanggyu')?predictionCard():''}</div>`:homeStudyType==='unit'?`<p class="home-pick-hint">교수님을 선택하면 하단에 해당 강의안 주제별 단원이 나타납니다. 단원별 기록은 독립적으로 저장됩니다.</p><div class="home-unit-prof-grid">${profs.map(p=>`<button class="home-unit-prof ${chosenUnitProfessor===p.id?'selected':''}" data-action="choose-unit-professor" data-id="${esc(p.id)}"><strong>${esc(p.name)} 교수님</strong><small>${unitGroups(p.id).length}개 단원</small></button>`).join('')}</div>${chosenUnitProfessor&&profs.some(p=>p.id===chosenUnitProfessor)?`<div class="unit-results-heading"><h3>${esc(profMeta(chosenUnitProfessor).name)} 교수님 단원 선택</h3><small>같은 교수님 전체 학습과는 별도 저장</small></div><div class="home-unit-grid">${unitGroups(chosenUnitProfessor).map(g=>{const a=stats(g.items,'unit');const pct=a.total?Math.round(100*a.completed/a.total):0;return `<button class="unit-card" data-action="start-unit" data-id="${esc(chosenUnitProfessor)}" data-unit="${esc(g.id)}"><strong>${esc(g.title)}</strong><small>${a.completed}/${a.total} 문제 · ${pct}% ${a.completed===a.total&&a.total?'✓':''}</small><span class="progress-track"><span class="progress-fill" style="width:${pct}%"></span></span></button>`}).join('')}</div>`:''}`:
        `<p class="home-pick-hint">해당 학번의 모든 교수님 기출을 통합하여 풉니다. 완료하면 시험 결과를 확인할 수 있습니다.</p><div class="home-year-list">${yrs.map(year=>{const r=yearQuestionsForSubject(selectedSubject,year);const s=stats(r.items,'year-exam');const pct=s.total?Math.round(s.completed/s.total*100):0;const leaderboardBadge=String(year)==='22'?'<span class="year-special-badge">Leaderboard</span>':'';return `<button class="home-year-card ${s.total&&s.completed===s.total?'complete':s.completed?'partial':''}" data-action="start-year-exam" data-year="${year}" ${s.total?'':'disabled'}><span class="home-year-label"><strong>${year}학번 통합 기출 ${leaderboardBadge}</strong><small>${s.total}문항 · ${s.completed}문항 풀이 완료</small></span><span class="home-year-right"><strong>${pct}%${s.total&&s.completed===s.total?' ✓':''}</strong><span>${s.total?'시험 시작 →':'문항 없음'}</span></span><span class="home-year-progress"><i style="width:${pct}%"></i></span></button>`}).join('')}</div>`}
       <p class="home-disclaimer">학습 기록은 브라우저에 자동 저장됩니다. 교수님별·단원별·학번별·AI 예상문제의 제출 답안과 북마크는 모두 독립 저장됩니다.</p></section></div>`;
   }
