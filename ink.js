@@ -1,4 +1,4 @@
-/* HEON ARCHIVE v1.2.4 — compact tools, circular eraser sizes and swept stroke erasing.
+/* HEON ARCHIVE v1.2.5 — stationary marker hold for straight lines.
  * Notes are saved per question in IndexedDB, including independent question and
  * explanation overlays; existing v1.2.0 stroke data is retained unchanged.
  * Apple Pencil draws on the page itself. Solve mode restores native interaction.
@@ -131,7 +131,7 @@
       t.querySelectorAll('[data-ink-colors]').forEach(el=>{el.hidden=el.dataset.inkColors!==selectedTool;});
       t.querySelectorAll('[data-ink-color-choice]').forEach(b=>b.classList.toggle('selected',b.dataset.inkColorTool===selectedTool&&b.dataset.inkColorChoice===current));
     }
-    for(const region of active?.regions||[]){region.layer.classList.toggle('is-writing',drawingMode);region.layer.classList.toggle('is-erasing',drawingMode&&selectedTool==='erase');}
+    for(const region of active?.regions||[]){region.layer.classList.toggle('is-writing',drawingMode);region.layer.classList.toggle('is-erasing',drawingMode&&selectedTool==='erase');if(!drawingMode||selectedTool!=='marker')region.cancelPause?.();}
     if(active?.cursor){active.cursor.hidden=true;active.cursor.style.width=active.cursor.style.height=(sizes.erase*96/25.4)+'px';}
     document.querySelector('.quiz-mode')?.classList.toggle('ink-writing-mode',drawingMode);
   }
@@ -230,15 +230,38 @@
       layer.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" class="ink-overlay-svg" preserveAspectRatio="none"><g class="ink-saved"></g><g class="ink-live"></g></svg>';
       panel.appendChild(layer);
       const svg=layer.querySelector('svg');
-      const region={name,panel,layer,svg,saved:svg.querySelector('.ink-saved'),live:svg.querySelector('.ink-live'),drawing:null,erasing:null,finger:null,activePointer:null,stylusTouch:null,top:0};
+      const region={name,panel,layer,svg,saved:svg.querySelector('.ink-saved'),live:svg.querySelector('.ink-live'),drawing:null,erasing:null,finger:null,activePointer:null,stylusTouch:null,pauseTimer:0,pauseAnchor:null,top:0};
       session.regions.push(region);layout(region);
       const touchToPoint=t=>pointerPos({clientX:t.clientX,clientY:t.clientY,pressure:t.force&&t.force>0?t.force:.5},region);
+      function cancelPause(){clearTimeout(region.pauseTimer);region.pauseTimer=0;}
+      region.cancelPause=cancelPause;
+      signal.addEventListener('abort',cancelPause,{once:true});
+      function armStraightHold(pt){
+        const drawing=region.drawing;
+        if(!drawing||drawing.tool!=='marker')return;
+        const pixels=svg.getBoundingClientRect().width/W;
+        const anchor=region.pauseAnchor;
+        // Ignore sub-pixel Pencil noise, but restart the full second on movement.
+        if(anchor&&Math.hypot(pt[0]-anchor[0],pt[1]-anchor[1])*pixels<0.75)return;
+        cancelPause();region.pauseAnchor=[pt[0],pt[1]];
+        drawing.straightened=false;
+        region.pauseTimer=setTimeout(()=>{
+          region.pauseTimer=0;
+          if(active!==session||!drawingMode||selectedTool!=='marker'||region.drawing!==drawing)return;
+          if(drawing.points.length<2)return;
+          drawing.straightened=true;schedulePreview();
+        },1000);
+        schedulePreview();
+      }
+      function previewStroke(drawing){
+        return drawing.straightened?{...drawing,points:[drawing.points[0],drawing.points.at(-1)]}:drawing;
+      }
       function schedulePreview(){
         if(frame)return;
         frame=requestAnimationFrame(()=>{
           frame=0;
           if(active!==session)return;
-          for(const item of session.regions)item.live.innerHTML=item.drawing?asSvg(item.drawing):'';
+          for(const item of session.regions)item.live.innerHTML=item.drawing?asSvg(previewStroke(item.drawing)):'';
         });
       }
       function eraseAt(pt){
@@ -264,6 +287,7 @@
       function movePoint(pt){
         if(region.erasing){eraseAt(pt);return;}
         const drawing=region.drawing;if(!drawing)return;
+        armStraightHold(pt);
         const last=drawing.points.at(-1);
         if(drawing.points.length<7000&&Math.hypot(pt[0]-last[0],pt[1]-last[1])>=1.35){drawing.points.push(pt);schedulePreview();}
       }
@@ -277,13 +301,17 @@
         region.drawing={tool:marker?'marker':'pen',color:marker?markerColor:penColor,
           width:strokeSize(sizes[marker?'marker':'pen'],region),widthMm:sizes[marker?'marker':'pen'],
           points:[pt],source,id};
+        region.pauseAnchor=null;armStraightHold(pt);
       }
       function finish(commit=true){
+        cancelPause();region.pauseAnchor=null;
         if(region.erasing){region.erasing=null;cursor.hidden=true;return;}
         const drawing=region.drawing;
         if(!drawing)return;
         region.drawing=null;region.live.innerHTML='';
         if(commit){
+          if(drawing.straightened&&drawing.points.length>1)drawing.points=[drawing.points[0],drawing.points.at(-1)];
+          delete drawing.straightened;
           if(drawing.points.length===1){const p=drawing.points[0];drawing.points.push([p[0]+.5,p[1]+.5,p[2]]);}
           dataStrokes(name).push(drawing);region.saved.insertAdjacentHTML('beforeend',asSvg(drawing));queueSave();
         }

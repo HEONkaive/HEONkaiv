@@ -9,7 +9,7 @@
   const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
   const circles = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
   const TALLY_FORM_ID = '6DjZg5';
-  const PUBLIC_VERSION = '1.2.4';
+  const PUBLIC_VERSION = '1.2.5';
   const PUBLIC_RELEASE_DATE = '2026-11-13';
   const LEADERBOARD_IMAGE_BY_RANK = {1:'assets/ui/rank-first.png',2:'assets/ui/rank-second.png',3:'assets/ui/rank-third.png'};
   // Keep the underlying provenance, but omit internal answer-approval workflow from study copy.
@@ -714,10 +714,18 @@
     const teachers=new Set(all.map(q=>q.professor)).size;
     return `<div class="course-header compact-course-header exam-mode-header"><div class="course-identity"><div class="eyebrow">YEAR EXAM · ${esc(selectedExamYear)} CLASS</div><div class="course-title-line"><h1>${esc(subjectById(selectedSubject)?.name||'')} · ${esc(yearName(selectedExamYear))} 모의고사</h1><p>여러 교수님 문항을 통합 · 문제번호 중복 제외 · ${teachers}명</p></div></div><div class="course-header-right"><div class="header-pills"><span class="pill blue">${all.length}문항</span><span class="pill ok">제출 ${s.completed}</span><span class="pill warn">채점 보류 ${s.pending}</span><button class="button secondary small" data-action="open-review">${s.completed===s.total?'최종 결과':'현재 결과'} ↗</button></div><div class="header-study-controls"><button class="button secondary small" data-action="reset-year-exam">이 학번 시험 기록 초기화</button><div class="study-progress"><span>시험 진행률</span><div class="progress-track"><div class="progress-fill ${s.completed===s.total?'done':''}" style="width:${pct}%"></div></div><strong>${pct}%</strong></div></div></div></div>`;
   }
+  let editingQuestionKey='', evidenceCollapsedKey='', evidenceDisplayKey='';
+  function questionViewKey(q){return q?studyMode+'::'+q.id:'';}
+  function hasSubmittedBefore(q){if(!q)return false;const r=record(q);return !!(r.submitted||r.submittedAt||r.hasSubmitted);}
+  function syncExplanation(q){
+    const key=questionViewKey(q);
+    if(evidenceDisplayKey!==key){evidenceCollapsedKey='';evidenceDisplayKey=key;}
+    if(hasSubmittedBefore(q)&&evidenceCollapsedKey!==key)infoExpanded=true;
+  }
   function scopedQuestions() {
     let arr=questions().filter(q=>currentYear==='all'||String(q.year)===currentYear);
-    if(filter==='bookmarked')arr=arr.filter(isBookmark);
-    if(filter==='wrong')arr=arr.filter(q=>evaluation(q)==='wrong');
+    if(filter==='bookmarked')arr=arr.filter(q=>isBookmark(q));
+    if(filter==='wrong')arr=arr.filter(q=>evaluation(q)==='wrong'||(editingQuestionKey===questionViewKey(q)&&hasSubmittedBefore(q)));
     return arr;
   }
   function currentQuestion() {
@@ -726,16 +734,17 @@
   }
   function goQuestion(id) {
     const q=questions().find(q=>q.id===id);if(!q)return;
-    currentId=id;currentYear='all';filter='all';view='quiz';infoExpanded=false;state.lastVisited[currentProfessor.professor.id]=id;saveState();
+    editingQuestionKey='';evidenceCollapsedKey='';currentId=id;currentYear='all';filter='all';view='quiz';infoExpanded=hasSubmittedBefore(q);state.lastVisited[currentProfessor.professor.id]=id;saveState();
     render();window.scrollTo({top:0,behavior:'instant'});
   }
   function selectCurrent(id) {
-    infoExpanded=Boolean(questions().find(q=>q.id===id && submission(q)));
+    editingQuestionKey='';evidenceCollapsedKey='';
+    infoExpanded=hasSubmittedBefore(questions().find(q=>q.id===id));
     currentId=id;
     if(currentProfessor)state.lastVisited[currentProfessor.professor.id]=id;
     saveState();render();window.scrollTo({top:0,behavior:'instant'});
   }
-  function selectYear(y) {infoExpanded=false;currentYear=y;filter='all';currentId=scopedQuestions()[0]?.id||null;view='quiz';render();}
+  function selectYear(y) {editingQuestionKey='';evidenceCollapsedKey='';infoExpanded=false;currentYear=y;filter='all';currentId=scopedQuestions()[0]?.id||null;view='quiz';render();}
   function activeSearchSubject() {
     return searchSubjectOverride===null ? selectedSubject : searchSubjectOverride;
   }
@@ -1092,6 +1101,7 @@
   function renderQuiz() {
     if(!currentProfessor)return `<div class="empty">교수님을 선택해주세요.</div>`;
     const l=questions();const qs=scopedQuestions();const q=currentQuestion();const s=stats(l);
+    syncExplanation(q);
     return `${renderCourseHeader()}${studyMode==='prediction'?'<div class="prediction-notice">✦ AI가 강의안을 바탕으로 작성한 연습문제입니다. <b>실제 기출·교수님 출제 예고가 아니며 학번별 시험에는 포함되지 않습니다.</b></div>':''}${renderFilterbar()}
     ${q?`<div class="exam-layout">${renderQuestionPanel(q,qs)}<div class="divider-grip fixed-divider" aria-hidden="true"></div>${infoExpanded?renderEvidencePanel(q):renderEvidenceClosed()}</div>${renderQuizDock(q,qs)}`:`<div class="empty"><p>조건에 맞는 문제가 없습니다.</p><button class="button secondary small" data-action="clear-filter">전체 문제로 돌아가기</button></div>`}
     <p class="help-text">정답 검토 필요 문항은 사용자가 정답을 지정하기 전까지 정오답 통계에 포함되지 않습니다. 학습 기록과 북마크는 이 브라우저에만 저장됩니다.</p>`;
@@ -1106,7 +1116,7 @@
       <div class="dock-position"><span class="dock-heading">NOW STUDYING</span><strong>${esc(q.label)}</strong><span>${index+1} / ${scope.length}</span></div>
       <div class="dock-controls"><button class="button secondary small dock-nav" data-action="step" data-direction="-1" ${index===0?'disabled':''}>← 이전 문제</button><button class="button secondary small dock-nav" data-action="step" data-direction="1" ${index===scope.length-1?'disabled':''}>다음 문제 →</button>
       ${restoringReview?'<button class="button ghost small" data-action="back-review">← Review</button>':''}${studyMode==='year-exam'&&(index===scope.length-1||stats(scope).completed===scope.length)?'<button class="button secondary small" data-action="open-review">시험 결과 보기 ↗</button>':''}
-      <button class="button dock-submit ${r.submitted?'secondary':''}" data-action="submit" ${ready?'':'disabled'}>${q.archiveUnrecovered?'미복원 확인 완료':r.submitted?'다시 제출':'답안 제출'} ✓</button></div>
+      <button class="button dock-submit ${r.submitted?'secondary':''}" data-action="submit" ${ready?'':'disabled'}>${q.archiveUnrecovered?'미복원 확인 완료':hasSubmittedBefore(q)?'다시 제출':'답안 제출'} ✓</button></div>
     </div>`;
   }
   function renderEvidenceClosed() {
@@ -1164,7 +1174,7 @@
       `<p class="review-note">텍스트 선택지의 판독이 불완전합니다. 아래 원본에서 선택지 번호와 문장을 확인한 후 답 번호를 선택하세요.</p><div class="options">${circles.map((v,i)=>`<button class="option ${checked.includes(i+1)?'selected':''} ${submission(q)&&answer!=null&&answers.includes(i+1)?'correct-choice':''}" data-action="choose" data-number="${i+1}"><span class="option-letter">${v}</span><span class="option-text">${i+1}번 선택지 — 원본 캡처 확인</span></button>`).join('')}</div>`}
       ${renderResult(q,grading)}
       ${q.source?.image?`<details class="source-card"><summary>기출 원본 이미지 보기 · ${esc(q.source.name)}${q.source.page?' · PDF '+q.source.page+'페이지':''}</summary><img class="source-image" src="${esc(q.source.image)}" alt="${esc(q.label)} 기출 원본 캡처" loading="lazy" data-action="zoom" data-caption="${esc(q.source.name)}${q.source.page?' · PDF '+q.source.page+'페이지':''}"><p class="source-warning">기출 원본에는 기존 필기와 정답 표기가 포함되어 있을 수 있습니다. 채점 기준과 해설은 오른쪽 정답 근거 영역에서 확인할 수 있습니다.</p>${q.transcriptionWarning?`<p class="source-warning">${esc(q.transcriptionWarning)}</p>`:''}</details>`:`<div class="review-note" style="margin-top:15px">기출 원본 파일의 별도 이미지가 제공되지 않았습니다. 문제와 선택지는 사용자가 제공한 원문을 기준으로 입력했습니다.</div>`}
-      <div class="question-footer"><div class="quiz-actions"><div class="row"><button class="button secondary small" data-action="step" data-direction="-1" ${curr<=0?'disabled':''}>← 이전</button><button class="button secondary small" data-action="step" data-direction="1" ${curr===scope.length-1?'disabled':''}>다음 →</button></div><div class="row">${restoringReview?'<button class="button ghost small" data-action="back-review">← Review</button>':''}<button class="button ${r.submitted?'secondary':''}" data-action="submit" ${q.archiveUnrecovered?'':q.type==='short'?(!String(r.selected||'').trim()?'disabled':''):(!checked.length?'disabled':'')}>${q.archiveUnrecovered?'미복원 확인 완료':r.submitted?'다시 제출':'답안 제출'} &nbsp; ✓</button></div></div>${saysAllCompleted()?`<div class="result-box correct"><b>전체 문항 풀이가 완료되었습니다.</b><p>정답 검토 필요 문항을 제외한 결과는 Review에서 확인할 수 있습니다.</p><button class="button small review-button" data-action="open-review" style="margin-top:11px">최종 Review 열기 →</button></div>`:''}</div>
+      <div class="question-footer"><div class="quiz-actions"><div class="row"><button class="button secondary small" data-action="step" data-direction="-1" ${curr<=0?'disabled':''}>← 이전</button><button class="button secondary small" data-action="step" data-direction="1" ${curr===scope.length-1?'disabled':''}>다음 →</button></div><div class="row">${restoringReview?'<button class="button ghost small" data-action="back-review">← Review</button>':''}<button class="button ${r.submitted?'secondary':''}" data-action="submit" ${q.archiveUnrecovered?'':q.type==='short'?(!String(r.selected||'').trim()?'disabled':''):(!checked.length?'disabled':'')}>${q.archiveUnrecovered?'미복원 확인 완료':hasSubmittedBefore(q)?'다시 제출':'답안 제출'} &nbsp; ✓</button></div></div>${saysAllCompleted()?`<div class="result-box correct"><b>전체 문항 풀이가 완료되었습니다.</b><p>정답 검토 필요 문항을 제외한 결과는 Review에서 확인할 수 있습니다.</p><button class="button small review-button" data-action="open-review" style="margin-top:11px">최종 Review 열기 →</button></div>`:''}</div>
     </section>`;
   }
   function saysAllCompleted() {const s=stats(questions());return !!s.total&&s.completed===s.total;}
@@ -1521,8 +1531,8 @@
       }
       case 'search-result':await openSearchQuestion(btn.dataset.professor,btn.dataset.id);break;
       case 'year':selectYear(btn.dataset.year);break;
-      case 'filter':infoExpanded=false;filter=filter===btn.dataset.filter?'all':btn.dataset.filter;currentId=scopedQuestions()[0]?.id||null;render();break;
-      case 'clear-filter':infoExpanded=false;filter='all';currentYear='all';currentId=scopedQuestions()[0]?.id||null;render();break;
+      case 'filter':editingQuestionKey='';evidenceCollapsedKey='';infoExpanded=false;filter=filter===btn.dataset.filter?'all':btn.dataset.filter;currentId=scopedQuestions()[0]?.id||null;render();break;
+      case 'clear-filter':editingQuestionKey='';evidenceCollapsedKey='';infoExpanded=false;filter='all';currentYear='all';currentId=scopedQuestions()[0]?.id||null;render();break;
       case 'bookmark':{
         const q=questions().find(x=>x.id===btn.dataset.id);if(!q)break;
         const newValue=!isBookmark(q);
@@ -1538,16 +1548,16 @@
           else if(selected.length<(q.maxSelections||1))selected.push(n);
           else {selected.shift();selected.push(n);}
         } else selected=selected.length===1&&selected[0]===n?[]:[n];
-        r.selected=selected;r.submitted=false;infoExpanded=false;r.updatedAt=new Date().toISOString();recordBucket()[q.id]=r;markRecordChange(q);saveState();render();break;
+        r.hasSubmitted=hasSubmittedBefore(q);editingQuestionKey=questionViewKey(q);evidenceCollapsedKey='';r.selected=selected;r.submitted=false;infoExpanded=r.hasSubmitted;r.updatedAt=new Date().toISOString();recordBucket()[q.id]=r;markRecordChange(q);saveState();render();break;
       }
       case 'submit':{
-        const q=currentQuestion();if(!q)break;const r={...record(q)};
+        const q=currentQuestion();if(!q)break;const wasSubmitted=hasSubmittedBefore(q);const r={...record(q)};
         if(!q.archiveUnrecovered&&q.type==='short'&&!String(r.selected||'').trim())break;
         if(!q.archiveUnrecovered&&q.type!=='short'&&!r.selected?.length)break;
-        r.submitted=true;r.submittedAt=new Date().toISOString();r.updatedAt=r.submittedAt;recordBucket()[q.id]=r;markSmartReview(q);markRecordChange(q);completeGoalQuestion(q,r);infoExpanded=true;saveState();
+        r.submitted=true;r.hasSubmitted=true;evidenceCollapsedKey='';r.submittedAt=new Date().toISOString();r.updatedAt=r.submittedAt;recordBucket()[q.id]=r;markSmartReview(q);markRecordChange(q);completeGoalQuestion(q,r);infoExpanded=true;saveState();
         const finishedYearExam=studyMode==='year-exam'&&questions().length>0&&questions().every(item=>submission(item,'year-exam'));
         const shouldCheckRank=finishedYearExam && canUseLeaderboard(selectedSubject, selectedExamYear);
-        if(finishedYearExam) {view='review';reviewFilter='all';restoringReview=false;}
+        if(finishedYearExam&&!wasSubmitted) {view='review';reviewFilter='all';restoringReview=false;}
         render();
         if(shouldCheckRank) await maybeOfferPublicRank();
         // On mobile, the right-side explanation becomes a card below the question.
@@ -1558,7 +1568,7 @@
       case 'step':{
         const arr=scopedQuestions();const idx=arr.findIndex(q=>q.id===currentQuestion()?.id);const nx=arr[idx+Number(btn.dataset.direction)];if(nx)selectCurrent(nx.id);break;
       }
-      case 'toggle-evidence':infoExpanded=!infoExpanded;render();break;
+      case 'toggle-evidence':infoExpanded=!infoExpanded;evidenceCollapsedKey=infoExpanded?'':questionViewKey(currentQuestion());render();break;
       case 'zoom':openModal(btn.getAttribute('src'),btn.dataset.caption||btn.alt);break;
       case 'open-review':reviewFilter='all';selectedReviewId=null;view='review';restoringReview=false;render();window.scrollTo(0,0);break;
       case 'review-filter':reviewFilter=btn.dataset.filter;selectedReviewId=null;render();break;
@@ -1608,9 +1618,10 @@
     }
     if(el.id==='short-answer'){
       const q=currentQuestion();if(!q)return;
-      const r={...record(q),selected:el.value,submitted:false,updatedAt:new Date().toISOString()};
+      const r={...record(q),hasSubmitted:hasSubmittedBefore(q),selected:el.value,submitted:false,updatedAt:new Date().toISOString()};
+      editingQuestionKey=questionViewKey(q);evidenceCollapsedKey='';
       recordBucket()[q.id]=r;markRecordChange(q);saveState();
-      if(infoExpanded){infoExpanded=false;render();return;}
+      if(r.hasSubmitted&&!infoExpanded){infoExpanded=true;render();return;}
       root.querySelectorAll('[data-action=submit]').forEach(btn=>btn.disabled=!el.value.trim());
     }
   });
