@@ -9,7 +9,7 @@
   const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
   const circles = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
   const TALLY_FORM_ID = '6DjZg5';
-  const PUBLIC_VERSION = '1.2.5';
+  const PUBLIC_VERSION = '1.2.6';
   const PUBLIC_RELEASE_DATE = '2026-11-13';
   const LEADERBOARD_IMAGE_BY_RANK = {1:'assets/ui/rank-first.png',2:'assets/ui/rank-second.png',3:'assets/ui/rank-third.png'};
   // Keep the underlying provenance, but omit internal answer-approval workflow from study copy.
@@ -1414,7 +1414,7 @@
         const wanted=effectiveAnswer(q);
         const correctList=wanted==null?[]:Array.isArray(wanted)?wanted:[wanted];
         const evidence=(q.lectureAudit||q.validation?.stage==='accepted'?q.evidence:q.candidateEvidence||q.evidence||[])||[];
-        const lecture=evidence[0]||null;
+
         return {
           teacher:teacherMap.get(q.professor)||q.professor,
           label:q.label,tag:kind==='wrong'?'오답':'북마크',prompt:formatPrompt(q.prompt),ink:await window.HeonInk?.getExport(q.id),
@@ -1435,9 +1435,9 @@
           explanationImages:(q.explanationImages||[]).filter(x=>x.src||x.image).map(x=>({
             src:x.src||x.image,label:x.caption||'사용자 제공 해설 참고 이미지'
           })),
-          evidence:lecture?{
-            label:`${lecture.file||'강의안'} · ${lecture.pageBasis?lecturePageLabel(lecture):'PDF '+(lecture.page||'?')+'쪽'}`,src:lecture.image||''
-          }:null
+          evidence:evidence.map(lecture=>({
+            label:`${lecture.file||'강의안'} · ${lecture.pageBasis?lecturePageLabel(lecture):'PDF '+(lecture.page||'?')+'쪽'}${lecture.lectureYear?' · '+lecture.lectureYear+'년':''}`,src:lecture.image||lecture.src||''
+          }))
         };
       }));
       pdfProgress(dialog,`전체 ${selected.length}문항의 PDF를 생성하고 있습니다…`,0,selected.length);

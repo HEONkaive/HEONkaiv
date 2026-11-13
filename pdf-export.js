@@ -1,4 +1,4 @@
-/* HEON ARCHIVE v1.2.1 · high-resolution landscape A4 38:31:31 PDF writer.
+/* HEON ARCHIVE v1.2.6 · high-resolution landscape A4 38:31:31 PDF writer.
  * A new question starts in column 1 of a new page; its explanation starts
  * in column 2 and flows to column 3, then column 1 of a continuation page.
  * Korean fonts, source figures, and vector handwritten notes are rasterized
@@ -119,10 +119,12 @@
       let img=new Image();img.decoding='async';img.src=new URL(url,document.baseURI).href;
       try{await new Promise((ok,fail)=>{if(img.complete&&img.naturalWidth)return ok();img.onload=ok;img.onerror=fail;});}
       catch(_){await this.para(`이미지를 불러오지 못했습니다: ${label}`,{size:13,color:'#ab3244'});return;}
-      const w=CW[this.col]-10,scale=Math.min(w/img.naturalWidth,heightLimit/img.naturalHeight,1.6),dw=img.naturalWidth*scale,dh=img.naturalHeight*scale;
+      const dimensions=()=>{const scale=Math.min((CW[this.col]-10)/img.naturalWidth,heightLimit/img.naturalHeight,1.6);return [img.naturalWidth*scale,img.naturalHeight*scale];};
+      let [dw,dh]=dimensions();
       await this.ensure(dh+36);
       await this.para(label,{size:12,line:18,after:5,color:MUTED});
-      if(this.y+dh>BOTTOM)await this.nextCol();
+      [dw,dh]=dimensions();
+      if(this.y+dh>BOTTOM){await this.nextCol();[dw,dh]=dimensions();}
       this.ctx.drawImage(img,X[this.col],this.y,dw,dh);this.y+=dh+14;
       img.src='';
     }
@@ -169,7 +171,16 @@
       await this.para(item.explanation||'등록된 해설이 없습니다.',{size:17,line:27});
       if(item.reasons?.length){await this.heading('선택지별 해설');for(const r of item.reasons)await this.para(`${r.symbol} ${r.text}`,{size:16,line:25});}
       if(item.explanationImages?.length){await this.heading('추가 해설 이미지');for(const f of item.explanationImages)await this.figure(f.src,f.label,330);}
-      if(item.evidence){await this.heading('강의안 근거');await this.para(item.evidence.label||'',{size:13,line:20,color:MUTED});await this.figure(item.evidence.src,'강의안 발췌',420);}
+      const lectures=Array.isArray(item.evidence)?item.evidence:(item.evidence?[item.evidence]:[]);
+      if(lectures.length){
+        await this.heading(`강의안 근거 · ${lectures.length}개`);
+        for(let i=0;i<lectures.length;i++){
+          const lecture=lectures[i];
+          await this.para(`${i+1}/${lectures.length} · ${lecture.label||'강의안'}`,{size:13,line:20,color:MUTED});
+          if(lecture.src)await this.figure(lecture.src,`강의안 발췌 ${i+1}/${lectures.length}`,420);
+          else await this.para('첨부된 강의안 이미지가 없습니다.',{size:13,color:MUTED});
+        }
+      }
       if(this.activeEvidenceInk&&this.evidenceOverlayPage===this.page){
         this.drawInkOverlay(this.activeEvidenceInk,X[1],TOP,CW[1]+GAP+CW[2],BOTTOM-TOP);
       }
