@@ -1224,3 +1224,69 @@ html[data-theme=light] .review-number-button.pending{background:#fff4d9;border-c
 
 /* Keep the home study goal shortcut aligned with the registration count. */
 .home-pick-tools{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap;}
+
+/* ===== v1.2.1: compact two-row question header + writing on actual content ===== */
+.quiz-mode .exam-panel .question-header{display:flex;flex-direction:column;align-items:stretch;gap:8px;margin-bottom:14px;}
+.quiz-mode .question-heading-line,
+.quiz-mode .question-info-line{display:flex;align-items:center;justify-content:space-between;gap:9px;min-width:0;width:100%;}
+.quiz-mode .question-heading-text{min-width:0;flex:0 1 auto;}
+.quiz-mode .question-info-line .question-meta{display:flex;flex:1 1 auto;min-width:0;align-items:center;gap:6px;flex-wrap:wrap;margin:0;}
+.quiz-mode .question-head-actions{display:flex;gap:5px;align-items:center;justify-content:flex-end;flex:0 0 auto;}
+.quiz-mode .question-head-actions .bookmark,
+.quiz-mode .question-head-actions .icon-btn{min-height:36px;white-space:nowrap;padding:6px 8px;line-height:1.3;border-radius:10px;border:1px solid var(--stroke2);background:var(--panel2);color:var(--text);font-size:12px;cursor:pointer;}
+.quiz-mode .question-head-actions .bookmark{min-width:36px;font-size:18px;}
+.quiz-mode .question-head-actions .bookmark.saved{color:var(--orange);}
+.ink-toolbar{display:flex;align-items:center;justify-content:flex-end;gap:6px;flex:0 1 auto;min-width:0;}
+.ink-toolbar button{min-height:37px;padding:6px 10px;border-radius:10px;border:1px solid var(--stroke2);background:var(--panel2);color:var(--text);font:700 12px var(--body-font);white-space:nowrap;cursor:pointer;display:inline-flex;justify-content:center;align-items:center;gap:4px;}
+.ink-toolbar button:hover{border-color:var(--accent);color:var(--accent);}
+.ink-toolbar .ink-mode-toggle{border-color:color-mix(in srgb,var(--accent) 40%,var(--stroke));color:var(--accent);background:color-mix(in srgb,var(--accent) 7%,var(--panel));}
+.ink-toolbar .ink-mode-toggle[aria-pressed=true]{background:color-mix(in srgb,var(--accent) 13%,var(--panel));}
+.ink-toolbar .ink-tools{display:flex;align-items:center;flex-wrap:nowrap;gap:4px;min-width:0;}
+.ink-toolbar .ink-tools[hidden]{display:none!important;}
+.ink-toolbar .ink-tools button.active{background:color-mix(in srgb,var(--accent) 13%,var(--panel));border-color:var(--accent);color:var(--accent);}
+.ink-toolbar .ink-tools button svg{flex:none;}
+.ink-toolbar .ink-tools .ink-color-label{display:flex;align-items:center;justify-content:center;height:37px;width:34px;flex:none;}
+.ink-toolbar input[type=color]{display:block;cursor:pointer;width:30px;height:32px;padding:2px;border:1px solid var(--stroke2);border-radius:8px;background:var(--panel2);}
+.ink-overlay-parent{position:relative!important;}
+.ink-overlay{position:absolute;top:0;left:0;right:0;z-index:8;background:transparent;pointer-events:none;overflow:hidden;}
+.ink-overlay.is-writing{pointer-events:auto;cursor:crosshair;}
+.ink-overlay-svg{display:block;width:100%;height:100%;touch-action:none;overflow:visible;}
+.ink-overlay-svg path{pointer-events:none;}
+.quiz-mode .ink-writing-mode .exam-panel,.quiz-mode .ink-writing-mode .evidence-panel{outline-offset:-3px;}
+@media (min-width:761px) and (max-width:1250px){
+  .quiz-mode .question-heading-line{flex-wrap:wrap;}
+  .quiz-mode .ink-toolbar{margin-left:auto;}
+  .quiz-mode .question-head-actions .icon-btn{font-size:11px;}
+}
+@media (max-width:760px){
+  .quiz-mode .question-heading-line,.quiz-mode .question-info-line{align-items:flex-start;}
+  .quiz-mode .question-info-line{flex-wrap:wrap;}
+  .quiz-mode .question-head-actions{margin-left:auto;}
+  .quiz-mode .ink-toolbar,.ink-overlay{display:none!important;}
+}
+/* Tablet viewport fix: override an older <=1020px auto-height rule which
+   collapsed the question card to a 30px strip and made the rest inaccessible. */
+@media (min-width:761px) and (max-width:1020px){
+  .quiz-mode .workspace{height:100dvh!important;min-height:0!important;overflow:hidden!important;}
+  .quiz-mode .quiz-content{height:auto;flex:1 1 auto;min-height:0;}
+  .quiz-mode .exam-layout,.quiz-mode .exam-layout.collapsed{height:0;min-height:0;flex:1 1 auto;}
+}
+@media (min-width:761px) and (max-width:1020px){
+  /* Restore the right-hand explanation placeholder and bottom submit bar;
+     older tablet rules hid both, leaving half the grid blank. */
+  .quiz-mode .exam-layout .evidence-placeholder{display:flex!important;}
+  .quiz-mode .quiz-dock{display:flex!important;}
+}
+@media (min-width:761px) and (max-width:1020px){
+  /* Center divider is visually hidden on tablet, so explicitly place the
+     explanation in grid track 3 rather than the 9px separator track. */
+  .quiz-mode .exam-layout > .exam-panel{grid-column:1;}
+  .quiz-mode .exam-layout > .evidence-panel,
+  .quiz-mode .exam-layout > .evidence-placeholder{grid-column:3;min-width:0;}
+}
+@media (min-width:761px) and (max-width:1000px){
+  .quiz-mode .question-heading-line{display:block;}
+  .quiz-mode .ink-toolbar{margin-top:8px;width:100%;max-width:100%;justify-content:flex-start;flex-wrap:wrap;}
+  .quiz-mode .ink-toolbar .ink-tools{flex:1 1 100%;width:100%;flex-wrap:wrap;justify-content:flex-start;}
+  .quiz-mode .ink-toolbar .ink-tools button{min-height:35px;}
+}

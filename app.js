@@ -9,7 +9,7 @@
   const esc = (v) => String(v == null ? '' : v).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
   const circles = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
   const TALLY_FORM_ID = '6DjZg5';
-  const PUBLIC_VERSION = '1.2.0';
+  const PUBLIC_VERSION = '1.2.1';
   const PUBLIC_RELEASE_DATE = '2026-11-13';
   const LEADERBOARD_IMAGE_BY_RANK = {1:'assets/ui/rank-first.png',2:'assets/ui/rank-second.png',3:'assets/ui/rank-third.png'};
   // Keep the underlying provenance, but omit internal answer-approval workflow from study copy.
@@ -1107,8 +1107,10 @@
       status==='user_confirmed'?'✓ 정답 확인':'! 정답 검토 필요';
     const validationPillClass=q.lectureAudit?(q.lectureAudit.status==='matched'?'ok':'warn'):q.isPrediction?'blue':
       (ungradedArchive||status==='pending'?'warn':'ok');
-    return `<section class="exam-panel" data-question-id="${esc(q.id)}"><div class="question-header"><div><div class="question-id">${studyMode==='year-exam'?esc(yearExamTeacherLabel(q.professor))+' 교수님 · ':''}QUESTION / ${esc(q.label)}</div><h2 class="question-num">${esc(q.label)} <span class="question-index">${curr+1} / ${scope.length}</span></h2><div class="question-meta"><span class="pill ${validationPillClass}">${verifiedDisplay}</span><span class="pill">${esc(yearName(q.year))}</span>${submission(q)?`<span class="pill blue">제출 완료</span>`:''}</div></div>
-      <div class="row"><button class="bookmark ${isBookmark(q)?'saved':''}" data-action="bookmark" data-id="${esc(q.id)}" title="북마크" aria-pressed="${isBookmark(q)}">${isBookmark(q)?'★':'☆'}</button>${matchMedia('(max-width:760px)').matches?'':(window.HeonInk?.controls(q.id)||'')}<button class="icon-btn report-question-btn" data-action="report-popup" data-question-id="${esc(q.id)}" title="문항 번호·설명·이미지를 첨부해 오류 제보" aria-label="${esc(q.label)}번 문제 오류 제보하기">✎ 제보하기</button><button class="icon-btn" data-action="toggle-evidence">${infoExpanded?'해설 접기':'해설 열기'}</button></div></div>
+    return `<section class="exam-panel" data-question-id="${esc(q.id)}"><div class="question-header">
+      <div class="question-heading-line"><div class="question-heading-text"><div class="question-id">${studyMode==='year-exam'?esc(yearExamTeacherLabel(q.professor))+' 교수님 · ':''}QUESTION / ${esc(q.label)}</div><h2 class="question-num">${esc(q.label)} <span class="question-index">${curr+1} / ${scope.length}</span></h2></div>${matchMedia('(max-width:760px)').matches?'':(window.HeonInk?.controls(q.id)||'')}</div>
+      <div class="question-info-line"><div class="question-meta"><span class="pill ${validationPillClass}">${verifiedDisplay}</span><span class="pill">${esc(yearName(q.year))}</span>${submission(q)?`<span class="pill blue">제출 완료</span>`:''}</div>
+      <div class="question-head-actions"><button class="bookmark" data-action="bookmark" data-id="${esc(q.id)}" title="북마크" aria-pressed="${isBookmark(q)}">${isBookmark(q)?'★':'☆'}</button><button class="icon-btn report-question-btn" data-action="report-popup" data-question-id="${esc(q.id)}" title="문항 번호·설명·이미지를 첨부해 오류 제보" aria-label="${esc(q.label)}번 문제 오류 제보하기">✎ 제보하기</button><button class="icon-btn" data-action="toggle-evidence">${infoExpanded?'해설 접기':'해설 열기'}</button></div></div></div>
       <div class="prompt">${esc(formatPrompt(q.prompt||'원본 이미지에서 문제 본문을 확인하세요.'))}</div>
       ${renderInlineQuestionFigures(q)}
       ${q.type==='short'?`<label class="muted" for="short-answer">주관식 답안</label><textarea class="short-input" id="short-answer" data-question="${esc(q.id)}" placeholder="답안을 입력하세요. 입력하는 즉시 저장됩니다.">${esc(typeof r.selected==='string'?r.selected:'')}</textarea>`:
@@ -1116,7 +1118,6 @@
       q.archiveUnrecovered?`<p class="review-note">제공 PDF에서 해당 문항이 미복원으로 표시되어 있습니다. 문제와 보기를 임의로 만들지 않았습니다.</p>`:
       `<p class="review-note">텍스트 선택지의 판독이 불완전합니다. 아래 원본에서 선택지 번호와 문장을 확인한 후 답 번호를 선택하세요.</p><div class="options">${circles.map((v,i)=>`<button class="option ${checked.includes(i+1)?'selected':''} ${submission(q)&&answer!=null&&answers.includes(i+1)?'correct-choice':''}" data-action="choose" data-number="${i+1}"><span class="option-letter">${v}</span><span class="option-text">${i+1}번 선택지 — 원본 캡처 확인</span></button>`).join('')}</div>`}
       ${renderResult(q,grading)}
-      ${matchMedia('(max-width:760px)').matches?'':(window.HeonInk?.board(q.id)||'')}
       ${q.source?.image?`<details class="source-card"><summary>기출 원본 이미지 보기 · ${esc(q.source.name)}${q.source.page?' · PDF '+q.source.page+'페이지':''}</summary><img class="source-image" src="${esc(q.source.image)}" alt="${esc(q.label)} 기출 원본 캡처" loading="lazy" data-action="zoom" data-caption="${esc(q.source.name)}${q.source.page?' · PDF '+q.source.page+'페이지':''}"><p class="source-warning">기출 원본에는 기존 필기와 정답 표기가 포함되어 있을 수 있습니다. 채점 기준과 해설은 오른쪽 정답 근거 영역에서 확인할 수 있습니다.</p>${q.transcriptionWarning?`<p class="source-warning">${esc(q.transcriptionWarning)}</p>`:''}</details>`:`<div class="review-note" style="margin-top:15px">기출 원본 파일의 별도 이미지가 제공되지 않았습니다. 문제와 선택지는 사용자가 제공한 원문을 기준으로 입력했습니다.</div>`}
       <div class="question-footer"><div class="quiz-actions"><div class="row"><button class="button secondary small" data-action="step" data-direction="-1" ${curr<=0?'disabled':''}>← 이전</button><button class="button secondary small" data-action="step" data-direction="1" ${curr===scope.length-1?'disabled':''}>다음 →</button></div><div class="row">${restoringReview?'<button class="button ghost small" data-action="back-review">← Review</button>':''}<button class="button ${r.submitted?'secondary':''}" data-action="submit" ${q.archiveUnrecovered?'':q.type==='short'?(!String(r.selected||'').trim()?'disabled':''):(!checked.length?'disabled':'')}>${q.archiveUnrecovered?'미복원 확인 완료':r.submitted?'다시 제출':'답안 제출'} &nbsp; ✓</button></div></div>${saysAllCompleted()?`<div class="result-box correct"><b>전체 문항 풀이가 완료되었습니다.</b><p>정답 검토 필요 문항을 제외한 결과는 Review에서 확인할 수 있습니다.</p><button class="button small review-button" data-action="open-review" style="margin-top:11px">최종 Review 열기 →</button></div>`:''}</div>
     </section>`;
@@ -1303,6 +1304,7 @@
   async function exportCollection(kind) {
     if(pdfExportBusy){toast('다른 PDF 파일을 생성하고 있습니다.');return;}
     if(!window.HeonPdfExport?.generate){toast('PDF 저장 모듈을 불러오지 못했습니다. 새로고침해 주세요.');return;}
+    if(!window.confirm(`${kind==='wrong'?'현재 교수님/단원/학번 풀이의 오답노트':'현재 과목의 북마크'} PDF를 생성하시겠습니까?`))return;
     pdfExportBusy=true;
     const dialog=openPdfDialog(kind);
     try {
@@ -1312,6 +1314,12 @@
       let all=docs.flatMap(x=>x?.questions||[]);
       if(mode==='prediction') all=all.filter(q=>q.isPrediction);
       else all=all.filter(q=>!q.isPrediction);
+      // Wrong-note PDFs are restricted to the exact study scope entered by the user.
+      // Bookmarks deliberately retain the existing subject-wide collection behavior.
+      if(kind==='wrong'){
+        const allowed=new Set(questions().map(q=>q.id));
+        all=all.filter(q=>allowed.has(q.id));
+      }
       // Never mix saved submissions, wrong-answer results, or bookmarks between modes.
       const bucket=mode==='year-exam'?state.yearExamRecords
         :mode==='unit'?state.unitRecords
@@ -1337,7 +1345,8 @@
       }
       const teacherMap=new Map(metas.map(p=>[p.id,p.name]));
       const subj=subjectById(selectedSubject);
-      const title=(kind==='wrong'?'오답노트':'북마크')+' · '+(subj?.name||'혈액과 종양 1차');
+      const scopeName=kind==='wrong'?(currentProfessor?.professor?.name||subj?.name):(subj?.name||'혈액과 종양 1차');
+      const title=(kind==='wrong'?'오답노트':'북마크')+' · '+scopeName;
       const modeLabel={'professor':'교수님별 학습','year-exam':'학번별 시험','unit':'단원별 학습','prediction':'AI 예상문제',goal:'학습 목표'}[mode];
       const answerLine=q=>{
         const a=effectiveAnswer(q);
@@ -1382,7 +1391,7 @@
         onProgress:(current,total)=>pdfProgress(dialog,`${current}/${total}문항 생성 완료…`,current,total)
       });
       const date=new Date().toLocaleDateString('en-CA').replace(/\//g,'-');
-      const fileName=`HEON_ARCHIVE_${kind==='wrong'?'오답노트':'북마크'}_${(subj?.name||'학습').replace(/[\\/:*?"<>|\s]+/g,'_')}_${date}.pdf`;
+      const fileName=`HEON_ARCHIVE_${kind==='wrong'?'오답노트':'북마크'}_${scopeName.replace(/[\\/:*?"<>|\s]+/g,'_')}_${date}.pdf`;
       if(pdfExportObjectUrl)URL.revokeObjectURL(pdfExportObjectUrl);
       pdfExportObjectUrl=URL.createObjectURL(result.blob);
       const download=dialog.querySelector('.pdf-export-download');

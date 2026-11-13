@@ -1,33 +1,33 @@
-/* HEON ARCHIVE v1.2.0 — per-question stylus notes.
- * Local-first IndexedDB. Saved strokes are vector geometry, not screenshots.
- * Perfect Freehand v1.2.3 is loaded opportunistically as an ESM module;
- * a local pressure-aware polygon renderer remains available offline.
+/* HEON ARCHIVE v1.2.1 — on-page vector handwriting.
+ * Notes are saved per question in IndexedDB, including independent question and
+ * explanation overlays; existing v1.2.0 stroke data is retained unchanged.
+ * Apple Pencil draws on the page itself. Solve mode restores native interaction.
  */
 (()=>{'use strict';
-  const DB='heon.archive.ink.v1', STORE='notes', W=1000, H=1050;
+  const DB='heon.archive.ink.v1', STORE='notes', W=1000;
   let dbPromise=null, active=null, loadToken=0, owner='guest', cloudTimer=null, cloudError='';
-  let perfect=null;
+  let drawingMode=false, selectedTool='pen', penColor='#2457bb', perfect=null;
   import('https://cdn.jsdelivr.net/npm/perfect-freehand@1.2.3/dist/esm/index.mjs')
     .then(m=>{if(typeof m.getStroke==='function')perfect=m.getStroke;}).catch(()=>{});
-  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   function db(){return dbPromise ||= new Promise((resolve,reject)=>{
     if(!('indexedDB' in window)){reject(Error('IndexedDB 미지원'));return;}
     const req=indexedDB.open(DB,1);
     req.onupgradeneeded=()=>{if(!req.result.objectStoreNames.contains(STORE))req.result.createObjectStore(STORE);};
     req.onerror=()=>reject(req.error);req.onsuccess=()=>resolve(req.result);
   });}
-  async function storage(key,value){
+  async function storage(itemKey,value){
     const database=await db();return new Promise((resolve,reject)=>{
       const tx=database.transaction(STORE,value===undefined?'readonly':'readwrite');
-      const req=value===undefined?tx.objectStore(STORE).get(key):tx.objectStore(STORE).put(value,key);
+      const req=value===undefined?tx.objectStore(STORE).get(itemKey):tx.objectStore(STORE).put(value,itemKey);
       req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);
     });
   }
   const account=()=>window.HeonStudyAccount;
   const key=q=>`${owner}::${q}`;
-  function empty(){return {strokes:[],updatedAt:null};}
+  const empty=()=>({strokes:[],explanationStrokes:[],sizes:{},updatedAt:null});
   function fallback(points,opts){
-    const size=opts.size||5, poly=[];
+    const size=opts.size||5,poly=[];
     if(!points.length)return poly;
     for(let i=0;i<points.length;i++){
       const p=points[i],a=points[Math.max(0,i-1)],b=points[Math.min(points.length-1,i+1)];
@@ -46,8 +46,8 @@
   function outline(stroke){
     const opts={size:stroke.width||5,thinning:stroke.tool==='marker'?0:.5,
       smoothing:.55,streamline:.45,simulatePressure:false,last:true,start:{cap:true},end:{cap:true}};
-    const points=(stroke.points||[]).map(p=>[p[0],p[1],p[2]??.5]);
-    try{return perfect?perfect(points,opts):fallback(points,opts);}catch(_){return fallback(points,opts);}
+    const pts=(stroke.points||[]).map(p=>[p[0],p[1],p[2]??.5]);
+    try{return perfect?perfect(pts,opts):fallback(pts,opts);}catch(_){return fallback(pts,opts);}
   }
   function path(stroke){
     const shape=outline(stroke);
@@ -55,108 +55,203 @@
     if(shape.length===1){const p=shape[0];return `M${p[0]-2},${p[1]}a2,2 0 1,0 4,0a2,2 0 1,0 -4,0`;}
     return 'M'+shape.map(p=>`${p[0].toFixed(1)},${p[1].toFixed(1)}`).join('L')+'Z';
   }
-  function asSvg(stroke){
-    return `<path d="${path(stroke)}" fill="${esc(stroke.color||'#2457bb')}" opacity="${stroke.tool==='marker'?.27:1}"/>`;
-  }
-  function controls(questionId){
-    return `<div class="ink-tools" role="toolbar" aria-label="필기 도구" data-ink-tools="${esc(questionId)}">
-      <button type="button" data-ink-tool="pen" class="active" title="펜">✎ 펜</button>
-      <button type="button" data-ink-tool="marker" title="형광펜">▰ 형광</button>
-      <button type="button" data-ink-tool="erase" title="획 지우개">⌫</button>
-      <button type="button" data-ink-tool="hand" title="손가락 이동">✋</button>
-      <input type="color" value="#2457bb" aria-label="펜 색상" data-ink-color>
-      <button type="button" data-ink-action="undo" title="실행 취소">↶</button>
-      <button type="button" data-ink-action="redo" title="다시 실행">↷</button>
-      <button type="button" data-ink-action="expand" title="필기 여백 확대">⛶</button>
+  function asSvg(stroke){return `<path d="${path(stroke)}" fill="${esc(stroke.color||'#2457bb')}" opacity="${stroke.tool==='marker'?.27:1}"/>`;}
+  function controls(q){
+    return `<div class="ink-toolbar" role="toolbar" aria-label="문항 필기 도구" data-ink-tools="${esc(q)}">
+      <button type="button" class="ink-mode-toggle" data-ink-action="mode" title="필기 모드 전환" aria-pressed="${drawingMode}">${drawingMode?'✓ 풀이모드':'✎ 필기모드'}</button>
+      <div class="ink-tools" ${drawingMode?'':'hidden'}>
+        <button type="button" data-ink-tool="pen" class="${selectedTool==='pen'?'active':''}" title="펜 (P)">✎ 펜</button>
+        <button type="button" data-ink-tool="marker" class="${selectedTool==='marker'?'active':''}" title="형광펜 (H)">▰ 형광</button>
+        <button type="button" data-ink-tool="erase" class="${selectedTool==='erase'?'active':''}" title="지우개 (E)" aria-label="지우개"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 15.5 14 22H7L2 17 14.8 4.2a2.8 2.8 0 0 1 4 0l1.7 1.7a2.8 2.8 0 0 1 0 4Z" transform="translate(-1 -1) scale(.95)"/><path d="m8 11 6 6M6 21h15"/></svg><span>지우개</span></button>
+        <label class="ink-color-label" title="펜 색상"><input type="color" value="${esc(penColor)}" aria-label="펜 색상" data-ink-color></label>
+        <button type="button" data-ink-action="undo" title="실행 취소 (Ctrl+Z)" aria-label="실행 취소">↶</button>
+        <button type="button" data-ink-action="redo" title="다시 실행 (Ctrl+Shift+Z)" aria-label="다시 실행">↷</button>
+      </div>
     </div>`;
   }
-  function board(questionId){
-    return `<section class="ink-section" data-ink-question="${esc(questionId)}" aria-label="문항별 필기 여백">
-      <div class="ink-title"><strong>✎ 내 필기 여백</strong><span>애플펜슬로 작성 · 자동 저장</span><button type="button" data-ink-action="expand">확대 ⛶</button></div>
-      <div class="ink-paper"><svg class="ink-svg" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" aria-label="필기 입력 영역"><g class="ink-saved"></g><g class="ink-live"></g></svg></div>
-      <small class="ink-status" aria-live="polite">준비 중…</small>
-    </section>`;
-  }
-  function sessionData(){return active?.data||null;}
+  // Kept as an empty compatibility hook; no separate writing area is rendered.
+  function board(){return '';}
   async function getExport(q){
-    const data=await storage(key(q)).catch(()=>null);
-    return data?.strokes?.length?{width:W,height:H,strokes:data.strokes}:null;
+    if(active?.q===q && active.savePending)await active.savePending();
+    const note=await storage(key(q)).catch(()=>null);
+    if(!note)return null;
+    const question=note.strokes||[],evidence=note.explanationStrokes||[];
+    if(!question.length&&!evidence.length)return null;
+    return {regions:{question:{width:W,height:note.sizes?.question?.height||1050,strokes:question},
+      evidence:{width:W,height:note.sizes?.evidence?.height||1050,strokes:evidence}},
+      width:W,height:note.sizes?.question?.height||1050,strokes:question};
   }
-  function attach(container){
-    const q=container?.dataset.inkQuestion;
-    if(!q)return;
+  function renderControls(){
+    for(const t of document.querySelectorAll('.ink-toolbar')){
+      const button=t.querySelector('[data-ink-action="mode"]');
+      if(button){button.textContent=drawingMode?'✓ 풀이모드':'✎ 필기모드';button.setAttribute('aria-pressed',String(drawingMode));}
+      const tools=t.querySelector('.ink-tools');if(tools)tools.hidden=!drawingMode;
+      t.querySelectorAll('[data-ink-tool]').forEach(b=>b.classList.toggle('active',b.dataset.inkTool===selectedTool));
+    }
+    for(const region of active?.regions||[])region.layer.classList.toggle('is-writing',drawingMode);
+    document.querySelector('.quiz-mode')?.classList.toggle('ink-writing-mode',drawingMode);
+  }
+  function useTool(value){if(!['pen','marker','erase'].includes(value))return;selectedTool=value;renderControls();}
+  function toggleMode(){drawingMode=!drawingMode;renderControls();}
+  async function attach(q){
     const token=++loadToken;
-    if(active?.controller)active.controller.abort();
+    const previous=active;
+    if(previous?.controller)previous.controller.abort();
+    if(previous?.savePending)await previous.savePending();
+    if(token!==loadToken)return; // A newer question was opened while a save flushed.
     const controller=new AbortController(),signal=controller.signal;
-    const svg=container.querySelector('.ink-svg'),saved=svg.querySelector('.ink-saved'),live=svg.querySelector('.ink-live');
-    const storedKey=key(q),data=empty(),undo=[],redo=[];
-    active={q,container,controller,data,undo,redo};
-    let tool='pen',color='#2457bb',drawing=null,frame=0,saving=null;
-    const status=container.querySelector('.ink-status');
-    const refresh=()=>{saved.innerHTML=data.strokes.map(asSvg).join('');};
-    const schedule=()=>{if(frame)return;frame=requestAnimationFrame(()=>{frame=0;live.innerHTML=drawing?asSvg(drawing):'';});};
-    const persist=()=>{
+    const data=empty(),history=[],redo=[];
+    const session={q,data,controller,regions:[],history,redo,ready:false,savePending:null};active=session;
+    const keyFor=key(q);
+    const regionDefinitions=[['question',document.querySelector('.exam-panel')],['evidence',document.querySelector('.evidence-panel')]];
+    let writeQueue=Promise.resolve(), saveTimer=0, frame=0;
+    function queueSave(){
       data.updatedAt=new Date().toISOString();
-      if(saving)clearTimeout(saving);
-      saving=setTimeout(async()=>{
-        try{await storage(storedKey,{strokes:data.strokes,updatedAt:data.updatedAt});status.textContent='✓ 이 기기에 저장됨';scheduleCloud(q);}
-        catch(e){status.textContent='저장 실패 · 브라우저 저장 공간 확인';console.warn(e);}
-      },180);
-    };
-    const putAction=()=>{undo.push(JSON.stringify(data.strokes));if(undo.length>45)undo.shift();redo.length=0;};
-    function pos(e){const r=svg.getBoundingClientRect();return [Math.max(0,Math.min(W,Math.round((e.clientX-r.left)/r.width*W*10)/10)),Math.max(0,Math.min(H,Math.round((e.clientY-r.top)/r.height*H*10)/10)),Math.round((e.pressure||.5)*100)/100];}
-    function eraseAt(p){
-      const index=data.strokes.findLastIndex(s=>(s.points||[]).some(t=>Math.hypot(t[0]-p[0],t[1]-p[1])<18));
-      if(index>=0){putAction();data.strokes.splice(index,1);refresh();persist();}
+      clearTimeout(saveTimer);
+      saveTimer=setTimeout(()=>saveNow(),90);
     }
-    svg.addEventListener('pointerdown',e=>{
-      if(e.pointerType==='touch'||tool==='hand')return;
-      if(e.button!==0 && e.pointerType!=='pen')return;
-      const p=pos(e);e.preventDefault();
-      if(tool==='erase'){eraseAt(p);return;}
-      putAction();drawing={tool:tool==='marker'?'marker':'pen',color:tool==='marker'?'#ecc345':color,width:tool==='marker'?30:5,points:[p]};
-      svg.setPointerCapture?.(e.pointerId);schedule();
-    },{signal});
-    svg.addEventListener('pointermove',e=>{
-      if(!drawing)return;
-      e.preventDefault();
-      const events=typeof e.getCoalescedEvents==='function'?e.getCoalescedEvents():[e];
-      for(const ev of events){const p=pos(ev),last=drawing.points.at(-1);if(drawing.points.length<2800&&Math.hypot(p[0]-last[0],p[1]-last[1])>=2.0)drawing.points.push(p);}
-      schedule();
-    },{signal});
-    const finish=e=>{
-      if(!drawing)return;
-      if(drawing.points.length===1){const [x,y,p]=drawing.points[0];drawing.points.push([x+.5,y+.5,p]);}
-      const ended=drawing;data.strokes.push(ended);drawing=null;schedule();
-      saved.insertAdjacentHTML('beforeend',asSvg(ended));persist();
-      try{if(svg.hasPointerCapture(e.pointerId))svg.releasePointerCapture(e.pointerId);}catch(_){}
-    };
-    svg.addEventListener('pointerup',finish,{signal});svg.addEventListener('pointercancel',finish,{signal});
-    // Pen can draw without disabling native one-finger scrolling across the rest of the page.
-    let finger=null;
-    svg.addEventListener('pointerdown',e=>{if(e.pointerType==='touch')finger={y:e.clientY,scroll:container.closest('.exam-panel')||document.scrollingElement};},{signal});
-    svg.addEventListener('pointermove',e=>{if(e.pointerType==='touch'&&finger){const delta=finger.y-e.clientY;finger.scroll.scrollTop+=delta;finger.y=e.clientY;}},{signal});
-    svg.addEventListener('pointerup',e=>{if(e.pointerType==='touch')finger=null;},{signal});
-    function changeTool(next){tool=next;document.querySelectorAll('[data-ink-tool]').forEach(b=>b.classList.toggle('active',b.dataset.inkTool===tool));}
-    for(const toolbar of document.querySelectorAll(`[data-ink-tools="${CSS.escape(q)}"]`)){
-      toolbar.querySelectorAll('[data-ink-tool]').forEach(b=>b.addEventListener('click',()=>changeTool(b.dataset.inkTool),{signal}));
-      toolbar.querySelector('[data-ink-color]')?.addEventListener('input',e=>{color=e.target.value;changeTool('pen');},{signal});
+    function saveNow(){
+      clearTimeout(saveTimer);saveTimer=0;
+      const snapshot=structuredClone({strokes:data.strokes,explanationStrokes:data.explanationStrokes,sizes:data.sizes,updatedAt:data.updatedAt});
+      writeQueue=writeQueue.catch(()=>{}).then(()=>storage(keyFor,snapshot));
+      writeQueue.then(()=>scheduleCloud()).catch(err=>console.warn('필기 저장 실패',err));
+      return writeQueue;
     }
-    // Listener is on the closest app root, with AbortController to avoid duplicate events.
-    document.getElementById('app')?.addEventListener('click',e=>{
-      const b=e.target.closest('[data-ink-action]');if(!b||!active||active.q!==q)return;
-      const action=b.dataset.inkAction;
-      if(action==='expand'){container.classList.toggle('ink-expanded');b.setAttribute('aria-pressed',container.classList.contains('ink-expanded'));return;}
-      if(action==='undo'&&undo.length){redo.push(JSON.stringify(data.strokes));data.strokes=JSON.parse(undo.pop());refresh();persist();}
-      if(action==='redo'&&redo.length){undo.push(JSON.stringify(data.strokes));data.strokes=JSON.parse(redo.pop());refresh();persist();}
+    session.savePending=async()=>{if(saveTimer)await saveNow();return writeQueue.catch(()=>{});};
+    function dataStrokes(name){return name==='question'?data.strokes:data.explanationStrokes;}
+    function regionHeight(region){
+      const h=Math.max(1,region.panel.scrollHeight-region.top);
+      return Math.max(250,Math.round(h/Math.max(1,region.panel.clientWidth)*W));
+    }
+    function layout(region){
+      const heading=region.panel.querySelector(region.name==='question'?'.question-header':'.evidence-head');
+      region.top=heading?heading.offsetTop+heading.offsetHeight+8:0;
+      const newHeight=regionHeight(region),current=data.sizes[region.name]?.height||newHeight;
+      // Scale the saved vertical coordinates whenever content reflows to keep ink anchored proportionally.
+      if(Math.abs(newHeight-current)>1){
+        const ratio=newHeight/current;
+        for(const stroke of dataStrokes(region.name))for(const p of stroke.points||[])p[1]*=ratio;
+        data.sizes[region.name]={width:W,height:newHeight};queueSave();
+        region.saved.innerHTML=dataStrokes(region.name).map(asSvg).join('');
+      } else if(!data.sizes[region.name])data.sizes[region.name]={width:W,height:newHeight};
+      region.layer.style.top=region.top+'px';
+      region.layer.style.height=Math.max(1,region.panel.scrollHeight-region.top)+'px';
+      region.svg.setAttribute('viewBox',`0 0 ${W} ${data.sizes[region.name].height}`);
+    }
+    function paint(region){region.saved.innerHTML=dataStrokes(region.name).map(asSvg).join('');}
+    function pointerPos(e,region){
+      const rect=region.svg.getBoundingClientRect(),height=data.sizes[region.name]?.height||1050;
+      return [Math.max(0,Math.min(W,(e.clientX-rect.left)/rect.width*W)),
+        Math.max(0,Math.min(height,(e.clientY-rect.top)/rect.height*height)),
+        Math.max(.1,Math.min(1,e.pressure||.5))];
+    }
+    function pushHistory(name){history.push({name,strokes:JSON.stringify(dataStrokes(name))});if(history.length>40)history.shift();redo.length=0;}
+    function refreshAll(){for(const region of session.regions)paint(region);}
+    function undoAction(){
+      if(!history.length)return;
+      const old=history.pop(),current=dataStrokes(old.name);
+      redo.push({name:old.name,strokes:JSON.stringify(current)});
+      data[old.name==='question'?'strokes':'explanationStrokes']=JSON.parse(old.strokes);
+      refreshAll();queueSave();
+    }
+    function redoAction(){
+      if(!redo.length)return;
+      const old=redo.pop(),current=dataStrokes(old.name);
+      history.push({name:old.name,strokes:JSON.stringify(current)});
+      data[old.name==='question'?'strokes':'explanationStrokes']=JSON.parse(old.strokes);
+      refreshAll();queueSave();
+    }
+    for(const [name,panel] of regionDefinitions){
+      if(!panel)continue;
+      panel.classList.add('ink-overlay-parent');
+      const layer=document.createElement('div');layer.className='ink-overlay';layer.setAttribute('data-ink-region',name);
+      layer.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" class="ink-overlay-svg" preserveAspectRatio="none"><g class="ink-saved"></g><g class="ink-live"></g></svg>';
+      panel.appendChild(layer);
+      const svg=layer.querySelector('svg');
+      const region={name,panel,layer,svg,saved:svg.querySelector('.ink-saved'),live:svg.querySelector('.ink-live'),drawing:null,finger:null,top:0};
+      session.regions.push(region);layout(region);
+      svg.addEventListener('pointerdown',e=>{
+        if(!drawingMode||!session.ready)return;
+        if(e.pointerType==='touch'){
+          region.finger={y:e.clientY};svg.setPointerCapture?.(e.pointerId);e.preventDefault();return;
+        }
+        if(e.button!==0&&e.pointerType!=='pen')return;
+        const point=pointerPos(e,region);e.preventDefault();
+        if(selectedTool==='erase'){
+          const strokes=dataStrokes(name);
+          const idx=strokes.findLastIndex(s=>(s.points||[]).some(p=>Math.hypot(p[0]-point[0],p[1]-point[1])<19));
+          if(idx>=0){pushHistory(name);strokes.splice(idx,1);paint(region);queueSave();}
+          return;
+        }
+        pushHistory(name);
+        region.drawing={tool:selectedTool==='marker'?'marker':'pen',color:selectedTool==='marker'?'#ecc345':penColor,
+          width:selectedTool==='marker'?30:5,points:[point]};
+        svg.setPointerCapture?.(e.pointerId);
+      },{signal});
+      svg.addEventListener('pointermove',e=>{
+        if(region.finger&&e.pointerType==='touch'){
+          region.panel.scrollTop+=region.finger.y-e.clientY;region.finger.y=e.clientY;e.preventDefault();return;
+        }
+        const drawing=region.drawing;if(!drawing)return;
+        const events=typeof e.getCoalescedEvents==='function'?e.getCoalescedEvents():[e];
+        for(const ev of events){const point=pointerPos(ev,region),last=drawing.points.at(-1);
+          if(drawing.points.length<7000&&Math.hypot(point[0]-last[0],point[1]-last[1])>=1.7)drawing.points.push(point);
+        }
+        if(!frame)frame=requestAnimationFrame(()=>{frame=0;for(const item of session.regions)item.live.innerHTML=item.drawing?asSvg(item.drawing):'';});
+        e.preventDefault();
+      },{signal});
+      const finish=e=>{
+        if(e.pointerType==='touch'){region.finger=null;return;}
+        const drawing=region.drawing;if(!drawing)return;
+        if(drawing.points.length===1){const p=drawing.points[0];drawing.points.push([p[0]+.5,p[1]+.5,p[2]]);}
+        dataStrokes(name).push(drawing);region.drawing=null;region.live.innerHTML='';
+        region.saved.insertAdjacentHTML('beforeend',asSvg(drawing));queueSave();
+        try{if(svg.hasPointerCapture(e.pointerId))svg.releasePointerCapture(e.pointerId);}catch(_){}
+      };
+      svg.addEventListener('pointerup',finish,{signal});svg.addEventListener('pointercancel',finish,{signal});
+      // Images can expand explanation height after initial mount.
+      panel.addEventListener('load',()=>requestAnimationFrame(()=>{if(active===session)layout(region);}),{capture:true,signal});
+    }
+    const app=document.getElementById('app');
+    app?.addEventListener('click',e=>{
+      const button=e.target.closest('[data-ink-action],[data-ink-tool]');if(!button||active!==session)return;
+      if(button.dataset.inkTool){useTool(button.dataset.inkTool);return;}
+      if(button.dataset.inkAction==='mode')toggleMode();
+      if(button.dataset.inkAction==='undo')undoAction();
+      if(button.dataset.inkAction==='redo')redoAction();
     },{signal});
-    storage(storedKey).then(found=>{
-      if(loadToken!==token)return;
-      if(found?.strokes){data.strokes=found.strokes;data.updatedAt=found.updatedAt;refresh();}
-      status.textContent='필기 준비 완료 · 문항별 저장';
-    }).catch(err=>{status.textContent='IndexedDB를 사용할 수 없습니다';console.warn(err);});
+    app?.addEventListener('input',e=>{
+      if(e.target.matches('[data-ink-color]')){penColor=e.target.value;useTool('pen');}
+    },{signal});
+    document.addEventListener('keydown',e=>{
+      if(active!==session||!drawingMode)return;
+      if(e.target.closest('input,textarea,select,[contenteditable="true"]'))return;
+      const key=e.key.toLowerCase();
+      if((e.ctrlKey||e.metaKey)&&key==='z'){
+        e.preventDefault();e.shiftKey?redoAction():undoAction();return;
+      }
+      if(e.ctrlKey||e.altKey||e.metaKey)return;
+      if(key==='p'||key==='h'||key==='e'){
+        useTool({p:'pen',h:'marker',e:'erase'}[key]);e.preventDefault();
+      }
+    },{signal});
+    window.addEventListener('resize',()=>{
+      if(active!==session)return;
+      for(const region of session.regions)layout(region);
+    },{signal});
+    try{
+      const stored=await storage(keyFor);
+      if(active!==session||token!==loadToken)return;
+      if(stored){data.strokes=stored.strokes||[];data.explanationStrokes=stored.explanationStrokes||[];data.sizes=stored.sizes||{};data.updatedAt=stored.updatedAt||null;}
+      for(const region of session.regions){layout(region);paint(region);}
+      session.ready=true;renderControls();
+    }catch(err){console.warn('필기를 불러오지 못했습니다',err);session.ready=false;}
   }
-  function mount(){const el=document.querySelector('.ink-section');if(el)attach(el);else {loadToken++;if(active?.controller)active.controller.abort();active=null;}}
+  function mount(){
+    const q=document.querySelector('.exam-panel')?.dataset.questionId;
+    if(!q){loadToken++;if(active?.controller)active.controller.abort();active?.savePending?.();active=null;return;}
+    attach(q).catch(console.warn);
+  }
   async function allLocal(ownerKey){
     const database=await db();return new Promise((resolve,reject)=>{
       const tx=database.transaction(STORE,'readonly'),req=tx.objectStore(STORE).openCursor(),out=[];

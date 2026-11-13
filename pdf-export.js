@@ -1,11 +1,11 @@
-/* HEON ARCHIVE v1.2.0 · landscape A4 38:31:31 PDF writer.
+/* HEON ARCHIVE v1.2.1 · high-resolution landscape A4 38:31:31 PDF writer.
  * A new question starts in column 1 of a new page; its explanation starts
  * in column 2 and flows to column 3, then column 1 of a continuation page.
  * Korean fonts, source figures, and vector handwritten notes are rasterized
  * locally before being embedded as page images in a standards-compliant PDF.
  */
 (()=>{'use strict';
-  const PW=1684,PH=1190,MG=48,GAP=18,TOP=132,BOTTOM=PH-69;
+  const PW=1684,PH=1190,RESOLUTION=2,MG=48,GAP=18,TOP=132,BOTTOM=PH-69;
   const usable=PW-MG*2-GAP*2, CW=[usable*.38,usable*.31,usable*.31];
   const X=[MG,MG+CW[0]+GAP,MG+CW[0]+GAP+CW[1]+GAP];
   const FONT='"Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans CJK KR", sans-serif';
@@ -28,7 +28,7 @@
   class Writer{
     constructor(){this.images=[];}
     async push(canvas){
-      const blob=await new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(Error('PDF JPEG 저장 실패')),'image/jpeg',.87));
+      const blob=await new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(Error('PDF JPEG 저장 실패')),'image/jpeg',.95));
       this.images.push(new Uint8Array(await blob.arrayBuffer()));
     }
     build(){
@@ -44,7 +44,7 @@
       for(let i=0;i<count;i++){
         const pid=3+i*3,iid=pid+1,cid=pid+2,img=this.images[i];
         begin(pid);add(`<< /Type /Page /Parent 2 0 R /MediaBox [0 0 841.89 595.28] /Resources << /XObject << /Im0 ${iid} 0 R >> >> /Contents ${cid} 0 R >>`);end();
-        begin(iid);add(`<< /Type /XObject /Subtype /Image /Width ${PW} /Height ${PH} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${img.length} >>\nstream\n`);add(img);add('\nendstream');end();
+        begin(iid);add(`<< /Type /XObject /Subtype /Image /Width ${PW*RESOLUTION} /Height ${PH*RESOLUTION} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${img.length} >>\nstream\n`);add(img);add('\nendstream');end();
         const stream='q\n841.89 0 0 595.28 0 0 cm\n/Im0 Do\nQ\n';
         begin(cid);add(`<< /Length ${encoder.encode(stream).length} >>\nstream\n${stream}endstream`);end();
       }
@@ -58,9 +58,20 @@
     constructor(writer,title,mode){this.writer=writer;this.title=title;this.mode=mode;this.canvas=null;this.ctx=null;this.col=0;this.y=TOP;this.page=0;this.current='';}
     font(n=18,weight='400'){this.ctx.font=`${weight} ${n}px ${FONT}`;}
     async pageStart(continued=false){
-      if(this.canvas){await this.writer.push(this.canvas);this.canvas.width=0;}
-      this.canvas=document.createElement('canvas');this.canvas.width=PW;this.canvas.height=PH;
+      if(this.canvas){
+        if(this.questionOverlayPage===this.page&&this.activeQuestionInk){
+          this.drawInkOverlay(this.activeQuestionInk,X[0],TOP,CW[0],BOTTOM-TOP);
+          this.activeQuestionInk=null;
+        }
+        if(this.evidenceOverlayPage===this.page&&this.activeEvidenceInk){
+          this.drawInkOverlay(this.activeEvidenceInk,X[1],TOP,CW[1]+GAP+CW[2],BOTTOM-TOP);
+          this.activeEvidenceInk=null;
+        }
+        await this.writer.push(this.canvas);this.canvas.width=0;
+      }
+      this.canvas=document.createElement('canvas');this.canvas.width=PW*RESOLUTION;this.canvas.height=PH*RESOLUTION;
       this.ctx=this.canvas.getContext('2d',{alpha:false});if(!this.ctx)throw Error('Canvas unavailable');
+      this.ctx.scale(RESOLUTION,RESOLUTION);this.ctx.imageSmoothingEnabled=true;this.ctx.imageSmoothingQuality='high';
       this.page++;const c=this.ctx;c.fillStyle='#ffffff';c.fillRect(0,0,PW,PH);
       c.fillStyle=BLUE;c.fillRect(MG,44,7,34);this.font(23,'800');c.fillStyle=INK;c.fillText('HEON ARCHIVE',MG+19,69);
       this.font(14,'400');c.fillStyle=MUTED;const t=`${this.title} · ${this.mode} · ${this.page}쪽`;
@@ -115,45 +126,54 @@
       this.ctx.drawImage(img,X[this.col],this.y,dw,dh);this.y+=dh+14;
       img.src='';
     }
-    async ink(note){
-      if(!note?.strokes?.length)return;
-      await this.heading('내 필기');
-      const w=CW[this.col]-8;
-      // Keep notes alongside their question whenever the remainder of column 1
-      // can hold a readable preview, rather than producing an almost empty page.
-      const available=BOTTOM-this.y-18;
-      if(available<155)await this.ensure(380);
-      const h=Math.min(w*(note.height||1050)/(note.width||1000),Math.max(170,BOTTOM-this.y-18));
-      await this.ensure(h+8);
-      const x=X[this.col],y=this.y,c=this.ctx;
-      c.fillStyle='#fffefa';c.fillRect(x,y,w,h);c.strokeStyle=LINE;c.strokeRect(x,y,w,h);
-      c.save();c.translate(x,y);c.scale(w/(note.width||1000),h/(note.height||1050));
-      for(const stroke of note.strokes){
-        const pts=stroke.points||[];if(!pts.length)continue;
+    // Paint the saved vector strokes directly on the problem / explanation columns.
+    // No detached note box is printed. The screen and PDF use different text flows,
+    // so handwritten positions are proportional to the corresponding content area.
+    drawInkOverlay(region,x,y,w,h){
+      if(!region?.strokes?.length||!this.ctx)return;
+      const c=this.ctx,iw=region.width||1000,ih=region.height||1050;
+      c.save();c.beginPath();c.rect(x,y,w,h);c.clip();
+      c.translate(x,y);c.scale(w/iw,h/ih);
+      for(const stroke of region.strokes){
+        const points=stroke.points||[];if(!points.length)continue;
         const shape=window.HeonInk?.outline?.(stroke)||[];
-        c.beginPath();c.lineJoin='round';c.lineCap='round';c.fillStyle=c.strokeStyle=stroke.color||BLUE;
-        c.lineWidth=stroke.width||5;c.globalAlpha=stroke.tool==='marker'?.27:1;
-        if(shape.length>2){c.moveTo(shape[0][0],shape[0][1]);for(let i=1;i<shape.length;i++)c.lineTo(shape[i][0],shape[i][1]);c.closePath();c.fill();}
-        else {c.moveTo(pts[0][0],pts[0][1]);for(let i=1;i<pts.length;i++)c.lineTo(pts[i][0],pts[i][1]);c.stroke();}
+        c.beginPath();c.lineJoin='round';c.lineCap='round';
+        c.fillStyle=c.strokeStyle=stroke.color||BLUE;c.lineWidth=stroke.width||5;
+        c.globalAlpha=stroke.tool==='marker'?.26:1;
+        if(shape.length>2){c.moveTo(shape[0][0],shape[0][1]);
+          for(let i=1;i<shape.length;i++)c.lineTo(shape[i][0],shape[i][1]);c.closePath();c.fill();}
+        else {c.moveTo(points[0][0],points[0][1]);
+          for(let i=1;i<points.length;i++)c.lineTo(points[i][0],points[i][1]);c.stroke();}
       }
-      c.restore();this.y+=h+18;
+      c.restore();
     }
     async questionStart(item,index,count){
       await this.pageStart();this.questionPhase=true;this.current=`${item.teacher||'교수님'} · ${item.label||index+1}`;
+      this.activeQuestionInk=item.ink?.regions?.question||item.ink;
+      this.questionOverlayPage=this.page;
       await this.para(`${this.current} · ${index+1}/${count}`,{size:18,weight:'800',color:BLUE,line:27});
       await this.heading('문제');await this.para(item.prompt||'',{size:17,weight:'600',line:29});
       for(const f of item.figures||[])await this.figure(f.src,f.label,290);
       for(const ch of item.choices||[])await this.block(`${ch.symbol||''} ${ch.text||''}`,{size:15,bg:ch.correct?'#e8f6f0':PALE});
-      await this.ink(item.ink);
+      if(this.activeQuestionInk&&this.questionOverlayPage===this.page){
+        this.drawInkOverlay(this.activeQuestionInk,X[0],TOP,CW[0],BOTTOM-TOP);
+      }
+      this.activeQuestionInk=null;this.questionOverlayPage=null;
       // If the question consumed further pages, the explanation begins in column 2
       // on the last question page (the problem column itself remains separate).
       this.questionPhase=false;this.col=1;this.y=TOP;
+      this.activeEvidenceInk=item.ink?.regions?.evidence||null;
+      this.evidenceOverlayPage=this.page;
       await this.heading('정답 및 해설');
       await this.block(`정답: ${item.answer||'미확정'} · 내 답안: ${item.picked||'미제출'}`,{size:16,bg:'#e9f7f0',color:GREEN});
       await this.para(item.explanation||'등록된 해설이 없습니다.',{size:17,line:27});
       if(item.reasons?.length){await this.heading('선택지별 해설');for(const r of item.reasons)await this.para(`${r.symbol} ${r.text}`,{size:16,line:25});}
       if(item.explanationImages?.length){await this.heading('추가 해설 이미지');for(const f of item.explanationImages)await this.figure(f.src,f.label,330);}
       if(item.evidence){await this.heading('강의안 근거');await this.para(item.evidence.label||'',{size:13,line:20,color:MUTED});await this.figure(item.evidence.src,'강의안 발췌',420);}
+      if(this.activeEvidenceInk&&this.evidenceOverlayPage===this.page){
+        this.drawInkOverlay(this.activeEvidenceInk,X[1],TOP,CW[1]+GAP+CW[2],BOTTOM-TOP);
+      }
+      this.activeEvidenceInk=null;this.evidenceOverlayPage=null;
     }
     async finish(){if(this.canvas){await this.writer.push(this.canvas);this.canvas.width=0;this.canvas=null;}}
   }
